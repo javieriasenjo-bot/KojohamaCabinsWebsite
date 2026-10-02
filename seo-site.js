@@ -13,6 +13,16 @@
     }));
   });
 
+  document.querySelectorAll('a[href*="ctrip.com"], a[href*="trip.com"]').forEach(link => {
+    link.addEventListener('click', () => push('booking_click', {
+      booking_platform: 'trip.com',
+      cabin_name: link.dataset.cabinName || 'Unknown cabin',
+      destination_url: link.href,
+      page_language: document.documentElement.lang,
+      link_location: link.dataset.linkLocation || 'page'
+    }));
+  });
+
   document.querySelectorAll('.languages a').forEach(link => {
     link.addEventListener('click', () => push('language_change', {
       selected_language: link.getAttribute('lang'),
