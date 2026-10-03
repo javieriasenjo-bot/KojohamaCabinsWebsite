@@ -65,3 +65,24 @@
 .sister-links{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
 .sister-site{margin-top:6px}
 @media(max-width:560px){.sister{padding:52px 0}.sister-links .button{width:100%;text-align:center}}
+
+/* Guest reviews slider */
+.reviews{padding:72px 0;border-top:1px solid rgba(24,49,54,.12)}
+.reviews h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;line-height:1.16;margin:0 0 12px}
+.rv-rates{color:var(--muted);margin:0 0 24px}
+.rv-slider{position:relative}
+.rv-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:6px;scrollbar-width:thin}
+.rv-track:focus-visible{outline:2px solid var(--sea);outline-offset:3px}
+.rv-slide{flex:0 0 min(420px,86%);scroll-snap-align:start;margin:0;padding:24px;background:#fff;border:1px solid rgba(24,49,54,.12);border-radius:6px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.rv-slide blockquote{margin:0}
+.rv-slide p{margin:0;line-height:1.65}
+.rv-slide figcaption{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:.88rem;color:var(--muted)}
+.rv-slide figcaption strong{color:var(--ink)}
+.rv-tag{border:1px solid rgba(24,49,54,.25);border-radius:3px;padding:0 6px;font-size:.74rem}
+.rv-nav{display:flex;gap:10px;margin-top:16px}
+.rv-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--sea);background:#fff;color:var(--sea);font-size:1.2rem;cursor:pointer}
+.rv-nav button:hover{background:var(--sea);color:#fff}
+.rv-note{max-width:760px;font-size:.82rem;color:var(--muted);line-height:1.6;margin:18px 0 8px}
+.rv-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin:0}
+@media(prefers-reduced-motion:reduce){.rv-track{scroll-behavior:auto}}
+@media(max-width:560px){.reviews{padding:52px 0}}

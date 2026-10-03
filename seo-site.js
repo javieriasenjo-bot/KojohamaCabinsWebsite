@@ -56,4 +56,15 @@
       button.textContent = open ? '×' : '☰';
     });
   });
+
+  document.querySelectorAll('.rv-slider').forEach(box => {
+    const track = box.querySelector('.rv-track');
+    const step = dir => track.scrollBy({ left: dir * Math.max(track.clientWidth * 0.8, 280) });
+    box.querySelector('.rv-prev').addEventListener('click', () => step(-1));
+    box.querySelector('.rv-next').addEventListener('click', () => step(1));
+    track.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+    });
+  });
 })();
