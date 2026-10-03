@@ -86,3 +86,6 @@
 .rv-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin:0}
 @media(prefers-reduced-motion:reduce){.rv-track{scroll-behavior:auto}}
 @media(max-width:560px){.reviews{padding:52px 0}}
+
+.sister-line{padding:0 0 56px;margin:0 auto;color:var(--muted);line-height:1.6}
+.sister-line a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
