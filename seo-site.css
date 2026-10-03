@@ -57,3 +57,11 @@
 .season-photo figcaption{margin-top:9px;font-size:.82rem;color:var(--muted)}
 @media(max-width:850px){.ski{padding:56px 0}.ski-grid{grid-template-columns:1fr 1fr}.ski-grid figure:nth-child(3){grid-column:1/-1}.ski-grid img{height:200px}.season-photo img{height:210px}.line-ask{padding:50px 0}}
 @media(max-width:560px){.ski-grid{grid-template-columns:1fr}.ski-grid figure:nth-child(3){grid-column:auto}.line-ask .button{width:100%}}
+
+/* Sister property: Casa Antonio, Sapporo */
+.sister{padding:72px 0;border-top:1px solid rgba(24,49,54,.12)}
+.sister h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;line-height:1.16;max-width:860px;margin:0 0 16px}
+.sister>p:not(.eyebrow):not(.sister-links){max-width:760px;color:var(--muted);line-height:1.72;margin:0 0 22px}
+.sister-links{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.sister-site{margin-top:6px}
+@media(max-width:560px){.sister{padding:52px 0}.sister-links .button{width:100%;text-align:center}}
