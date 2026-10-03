@@ -35,7 +35,7 @@
     link.addEventListener('click', () => push('contact_click', {
       contact_method: 'line',
       page_language: document.documentElement.lang,
-      link_location: 'footer'
+      link_location: link.dataset.linkLocation || 'footer'
     }));
   });
 

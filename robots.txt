@@ -7,4 +7,3 @@ Allow: /
 
 Sitemap: https://kojohamacabins.jp/sitemap.xml
 Sitemap: https://kojohamacabins.jp/sitemap-zh-cn.xml
-Sitemap: https://kojohamacabins.jp/sitemap-ko.xml

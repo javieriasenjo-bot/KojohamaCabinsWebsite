@@ -1,0 +1,22 @@
+# Korean retired 2026-10-02 - send the indexed KO URLs to English
+/ko/ / 301
+/ko/cabins/ /cabins/ 301
+/ko/cabins/ocean-stay-rustic/ /cabins/ocean-stay-rustic/ 301
+/ko/cabins/ocean-stay-sol/ /cabins/ocean-stay-sol/ 301
+/ko/cabins/ocean-stay-zen/ /cabins/ocean-stay-zen/ 301
+/ko/culture/shiraoi-ainu-culture/ /culture/shiraoi-ainu-culture/ 301
+/ko/guides/hokkaido-winter-driving-kojohama/ /guides/hokkaido-winter-driving-kojohama/ 301
+/ko/guides/kojohama-onsen/ /guides/kojohama-onsen/ 301
+/ko/guides/kojohama-seafood-tarako/ /guides/kojohama-seafood-tarako/ 301
+/ko/guides/noboribetsu-from-kojohama/ /guides/noboribetsu-from-kojohama/ 301
+/ko/guides/one-day-kojohama-coast/ /guides/one-day-kojohama-coast/ 301
+/ko/guides/stay-between-upopoy-noboribetsu/ /guides/stay-between-upopoy-noboribetsu/ 301
+/ko/guides/two-day-shiraoi-itinerary/ /guides/two-day-shiraoi-itinerary/ 301
+/ko/guides/upopoy-from-kojohama/ /guides/upopoy-from-kojohama/ 301
+/ko/location/ /location/ 301
+/ko/october-to-march/ /october-to-march/ 301
+/ko/own-a-cabin/ /own-a-cabin/ 301
+/ko/privacy/ /privacy/ 301
+/ko/things-to-do/ /things-to-do/ 301
+/ko/work-remotely/ /work-remotely/ 301
+/ko/* / 301
