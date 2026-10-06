@@ -43,7 +43,7 @@ for (const [lang, t] of Object.entries(locales)) {
   const venues = directory.venues.filter(v => v.category === group.id);
   const cards = venues.map(v => {
    const local = v.translations[lang];
-   const photo = local.photo ? `<figure class="near-ph"><img src="${escape(local.photo.src)}" alt="${escape(local.photo.alt)}" loading="lazy" decoding="async" width="640" height="400"${local.photo.src.startsWith('https:') ? ' referrerpolicy="no-referrer"':''}>${local.photo.creditHtml ? `<figcaption>${local.photo.creditHtml}</figcaption>`:''}</figure>` : '';
+   const photo = local.photo ? `<figure class="near-ph"><img src="${escape(local.photo.src)}"${local.photo.srcset ? ` srcset="${escape(local.photo.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), 400px"`:''} alt="${escape(local.photo.alt)}" loading="lazy" decoding="async" width="${local.photo.width || 640}" height="${local.photo.height || 400}"${local.photo.fit === 'contain' ? ' style="object-fit:contain"':''}${local.photo.src.startsWith('https:') ? ' referrerpolicy="no-referrer"':''}>${local.photo.creditHtml ? `<figcaption>${local.photo.creditHtml}</figcaption>`:''}</figure>` : '';
    const links = [...local.links];
    if (v.hoursSource && !links.some(l => l.href === v.hoursSource)) links.push({href:v.hoursSource,label:t.map,kind:'official'});
    const searchText = Object.values(v.translations).map(l => l.name+' '+l.descriptionHtml.replace(/<[^>]+>/g,' ')).join(' ');

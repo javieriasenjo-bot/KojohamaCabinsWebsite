@@ -135,6 +135,8 @@ body:has(.quick-reserve){padding-bottom:76px}
 .near-list>li[hidden],.directory-category[hidden],.directory-search[hidden]{display:none!important}
 .near-list>li.near-no-photo{display:block}
 .near-no-photo .near-body{width:100%}
+.near-ph figcaption{position:static;padding:.4rem .7rem;background:#e6e0d4;color:#304754;font-size:.75rem;line-height:1.4}
+.near-ph figcaption a{color:#304754;opacity:1;text-decoration:underline;text-underline-offset:2px}
 .place-actions{font-size:.9rem;margin-top:10px!important;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .cabin-comparison{margin:20px auto 36px}
 .comparison-scroll{overflow-x:auto}

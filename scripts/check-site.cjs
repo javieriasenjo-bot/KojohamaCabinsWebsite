@@ -2,6 +2,7 @@
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
+const crypto=require('node:crypto');
 const assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'..');
 const ignore=new Set(['.git','.wrangler','node_modules','data','scripts','docs']);
@@ -53,6 +54,21 @@ for(const [file,text]of source){
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
 check(directory.venues.length===65,'Directory must retain all 65 places');
+const photoSources=JSON.parse(fs.readFileSync(path.join(root,'data/venue-photo-sources.json'),'utf8'));
+check(photoSources.venues.length===65,'Photo source register must cover all 65 places');
+for(const record of photoSources.venues){
+ const venue=directory.venues.find(v=>v.id===record.id);
+ check(Boolean(venue),`${record.id}: photo source has no matching venue`);
+ for(const locale of ['en','ja','zh-CN'])check(Boolean(venue?.translations[locale].photo),`${record.id}: missing ${locale} venue photo`);
+ if(!record.assetSHA256)continue;
+ for(const asset of [record,record.responsiveAsset].filter(Boolean)){
+  const file=path.join(root,asset.asset.replace(/^\//,''));
+  check(fs.existsSync(file),`${record.id}: missing registered photo ${asset.asset}`);
+  if(fs.existsSync(file))check(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')===(asset.assetSHA256||asset.sha256),`${record.id}: photo differs from reviewed asset ${asset.asset}`);
+ }
+ check(Boolean(record.permission)&&Boolean(record.profileUrl),`${record.id}: missing photo permission/source record`);
+ for(const locale of ['en','ja','zh-CN'])check(venue?.translations[locale].photo.creditHtml?.includes('https://www.google.com/maps/'),`${record.id}: missing visible ${locale} photo-source credit`);
+}
 for(const locale of ['en','ja','zh-CN']){
  const prefix=locale==='en'?'':locale==='ja'?'ja/':'zh-cn/';
  const text=fs.readFileSync(path.join(root,prefix+'things-to-do/index.html'),'utf8');
