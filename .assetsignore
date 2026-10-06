@@ -9,3 +9,8 @@ README.md
 .git
 .github
 .gitignore
+
+# Content sources, validation scripts and commit notes stay in Git, not hosting.
+data
+scripts
+docs

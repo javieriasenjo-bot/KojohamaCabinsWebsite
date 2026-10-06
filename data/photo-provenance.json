@@ -1,0 +1,123 @@
+[
+  {
+    "asset": "/images/sol/sol-bathroom.webp",
+    "sourceFolder": "Shiraoi_OC_Sol_Photo by Photographer_追加7-1",
+    "sourceFile": "105-20250610.jpg",
+    "sourceSHA256": "385902e02a2965970642c84be8bd1876f9dbcdef48b03d722cc0942152029913",
+    "width": 1067,
+    "height": 1600,
+    "bytes": 33886,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/sol/sol-washbasin.webp",
+    "sourceFolder": "Shiraoi_OC_Sol_Photo by Photographer_追加7-1",
+    "sourceFile": "109-20250610.jpg",
+    "sourceSHA256": "df5a59020b18f9ef78893650add5d8dd2f2d807065f34c6dacc851c6177099bc",
+    "width": 1067,
+    "height": 1600,
+    "bytes": 67358,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/sol/sol-sleeping-layout.webp",
+    "sourceFolder": "Shiraoi_OC_Sol_Photo by Photographer_追加7-1",
+    "sourceFile": "318-20250628.jpg",
+    "sourceSHA256": "3a70028b1e462995497704326b286b05b88ae0ddda0a6652eff1e8fefe1ef2c1",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 59956,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/sol/sol-kitchen-counter.webp",
+    "sourceFolder": "Shiraoi_OC_Sol_Photo by Photographer_追加7-1",
+    "sourceFile": "101-20250610.jpg",
+    "sourceSHA256": "86a95e3e50a8b012c6c157d94f4e57571bfd97348b622acd7fab87bb5dfa241d",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 63162,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/zen/zen-bathroom.webp",
+    "sourceFolder": "Shiraoi_OC_Zen_Photo by Photographer_追加7-1",
+    "sourceFile": "083-20250610.jpg",
+    "sourceSHA256": "46130a21deedcdc0f14a33a58f23607893889476ea45c73e6cda4e92627d1cd9",
+    "width": 1067,
+    "height": 1600,
+    "bytes": 42736,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/zen/zen-laundry.webp",
+    "sourceFolder": "Shiraoi_OC_Zen_Photo by Photographer_追加7-1",
+    "sourceFile": "084-20250610.jpg",
+    "sourceSHA256": "95759528464b325e7ba37c26b092dc13920a9f0a5e2eb92c8914f047012adb58",
+    "width": 1067,
+    "height": 1600,
+    "bytes": 141586,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/zen/zen-sleeping-layout.webp",
+    "sourceFolder": "Shiraoi_OC_Zen_Photo by Photographer_追加7-1",
+    "sourceFile": "333-20250628.jpg",
+    "sourceSHA256": "377c3107805bc952b75e4c4a4a528dcb30a1604c128460234a6cdafa6591554c",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 89204,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/rustic/rustic-bathroom.webp",
+    "sourceFolder": "Shiraoi_OC_Rustic_Photo by Photographer_追加6-30",
+    "sourceFile": "066-20250610.jpg",
+    "sourceSHA256": "114d2f052c5f0ef566be97f18f7e819237975ec6c9190a72bd31dac147188a5c",
+    "width": 1067,
+    "height": 1600,
+    "bytes": 32984,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/rustic/rustic-laundry.webp",
+    "sourceFolder": "Shiraoi_OC_Rustic_Photo by Photographer_追加6-30",
+    "sourceFile": "067-20250610.jpg",
+    "sourceSHA256": "b298d065d897c79857ce3047331b0fd32df9bbeaa9596f85c6c7ba655b9a5649",
+    "width": 1067,
+    "height": 1600,
+    "bytes": 122126,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/rustic/rustic-sleeping-layout.webp",
+    "sourceFolder": "Shiraoi_OC_Rustic_Photo by Photographer_追加6-30",
+    "sourceFile": "306-20250628.jpg",
+    "sourceSHA256": "9b73aa64563acf69931e801aab6e4a99f75c2fd34cd57267f11989b962fcf360",
+    "width": 1600,
+    "height": 1067,
+    "bytes": 60452,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/exterior/outside-arrival.webp",
+    "sourceFolder": "Shiraoi_OC_outside_Photo by Photographer_追加7-1",
+    "sourceFile": "355-20250628.jpg",
+    "sourceSHA256": "ede25bf8b96413303830a4fa730b2be8be9a4ee1393b089f0e2db11cf8b13f12",
+    "width": 1600,
+    "height": 967,
+    "bytes": 191868,
+    "permission": "supplied by owner for website use on 2026-10-06",
+    "credit": "photographer attribution not supplied"
+  }
+]

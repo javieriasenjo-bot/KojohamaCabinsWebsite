@@ -1,0 +1,58 @@
+{
+  "travel": {
+    "newChitoseMinutes": [
+      60,
+      80
+    ],
+    "casaAntonioMinutes": [
+      80,
+      90
+    ],
+    "winterExtraTime": true,
+    "confirmedOn": "2026-10-06"
+  },
+  "cabins": [
+    {
+      "id": "sol",
+      "name": "Ocean Stay Sol",
+      "maxGuests": 5,
+      "beds": 4,
+      "airbnb": "https://www.airbnb.com/rooms/1451962457697397900",
+      "ctrip": "https://hotels.ctrip.com/hotels/136074478.html"
+    },
+    {
+      "id": "zen",
+      "name": "Ocean Stay Zen",
+      "maxGuests": 5,
+      "beds": 5,
+      "airbnb": "https://www.airbnb.com/rooms/1452755870408569390",
+      "ctrip": "https://hotels.ctrip.com/hotels/136074484.html"
+    },
+    {
+      "id": "rustic",
+      "name": "Ocean Stay Rustic",
+      "maxGuests": 5,
+      "beds": 4,
+      "airbnb": "https://www.airbnb.com/rooms/1452772681885880930",
+      "ctrip": "https://hotels.ctrip.com/hotels/136074515.html"
+    }
+  ],
+  "policyConfirmation": "pending owner confirmation; values above preserve existing source",
+  "pricing": {
+    "fromNightlyJPY": 19800,
+    "baseGuests": 2,
+    "cleaningIncluded": true,
+    "taxesIncluded": false,
+    "extraGuestFrom": 3,
+    "extraGuestJPY": 2500,
+    "extraGuestBasis": "per stay",
+    "confirmedOn": "2026-10-06"
+  },
+  "wifi": {
+    "downloadMbps": 100,
+    "uploadMbps": 100,
+    "measurementYear": 2025,
+    "currentMeasurementPending": true,
+    "guaranteed": false
+  }
+}

@@ -118,3 +118,36 @@ body:has(.quick-reserve){padding-bottom:76px}
 
 .near-hours{font-size:.88rem;line-height:1.5;color:#46575a;margin:.35rem 0 0}.near-body .place-map,.near-body .place-ig{margin:.3rem 0 0;font-size:.88rem}
 .fishing-warning{background:#fff4e0;border-left:4px solid #c0792b;padding:16px 18px;border-radius:8px;color:#3b2f1c;font-size:1rem;line-height:1.6;max-width:none}
+
+/* Progressive enhancement: categories work even when JavaScript is unavailable. */
+.directory-nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
+.directory-nav a{border:1px solid #bcc7c5;border-radius:24px;padding:9px 14px;font-size:.9rem}
+.directory-nav a:hover{background:#e8eee9}
+.directory-search{margin:24px 0;padding:20px;background:#eef2ee;border-radius:10px}
+.directory-search label{display:block;font-weight:600;margin-bottom:8px}
+.directory-search-row{display:flex;gap:10px}
+.directory-search input{min-width:0;flex:1;padding:12px;border:1px solid #889997;border-radius:5px;font:inherit;background:#fff}
+.directory-search button{padding:10px 14px;border:1px solid #889997;border-radius:5px;background:#fff;color:#16324b;font:inherit;cursor:pointer}
+.directory-search p{margin:10px 0 0}
+.directory-category{border-top:1px solid #c5cfcb;scroll-margin-top:100px;padding-top:8px;margin:20px 0}
+.directory-category summary{padding:14px 0;font-size:1.25rem;font-weight:600;cursor:pointer}
+.directory-group-count{font-size:.85em;font-weight:400;color:#46575a}
+.near-list>li[hidden],.directory-category[hidden],.directory-search[hidden]{display:none!important}
+.near-list>li.near-no-photo{display:block}
+.near-no-photo .near-body{width:100%}
+.place-actions{font-size:.9rem;margin-top:10px!important;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cabin-comparison{margin:20px auto 36px}
+.comparison-scroll{overflow-x:auto}
+.cabin-comparison table{border-collapse:collapse;width:100%;font-size:.95rem}
+.cabin-comparison th,.cabin-comparison td{padding:14px 12px;text-align:left;border-bottom:1px solid #c5cfcb}
+.cabin-comparison thead{background:#e8eee9}
+.cabin-comparison a{text-decoration:underline;text-underline-offset:3px}
+.pricing-note{padding:16px 20px;background:#eef2ee;border-left:3px solid #16324b;font-size:.95rem;line-height:1.65;margin:24px auto;max-width:1100px}
+.source-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.source-links a{font-size:.95rem;text-decoration:underline;text-underline-offset:3px}
+.photo-is-loading{position:relative}
+.photo-is-loading img{opacity:0}
+.photo-is-loading::after{content:"";position:absolute;left:calc(50% - 15px);top:calc(50% - 15px);width:30px;height:30px;border:3px solid #ffffff55;border-top-color:#fff;border-radius:50%;animation:photo-loading-spin .7s linear infinite}
+@keyframes photo-loading-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.photo-is-loading::after{animation:none}}
+@media(max-width:600px){.directory-search-row{flex-direction:column}.directory-search button{align-self:flex-start}.cabin-comparison th,.cabin-comparison td{padding:12px 8px;font-size:.85rem}.cabin-comparison th:first-child{min-width:105px}}

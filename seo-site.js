@@ -1,7 +1,97 @@
 (() => {
+  const modalStates = new WeakMap();
+  const photoRequests = new WeakMap();
+  const setPhoto = (img, src, alt) => {
+    const request = {};
+    photoRequests.set(img, request);
+    const figure = img.closest('figure');
+    const dialog = img.closest('[role="dialog"]');
+    figure?.classList.add('photo-is-loading');
+    dialog?.setAttribute('aria-busy', 'true');
+    img.alt = alt;
+    img.src = src;
+    const finish = failed => {
+      if (photoRequests.get(img) !== request) return;
+      figure?.classList.remove('photo-is-loading');
+      dialog?.setAttribute('aria-busy', 'false');
+      if (failed) {
+        const message = { en: 'Photo could not load. Try the next photo.', ja: '写真を読み込めませんでした。次の写真をお試しください。', zh: '照片无法加载，请尝试下一张。' }[document.documentElement.lang.slice(0, 2)] || 'Photo could not load. Try the next photo.';
+        const caption = figure?.querySelector('figcaption');
+        if (caption) caption.textContent = message;
+      }
+    };
+    img.decode().then(() => finish(false), () => finish(true));
+  };
+  const modalFocus = dialog => [...dialog.querySelectorAll('button, a[href], [tabindex="0"]')]
+    .filter(el => !el.disabled && el.getClientRects().length);
+  const openModal = (dialog, trigger) => {
+    if (modalStates.has(dialog)) return;
+    const background = [...document.body.children].filter(el => el !== dialog && !['SCRIPT', 'NOSCRIPT'].includes(el.tagName));
+    modalStates.set(dialog, { trigger, overflow: document.body.style.overflow,
+      background: background.map(el => [el, el.hasAttribute('inert')]) });
+    background.forEach(el => el.setAttribute('inert', ''));
+    document.body.style.overflow = 'hidden';
+    dialog.hidden = false;
+    modalFocus(dialog)[0]?.focus();
+  };
+  const closeModal = dialog => {
+    const state = modalStates.get(dialog);
+    dialog.hidden = true;
+    if (!state) return;
+    state.background.forEach(([el, wasInert]) => { if (!wasInert) el.removeAttribute('inert'); });
+    document.body.style.overflow = state.overflow;
+    modalStates.delete(dialog);
+    state.trigger?.focus();
+  };
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Tab') return;
+    const dialog = e.target instanceof Element ? e.target.closest('[role="dialog"][aria-modal="true"]') : null;
+    if (!dialog || !modalStates.has(dialog)) return;
+    const controls = modalFocus(dialog), first = controls[0], last = controls.at(-1);
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last?.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first?.focus(); }
+  });
+  window.KojohamaUI = { openModal, closeModal, setPhoto };
+  const directoryQuery = document.getElementById('directory-query');
+  if (directoryQuery) {
+    const directory = document.getElementById('around-the-cabins');
+    const groups = [...directory.querySelectorAll('.directory-category')];
+    const initialOpen = groups.map(group => group.open);
+    const cards = [...directory.querySelectorAll('[data-venue]')];
+    const status = document.getElementById('directory-count');
+    const normalize = text => text.normalize('NFKC').toLocaleLowerCase();
+    directory.querySelector('.directory-search').hidden = false;
+    const filter = () => {
+      const terms = normalize(directoryQuery.value).trim().split(/\s+/).filter(Boolean);
+      let count = 0;
+      cards.forEach(card => {
+        card.hidden = !terms.every(term => normalize(card.dataset.search).includes(term));
+        if (!card.hidden) count++;
+      });
+      groups.forEach((group, i) => {
+        const visibleCount = [...group.querySelectorAll('[data-venue]')].filter(card => !card.hidden).length;
+        group.hidden = visibleCount === 0;
+        group.querySelector('.directory-group-count').textContent = `(${visibleCount})`;
+        group.open = terms.length ? !group.hidden : initialOpen[i];
+      });
+      status.textContent = `${count} ${status.dataset.countLabel}`;
+      document.getElementById('directory-empty').hidden = count !== 0;
+    };
+    directoryQuery.addEventListener('input', filter);
+    document.getElementById('directory-clear').addEventListener('click', () => {
+      directoryQuery.value = ''; filter(); directoryQuery.focus();
+    });
+    directory.querySelectorAll('.directory-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (directoryQuery.value) { directoryQuery.value = ''; filter(); }
+        const group = document.getElementById(link.hash.slice(1));
+        if (group) group.open = true;
+      });
+    });
+  }
   const push = (event, details = {}) => {
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event, ...details });
+    window.dataLayer.push({ event, page_path: location.pathname, ...details });
   };
 
   const CABIN_IDS = { '1451962457697397900': 'Ocean Stay Sol', '1452755870408569390': 'Ocean Stay Zen', '1452772681885880930': 'Ocean Stay Rustic',
@@ -12,7 +102,10 @@
     link.closest('section, aside, header, footer')?.id || link.closest('section, aside, header, footer')?.tagName.toLowerCase() || 'page';
 
   document.querySelectorAll('a[href*="airbnb."]').forEach(link => {
-    link.addEventListener('click', () => push('airbnb_click', {
+    const isReview = link.dataset.linkLocation === 'reviews' || link.dataset.intent === 'reviews';
+    link.addEventListener('click', () => push(isReview ? 'review_click' : 'airbnb_click', {
+      intent: isReview ? 'reviews' : 'booking',
+      booking_platform: 'airbnb',
       cabin_name: cabinName(link),
       destination_url: link.href,
       page_language: document.documentElement.lang,
@@ -22,11 +115,12 @@
 
   document.querySelectorAll('a[href*="ctrip.com"], a[href*="trip.com"]').forEach(link => {
     link.addEventListener('click', () => push('booking_click', {
-      booking_platform: 'trip.com',
-      cabin_name: link.dataset.cabinName || 'Unknown cabin',
+      booking_platform: link.href.includes('ctrip.com') ? 'ctrip' : 'trip.com',
+      intent: 'booking',
+      cabin_name: cabinName(link),
       destination_url: link.href,
       page_language: document.documentElement.lang,
-      link_location: link.dataset.linkLocation || 'page'
+      link_location: placement(link)
     }));
   });
 
@@ -42,7 +136,7 @@
     link.addEventListener('click', () => push('contact_click', {
       contact_method: 'line',
       page_language: document.documentElement.lang,
-      link_location: link.dataset.linkLocation || 'footer'
+      link_location: placement(link)
     }));
   });
 
@@ -50,7 +144,7 @@
     link.addEventListener('click', () => push('contact_click', {
       contact_method: 'email',
       page_language: document.documentElement.lang,
-      link_location: 'footer'
+      link_location: placement(link)
     }));
   });
 
@@ -111,10 +205,9 @@
     document.body.appendChild(box);
     const big = box.querySelector('img'), cap = box.querySelector('figcaption');
     let idx = 0, trigger = null;
-    const inertOthers = on => [...document.body.children].forEach(el => { if (el !== box) on ? el.setAttribute('inert', '') : el.removeAttribute('inert'); });
-    const show = i => { idx = (i + gal.length) % gal.length; big.src = gal[idx].currentSrc || gal[idx].src; big.alt = gal[idx].alt; cap.textContent = gal[idx].alt; };
-    const open = i => { trigger = document.activeElement; show(i); box.hidden = false; inertOthers(true); box.querySelector('.pv-close').focus(); };
-    const close = () => { box.hidden = true; inertOthers(false); if (trigger) trigger.focus(); };
+    const show = i => { idx = (i + gal.length) % gal.length; setPhoto(big, gal[idx].currentSrc || gal[idx].src, gal[idx].alt); cap.textContent = gal[idx].alt; };
+    const open = i => { trigger = document.activeElement; show(i); openModal(box, trigger); };
+    const close = () => closeModal(box);
     gal.forEach((img, i) => {
       img.tabIndex = 0; img.setAttribute('role', 'button'); img.style.cursor = 'zoom-in';
       img.addEventListener('click', () => open(i));
@@ -126,13 +219,8 @@
     box.addEventListener('click', e => { if (e.target === box) close(); });
     box.addEventListener('keydown', e => {
       if (e.key === 'Escape') close();
-      if (e.key === 'ArrowLeft') show(idx - 1);
-      if (e.key === 'ArrowRight') show(idx + 1);
-      if (e.key === 'Tab') {
-        const f = [...box.querySelectorAll('button')], first = f[0], last = f[f.length - 1];
-        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-      }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); show(idx - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(idx + 1); }
     });
   }
 })();

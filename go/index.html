@@ -133,7 +133,7 @@ footer a{text-decoration:underline}
       <span class="arw">↗</span>
     </a>
   </div>
-  <p class="alt">Also bookable on <a data-link-location="linkinbio_trip" href="https://hotels.ctrip.com/hotels/136074478.html" rel="noopener" target="_blank">Trip.com</a>.</p>
+  <p class="alt">Ctrip: <a data-cabin-name="Ocean Stay Sol" data-link-location="linkinbio_ctrip" href="https://hotels.ctrip.com/hotels/136074478.html" rel="noopener" target="_blank">Sol</a> · <a data-cabin-name="Ocean Stay Zen" data-link-location="linkinbio_ctrip" href="https://hotels.ctrip.com/hotels/136074484.html" rel="noopener" target="_blank">Zen</a> · <a data-cabin-name="Ocean Stay Rustic" data-link-location="linkinbio_ctrip" href="https://hotels.ctrip.com/hotels/136074515.html" rel="noopener" target="_blank">Rustic</a></p>
 
   <p class="eyebrow">Plan your stay</p>
   <div class="links">
@@ -173,7 +173,7 @@ footer a{text-decoration:underline}
 
 <script>
 (() => {
-  const push = (event, details = {}) => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event, ...details }); };
+  const push = (event, details = {}) => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event, page_path: location.pathname, ...details }); };
 
   // Carry incoming UTM/query params onto internal links so the GA4 session source survives the hop.
   const qs = location.search;
@@ -186,6 +186,8 @@ footer a{text-decoration:underline}
 
   document.querySelectorAll('a[href*="airbnb."]').forEach(link => {
     link.addEventListener('click', () => push('airbnb_click', {
+      intent: 'booking',
+      booking_platform: 'airbnb',
       cabin_name: link.dataset.cabinName || 'Unknown cabin',
       destination_url: link.href,
       page_language: document.documentElement.lang,
@@ -195,14 +197,16 @@ footer a{text-decoration:underline}
 
   document.querySelectorAll('a[href*="ctrip.com"], a[href*="trip.com"]').forEach(link => {
     link.addEventListener('click', () => push('booking_click', {
-      booking_platform: 'trip.com',
+      booking_platform: link.href.includes('ctrip.com') ? 'ctrip' : 'trip.com',
+      intent: 'booking',
+      cabin_name: link.dataset.cabinName || 'Unknown cabin',
       destination_url: link.href,
       page_language: document.documentElement.lang,
       link_location: link.dataset.linkLocation || 'linkinbio'
     }));
   });
 
-  document.querySelectorAll('a[data-link-location]:not([href*="airbnb."]):not([href*="ctrip.com"])').forEach(link => {
+  document.querySelectorAll('a[data-link-location]:not([href*="airbnb."]):not([href*="ctrip.com"]):not([href*="trip.com"])').forEach(link => {
     link.addEventListener('click', () => push('bio_link_click', {
       link_text: (link.querySelector('.t')?.textContent || link.textContent || '').trim().split('\n')[0],
       destination_url: link.href,
