@@ -91,7 +91,22 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
+ // Production analytics stays off local and staging previews.
+ source=source.replace(/(<script\b[^>]*>)([\s\S]*?)(<\/script>)/g,(whole,start,code,end)=>{
+  if (!code.includes("})(window,document,'script','dataLayer'") || code.includes('location.hostname')) return whole;
+  return start+"if (['kojohamacabins.jp','www.kojohamacabins.jp'].includes(location.hostname)) {"+code+'}'+end;
+ });
  const trip=travelCopy[lang];
+ if (file.endsWith('work-remotely/index.html')) {
+  const workspaceText={
+   en:['A place to open your laptop','Sol’s counter and Rustic’s dining area are shown below. These are everyday living spaces. If a dedicated desk, a particular chair or other work equipment matters to you, ask us before booking.'],
+   ja:['パソコンを広げる場所','下の写真はSolのカウンターとRusticのダイニングです。日常の生活スペースとしてご利用いただけます。専用デスク、特定の椅子、その他のお仕事用の設備が必要な場合は、ご予約前にお問い合わせください。'],
+   'zh-CN':['打开电脑的空间','下方照片展示Sol的台面和Rustic的餐桌区。这些属于日常生活空间。如果您需要专用书桌、特定座椅或其他办公设备，请在预订前联系我们。']
+  }[lang];
+  const workspace=`<section class="gallery-section wrap" id="workspace"><h2>${workspaceText[0]}</h2><p>${workspaceText[1]}</p><div class="photo-grid">${['/images/sol/sol-kitchen-counter.webp','/images/rustic/rustic-7.webp'].map(src=>`<img src="${src}" alt="${escape(captions[lang][src])}" width="1600" height="1067" loading="lazy" decoding="async">`).join('')}</div></section>`;
+  if (source.includes('<!-- workspace:start -->')) source=marked(source,'workspace',workspace);
+  else source=source.replace(/(<section class="section-block wrap">[\s\S]*?<\/section>)/,`$1<!-- workspace:start -->${workspace}<!-- workspace:end -->`);
+ }
  if (file.endsWith('location/index.html')) {
   source=source.replace(/(<tr><td>(?:New Chitose Airport|新千歳空港|新千岁机场)<\/td><td>)[^<]+(<\/td>)/,`$1${trip.airport}$2`)
    .replace(/(<tr><td>Casa Antonio[^<]*<\/td><td>)[^<]+(<\/td>)/,`$1${trip.casa}$2`);
