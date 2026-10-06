@@ -30,7 +30,7 @@ function render(source, file, lang) {
   source = source.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, whole => whole.includes("})(window,document,'script','dataLayer'") ? '' : whole);
   source = source.replace(/<noscript>\s*<iframe\b[^>]*googletagmanager\.com[\s\S]*?<\/iframe>\s*<\/noscript>/g,'');
   source = source.replace(/<script\b[^>]*src="\/analytics\.js[^>]*><\/script>/g,'');
-  source = source.replace('</head>',script+'\n</head>');
+  source = source.replace(/\s*<\/head>/, '\n'+script+'\n</head>');
   source = source.replace(/(\/(?:seo-site\.js|seo-site\.css|guide-site\.css|home\.css|go\.css|home-gallery\.js)\?v=)[\d.]+/g,`$1${version}`);
   // Defer order matters: analytics first, shared UI second, home viewer last.
   source = source.replace(/<script\b[^>]*src="\/home-gallery\.js[^>]*><\/script>/g,'');
