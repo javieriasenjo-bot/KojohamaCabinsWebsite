@@ -18,7 +18,10 @@
       "maxGuests": 5,
       "beds": 4,
       "airbnb": "https://www.airbnb.com/rooms/1451962457697397900",
-      "ctrip": "https://hotels.ctrip.com/hotels/136074478.html"
+      "ctrip": "https://hotels.ctrip.com/hotels/136074478.html",
+      "tatami": false,
+      "kotatsu": false,
+      "capacityConfirmedOn": "2026-10-06"
     },
     {
       "id": "zen",
@@ -26,7 +29,10 @@
       "maxGuests": 5,
       "beds": 5,
       "airbnb": "https://www.airbnb.com/rooms/1452755870408569390",
-      "ctrip": "https://hotels.ctrip.com/hotels/136074484.html"
+      "ctrip": "https://hotels.ctrip.com/hotels/136074484.html",
+      "tatami": true,
+      "kotatsu": true,
+      "capacityConfirmedOn": "2026-10-06"
     },
     {
       "id": "rustic",
@@ -34,10 +40,13 @@
       "maxGuests": 5,
       "beds": 4,
       "airbnb": "https://www.airbnb.com/rooms/1452772681885880930",
-      "ctrip": "https://hotels.ctrip.com/hotels/136074515.html"
+      "ctrip": "https://hotels.ctrip.com/hotels/136074515.html",
+      "tatami": false,
+      "kotatsu": false,
+      "capacityConfirmedOn": "2026-10-06"
     }
   ],
-  "policyConfirmation": "pending owner confirmation; values above preserve existing source",
+  "policyConfirmation": "owner confirmed 2026-10-06",
   "pricing": {
     "fromNightlyJPY": 19800,
     "baseGuests": 2,
@@ -54,5 +63,22 @@
     "measurementYear": 2025,
     "currentMeasurementPending": true,
     "guaranteed": false
+  },
+  "bbq": {
+    "allowed": true,
+    "feeJPY": 3500,
+    "feeBasis": "per use",
+    "grillProvided": "Coleman RoadTrip Grill LXE-J II",
+    "guestSupplies": [
+      "two compatible gas cartridges",
+      "food",
+      "utensils and other BBQ gear"
+    ],
+    "confirmedOn": "2026-10-06"
+  },
+  "children": {
+    "childrenWelcome": true,
+    "infantsWelcome": true,
+    "confirmedOn": "2026-10-06"
   }
 }

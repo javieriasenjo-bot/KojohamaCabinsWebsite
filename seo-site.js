@@ -56,13 +56,15 @@
   if (directoryQuery) {
     const directory = document.getElementById('around-the-cabins');
     const groups = [...directory.querySelectorAll('.directory-category')];
-    const initialOpen = groups.map(group => group.open);
+    let priorOpen = groups.map(group => group.open);
+    let searching = false;
     const cards = [...directory.querySelectorAll('[data-venue]')];
     const status = document.getElementById('directory-count');
     const normalize = text => text.normalize('NFKC').toLocaleLowerCase();
     directory.querySelector('.directory-search').hidden = false;
     const filter = () => {
       const terms = normalize(directoryQuery.value).trim().split(/\s+/).filter(Boolean);
+      if (terms.length && !searching) priorOpen = groups.map(group => group.open);
       let count = 0;
       cards.forEach(card => {
         card.hidden = !terms.every(term => normalize(card.dataset.search).includes(term));
@@ -72,8 +74,9 @@
         const visibleCount = [...group.querySelectorAll('[data-venue]')].filter(card => !card.hidden).length;
         group.hidden = visibleCount === 0;
         group.querySelector('.directory-group-count').textContent = `(${visibleCount})`;
-        group.open = terms.length ? !group.hidden : initialOpen[i];
+        group.open = terms.length ? !group.hidden : priorOpen[i];
       });
+      searching = terms.length > 0;
       status.textContent = `${count} ${status.dataset.countLabel}`;
       document.getElementById('directory-empty').hidden = count !== 0;
     };
@@ -88,11 +91,20 @@
         if (group) group.open = true;
       });
     });
+    const revealHash = () => {
+      let id;
+      try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+      const target = document.getElementById(id);
+      if (!target || !directory.contains(target)) return;
+      if (directoryQuery.value) { directoryQuery.value = ''; filter(); }
+      const group = target.matches('.directory-category') ? target : target.closest('.directory-category');
+      if (group) group.open = true;
+      requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+    };
+    revealHash();
+    window.addEventListener('hashchange', revealHash);
   }
-  const push = (event, details = {}) => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event, page_path: location.pathname, ...details });
-  };
+  const push = (event, details = {}) => window.KojohamaAnalytics.push(event, details);
 
   const CABIN_IDS = { '1451962457697397900': 'Ocean Stay Sol', '1452755870408569390': 'Ocean Stay Zen', '1452772681885880930': 'Ocean Stay Rustic',
     '136074478': 'Ocean Stay Sol', '136074484': 'Ocean Stay Zen', '136074515': 'Ocean Stay Rustic' };
@@ -124,9 +136,10 @@
     }));
   });
 
-  document.querySelectorAll('.languages a').forEach(link => {
+  document.querySelectorAll('.languages a, .row.lang a[lang]').forEach(link => {
     link.addEventListener('click', () => push('language_change', {
       selected_language: link.getAttribute('lang'),
+      link_location: placement(link),
       source_url: location.href,
       destination_url: link.href
     }));
@@ -147,6 +160,23 @@
       link_location: placement(link)
     }));
   });
+
+  if (document.body.dataset.pageKind === 'link-in-bio') {
+    const campaignKeys = ['utm_source','utm_medium','utm_campaign','utm_id','utm_term','utm_content','gclid','dclid','gbraid','wbraid'];
+    const incoming = new URLSearchParams(location.search);
+    document.querySelectorAll('a[href^="/"]').forEach(link => {
+      const destination = new URL(link.href);
+      campaignKeys.forEach(key => { if (incoming.has(key) && !destination.searchParams.has(key)) destination.searchParams.set(key, incoming.get(key)); });
+      link.href = destination.href;
+    });
+    document.querySelectorAll('a[data-link-location]').forEach(link => {
+      if (/airbnb\.|ctrip\.com|trip\.com|line\.me/.test(link.href) || link.href.startsWith('mailto:') || link.hasAttribute('lang')) return;
+      link.addEventListener('click', () => push('bio_link_click', {
+        link_text: (link.querySelector('.t')?.textContent || link.textContent || '').trim().split('\n')[0],
+        destination_url: link.href, link_location: placement(link)
+      }));
+    });
+  }
 
   document.querySelectorAll('.menu-toggle').forEach(button => {
     button.addEventListener('click', () => {
@@ -205,7 +235,7 @@
     document.body.appendChild(box);
     const big = box.querySelector('img'), cap = box.querySelector('figcaption');
     let idx = 0, trigger = null;
-    const show = i => { idx = (i + gal.length) % gal.length; setPhoto(big, gal[idx].currentSrc || gal[idx].src, gal[idx].alt); cap.textContent = gal[idx].alt; };
+    const show = i => { idx = (i + gal.length) % gal.length; setPhoto(big, gal[idx].dataset.fullSrc || gal[idx].src, gal[idx].alt); cap.textContent = gal[idx].alt; };
     const open = i => { trigger = document.activeElement; show(i); openModal(box, trigger); };
     const close = () => closeModal(box);
     gal.forEach((img, i) => {

@@ -1,0 +1,200 @@
+{
+  "en": {
+    "sol": {
+      "title": "Sol · Photo gallery",
+      "images": [
+        "/images/sol/sol-3.webp",
+        "/images/sol/sol-7.webp",
+        "/images/sol/sol-8.webp",
+        "/images/sol/sol-9.webp",
+        "/images/sol/sol-6.webp",
+        "/images/sol/sol-4.webp",
+        "/images/sol/sol-5.webp",
+        "/images/sol/sol-10.webp",
+        "/images/sol/sol-bathroom.webp",
+        "/images/sol/sol-washbasin.webp",
+        "/images/sol/sol-sleeping-layout.webp",
+        "/images/sol/sol-kitchen-counter.webp"
+      ],
+      "alt": "Sol cabin photograph"
+    },
+    "zen": {
+      "title": "Zen · Photo gallery",
+      "images": [
+        "/images/zen/zen-9.webp",
+        "/images/zen/zen-7.webp",
+        "/images/zen/zen-10.webp",
+        "/images/zen/zen-11.webp",
+        "/images/zen/zen-3.webp",
+        "/images/zen/zen-8.webp",
+        "/images/zen/zen-6.webp",
+        "/images/zen/zen-2.webp",
+        "/images/zen/zen-bathroom.webp",
+        "/images/zen/zen-laundry.webp",
+        "/images/zen/zen-sleeping-layout.webp"
+      ],
+      "alt": "Zen cabin photograph"
+    },
+    "rustic": {
+      "title": "Rustic · Photo gallery",
+      "images": [
+        "/images/rustic/rustic-1.webp",
+        "/images/rustic/rustic-8.webp",
+        "/images/rustic/rustic-7.webp",
+        "/images/rustic/rustic-2.webp",
+        "/images/rustic/rustic-5.webp",
+        "/images/rustic/rustic-6.webp",
+        "/images/rustic/rustic-3.webp",
+        "/images/rustic/rustic-9.webp",
+        "/images/rustic/rustic-bathroom.webp",
+        "/images/rustic/rustic-laundry.webp",
+        "/images/rustic/rustic-sleeping-layout.webp"
+      ],
+      "alt": "Rustic cabin photograph"
+    },
+    "exterior": {
+      "title": "Kojohama · Property gallery",
+      "images": [
+        "/images/exterior/outside-2.webp",
+        "/images/exterior/outside-6.webp",
+        "/images/exterior/outside-7.webp",
+        "/images/exterior/outside-9.webp",
+        "/images/exterior/outside-hero-sunset.webp",
+        "/images/exterior/outside-arrival.webp"
+      ],
+      "alt": "Ocean Stay Kojohama property photograph"
+    }
+  },
+  "ja": {
+    "sol": {
+      "title": "Sol · 写真ギャラリー",
+      "images": [
+        "/images/sol/sol-3.webp",
+        "/images/sol/sol-7.webp",
+        "/images/sol/sol-8.webp",
+        "/images/sol/sol-9.webp",
+        "/images/sol/sol-6.webp",
+        "/images/sol/sol-4.webp",
+        "/images/sol/sol-5.webp",
+        "/images/sol/sol-10.webp",
+        "/images/sol/sol-bathroom.webp",
+        "/images/sol/sol-washbasin.webp",
+        "/images/sol/sol-sleeping-layout.webp",
+        "/images/sol/sol-kitchen-counter.webp"
+      ],
+      "alt": "Sol cabin photograph"
+    },
+    "zen": {
+      "title": "Zen · 写真ギャラリー",
+      "images": [
+        "/images/zen/zen-9.webp",
+        "/images/zen/zen-7.webp",
+        "/images/zen/zen-10.webp",
+        "/images/zen/zen-11.webp",
+        "/images/zen/zen-3.webp",
+        "/images/zen/zen-8.webp",
+        "/images/zen/zen-6.webp",
+        "/images/zen/zen-2.webp",
+        "/images/zen/zen-bathroom.webp",
+        "/images/zen/zen-laundry.webp",
+        "/images/zen/zen-sleeping-layout.webp"
+      ],
+      "alt": "Zen cabin photograph"
+    },
+    "rustic": {
+      "title": "Rustic · 写真ギャラリー",
+      "images": [
+        "/images/rustic/rustic-1.webp",
+        "/images/rustic/rustic-8.webp",
+        "/images/rustic/rustic-7.webp",
+        "/images/rustic/rustic-2.webp",
+        "/images/rustic/rustic-5.webp",
+        "/images/rustic/rustic-6.webp",
+        "/images/rustic/rustic-3.webp",
+        "/images/rustic/rustic-9.webp",
+        "/images/rustic/rustic-bathroom.webp",
+        "/images/rustic/rustic-laundry.webp",
+        "/images/rustic/rustic-sleeping-layout.webp"
+      ],
+      "alt": "Rustic cabin photograph"
+    },
+    "exterior": {
+      "title": "Kojohama · 施設の写真",
+      "images": [
+        "/images/exterior/outside-2.webp",
+        "/images/exterior/outside-6.webp",
+        "/images/exterior/outside-7.webp",
+        "/images/exterior/outside-9.webp",
+        "/images/exterior/outside-hero-sunset.webp",
+        "/images/exterior/outside-arrival.webp"
+      ],
+      "alt": "Ocean Stay Kojohama property photograph"
+    }
+  },
+  "zh-CN": {
+    "sol": {
+      "title": "Sol · 照片集",
+      "images": [
+        "/images/sol/sol-3.webp",
+        "/images/sol/sol-7.webp",
+        "/images/sol/sol-8.webp",
+        "/images/sol/sol-9.webp",
+        "/images/sol/sol-6.webp",
+        "/images/sol/sol-4.webp",
+        "/images/sol/sol-5.webp",
+        "/images/sol/sol-10.webp",
+        "/images/sol/sol-bathroom.webp",
+        "/images/sol/sol-washbasin.webp",
+        "/images/sol/sol-sleeping-layout.webp",
+        "/images/sol/sol-kitchen-counter.webp"
+      ],
+      "alt": "Sol cabin photograph"
+    },
+    "zen": {
+      "title": "Zen · 照片集",
+      "images": [
+        "/images/zen/zen-9.webp",
+        "/images/zen/zen-7.webp",
+        "/images/zen/zen-10.webp",
+        "/images/zen/zen-11.webp",
+        "/images/zen/zen-3.webp",
+        "/images/zen/zen-8.webp",
+        "/images/zen/zen-6.webp",
+        "/images/zen/zen-2.webp",
+        "/images/zen/zen-bathroom.webp",
+        "/images/zen/zen-laundry.webp",
+        "/images/zen/zen-sleeping-layout.webp"
+      ],
+      "alt": "Zen cabin photograph"
+    },
+    "rustic": {
+      "title": "Rustic · 照片集",
+      "images": [
+        "/images/rustic/rustic-1.webp",
+        "/images/rustic/rustic-8.webp",
+        "/images/rustic/rustic-7.webp",
+        "/images/rustic/rustic-2.webp",
+        "/images/rustic/rustic-5.webp",
+        "/images/rustic/rustic-6.webp",
+        "/images/rustic/rustic-3.webp",
+        "/images/rustic/rustic-9.webp",
+        "/images/rustic/rustic-bathroom.webp",
+        "/images/rustic/rustic-laundry.webp",
+        "/images/rustic/rustic-sleeping-layout.webp"
+      ],
+      "alt": "Rustic cabin photograph"
+    },
+    "exterior": {
+      "title": "Kojohama · 小屋外观照片",
+      "images": [
+        "/images/exterior/outside-2.webp",
+        "/images/exterior/outside-6.webp",
+        "/images/exterior/outside-7.webp",
+        "/images/exterior/outside-9.webp",
+        "/images/exterior/outside-hero-sunset.webp",
+        "/images/exterior/outside-arrival.webp"
+      ],
+      "alt": "Ocean Stay Kojohama property photograph"
+    }
+  }
+}

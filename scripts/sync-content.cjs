@@ -2,12 +2,16 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
+const assets = require('./assets.cjs');
+assets.restore();
+const layouts = require('./layouts.cjs');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const facts = json('data/site-facts.json');
 const directory = json('data/venues.json');
 const captions = json('data/gallery-captions.json');
+const galleries = json('data/home-galleries.json');
 const rate = facts.pricing.fromNightlyJPY.toLocaleString('en-US');
 const extra = facts.pricing.extraGuestJPY.toLocaleString('en-US');
 const baseGuests = facts.pricing.baseGuests;
@@ -47,17 +51,20 @@ for (const [lang, t] of Object.entries(locales)) {
    const links = [...local.links];
    if (v.hoursSource && !links.some(l => l.href === v.hoursSource)) links.push({href:v.hoursSource,label:t.map,kind:'official'});
    const searchText = Object.values(v.translations).map(l => l.name+' '+l.descriptionHtml.replace(/<[^>]+>/g,' ')).join(' ');
-   return `<li data-venue="${v.id}" data-search="${escape(searchText)}"${!local.photo ? ' class="near-no-photo"':''}>${photo}<div class="near-body"><strong>${escape(local.name)}</strong>${local.drive ? `<span class="near-min">${escape(local.drive)}</span>`:''}<p>${local.descriptionHtml}</p>${local.hours ? `<p class="near-hours">${escape(local.hours)}</p>`:''}<p class="place-actions">${links.map(l => `<a href="${escape(l.href)}" rel="noopener" target="_blank" data-link-location="area_directory" data-source-kind="${escape(l.kind)}">${escape(l.label)}</a>`).join(' · ')}</p></div></li>`;
+   const share = {en:'Link to this place',ja:'この施設へのリンク','zh-CN':'此地点链接'}[lang];
+   const review = v.hoursCheckedOn ? ({en:'Hours checked: ',ja:'営業時間の確認日：','zh-CN':'营业时间核实日期：'}[lang]+v.hoursCheckedOn) : {en:'Confirm current hours before visiting.',ja:'訪問前に最新の営業時間をご確認ください。','zh-CN':'到访前请确认最新营业时间。'}[lang];
+   return `<li id="${v.id}" data-venue="${v.id}" data-search="${escape(searchText)}"${!local.photo ? ' class="near-no-photo"':''}>${photo}<div class="near-body"><strong>${escape(local.name)}</strong>${local.drive ? `<span class="near-min">${escape(local.drive)}</span>`:''}<p>${local.descriptionHtml}</p>${local.hours ? `<p class="near-hours">${escape(local.hours)}</p><p class="near-reviewed">${escape(review)}</p>`:''}<p class="place-actions">${links.map(l => `<a href="${escape(l.href)}" rel="noopener" target="_blank" data-link-location="area_directory" data-source-kind="${escape(l.kind)}">${escape(l.label)}</a>`).join(' · ')} · <a class="place-permalink" href="#${v.id}" aria-label="${escape(share+' — '+local.name)}">${share}</a></p></div></li>`;
   }).join('\n');
   return `<details class="directory-category" id="${group.id}"><summary>${escape(group.title[lang])} <span class="directory-group-count">(${venues.length})</span></summary><ul class="near-list">${cards}</ul></details>`;
  }).join('\n');
  save(file, marked(read(file),'directory',nav+search+groups));
  const home = t.prefix+'index.html';
  let source = read(home);
- const metadata = `const galleryCaptions = ${JSON.stringify(captions[lang])};`;
- if (source.includes('<!-- gallery-captions:start -->')) source=marked(source,'gallery-captions',`<script>${metadata}</script>`);
+ const metadata = JSON.stringify(captions[lang]);
+ if (source.includes('<!-- gallery-captions:start -->')) source=marked(source,'gallery-captions',`<script id="gallery-captions" type="application/json">${metadata}</script>`);
  else source=source.replace(/<script>\s*const galleryData/,`<!-- gallery-captions:start --><script>${metadata}</script><!-- gallery-captions:end -->\n<script>\nconst galleryData`);
  source = source.replace(/title: '(Sol|Zen|Rustic) · Photo gallery'/g,(_,name)=>`title: '${name} · ${t.gallery}'`).replace(/title: 'Kojohama · Property gallery'/g,`title: 'Kojohama · ${t.property}'`);
+ source=marked(source,'gallery-data',`<script id="gallery-data" type="application/json">${JSON.stringify(galleries[lang])}</script>`);
  source = source.replace(/aria-label="Photo gallery" aria-modal/,`aria-label="${t.gallery}" aria-modal`)
   .replace(/aria-label="Close photo gallery" class="lightbox-close"/,`aria-label="${t.close}" class="lightbox-close"`)
   .replace(/aria-label="Previous photo" class="lightbox-nav/,`aria-label="${t.prev}" class="lightbox-nav`)
@@ -149,6 +156,7 @@ for (const absolute of walk(root)) {
   update(schema);
   return start+JSON.stringify(schema)+end;
  });
- save(file,source);
+ save(file,layouts.render(source,file,lang));
 }
+assets.build();
 console.log('Synchronized localized directory, photo captions and cabin comparison sections.');
