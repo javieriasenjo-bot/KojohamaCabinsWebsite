@@ -5,7 +5,7 @@ const crypto = require('node:crypto');
 const root = path.resolve(__dirname,'..');
 const manifestFile = path.join(root,'data/asset-manifest.json');
 const readManifest = () => fs.existsSync(manifestFile) ? JSON.parse(fs.readFileSync(manifestFile,'utf8')) : {images:[]};
-const walk = directory => fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry => {
+const walk = directory => fs.readdirSync(directory,{withFileTypes:true}).sort((a,b)=>a.name<b.name?-1:a.name>b.name?1:0).flatMap(entry => {
   if (['.git','.wrangler','node_modules','data','scripts','docs','media'].includes(entry.name)) return [];
   const file=path.join(directory,entry.name);
   return entry.isDirectory() ? walk(file) : /\.(html|css)$/.test(entry.name) ? [file] : [];
@@ -23,7 +23,7 @@ function restore() {
 function build() {
   const files=new Map(walk(root).filter(file=>path.basename(file)!=='googlefa3fab5b6b918158.html').map(file=>[file,fs.readFileSync(file,'utf8')]));
   const originals=[];
-  const scan=dir=>fs.readdirSync(dir,{withFileTypes:true}).forEach(entry=>{
+  const scan=dir=>fs.readdirSync(dir,{withFileTypes:true}).sort((a,b)=>a.name<b.name?-1:a.name>b.name?1:0).forEach(entry=>{
     const file=path.join(dir,entry.name);
     if(entry.isDirectory()) scan(file); else originals.push(file);
   });scan(path.join(root,'images'));

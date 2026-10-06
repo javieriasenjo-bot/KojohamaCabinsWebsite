@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "language": "en",
+      "mobileWidths": [
+        320,
+        390
+      ],
+      "directoryPhotos": 65,
+      "deepLinks": true,
+      "search": true,
+      "galleries": true,
+      "events": true
+    },
+    {
+      "language": "ja/",
+      "mobileWidths": [
+        320,
+        390
+      ],
+      "directoryPhotos": 65,
+      "deepLinks": true,
+      "search": true,
+      "galleries": true,
+      "events": true
+    },
+    {
+      "language": "zh-cn/",
+      "mobileWidths": [
+        320,
+        390
+      ],
+      "directoryPhotos": 65,
+      "deepLinks": true,
+      "search": true,
+      "galleries": true,
+      "events": true
+    }
+  ],
+  "noJavaScript": true,
+  "previewAnalyticsExcluded": true,
+  "productionGtmRequests": 1,
+  "noRealExternalRequestsSent": true
+}

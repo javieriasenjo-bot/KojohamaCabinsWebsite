@@ -110,7 +110,7 @@ for (const absolute of walk(root)) {
   return start+"if (['kojohamacabins.jp','www.kojohamacabins.jp'].includes(location.hostname)) {"+code+'}'+end;
  });
  const trip=travelCopy[lang];
- source=source.replace(/<a\b[^>]*href="https:\/\/www\.booking\.com\/reviews[^>]*>/g,tag=>{
+ source=source.replace(/<a\b[^>]*href="https:\/\/www\.booking\.com\/hotel\/jp\/ocean-stay\.html[^>]*>/g,tag=>{
   tag=tag.replace(/\sdata-(?:intent|link-location|cabin-name)="[^"]*"/g,'');
   return tag.replace(/>$/, ' data-intent="reviews" data-link-location="reviews" data-cabin-name="All cabins">');
  });
