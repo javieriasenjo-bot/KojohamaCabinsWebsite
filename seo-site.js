@@ -115,13 +115,21 @@
 
   document.querySelectorAll('a[href*="airbnb."]').forEach(link => {
     const isReview = link.dataset.linkLocation === 'reviews' || link.dataset.intent === 'reviews';
-    link.addEventListener('click', () => push(isReview ? 'review_click' : 'airbnb_click', {
-      intent: isReview ? 'reviews' : 'booking',
+    if(isReview) return;
+    link.addEventListener('click', () => push('airbnb_click', {
+      intent: 'booking',
       booking_platform: 'airbnb',
       cabin_name: cabinName(link),
       destination_url: link.href,
       page_language: document.documentElement.lang,
       link_location: placement(link)
+    }));
+  });
+
+  document.querySelectorAll('a[data-intent="reviews"], a[data-link-location="reviews"]').forEach(link => {
+    link.addEventListener('click', () => push('review_click', {
+      intent: 'reviews', booking_platform: link.href.includes('airbnb.') ? 'airbnb' : new URL(link.href).hostname.replace(/^www\./,''),
+      cabin_name: cabinName(link), destination_url: link.href, link_location: placement(link)
     }));
   });
 

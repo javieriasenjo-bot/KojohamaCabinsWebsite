@@ -1,0 +1,40 @@
+name: Website checks and venue review
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+permissions:
+  contents: read
+jobs:
+  website:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Generated pages must match the committed source
+        run: |
+          git diff --exit-code
+          test -z "$(git ls-files --others --exclude-standard)"
+      - run: npm run check
+      - run: npx playwright install --with-deps chromium
+      - run: npm run check:browser
+  venue-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/review-venues.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: venue-hours-review
+          path: docs/VENUE-REVIEW.csv

@@ -1,0 +1,13 @@
+{
+  "name": "kojohama-cabins-site",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/sync-content.cjs",
+    "check": "node scripts/check-site.cjs",
+    "check:browser": "node scripts/check-browser.cjs",
+    "review:venues": "node scripts/review-venues.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

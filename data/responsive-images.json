@@ -1,0 +1,202 @@
+{
+  "/images/exterior/outside-2.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/exterior/outside-2-480.webp 480w, /images/exterior/outside-2-960.webp 960w, /images/exterior/outside-2.webp 1600w"
+  },
+  "/images/exterior/outside-6.webp": {
+    "width": 1600,
+    "height": 1066,
+    "srcset": "/images/exterior/outside-6-480.webp 480w, /images/exterior/outside-6-960.webp 960w, /images/exterior/outside-6.webp 1600w"
+  },
+  "/images/exterior/outside-7.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/exterior/outside-7-480.webp 480w, /images/exterior/outside-7-960.webp 960w, /images/exterior/outside-7.webp 1600w"
+  },
+  "/images/exterior/outside-9.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/exterior/outside-9-480.webp 480w, /images/exterior/outside-9-960.webp 960w, /images/exterior/outside-9.webp 1600w"
+  },
+  "/images/exterior/outside-arrival.webp": {
+    "width": 1600,
+    "height": 967,
+    "srcset": "/images/exterior/outside-arrival-480.webp 480w, /images/exterior/outside-arrival-960.webp 960w, /images/exterior/outside-arrival.webp 1600w"
+  },
+  "/images/exterior/outside-hero-sunset.webp": {
+    "width": 1600,
+    "height": 1066,
+    "srcset": "/images/exterior/outside-hero-sunset-480.webp 480w, /images/exterior/outside-hero-sunset-960.webp 960w, /images/exterior/outside-hero-sunset.webp 1600w"
+  },
+  "/images/rustic/rustic-1.webp": {
+    "width": 1559,
+    "height": 1039,
+    "srcset": "/images/rustic/rustic-1-480.webp 480w, /images/rustic/rustic-1-960.webp 960w, /images/rustic/rustic-1.webp 1559w"
+  },
+  "/images/rustic/rustic-2.webp": {
+    "width": 1522,
+    "height": 1015,
+    "srcset": "/images/rustic/rustic-2-480.webp 480w, /images/rustic/rustic-2-960.webp 960w, /images/rustic/rustic-2.webp 1522w"
+  },
+  "/images/rustic/rustic-3.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/rustic/rustic-3-480.webp 480w, /images/rustic/rustic-3-960.webp 960w, /images/rustic/rustic-3.webp 1600w"
+  },
+  "/images/rustic/rustic-5.webp": {
+    "width": 1585,
+    "height": 1057,
+    "srcset": "/images/rustic/rustic-5-480.webp 480w, /images/rustic/rustic-5-960.webp 960w, /images/rustic/rustic-5.webp 1585w"
+  },
+  "/images/rustic/rustic-6.webp": {
+    "width": 1576,
+    "height": 1051,
+    "srcset": "/images/rustic/rustic-6-480.webp 480w, /images/rustic/rustic-6-960.webp 960w, /images/rustic/rustic-6.webp 1576w"
+  },
+  "/images/rustic/rustic-7.webp": {
+    "width": 1534,
+    "height": 1022,
+    "srcset": "/images/rustic/rustic-7-480.webp 480w, /images/rustic/rustic-7-960.webp 960w, /images/rustic/rustic-7.webp 1534w"
+  },
+  "/images/rustic/rustic-8.webp": {
+    "width": 1569,
+    "height": 1046,
+    "srcset": "/images/rustic/rustic-8-480.webp 480w, /images/rustic/rustic-8-960.webp 960w, /images/rustic/rustic-8.webp 1569w"
+  },
+  "/images/rustic/rustic-9.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/rustic/rustic-9-480.webp 480w, /images/rustic/rustic-9-960.webp 960w, /images/rustic/rustic-9.webp 1067w"
+  },
+  "/images/rustic/rustic-bathroom.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/rustic/rustic-bathroom-480.webp 480w, /images/rustic/rustic-bathroom-960.webp 960w, /images/rustic/rustic-bathroom.webp 1067w"
+  },
+  "/images/rustic/rustic-laundry.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/rustic/rustic-laundry-480.webp 480w, /images/rustic/rustic-laundry-960.webp 960w, /images/rustic/rustic-laundry.webp 1067w"
+  },
+  "/images/rustic/rustic-sleeping-layout.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/rustic/rustic-sleeping-layout-480.webp 480w, /images/rustic/rustic-sleeping-layout-960.webp 960w, /images/rustic/rustic-sleeping-layout.webp 1600w"
+  },
+  "/images/sol/sol-10.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/sol/sol-10-480.webp 480w, /images/sol/sol-10-960.webp 960w, /images/sol/sol-10.webp 1067w"
+  },
+  "/images/sol/sol-3.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/sol/sol-3-480.webp 480w, /images/sol/sol-3-960.webp 960w, /images/sol/sol-3.webp 1600w"
+  },
+  "/images/sol/sol-4.webp": {
+    "width": 1600,
+    "height": 1066,
+    "srcset": "/images/sol/sol-4-480.webp 480w, /images/sol/sol-4-960.webp 960w, /images/sol/sol-4.webp 1600w"
+  },
+  "/images/sol/sol-5.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/sol/sol-5-480.webp 480w, /images/sol/sol-5-960.webp 960w, /images/sol/sol-5.webp 1067w"
+  },
+  "/images/sol/sol-6.webp": {
+    "width": 1586,
+    "height": 1058,
+    "srcset": "/images/sol/sol-6-480.webp 480w, /images/sol/sol-6-960.webp 960w, /images/sol/sol-6.webp 1586w"
+  },
+  "/images/sol/sol-7.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/sol/sol-7-480.webp 480w, /images/sol/sol-7-960.webp 960w, /images/sol/sol-7.webp 1600w"
+  },
+  "/images/sol/sol-8.webp": {
+    "width": 1513,
+    "height": 1008,
+    "srcset": "/images/sol/sol-8-480.webp 480w, /images/sol/sol-8-960.webp 960w, /images/sol/sol-8.webp 1513w"
+  },
+  "/images/sol/sol-9.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/sol/sol-9-480.webp 480w, /images/sol/sol-9-960.webp 960w, /images/sol/sol-9.webp 1600w"
+  },
+  "/images/sol/sol-bathroom.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/sol/sol-bathroom-480.webp 480w, /images/sol/sol-bathroom-960.webp 960w, /images/sol/sol-bathroom.webp 1067w"
+  },
+  "/images/sol/sol-kitchen-counter.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/sol/sol-kitchen-counter-480.webp 480w, /images/sol/sol-kitchen-counter-960.webp 960w, /images/sol/sol-kitchen-counter.webp 1600w"
+  },
+  "/images/sol/sol-sleeping-layout.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/sol/sol-sleeping-layout-480.webp 480w, /images/sol/sol-sleeping-layout-960.webp 960w, /images/sol/sol-sleeping-layout.webp 1600w"
+  },
+  "/images/sol/sol-washbasin.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/sol/sol-washbasin-480.webp 480w, /images/sol/sol-washbasin-960.webp 960w, /images/sol/sol-washbasin.webp 1067w"
+  },
+  "/images/zen/zen-10.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/zen/zen-10-480.webp 480w, /images/zen/zen-10-960.webp 960w, /images/zen/zen-10.webp 1600w"
+  },
+  "/images/zen/zen-11.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/zen/zen-11-480.webp 480w, /images/zen/zen-11-960.webp 960w, /images/zen/zen-11.webp 1600w"
+  },
+  "/images/zen/zen-2.webp": {
+    "width": 1596,
+    "height": 1064,
+    "srcset": "/images/zen/zen-2-480.webp 480w, /images/zen/zen-2-960.webp 960w, /images/zen/zen-2.webp 1596w"
+  },
+  "/images/zen/zen-3.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/zen/zen-3-480.webp 480w, /images/zen/zen-3-960.webp 960w, /images/zen/zen-3.webp 1600w"
+  },
+  "/images/zen/zen-6.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/zen/zen-6-480.webp 480w, /images/zen/zen-6-960.webp 960w, /images/zen/zen-6.webp 1067w"
+  },
+  "/images/zen/zen-7.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/zen/zen-7-480.webp 480w, /images/zen/zen-7-960.webp 960w, /images/zen/zen-7.webp 1067w"
+  },
+  "/images/zen/zen-8.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/zen/zen-8-480.webp 480w, /images/zen/zen-8-960.webp 960w, /images/zen/zen-8.webp 1600w"
+  },
+  "/images/zen/zen-9.webp": {
+    "width": 1550,
+    "height": 1034,
+    "srcset": "/images/zen/zen-9-480.webp 480w, /images/zen/zen-9-960.webp 960w, /images/zen/zen-9.webp 1550w"
+  },
+  "/images/zen/zen-bathroom.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/zen/zen-bathroom-480.webp 480w, /images/zen/zen-bathroom-960.webp 960w, /images/zen/zen-bathroom.webp 1067w"
+  },
+  "/images/zen/zen-laundry.webp": {
+    "width": 1067,
+    "height": 1600,
+    "srcset": "/images/zen/zen-laundry-480.webp 480w, /images/zen/zen-laundry-960.webp 960w, /images/zen/zen-laundry.webp 1067w"
+  },
+  "/images/zen/zen-sleeping-layout.webp": {
+    "width": 1600,
+    "height": 1067,
+    "srcset": "/images/zen/zen-sleeping-layout-480.webp 480w, /images/zen/zen-sleeping-layout-960.webp 960w, /images/zen/zen-sleeping-layout.webp 1600w"
+  }
+}

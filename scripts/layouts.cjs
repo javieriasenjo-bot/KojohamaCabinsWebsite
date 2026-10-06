@@ -24,6 +24,7 @@ function render(source, file, lang) {
     return tag;
   });
   source = source.replace(/<header\b[^>]*>[\s\S]*?<\/header>/,header);
+  if(layouts[lang].sister) source=source.replace(/<section\b[^>]*class="sister wrap"[^>]*>[\s\S]*?<\/section>/,layouts[lang].sister);
   if (file !== 'go/index.html') source = source.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/,route ? layouts[lang].footer : layouts[lang].homeFooter);
   // Old inline and noscript loaders are deliberately removed; no local fallback.
   source = source.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, whole => whole.includes("})(window,document,'script','dataLayer'") ? '' : whole);

@@ -1,0 +1,1504 @@
+{
+  "images": [
+    {
+      "source": "/images/backgrounds/upopoy-cc0.webp",
+      "url": "/media/upopoy-cc0.88fc870b34c4.webp",
+      "sha256": "88fc870b34c4b33922659a045b1d94c743c91af5239a47accf98b9daf99383a0",
+      "bytes": 249280
+    },
+    {
+      "source": "/images/brand/favicon-32.png",
+      "url": "/media/favicon-32.c2f2ea8fbabe.png",
+      "sha256": "c2f2ea8fbabee336f136209233a72ce8c9caabe7cf5851fe4c5fb57d85cc1ec0",
+      "bytes": 1350
+    },
+    {
+      "source": "/images/exterior/outside-2-480.webp",
+      "url": "/media/outside-2-480.20ca799abafa.webp",
+      "sha256": "20ca799abafa56abe6e07d82d303d238a8622ef63d4b7715ab6aaa8080458768",
+      "bytes": 9966
+    },
+    {
+      "source": "/images/exterior/outside-2-960.webp",
+      "url": "/media/outside-2-960.1f70a309abd2.webp",
+      "sha256": "1f70a309abd261b4ee3f080a02f64954ef14aa1a410ba618c43a3a60fb49ce2d",
+      "bytes": 31770
+    },
+    {
+      "source": "/images/exterior/outside-2.webp",
+      "url": "/media/outside-2.84f87c864be4.webp",
+      "sha256": "84f87c864be485d77edff0ae56fa486311acf943ee8cd0f9325eb52747b22e10",
+      "bytes": 74796
+    },
+    {
+      "source": "/images/exterior/outside-6-480.webp",
+      "url": "/media/outside-6-480.2468509c493d.webp",
+      "sha256": "2468509c493d904bd35cd68ec43f19a1016d7f9b247c6fd24349b73c496447f4",
+      "bytes": 14682
+    },
+    {
+      "source": "/images/exterior/outside-6-960.webp",
+      "url": "/media/outside-6-960.037d61dbc1e7.webp",
+      "sha256": "037d61dbc1e75d543ae7abf09e03d4948b4546862007924888ff94d24938582b",
+      "bytes": 45784
+    },
+    {
+      "source": "/images/exterior/outside-6.webp",
+      "url": "/media/outside-6.b869e166f107.webp",
+      "sha256": "b869e166f10716ff9a68e448a061d3b3256a1c544a9afeffb738ef793830872d",
+      "bytes": 109794
+    },
+    {
+      "source": "/images/exterior/outside-7-480.webp",
+      "url": "/media/outside-7-480.fd22cec5336a.webp",
+      "sha256": "fd22cec5336ae6d6af960df8516513d199afb63a9d325f3a5b84bf1be57d69ef",
+      "bytes": 22596
+    },
+    {
+      "source": "/images/exterior/outside-7-960.webp",
+      "url": "/media/outside-7-960.78de52b7bb49.webp",
+      "sha256": "78de52b7bb4999816be846115ab2866fae44fa03ec3166b36310368c34a2ad83",
+      "bytes": 72370
+    },
+    {
+      "source": "/images/exterior/outside-7.webp",
+      "url": "/media/outside-7.17ef0091fb81.webp",
+      "sha256": "17ef0091fb816be2c0dc4cb0b361abca680b74835fb58f4bacacf650b9e301f6",
+      "bytes": 166292
+    },
+    {
+      "source": "/images/exterior/outside-9-480.webp",
+      "url": "/media/outside-9-480.4f62fd5cb849.webp",
+      "sha256": "4f62fd5cb849788bb5226b84dd58d876b116dcdfe0ba5e80dbf5ca8243fe4d13",
+      "bytes": 15510
+    },
+    {
+      "source": "/images/exterior/outside-9-960.webp",
+      "url": "/media/outside-9-960.5fc8694da49f.webp",
+      "sha256": "5fc8694da49f6e49b8338956c78b58d989855bd3485c4a23f8a51a938d3c2937",
+      "bytes": 41364
+    },
+    {
+      "source": "/images/exterior/outside-9.webp",
+      "url": "/media/outside-9.8ee3127b4029.webp",
+      "sha256": "8ee3127b4029f895bc7a976c1ca2b61c3be7fe474f6ddafd5e7403099c0200f1",
+      "bytes": 86644
+    },
+    {
+      "source": "/images/exterior/outside-arrival.webp",
+      "url": "/media/outside-arrival.7ae903d7ff9d.webp",
+      "sha256": "7ae903d7ff9df79e1b2b54baa56fb74597b2831d1ccc9ccf135c9bc6e703f73c",
+      "bytes": 191868
+    },
+    {
+      "source": "/images/exterior/outside-hero-sunset-480.webp",
+      "url": "/media/outside-hero-sunset-480.91ff7b9ce771.webp",
+      "sha256": "91ff7b9ce77163a6f42c6b8ffac9f362e376c19eddb63acdbd7857b0c10b8a2f",
+      "bytes": 14688
+    },
+    {
+      "source": "/images/exterior/outside-hero-sunset-800.webp",
+      "url": "/media/outside-hero-sunset-800.89c84666ac23.webp",
+      "sha256": "89c84666ac232bffc81ff118da57e42528e1af9f75ae02867b1df076dac6cf06",
+      "bytes": 31588
+    },
+    {
+      "source": "/images/exterior/outside-hero-sunset-960.webp",
+      "url": "/media/outside-hero-sunset-960.34e54fd2c71a.webp",
+      "sha256": "34e54fd2c71af6439510d1b7f269ae8831ada58dd4e2f70802da8242695af13a",
+      "bytes": 46670
+    },
+    {
+      "source": "/images/exterior/outside-hero-sunset.webp",
+      "url": "/media/outside-hero-sunset.8f07fd949c11.webp",
+      "sha256": "8f07fd949c11488224b753941e3e41ae90de80f0724d4a69973abf0a9bad71b7",
+      "bytes": 136118
+    },
+    {
+      "source": "/images/guide/hotel-furukawa.webp",
+      "url": "/media/hotel-furukawa.3c04fbfeddf5.webp",
+      "sha256": "3c04fbfeddf5754ab0d80b6bf8403cf75c2a8068183f70456b69801f22d23f36",
+      "bytes": 11180
+    },
+    {
+      "source": "/images/guide/kojohama-cafe.webp",
+      "url": "/media/kojohama-cafe.ab21e243eee1.webp",
+      "sha256": "ab21e243eee16f6e8748f6bd69a5dc59302d1244abba3c57703afec6a31c9170",
+      "bytes": 18754
+    },
+    {
+      "source": "/images/guide/kojohama-onsen-hotel.webp",
+      "url": "/media/kojohama-onsen-hotel.fb26baa9317b.webp",
+      "sha256": "fb26baa9317b10e715ea69f595be69916fe02ab02d44cb63bc8b86681bb59733",
+      "bytes": 6484
+    },
+    {
+      "source": "/images/guide/nachu-no-mori.webp",
+      "url": "/media/nachu-no-mori.8cc6ac3e1345.webp",
+      "sha256": "8cc6ac3e13450d677a8a50516bceb5123b42c22d7579088a430c403b4de852f6",
+      "bytes": 22792
+    },
+    {
+      "source": "/images/guide/nixe-castle.webp",
+      "url": "/media/nixe-castle.227a9f86d015.webp",
+      "sha256": "227a9f86d0155061f141bc75dba71ee7596ee36725414d09762f63b8529bfe53",
+      "bytes": 13110
+    },
+    {
+      "source": "/images/guide/noboribetsu-red-oni.webp",
+      "url": "/media/noboribetsu-red-oni.568413c134e6.webp",
+      "sha256": "568413c134e6ab0a27ec02adf30334f6c93c26a4eb324c9136d063addc609c9a",
+      "bytes": 23674
+    },
+    {
+      "source": "/images/places/venue-02-640.webp",
+      "url": "/media/venue-02-640.4a66b6fa8f2b.webp",
+      "sha256": "4a66b6fa8f2b095333abad6a1532524ef3cd5b35a36c3c4a2f25c0fe11c9c12f",
+      "bytes": 30412
+    },
+    {
+      "source": "/images/places/venue-02.webp",
+      "url": "/media/venue-02.dd0cb1100234.webp",
+      "sha256": "dd0cb1100234cfce89ebc188f242855184b9c313c9db2f849c9223c2c6c8cf9a",
+      "bytes": 91204
+    },
+    {
+      "source": "/images/places/venue-03-640.webp",
+      "url": "/media/venue-03-640.3f0685b20160.webp",
+      "sha256": "3f0685b2016030bbd2d5158db20c36dcd8157be614101368e915e6d6b3281997",
+      "bytes": 37632
+    },
+    {
+      "source": "/images/places/venue-03.webp",
+      "url": "/media/venue-03.cbe5d7eef4e1.webp",
+      "sha256": "cbe5d7eef4e15fbda430f0b088ee9cc911a7d9a4a7b29f6fab9bf1948896038a",
+      "bytes": 147086
+    },
+    {
+      "source": "/images/places/venue-04-640.webp",
+      "url": "/media/venue-04-640.cd8226d16b8c.webp",
+      "sha256": "cd8226d16b8c7bdd19036c035e8ed19d64ef7f2d05ab1493dcc1fec895462541",
+      "bytes": 87266
+    },
+    {
+      "source": "/images/places/venue-04.webp",
+      "url": "/media/venue-04.8b033198a742.webp",
+      "sha256": "8b033198a7420f414d78cc71908b88246ec5f9473ee099cd8d82180e0985615d",
+      "bytes": 258222
+    },
+    {
+      "source": "/images/places/venue-05-640.webp",
+      "url": "/media/venue-05-640.90b6fb7476ba.webp",
+      "sha256": "90b6fb7476ba1e95cb83d5fee67a817e0f0c7e5d735273622e7a5a59753f055c",
+      "bytes": 41136
+    },
+    {
+      "source": "/images/places/venue-05.webp",
+      "url": "/media/venue-05.8fdc8ceab56a.webp",
+      "sha256": "8fdc8ceab56ad70c7d59bcb747b79755e0eebcbbdddd065403fc84da6e7a3e60",
+      "bytes": 134580
+    },
+    {
+      "source": "/images/places/venue-06-640.webp",
+      "url": "/media/venue-06-640.8b2be512794a.webp",
+      "sha256": "8b2be512794abf1e24cba6b678e48752533f2a12eeb6ffb41e80c7ce51f34c95",
+      "bytes": 25270
+    },
+    {
+      "source": "/images/places/venue-06.webp",
+      "url": "/media/venue-06.100907857c24.webp",
+      "sha256": "100907857c24e3cd3bc26bf44a976231b15f5b4d434c5eeea45b2fc7cc9ac253",
+      "bytes": 70316
+    },
+    {
+      "source": "/images/places/venue-07-640.webp",
+      "url": "/media/venue-07-640.ce6b34c3d307.webp",
+      "sha256": "ce6b34c3d3074fd87900dc5a87d05d73d7d17c4360b06bd7f923ae0c86c1e455",
+      "bytes": 31348
+    },
+    {
+      "source": "/images/places/venue-07.webp",
+      "url": "/media/venue-07.4a9ce4260271.webp",
+      "sha256": "4a9ce42602718ee28a91837b3224802c2e6d34c62e6907fc1226d78f1911f8a5",
+      "bytes": 106338
+    },
+    {
+      "source": "/images/places/venue-08-640.webp",
+      "url": "/media/venue-08-640.c1122002be85.webp",
+      "sha256": "c1122002be85b7259cb6c500e09ec0cebad40fba3ad6e9cca0bd98c3470e2e38",
+      "bytes": 47222
+    },
+    {
+      "source": "/images/places/venue-08.webp",
+      "url": "/media/venue-08.6d45132855ba.webp",
+      "sha256": "6d45132855bafb9bdec46639032a3002f6159fe6c73be1734a04c851076d1e5e",
+      "bytes": 147120
+    },
+    {
+      "source": "/images/places/venue-09.webp",
+      "url": "/media/venue-09.dfa4b1c3d72d.webp",
+      "sha256": "dfa4b1c3d72d148510c4960971c391cea1dc956e5620a5417ae4d4f4256a8bbc",
+      "bytes": 98566
+    },
+    {
+      "source": "/images/places/venue-10-640.webp",
+      "url": "/media/venue-10-640.19c66355b5c1.webp",
+      "sha256": "19c66355b5c147f175f3befdd9a17725e8414e375e82b85ef8d67be4dc65fa45",
+      "bytes": 47680
+    },
+    {
+      "source": "/images/places/venue-10.webp",
+      "url": "/media/venue-10.2b40b9fd1567.webp",
+      "sha256": "2b40b9fd15675b896ecc18c460f3439a98bcc00e114cbc9e501f49bc34827fbb",
+      "bytes": 166328
+    },
+    {
+      "source": "/images/places/venue-11-640.webp",
+      "url": "/media/venue-11-640.7505848de70b.webp",
+      "sha256": "7505848de70bc44f9746aa449b32cbcfb72a196b6cede6715ab5e0314cfdf27b",
+      "bytes": 52368
+    },
+    {
+      "source": "/images/places/venue-11.webp",
+      "url": "/media/venue-11.ca38c0f72ad5.webp",
+      "sha256": "ca38c0f72ad56242105b46967b163b41993e9a0986134ddf193114416f90cd69",
+      "bytes": 149830
+    },
+    {
+      "source": "/images/places/venue-12-640.webp",
+      "url": "/media/venue-12-640.c075cdb95c44.webp",
+      "sha256": "c075cdb95c445b9221a3c4871fcb1197a094b329e198cb85d1ca78105f01dd1e",
+      "bytes": 49562
+    },
+    {
+      "source": "/images/places/venue-12.webp",
+      "url": "/media/venue-12.2e6906a207d0.webp",
+      "sha256": "2e6906a207d002b98e9734ae015430543243506746750117a06c3bfb24adaf67",
+      "bytes": 159672
+    },
+    {
+      "source": "/images/places/venue-13-640.webp",
+      "url": "/media/venue-13-640.20c9540d1fa6.webp",
+      "sha256": "20c9540d1fa61538a4d24c43a1cdad80331ef85a9dd88c002d90f70b1b3f3b8a",
+      "bytes": 46948
+    },
+    {
+      "source": "/images/places/venue-13.webp",
+      "url": "/media/venue-13.98378e970540.webp",
+      "sha256": "98378e970540cfdc72978a45f70fc4a3706aab6a3f7a7ac6ccd6100045c9b40c",
+      "bytes": 116694
+    },
+    {
+      "source": "/images/places/venue-14.webp",
+      "url": "/media/venue-14.412fb14d2b4c.webp",
+      "sha256": "412fb14d2b4cbb5a09caf6394ca6e83d1f5b4cf213caa579f0ed7a76789c829f",
+      "bytes": 137034
+    },
+    {
+      "source": "/images/places/venue-16-640.webp",
+      "url": "/media/venue-16-640.03c817c07c0d.webp",
+      "sha256": "03c817c07c0dd9698c8a6f14bdae630506cb9a12eb9e9a3817eeadd1288b792a",
+      "bytes": 25652
+    },
+    {
+      "source": "/images/places/venue-16.webp",
+      "url": "/media/venue-16.e0fc3a2c3af2.webp",
+      "sha256": "e0fc3a2c3af236fc1a391137983d1c1ec03826ef73a783dd799748404f030173",
+      "bytes": 59760
+    },
+    {
+      "source": "/images/places/venue-17.webp",
+      "url": "/media/venue-17.8aca758dbac9.webp",
+      "sha256": "8aca758dbac9a4d7b2dce972a06ae5a6b22a776cb950b9f3a0e91c56d0d8fa2a",
+      "bytes": 133102
+    },
+    {
+      "source": "/images/places/venue-18-640.webp",
+      "url": "/media/venue-18-640.0592a8529283.webp",
+      "sha256": "0592a8529283e654a398b813cec3340c17a9df0f60bf4236578402c1516a751f",
+      "bytes": 33884
+    },
+    {
+      "source": "/images/places/venue-18.webp",
+      "url": "/media/venue-18.4254d05e7d48.webp",
+      "sha256": "4254d05e7d48b6da774d2b680ea3a976e9b8491301924b500fe141b6549003fc",
+      "bytes": 95708
+    },
+    {
+      "source": "/images/places/venue-19-640.webp",
+      "url": "/media/venue-19-640.1d6771aa6cc0.webp",
+      "sha256": "1d6771aa6cc06895fb46a8d7ed1485363c1925aeaad51e0fcf224df51c8902bd",
+      "bytes": 38084
+    },
+    {
+      "source": "/images/places/venue-19.webp",
+      "url": "/media/venue-19.559baeeac6b4.webp",
+      "sha256": "559baeeac6b48afb40a3d90faab2443ae2bb412746d60c9c0cd20f03d04b074a",
+      "bytes": 124972
+    },
+    {
+      "source": "/images/places/venue-20-640.webp",
+      "url": "/media/venue-20-640.190b9819e5b1.webp",
+      "sha256": "190b9819e5b17612b2f85f44ec18bc01717506512d9832588b762cc01dfd5445",
+      "bytes": 55774
+    },
+    {
+      "source": "/images/places/venue-20.webp",
+      "url": "/media/venue-20.a4cf23fcccb2.webp",
+      "sha256": "a4cf23fcccb2c4b7f40f825bba3445ec007ae2e5f76422f3640b68e8d96dacb3",
+      "bytes": 181196
+    },
+    {
+      "source": "/images/places/venue-21-640.webp",
+      "url": "/media/venue-21-640.ac5cb792576c.webp",
+      "sha256": "ac5cb792576cbe385b54762bbea25d817e0c85bc58fbebb1ed9798cd645ee592",
+      "bytes": 46828
+    },
+    {
+      "source": "/images/places/venue-21.webp",
+      "url": "/media/venue-21.d0db72453d8a.webp",
+      "sha256": "d0db72453d8aa89923c2575b19752e87fb26b1a06d35fce34bab8431c3d39cd0",
+      "bytes": 152364
+    },
+    {
+      "source": "/images/places/venue-22-640.webp",
+      "url": "/media/venue-22-640.4a66b6fa8f2b.webp",
+      "sha256": "4a66b6fa8f2b095333abad6a1532524ef3cd5b35a36c3c4a2f25c0fe11c9c12f",
+      "bytes": 30412
+    },
+    {
+      "source": "/images/places/venue-22.webp",
+      "url": "/media/venue-22.dd0cb1100234.webp",
+      "sha256": "dd0cb1100234cfce89ebc188f242855184b9c313c9db2f849c9223c2c6c8cf9a",
+      "bytes": 91204
+    },
+    {
+      "source": "/images/places/venue-23.webp",
+      "url": "/media/venue-23.c08f618672ba.webp",
+      "sha256": "c08f618672bab711670f1f332046d52b20f898cafebec5b7fee287470af0ae5d",
+      "bytes": 57150
+    },
+    {
+      "source": "/images/places/venue-24.webp",
+      "url": "/media/venue-24.7f40241d53c1.webp",
+      "sha256": "7f40241d53c17546007abbda6009a5137b6de5259523103fe55b8c2b69366704",
+      "bytes": 98948
+    },
+    {
+      "source": "/images/places/venue-25-640.webp",
+      "url": "/media/venue-25-640.90380818b3f4.webp",
+      "sha256": "90380818b3f48cb2bc8b6b728c981440e385f93941a0fe403cf5a6edf39e24f9",
+      "bytes": 31538
+    },
+    {
+      "source": "/images/places/venue-25.webp",
+      "url": "/media/venue-25.493a91c608e1.webp",
+      "sha256": "493a91c608e1225d00ef971f07344631506e7a59a95ffa91c950369190693bb3",
+      "bytes": 103988
+    },
+    {
+      "source": "/images/places/venue-26-640.webp",
+      "url": "/media/venue-26-640.199f3fdcf441.webp",
+      "sha256": "199f3fdcf441ee36cd5e2c12cdd2c5317c470e09dfaca505514538fc6aac39f4",
+      "bytes": 51322
+    },
+    {
+      "source": "/images/places/venue-26.webp",
+      "url": "/media/venue-26.027a0ee314cc.webp",
+      "sha256": "027a0ee314cc0f852d806af06b241d21cb9a6e4f0c94e38c629a29f87b545992",
+      "bytes": 98492
+    },
+    {
+      "source": "/images/places/venue-27-640.webp",
+      "url": "/media/venue-27-640.1d58247fe7aa.webp",
+      "sha256": "1d58247fe7aa1c2439c8112fd08bdaada013c575916941d66ebc5e6a633ff3bb",
+      "bytes": 49404
+    },
+    {
+      "source": "/images/places/venue-27.webp",
+      "url": "/media/venue-27.d0a3f20ff24b.webp",
+      "sha256": "d0a3f20ff24b38c0e6dafb8ee6d4d5f6d44e17d8ccc7d96a075ba8eb88e93a63",
+      "bytes": 151722
+    },
+    {
+      "source": "/images/places/venue-28-640.webp",
+      "url": "/media/venue-28-640.297bf249bb44.webp",
+      "sha256": "297bf249bb4444941c0b035c4386c0fcfeeedbe8fcd90c6cbc69162e4e10978b",
+      "bytes": 41606
+    },
+    {
+      "source": "/images/places/venue-28.webp",
+      "url": "/media/venue-28.c67be54598c0.webp",
+      "sha256": "c67be54598c01b1eaa0ec71f2a8885e335fefe7fbf486e6ccfecd83f0e01c708",
+      "bytes": 149980
+    },
+    {
+      "source": "/images/places/venue-31.webp",
+      "url": "/media/venue-31.8c81e8176879.webp",
+      "sha256": "8c81e81768794b0d8f3f4c3fe1882f1d3b54f81c1bfabfea741288230280a9ba",
+      "bytes": 179062
+    },
+    {
+      "source": "/images/places/venue-33-640.webp",
+      "url": "/media/venue-33-640.484f25cb102d.webp",
+      "sha256": "484f25cb102d17fd99ce96b6f407ec177ade1987edd0c4fc4656572b4cd6c313",
+      "bytes": 62832
+    },
+    {
+      "source": "/images/places/venue-33.webp",
+      "url": "/media/venue-33.24925dd3874f.webp",
+      "sha256": "24925dd3874f78031ae7f9433db94e7a52ebe5a4cc06d6a9d59de39e89d03c41",
+      "bytes": 195042
+    },
+    {
+      "source": "/images/places/venue-34-640.webp",
+      "url": "/media/venue-34-640.216c0e9203ee.webp",
+      "sha256": "216c0e9203eef6b129a3442dde15ebbdf2e5cd7bde205a310241dffd403d4fc1",
+      "bytes": 39176
+    },
+    {
+      "source": "/images/places/venue-34.webp",
+      "url": "/media/venue-34.7b4dea3840a7.webp",
+      "sha256": "7b4dea3840a7ed8d4162aa4a1f639a9f7e99a7155eed27979bb896e856c2cff1",
+      "bytes": 141124
+    },
+    {
+      "source": "/images/places/venue-35-640.webp",
+      "url": "/media/venue-35-640.0f3c78e539cf.webp",
+      "sha256": "0f3c78e539cfb52188afc0d7887091bca6bd7ec34c9665be9c63a2341fd8c280",
+      "bytes": 56906
+    },
+    {
+      "source": "/images/places/venue-35.webp",
+      "url": "/media/venue-35.a6030ece2665.webp",
+      "sha256": "a6030ece266576ab59ccca90c6456640e534376d259bca9791b8296c08c61270",
+      "bytes": 200034
+    },
+    {
+      "source": "/images/places/venue-36-640.webp",
+      "url": "/media/venue-36-640.52797cf059ba.webp",
+      "sha256": "52797cf059ba7304cdbabd6fbf9639db6110ee8347b364abd61ff5010930c30d",
+      "bytes": 69574
+    },
+    {
+      "source": "/images/places/venue-36.webp",
+      "url": "/media/venue-36.975976402da7.webp",
+      "sha256": "975976402da765b9a3cc6c233c666418fd7164151aa228ce63afa23eefa444cc",
+      "bytes": 249800
+    },
+    {
+      "source": "/images/places/venue-37-640.webp",
+      "url": "/media/venue-37-640.f49ec22f22cf.webp",
+      "sha256": "f49ec22f22cf96a48850829a439c4781ce406b503d6c91bd80ceb44a4c8f6618",
+      "bytes": 41356
+    },
+    {
+      "source": "/images/places/venue-37.webp",
+      "url": "/media/venue-37.59c75112ed87.webp",
+      "sha256": "59c75112ed8755603aac0710c51b368f0be49f7e36d80b1e99d993a15aee1c66",
+      "bytes": 135696
+    },
+    {
+      "source": "/images/places/venue-38-640.webp",
+      "url": "/media/venue-38-640.a7e9622bb9f1.webp",
+      "sha256": "a7e9622bb9f11a633a8ee99856eb47e9a19f27690e1ab3f0591a88b1eee489b8",
+      "bytes": 71516
+    },
+    {
+      "source": "/images/places/venue-38.webp",
+      "url": "/media/venue-38.8ba98714b50d.webp",
+      "sha256": "8ba98714b50d0bdf6cce5b90a9149ba5fab238e19c2053664ec9d8c679f312fc",
+      "bytes": 242608
+    },
+    {
+      "source": "/images/places/venue-39-640.webp",
+      "url": "/media/venue-39-640.07bd687f14d8.webp",
+      "sha256": "07bd687f14d858bcf69e8376afe85ff3cbbb0048a90f8eed0156490581a8d36c",
+      "bytes": 37950
+    },
+    {
+      "source": "/images/places/venue-39.webp",
+      "url": "/media/venue-39.732344e6203c.webp",
+      "sha256": "732344e6203c336333dbf98482d6796e8626716c0b96f829a4ce0dde7c4f51e7",
+      "bytes": 109672
+    },
+    {
+      "source": "/images/places/venue-40-640.webp",
+      "url": "/media/venue-40-640.6e3df2202d62.webp",
+      "sha256": "6e3df2202d6262aa996a4cfabfea25b353821297982956016c437674ae085dcd",
+      "bytes": 31148
+    },
+    {
+      "source": "/images/places/venue-40.webp",
+      "url": "/media/venue-40.08f2ac44eba6.webp",
+      "sha256": "08f2ac44eba62df12b2b4d23c8454dd27790e7023b4fcd049a61d9cc72c19222",
+      "bytes": 107686
+    },
+    {
+      "source": "/images/places/venue-41-640.webp",
+      "url": "/media/venue-41-640.3f4badd5a192.webp",
+      "sha256": "3f4badd5a192fb252de0c38d89b4f8d98d0d509a822bd883acc7ac727324f63a",
+      "bytes": 45146
+    },
+    {
+      "source": "/images/places/venue-41.webp",
+      "url": "/media/venue-41.914879f126cf.webp",
+      "sha256": "914879f126cf402e84310b7cf5e5b12eb773e7c53ebe8c73872d0441e605443f",
+      "bytes": 173476
+    },
+    {
+      "source": "/images/places/venue-42-640.webp",
+      "url": "/media/venue-42-640.29c4791f963b.webp",
+      "sha256": "29c4791f963ba9dcb09cead89186ecae536152f090edb8e596c8dcba2893d5d7",
+      "bytes": 43458
+    },
+    {
+      "source": "/images/places/venue-42.webp",
+      "url": "/media/venue-42.52e6a8bdef58.webp",
+      "sha256": "52e6a8bdef58f5a99314f9ef23e5feb421c765b18e0067ca1619d1eb653c6028",
+      "bytes": 160268
+    },
+    {
+      "source": "/images/places/venue-43.webp",
+      "url": "/media/venue-43.0881d9989bcd.webp",
+      "sha256": "0881d9989bcd9f6979304e928cae66131d9b3b14c40706730cabb47dae009408",
+      "bytes": 89894
+    },
+    {
+      "source": "/images/places/venue-44-640.webp",
+      "url": "/media/venue-44-640.8970cc15c977.webp",
+      "sha256": "8970cc15c97720a108135507426e01c285d0f0a065a6b1bbb1fec80d8a480168",
+      "bytes": 73816
+    },
+    {
+      "source": "/images/places/venue-44.webp",
+      "url": "/media/venue-44.0b65903019ec.webp",
+      "sha256": "0b65903019ecfc3bc883cb982fe0f642affc007a4bfd03c63c50bc7fa66752e8",
+      "bytes": 264154
+    },
+    {
+      "source": "/images/places/venue-46-640.webp",
+      "url": "/media/venue-46-640.e4ef8e068cf5.webp",
+      "sha256": "e4ef8e068cf5cd6cec850ffb591b9222bc32d11e85ec30cd82551d618588b906",
+      "bytes": 33688
+    },
+    {
+      "source": "/images/places/venue-46.webp",
+      "url": "/media/venue-46.73b356a636f8.webp",
+      "sha256": "73b356a636f80e4886dac0f32e514a7d366d10d119f04dc4289e9b11d27917b6",
+      "bytes": 113170
+    },
+    {
+      "source": "/images/places/venue-47-640.webp",
+      "url": "/media/venue-47-640.a1a6f1147018.webp",
+      "sha256": "a1a6f1147018b4c6f633ce4aee8022e9f73c7ee38c03b765971e1576626c36b4",
+      "bytes": 16052
+    },
+    {
+      "source": "/images/places/venue-47.webp",
+      "url": "/media/venue-47.108b285f39d1.webp",
+      "sha256": "108b285f39d165fa35866694930a1ce6101b0e66810ac737c4c35113fdcfb482",
+      "bytes": 54762
+    },
+    {
+      "source": "/images/places/venue-48-640.webp",
+      "url": "/media/venue-48-640.409699b4ae18.webp",
+      "sha256": "409699b4ae18b6f20f286b9a477e9059ae076c0e4d3b01571241fa2ff15d9cf7",
+      "bytes": 55738
+    },
+    {
+      "source": "/images/places/venue-48.webp",
+      "url": "/media/venue-48.056e45faea22.webp",
+      "sha256": "056e45faea22a02a8e7531617b3d4ae635ad3421979266ffbfb15099c714da34",
+      "bytes": 186540
+    },
+    {
+      "source": "/images/places/venue-49.webp",
+      "url": "/media/venue-49.b08d938631a5.webp",
+      "sha256": "b08d938631a542400fc4cc74aa94875a18ed2efeeeb14cfc9ff1728fa293e1e8",
+      "bytes": 50890
+    },
+    {
+      "source": "/images/places/venue-50-640.webp",
+      "url": "/media/venue-50-640.73aee3309cdd.webp",
+      "sha256": "73aee3309cdd0faa23633b56714280ddf81736e8d38828d76d47d62f45daf7ef",
+      "bytes": 45450
+    },
+    {
+      "source": "/images/places/venue-50.webp",
+      "url": "/media/venue-50.507e78177bb6.webp",
+      "sha256": "507e78177bb6f4fc699bf8b509d70d8806ebe0e6e4104e28d3a17e3764880ee6",
+      "bytes": 145190
+    },
+    {
+      "source": "/images/places/venue-51-640.webp",
+      "url": "/media/venue-51-640.5def28ea371f.webp",
+      "sha256": "5def28ea371f6c55fe0efb578e205e3a7def58ed441e3d5542acc0a21d99c07a",
+      "bytes": 35436
+    },
+    {
+      "source": "/images/places/venue-51.webp",
+      "url": "/media/venue-51.13ee5635ba9c.webp",
+      "sha256": "13ee5635ba9c81276ff002e327e4483adee0d2ee2a38accfd1d9540b8611fb0f",
+      "bytes": 94078
+    },
+    {
+      "source": "/images/places/venue-52-640.webp",
+      "url": "/media/venue-52-640.b165c2c90bba.webp",
+      "sha256": "b165c2c90bbae6baa0c6d81a951fe6ec1daa5a75dc966a40065b86028dbcbbdc",
+      "bytes": 44006
+    },
+    {
+      "source": "/images/places/venue-52.webp",
+      "url": "/media/venue-52.deb89479e835.webp",
+      "sha256": "deb89479e83590a21428551a34f90cc3d71b8e14354c16fbaac00d2ebeaffc2c",
+      "bytes": 153950
+    },
+    {
+      "source": "/images/places/venue-53-640.webp",
+      "url": "/media/venue-53-640.c20c07580922.webp",
+      "sha256": "c20c07580922b7f954cab3d46553d3c27a7631c23339d2ab32c7c6e6e0f322a9",
+      "bytes": 34580
+    },
+    {
+      "source": "/images/places/venue-53.webp",
+      "url": "/media/venue-53.0dbaac3f394c.webp",
+      "sha256": "0dbaac3f394c08119e5d50a80dc56099ff189bfcc3bed7400832ef931f865039",
+      "bytes": 89226
+    },
+    {
+      "source": "/images/places/venue-54.webp",
+      "url": "/media/venue-54.b0f148df250e.webp",
+      "sha256": "b0f148df250e9fdf85ab7fc78a7fc7d5fe537a16d571e3d185a56ce3617fa314",
+      "bytes": 71476
+    },
+    {
+      "source": "/images/places/venue-55-640.webp",
+      "url": "/media/venue-55-640.2740ab243347.webp",
+      "sha256": "2740ab243347797402e136b6c6ef8666d08df6a3e13e02674818e2341296e748",
+      "bytes": 25862
+    },
+    {
+      "source": "/images/places/venue-55.webp",
+      "url": "/media/venue-55.28f252c37541.webp",
+      "sha256": "28f252c3754127b1562cf304e9d1492f0e115175dee000c0269b2dc58e40e94e",
+      "bytes": 68716
+    },
+    {
+      "source": "/images/places/venue-56-640.webp",
+      "url": "/media/venue-56-640.e3b99e2aa8ca.webp",
+      "sha256": "e3b99e2aa8ca7817f3216da0a68b28841c2c2974f222175c8723e7cf72193dd9",
+      "bytes": 83924
+    },
+    {
+      "source": "/images/places/venue-56.webp",
+      "url": "/media/venue-56.27dea9e5edef.webp",
+      "sha256": "27dea9e5edef40fac9a286875d10b02cb6069dd461ddd1328e64b9bdd9fc8cf2",
+      "bytes": 222568
+    },
+    {
+      "source": "/images/places/venue-57-640.webp",
+      "url": "/media/venue-57-640.441320cc4f0f.webp",
+      "sha256": "441320cc4f0f951b0334f0f50de9bd7405292d5c54b239d58646aeaacea5f235",
+      "bytes": 47910
+    },
+    {
+      "source": "/images/places/venue-57.webp",
+      "url": "/media/venue-57.275e8f8c9ed0.webp",
+      "sha256": "275e8f8c9ed0bfa1279d7374171c1f8106a24ca1ce2b80abbeb5b755a410b34b",
+      "bytes": 158252
+    },
+    {
+      "source": "/images/places/venue-58-640.webp",
+      "url": "/media/venue-58-640.4441fd83ca42.webp",
+      "sha256": "4441fd83ca428a4dee4726589e9e3ca98e7f8d0a60c9655fed06dcef68910365",
+      "bytes": 32894
+    },
+    {
+      "source": "/images/places/venue-58.webp",
+      "url": "/media/venue-58.c874309a21f6.webp",
+      "sha256": "c874309a21f6757a3d4406d3abf4080bf05867c95782f1bcb1dc4b93a99997cb",
+      "bytes": 130602
+    },
+    {
+      "source": "/images/places/venue-59-640.webp",
+      "url": "/media/venue-59-640.235d6ec4d6ae.webp",
+      "sha256": "235d6ec4d6ae78b1f4f9ed782de94fc289b0611dfdb3de59c189720996918ea7",
+      "bytes": 30486
+    },
+    {
+      "source": "/images/places/venue-59.webp",
+      "url": "/media/venue-59.98560eaeb6c4.webp",
+      "sha256": "98560eaeb6c4e92ebea7fc8e5782727aa61b5ec5fe0f9a4cb39f1bcbdb93616a",
+      "bytes": 97690
+    },
+    {
+      "source": "/images/places/venue-60-640.webp",
+      "url": "/media/venue-60-640.e2158972e078.webp",
+      "sha256": "e2158972e0783d5e46b15b39ecf9f1b5fa4a62b10cbaaa11e354e78e696f93d6",
+      "bytes": 54730
+    },
+    {
+      "source": "/images/places/venue-60.webp",
+      "url": "/media/venue-60.b5993f6a4500.webp",
+      "sha256": "b5993f6a45001a5b2eb63ef5f6639de072636d6fefb84b6d4412f8391c9a6747",
+      "bytes": 145564
+    },
+    {
+      "source": "/images/places/venue-61-640.webp",
+      "url": "/media/venue-61-640.885e7f73467e.webp",
+      "sha256": "885e7f73467eef9b297531777084f61825d30bd6ed4e08498114c6fc340342f2",
+      "bytes": 35200
+    },
+    {
+      "source": "/images/places/venue-61.webp",
+      "url": "/media/venue-61.49f5846e2d95.webp",
+      "sha256": "49f5846e2d9566522e4aa58ae30ec1d9a98207cdb36b1b212ca1adb18cadc930",
+      "bytes": 105198
+    },
+    {
+      "source": "/images/places/venue-62.webp",
+      "url": "/media/venue-62.8e46ea4ebe11.webp",
+      "sha256": "8e46ea4ebe114cdb3fb758e4161e9d3f89713ea26c16d8b0c9641618b6eb14fb",
+      "bytes": 52622
+    },
+    {
+      "source": "/images/places/venue-63-640.webp",
+      "url": "/media/venue-63-640.2a606e23f282.webp",
+      "sha256": "2a606e23f28200829365d5eb42fd5fea9eb064be782ee04a2362f119ae39f7c3",
+      "bytes": 44252
+    },
+    {
+      "source": "/images/places/venue-63.webp",
+      "url": "/media/venue-63.fc2f8507ef31.webp",
+      "sha256": "fc2f8507ef31718554b85903a0f1bbf2dc580841ed2ba61675fbbb550c01e335",
+      "bytes": 103350
+    },
+    {
+      "source": "/images/places/venue-64-640.webp",
+      "url": "/media/venue-64-640.4037484d6462.webp",
+      "sha256": "4037484d6462d701119f39a3add2bc0733bd20baa99f985650980816e5b5ecf9",
+      "bytes": 49148
+    },
+    {
+      "source": "/images/places/venue-64.webp",
+      "url": "/media/venue-64.24e8c409e412.webp",
+      "sha256": "24e8c409e412d54ca1e6f0bf09765152b4f791939893531613ee76fdb0113fdc",
+      "bytes": 156168
+    },
+    {
+      "source": "/images/places/venue-65-640.webp",
+      "url": "/media/venue-65-640.bbf9bbc0cc42.webp",
+      "sha256": "bbf9bbc0cc423f1a87b43842b12476aabc917d27555073f663bdd6a166758e64",
+      "bytes": 46866
+    },
+    {
+      "source": "/images/places/venue-65.webp",
+      "url": "/media/venue-65.2c875353036a.webp",
+      "sha256": "2c875353036a8a132e6c5b612f3de5f79cf3ebdb7be9c716209de38facadffcf",
+      "bytes": 132790
+    },
+    {
+      "source": "/images/rustic/rustic-1-480.webp",
+      "url": "/media/rustic-1-480.23a731319044.webp",
+      "sha256": "23a73131904409a094553f5becc54bc24d05298a81d49da4111c5149e88a5af3",
+      "bytes": 16482
+    },
+    {
+      "source": "/images/rustic/rustic-1-960.webp",
+      "url": "/media/rustic-1-960.59709f5b936f.webp",
+      "sha256": "59709f5b936fee86647af5b29045bfe61714fdf166b646970f3b57b6640c06e3",
+      "bytes": 44270
+    },
+    {
+      "source": "/images/rustic/rustic-1.webp",
+      "url": "/media/rustic-1.5943c53c1ca1.webp",
+      "sha256": "5943c53c1ca1b2ffa97d8baba177e120b57691b54834665bed0c21de6b34ab18",
+      "bytes": 95650
+    },
+    {
+      "source": "/images/rustic/rustic-2-480.webp",
+      "url": "/media/rustic-2-480.ba9a8557496c.webp",
+      "sha256": "ba9a8557496c936ed0f4c0ee78e4be1f69fd9f921537d6c5770ff17ed880d9eb",
+      "bytes": 10784
+    },
+    {
+      "source": "/images/rustic/rustic-2-960.webp",
+      "url": "/media/rustic-2-960.d6677d88cfd3.webp",
+      "sha256": "d6677d88cfd34981153be99cd78858a4f8e55c21c8658ff26ea60dea4104d0c0",
+      "bytes": 27582
+    },
+    {
+      "source": "/images/rustic/rustic-2.webp",
+      "url": "/media/rustic-2.9596becdc406.webp",
+      "sha256": "9596becdc406cc90fc8f2bd093e382ce2c266fd63051d93969e64ad5ffd0ee41",
+      "bytes": 55710
+    },
+    {
+      "source": "/images/rustic/rustic-3-480.webp",
+      "url": "/media/rustic-3-480.45acb022d108.webp",
+      "sha256": "45acb022d108c399895ee0544015ad868e565d086ba7baade0a3d507b31d3ac3",
+      "bytes": 12412
+    },
+    {
+      "source": "/images/rustic/rustic-3-960.webp",
+      "url": "/media/rustic-3-960.3270f037d64e.webp",
+      "sha256": "3270f037d64e192d34a5d0c517ac8e35bc7daec0cc2adc9d38e8a75752c7932e",
+      "bytes": 31282
+    },
+    {
+      "source": "/images/rustic/rustic-3.webp",
+      "url": "/media/rustic-3.1b0a88961472.webp",
+      "sha256": "1b0a88961472ba3066070525da5555ad9fcc9cc548665a39e43b301107c46519",
+      "bytes": 61318
+    },
+    {
+      "source": "/images/rustic/rustic-5-480.webp",
+      "url": "/media/rustic-5-480.c3c0b766e05e.webp",
+      "sha256": "c3c0b766e05e0652660992e6467b929ff3e5003c8f6e335b8df6fe783b482116",
+      "bytes": 11892
+    },
+    {
+      "source": "/images/rustic/rustic-5-960.webp",
+      "url": "/media/rustic-5-960.baca1f296609.webp",
+      "sha256": "baca1f2966090e18dfaae2d9079b46d083edd956db1b6db7d380b48b7a7070f3",
+      "bytes": 30320
+    },
+    {
+      "source": "/images/rustic/rustic-5.webp",
+      "url": "/media/rustic-5.8b0aedd591f5.webp",
+      "sha256": "8b0aedd591f5347c52879cce75538e87cf7ae05537932cf3189d647ce1ec8d2c",
+      "bytes": 66860
+    },
+    {
+      "source": "/images/rustic/rustic-6-480.webp",
+      "url": "/media/rustic-6-480.3d3796c627ce.webp",
+      "sha256": "3d3796c627ce3b1d3980012108cfd3bf446dcded2070a0285055b7ca36f36f14",
+      "bytes": 18680
+    },
+    {
+      "source": "/images/rustic/rustic-6-960.webp",
+      "url": "/media/rustic-6-960.85fa2762107e.webp",
+      "sha256": "85fa2762107e4c80a96367294b44364043e4dc4a9e1c4c8af54f3579c3e8e39d",
+      "bytes": 48708
+    },
+    {
+      "source": "/images/rustic/rustic-6.webp",
+      "url": "/media/rustic-6.6bbcd1c25808.webp",
+      "sha256": "6bbcd1c25808230258b050b9c739569386dfa8278bd4bf8618efd76b998a758a",
+      "bytes": 92922
+    },
+    {
+      "source": "/images/rustic/rustic-7-480.webp",
+      "url": "/media/rustic-7-480.19d8d4736ba9.webp",
+      "sha256": "19d8d4736ba96f0d996eee1bf5cbb289024ebb5227e8ad01f1b50a907544080a",
+      "bytes": 17652
+    },
+    {
+      "source": "/images/rustic/rustic-7-960.webp",
+      "url": "/media/rustic-7-960.de6a78c56337.webp",
+      "sha256": "de6a78c5633797b31a25cf9e284f4a465fe53687a7c65b190b2835d79e395475",
+      "bytes": 45586
+    },
+    {
+      "source": "/images/rustic/rustic-7.webp",
+      "url": "/media/rustic-7.3a83d2277f1b.webp",
+      "sha256": "3a83d2277f1b8fb316f2db5253af84f0f18771b53c16b94503dca04f47078ddb",
+      "bytes": 92680
+    },
+    {
+      "source": "/images/rustic/rustic-8-480.webp",
+      "url": "/media/rustic-8-480.69b2005c08ef.webp",
+      "sha256": "69b2005c08ef2b2a7ce8dcbbfb28d62f03fcd16cbc4b879bd67ad3f1e693859d",
+      "bytes": 15992
+    },
+    {
+      "source": "/images/rustic/rustic-8-960.webp",
+      "url": "/media/rustic-8-960.03c2f9c888ce.webp",
+      "sha256": "03c2f9c888cea4521c257e54790dc43e2e423c477152d4bd0ffd3bb05089de04",
+      "bytes": 42584
+    },
+    {
+      "source": "/images/rustic/rustic-8.webp",
+      "url": "/media/rustic-8.cd779d0d9cf9.webp",
+      "sha256": "cd779d0d9cf94404c488462e1d67ca2da0a08493a878d431c24ebd4bb125439c",
+      "bytes": 97968
+    },
+    {
+      "source": "/images/rustic/rustic-9-480.webp",
+      "url": "/media/rustic-9-480.bbb45101da79.webp",
+      "sha256": "bbb45101da79b22cc6ddeb281f5877f01439ce7d28b1fbe13162f4ddb6eb3341",
+      "bytes": 18898
+    },
+    {
+      "source": "/images/rustic/rustic-9-960.webp",
+      "url": "/media/rustic-9-960.fb1d1fd21773.webp",
+      "sha256": "fb1d1fd217739f9c236a722ac809e0bd98ad0a1fa6ba4e1aa12de7cb05852281",
+      "bytes": 48322
+    },
+    {
+      "source": "/images/rustic/rustic-9.webp",
+      "url": "/media/rustic-9.0c69659e0194.webp",
+      "sha256": "0c69659e019400da691193db6b6c1aa873d442e876a0dc5fbb711025ae0dba3f",
+      "bytes": 61280
+    },
+    {
+      "source": "/images/rustic/rustic-bathroom-480.webp",
+      "url": "/media/rustic-bathroom-480.09201d4f2630.webp",
+      "sha256": "09201d4f2630188e8adab1b2289ddc83922880fa8a05159d262598de5d1bb95a",
+      "bytes": 8830
+    },
+    {
+      "source": "/images/rustic/rustic-bathroom-960.webp",
+      "url": "/media/rustic-bathroom-960.3a728244598f.webp",
+      "sha256": "3a728244598f57f09464d98271ecc9eb0f2ddd5c048739ac08b85f90e5bb654b",
+      "bytes": 22836
+    },
+    {
+      "source": "/images/rustic/rustic-bathroom.webp",
+      "url": "/media/rustic-bathroom.e80aa2eea638.webp",
+      "sha256": "e80aa2eea638198c31b23bf1f041bc7760235137423c4f7a3db3fb52f7b8ee98",
+      "bytes": 32984
+    },
+    {
+      "source": "/images/rustic/rustic-laundry-480.webp",
+      "url": "/media/rustic-laundry-480.6a15f10cd3e8.webp",
+      "sha256": "6a15f10cd3e863b331efcb59052870e1a92c4ef60db68fc66e85a00b1f205979",
+      "bytes": 16894
+    },
+    {
+      "source": "/images/rustic/rustic-laundry-960.webp",
+      "url": "/media/rustic-laundry-960.855ff3d512b7.webp",
+      "sha256": "855ff3d512b7cd9201fe0c8149bafa5a85ad997ec6b0164a1d12a09b81b40324",
+      "bytes": 62172
+    },
+    {
+      "source": "/images/rustic/rustic-laundry.webp",
+      "url": "/media/rustic-laundry.a02a43fe3245.webp",
+      "sha256": "a02a43fe3245e606573e1d99a493a2fb0bedb5f0fd45aeef829e345b7eb0397a",
+      "bytes": 122126
+    },
+    {
+      "source": "/images/rustic/rustic-sleeping-layout-480.webp",
+      "url": "/media/rustic-sleeping-layout-480.3f5d16b0f1b5.webp",
+      "sha256": "3f5d16b0f1b5ef17fadcdb3ba8554805a4e2c8c7017e8c7036ff74fab122eaf3",
+      "bytes": 9940
+    },
+    {
+      "source": "/images/rustic/rustic-sleeping-layout-960.webp",
+      "url": "/media/rustic-sleeping-layout-960.bb583b308ae9.webp",
+      "sha256": "bb583b308ae9720c8d8a9980c4606acdce009979b382864ca310b2ce00bbf646",
+      "bytes": 24904
+    },
+    {
+      "source": "/images/rustic/rustic-sleeping-layout.webp",
+      "url": "/media/rustic-sleeping-layout.5313fdbfcc42.webp",
+      "sha256": "5313fdbfcc42f4dbfd5b4059626a52d51fb5572d54aaa2947f6ca987925288e2",
+      "bytes": 60452
+    },
+    {
+      "source": "/images/ski/autumn-leaves.webp",
+      "url": "/media/autumn-leaves.318368bf68f5.webp",
+      "sha256": "318368bf68f515a7a647ecd8767ed2c86517efe5e2d8a743d0b5fe8a6f9a5a57",
+      "bytes": 167586
+    },
+    {
+      "source": "/images/ski/lift-ticket-office.webp",
+      "url": "/media/lift-ticket-office.e33371850fa1.webp",
+      "sha256": "e33371850fa1492ccb7a9a3742542563ccc0c91bcef628d31327f640addff638",
+      "bytes": 115080
+    },
+    {
+      "source": "/images/ski/ski-mountain-winter.webp",
+      "url": "/media/ski-mountain-winter.4b9047cdcbbf.webp",
+      "sha256": "4b9047cdcbbf0d9bc9c5eedff21360f8ed27bbbb2c871f6f418053e513b4feb7",
+      "bytes": 99038
+    },
+    {
+      "source": "/images/ski/ski-school-beginners.webp",
+      "url": "/media/ski-school-beginners.72b71778efd1.webp",
+      "sha256": "72b71778efd12a8c0feeace8cf5af86934b5b02cea36dcb3c8e9a49d62c3f51f",
+      "bytes": 65796
+    },
+    {
+      "source": "/images/sol/sol-10-480.webp",
+      "url": "/media/sol-10-480.58db4caef7e2.webp",
+      "sha256": "58db4caef7e2ceb6f0cb00121993901e62f0046b075d139ee4fe89a6dec3ac45",
+      "bytes": 13234
+    },
+    {
+      "source": "/images/sol/sol-10-960.webp",
+      "url": "/media/sol-10-960.9bf450229598.webp",
+      "sha256": "9bf45022959802362826163f46783eb29a999a85e63f6151cd4aa15e9f8ae0d3",
+      "bytes": 33136
+    },
+    {
+      "source": "/images/sol/sol-10.webp",
+      "url": "/media/sol-10.fa9ba7641ddd.webp",
+      "sha256": "fa9ba7641ddd76d59631556ffaf4a912bd6767d8b6dc2ca7c3606bac021a3b93",
+      "bytes": 38968
+    },
+    {
+      "source": "/images/sol/sol-3-480.webp",
+      "url": "/media/sol-3-480.a2738a285a83.webp",
+      "sha256": "a2738a285a838162adbd5569bbcaf3046c0e8bd3ff30c8ca5967a4e00387b114",
+      "bytes": 15146
+    },
+    {
+      "source": "/images/sol/sol-3-960.webp",
+      "url": "/media/sol-3-960.88721342e76f.webp",
+      "sha256": "88721342e76f9e00e6f1230d19ebd3625cd1a78eaee3723063e16eb74dbf032a",
+      "bytes": 40528
+    },
+    {
+      "source": "/images/sol/sol-3.webp",
+      "url": "/media/sol-3.9748f27c2bf6.webp",
+      "sha256": "9748f27c2bf60de2f342c35f64533d75880d5812e24052645d72b6c84bf1186d",
+      "bytes": 90728
+    },
+    {
+      "source": "/images/sol/sol-4-480.webp",
+      "url": "/media/sol-4-480.b6ef64d80362.webp",
+      "sha256": "b6ef64d803624d3e98d9817b9aa8c76bd27fb43c9ff8949719b47467a60afe35",
+      "bytes": 9734
+    },
+    {
+      "source": "/images/sol/sol-4-960.webp",
+      "url": "/media/sol-4-960.de1c6f3fa0d5.webp",
+      "sha256": "de1c6f3fa0d5548737e6b8470a5a85d4b14d4d45e1d972421c32bdefbb0b4b46",
+      "bytes": 22832
+    },
+    {
+      "source": "/images/sol/sol-4.webp",
+      "url": "/media/sol-4.8a8f0ab221a5.webp",
+      "sha256": "8a8f0ab221a5afeaeae3cdcdbdc94c625a94df74b78b70e91c500ab645d0b159",
+      "bytes": 43992
+    },
+    {
+      "source": "/images/sol/sol-5-480.webp",
+      "url": "/media/sol-5-480.ada84b678790.webp",
+      "sha256": "ada84b678790a7fbd8188a007fa3d54e4c8ae8b9168599e3615c1783c414b2dd",
+      "bytes": 19660
+    },
+    {
+      "source": "/images/sol/sol-5-960.webp",
+      "url": "/media/sol-5-960.5d716eb354fd.webp",
+      "sha256": "5d716eb354fdaedff058175f53465e68c136c7e275707e35b207be59d0b7132e",
+      "bytes": 48688
+    },
+    {
+      "source": "/images/sol/sol-5.webp",
+      "url": "/media/sol-5.d275bd32a471.webp",
+      "sha256": "d275bd32a47191c5baf19b782225b2936d4f33e5542b1ecac09aa8166a6f4fab",
+      "bytes": 57900
+    },
+    {
+      "source": "/images/sol/sol-6-480.webp",
+      "url": "/media/sol-6-480.d977039111d1.webp",
+      "sha256": "d977039111d10de9c6f6974f45809f32f7bf3bc8907e9168065272d20e05e5e1",
+      "bytes": 12770
+    },
+    {
+      "source": "/images/sol/sol-6-960.webp",
+      "url": "/media/sol-6-960.d55e73943264.webp",
+      "sha256": "d55e7394326416b10e5dbc0432da78f06032536d51d76330f981a9c757c0ad67",
+      "bytes": 34874
+    },
+    {
+      "source": "/images/sol/sol-6.webp",
+      "url": "/media/sol-6.894aa1f0722c.webp",
+      "sha256": "894aa1f0722cdb36418cf26d72631c389bf0afed4b816503d70bfb8e6092bba0",
+      "bytes": 84012
+    },
+    {
+      "source": "/images/sol/sol-7-480.webp",
+      "url": "/media/sol-7-480.6bb8d89a1bd0.webp",
+      "sha256": "6bb8d89a1bd0530b541319c273487ddac0a50d001ffd78dad341d60714cf72b4",
+      "bytes": 14998
+    },
+    {
+      "source": "/images/sol/sol-7-960.webp",
+      "url": "/media/sol-7-960.3baeedf4e3c8.webp",
+      "sha256": "3baeedf4e3c8ded9de0b358f60742ffe19c3246a45f2feb75d690c5d6c039e9d",
+      "bytes": 36992
+    },
+    {
+      "source": "/images/sol/sol-7.webp",
+      "url": "/media/sol-7.3b50c4dc041e.webp",
+      "sha256": "3b50c4dc041e3f271fcbd1a304edabc595027247b3703593c09d95441deadd3d",
+      "bytes": 75574
+    },
+    {
+      "source": "/images/sol/sol-8-480.webp",
+      "url": "/media/sol-8-480.b69051ba9844.webp",
+      "sha256": "b69051ba9844c617c49c6687eab7c24e437a7e69be16f9e1cab7e7a78c0537f7",
+      "bytes": 12820
+    },
+    {
+      "source": "/images/sol/sol-8-960.webp",
+      "url": "/media/sol-8-960.02961c131785.webp",
+      "sha256": "02961c13178564f3be853c42230a2cf02371f13db4762091c4f0fd6d64c3dd5e",
+      "bytes": 34884
+    },
+    {
+      "source": "/images/sol/sol-8.webp",
+      "url": "/media/sol-8.3b70e37164f5.webp",
+      "sha256": "3b70e37164f5768eee3c93f698a3b3231c7bb9aeb03c988cb1a0787c4faa2812",
+      "bytes": 72916
+    },
+    {
+      "source": "/images/sol/sol-9-480.webp",
+      "url": "/media/sol-9-480.0a0cbcbf45d5.webp",
+      "sha256": "0a0cbcbf45d5546e61636afff2083f80bc5407cf82e9c6a408c1d7faa39d52ed",
+      "bytes": 13846
+    },
+    {
+      "source": "/images/sol/sol-9-960.webp",
+      "url": "/media/sol-9-960.cbf60ec67f7e.webp",
+      "sha256": "cbf60ec67f7e415dadb321d24997d2ce43cbee52e9ac87b8fe59e12d5d1f994d",
+      "bytes": 37918
+    },
+    {
+      "source": "/images/sol/sol-9.webp",
+      "url": "/media/sol-9.10137d7249d0.webp",
+      "sha256": "10137d7249d04adcf30d57c401e2fe868925bf0d386bb1c2e1a3bc4d3ddfa505",
+      "bytes": 83294
+    },
+    {
+      "source": "/images/sol/sol-bathroom-480.webp",
+      "url": "/media/sol-bathroom-480.0f00746aba3e.webp",
+      "sha256": "0f00746aba3edd310cd700b36dac0fe74e95cfe815eb1e8693034e69e12726db",
+      "bytes": 8878
+    },
+    {
+      "source": "/images/sol/sol-bathroom-960.webp",
+      "url": "/media/sol-bathroom-960.6dfbf4670597.webp",
+      "sha256": "6dfbf4670597a1c447c83ea129647feb73e3d223d7894bc17f24d4c10939f30b",
+      "bytes": 23194
+    },
+    {
+      "source": "/images/sol/sol-bathroom.webp",
+      "url": "/media/sol-bathroom.5a833b5f5836.webp",
+      "sha256": "5a833b5f58367df6a5e0a30ea1cbc815362888dcf923d59014a31d2c71490756",
+      "bytes": 33886
+    },
+    {
+      "source": "/images/sol/sol-kitchen-counter-480.webp",
+      "url": "/media/sol-kitchen-counter-480.53ee19d30fa2.webp",
+      "sha256": "53ee19d30fa2a0a21c170d2d9fa4c34109a2872c2bd82eab55fbdbfebf25a1f5",
+      "bytes": 8974
+    },
+    {
+      "source": "/images/sol/sol-kitchen-counter-960.webp",
+      "url": "/media/sol-kitchen-counter-960.0c84e7b2c94b.webp",
+      "sha256": "0c84e7b2c94b75899f0a84a8c94b01bcfec2acec12bad0df740467eb0dfe5b85",
+      "bytes": 24582
+    },
+    {
+      "source": "/images/sol/sol-kitchen-counter.webp",
+      "url": "/media/sol-kitchen-counter.52cd86a437f6.webp",
+      "sha256": "52cd86a437f67cd29c42c54d964ab9fde8a37c95717c889afb708c7facf1d7d6",
+      "bytes": 63162
+    },
+    {
+      "source": "/images/sol/sol-sleeping-layout-480.webp",
+      "url": "/media/sol-sleeping-layout-480.ea80a4cf03f8.webp",
+      "sha256": "ea80a4cf03f889b4aaf637f108f0a9c10a8991364edf1e911a0db99c1d87c43f",
+      "bytes": 10028
+    },
+    {
+      "source": "/images/sol/sol-sleeping-layout-960.webp",
+      "url": "/media/sol-sleeping-layout-960.fa8b8165712f.webp",
+      "sha256": "fa8b8165712f31b3aa0effb8ed26c420e4e07e526d7b15a9501a3018c686d84b",
+      "bytes": 24112
+    },
+    {
+      "source": "/images/sol/sol-sleeping-layout.webp",
+      "url": "/media/sol-sleeping-layout.40967ff39d06.webp",
+      "sha256": "40967ff39d06fa04ead81fd21cace430b52fa344d87f1c4046a06808578a8828",
+      "bytes": 59956
+    },
+    {
+      "source": "/images/sol/sol-washbasin-480.webp",
+      "url": "/media/sol-washbasin-480.9422889ae6f1.webp",
+      "sha256": "9422889ae6f157befa4eab90e43a2ad20a27629f95bc783738266f7124008cfe",
+      "bytes": 13888
+    },
+    {
+      "source": "/images/sol/sol-washbasin-960.webp",
+      "url": "/media/sol-washbasin-960.813d1ae9bd6c.webp",
+      "sha256": "813d1ae9bd6c60a9ce5f2ccfcf777481cc81bda0e74b6758a9bb98621ca21400",
+      "bytes": 38248
+    },
+    {
+      "source": "/images/sol/sol-washbasin.webp",
+      "url": "/media/sol-washbasin.3a1f75c7c2c3.webp",
+      "sha256": "3a1f75c7c2c30d7d27856cda702878808d7bb4aa1ea0825df61c3550836dc839",
+      "bytes": 67358
+    },
+    {
+      "source": "/images/upopoy/upopoy-01-salmon.webp",
+      "url": "/media/upopoy-01-salmon.44f05d523148.webp",
+      "sha256": "44f05d523148933200c13c4faff7ad82e6019ab9b26f09beb38ee859413cb917",
+      "bytes": 166898
+    },
+    {
+      "source": "/images/upopoy/upopoy-03-performance.webp",
+      "url": "/media/upopoy-03-performance.18642c11bb78.webp",
+      "sha256": "18642c11bb783bd56b227b16bee9f080852c8e9703ae22e6747fe25311f0bd69",
+      "bytes": 117154
+    },
+    {
+      "source": "/images/upopoy/upopoy-05-chise-fish.webp",
+      "url": "/media/upopoy-05-chise-fish.53eb03ef5a29.webp",
+      "sha256": "53eb03ef5a297634cdb7020159753fd5eab7f80e3aefb858cec3a382750eadde",
+      "bytes": 198992
+    },
+    {
+      "source": "/images/upopoy/upopoy-06-mukkuri.webp",
+      "url": "/media/upopoy-06-mukkuri.21243e5a5202.webp",
+      "sha256": "21243e5a5202d380a120c962a9560f0686f95b87ef3849f22d8b2769b10b92f3",
+      "bytes": 95164
+    },
+    {
+      "source": "/images/upopoy/upopoy-07-exhibition.webp",
+      "url": "/media/upopoy-07-exhibition.26336ec16767.webp",
+      "sha256": "26336ec167676c0b01e3d92c6e7a81f70e766b069ec5ac93555af2c45f9f616b",
+      "bytes": 95902
+    },
+    {
+      "source": "/images/village/ayoro-coastal-view.webp",
+      "url": "/media/ayoro-coastal-view.7bef459cb195.webp",
+      "sha256": "7bef459cb19565b29e70faa38a3b84a41e3ae4f23a49637d5993814eb4f7658d",
+      "bytes": 66994
+    },
+    {
+      "source": "/images/village/ayoro-lighthouse.webp",
+      "url": "/media/ayoro-lighthouse.14d1bdb0f701.webp",
+      "sha256": "14d1bdb0f7014cb20cf9a9b6118f05e0e0355a7a3527aa8a267f9faeaad1696f",
+      "bytes": 60738
+    },
+    {
+      "source": "/images/village/kojohama-beach-poles.webp",
+      "url": "/media/kojohama-beach-poles.6791300f6cdf.webp",
+      "sha256": "6791300f6cdfe24be9bd468bb8682e2bc268480f6d6b8181447d97c0b935aeb8",
+      "bytes": 118554
+    },
+    {
+      "source": "/images/village/kojohama-shrine-torii.webp",
+      "url": "/media/kojohama-shrine-torii.33f19800a9aa.webp",
+      "sha256": "33f19800a9aaa90d48584f46303ad1dd3fc73870611832eaae6fe9c246ac9a77",
+      "bytes": 114000
+    },
+    {
+      "source": "/images/village/shiraoi-pub-bar-hopping-guide.webp",
+      "url": "/media/shiraoi-pub-bar-hopping-guide.ad9f90fdd499.webp",
+      "sha256": "ad9f90fdd4993acdf4bc77293a511b06f41b251af12d4f164538e45587b9fc8b",
+      "bytes": 43916
+    },
+    {
+      "source": "/images/village/tarako-vending-machine.webp",
+      "url": "/media/tarako-vending-machine.c75e3eaf9209.webp",
+      "sha256": "c75e3eaf9209092352c0d7db4e1554864f22e34161968d64c9905d5b9c8b9ac1",
+      "bytes": 232428
+    },
+    {
+      "source": "/images/zen/zen-10-480.webp",
+      "url": "/media/zen-10-480.839f3b999bac.webp",
+      "sha256": "839f3b999bac2097ed7ae821b7c86025819dddb44af44a310d14983ec6800dd1",
+      "bytes": 15792
+    },
+    {
+      "source": "/images/zen/zen-10-960.webp",
+      "url": "/media/zen-10-960.da5c9c73fc97.webp",
+      "sha256": "da5c9c73fc97062d21913c9825b264de8dfc9b418f56e17a80ef92983fe5726d",
+      "bytes": 42112
+    },
+    {
+      "source": "/images/zen/zen-10.webp",
+      "url": "/media/zen-10.d7d87079da88.webp",
+      "sha256": "d7d87079da8823122e656e71187011a2b941e7c896f71f9d162fb028d5cbce99",
+      "bytes": 87338
+    },
+    {
+      "source": "/images/zen/zen-11-480.webp",
+      "url": "/media/zen-11-480.29a133dc2bbb.webp",
+      "sha256": "29a133dc2bbb6d725685833f237320840f850e0c0ab2d44d85e5bed7eb5cdb1f",
+      "bytes": 16308
+    },
+    {
+      "source": "/images/zen/zen-11-960.webp",
+      "url": "/media/zen-11-960.a5cb1d04d0d2.webp",
+      "sha256": "a5cb1d04d0d25ef6037905d5ff74fac4f8740086c1ed8ef7d90291a306c2efd8",
+      "bytes": 47918
+    },
+    {
+      "source": "/images/zen/zen-11.webp",
+      "url": "/media/zen-11.9e6f07c1735a.webp",
+      "sha256": "9e6f07c1735a30b663b5da9e0319b0137264b653ee1b708fb58fe0dd8532152e",
+      "bytes": 106418
+    },
+    {
+      "source": "/images/zen/zen-2-480.webp",
+      "url": "/media/zen-2-480.9fb9ff2404d0.webp",
+      "sha256": "9fb9ff2404d09c63e0fa08366b28fadec6750463a79fb09e5d3307a9da1dac58",
+      "bytes": 13142
+    },
+    {
+      "source": "/images/zen/zen-2-960.webp",
+      "url": "/media/zen-2-960.98e43c5fab87.webp",
+      "sha256": "98e43c5fab87f0349561c88335a153635ff479bfa8113d1342f47d25039b5229",
+      "bytes": 35448
+    },
+    {
+      "source": "/images/zen/zen-2.webp",
+      "url": "/media/zen-2.3cd509ee7c33.webp",
+      "sha256": "3cd509ee7c3307b8401bfe806ba981d3c203e91cddb8aca50399267e889ad1a0",
+      "bytes": 74230
+    },
+    {
+      "source": "/images/zen/zen-3-480.webp",
+      "url": "/media/zen-3-480.a215f78fd9dc.webp",
+      "sha256": "a215f78fd9dc4ce760e5a1bfbd84598ff398d95f5939b304284a8c51a43e8663",
+      "bytes": 16338
+    },
+    {
+      "source": "/images/zen/zen-3-960.webp",
+      "url": "/media/zen-3-960.0a2fbf06ea76.webp",
+      "sha256": "0a2fbf06ea76ceecb61d3de9810b238d0a314c743737470ebad6c2f7f0232b52",
+      "bytes": 49274
+    },
+    {
+      "source": "/images/zen/zen-3.webp",
+      "url": "/media/zen-3.28d5ac16049f.webp",
+      "sha256": "28d5ac16049fc88cfad2b8d869e233fca2191329ad18736d88802e9f9124fc46",
+      "bytes": 106382
+    },
+    {
+      "source": "/images/zen/zen-6-480.webp",
+      "url": "/media/zen-6-480.e9416e08166b.webp",
+      "sha256": "e9416e08166b5188eac4b640b75902ef4d19f500c008115891b95a1d5c6f1bee",
+      "bytes": 34374
+    },
+    {
+      "source": "/images/zen/zen-6-960.webp",
+      "url": "/media/zen-6-960.caa214f72eda.webp",
+      "sha256": "caa214f72edaf8aba5b8f0301a8dae7d567c0919d36aed684dcbecc3fbd7bbd6",
+      "bytes": 90800
+    },
+    {
+      "source": "/images/zen/zen-6.webp",
+      "url": "/media/zen-6.4279a2313c32.webp",
+      "sha256": "4279a2313c32a8cd0e8186bf5fa5a768a716a7f5ae4039a7d20ff139f123d7e2",
+      "bytes": 116184
+    },
+    {
+      "source": "/images/zen/zen-7-480.webp",
+      "url": "/media/zen-7-480.fb9b067c3488.webp",
+      "sha256": "fb9b067c3488b2dffe65a773fd8b8f20aa9e4c7bdaf729e5a3fbfdfd922714e7",
+      "bytes": 45314
+    },
+    {
+      "source": "/images/zen/zen-7-960.webp",
+      "url": "/media/zen-7-960.b66d2b5fae6e.webp",
+      "sha256": "b66d2b5fae6eb2e3ff94ce455eafdd1ce41b87ad3489b36387ccb1cd8eb28fe1",
+      "bytes": 109842
+    },
+    {
+      "source": "/images/zen/zen-7.webp",
+      "url": "/media/zen-7.40a45f79ad64.webp",
+      "sha256": "40a45f79ad64843e16992c11556161b48b4d92eff6c159f3cfaceb9e1d633839",
+      "bytes": 123974
+    },
+    {
+      "source": "/images/zen/zen-8-480.webp",
+      "url": "/media/zen-8-480.cb986781e2b9.webp",
+      "sha256": "cb986781e2b99a491d972739056c6745181d0fa2b12d86e9ad996555c6c79a6d",
+      "bytes": 12186
+    },
+    {
+      "source": "/images/zen/zen-8-960.webp",
+      "url": "/media/zen-8-960.d31f2895b4d7.webp",
+      "sha256": "d31f2895b4d7c6d98382b884f00b315831fd6e8b11db37cd22fee8c43e49f715",
+      "bytes": 30844
+    },
+    {
+      "source": "/images/zen/zen-8.webp",
+      "url": "/media/zen-8.981354416b93.webp",
+      "sha256": "981354416b93b5ddf058c883a2e3cfe705f35225de8f60f8afdb2f241488f28f",
+      "bytes": 63242
+    },
+    {
+      "source": "/images/zen/zen-9-480.webp",
+      "url": "/media/zen-9-480.241601453af8.webp",
+      "sha256": "241601453af8a810de6eba5e21cf116d3d5c0f251e93d574e32514ad62dc582b",
+      "bytes": 17254
+    },
+    {
+      "source": "/images/zen/zen-9-960.webp",
+      "url": "/media/zen-9-960.6bd51c69e7e5.webp",
+      "sha256": "6bd51c69e7e5e4e87590c25ee1e5fe55391a8d3173a63658d0b52afc1d5835f7",
+      "bytes": 51892
+    },
+    {
+      "source": "/images/zen/zen-9.webp",
+      "url": "/media/zen-9.fe638762b573.webp",
+      "sha256": "fe638762b57396267fd3d001cc13e275e53d65093215d6ca5bdbae8a0e0476ff",
+      "bytes": 105920
+    },
+    {
+      "source": "/images/zen/zen-bathroom-480.webp",
+      "url": "/media/zen-bathroom-480.25d0dcbe8a0d.webp",
+      "sha256": "25d0dcbe8a0d49076c05832cd70ac0847ea0c7a8175c936ec42926762117f161",
+      "bytes": 11092
+    },
+    {
+      "source": "/images/zen/zen-bathroom-960.webp",
+      "url": "/media/zen-bathroom-960.243df0e4fa6a.webp",
+      "sha256": "243df0e4fa6af7eb6a31bf09161ae26282ff748fff7a16be1ce3ac132d971c94",
+      "bytes": 29038
+    },
+    {
+      "source": "/images/zen/zen-bathroom.webp",
+      "url": "/media/zen-bathroom.46a84a5475ed.webp",
+      "sha256": "46a84a5475ed0a03852eb991426f825ceed3a6c89748af866ead521d825c8494",
+      "bytes": 42736
+    },
+    {
+      "source": "/images/zen/zen-laundry-480.webp",
+      "url": "/media/zen-laundry-480.04c7d74e7b72.webp",
+      "sha256": "04c7d74e7b72eb2c3ba47d7104c0ac502e5ab19f6c7746a4ffd366f300ec80b4",
+      "bytes": 17994
+    },
+    {
+      "source": "/images/zen/zen-laundry-960.webp",
+      "url": "/media/zen-laundry-960.74c281499549.webp",
+      "sha256": "74c281499549ac69c2a9d00cdc082d4965c8007746c480a63fb39b0833e099e7",
+      "bytes": 70522
+    },
+    {
+      "source": "/images/zen/zen-laundry.webp",
+      "url": "/media/zen-laundry.0e40c3c420ec.webp",
+      "sha256": "0e40c3c420ec2c195991ffc3f3d4715db5e60b6af81d56ac58836faf351032b3",
+      "bytes": 141586
+    },
+    {
+      "source": "/images/zen/zen-sleeping-layout-480.webp",
+      "url": "/media/zen-sleeping-layout-480.0d1ed29de352.webp",
+      "sha256": "0d1ed29de3525de8dfc1639753fdd95750606a02125927df54b9eb1ee534dff8",
+      "bytes": 12680
+    },
+    {
+      "source": "/images/zen/zen-sleeping-layout-960.webp",
+      "url": "/media/zen-sleeping-layout-960.7f4e607d82d6.webp",
+      "sha256": "7f4e607d82d62c52dc91fe05a061971ce099118cf0611951f982697224b9093d",
+      "bytes": 33772
+    },
+    {
+      "source": "/images/zen/zen-sleeping-layout.webp",
+      "url": "/media/zen-sleeping-layout.9ccb0d429245.webp",
+      "sha256": "9ccb0d4292456153463e075c6860043d6fe108230a11dc5a2217f3ad37475742",
+      "bytes": 89204
+    }
+  ]
+}

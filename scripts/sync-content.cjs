@@ -12,9 +12,15 @@ const facts = json('data/site-facts.json');
 const directory = json('data/venues.json');
 const captions = json('data/gallery-captions.json');
 const galleries = json('data/home-galleries.json');
+const responsive = json('data/responsive-images.json');
 const rate = facts.pricing.fromNightlyJPY.toLocaleString('en-US');
 const extra = facts.pricing.extraGuestJPY.toLocaleString('en-US');
 const baseGuests = facts.pricing.baseGuests;
+const policy = {
+ en:{title:'Children, infants and BBQ',childQuestion:'Are children and infants welcome?',childAnswer:'Yes. Children and infants are welcome in all three cabins, with a maximum of five guests per cabin. Ask us about any baby equipment you need before booking.',bbqQuestion:'Can we use the BBQ grill?',bbqAnswer:`Yes, by prior arrangement. Use of our ${facts.bbq.grillProvided} costs ¥${facts.bbq.feeJPY.toLocaleString('en-US')} per use. Guests bring two compatible gas cartridges, food, utensils and other BBQ gear.`,details:'BBQ equipment and safety guide'},
+ ja:{title:'お子様・乳幼児とBBQ',childQuestion:'子どもや乳幼児も宿泊できますか？',childAnswer:'はい。3棟ともお子様・乳幼児を歓迎しています。各棟の定員は最大5名です。乳幼児用の設備が必要な場合は、ご予約前にお問い合わせください。',bbqQuestion:'BBQグリルを利用できますか？',bbqAnswer:`はい。事前のご相談で、当施設の${facts.bbq.grillProvided}を1回${facts.bbq.feeJPY.toLocaleString('en-US')}円でご利用いただけます。対応するガス缶2本、食材、調理器具、その他必要なBBQ用品はお客様ご自身でご持参ください。`,details:'BBQの持ち物・安全ガイド'},
+ 'zh-CN':{title:'儿童、婴幼儿与烧烤',childQuestion:'欢迎儿童和婴幼儿入住吗？',childAnswer:'欢迎。三间小屋均欢迎儿童和婴幼儿，每间最多5位客人。如需婴幼儿设备，请在预订前联系我们确认。',bbqQuestion:'可以使用烧烤炉吗？',bbqAnswer:`可以，请提前联系安排。使用我们的${facts.bbq.grillProvided}每次费用为¥${facts.bbq.feeJPY.toLocaleString('en-US')}。客人需自备两罐兼容燃气罐、食材、餐具和其他烧烤用品。`,details:'烧烤用品与安全指南'}
+};
 const travelCopy = {
  en:{airport:`${facts.travel.newChitoseMinutes.join('–')} minutes`,casa:`${facts.travel.casaAntonioMinutes.join('–')} minutes`,airportQuestion:'How far is it from New Chitose Airport?',casaQuestion:'Can I combine this with a stay in Sapporo?',airportAnswer:`About ${facts.travel.newChitoseMinutes.join('–')} minutes by car. Allow extra time for winter weather.`,casaAnswer:`Yes. Casa Antonio, our sister property with two apartments near Asabu Station in Sapporo, is about ${facts.travel.casaAntonioMinutes.join('–')} minutes by car from Kojohama. Allow extra time for winter weather and traffic.`},
  ja:{airport:`${facts.travel.newChitoseMinutes.join('〜')}分`,casa:`${facts.travel.casaAntonioMinutes.join('〜')}分`,airportQuestion:'新千歳空港からどのくらいかかりますか？',casaQuestion:'札幌での滞在と組み合わせられますか？',airportAnswer:`車で約${facts.travel.newChitoseMinutes.join('〜')}分です。冬季はさらに時間に余裕を持ってください。`,casaAnswer:`はい。姉妹物件のCasa Antonioは札幌の麻生駅近くにあるアパートメント2室で、虎杖浜から車で約${facts.travel.casaAntonioMinutes.join('〜')}分です。冬季や混雑時は時間に余裕を持ってください。`},
@@ -104,6 +110,17 @@ for (const absolute of walk(root)) {
   return start+"if (['kojohamacabins.jp','www.kojohamacabins.jp'].includes(location.hostname)) {"+code+'}'+end;
  });
  const trip=travelCopy[lang];
+ source=source.replace(/<a\b[^>]*href="https:\/\/www\.booking\.com\/reviews[^>]*>/g,tag=>{
+  tag=tag.replace(/\sdata-(?:intent|link-location|cabin-name)="[^"]*"/g,'');
+  return tag.replace(/>$/, ' data-intent="reviews" data-link-location="reviews" data-cabin-name="All cabins">');
+ });
+ const p = policy[lang];
+ if(file.endsWith('faq/index.html') || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
+  const content=`<section class="facts wrap family-policy" id="family-policy"><h2>${p.title}</h2><h3>${p.childQuestion}</h3><p>${p.childAnswer}</p><h3>${p.bbqQuestion}</h3><p>${p.bbqAnswer}</p><a href="/${locales[lang].prefix}bbq/">${p.details}</a></section>`;
+  if(source.includes('<!-- family-policy:start -->'))source=marked(source,'family-policy',content);
+  else source=source.replace('</main>',`<!-- family-policy:start -->${content}<!-- family-policy:end --></main>`);
+  source=source.replace(/(<dt>BBQ<\/dt>\s*<dd>)[\s\S]*?(<\/dd>)/g,`$1${p.bbqAnswer} <a href="/${locales[lang].prefix}bbq/">${p.details} →</a>$2`);
+ }
  if (file.endsWith('work-remotely/index.html')) {
   const workspaceText={
    en:['A place to open your laptop','Sol’s counter and Rustic’s dining area are shown below. These are everyday living spaces. If a dedicated desk, a particular chair or other work equipment matters to you, ask us before booking.'],
@@ -138,7 +155,14 @@ for (const absolute of walk(root)) {
  if (lang !== 'en') source=source.replace(/aria-label="Close reservation menu"/g,`aria-label="${lang==='ja'?'予約メニューを閉じる':'关闭预订菜单'}"`).replace(/aria-label="Primary"/g,`aria-label="${lang==='ja'?'メインナビゲーション':'主导航'}"`).replace(/aria-label="Language"/g,`aria-label="${lang==='ja'?'言語':'语言'}"`);
  source=source.replace(/<img\b[^>]*>/g,tag=>{
   const src=tag.match(/\bsrc="([^"]+)"/)?.[1];
-  return captions[lang][src] ? tag.replace(/\balt="[^"]*"/,`alt="${escape(captions[lang][src])}"`) : tag;
+  if(captions[lang][src])tag=tag.replace(/\balt="[^"]*"/,`alt="${escape(captions[lang][src])}"`);
+  const variants=responsive[src];
+  if(variants){
+   tag=tag.replace(/\s(?:srcset|data-full-src)="[^"]*"/g,'');
+   const sizes=tag.includes('sizes=')?'':' sizes="(max-width:700px) calc(100vw - 40px), 480px"';
+   tag=tag.replace(/\s*\/?>$/,` srcset="${escape(variants.srcset)}" data-full-src="${escape(src)}"${sizes}>`);
+  }
+  return tag;
  });
  if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<p class="pricing-note wrap">${pricingCopy[lang]}</p>`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
@@ -148,6 +172,12 @@ for (const absolute of walk(root)) {
    if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricingCopy[lang];
    if (node['@type']==='FAQPage' && file.endsWith('faq/index.html') && lang==='zh-CN') {
     for (const kind of ['airport','casa']) if (!node.mainEntity.some(q=>q.name===trip[`${kind}Question`])) node.mainEntity.push({'@type':'Question',name:trip[`${kind}Question`],acceptedAnswer:{'@type':'Answer',text:trip[`${kind}Answer`]}});
+   }
+   if(node['@type']==='FAQPage' && file.endsWith('faq/index.html')) for(const kind of ['child','bbq']){
+    const name=p[`${kind}Question`],answer=p[`${kind}Answer`];
+    const existing=node.mainEntity.find(q=>q.name===name);
+    if(existing)existing.acceptedAnswer.text=answer;
+    else node.mainEntity.push({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text:answer}});
    }
    if (node['@type']==='Question') for (const kind of ['airport','casa']) if (node.name===trip[`${kind}Question`]) node.acceptedAnswer.text=trip[`${kind}Answer`];
    if (node['@type']==='Answer' && typeof node.text==='string' && node.text.includes('19,800')) node.text=pricingCopy[lang];

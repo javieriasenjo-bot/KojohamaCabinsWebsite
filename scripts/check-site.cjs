@@ -53,6 +53,13 @@ for(const [file,text]of source){
 }
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
+const imageManifest=JSON.parse(fs.readFileSync(path.join(root,'data/asset-manifest.json'),'utf8'));
+for(const image of imageManifest.images){
+ const file=path.join(root,image.url.slice(1));
+ check(fs.existsSync(file),`Missing generated image ${image.url}`);
+ if(fs.existsSync(file))check(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')===image.sha256,`Generated image content changed: ${image.url}`);
+ check(image.url.includes('.'+image.sha256.slice(0,12)+'.'),`Image filename lacks its content hash: ${image.url}`);
+}
 check(directory.venues.length===65,'Directory must retain all 65 places');
 const photoSources=JSON.parse(fs.readFileSync(path.join(root,'data/venue-photo-sources.json'),'utf8'));
 check(photoSources.venues.length===65,'Photo source register must cover all 65 places');
@@ -76,6 +83,7 @@ for(const locale of ['en','ja','zh-CN']){
  check(!text.includes('class="near-rep"'),`${locale}: unrelated representative photos remain`);
  for(const v of directory.venues){
   check(v.translations[locale].links.length>0,`${locale}: ${v.id} needs a useful destination`);
+  check(text.includes(`id="${v.id}"`),`${locale}: ${v.id} has no shareable anchor`);
   check(!v.hoursCheckedOn || /^\d{4}-\d{2}-\d{2}$/.test(v.hoursCheckedOn),`${v.id}: invalid checked date`);
  }
  const comparison=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
@@ -93,6 +101,9 @@ for(const locale of ['en','ja','zh-CN']){
  const bbq=fs.readFileSync(path.join(root,prefix+'bbq/index.html'),'utf8');
  check(bbq.includes('2000017066.pdf'),`${locale}: missing manufacturer instructions`);
  check(!/one canister, but|1本でも点火可能|一罐也可以点火/.test(bbq),`${locale}: unsafe one-cartridge instructions`);
+ check(!/¥3,500[^<]{0,50}per stay|1滞在3,500|每次入住 ¥3,500/.test(bbq),`${locale}: BBQ fee still incorrectly charged per stay`);
+ const faq=fs.readFileSync(path.join(root,prefix+'faq/index.html'),'utf8');
+ check(faq.includes('id="family-policy"'),`${locale}: missing confirmed family/BBQ policy`);
 }
 for(const sitemap of ['sitemap.xml','sitemap-zh-cn.xml']){
  const xml=fs.readFileSync(path.join(root,sitemap),'utf8');
@@ -101,8 +112,14 @@ for(const sitemap of ['sitemap.xml','sitemap-zh-cn.xml']){
  }
 }
 const ignored=fs.readFileSync(path.join(root,'.assetsignore'),'utf8');
-for(const item of ['wrangler.jsonc','.git','data','scripts','docs'])check(ignored.split(/\r?\n/).includes(item),`Private deployment file/folder not excluded: ${item}`);
-for(const file of ['seo-site.js','scripts/sync-content.cjs']){
+for(const item of ['wrangler.jsonc','.git','data','scripts','docs','.github','package.json','package-lock.json'])check(ignored.split(/\r?\n/).includes(item),`Private deployment file/folder not excluded: ${item}`);
+for(const [file,text]of source){
+ if(path.basename(file)==='googlefa3fab5b6b918158.html')continue;
+ check(text.includes('/analytics.js?v='),`${file}: missing shared analytics loader`);
+ check(!text.includes('googletagmanager.com/ns.html'),`${file}: no-JavaScript analytics bypasses preview exclusion`);
+ check(!text.includes('window,document,\'script\',\'dataLayer\''),`${file}: duplicated inline analytics loader remains`);
+}
+for(const file of ['seo-site.js','analytics.js','home-gallery.js','scripts/sync-content.cjs','scripts/assets.cjs','scripts/layouts.cjs','scripts/review-venues.cjs']){
  try{new vm.Script(fs.readFileSync(path.join(root,file),'utf8'),{filename:file})}catch(e){errors.push(e.message)}
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
