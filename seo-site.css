@@ -115,3 +115,6 @@
 body:has(.quick-reserve){padding-bottom:76px}
 
 .sister-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 26px;max-width:960px}.sister-photos a{display:block;overflow:hidden;border-radius:10px;aspect-ratio:3/2;background:#e9e4da}.sister-photos img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.sister-photos a:hover img{transform:scale(1.04)}@media(max-width:640px){.sister-photos{grid-template-columns:1fr 1fr;gap:8px}.sister-photos a:first-child{grid-column:1/-1;aspect-ratio:16/9}}
+
+.near-hours{font-size:.88rem;line-height:1.5;color:#46575a;margin:.35rem 0 0}.near-body .place-map,.near-body .place-ig{margin:.3rem 0 0;font-size:.88rem}
+.fishing-warning{background:#fff4e0;border-left:4px solid #c0792b;padding:16px 18px;border-radius:8px;color:#3b2f1c;font-size:1rem;line-height:1.6;max-width:none}
