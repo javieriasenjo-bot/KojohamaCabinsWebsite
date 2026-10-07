@@ -1,3 +1,6 @@
+# Permanent canonical URL for the Japanese access page
+/ja/location /ja/location/ 301
+
 # Korean retired 2026-10-02 - send the indexed KO URLs to English
 /ko/ / 301
 /ko/cabins/ /cabins/ 301
