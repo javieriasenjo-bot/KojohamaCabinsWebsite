@@ -186,7 +186,17 @@ for (const absolute of walk(root)) {
   update(schema);
   return start+JSON.stringify(schema)+end;
  });
+ // The preload and visible hero must select the same responsive resource.
+ const hero=source.match(/<img\b[^>]*class="hero-img"[^>]*>/)?.[0];
+ if(hero){
+  const attr=name=>hero.match(new RegExp('\\b'+name+'="([^"]+)"'))?.[1];
+  source=source.replace(/<link\b[^>]*rel="preload"[^>]*>/g,tag=>{
+   if(!tag.includes('as="image"'))return tag;
+   return '<link as="image" href="'+attr('src')+'" imagesizes="'+attr('sizes')+'" imagesrcset="'+attr('srcset')+'" fetchpriority="high" rel="preload"/>';
+  });
+ }
  save(file,layouts.render(source,file,lang));
 }
 assets.build();
+require('./sitemaps.cjs').sync();
 console.log('Synchronized localized directory, photo captions and cabin comparison sections.');

@@ -5,7 +5,10 @@
     "build": "node scripts/sync-content.cjs",
     "check": "node scripts/check-site.cjs",
     "check:browser": "node scripts/check-browser.cjs",
-    "review:venues": "node scripts/review-venues.cjs"
+    "review:venues": "node scripts/review-venues.cjs",
+    "indexnow:preview": "node scripts/indexnow.cjs",
+    "indexnow:submit": "node scripts/indexnow.cjs --submit",
+    "audit:search": "node scripts/audit-search.cjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

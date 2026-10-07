@@ -3,7 +3,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const layouts = JSON.parse(fs.readFileSync(path.join(root, 'data/layouts.json'), 'utf8'));
 const prefixes = {en:'', ja:'ja/', 'zh-CN':'zh-cn/'};
-const version = '12.23';
+const version = '12.24';
 const script = `<script defer src="/analytics.js?v=${version}"></script>`;
 const escape = text => text.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 function render(source, file, lang) {

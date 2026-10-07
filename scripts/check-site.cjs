@@ -122,5 +122,25 @@ for(const [file,text]of source){
 for(const file of ['seo-site.js','analytics.js','home-gallery.js','scripts/sync-content.cjs','scripts/assets.cjs','scripts/layouts.cjs','scripts/review-venues.cjs']){
  try{new vm.Script(fs.readFileSync(path.join(root,file),'utf8'),{filename:file})}catch(e){errors.push(e.message)}
 }
+// SEO release invariants.
+const sitemapUrls=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+const redirects=fs.readFileSync(path.join(root,'_redirects'),'utf8').split(/\r?\n/).filter(line=>line&&!line.startsWith('#')).map(line=>line.split(/\s+/));
+for(const url of sitemapUrls){
+ const route=new URL(url).pathname;
+ check(route==='/'||route.endsWith('/'),'Sitemap page has no trailing slash: '+url);
+ if(route!=='/'){
+  check(redirects.some(r=>r[0]===route.slice(0,-1)&&r[1]===route&&r[2]==='301'),'Missing permanent redirect: '+route);
+  check(!redirects.some(r=>r[0]===route),'Canonical page is itself redirected: '+route);
+ }
+}
+for(const [file,html]of source){
+ const hero=html.match(/<img\b[^>]*class="hero-img"[^>]*>/)?.[0];
+ const preload=html.match(/<link\b[^>]*as="image"[^>]*rel="preload"[^>]*>/)?.[0];
+ if(hero&&preload){
+  const attr=(tag,name)=>tag.match(new RegExp('\\b'+name+'="([^"]+)"'))?.[1];
+  check(attr(hero,'srcset')===attr(preload,'imagesrcset'),file+': hero preload selects different image sizes');
+  check(attr(hero,'sizes')===attr(preload,'imagesizes'),file+': hero preload has different layout sizes');
+ }
+}
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
 else console.log(`PASS: ${pages.length} HTML files, ${references} local references, ${schemas} structured-data blocks, ${inlineScripts} inline scripts, 65 venues in three languages, booking channels and source deployment exclusions.`);

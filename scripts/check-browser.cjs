@@ -42,6 +42,11 @@ let browser;
   }
   await page.setViewportSize({width:390,height:844});
   await visit('/'+prefix);
+  const menu=page.locator('.menu-toggle');
+  await menu.click();assert.equal(await menu.getAttribute('aria-expanded'),'true');
+  const closeLabel=await menu.getAttribute('aria-label');await page.keyboard.press('Escape');
+  assert.equal(await menu.getAttribute('aria-expanded'),'false');assert.notEqual(await menu.getAttribute('aria-label'),closeLabel);
+  await menu.click();await page.locator('#quick-reserve-open').click();assert.equal(await menu.getAttribute('aria-expanded'),'false');await page.locator('#quick-reserve-close').click();
   const trigger=page.locator('[data-gallery-open="zen"]').first();await trigger.click();
   const homeDialog=page.locator('#photo-lightbox');assert(await homeDialog.isVisible());
   await homeDialog.locator('img').evaluate(image=>image.decode());

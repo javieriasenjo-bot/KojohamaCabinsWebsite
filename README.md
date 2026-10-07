@@ -23,3 +23,5 @@ Run npm ci, npm run build and npm run check after changes. The build applies dat
 For browser checks run npx playwright install chromium and npm run check:browser. Tests run against a local server and block external booking and analytics requests. GitHub Actions runs source and browser checks after commits and pull requests; branch protection is not configured by this repository. Monthly venue review runs on the first day at 09:00 Japan time once the workflow is on the default branch. It produces a queue, not automatic confirmation of hours. Run npm run review:venues locally to refresh docs/VENUE-REVIEW.csv.
 
 See docs/GTM-REVIEW-2026-10-06.md for the separate GTM import draft and owner validation steps.
+
+Search/indexing follow-up: see docs/SEARCH-AND-MEASUREMENT-2026-10-07.md. npm run audit:search checks public pages; npm run indexnow:preview previews submissions. Commit the root IndexNow key text file, data/indexnow.json, data/sitemap-content.json and new workflow/scripts with the redirects and sitemaps. The IndexNow workflow verifies production before submitting and does not deploy the website.

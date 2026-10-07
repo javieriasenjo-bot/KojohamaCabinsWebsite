@@ -1,0 +1,30 @@
+name: Notify IndexNow after production catches up
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: true
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Submit changed pages after deployment; manual runs submit all sitemap pages
+        env:
+          PREVIOUS_COMMIT: ${{ github.event.before }}
+        run: |
+          if [ -n "$PREVIOUS_COMMIT" ] && [ "$PREVIOUS_COMMIT" != "0000000000000000000000000000000000000000" ]; then
+            node scripts/indexnow.cjs --submit --wait-for-deploy --changed-ref="$PREVIOUS_COMMIT"
+          else
+            node scripts/indexnow.cjs --submit --wait-for-deploy
+          fi

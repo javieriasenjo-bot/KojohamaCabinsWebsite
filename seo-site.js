@@ -187,12 +187,23 @@
   }
 
   document.querySelectorAll('.menu-toggle').forEach(button => {
-    button.addEventListener('click', () => {
-      const header = button.closest('.topbar');
-      const open = !header.classList.contains('menu-open');
+    const header = button.closest('.topbar');
+    const labels = { en: ['Open menu', 'Close menu'], ja: ['メニューを開く', 'メニューを閉じる'], zh: ['打开菜单', '关闭菜单'] }[document.documentElement.lang.slice(0, 2)] || ['Open menu', 'Close menu'];
+    const setMenu = open => {
       header.classList.toggle('menu-open', open);
       button.setAttribute('aria-expanded', String(open));
+      button.setAttribute('aria-label', labels[open ? 1 : 0]);
       button.textContent = open ? '×' : '☰';
+    };
+    setMenu(false);
+    button.addEventListener('click', () => {
+      const open = !header.classList.contains('menu-open');
+      setMenu(open);
+    });
+    header.querySelector('nav')?.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+    document.addEventListener('click', event => { if (!header.contains(event.target)) setMenu(false); });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && header.classList.contains('menu-open')) { setMenu(false); button.focus(); }
     });
   });
 
@@ -222,15 +233,6 @@
     qrMenu.addEventListener('click', e => { if (e.target.closest('a')) setQr(false); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !qrMenu.hidden) setQr(false); });
   }
-
-  // Escape closes the mobile navigation
-  document.addEventListener('keydown', e => {
-    const header = document.querySelector('.topbar.menu-open');
-    if (e.key === 'Escape' && header) {
-      const b = header.querySelector('.menu-toggle');
-      header.classList.remove('menu-open'); b.setAttribute('aria-expanded', 'false'); b.textContent = '☰'; b.focus();
-    }
-  });
 
   // Photo enlargement for cabin-page galleries
   const gal = [...document.querySelectorAll('.gallery-section img')];
