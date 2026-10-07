@@ -8,6 +8,15 @@ const script = `<script defer src="/analytics.js?v=${version}"></script>`;
 const escape = text => text.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 function render(source, file, lang) {
   if (file === 'googlefa3fab5b6b918158.html') return source;
+  // Only the first, above-the-fold hero gets high network priority.
+  source=source.replace(/(<section\b[^>]*class="page-hero"[^>]*>\s*)(<img\b[^>]*>)/,(_,start,img)=>start+img.replace(/\s(?:fetchpriority|loading)="[^"]*"/g,'').replace(/>$/,' fetchpriority="high" decoding="async">').replace(/decoding="async"([^>]*?) decoding="async"/,'decoding="async"$1'));
+  if(file==='go/index.html'||/privacy\/index\.html$/.test(file)){
+    const title=source.match(/<title>([^<]+)<\/title>/)?.[1]||'Ocean Stay Kojohama';
+    const descriptionTag=source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0];
+    const description=descriptionTag?.match(/content="([^"]*)"/)?.[1]||title;
+    const url='https://kojohamacabins.jp/'+file.replace(/index\.html$/,'');
+    if(!source.includes('property="og:title"'))source=source.replace('</head>',`<meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:type" content="website"><meta property="og:url" content="${url}"><meta property="og:image" content="https://kojohamacabins.jp/images/outside/outside-hero-sunset.webp"></head>`);
+  }
   const prefix = prefixes[lang];
   const route = file === '404.html' ? '' : file.replace(new RegExp('^'+prefix),'').replace(/index\.html$/,'');
   const active = '/' + prefix + route;
