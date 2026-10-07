@@ -1,489 +1,351 @@
 {
-  "checkedAt": "2026-10-07T09:53:18.403Z",
+  "checkedAt": "2026-10-07T12:25:05.972Z",
   "scope": "Public HTTP and canonical checks; not Google or Bing index status",
   "pages": [
     {
       "url": "https://kojohamacabins.jp/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/bbq/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/bbq/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/cabins/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/cabins/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/cabins/ocean-stay-rustic/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/cabins/ocean-stay-rustic/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/cabins/ocean-stay-sol/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/cabins/ocean-stay-sol/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/cabins/ocean-stay-zen/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/cabins/ocean-stay-zen/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/culture/shiraoi-ainu-culture/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/culture/shiraoi-ainu-culture/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/faq/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/faq/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/hokkaido-winter-driving-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/hokkaido-winter-driving-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/kojohama-onsen/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/kojohama-onsen/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/kojohama-seafood-tarako/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/kojohama-seafood-tarako/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/noboribetsu-from-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/noboribetsu-from-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/one-day-kojohama-coast/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/one-day-kojohama-coast/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/outdoors-family-fishing/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/outdoors-family-fishing/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/stay-between-upopoy-noboribetsu/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/stay-between-upopoy-noboribetsu/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/two-day-shiraoi-itinerary/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/two-day-shiraoi-itinerary/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/guides/upopoy-from-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/guides/upopoy-from-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/bbq/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/bbq/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/cabins/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/cabins/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/cabins/ocean-stay-rustic/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/cabins/ocean-stay-rustic/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/cabins/ocean-stay-sol/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/cabins/ocean-stay-sol/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/cabins/ocean-stay-zen/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/cabins/ocean-stay-zen/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/culture/shiraoi-ainu-culture/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/culture/shiraoi-ainu-culture/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/faq/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/faq/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/hokkaido-winter-driving-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/hokkaido-winter-driving-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/kojohama-onsen/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/kojohama-onsen/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/kojohama-seafood-tarako/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/kojohama-seafood-tarako/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/noboribetsu-from-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/noboribetsu-from-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/one-day-kojohama-coast/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/one-day-kojohama-coast/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/outdoors-family-fishing/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/outdoors-family-fishing/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/stay-between-upopoy-noboribetsu/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/stay-between-upopoy-noboribetsu/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/two-day-shiraoi-itinerary/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/two-day-shiraoi-itinerary/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/guides/upopoy-from-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/guides/upopoy-from-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/location/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/location/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/october-to-march/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/october-to-march/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/own-a-cabin/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/own-a-cabin/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/privacy/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/privacy/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/things-to-do/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/things-to-do/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/ja/work-remotely/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/ja/work-remotely/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/location/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/location/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/october-to-march/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/october-to-march/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/own-a-cabin/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/own-a-cabin/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/privacy/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/privacy/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/things-to-do/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/things-to-do/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/work-remotely/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/work-remotely/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/bbq/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/bbq/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/cabins/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/cabins/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-rustic/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-rustic/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-sol/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-sol/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-zen/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-zen/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/culture/shiraoi-ainu-culture/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/culture/shiraoi-ainu-culture/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/faq/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/faq/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/hokkaido-winter-driving-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/hokkaido-winter-driving-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/kojohama-onsen/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/kojohama-onsen/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/kojohama-seafood-tarako/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/kojohama-seafood-tarako/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/noboribetsu-from-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/noboribetsu-from-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/one-day-kojohama-coast/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/one-day-kojohama-coast/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/outdoors-family-fishing/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/outdoors-family-fishing/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/stay-between-upopoy-noboribetsu/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/stay-between-upopoy-noboribetsu/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/two-day-shiraoi-itinerary/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/two-day-shiraoi-itinerary/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/guides/upopoy-from-kojohama/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/guides/upopoy-from-kojohama/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/location/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/location/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/october-to-march/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/october-to-march/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/own-a-cabin/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/own-a-cabin/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/privacy/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/privacy/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/things-to-do/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/things-to-do/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "url": "https://kojohamacabins.jp/zh-cn/work-remotely/",
-      "status": 200,
-      "canonical": "https://kojohamacabins.jp/zh-cn/work-remotely/",
-      "noindex": false,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     }
   ]
 }
