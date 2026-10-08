@@ -73,9 +73,12 @@ let browser;
   assert((await viewer.evaluate(image=>image.naturalWidth))>smallWidth,'Viewer should fetch the full photo, not its thumbnail');
   await page.keyboard.press('Escape');assert(await thumb.evaluate(element=>element===document.activeElement));
   await stopNavigation();
+  const airbnb=await clickEvent('a[href*="airbnb."]:not([data-link-location="reviews"]):not([data-intent="reviews"])','airbnb_click');
+  assert.equal(airbnb.intent,'booking');assert.equal(airbnb.booking_platform,'airbnb');assert.equal(airbnb.cabin_name,'Ocean Stay Sol');
   const review=await clickEvent('a[href*="airbnb."][data-link-location="reviews"]','review_click');assert.equal(review.intent,'reviews');
   const bookingReview=await clickEvent('a[data-intent="reviews"][href*="booking.com"]','review_click');assert.equal(bookingReview.booking_platform,'booking.com');assert.equal(bookingReview.cabin_name,'All cabins');
   const booking=await clickEvent('a[href*="ctrip.com"]','booking_click');assert.equal(booking.intent,'booking');assert.equal(booking.booking_platform,'ctrip');
+  const email=await clickEvent('a[href^="mailto:"]','contact_click');assert.equal(email.contact_method,'email');assert.equal(email.intent,null);
   const language=await clickEvent('.languages a:not([aria-current])','language_change');assert.equal(language.cabin_name,null);assert.equal(language.intent,null);assert.equal(language.page_language,prefix==='ja/'?'ja':prefix==='zh-cn/'?'zh-CN':'en');
   results.push({language:prefix||'en',mobileWidths:[320,390],directoryPhotos:65,deepLinks:true,search:true,galleries:true,events:true});
  }

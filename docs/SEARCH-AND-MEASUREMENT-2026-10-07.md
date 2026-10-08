@@ -16,9 +16,11 @@ The supplied Search Console workbook is an overview export, not an affected-URL 
 
 Use these as profile website links where supported; do not add UTMs to internal site links:
 
-- Instagram: https://kojohamacabins.jp/go/?utm_source=instagram&utm_medium=organic_social&utm_campaign=profile
-- TikTok: https://kojohamacabins.jp/go/?utm_source=tiktok&utm_medium=organic_social&utm_campaign=profile
-- YouTube: https://kojohamacabins.jp/go/?utm_source=youtube&utm_medium=organic_social&utm_campaign=profile
+- Instagram: https://kojohamacabins.jp/go/?utm_source=instagram&utm_medium=social&utm_campaign=bio&utm_content=link_in_bio
+- TikTok: https://kojohamacabins.jp/go/?utm_source=tiktok&utm_medium=social&utm_campaign=bio
+- YouTube: https://kojohamacabins.jp/go/?utm_source=youtube&utm_medium=social&utm_campaign=bio
+
+8 October live check: Instagram and TikTok already use the first two links. Preserve their existing medium and campaign for continuity. Use full lowercase source names for new links; group historical `ig` with `instagram` in analysis, without rewriting raw exports. YouTube is a prepared link, not a verified profile update. RedNote link, where the platform permits it: https://kojohamacabins.jp/go/?utm_source=rednote&utm_medium=social&utm_campaign=bio . Its profile requires login; no profile edit was made.
 
 Per-post Story links should retain an identifying utm_campaign and utm_content. Existing Thursday and Sunday publishing guides already include tagged Instagram Story links. RedNote publishing guidance has no external URL CTA; do not change that based on this document. Profile changes were not made in authenticated accounts.
 
