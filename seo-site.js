@@ -105,6 +105,11 @@
     window.addEventListener('hashchange', revealHash);
   }
   const push = (event, details = {}) => window.KojohamaAnalytics.push(event, details);
+  const cabinRoute=location.pathname.match(/^\/(?:ja\/|zh-cn\/)?cabins\/ocean-stay-(sol|zen|rustic)\/$/);
+  if(cabinRoute && !window.kojohamaCabinViewRecorded){
+    window.kojohamaCabinViewRecorded=true;
+    push('cabin_view',{cabin_name:'Ocean Stay '+({sol:'Sol',zen:'Zen',rustic:'Rustic'}[cabinRoute[1]]),link_location:'cabin_detail'});
+  }
 
   const CABIN_IDS = { '1451962457697397900': 'Ocean Stay Sol', '1452755870408569390': 'Ocean Stay Zen', '1452772681885880930': 'Ocean Stay Rustic',
     '136074478': 'Ocean Stay Sol', '136074484': 'Ocean Stay Zen', '136074515': 'Ocean Stay Rustic' };
