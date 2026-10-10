@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-10-10",
-  "method": "Official operator/municipal pages read; not telephone confirmation.",
+  "method": "Official operator, municipal and local tourism association pages read; not telephone confirmation.",
   "records": [
     {
       "id": "venue-02",
@@ -61,6 +61,51 @@
       "id": "venue-64",
       "source": "https://tomakomai.aeonmallhokkaido.com/static-pages/hours",
       "summary": "Mall shops/food court: 10:00–21:00; restaurants: 11:00–21:00; Aeon food store: 08:00–23:00. Some tenants differ."
+    },
+    {
+      "id": "venue-04",
+      "source": "https://shiraoi.net/gourmet/ゆジェラート/",
+      "summary": "10:00–16:30 (last order 16:00); closes when sold out. Irregular closing days; closed in winter."
+    },
+    {
+      "id": "venue-05",
+      "source": "https://tacchan-shokudo.com/print/",
+      "summary": "10:00–14:00. Closed Tuesday/Wednesday; open on public holidays, with a substitute closure the following day."
+    },
+    {
+      "id": "venue-56",
+      "source": "https://shiraoi.net/porotomintar/",
+      "summary": "April–October 09:00–18:00; November–March 09:00–17:00. Closed 29 December–3 January. In winter, the shop closes Monday (next day if a public holiday); tourist information remains open."
+    },
+    {
+      "id": "venue-57",
+      "source": "https://puratto.jp/",
+      "summary": "07:00–16:00. Closed Wednesday except public holidays. Individual restaurants and shops may have different hours."
+    },
+    {
+      "id": "venue-58",
+      "source": "https://store.seicomart.co.jp/detail.php?nbr=21351",
+      "summary": "06:00–23:00."
+    },
+    {
+      "id": "venue-59",
+      "source": "https://store.family.co.jp/points/25012",
+      "summary": "Open 24 hours except Sunday 23:00–Monday 05:00, when the store is closed."
+    },
+    {
+      "id": "venue-61",
+      "source": "https://map.sapporo.coop/store/detail/3244/",
+      "summary": "09:00–20:00. Tenant opening hours may differ."
+    },
+    {
+      "id": "venue-62",
+      "source": "https://www.hokuyu-lucky.co.jp/post_shop/post_shop-5460/",
+      "summary": "09:00–20:00."
+    },
+    {
+      "id": "venue-63",
+      "source": "https://shop.tsuruha-g.com/0144",
+      "summary": "09:00–22:00 daily."
     }
   ],
   "ayoroUpcomingClosure": {

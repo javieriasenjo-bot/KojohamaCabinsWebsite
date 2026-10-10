@@ -284,7 +284,7 @@
           "name": "Yu Gelato",
           "drive": "3 min",
           "descriptionHtml": "Handmade gelato at Hana no Yu, made with Noboribetsu milk and seasonal local fruit and vegetables.",
-          "hours": "Hours: Fri 10:00–16:00 · Sat–Sun 10:00–17:00 · Closed Mon–Thu",
+          "hours": "10:00–16:30 (last order 16:00); closes when sold out. Irregular closing days; closed in winter.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJTWFCjRpldV8RrUwoqqtyeEE",
@@ -307,7 +307,7 @@
           "name": "ゆジェラート",
           "drive": "車で3分",
           "descriptionHtml": "花の湯の敷地内。登別の牛乳と旬の地元食材で作る手づくりジェラート。",
-          "hours": "営業時間: 金 10:00–16:00 · 土–日 10:00–17:00 · 定休 月–木",
+          "hours": "10:00〜16:30（L.O.16:00）、売り切れ次第終了。不定休、冬季休業。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJTWFCjRpldV8RrUwoqqtyeEE",
@@ -330,7 +330,7 @@
           "name": "YU意式冰淇淋",
           "drive": "车程3分钟",
           "descriptionHtml": "位于花之汤园区内，用登别牛奶和当季本地蔬果手工制作的意式冰淇淋。",
-          "hours": "营业时间: 周五 10:00–16:00 · 周六–周日 10:00–17:00 · 休息 周一–周四",
+          "hours": "10:00–16:30（最后点餐16:00），售完提前结束。不定期休息，冬季休业。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJTWFCjRpldV8RrUwoqqtyeEE",
@@ -350,8 +350,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/gourmet/ゆジェラート/"
     },
     {
       "id": "venue-05",
@@ -361,7 +361,7 @@
           "name": "Tacchan Shokudo",
           "drive": "4 min",
           "descriptionHtml": "A seafood company's cafeteria: donburi, salt ramen and the day's fish. The village lunch locals actually use.",
-          "hours": "Hours: Mon, Thu–Sun 10:00–14:00 · Closed Tue–Wed",
+          "hours": "10:00–14:00. Closed Tuesday/Wednesday; open on public holidays, with a substitute closure the following day.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6o6P4hjdV8RprVFrDboAt4",
@@ -384,7 +384,7 @@
           "name": "たっちゃん食堂",
           "drive": "車で4分",
           "descriptionHtml": "マルカン本間水産の食堂。海鮮丼、塩ラーメン、その日の魚。地元の昼ごはん。",
-          "hours": "営業時間: 月, 木–日 10:00–14:00 · 定休 火–水",
+          "hours": "10:00〜14:00。火・水曜定休（祝日は営業、翌日休み）。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6o6P4hjdV8RprVFrDboAt4",
@@ -407,7 +407,7 @@
           "name": "小辰食堂",
           "drive": "车程4分钟",
           "descriptionHtml": "水产公司直营食堂。海鲜盖饭、盐味拉面、当天的鱼。村里人的午饭。",
-          "hours": "营业时间: 周一, 周四–周日 10:00–14:00 · 休息 周二–周三",
+          "hours": "10:00–14:00。周二、周三休息；遇节假日营业，次日休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6o6P4hjdV8RprVFrDboAt4",
@@ -427,8 +427,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://tacchan-shokudo.com/print/"
     },
     {
       "id": "venue-06",
@@ -4246,7 +4246,7 @@
           "name": "Poroto Mintara",
           "drive": "20 min",
           "descriptionHtml": "Shiraoi tourist information, Ainu-pattern goods, local food and soft serve next to the station.",
-          "hours": "Hours: Daily 09:00–18:00",
+          "hours": "April–October 09:00–18:00; November–March 09:00–17:00. Closed 29 December–3 January. In winter, the shop closes Monday (next day if a public holiday); tourist information remains open.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJhRm3XiprdV8RjRvjfhJBDDg",
@@ -4274,7 +4274,7 @@
           "name": "ポロトミンタラ",
           "drive": "車で20分",
           "descriptionHtml": "観光案内、アイヌ文様、地元食、ソフトクリーム。白老駅北。",
-          "hours": "営業時間: 毎日 09:00–18:00",
+          "hours": "4〜10月9:00〜18:00、11〜3月9:00〜17:00。12月29日〜1月3日休業。冬季は売店のみ月曜休業（祝日の場合は翌日）、観光案内は営業。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJhRm3XiprdV8RjRvjfhJBDDg",
@@ -4302,7 +4302,7 @@
           "name": "波罗托明塔拉",
           "drive": "车程20分钟",
           "descriptionHtml": "旅游咨询、阿伊努纹样、当地食品、软冰淇淋，就在白老站旁。",
-          "hours": "营业时间: 每天 09:00–18:00",
+          "hours": "4月至10月09:00–18:00；11月至3月09:00–17:00。12月29日至1月3日休业。冬季商店周一休息（节假日顺延至次日），旅游咨询照常开放。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJhRm3XiprdV8RjRvjfhJBDDg",
@@ -4327,8 +4327,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/porotomintar/"
     },
     {
       "id": "venue-57",
@@ -4338,7 +4338,7 @@
           "name": "Plat Minato Market",
           "drive": "35 min",
           "descriptionHtml": "Tomakomai's port fish market: hokki clams, donburi counters and fruit stalls. Eat there, then pack seafood for the cabin fridge.",
-          "hours": "Hours: Mon–Tue, Thu–Sun 07:00–16:00 · Closed Wed",
+          "hours": "07:00–16:00. Closed Wednesday except public holidays. Individual restaurants and shops may have different hours.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJpVPzjusQdV8RcF9DvMrxaDg",
@@ -4361,7 +4361,7 @@
           "name": "ぷらっとみなと市場",
           "drive": "車で35分",
           "descriptionHtml": "苫小牧漁港の市場。ホッキ、海鮮丼、青果。食べて、買って、キャビンの冷蔵庫へ。",
-          "hours": "営業時間: 月–火, 木–日 07:00–16:00 · 定休 水",
+          "hours": "7:00〜16:00。水曜定休（祝日は全店営業）。飲食店・各店舗の営業時間は異なる場合があります。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJpVPzjusQdV8RcF9DvMrxaDg",
@@ -4384,7 +4384,7 @@
           "name": "海之驿市场",
           "drive": "车程35分钟",
           "descriptionHtml": "苫小牧渔港市场。北寄贝、海鲜盖饭、蔬果。吃完再买海鲜带回小屋。",
-          "hours": "营业时间: 周一–周二, 周四–周日 07:00–16:00 · 休息 周三",
+          "hours": "07:00–16:00。周三休息（节假日全部营业）。各餐厅及商店营业时间可能不同。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJpVPzjusQdV8RcF9DvMrxaDg",
@@ -4404,8 +4404,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://puratto.jp/"
     },
     {
       "id": "venue-58",
@@ -4415,7 +4415,7 @@
           "name": "Seicomart Kojohama",
           "drive": "3 min",
           "descriptionHtml": "The village convenience store: hot food, rice balls, milk, detergent and ice. The closest shop.",
-          "hours": "Hours: Daily 06:00–23:00",
+          "hours": "06:00–23:00.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJwSgie1xkdV8RCsbPUQuxjkc",
@@ -4438,7 +4438,7 @@
           "name": "セイコーマート 白老虎杖浜",
           "drive": "車で3分",
           "descriptionHtml": "村のコンビニ。ホットシェフ、おにぎり、牛乳、洗剤、氷。いちばん近い店。",
-          "hours": "営業時間: 毎日 06:00–23:00",
+          "hours": "6:00〜23:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJwSgie1xkdV8RCsbPUQuxjkc",
@@ -4461,7 +4461,7 @@
           "name": "Seicomart 白老虎杖滨",
           "drive": "车程3分钟",
           "descriptionHtml": "村里的便利店。热食、饭团、牛奶、洗衣粉、冰块。最近的店。",
-          "hours": "营业时间: 每天 06:00–23:00",
+          "hours": "06:00–23:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJwSgie1xkdV8RCsbPUQuxjkc",
@@ -4481,8 +4481,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://store.seicomart.co.jp/detail.php?nbr=21351"
     },
     {
       "id": "venue-59",
@@ -4492,7 +4492,7 @@
           "name": "FamilyMart Takeura",
           "drive": "7 min",
           "descriptionHtml": "Open 24 hours, with an ATM.",
-          "hours": "Hours: Mon 07:00–00:00 · Tue–Sat 24h · Sun 07:00–22:00",
+          "hours": "Open 24 hours except Sunday 23:00–Monday 05:00, when the store is closed.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6q6jIxldV8Ryks0qOre4yA",
@@ -4515,7 +4515,7 @@
           "name": "ファミリーマート 白老竹浦",
           "drive": "車で7分",
           "descriptionHtml": "24時間営業、ATMあり。",
-          "hours": "営業時間: 月 07:00–00:00 · 火–土 24h · 日 07:00–22:00",
+          "hours": "原則24時間営業。日曜23:00閉店、月曜5:00開店。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6q6jIxldV8Ryks0qOre4yA",
@@ -4538,7 +4538,7 @@
           "name": "FamilyMart 白老竹浦",
           "drive": "车程7分钟",
           "descriptionHtml": "24小时营业，有ATM。",
-          "hours": "营业时间: 周一 07:00–00:00 · 周二–周六 24h · 周日 07:00–22:00",
+          "hours": "通常24小时营业；周日23:00关门，周一05:00重新开门。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6q6jIxldV8Ryks0qOre4yA",
@@ -4558,8 +4558,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://store.family.co.jp/points/25012"
     },
     {
       "id": "venue-60",
@@ -4646,7 +4646,7 @@
           "name": "Coop Paseo Shiraoi",
           "drive": "18 min",
           "descriptionHtml": "The full supermarket: produce, meat, sake and a drugstore counter. Stock up here if you are cooking for several nights.",
-          "hours": "Hours: Daily 09:00–20:00",
+          "hours": "09:00–20:00. Tenant opening hours may differ.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJu_M5H4prdV8R1ymULirqcak",
@@ -4669,7 +4669,7 @@
           "name": "コープさっぽろ パセオしらおい",
           "drive": "車で18分",
           "descriptionHtml": "きちんとしたスーパー。野菜、肉、酒、ドラッグ。数日分の自炊ならここ。",
-          "hours": "営業時間: 毎日 09:00–20:00",
+          "hours": "9:00〜20:00。テナントの営業時間は異なる場合があります。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJu_M5H4prdV8R1ymULirqcak",
@@ -4692,7 +4692,7 @@
           "name": "Coop Paseo 白老",
           "drive": "车程18分钟",
           "descriptionHtml": "正经超市。蔬菜、肉、酒、药品。要在小屋做几天饭就来这里。",
-          "hours": "营业时间: 每天 09:00–20:00",
+          "hours": "09:00–20:00。租户店铺营业时间可能不同。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJu_M5H4prdV8R1ymULirqcak",
@@ -4712,8 +4712,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://map.sapporo.coop/store/detail/3244/"
     },
     {
       "id": "venue-62",
@@ -4723,7 +4723,7 @@
           "name": "Lucky Mart Shiraoi",
           "drive": "18 min",
           "descriptionHtml": "A smaller supermarket near Shiraoi station.",
-          "hours": "Hours: Daily 09:00–20:00",
+          "hours": "09:00–20:00.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ1_uvLABrdV8RlIkUPUjiP0U",
@@ -4745,7 +4745,7 @@
           "name": "ラッキーマート 白老",
           "drive": "車で18分",
           "descriptionHtml": "白老駅近くの小さめスーパー。",
-          "hours": "営業時間: 毎日 09:00–20:00",
+          "hours": "9:00〜20:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ1_uvLABrdV8RlIkUPUjiP0U",
@@ -4767,7 +4767,7 @@
           "name": "Lucky Mart 白老",
           "drive": "车程18分钟",
           "descriptionHtml": "白老站附近较小的超市。",
-          "hours": "营业时间: 每天 09:00–20:00",
+          "hours": "09:00–20:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ1_uvLABrdV8RlIkUPUjiP0U",
@@ -4786,8 +4786,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.hokuyu-lucky.co.jp/post_shop/post_shop-5460/"
     },
     {
       "id": "venue-63",
@@ -4797,7 +4797,7 @@
           "name": "Tsuruha Drug Shiraoi",
           "drive": "19 min",
           "descriptionHtml": "Pharmacy, cosmetics and baby goods.",
-          "hours": "Hours: Daily 09:00–22:00",
+          "hours": "09:00–22:00 daily.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJm35MlPdrdV8RX6mCBf2HxhU",
@@ -4820,7 +4820,7 @@
           "name": "ツルハドラッグ 白老",
           "drive": "車で19分",
           "descriptionHtml": "薬、化粧品、ベビー用品。",
-          "hours": "営業時間: 毎日 09:00–22:00",
+          "hours": "毎日9:00〜22:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJm35MlPdrdV8RX6mCBf2HxhU",
@@ -4843,7 +4843,7 @@
           "name": "Tsuruha 药妆 白老",
           "drive": "车程19分钟",
           "descriptionHtml": "药品、化妆品、婴儿用品。",
-          "hours": "营业时间: 每天 09:00–22:00",
+          "hours": "每日09:00–22:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJm35MlPdrdV8RX6mCBf2HxhU",
@@ -4863,8 +4863,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shop.tsuruha-g.com/0144"
     },
     {
       "id": "venue-64",
