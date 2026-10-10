@@ -333,18 +333,18 @@
     {
       "id": "venue-53",
       "name": "Marugo weekend seafood stall",
-      "type": "confirmation-needed",
-      "source": "https://seikyo-gourmet-research.info/shop/5/",
-      "summary": "Weekend seafood market; confirm current opening times locally.",
-      "note": "Undated promotional hours conflict with review listings; no current operator confirmation."
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/marugosuisan/",
+      "summary": "Saturday and Sunday 11:00–16:30. Confirm temporary changes before travelling.",
+      "note": "Official Japanese tourism listing reviewed. Published schedule, not telephone confirmation; current calendar/temporary changes still apply."
     },
     {
       "id": "venue-01",
       "name": "Kojohama Cafe",
-      "type": "confirmation-needed",
-      "source": "https://www.instagram.com/kojohamacafe/",
-      "summary": "Opening days and lunch/evening service vary; check the cafe’s current Instagram calendar.",
-      "note": "Tourism weekday listings differ from the old schedule; current operator calendar needs confirmation."
+      "type": "hours",
+      "source": "https://shiraoi.net/gourmet/kojohamacafe/",
+      "summary": "Lunch/cafe 11:00–16:30 (food last order 15:30; drinks/desserts 16:00). Evening 18:30–22:00 (meals last order 20:00; drinks/karaoke 21:30), reservations prioritised. Opening days vary: check the current Instagram calendar; early closing possible.",
+      "note": "Official Japanese tourism listing reviewed. Published schedule, not telephone confirmation; current calendar/temporary changes still apply."
     }
   ]
 }

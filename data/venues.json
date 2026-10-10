@@ -50,7 +50,7 @@
           "name": "Kojohama Cafe",
           "drive": "1 min",
           "descriptionHtml": "Sea terrace and Japanese-style tarako pasta. The closest sit-down meal to the cabins (about 4 minutes on foot).",
-          "hours": "Opening days and lunch/evening service vary; check the cafe’s current Instagram calendar.",
+          "hours": "Lunch/cafe 11:00–16:30 (food last order 15:30; drinks/desserts 16:00). Evening 18:30–22:00 (meals last order 20:00; drinks/karaoke 21:30), reservations prioritised. Opening days vary: check the current Instagram calendar; early closing possible.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJC4zTzRVldV8RrrOI2abS2ug",
@@ -74,7 +74,7 @@
           "name": "虎杖浜カフェ",
           "drive": "車で1分",
           "descriptionHtml": "海のテラスと和風たらこパスタ。キャビンからいちばん近い食事処（徒歩約4分）。",
-          "hours": "営業日・昼夜の営業は変わる場合があります。最新のInstagramカレンダーをご確認ください。",
+          "hours": "昼11:00〜16:30（食事LO 15:30、ドリンク・デザートLO 16:00）。夜18:30〜22:00（定食LO 20:00、お酒・カラオケLO 21:30）、予約優先。営業日は最新のInstagramカレンダーをご確認ください。早じまいの場合あり。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJC4zTzRVldV8RrrOI2abS2ug",
@@ -98,7 +98,7 @@
           "name": "虎杖滨咖啡",
           "drive": "车程1分钟",
           "descriptionHtml": "看海露台和和风明太子意面。离小屋最近的餐厅（步行约4分钟）。",
-          "hours": "营业日期及午晚餐安排可能变动，请查咖啡馆最新Instagram日历。",
+          "hours": "午餐/咖啡11:00–16:30（餐食最后点餐15:30，饮料甜点16:00）。晚间18:30–22:00（餐食最后点餐20:00，饮酒/卡拉OK21:30），预约优先。营业日期请查最新Instagram日历，可能提前结束。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJC4zTzRVldV8RrrOI2abS2ug",
@@ -120,8 +120,9 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Tourism weekday listings differ from the old schedule; current operator calendar needs confirmation.",
-      "reviewSource": "https://www.instagram.com/kojohamacafe/"
+      "reviewNote": "Official Japanese tourism listing reviewed. Published schedule, not telephone confirmation; current calendar/temporary changes still apply.",
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/gourmet/kojohamacafe/"
     },
     {
       "id": "venue-02",
@@ -4072,7 +4073,7 @@
           "name": "Marugo weekend seafood stall",
           "drive": "6 min",
           "descriptionHtml": "Weekend-only stall on Route 36 with good-value crab, scallops and clams. Cash only.",
-          "hours": "Weekend seafood market; confirm current opening times locally.",
+          "hours": "Saturday and Sunday 11:00–16:30. Confirm temporary changes before travelling.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ3QrpH15vdV8RHbET7gCUh5E",
@@ -4095,7 +4096,7 @@
           "name": "丸吾水産 海産物夕市",
           "drive": "車で6分",
           "descriptionHtml": "週末だけの国道沿いの海産物市。カニ、ホタテ、貝が安い。現金のみ。",
-          "hours": "週末の海鮮市場。最新の営業日時は現地へご確認ください。",
+          "hours": "土・日曜11:00〜16:30。出発前に臨時の変更をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ3QrpH15vdV8RHbET7gCUh5E",
@@ -4118,7 +4119,7 @@
           "name": "丸吾水产 周末海鲜摊",
           "drive": "车程6分钟",
           "descriptionHtml": "只在周末营业的36号国道旁海鲜摊，螃蟹、扇贝、贝类便宜。仅收现金。",
-          "hours": "周末海鲜市场，请直接确认最新营业日期及时间。",
+          "hours": "周六、周日11:00–16:30。出发前请确认临时调整。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ3QrpH15vdV8RHbET7gCUh5E",
@@ -4139,8 +4140,9 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Undated promotional hours conflict with review listings; no current operator confirmation.",
-      "reviewSource": "https://seikyo-gourmet-research.info/shop/5/"
+      "reviewNote": "Official Japanese tourism listing reviewed. Published schedule, not telephone confirmation; current calendar/temporary changes still apply.",
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/marugosuisan/"
     },
     {
       "id": "venue-54",

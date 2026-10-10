@@ -241,6 +241,16 @@
       "id": "venue-55",
       "source": "https://nachunomori.jp/shop",
       "summary": "10:00–17:00. Closed Wednesday and Thursday except public holidays; year-end/New Year closures."
+    },
+    {
+      "id": "venue-53",
+      "source": "https://shiraoi.net/buy/marugosuisan/",
+      "summary": "Saturday and Sunday 11:00–16:30. Confirm temporary changes before travelling."
+    },
+    {
+      "id": "venue-01",
+      "source": "https://shiraoi.net/gourmet/kojohamacafe/",
+      "summary": "Lunch/cafe 11:00–16:30 (food last order 15:30; drinks/desserts 16:00). Evening 18:30–22:00 (meals last order 20:00; drinks/karaoke 21:30), reservations prioritised. Opening days vary: check the current Instagram calendar; early closing possible."
     }
   ],
   "ayoroUpcomingClosure": {

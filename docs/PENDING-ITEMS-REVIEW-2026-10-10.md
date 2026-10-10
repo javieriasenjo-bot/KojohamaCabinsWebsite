@@ -2,8 +2,8 @@
 
 ## Source changes ready for deployment
 
-- Researched all 43 remaining directory entries and updated English, Japanese and Simplified Chinese. This batch establishes official published hours for 27 entries, access guidance for six outdoor destinations, and qualified information for ten entries still needing direct confirmation. Published schedules are not telephone or on-site confirmations.
-- Across the complete directory, 49 entries now have published hours reviewed (including the earlier hospital review), six have access information reviewed, and ten need direct confirmation. No baseline research entries remain. The review queue is `docs/VENUE-REVIEW.csv`; this batch's sources and limitations are in `docs/REMAINING-VENUES-RESEARCH-2026-10-10.json`.
+- Researched all 43 remaining directory entries and updated English, Japanese and Simplified Chinese. This batch establishes official published hours for 29 entries, access guidance for six outdoor destinations, and qualified information for eight entries still needing direct confirmation. Published schedules are not telephone or on-site confirmations.
+- Across the complete directory, 51 entries now have published hours reviewed (including the earlier hospital review), six have access information reviewed, and eight need direct confirmation. No baseline research entries remain. The review queue is `docs/VENUE-REVIEW.csv`; this batch's sources and limitations are in `docs/REMAINING-VENUES-RESEARCH-2026-10-10.json`.
 - Corrected Cowbell's first/third Tuesday closures, Iwasaki's later closing time, Hamachidori's third-Friday closure, seasonal Mina Pieno closures, Hashimoto's Friday–Sunday/public-holiday schedule, and Usu Zenkoji museum's reservation requirement. Added Lake Kuttara winter road guidance and Cape Chikyu's paid parking; removed unsupported outdoor 24-hour claims.
 - The review queue now separates published hours from access guidance and records unsuccessful research attempts without treating them as verified. Public check labels explicitly refer to published information.
 - Added a practical cabin choice section in all three languages, differentiating beds, tatami/kotatsu and the confirmed children/BBQ policy, with planning links.
@@ -50,14 +50,16 @@ Changes are saved in `C:\dev\KojohamaCabinsWebsite` for the user to review, comm
 
 ## Remaining venue confirmations
 
-- Kojohama Cafe: confirm the current Instagram opening calendar.
 - Tonton and Sakuraya: conflicting/unsupported published schedules; contact the restaurants.
 - Date Okina: official group page does not give current opening hours.
 - Sunrise shrine: confirm its exact local identity before assigning an official website.
 - Tarako vending machine: confirm this machine's availability and access arrangements.
 - Kikyohara Farm: official tourism sources disagree on seasonal closing times.
 - Antique Shop 36: confirm the Shiraoi branch is operating and its hours.
-- Marugo weekend market: confirm current weekend opening times.
 - Koshu Kitano Museum: recent September 2026 local reporting lists 10:00–16:00 and irregular closures; confirm directly. The guide labels this as reporting, not operator verification.
 
 The owner can confirm these locally or send current operator information. They remain visible to visitors with qualified wording; old precise schedules were not retained as established facts.
+
+## Additional published schedules resolved
+
+Kojohama Cafe and Marugo were resolved through their Japanese official tourism pages. Cafe opening days still follow its current Instagram calendar; Marugo publishes Saturday/Sunday 11:00–16:30. These two additional source updates require another commit/deployment; the preceding 43-entry release was verified live.
