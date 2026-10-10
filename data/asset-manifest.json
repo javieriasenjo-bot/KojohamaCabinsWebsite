@@ -997,28 +997,10 @@
       "bytes": 60452
     },
     {
-      "source": "/images/ski/autumn-leaves.webp",
-      "url": "/media/autumn-leaves.318368bf68f5.webp",
-      "sha256": "318368bf68f515a7a647ecd8767ed2c86517efe5e2d8a743d0b5fe8a6f9a5a57",
-      "bytes": 167586
-    },
-    {
-      "source": "/images/ski/lift-ticket-office.webp",
-      "url": "/media/lift-ticket-office.e33371850fa1.webp",
-      "sha256": "e33371850fa1492ccb7a9a3742542563ccc0c91bcef628d31327f640addff638",
-      "bytes": 115080
-    },
-    {
       "source": "/images/ski/ski-mountain-winter.webp",
       "url": "/media/ski-mountain-winter.4b9047cdcbbf.webp",
       "sha256": "4b9047cdcbbf0d9bc9c5eedff21360f8ed27bbbb2c871f6f418053e513b4feb7",
       "bytes": 99038
-    },
-    {
-      "source": "/images/ski/ski-school-beginners.webp",
-      "url": "/media/ski-school-beginners.72b71778efd1.webp",
-      "sha256": "72b71778efd12a8c0feeace8cf5af86934b5b02cea36dcb3c8e9a49d62c3f51f",
-      "bytes": 65796
     },
     {
       "source": "/images/sol/sol-10-480.webp",
