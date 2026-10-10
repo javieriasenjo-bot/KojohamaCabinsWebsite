@@ -1,5 +1,7 @@
 # Pending items reviewed — 10 October 2026
 
+> Historical review. Current completion status and actionable worksheets are in [FOLLOW-UP-2026-10-11.md](FOLLOW-UP-2026-10-11.md). The Cafe/Marugo deployment warning and guest-guide deployment concern have been resolved; do not use the release boundary below as today's production status.
+
 ## Source changes ready for deployment
 
 - Researched all 43 remaining directory entries and updated English, Japanese and Simplified Chinese. This batch establishes official published hours for 31 entries, access guidance for seven outdoor destinations, and qualified information for five entries still needing direct confirmation. Published schedules are not telephone or on-site confirmations.

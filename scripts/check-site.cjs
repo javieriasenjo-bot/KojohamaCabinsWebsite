@@ -50,6 +50,19 @@ for(const [file,text]of source){
   check((text.match(/<h1\b/g)||[]).length===1,`${name}: must have one main heading`);
   check(/<link\b[^>]*rel="canonical"/.test(text),`${name}: missing canonical`);
  }
+ check(!text.includes('6 名 · 5 台のベッド'),`${name}: stale six-guest cabin capacity`);
+}
+for(const relative of [
+ 'ja/guides/hokkaido-winter-driving-kojohama/index.html',
+ 'ja/guides/stay-between-upopoy-noboribetsu/index.html',
+ 'zh-cn/guides/hokkaido-winter-driving-kojohama/index.html',
+ 'zh-cn/guides/stay-between-upopoy-noboribetsu/index.html'
+]){
+ const text=source.get(path.join(root,...relative.split('/')));
+ const description=text?.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/)?.[1]||'';
+ const openGraph=text?.match(/<meta\b[^>]*property="og:description"[^>]*content="([^"]+)"/)?.[1]||'';
+ check(Array.from(description).length>=60,`${relative}: thin meta description`);
+ check(openGraph===description,`${relative}: meta and Open Graph descriptions disagree`);
 }
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
