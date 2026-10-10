@@ -1,0 +1,71 @@
+{
+  "checkedOn": "2026-10-10",
+  "method": "Official operator/municipal pages read; not telephone confirmation.",
+  "records": [
+    {
+      "id": "venue-02",
+      "source": "https://ayorospa.com/fee/",
+      "summary": "Cafeteria: weekdays 11:00–14:00 (last order 13:45); weekends/public holidays 11:00–17:00 (last order 16:45). Check the onsen closure notices."
+    },
+    {
+      "id": "venue-07",
+      "source": "https://kojohama.shop-pro.jp/?mode=f5",
+      "summary": "Meal service: weekdays 11:30–14:30; weekends/public holidays 11:00–15:00. Closed Thursday. These are meal-service hours, not shop hours. Groups of 5 or more should phone ahead."
+    },
+    {
+      "id": "venue-15",
+      "source": "https://nachunomori.jp/restaurant",
+      "summary": "Hours: 11:00–15:30 (last order 15:00). Closed Wednesday/Thursday except public holidays; year-end/New Year closures."
+    },
+    {
+      "id": "venue-16",
+      "source": "https://nachunomori.jp/restaurant",
+      "summary": "Hours: 10:00–16:00. Closed Wednesday/Thursday except public holidays; year-end/New Year closures."
+    },
+    {
+      "id": "venue-22",
+      "source": "https://ayorospa.com/fee/",
+      "summary": "Hours: 08:00–21:00; irregular closing days. Check the official closure notices before visiting."
+    },
+    {
+      "id": "venue-26",
+      "source": "https://www.kojohama.net/daytrip/",
+      "summary": "Day bath: 09:00–22:00 (last reception 21:00). Check special-day notices."
+    },
+    {
+      "id": "venue-32",
+      "source": "https://nachunomori.jp/facilities",
+      "summary": "Garden: 10:00–17:00. Closed Wednesday/Thursday except public holidays; year-end/New Year closures. Individual facilities have different hours."
+    },
+    {
+      "id": "venue-33",
+      "source": "https://edo-trip.jp/faq/",
+      "summary": "Hours: 09:00–17:00, 20 March–31 October; 09:00–16:00, 1 November–19 March. Admission ends 1 hour before closing. Winter maintenance closures apply."
+    },
+    {
+      "id": "venue-35",
+      "source": "https://nixe-aqua.com/guide/",
+      "summary": "Hours: 09:00–17:00 (last admission 16:30). Check scheduled maintenance closures."
+    },
+    {
+      "id": "venue-37",
+      "source": "https://ainu-upopoy.go.jp/guide/hours/",
+      "summary": "2026–27 schedule: 09:00–18:00 April–October; 09:00–17:00 November–March. Last admission 1 hour before closing. Usually closed Monday (holiday exceptions); year-end and maintenance closures. Check the official calendar."
+    },
+    {
+      "id": "venue-42",
+      "source": "https://www.city.date.hokkaido.jp/funkawan/detail/00003112.html",
+      "summary": "Hours: 09:00–17:00, April–November. Closed 1 December–31 March."
+    },
+    {
+      "id": "venue-64",
+      "source": "https://tomakomai.aeonmallhokkaido.com/static-pages/hours",
+      "summary": "Mall shops/food court: 10:00–21:00; restaurants: 11:00–21:00; Aeon food store: 08:00–23:00. Some tenants differ."
+    }
+  ],
+  "ayoroUpcomingClosure": {
+    "date": "2026-10-13",
+    "source": "https://ayorospa.com/定休日のお知らせです。-2/",
+    "note": "Date-specific notice; check for subsequent changes."
+  }
+}

@@ -130,7 +130,7 @@
           "name": "Ayoro Onsen cafeteria",
           "drive": "3 min",
           "descriptionHtml": "Self-service hall after a bath. Tarako fried rice, and a meal set that includes the soak.",
-          "hours": null,
+          "hours": "Cafeteria: weekdays 11:00–14:00 (last order 13:45); weekends/public holidays 11:00–17:00 (last order 16:45). Check the onsen closure notices.",
           "links": [
             {
               "href": "https://onsen.shiraoi.net/facility/facility000125/",
@@ -153,7 +153,7 @@
           "name": "アヨロ温泉 食堂",
           "drive": "車で3分",
           "descriptionHtml": "入浴後のセルフ食堂。たらこ炒飯と入浴セットが地元の定番。",
-          "hours": null,
+          "hours": "食堂：平日11:00〜14:00（L.O.13:45）、土日祝11:00〜17:00（L.O.16:45）。温泉の休業案内もご確認ください。",
           "links": [
             {
               "href": "https://onsen.shiraoi.net/facility/facility000125/",
@@ -176,7 +176,7 @@
           "name": "阿ヨロ温泉食堂",
           "drive": "车程3分钟",
           "descriptionHtml": "泡完汤的自助食堂。明太子炒饭和含入浴的套餐是当地习惯。",
-          "hours": null,
+          "hours": "食堂：工作日11:00–14:00（最后点餐13:45）；周末及节假日11:00–17:00（最后点餐16:45）。请查看温泉休业公告。",
           "links": [
             {
               "href": "https://onsen.shiraoi.net/facility/facility000125/",
@@ -196,8 +196,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": "https://onsen.shiraoi.net/facility/facility000125/"
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://ayorospa.com/fee/"
     },
     {
       "id": "venue-03",
@@ -515,7 +515,7 @@
           "name": "Tarakoya Kojohama",
           "drive": "4 min",
           "descriptionHtml": "House-cured Kojohama tarako on rice. The village is famous for salted cod roe, and this is the specialist.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "Meal service: weekdays 11:30–14:30; weekends/public holidays 11:00–15:00. Closed Thursday. These are meal-service hours, not shop hours. Groups of 5 or more should phone ahead.",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%82%89%E3%81%93%E5%AE%B6%E8%99%8E%E6%9D%96%E6%B5%9C%20%E7%99%BD%E8%80%81",
@@ -538,7 +538,7 @@
           "name": "たらこ家 虎杖浜",
           "drive": "車で4分",
           "descriptionHtml": "自社製の虎杖浜たらこ丼。この浜の顔とも言える名物店。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "食事提供：平日11:30〜14:30、土日祝11:00〜15:00。木曜定休。売店の営業時間とは異なります。5名以上は電話予約を。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%82%89%E3%81%93%E5%AE%B6%E8%99%8E%E6%9D%96%E6%B5%9C%20%E7%99%BD%E8%80%81",
@@ -561,7 +561,7 @@
           "name": "明太子家 虎杖滨",
           "drive": "车程4分钟",
           "descriptionHtml": "自家腌制虎杖滨明太子盖饭。这个渔村以鳕鱼子闻名，这是专卖店。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "餐饮服务：工作日11:30–14:30；周末及节假日11:00–15:00。周四休息；此时间不代表商店营业时间。5人以上请电话预约。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%82%89%E3%81%93%E5%AE%B6%E8%99%8E%E6%9D%96%E6%B5%9C%20%E7%99%BD%E8%80%81",
@@ -581,8 +581,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://kojohama.shop-pro.jp/?mode=f5"
     },
     {
       "id": "venue-08",
@@ -1125,7 +1125,7 @@
           "name": "Nachu no Mori Smile cafeteria",
           "drive": "8 min",
           "descriptionHtml": "Cooking with Lake Kuttara spring water: pizza, plates and a kids' corner. Easy with children.",
-          "hours": "Hours: Mon–Tue, Fri–Sun 11:00–15:00 · Closed Wed–Thu",
+          "hours": "Hours: 11:00–15:30 (last order 15:00). Closed Wednesday/Thursday except public holidays; year-end/New Year closures.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJv1Ht-2lkdV8RrZ38kPE3fqs",
@@ -1144,7 +1144,7 @@
           "name": "ナチュの森 スマイル食堂",
           "drive": "車で8分",
           "descriptionHtml": "倶多楽の湧水料理。ピザやプレート。子どもコーナーあり。",
-          "hours": "営業時間: 月–火, 金–日 11:00–15:00 · 定休 水–木",
+          "hours": "営業時間：11:00〜15:30（L.O.15:00）。水・木曜定休（祝日は営業）、年末年始休業。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJv1Ht-2lkdV8RrZ38kPE3fqs",
@@ -1163,7 +1163,7 @@
           "name": "纳丘之森 Smile 食堂",
           "drive": "车程8分钟",
           "descriptionHtml": "倶多乐湖涌水做的餐。披萨和拼盘。有儿童区，适合带孩子。",
-          "hours": "营业时间: 周一–周二, 周五–周日 11:00–15:00 · 休息 周三–周四",
+          "hours": "营业时间：11:00–15:30（最后点餐15:00）。周三、周四休息（节假日营业），年末年初休业。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJv1Ht-2lkdV8RrZ38kPE3fqs",
@@ -1179,8 +1179,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": "https://nachunomori.jp/"
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://nachunomori.jp/restaurant"
     },
     {
       "id": "venue-16",
@@ -1190,7 +1190,7 @@
           "name": "Distill Cafe",
           "drive": "8 min",
           "descriptionHtml": "Coffee and light plates in the old village school, with spring-water drinks and a terrace on fine days.",
-          "hours": "Hours: Mon–Tue, Fri–Sun 10:00–16:00 · Closed Wed–Thu",
+          "hours": "Hours: 10:00–16:00. Closed Wednesday/Thursday except public holidays; year-end/New Year closures.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn-enfLdldV8Ra8B-wRzGeVk",
@@ -1213,7 +1213,7 @@
           "name": "蒸留カフェ",
           "drive": "車で8分",
           "descriptionHtml": "旧校舎「森の工舎」のカフェ。湧水のドリンク。天気がよければテラス。",
-          "hours": "営業時間: 月–火, 金–日 10:00–16:00 · 定休 水–木",
+          "hours": "営業時間：10:00〜16:00。水・木曜定休（祝日は営業）、年末年始休業。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn-enfLdldV8Ra8B-wRzGeVk",
@@ -1236,7 +1236,7 @@
           "name": "蒸馏咖啡",
           "drive": "车程8分钟",
           "descriptionHtml": "旧校舍里的咖啡。涌水做的饮料。天气好可坐露台。",
-          "hours": "营业时间: 周一–周二, 周五–周日 10:00–16:00 · 休息 周三–周四",
+          "hours": "营业时间：10:00–16:00。周三、周四休息（节假日营业），年末年初休业。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn-enfLdldV8Ra8B-wRzGeVk",
@@ -1256,8 +1256,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://nachunomori.jp/restaurant"
     },
     {
       "id": "venue-17",
@@ -1649,7 +1649,7 @@
           "name": "Ayoro Onsen",
           "drive": "3 min",
           "descriptionHtml": "Local day bath with skin-soft sodium-chloride water and an outdoor tub. The most affordable soak nearby.",
-          "hours": "Hours: Daily 08:00–21:00",
+          "hours": "Hours: 08:00–21:00; irregular closing days. Check the official closure notices before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ7X32v2BkdV8RTi8AsQ41qUw",
@@ -1677,7 +1677,7 @@
           "name": "アヨロ温泉",
           "drive": "車で3分",
           "descriptionHtml": "地元の日帰り湯。ナトリウム塩化物泉の美肌の湯。露天あり。いちばん気軽。",
-          "hours": "営業時間: 毎日 08:00–21:00",
+          "hours": "営業時間：8:00〜21:00、不定休。訪問前に公式の休業案内をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ7X32v2BkdV8RTi8AsQ41qUw",
@@ -1705,7 +1705,7 @@
           "name": "阿ヨロ温泉",
           "drive": "车程3分钟",
           "descriptionHtml": "当地日归温泉。氯化钠泉，水质滑，有露天浴。附近最实惠的一泡。",
-          "hours": "营业时间: 每天 08:00–21:00",
+          "hours": "营业时间：08:00–21:00，不定期休息。到访前请查看官方休业公告。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ7X32v2BkdV8RTi8AsQ41qUw",
@@ -1730,8 +1730,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": "https://onsen.shiraoi.net/facility/facility000125/"
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://ayorospa.com/fee/"
     },
     {
       "id": "venue-23",
@@ -1966,7 +1966,7 @@
           "name": "Kojohama Onsen Hotel",
           "drive": "4 min",
           "descriptionHtml": "Free-flowing 'beauty spring', outdoor bath and an auto-löyly sauna. The full hotel soak in the village.",
-          "hours": "Hours: Daily 06:00–23:00",
+          "hours": "Day bath: 09:00–22:00 (last reception 21:00). Check special-day notices.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8cdfpF1kdV8ROeD793IfojQ",
@@ -1989,7 +1989,7 @@
           "name": "虎杖浜温泉ホテル",
           "drive": "車で4分",
           "descriptionHtml": "源泉かけ流しの美人の湯。露天、オートロウリュサウナ。村の本格ホテル湯。",
-          "hours": "営業時間: 毎日 06:00–23:00",
+          "hours": "日帰り入浴：9:00〜22:00（最終受付21:00）。特別日の案内をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8cdfpF1kdV8ROeD793IfojQ",
@@ -2012,7 +2012,7 @@
           "name": "虎杖滨温泉酒店",
           "drive": "车程4分钟",
           "descriptionHtml": "源泉掛流美人汤、露天、自动蒸气桑拿。村里最完整的酒店温泉。",
-          "hours": "营业时间: 每天 06:00–23:00",
+          "hours": "日归温泉：09:00–22:00（最后受付21:00）。请查看特殊日期公告。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8cdfpF1kdV8ROeD793IfojQ",
@@ -2032,8 +2032,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.kojohama.net/daytrip/"
     },
     {
       "id": "venue-27",
@@ -2401,7 +2401,7 @@
           "name": "Nachu no Mori",
           "drive": "8 min",
           "descriptionHtml": "Gardens, a skincare workshop, the old village school and a cafe, in the same village as the cabins.",
-          "hours": "Hours: Mon–Tue, Fri–Sun 10:00–17:00 · Closed Wed–Thu",
+          "hours": "Garden: 10:00–17:00. Closed Wednesday/Thursday except public holidays; year-end/New Year closures. Individual facilities have different hours.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJOYR-L41ldV8Rq5cPUp1UfcE",
@@ -2420,7 +2420,7 @@
           "name": "ナチュの森",
           "drive": "車で8分",
           "descriptionHtml": "庭園、スキンケア工場、旧校舎、カフェ。キャビンと同じ虎杖浜。",
-          "hours": "営業時間: 月–火, 金–日 10:00–17:00 · 定休 水–木",
+          "hours": "ガーデン：10:00〜17:00。水・木曜定休（祝日は営業）、年末年始休業。各施設の営業時間は異なります。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJOYR-L41ldV8Rq5cPUp1UfcE",
@@ -2439,7 +2439,7 @@
           "name": "纳丘之森",
           "drive": "车程8分钟",
           "descriptionHtml": "花园、护肤工坊、旧校舍、咖啡，与小屋同村。",
-          "hours": "营业时间: 周一–周二, 周五–周日 10:00–17:00 · 休息 周三–周四",
+          "hours": "园区：10:00–17:00。周三、周四休息（节假日营业），年末年初休业。各设施营业时间不同。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJOYR-L41ldV8Rq5cPUp1UfcE",
@@ -2455,8 +2455,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": "https://nachunomori.jp/"
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://nachunomori.jp/facilities"
     },
     {
       "id": "venue-33",
@@ -2466,7 +2466,7 @@
           "name": "Noboribetsu Date Jidaimura",
           "drive": "12 min",
           "descriptionHtml": "An Edo-period town you can walk through: ninja house, oiran show and costumes. Easy with children.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "Hours: 09:00–17:00, 20 March–31 October; 09:00–16:00, 1 November–19 March. Admission ends 1 hour before closing. Winter maintenance closures apply.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ5-l6g_djdV8Rt5YCwEFSFlw",
@@ -2489,7 +2489,7 @@
           "name": "登別伊達時代村",
           "drive": "車で12分",
           "descriptionHtml": "歩ける江戸の町。忍者屋敷、花魁ショー、変身体験。子どもと。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "営業時間：3月20日〜10月31日9:00〜17:00、11月1日〜3月19日9:00〜16:00。入村受付は閉村1時間前まで。冬季に点検休村あり。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ5-l6g_djdV8Rt5YCwEFSFlw",
@@ -2512,7 +2512,7 @@
           "name": "登别伊达时代村",
           "drive": "车程12分钟",
           "descriptionHtml": "可以走进去的江户街道。忍者屋、花魁秀、换装。带孩子很合适。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "营业时间：3月20日至10月31日09:00–17:00；11月1日至3月19日09:00–16:00。闭园前1小时停止入园，冬季有维护休园日。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ5-l6g_djdV8Rt5YCwEFSFlw",
@@ -2532,8 +2532,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://edo-trip.jp/faq/"
     },
     {
       "id": "venue-34",
@@ -2620,7 +2620,7 @@
           "name": "Noboribetsu Marine Park NIXE",
           "drive": "15 min",
           "descriptionHtml": "Castle-shaped aquarium with penguins, dolphin shows and a tunnel of fish. Easy with children.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "Hours: 09:00–17:00 (last admission 16:30). Check scheduled maintenance closures.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJL-GVrHdkdV8RhNUr32_nD3U",
@@ -2643,7 +2643,7 @@
           "name": "登別マリンパークニクス",
           "drive": "車で15分",
           "descriptionHtml": "城の形の水族館。ペンギン、イルカショー、トンネル水槽。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "営業時間：9:00〜17:00（最終入園16:30）。保守休業日をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJL-GVrHdkdV8RhNUr32_nD3U",
@@ -2666,7 +2666,7 @@
           "name": "登别海洋公园 NIXE",
           "drive": "车程15分钟",
           "descriptionHtml": "城堡造型的水族馆。企鹅、海豚表演、海底隧道。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "营业时间：09:00–17:00（最后入园16:30）。请确认维护休园日期。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJL-GVrHdkdV8RhNUr32_nD3U",
@@ -2686,8 +2686,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://nixe-aqua.com/guide/"
     },
     {
       "id": "venue-36",
@@ -2789,7 +2789,7 @@
           "name": "Upopoy National Ainu Museum and Park",
           "drive": "20–25 min",
           "descriptionHtml": "The national centre for Ainu culture: museum, kotan village, dance and food.",
-          "hours": "Hours: Tue–Sun 09:00–18:00 · Closed Mon",
+          "hours": "2026–27 schedule: 09:00–18:00 April–October; 09:00–17:00 November–March. Last admission 1 hour before closing. Usually closed Monday (holiday exceptions); year-end and maintenance closures. Check the official calendar.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN8FcxwxrdV8R-4dYaE_pdmk",
@@ -2812,7 +2812,7 @@
           "name": "ウポポイ（民族共生象徴空間）",
           "drive": "車で20–25分",
           "descriptionHtml": "アイヌ文化のナショナルセンター。博物館、コタン、芸能、食。",
-          "hours": "営業時間: 火–日 09:00–18:00 · 定休 月",
+          "hours": "2026〜27年度：4〜10月9:00〜18:00、11〜3月9:00〜17:00。入園は閉園1時間前まで。原則月曜休園（祝日などの例外あり）、年末年始・点検休園あり。公式カレンダーをご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN8FcxwxrdV8R-4dYaE_pdmk",
@@ -2835,7 +2835,7 @@
           "name": "乌波波伊·国立阿伊努民族博物馆",
           "drive": "车程20–25分钟",
           "descriptionHtml": "阿伊努文化的国家中心：博物馆、传统村落、展演、饮食。",
-          "hours": "营业时间: 周二–周日 09:00–18:00 · 休息 周一",
+          "hours": "2026–27年度：4月至10月09:00–18:00；11月至3月09:00–17:00。闭园前1小时停止入园。通常周一休园（节假日有例外），另有年末年初及维护休园日，请查官方日历。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN8FcxwxrdV8R-4dYaE_pdmk",
@@ -2855,8 +2855,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://ainu-upopoy.go.jp/guide/hours/"
     },
     {
       "id": "venue-38",
@@ -3174,7 +3174,7 @@
           "name": "Kitakogane Shell Mound",
           "drive": "30 min",
           "descriptionHtml": "UNESCO World Heritage Jomon site with pit dwellings and a huge shell mound. Free; open April to November.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "Hours: 09:00–17:00, April–November. Closed 1 December–31 March.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJpV68hUbcn18RqpUIXmTQhIo",
@@ -3197,7 +3197,7 @@
           "name": "北黄金貝塚",
           "drive": "車で30分",
           "descriptionHtml": "世界遺産の縄文遺跡。竪穴住居と巨大貝塚。無料、4〜11月。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "開館時間：4〜11月9:00〜17:00。12月1日〜3月31日は休館。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJpV68hUbcn18RqpUIXmTQhIo",
@@ -3220,7 +3220,7 @@
           "name": "北黄金贝冢",
           "drive": "车程30分钟",
           "descriptionHtml": "世界遗产绳文遗址。竖穴住居和巨大贝冢。免费，4–11月开放。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "开放时间：4月至11月09:00–17:00；12月1日至3月31日关闭。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJpV68hUbcn18RqpUIXmTQhIo",
@@ -3240,8 +3240,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.city.date.hokkaido.jp/funkawan/detail/00003112.html"
     },
     {
       "id": "venue-43",
@@ -4874,7 +4874,7 @@
           "name": "Aeon Mall Tomakomai",
           "drive": "36 min",
           "descriptionHtml": "The big mall: groceries, shops, food court and cinema. Handy for a rainy afternoon.",
-          "hours": "Hours: Daily 08:00–23:00",
+          "hours": "Mall shops/food court: 10:00–21:00; restaurants: 11:00–21:00; Aeon food store: 08:00–23:00. Some tenants differ.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ1RMMhBoadV8RkyX9P0Z-iwA",
@@ -4897,7 +4897,7 @@
           "name": "イオンモール苫小牧",
           "drive": "車で36分",
           "descriptionHtml": "大きなモール。食品、店、フードコート、映画。雨の午後に。",
-          "hours": "営業時間: 毎日 08:00–23:00",
+          "hours": "専門店街・フードコート：10:00〜21:00、レストラン街：11:00〜21:00、イオン食品売場：8:00〜23:00。一部店舗は異なります。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ1RMMhBoadV8RkyX9P0Z-iwA",
@@ -4920,7 +4920,7 @@
           "name": "Aeon Mall 苫小牧",
           "drive": "车程36分钟",
           "descriptionHtml": "大商场。食品、店铺、美食广场、电影。适合下雨的下午。",
-          "hours": "营业时间: 每天 08:00–23:00",
+          "hours": "商场店铺及美食广场：10:00–21:00；餐厅：11:00–21:00；永旺食品卖场：08:00–23:00。部分店铺时间不同。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ1RMMhBoadV8RkyX9P0Z-iwA",
@@ -4940,8 +4940,8 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://tomakomai.aeonmallhokkaido.com/static-pages/hours"
     },
     {
       "id": "venue-65",

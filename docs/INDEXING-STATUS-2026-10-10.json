@@ -1,0 +1,491 @@
+{
+  "checkedOn": "2026-10-10",
+  "source": "Google URL Inspection API via GSC Wizard",
+  "siteUrl": "https://kojohamacabins.jp/",
+  "note": "Inspection reflects Google's stored index state, not a live crawl or indexing request.",
+  "results": [
+    {
+      "url": "https://kojohamacabins.jp/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-28T04:52:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/bbq/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T00:59:22Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/cabins/",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kojohamacabins.jp/cabins/ocean-stay-rustic/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-29T07:07:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/cabins/ocean-stay-sol/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T10:37:05Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/cabins/ocean-stay-zen/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T18:27:48Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/culture/shiraoi-ainu-culture/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T10:45:09Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/outdoors-family-fishing/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T01:01:23Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/kojohama-onsen/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T02:57:01Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/kojohama-seafood-tarako/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T10:25:03Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/noboribetsu-from-kojohama/",
+      "verdict": "NEUTRAL",
+      "coverageState": "Crawled - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "lastCrawlTime": "2026-09-17T03:18:51Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/two-day-shiraoi-itinerary/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T20:48:06Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/upopoy-from-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T06:51:53Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/location/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-01T02:24:49Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/october-to-march/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-30T21:51:30Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/privacy/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T13:45:43Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/things-to-do/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-30T21:51:31Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T06:44:03Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/bbq/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T01:05:25Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/cabins/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-04T00:14:50Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-rustic/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-23T01:48:03Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-sol/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-01T00:10:10Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-zen/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T12:31:50Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/culture/shiraoi-ainu-culture/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T12:27:50Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/faq/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T01:05:25Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/outdoors-family-fishing/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T01:05:26Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/kojohama-onsen/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T12:57:59Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/kojohama-seafood-tarako/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-28T23:32:32Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/noboribetsu-from-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-26T16:13:27Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/two-day-shiraoi-itinerary/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T12:49:56Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/upopoy-from-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T12:45:55Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/location/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T16:15:43Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/october-to-march/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-28T13:37:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/privacy/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T06:33:57Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/things-to-do/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-05T16:13:01Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-29T04:38:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/bbq/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T12:17:17Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/cabins/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-07T12:56:01Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/cabins/ocean-stay-rustic/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-29T12:07:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/cabins/ocean-stay-sol/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T20:48:05Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/cabins/ocean-stay-zen/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-29T02:07:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/culture/shiraoi-ainu-culture/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T11:03:15Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/outdoors-family-fishing/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-06T01:07:25Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/kojohama-onsen/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-23T04:38:05Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/kojohama-seafood-tarako/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-03T05:53:33Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/noboribetsu-from-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-28T02:22:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/two-day-shiraoi-itinerary/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T10:23:02Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/upopoy-from-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-23T03:48:04Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/location/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T17:12:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/october-to-march/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-02T08:38:31Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/privacy/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-28T23:37:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/things-to-do/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-02T08:38:30Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/hokkaido-winter-driving-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T15:00:43Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/stay-between-upopoy-noboribetsu/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-24T21:43:45Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/guides/one-day-kojohama-coast/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-25T00:03:58Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/hokkaido-winter-driving-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-24T07:45:14Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/stay-between-upopoy-noboribetsu/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T19:05:18Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/guides/one-day-kojohama-coast/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T10:55:12Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/hokkaido-winter-driving-kojohama/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-26T07:28:28Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/stay-between-upopoy-noboribetsu/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-22T10:19:01Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/guides/one-day-kojohama-coast/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-08T12:31:51Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/own-a-cabin/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-23T05:36:52Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/work-remotely/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-23T05:36:51Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/own-a-cabin/",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/work-remotely/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T17:37:47Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/own-a-cabin/",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kojohamacabins.jp/zh-cn/work-remotely/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-27T18:02:48Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/faq/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-07T14:11:00Z"
+    },
+    {
+      "url": "https://kojohamacabins.jp/ja/faq/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-10-03T20:40:00Z"
+    }
+  ]
+}
