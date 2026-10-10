@@ -251,6 +251,18 @@
       "id": "venue-01",
       "source": "https://shiraoi.net/gourmet/kojohamacafe/",
       "summary": "Lunch/cafe 11:00–16:30 (food last order 15:30; drinks/desserts 16:00). Evening 18:30–22:00 (meals last order 20:00; drinks/karaoke 21:30), reservations prioritised. Opening days vary: check the current Instagram calendar; early closing possible."
+    },
+    {
+      "id": "venue-12",
+      "source": "https://shiraoi.net/information/火曜日営業しているお店/",
+      "summary": "Published hours: 09:00–14:00. Closing days were not specified in the recent tourism listing; confirm before visiting.",
+      "note": "September 2026 official weekday listing preferred to conflicting undated listings. Closing days remain unspecified; no Monday closure inferred."
+    },
+    {
+      "id": "venue-50",
+      "source": "https://shiraoi.net/information/info-20260420/",
+      "summary": "08:00–18:00 April–September; 08:00–17:00 October–March. Open daily, according to the 2026 owner-interview article linked by the tourism association; confirm temporary changes.",
+      "note": "Official tourism notice links https://irankarapte-shiraoi.info/kikyouhara (20 April / updated 31 August 2026), direct owner interview. Newer dated source preferred over inconsistent undated tourism listings; no telephone confirmation."
     }
   ],
   "ayoroUpcomingClosure": {

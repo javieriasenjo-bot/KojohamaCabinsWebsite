@@ -831,13 +831,18 @@
         "en": {
           "name": "Tonton diner",
           "drive": "6 min",
-          "descriptionHtml": "Home-style set meals and curry in big portions. One of the few places open for dinner.",
+          "descriptionHtml": "Home-style set meals and curry in generous portions. Confirm service hours before visiting.",
           "hours": "Confirm current hours and closing days directly before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%A8%E3%82%93%20%E7%99%BD%E8%80%81%20%E7%AB%B9%E6%B5%A6",
               "label": "Map",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144874488",
+              "label": "Call to confirm: 0144-87-4488",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -854,13 +859,18 @@
         "ja": {
           "name": "お食事処 とんとん",
           "drive": "車で6分",
-          "descriptionHtml": "ボリュームのある定食とカレー。夜も開いている数少ない店。",
+          "descriptionHtml": "ボリュームのある家庭的な定食やカレー。訪問前に営業時間をご確認ください。",
           "hours": "訪問前に最新の営業時間・定休日をお店へ直接ご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%A8%E3%82%93%20%E7%99%BD%E8%80%81%20%E7%AB%B9%E6%B5%A6",
               "label": "地図",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144874488",
+              "label": "電話で確認：0144-87-4488",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -877,13 +887,18 @@
         "zh-CN": {
           "name": "餐馆 豚豚",
           "drive": "车程6分钟",
-          "descriptionHtml": "分量很大的家常定食和咖喱，是附近少数晚上营业的店。",
+          "descriptionHtml": "分量足的家常套餐及咖喱。到访前请确认营业时间。",
           "hours": "到访前请直接向店家确认最新营业时间及休息日。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%A8%E3%82%93%20%E7%99%BD%E8%80%81%20%E7%AB%B9%E6%B5%A6",
               "label": "地图",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144874488",
+              "label": "电话确认：0144-87-4488",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -899,8 +914,10 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "No current official schedule found; third-party hours conflict with the old guide.",
-      "reviewSource": "https://tabelog.com/hokkaido/A0108/A010802/1016351/"
+      "reviewNote": "No current official schedule found; third-party hours conflict with the old guide. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required.",
+      "reviewSource": "https://tabelog.com/hokkaido/A0108/A010802/1016351/",
+      "contactPhone": "0144-87-4488",
+      "contactSource": "https://map.yahoo.co.jp/v3/place/Az6e_dZIKss"
     },
     {
       "id": "venue-12",
@@ -910,7 +927,7 @@
           "name": "Ramen Sakuraya",
           "drive": "7 min",
           "descriptionHtml": "Morning ramen from 9:00: miso, tonkotsu and flying-fish broth. A Takeura habit on the way to Shiraoi.",
-          "hours": "Confirm current hours and closing days directly before visiting.",
+          "hours": "Published hours: 09:00–14:00. Closing days were not specified in the recent tourism listing; confirm before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN5RHRExldV8RKgx0Ktozc2Y",
@@ -933,7 +950,7 @@
           "name": "らーめん さくら屋",
           "drive": "車で7分",
           "descriptionHtml": "朝9時のラーメン。味噌、とんこつ、あご出汁。竹浦の朝ラー。",
-          "hours": "訪問前に最新の営業時間・定休日をお店へ直接ご確認ください。",
+          "hours": "公表営業時間9:00〜14:00。最近の観光協会案内には定休日の記載がないため、訪問前にご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN5RHRExldV8RKgx0Ktozc2Y",
@@ -956,7 +973,7 @@
           "name": "樱屋拉面",
           "drive": "车程7分钟",
           "descriptionHtml": "早上9点就开的拉面。味噌、豚骨、飞鱼汤。去白老路上的竹浦习惯。",
-          "hours": "到访前请直接向店家确认最新营业时间及休息日。",
+          "hours": "公布营业时间9:00–14:00。近期观光协会信息未注明休息日，到访前请确认。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN5RHRExldV8RKgx0Ktozc2Y",
@@ -977,8 +994,9 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Yahoo and Tabelog closing times conflict; no current operator schedule established.",
-      "reviewSource": "https://map.yahoo.co.jp/v3/place/tLbyQRev1I-"
+      "reviewNote": "September 2026 official weekday listing preferred to conflicting undated listings. Closing days remain unspecified; no Monday closure inferred.",
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/information/火曜日営業しているお店/"
     },
     {
       "id": "venue-13",
@@ -1525,6 +1543,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJp-Ykpbrgn18Rm43n22wmbxg",
               "label": "Map",
               "kind": "map"
+            },
+            {
+              "href": "tel:0142212311",
+              "label": "Call to confirm: 0142-21-2311",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -1548,6 +1571,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJp-Ykpbrgn18Rm43n22wmbxg",
               "label": "地図",
               "kind": "map"
+            },
+            {
+              "href": "tel:0142212311",
+              "label": "電話で確認：0142-21-2311",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -1571,6 +1599,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJp-Ykpbrgn18Rm43n22wmbxg",
               "label": "地图",
               "kind": "map"
+            },
+            {
+              "href": "tel:0142212311",
+              "label": "电话确认：0142-21-2311",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -1586,8 +1619,10 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Official group page does not publish hours; third-party listings do not resolve verification.",
-      "reviewSource": "https://okina-daruma.com/group/201403171738_15"
+      "reviewNote": "Official group page does not publish hours; third-party listings do not resolve verification. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required.",
+      "reviewSource": "https://okina-daruma.com/group/201403171738_15",
+      "contactPhone": "0142-21-2311",
+      "contactSource": "https://h788800.gorp.jp/"
     },
     {
       "id": "venue-21",
@@ -2231,10 +2266,10 @@
       "category": "directory-3",
       "translations": {
         "en": {
-          "name": "Sunrise shrine",
+          "name": "Kojohama Shrine",
           "drive": "3 min",
-          "descriptionHtml": "A small shrine above the shore. New Year's sunrise is famous, and any clear dawn through the torii is worth the early walk.",
-          "hours": "Outdoor shrine visit: follow posted access restrictions and keep noise low.",
+          "descriptionHtml": "A hilltop shrine overlooking Kojohama and the Pacific, featured in the official local sightseeing route. Sunrise views are a highlight.",
+          "hours": "Outdoor shrine visit: follow posted access restrictions and keep noise low. No fixed visiting hours are published.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8eGPz2NkdV8RXdoOUXbNStA",
@@ -2244,16 +2279,16 @@
           ],
           "photo": {
             "src": "/images/village/kojohama-shrine-torii.webp",
-            "alt": "Sunrise shrine",
+            "alt": "Kojohama Shrine",
             "creditHtml": null,
             "rightsStatus": "owner-supplied; ownership to be confirmed"
           }
         },
         "ja": {
-          "name": "浜の小さな神社",
+          "name": "虎杖浜神社",
           "drive": "車で3分",
-          "descriptionHtml": "浜の小さな社。元日の日の出が有名。晴れた朝の鳥居越しはいつでも美しい。",
-          "hours": "神社への参拝は現地の立入制限に従い、静かにお過ごしください。",
+          "descriptionHtml": "虎杖浜と太平洋を見渡す高台の神社。観光協会のモデルコースで紹介され、朝日の景色も楽しめます。",
+          "hours": "参拝時は現地の立入制限に従い、静かにお過ごしください。固定の参拝時間は公表されていません。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8eGPz2NkdV8RXdoOUXbNStA",
@@ -2263,16 +2298,16 @@
           ],
           "photo": {
             "src": "/images/village/kojohama-shrine-torii.webp",
-            "alt": "浜の小さな神社",
+            "alt": "虎杖浜神社",
             "creditHtml": null,
             "rightsStatus": "owner-supplied; ownership to be confirmed"
           }
         },
         "zh-CN": {
-          "name": "海边小神社",
+          "name": "虎杖浜神社",
           "drive": "车程3分钟",
-          "descriptionHtml": "岸上的小神社。元旦日出最有名；任何晴朗早晨从鸟居看日出都值得早起。",
-          "hours": "参拜神社时请遵守现场通行限制，保持安静。",
+          "descriptionHtml": "俯瞰虎杖浜及太平洋的山丘神社，列入当地观光协会推荐路线，日出景色也是亮点。",
+          "hours": "参拜时请遵守现场通行限制，保持安静。未公布固定参拜时间。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8eGPz2NkdV8RXdoOUXbNStA",
@@ -2282,15 +2317,16 @@
           ],
           "photo": {
             "src": "/images/village/kojohama-shrine-torii.webp",
-            "alt": "海边小神社",
+            "alt": "虎杖浜神社",
             "creditHtml": null,
             "rightsStatus": "owner-supplied; ownership to be confirmed"
           }
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "The generic shrine name needs a local identity check before an official page can be assigned.",
-      "reviewSource": ""
+      "reviewNote": "Existing Google Maps place ID opened and identified as Kojohama Shrine / 虎杖浜神社. Official tourism course confirms the hilltop/coastal destination. This confirms identity, not unrestricted access.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://shiraoi.net/model_course/course06/"
     },
     {
       "id": "venue-30",
@@ -2373,6 +2409,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq7CcwYhjdV8RFIhYcfejbjQ",
               "label": "Map",
               "kind": "map"
+            },
+            {
+              "href": "tel:0143831730",
+              "label": "Call to confirm: 0143-83-1730",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -2395,6 +2436,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq7CcwYhjdV8RFIhYcfejbjQ",
               "label": "地図",
               "kind": "map"
+            },
+            {
+              "href": "tel:0143831730",
+              "label": "電話で確認：0143-83-1730",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -2417,6 +2463,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq7CcwYhjdV8RFIhYcfejbjQ",
               "label": "地图",
               "kind": "map"
+            },
+            {
+              "href": "tel:0143831730",
+              "label": "电话确认：0143-83-1730",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -2431,8 +2482,10 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Recent on-site reporting, not operator confirmation; old Wednesday closure claim removed.",
-      "reviewSource": "https://www.htb.co.jp/news/archives_39750.html"
+      "reviewNote": "Recent on-site reporting, not operator confirmation; old Wednesday closure claim removed. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required.",
+      "reviewSource": "https://www.htb.co.jp/news/archives_39750.html",
+      "contactPhone": "0143-83-1730",
+      "contactSource": "https://www.htb.co.jp/news/archives_39750.html"
     },
     {
       "id": "venue-32",
@@ -3458,13 +3511,18 @@
         "en": {
           "name": "Tarako vending machine",
           "drive": "3 min",
-          "descriptionHtml": "One of the few tarako vending machines in Japan. A photo stop as much as a snack.",
+          "descriptionHtml": "A tarako vending-machine stop. Check locally whether it is operating and stocked before planning a purchase.",
           "hours": "Check the machine’s availability and stock locally.",
           "links": [
             {
               "href": "https://kojohama.com/",
               "label": "Official information",
               "kind": "official"
+            },
+            {
+              "href": "tel:0144872433",
+              "label": "Ask the operator: 0144-87-2433",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3477,13 +3535,18 @@
         "ja": {
           "name": "たらこ自動販売機",
           "drive": "車で3分",
-          "descriptionHtml": "日本でも珍しいたらこ自販機。写真とお土産を兼ねて。",
+          "descriptionHtml": "たらこの自動販売機。購入予定の場合は、稼働状況と在庫を現地でご確認ください。",
           "hours": "自動販売機の稼働状況・在庫は現地でご確認ください。",
           "links": [
             {
               "href": "https://kojohama.com/",
               "label": "公式・施設情報",
               "kind": "official"
+            },
+            {
+              "href": "tel:0144872433",
+              "label": "運営会社へ確認：0144-87-2433",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3496,13 +3559,18 @@
         "zh-CN": {
           "name": "明太子自动售货机",
           "drive": "车程3分钟",
-          "descriptionHtml": "全日本少见的明太子自动售货机。既是伴手礼也是拍照点。",
+          "descriptionHtml": "鳕鱼子自动售货机。计划购买前请在现场确认运行及库存情况。",
           "hours": "请在现场确认自动售货机是否运行及库存。",
           "links": [
             {
               "href": "https://kojohama.com/",
               "label": "官方信息",
               "kind": "official"
+            },
+            {
+              "href": "tel:0144872433",
+              "label": "向运营方确认：0144-87-2433",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3514,8 +3582,10 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Operator identified, but this machine’s access hours were not published.",
-      "reviewSource": "https://kojohama.com/"
+      "reviewNote": "Owner-supplied machine photograph visibly identifies Takemaru Shibuya Suisan; official website publishes 0144-87-2433. Exact location access, current operation and stock still need direct confirmation.",
+      "reviewSource": "https://kojohama.com/",
+      "contactPhone": "0144-87-2433",
+      "contactSource": "https://kojohama.com/"
     },
     {
       "id": "venue-46",
@@ -3838,12 +3908,17 @@
           "name": "Kikyohara Farm (shiitake)",
           "drive": "5 min",
           "descriptionHtml": "Award-winning log-grown shiitake. Pick your own in season, or buy thick caps picked that morning for the cabin kitchen or BBQ.",
-          "hours": "Seasonal hours vary; confirm directly with the farm before visiting.",
+          "hours": "08:00–18:00 April–September; 08:00–17:00 October–March. Open daily, according to the 2026 owner-interview article linked by the tourism association; confirm temporary changes.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJVVV5sxRkdV8R9ecoUYvQ49A",
               "label": "Map",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144872317",
+              "label": "Call to confirm: 0144-87-2317",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3861,12 +3936,17 @@
           "name": "桔梗原農園（しいたけ）",
           "drive": "車で5分",
           "descriptionHtml": "受賞歴のある原木しいたけ農園。季節にはしいたけ狩りも。朝採りの肉厚しいたけをキッチンやBBQで。",
-          "hours": "季節により営業時間が異なります。訪問前に農園へ直接ご確認ください。",
+          "hours": "観光協会が紹介する2026年の農園代表インタビュー記事では、4〜9月8:00〜18:00、10〜3月8:00〜17:00、年中無休。臨時変更はご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJVVV5sxRkdV8R9ecoUYvQ49A",
               "label": "地図",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144872317",
+              "label": "電話で確認：0144-87-2317",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3884,12 +3964,17 @@
           "name": "桔梗原农园（香菇）",
           "drive": "车程5分钟",
           "descriptionHtml": "获奖的原木香菇农园。当季可以采香菇，也可买当天早上采的厚香菇，在小屋厨房或烧烤炉上料理。",
-          "hours": "营业时间随季节变化，到访前请直接向农园确认。",
+          "hours": "观光协会推荐的2026年农园负责人采访列出：4月至9月8:00–18:00，10月至3月8:00–17:00，全年营业。请确认临时调整。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJVVV5sxRkdV8R9ecoUYvQ49A",
               "label": "地图",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144872317",
+              "label": "电话确认：0144-87-2317",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3905,8 +3990,11 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Tourism sources publish conflicting summer/winter hours.",
-      "reviewSource": "https://shiraoi.net/buy/kikyouhara_nouen/"
+      "reviewNote": "Official tourism notice links https://irankarapte-shiraoi.info/kikyouhara (20 April / updated 31 August 2026), direct owner interview. Newer dated source preferred over inconsistent undated tourism listings; no telephone confirmation.",
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/information/info-20260420/",
+      "contactPhone": "0144-87-2317",
+      "contactSource": "https://irankarapte-shiraoi.info/kikyouhara"
     },
     {
       "id": "venue-51",
@@ -3922,6 +4010,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE",
               "label": "Map",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144872553",
+              "label": "Call to confirm: 0144-87-2553",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3945,6 +4038,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE",
               "label": "地図",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144872553",
+              "label": "電話で確認：0144-87-2553",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3968,6 +4066,11 @@
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE",
               "label": "地图",
               "kind": "map"
+            },
+            {
+              "href": "tel:0144872553",
+              "label": "电话确认：0144-87-2553",
+              "kind": "contact"
             }
           ],
           "photo": {
@@ -3983,8 +4086,10 @@
         }
       },
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Current operator site lists Sapporo; Shiraoi branch status/hours require direct confirmation.",
-      "reviewSource": "https://www.antique36gosen.com/"
+      "reviewNote": "Current operator site lists Sapporo; Shiraoi branch status/hours require direct confirmation. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required.",
+      "reviewSource": "https://www.antique36gosen.com/",
+      "contactPhone": "0144-87-2553",
+      "contactSource": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE"
     },
     {
       "id": "venue-52",

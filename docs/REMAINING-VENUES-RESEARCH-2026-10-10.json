@@ -272,7 +272,7 @@
       "type": "reported",
       "source": "https://www.htb.co.jp/news/archives_39750.html",
       "summary": "A September 2026 local news report lists 10:00–16:00 with irregular closures. Phone the museum before visiting.",
-      "note": "Recent on-site reporting, not operator confirmation; old Wednesday closure claim removed."
+      "note": "Recent on-site reporting, not operator confirmation; old Wednesday closure claim removed. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required."
     },
     {
       "id": "venue-11",
@@ -280,15 +280,15 @@
       "type": "confirmation-needed",
       "source": "https://tabelog.com/hokkaido/A0108/A010802/1016351/",
       "summary": "Confirm current hours and closing days directly before visiting.",
-      "note": "No current official schedule found; third-party hours conflict with the old guide."
+      "note": "No current official schedule found; third-party hours conflict with the old guide. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required."
     },
     {
       "id": "venue-12",
       "name": "Ramen Sakuraya",
-      "type": "confirmation-needed",
-      "source": "https://map.yahoo.co.jp/v3/place/tLbyQRev1I-",
-      "summary": "Confirm current hours and closing days directly before visiting.",
-      "note": "Yahoo and Tabelog closing times conflict; no current operator schedule established."
+      "type": "hours",
+      "source": "https://shiraoi.net/information/火曜日営業しているお店/",
+      "summary": "Published hours: 09:00–14:00. Closing days were not specified in the recent tourism listing; confirm before visiting.",
+      "note": "September 2026 official weekday listing preferred to conflicting undated listings. Closing days remain unspecified; no Monday closure inferred."
     },
     {
       "id": "venue-20",
@@ -296,15 +296,15 @@
       "type": "confirmation-needed",
       "source": "https://okina-daruma.com/group/201403171738_15",
       "summary": "Confirm current hours and closing days with the restaurant before travelling.",
-      "note": "Official group page does not publish hours; third-party listings do not resolve verification."
+      "note": "Official group page does not publish hours; third-party listings do not resolve verification. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required."
     },
     {
       "id": "venue-29",
       "name": "Sunrise shrine",
-      "type": "confirmation-needed",
-      "source": "",
-      "summary": "Outdoor shrine visit: follow posted access restrictions and keep noise low.",
-      "note": "The generic shrine name needs a local identity check before an official page can be assigned."
+      "type": "access",
+      "source": "https://shiraoi.net/model_course/course06/",
+      "summary": "Outdoor shrine visit: follow posted access restrictions and keep noise low. No fixed visiting hours are published.",
+      "note": "Existing Google Maps place ID opened and identified as Kojohama Shrine / 虎杖浜神社. Official tourism course confirms the hilltop/coastal destination. This confirms identity, not unrestricted access."
     },
     {
       "id": "venue-45",
@@ -312,15 +312,15 @@
       "type": "confirmation-needed",
       "source": "https://kojohama.com/",
       "summary": "Check the machine’s availability and stock locally.",
-      "note": "Operator identified, but this machine’s access hours were not published."
+      "note": "Owner-supplied machine photograph visibly identifies Takemaru Shibuya Suisan; official website publishes 0144-87-2433. Exact location access, current operation and stock still need direct confirmation."
     },
     {
       "id": "venue-50",
       "name": "Kikyohara Farm (shiitake)",
-      "type": "confirmation-needed",
-      "source": "https://shiraoi.net/buy/kikyouhara_nouen/",
-      "summary": "Seasonal hours vary; confirm directly with the farm before visiting.",
-      "note": "Tourism sources publish conflicting summer/winter hours."
+      "type": "hours",
+      "source": "https://shiraoi.net/information/info-20260420/",
+      "summary": "08:00–18:00 April–September; 08:00–17:00 October–March. Open daily, according to the 2026 owner-interview article linked by the tourism association; confirm temporary changes.",
+      "note": "Official tourism notice links https://irankarapte-shiraoi.info/kikyouhara (20 April / updated 31 August 2026), direct owner interview. Newer dated source preferred over inconsistent undated tourism listings; no telephone confirmation."
     },
     {
       "id": "venue-51",
@@ -328,7 +328,7 @@
       "type": "confirmation-needed",
       "source": "https://www.antique36gosen.com/",
       "summary": "Confirm that the Shiraoi branch is open before travelling.",
-      "note": "Current operator site lists Sapporo; Shiraoi branch status/hours require direct confirmation."
+      "note": "Current operator site lists Sapporo; Shiraoi branch status/hours require direct confirmation. Follow-up on 10 October: online research exhausted; direct operator/local confirmation still required."
     },
     {
       "id": "venue-53",

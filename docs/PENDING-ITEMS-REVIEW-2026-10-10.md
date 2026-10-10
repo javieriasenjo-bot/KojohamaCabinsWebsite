@@ -2,8 +2,8 @@
 
 ## Source changes ready for deployment
 
-- Researched all 43 remaining directory entries and updated English, Japanese and Simplified Chinese. This batch establishes official published hours for 29 entries, access guidance for six outdoor destinations, and qualified information for eight entries still needing direct confirmation. Published schedules are not telephone or on-site confirmations.
-- Across the complete directory, 51 entries now have published hours reviewed (including the earlier hospital review), six have access information reviewed, and eight need direct confirmation. No baseline research entries remain. The review queue is `docs/VENUE-REVIEW.csv`; this batch's sources and limitations are in `docs/REMAINING-VENUES-RESEARCH-2026-10-10.json`.
+- Researched all 43 remaining directory entries and updated English, Japanese and Simplified Chinese. This batch establishes official published hours for 31 entries, access guidance for seven outdoor destinations, and qualified information for five entries still needing direct confirmation. Published schedules are not telephone or on-site confirmations.
+- Across the complete directory, 53 entries now have published hours reviewed (including the earlier hospital review), seven have access information reviewed, and five need direct confirmation. No baseline research entries remain. The review queue is `docs/VENUE-REVIEW.csv`; this batch's sources and limitations are in `docs/REMAINING-VENUES-RESEARCH-2026-10-10.json`.
 - Corrected Cowbell's first/third Tuesday closures, Iwasaki's later closing time, Hamachidori's third-Friday closure, seasonal Mina Pieno closures, Hashimoto's Friday–Sunday/public-holiday schedule, and Usu Zenkoji museum's reservation requirement. Added Lake Kuttara winter road guidance and Cape Chikyu's paid parking; removed unsupported outdoor 24-hour claims.
 - The review queue now separates published hours from access guidance and records unsuccessful research attempts without treating them as verified. Public check labels explicitly refer to published information.
 - Added a practical cabin choice section in all three languages, differentiating beds, tatami/kotatsu and the confirmed children/BBQ policy, with planning links.
@@ -50,11 +50,9 @@ Changes are saved in `C:\dev\KojohamaCabinsWebsite` for the user to review, comm
 
 ## Remaining venue confirmations
 
-- Tonton and Sakuraya: conflicting/unsupported published schedules; contact the restaurants.
+- Tonton: conflicting/unsupported published schedules; contact the restaurant.
 - Date Okina: official group page does not give current opening hours.
-- Sunrise shrine: confirm its exact local identity before assigning an official website.
 - Tarako vending machine: confirm this machine's availability and access arrangements.
-- Kikyohara Farm: official tourism sources disagree on seasonal closing times.
 - Antique Shop 36: confirm the Shiraoi branch is operating and its hours.
 - Koshu Kitano Museum: recent September 2026 local reporting lists 10:00–16:00 and irregular closures; confirm directly. The guide labels this as reporting, not operator verification.
 
@@ -63,3 +61,22 @@ The owner can confirm these locally or send current operator information. They r
 ## Additional published schedules resolved
 
 Kojohama Cafe and Marugo were resolved through their Japanese official tourism pages. Cafe opening days still follow its current Instagram calendar; Marugo publishes Saturday/Sunday 11:00–16:30. These two additional source updates require another commit/deployment; the preceding 43-entry release was verified live.
+
+## Final online follow-up — 10 October 2026
+
+- Sakuraya: recent official tourism listing supports 09:00–14:00; closing days remain unspecified and the website says so.
+- Kikyohara Farm: a dated 2026 owner interview, promoted by the tourism association and updated 31 August, supports 08:00–18:00 April–September / 08:00–17:00 October–March, daily. The record explains why this takes precedence over older conflicting tourism listings.
+- Shrine: the exact Google Maps place ID resolves to Kojohama Shrine (虎杖浜神社), corroborated by the official coastal sightseeing route. Name, description and source are updated; no unrestricted opening hours claimed.
+- Added click-to-call links using checked contact numbers for Tonton, Date Okina, Koshu Kitano Museum, Kikyohara Farm and Antique Shop 36. Removed unsupported dinner-service and vending-machine rarity claims.
+
+### Direct confirmations that cannot be completed with the available tools
+
+| Place | Contact | Specific confirmation needed |
+| --- | --- | --- |
+| Tonton | 0144-87-4488 | Current daily service hours and whether Thursday also closes. |
+| Date Okina | 0142-21-2311 | Confirm 11:30–15:00 and Monday closure shown by its linked restaurant-directory website. |
+| Koshu Kitano Museum | 0143-83-1730 | Confirm intended visiting day; September reporting says 10:00–16:00, irregular closures. |
+| Antique Shop 36, Shiraoi | 0144-87-2553 | Confirm branch operation and current opening days/hours. |
+| Tarako vending machine | Takemaru Shibuya Suisan: 0144-87-2433 | Photo confirms operator branding; confirm current operation, location access and stock. Company contact does not establish machine hours. |
+
+No calls or external messages were made. These five records are not falsely marked confirmed. Source changes include the preceding two-entry update if that has not yet been committed/deployed.
