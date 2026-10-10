@@ -85,6 +85,11 @@ for(const locale of ['en','ja','zh-CN']){
   check(v.translations[locale].links.length>0,`${locale}: ${v.id} needs a useful destination`);
   check(text.includes(`id="${v.id}"`),`${locale}: ${v.id} has no shareable anchor`);
   check(!v.hoursCheckedOn || /^\d{4}-\d{2}-\d{2}$/.test(v.hoursCheckedOn),`${v.id}: invalid checked date`);
+   check(!v.accessCheckedOn || /^\d{4}-\d{2}-\d{2}$/.test(v.accessCheckedOn),`${v.id}: invalid access review date`);
+   check(!(v.hoursCheckedOn && v.accessCheckedOn),`${v.id}: hours and access review must be distinguished`);
+   check(!v.hoursCheckedOn || /^https:\/\//.test(v.hoursSource || ''),`${v.id}: checked hours need a source`);
+   check(!v.accessCheckedOn || /^https:\/\//.test(v.accessSource || ''),`${v.id}: access review needs a source`);
+   check(!v.reviewAttemptedOn || (v.reviewNote && /^\d{4}-\d{2}-\d{2}$/.test(v.reviewAttemptedOn)),`${v.id}: research attempt needs a date and outcome`);
  }
  const comparison=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
  for(const c of facts.cabins){

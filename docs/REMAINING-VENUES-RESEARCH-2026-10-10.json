@@ -1,0 +1,350 @@
+{
+  "reviewedOn": "2026-10-10",
+  "method": "Public operator, municipal and tourism sources; recent reporting separately labeled. No phone confirmation. Outdoor guidance does not imply guaranteed access.",
+  "records": [
+    {
+      "id": "venue-03",
+      "name": "Shokujidokoro Ikeda",
+      "type": "hours",
+      "source": "https://shiraoi.net/gourmet/robataikeda/",
+      "summary": "11:30–14:00 and 17:00–20:30. Irregular closing days; confirm before visiting.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-08",
+      "name": "Yamamoto Trout Farm",
+      "type": "hours",
+      "source": "https://shiraoi.net/play/yamamoto-yosonjo/",
+      "summary": "10:00–15:30. Closed Tuesday and Wednesday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-10",
+      "name": "Sobakiri Yamada",
+      "type": "hours",
+      "source": "https://shiraoi.net/gourmet/soba-yamada/",
+      "summary": "11:00–14:30. Closed Sunday and Monday; may close when sold out.",
+      "note": "Supporting source: https://ainu-upopoy.go.jp/gourmet/shop/shiraoi17.html"
+    },
+    {
+      "id": "venue-13",
+      "name": "Kita no Lamp Tei",
+      "type": "hours",
+      "source": "https://shiraoi.net/gourmet/lamp-tei/",
+      "summary": "11:00–15:30 (last order 15:00). Friday dinner 17:00–21:00; other evenings require a reservation for 10 or more. Closed Sunday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-17",
+      "name": "Restaurant Cowbell",
+      "type": "hours",
+      "source": "https://shiraoi-cowbell.com/",
+      "summary": "11:00–19:00 (last order 18:30). Closed Wednesday and the first/third Tuesday; public holidays may change closure dates.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-18",
+      "name": "Iwasaki Omotenashi-tei",
+      "type": "hours",
+      "source": "https://omotenashi-tei.com/",
+      "summary": "11:00–20:00 (last order 19:30), Thursday 11:00–16:00. Closed Wednesday (Thursday instead when Wednesday is a public holiday); check the official calendar.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-19",
+      "name": "Aji no Daio honke",
+      "type": "hours",
+      "source": "https://www.curryramen.com/about.html",
+      "summary": "11:00–20:00 (last order 19:30); Wednesday 11:00–15:00 (last order 14:30). Closes when soup sells out; year-end/New Year closures.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-23",
+      "name": "Hotel Izumi (day bath)",
+      "type": "hours",
+      "source": "https://hotel-izumi.webnode.jp/源泉掛け流し温泉/",
+      "summary": "Day bath: Sunday–Friday 12:00–22:00 (reception until 21:00); Saturday and days before public holidays 12:00–17:00 (reception until 16:00). Holiday periods and private bookings may change availability.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-24",
+      "name": "Hana no Yu Onsen",
+      "type": "hours",
+      "source": "https://onsen.shiraoi.net/facility/facility000127/",
+      "summary": "Open 24 hours.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-25",
+      "name": "Hamachidori private baths",
+      "type": "hours",
+      "source": "https://onsen.shiraoi.net/facility/facility000129/",
+      "summary": "Reception: Monday–Saturday 10:00–21:00; Sunday/public holidays 10:00–20:30. Closed Thursday and the third Friday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-27",
+      "name": "Hotel Ocean (day bath)",
+      "type": "hours",
+      "source": "https://onsen.shiraoi.net/facility/facility000106/",
+      "summary": "Day-bath reception 10:00–19:00; leave by 20:00. Overnight guests have different bathing hours.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-39",
+      "name": "Sendai-han Shiraoi Jinya",
+      "type": "hours",
+      "source": "https://www.town.shiraoi.hokkaido.jp/docs/page2020062800019.html",
+      "summary": "Museum 09:30–16:30. Closed Monday (next day if a public holiday) and 29 December–3 January; check temporary closure notices.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-46",
+      "name": "Tairyobanya Kojohama",
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/tairyobanya/",
+      "summary": "09:00–17:00. Closed Wednesday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-48",
+      "name": "Sakanaya Honpo (dried fish)",
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/kikyouhara/",
+      "summary": "08:00–15:00; may close when dried fish sells out. Irregular closing days.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-49",
+      "name": "Kojohama Kanbara",
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/虎杖浜たらこのかんばら/",
+      "summary": "09:00–16:30. Closed Wednesday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-54",
+      "name": "Malcove bakery",
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/malcove/",
+      "summary": "11:00–17:00. Closed Tuesday, Wednesday and Thursday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-65",
+      "name": "Co-op Sapporo Noboribetsu East",
+      "type": "hours",
+      "source": "https://map.sapporo.coop/store/detail/0139/",
+      "summary": "09:00–19:00 daily.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-06",
+      "name": "Akebono",
+      "type": "hours",
+      "source": "https://shiraoi.net/information/火曜日営業しているお店/",
+      "summary": "10:30–19:30; Monday closes at 13:30. Irregular closing days.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-09",
+      "name": "Hikaru Umi",
+      "type": "hours",
+      "source": "https://hikaruumi-shiraoi.com/print/",
+      "summary": "11:00–15:00. Closed Tuesday, with additional irregular closing days.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-14",
+      "name": "Kani-o",
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/kani-o/",
+      "summary": "09:00–17:00 daily.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-21",
+      "name": "Gelateria Mina Pieno",
+      "type": "hours",
+      "source": "https://shiraoi.net/gourmet/gelateria-mina-pieno（ジェラテリア-ミナピエノ）/",
+      "summary": "10:00–17:00. Closed Wednesday April–November; Tuesday and Wednesday December–March.",
+      "note": "Supporting source: https://minapieno2023626.jp/"
+    },
+    {
+      "id": "venue-28",
+      "name": "Yumoto Hokuyo (day bath)",
+      "type": "hours",
+      "source": "https://www.h-hokuyo.com/mb/onsen.html",
+      "summary": "05:00–23:00 (last entry 22:00). Women's indoor bath unavailable Monday–Friday 08:00–09:00 for cleaning.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-40",
+      "name": "Muroran factory night view & Hakucho Bridge",
+      "type": "access",
+      "source": "https://www.city.muroran.lg.jp/faq/detail.html?content=172",
+      "summary": "Hakucho Bridge illumination: sunset–midnight daily. View from designated public viewpoints; factory sites are not visitor facilities.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-41",
+      "name": "Lake Utonai",
+      "type": "hours",
+      "source": "https://www.city.tomakomai.hokkaido.jp/shizen/sonotanoshisetsu/utonai/",
+      "summary": "Wildlife Protection Center: 09:00–17:00. Closed Monday (next day if a public holiday) and 29 December–3 January. Lakeside paths have separate access arrangements.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-44",
+      "name": "Usu Zenkoji",
+      "type": "hours",
+      "source": "https://www.usu-zenkoji.jp/treasure-museum/",
+      "summary": "Treasure museum: 09:00–17:00, advance reservation required. These hours do not describe access to the temple grounds.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-47",
+      "name": "Takemaru Shibuya Suisan (tarako)",
+      "type": "hours",
+      "source": "https://shiraoi.net/buy/shibuyasuisan/",
+      "summary": "09:00–17:00. Closed Sunday.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-52",
+      "name": "Hashimoto Pottery Gallery",
+      "type": "hours",
+      "source": "https://84mo10.com/access.html",
+      "summary": "10:00–16:00 on Friday, Saturday, Sunday and public holidays. May close early depending on weather or circumstances.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-55",
+      "name": "Nachu no Mori shop",
+      "type": "hours",
+      "source": "https://nachunomori.jp/shop",
+      "summary": "10:00–17:00. Closed Wednesday and Thursday except public holidays; year-end/New Year closures.",
+      "note": "Published official hours; reconfirm temporary changes before travel."
+    },
+    {
+      "id": "venue-30",
+      "name": "Ayoro Beach & lighthouse",
+      "type": "access",
+      "source": "https://shiraoi.net/wp-content/uploads/2025/03/tourist_pamphlet_202503.pdf",
+      "summary": "Outdoor coastal viewpoint: visit in daylight and follow posted access restrictions. Do not assume lighthouse interior access.",
+      "note": "Replaced unsupported 24-hour claim; daylight is visitor advice, not a formal opening schedule."
+    },
+    {
+      "id": "venue-34",
+      "name": "Lake Kuttara",
+      "type": "access",
+      "source": "https://www.visit-hokkaido.jp/spot/detail_12253.html",
+      "summary": "Access is seasonal: the road normally closes in winter, November–late April. Check current road restrictions before travelling.",
+      "note": "Typical season from official Hokkaido tourism; not a confirmation of exact 2026 closure dates."
+    },
+    {
+      "id": "venue-36",
+      "name": "Noboribetsu Jigokudani (Hell Valley)",
+      "type": "access",
+      "source": "https://noboribetsu-spa.jp/spot/spot0034/",
+      "summary": "Outdoor volcanic viewpoint. Use marked paths and check current weather and access notices before walking.",
+      "note": "Official destination confirmed; walking guidance is advice, not an opening-hours guarantee."
+    },
+    {
+      "id": "venue-38",
+      "name": "Lake Poroto",
+      "type": "access",
+      "source": "https://shiraoi.net/see/porotolake/",
+      "summary": "Lakeside walks: daylight visits recommended; follow posted path restrictions. Boat and winter activities require separate seasonal/operator checks.",
+      "note": "No fixed lake opening hours established; do not copy tourism-office footer hours."
+    },
+    {
+      "id": "venue-43",
+      "name": "Cape Chikyu",
+      "type": "access",
+      "source": "https://www.city.muroran.lg.jp/administration/?content=1559",
+      "summary": "Outdoor viewpoint: daylight visits recommended. Follow posted restrictions. Parking for an ordinary car costs ¥500 (introduced April 2026).",
+      "note": "Municipal parking notice; removed unsupported 24-hour opening claim."
+    },
+    {
+      "id": "venue-31",
+      "name": "Toy & Art Museum (Koshu Kitano)",
+      "type": "reported",
+      "source": "https://www.htb.co.jp/news/archives_39750.html",
+      "summary": "A September 2026 local news report lists 10:00–16:00 with irregular closures. Phone the museum before visiting.",
+      "note": "Recent on-site reporting, not operator confirmation; old Wednesday closure claim removed."
+    },
+    {
+      "id": "venue-11",
+      "name": "Tonton diner",
+      "type": "confirmation-needed",
+      "source": "https://tabelog.com/hokkaido/A0108/A010802/1016351/",
+      "summary": "Confirm current hours and closing days directly before visiting.",
+      "note": "No current official schedule found; third-party hours conflict with the old guide."
+    },
+    {
+      "id": "venue-12",
+      "name": "Ramen Sakuraya",
+      "type": "confirmation-needed",
+      "source": "https://map.yahoo.co.jp/v3/place/tLbyQRev1I-",
+      "summary": "Confirm current hours and closing days directly before visiting.",
+      "note": "Yahoo and Tabelog closing times conflict; no current operator schedule established."
+    },
+    {
+      "id": "venue-20",
+      "name": "Date Okina",
+      "type": "confirmation-needed",
+      "source": "https://okina-daruma.com/group/201403171738_15",
+      "summary": "Confirm current hours and closing days with the restaurant before travelling.",
+      "note": "Official group page does not publish hours; third-party listings do not resolve verification."
+    },
+    {
+      "id": "venue-29",
+      "name": "Sunrise shrine",
+      "type": "confirmation-needed",
+      "source": "",
+      "summary": "Outdoor shrine visit: follow posted access restrictions and keep noise low.",
+      "note": "The generic shrine name needs a local identity check before an official page can be assigned."
+    },
+    {
+      "id": "venue-45",
+      "name": "Tarako vending machine",
+      "type": "confirmation-needed",
+      "source": "https://kojohama.com/",
+      "summary": "Check the machine’s availability and stock locally.",
+      "note": "Operator identified, but this machine’s access hours were not published."
+    },
+    {
+      "id": "venue-50",
+      "name": "Kikyohara Farm (shiitake)",
+      "type": "confirmation-needed",
+      "source": "https://shiraoi.net/buy/kikyouhara_nouen/",
+      "summary": "Seasonal hours vary; confirm directly with the farm before visiting.",
+      "note": "Tourism sources publish conflicting summer/winter hours."
+    },
+    {
+      "id": "venue-51",
+      "name": "Antique Shop Route 36",
+      "type": "confirmation-needed",
+      "source": "https://www.antique36gosen.com/",
+      "summary": "Confirm that the Shiraoi branch is open before travelling.",
+      "note": "Current operator site lists Sapporo; Shiraoi branch status/hours require direct confirmation."
+    },
+    {
+      "id": "venue-53",
+      "name": "Marugo weekend seafood stall",
+      "type": "confirmation-needed",
+      "source": "https://seikyo-gourmet-research.info/shop/5/",
+      "summary": "Weekend seafood market; confirm current opening times locally.",
+      "note": "Undated promotional hours conflict with review listings; no current operator confirmation."
+    },
+    {
+      "id": "venue-01",
+      "name": "Kojohama Cafe",
+      "type": "confirmation-needed",
+      "source": "https://www.instagram.com/kojohamacafe/",
+      "summary": "Opening days and lunch/evening service vary; check the cafe’s current Instagram calendar.",
+      "note": "Tourism weekday listings differ from the old schedule; current operator calendar needs confirmation."
+    }
+  ]
+}

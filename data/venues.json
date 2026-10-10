@@ -50,7 +50,7 @@
           "name": "Kojohama Cafe",
           "drive": "1 min",
           "descriptionHtml": "Sea terrace and Japanese-style tarako pasta. The closest sit-down meal to the cabins (about 4 minutes on foot).",
-          "hours": "Hours: Mon–Tue, Fri 11:00–16:00 · Wed–Thu, Sat–Sun 11:00–16:00, 18:30–21:30",
+          "hours": "Opening days and lunch/evening service vary; check the cafe’s current Instagram calendar.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJC4zTzRVldV8RrrOI2abS2ug",
@@ -74,7 +74,7 @@
           "name": "虎杖浜カフェ",
           "drive": "車で1分",
           "descriptionHtml": "海のテラスと和風たらこパスタ。キャビンからいちばん近い食事処（徒歩約4分）。",
-          "hours": "営業時間: 月–火, 金 11:00–16:00 · 水–木, 土–日 11:00–16:00, 18:30–21:30",
+          "hours": "営業日・昼夜の営業は変わる場合があります。最新のInstagramカレンダーをご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJC4zTzRVldV8RrrOI2abS2ug",
@@ -98,7 +98,7 @@
           "name": "虎杖滨咖啡",
           "drive": "车程1分钟",
           "descriptionHtml": "看海露台和和风明太子意面。离小屋最近的餐厅（步行约4分钟）。",
-          "hours": "营业时间: 周一–周二, 周五 11:00–16:00 · 周三–周四, 周六–周日 11:00–16:00, 18:30–21:30",
+          "hours": "营业日期及午晚餐安排可能变动，请查咖啡馆最新Instagram日历。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJC4zTzRVldV8RrrOI2abS2ug",
@@ -119,8 +119,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Tourism weekday listings differ from the old schedule; current operator calendar needs confirmation.",
+      "reviewSource": "https://www.instagram.com/kojohamacafe/"
     },
     {
       "id": "venue-02",
@@ -207,7 +208,7 @@
           "name": "Shokujidokoro Ikeda",
           "drive": "3 min",
           "descriptionHtml": "Local diner on Route 36 with fresh local seafood; the sashimi set is the favourite. Soba and ramen too.",
-          "hours": "Hours: Mon–Wed, Fri–Sun 11:30–13:30 · Closed Thu",
+          "hours": "11:30–14:00 and 17:00–20:30. Irregular closing days; confirm before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqa7X9lJkdV8RWNql_pE3fks",
@@ -230,7 +231,7 @@
           "name": "食じ処 池田",
           "drive": "車で3分",
           "descriptionHtml": "国道36号沿いの食堂。地元の魚。刺身定食が人気。そば・ラーメンも。",
-          "hours": "営業時間: 月–水, 金–日 11:30–13:30 · 定休 木",
+          "hours": "11:30〜14:00、17:00〜20:30。不定休。訪問前にご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqa7X9lJkdV8RWNql_pE3fks",
@@ -253,7 +254,7 @@
           "name": "食事处 池田",
           "drive": "车程3分钟",
           "descriptionHtml": "36号国道旁的小食堂。当地海鲜，生鱼片定食最受欢迎，也有荞麦面和拉面。",
-          "hours": "营业时间: 周一–周三, 周五–周日 11:30–13:30 · 休息 周四",
+          "hours": "11:30–14:00、17:00–20:30。不定期休息，到访前请确认。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqa7X9lJkdV8RWNql_pE3fks",
@@ -273,8 +274,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/gourmet/robataikeda/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-04",
@@ -438,7 +441,7 @@
           "name": "Akebono",
           "drive": "4 min",
           "descriptionHtml": "Orange-sign ramen on the station road: miso, salt, soy and miso-curry, with gyoza wrapped after you order. One of the few village dinners.",
-          "hours": "Hours: Mon 10:30–13:30 · Tue–Sun 10:30–19:00",
+          "hours": "10:30–19:30; Monday closes at 13:30. Irregular closing days.",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%91%E3%81%BC%E3%81%AE%20%E7%99%BD%E8%80%81%20%E8%99%8E%E6%9D%96%E6%B5%9C",
@@ -461,7 +464,7 @@
           "name": "あけぼの",
           "drive": "車で4分",
           "descriptionHtml": "駅前のオレンジ看板。味噌・塩・醤油・味噌カレー。餃子は注文してから包む。村で数少ない夕食。",
-          "hours": "営業時間: 月 10:30–13:30 · 火–日 10:30–19:00",
+          "hours": "10:30〜19:30、月曜は13:30まで。不定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%91%E3%81%BC%E3%81%AE%20%E7%99%BD%E8%80%81%20%E8%99%8E%E6%9D%96%E6%B5%9C",
@@ -484,7 +487,7 @@
           "name": "曙拉面",
           "drive": "车程4分钟",
           "descriptionHtml": "车站前橙招牌拉面。味噌、盐、酱油、味噌咖喱。饺子现包。村里少有的晚饭。",
-          "hours": "营业时间: 周一 10:30–13:30 · 周二–周日 10:30–19:00",
+          "hours": "10:30–19:30，周一至13:30。不定期休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%91%E3%81%BC%E3%81%AE%20%E7%99%BD%E8%80%81%20%E8%99%8E%E6%9D%96%E6%B5%9C",
@@ -504,8 +507,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/information/火曜日営業しているお店/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-07",
@@ -592,7 +597,7 @@
           "name": "Yamamoto Trout Farm",
           "drive": "5 min",
           "descriptionHtml": "Catch your own trout in spring-fed ponds; they cook it as sashimi, grilled or fried. Fun with children.",
-          "hours": "Hours: Mon, Thu–Sun 10:00–15:30 · Closed Tue–Wed",
+          "hours": "10:00–15:30. Closed Tuesday and Wednesday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJzcZlfEFkdV8Rjnrx9uwk2ec",
@@ -615,7 +620,7 @@
           "name": "山本養鱒場",
           "drive": "車で5分",
           "descriptionHtml": "湧水の池でマスを釣り、刺身・塩焼き・フライにしてもらえる。子ども連れに。",
-          "hours": "営業時間: 月, 木–日 10:00–15:30 · 定休 火–水",
+          "hours": "10:00〜15:30。火・水曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJzcZlfEFkdV8Rjnrx9uwk2ec",
@@ -638,7 +643,7 @@
           "name": "山本养鳟场",
           "drive": "车程5分钟",
           "descriptionHtml": "在泉水池里自己钓鳟鱼，店家帮你做成生鱼片、盐烤或油炸。带小孩很好玩。",
-          "hours": "营业时间: 周一, 周四–周日 10:00–15:30 · 休息 周二–周三",
+          "hours": "10:00–15:30。周二、周三休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJzcZlfEFkdV8Rjnrx9uwk2ec",
@@ -658,8 +663,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/play/yamamoto-yosonjo/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-09",
@@ -669,7 +676,7 @@
           "name": "Hikaru Umi",
           "drive": "5 min",
           "descriptionHtml": "Seafood restaurant with Pacific views: kaisen-don, tendon and hokki (surf clam) curry. Cards accepted.",
-          "hours": "Hours: Mon, Wed–Sun 11:00–15:00 · Closed Tue",
+          "hours": "11:00–15:00. Closed Tuesday, with additional irregular closing days.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ_3AURgtldV8RzB474UM9Huw",
@@ -691,7 +698,7 @@
           "name": "光る海",
           "drive": "車で5分",
           "descriptionHtml": "太平洋を望む海鮮レストラン。海鮮丼、天丼、ホッキカレー。カード可。",
-          "hours": "営業時間: 月, 水–日 11:00–15:00 · 定休 火",
+          "hours": "11:00〜15:00。火曜定休、その他不定休あり。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ_3AURgtldV8RzB474UM9Huw",
@@ -713,7 +720,7 @@
           "name": "光之海",
           "drive": "车程5分钟",
           "descriptionHtml": "看得到太平洋的海鲜餐厅。海鲜盖饭、天妇罗盖饭、北寄贝咖喱。可刷卡。",
-          "hours": "营业时间: 周一, 周三–周日 11:00–15:00 · 休息 周二",
+          "hours": "11:00–15:00。周二休息，另有不定期休息日。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ_3AURgtldV8RzB474UM9Huw",
@@ -732,8 +739,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://hikaruumi-shiraoi.com/print/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-10",
@@ -743,7 +752,7 @@
           "name": "Sobakiri Yamada",
           "drive": "6 min",
           "descriptionHtml": "Stone-ground, hand-cut soba in an old farmhouse with tatami seating. Try the tenzaru and the soba pudding.",
-          "hours": "Hours: Tue–Sat 11:00–14:00 · Closed Mon, Sun",
+          "hours": "11:00–14:30. Closed Sunday and Monday; may close when sold out.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcSQJ75NldV8R-VKkVdc5NL4",
@@ -766,7 +775,7 @@
           "name": "そば切り やま田",
           "drive": "車で6分",
           "descriptionHtml": "古民家で石臼挽きの手打ちそば。座敷席。天ざると蕎麦プリンを。",
-          "hours": "営業時間: 火–土 11:00–14:00 · 定休 月, 日",
+          "hours": "11:00〜14:30。日・月曜定休。売り切れ次第終了。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcSQJ75NldV8R-VKkVdc5NL4",
@@ -789,7 +798,7 @@
           "name": "荞麦切 山田",
           "drive": "车程6分钟",
           "descriptionHtml": "老农舍里的石磨手打荞麦面，榻榻米座位。推荐天妇罗荞麦凉面和荞麦布丁。",
-          "hours": "营业时间: 周二–周六 11:00–14:00 · 休息 周一, 周日",
+          "hours": "11:00–14:30。周日、周一休息，售完可能提前结束。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcSQJ75NldV8R-VKkVdc5NL4",
@@ -809,8 +818,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/gourmet/soba-yamada/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Supporting source: https://ainu-upopoy.go.jp/gourmet/shop/shiraoi17.html"
     },
     {
       "id": "venue-11",
@@ -820,7 +831,7 @@
           "name": "Tonton diner",
           "drive": "6 min",
           "descriptionHtml": "Home-style set meals and curry in big portions. One of the few places open for dinner.",
-          "hours": "Hours: Mon 11:30–15:00 · Wed–Sun 11:30–18:30 · Closed Tue",
+          "hours": "Confirm current hours and closing days directly before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%A8%E3%82%93%20%E7%99%BD%E8%80%81%20%E7%AB%B9%E6%B5%A6",
@@ -843,7 +854,7 @@
           "name": "お食事処 とんとん",
           "drive": "車で6分",
           "descriptionHtml": "ボリュームのある定食とカレー。夜も開いている数少ない店。",
-          "hours": "営業時間: 月 11:30–15:00 · 水–日 11:30–18:30 · 定休 火",
+          "hours": "訪問前に最新の営業時間・定休日をお店へ直接ご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%A8%E3%82%93%20%E7%99%BD%E8%80%81%20%E7%AB%B9%E6%B5%A6",
@@ -866,7 +877,7 @@
           "name": "餐馆 豚豚",
           "drive": "车程6分钟",
           "descriptionHtml": "分量很大的家常定食和咖喱，是附近少数晚上营业的店。",
-          "hours": "营业时间: 周一 11:30–15:00 · 周三–周日 11:30–18:30 · 休息 周二",
+          "hours": "到访前请直接向店家确认最新营业时间及休息日。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%A8%E3%82%93%20%E7%99%BD%E8%80%81%20%E7%AB%B9%E6%B5%A6",
@@ -886,8 +897,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "No current official schedule found; third-party hours conflict with the old guide.",
+      "reviewSource": "https://tabelog.com/hokkaido/A0108/A010802/1016351/"
     },
     {
       "id": "venue-12",
@@ -897,7 +909,7 @@
           "name": "Ramen Sakuraya",
           "drive": "7 min",
           "descriptionHtml": "Morning ramen from 9:00: miso, tonkotsu and flying-fish broth. A Takeura habit on the way to Shiraoi.",
-          "hours": "Hours: Tue–Sun 09:00–14:00 · Closed Mon",
+          "hours": "Confirm current hours and closing days directly before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN5RHRExldV8RKgx0Ktozc2Y",
@@ -920,7 +932,7 @@
           "name": "らーめん さくら屋",
           "drive": "車で7分",
           "descriptionHtml": "朝9時のラーメン。味噌、とんこつ、あご出汁。竹浦の朝ラー。",
-          "hours": "営業時間: 火–日 09:00–14:00 · 定休 月",
+          "hours": "訪問前に最新の営業時間・定休日をお店へ直接ご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN5RHRExldV8RKgx0Ktozc2Y",
@@ -943,7 +955,7 @@
           "name": "樱屋拉面",
           "drive": "车程7分钟",
           "descriptionHtml": "早上9点就开的拉面。味噌、豚骨、飞鱼汤。去白老路上的竹浦习惯。",
-          "hours": "营业时间: 周二–周日 09:00–14:00 · 休息 周一",
+          "hours": "到访前请直接向店家确认最新营业时间及休息日。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJN5RHRExldV8RKgx0Ktozc2Y",
@@ -963,8 +975,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Yahoo and Tabelog closing times conflict; no current operator schedule established.",
+      "reviewSource": "https://map.yahoo.co.jp/v3/place/tLbyQRev1I-"
     },
     {
       "id": "venue-13",
@@ -974,7 +987,7 @@
           "name": "Kita no Lamp Tei",
           "drive": "7 min",
           "descriptionHtml": "Charcoal grill by the Pacific: Shiraoi beef, lamb and scallops, with a sea-view deck. The long lunch in Takeura.",
-          "hours": "Hours: Mon–Thu, Sat 11:00–15:30 · Fri 11:00–15:30, 17:00–21:00 · Closed Sun",
+          "hours": "11:00–15:30 (last order 15:00). Friday dinner 17:00–21:00; other evenings require a reservation for 10 or more. Closed Sunday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ2SXfJrBldV8RAPMFRzRJnxY",
@@ -997,7 +1010,7 @@
           "name": "北のランプ亭",
           "drive": "車で7分",
           "descriptionHtml": "海沿いの炭火焼き。白老牛、ラム、ホタテ。デッキから太平洋。竹浦のしっかりランチ。",
-          "hours": "営業時間: 月–木, 土 11:00–15:30 · 金 11:00–15:30, 17:00–21:00 · 定休 日",
+          "hours": "11:00〜15:30（LO 15:00）。金曜夜17:00〜21:00。他の夜は10名以上の予約が必要。日曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ2SXfJrBldV8RAPMFRzRJnxY",
@@ -1020,7 +1033,7 @@
           "name": "北之灯亭",
           "drive": "车程7分钟",
           "descriptionHtml": "太平洋边的炭火烧。白老牛、羊肉、扇贝。露台看海。竹浦的正经午餐。",
-          "hours": "营业时间: 周一–周四, 周六 11:00–15:30 · 周五 11:00–15:30, 17:00–21:00 · 休息 周日",
+          "hours": "11:00–15:30（最后点餐15:00）。周五晚17:00–21:00；其他晚间需10人以上预约。周日休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ2SXfJrBldV8RAPMFRzRJnxY",
@@ -1040,8 +1053,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/gourmet/lamp-tei/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-14",
@@ -1051,7 +1066,7 @@
           "name": "Kani-o",
           "drive": "8 min",
           "descriptionHtml": "Pick a live crab from the tank and they boil it in front of you. Crab-rice set if you don't want a whole crab.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "09:00–17:00 daily.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn_a_GLtldV8RsGALYBlElGY",
@@ -1073,7 +1088,7 @@
           "name": "活かに本舗 かに王",
           "drive": "車で8分",
           "descriptionHtml": "水槽の活かにを選んで、その場で茹でる。かに飯定食なら手軽。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "毎日9:00〜17:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn_a_GLtldV8RsGALYBlElGY",
@@ -1095,7 +1110,7 @@
           "name": "螃蟹王",
           "drive": "车程8分钟",
           "descriptionHtml": "从水缸里挑活蟹，当场煮。不想整只就点蟹饭定食。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "每日9:00–17:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn_a_GLtldV8RsGALYBlElGY",
@@ -1114,8 +1129,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/kani-o/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-15",
@@ -1267,7 +1284,7 @@
           "name": "Restaurant Cowbell",
           "drive": "14 min",
           "descriptionHtml": "Log-house yakiniku run by a Shiraoi butcher. Certified Shiraoi beef over charcoal.",
-          "hours": "Hours: Mon, Thu–Sun 11:00–18:30 · Closed Tue–Wed",
+          "hours": "11:00–19:00 (last order 18:30). Closed Wednesday and the first/third Tuesday; public holidays may change closure dates.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJF2Rjl1NpdV8RhDFxHj7IONk",
@@ -1289,7 +1306,7 @@
           "name": "レストラン・カウベル",
           "drive": "車で14分",
           "descriptionHtml": "精肉店直営のログハウス焼肉。白老牛の認定店。炭火。",
-          "hours": "営業時間: 月, 木–日 11:00–18:30 · 定休 火–水",
+          "hours": "11:00〜19:00（LO 18:30）。水曜・第1第3火曜定休。祝日は休業日が変わる場合があります。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJF2Rjl1NpdV8RhDFxHj7IONk",
@@ -1311,7 +1328,7 @@
           "name": "Cowbell 餐厅",
           "drive": "车程14分钟",
           "descriptionHtml": "肉铺直营的木屋烧肉。白老牛认证店。炭火。",
-          "hours": "营业时间: 周一, 周四–周日 11:00–18:30 · 休息 周二–周三",
+          "hours": "11:00–19:00（最后点餐18:30）。周三及每月第一、第三个周二休息，节假日可能调整。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJF2Rjl1NpdV8RhDFxHj7IONk",
@@ -1330,8 +1347,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi-cowbell.com/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-18",
@@ -1341,7 +1360,7 @@
           "name": "Iwasaki Omotenashi-tei",
           "drive": "22 min",
           "descriptionHtml": "Shiraoi beef from their own farm as yakiniku, sukiyaki or shabu-shabu. The special-night dinner.",
-          "hours": "Hours: Mon–Tue, Fri–Sun 11:00–19:30 · Thu 11:00–15:30 · Closed Wed",
+          "hours": "11:00–20:00 (last order 19:30), Thursday 11:00–16:00. Closed Wednesday (Thursday instead when Wednesday is a public holiday); check the official calendar.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJvUTHVOJrdV8RTPQmsWykNHY",
@@ -1364,7 +1383,7 @@
           "name": "白老牛の店いわさき おもてなし亭",
           "drive": "車で22分",
           "descriptionHtml": "自社牧場のいわさき白老牛。焼肉・すき焼き・しゃぶしゃぶ。特別な夜の肉。",
-          "hours": "営業時間: 月–火, 金–日 11:00–19:30 · 木 11:00–15:30 · 定休 水",
+          "hours": "11:00〜20:00（LO 19:30）、木曜11:00〜16:00。水曜定休（水曜が祝日の場合は木曜休み）。公式カレンダーをご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJvUTHVOJrdV8RTPQmsWykNHY",
@@ -1387,7 +1406,7 @@
           "name": "岩崎款待亭",
           "drive": "车程22分钟",
           "descriptionHtml": "自家牧场白老牛。烧肉、寿喜烧、涮涮锅。适合特别的一晚。",
-          "hours": "营业时间: 周一–周二, 周五–周日 11:00–19:30 · 周四 11:00–15:30 · 休息 周三",
+          "hours": "11:00–20:00（最后点餐19:30），周四11:00–16:00。周三休息；如周三为节假日，则改为周四休息。请查官方日历。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJvUTHVOJrdV8RTPQmsWykNHY",
@@ -1407,8 +1426,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://omotenashi-tei.com/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-19",
@@ -1418,7 +1439,7 @@
           "name": "Aji no Daio honke",
           "drive": "28 min",
           "descriptionHtml": "The bowl that started Tomakomai curry ramen, on Route 36 toward the airport.",
-          "hours": "Hours: Mon–Tue, Thu–Sun 11:00–20:00 · Wed 11:00–15:00",
+          "hours": "11:00–20:00 (last order 19:30); Wednesday 11:00–15:00 (last order 14:30). Closes when soup sells out; year-end/New Year closures.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJw52tKsEedV8R4dDnnfA5Si8",
@@ -1441,7 +1462,7 @@
           "name": "味の大王 総本店",
           "drive": "車で28分",
           "descriptionHtml": "とまこまいカレーラーメンの元祖。空港方面の36号線。",
-          "hours": "営業時間: 月–火, 木–日 11:00–20:00 · 水 11:00–15:00",
+          "hours": "11:00〜20:00（LO 19:30）、水曜11:00〜15:00（LO 14:30）。スープがなくなり次第終了。年末年始休業あり。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJw52tKsEedV8R4dDnnfA5Si8",
@@ -1464,7 +1485,7 @@
           "name": "味之大王 总本店",
           "drive": "车程28分钟",
           "descriptionHtml": "苫小牧咖喱拉面的起源。往机场的36号线。",
-          "hours": "营业时间: 周一–周二, 周四–周日 11:00–20:00 · 周三 11:00–15:00",
+          "hours": "11:00–20:00（最后点餐19:30）；周三11:00–15:00（最后点餐14:30）。汤售完即结束，年末年初有休业。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJw52tKsEedV8R4dDnnfA5Si8",
@@ -1484,8 +1505,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.curryramen.com/about.html",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-20",
@@ -1495,7 +1518,7 @@
           "name": "Date Okina",
           "drive": "38 min",
           "descriptionHtml": "Hand-cut ni-hachi soba, worth the drive to Date for a quiet, serious bowl.",
-          "hours": "Hours: Tue–Sun 11:30–15:00 · Closed Mon",
+          "hours": "Confirm current hours and closing days with the restaurant before travelling.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJp-Ykpbrgn18Rm43n22wmbxg",
@@ -1518,7 +1541,7 @@
           "name": "伊達 翁",
           "drive": "車で38分",
           "descriptionHtml": "手打ち二八そば。静かに旨い一杯を伊達まで。",
-          "hours": "営業時間: 火–日 11:30–15:00 · 定休 月",
+          "hours": "出発前に営業時間・定休日をお店へご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJp-Ykpbrgn18Rm43n22wmbxg",
@@ -1541,7 +1564,7 @@
           "name": "伊达 翁",
           "drive": "车程38分钟",
           "descriptionHtml": "手打二八荞麦。想吃认真的一碗，值得开到伊达。",
-          "hours": "营业时间: 周二–周日 11:30–15:00 · 休息 周一",
+          "hours": "出发前请向餐厅确认最新营业时间及休息日。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJp-Ykpbrgn18Rm43n22wmbxg",
@@ -1561,8 +1584,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Official group page does not publish hours; third-party listings do not resolve verification.",
+      "reviewSource": "https://okina-daruma.com/group/201403171738_15"
     },
     {
       "id": "venue-21",
@@ -1572,7 +1596,7 @@
           "name": "Gelateria Mina Pieno",
           "drive": null,
           "descriptionHtml": "Hokkaido-milk gelato, soft serve and parfaits in central Shiraoi, near Shiraoi Station. <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJLT6xbKVrdV8R5R9t_4227uE\" rel=\"noopener\" target=\"_blank\">Map</a>",
-          "hours": "Hours: Mon–Tue, Thu–Sun 10:00–17:00 · Closed Wed",
+          "hours": "10:00–17:00. Closed Wednesday April–November; Tuesday and Wednesday December–March.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJLT6xbKVrdV8R5R9t_4227uE",
@@ -1595,7 +1619,7 @@
           "name": "ジェラテリア ミナピエーノ",
           "drive": null,
           "descriptionHtml": "白老駅近くの白老中心部。北海道産ミルクのジェラート、ソフトクリーム、パフェが楽しめます。 <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJLT6xbKVrdV8R5R9t_4227uE\" rel=\"noopener\" target=\"_blank\">地図</a>",
-          "hours": "営業時間: 月–火, 木–日 10:00–17:00 · 定休 水",
+          "hours": "10:00〜17:00。4〜11月は水曜定休、12〜3月は火・水曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJLT6xbKVrdV8R5R9t_4227uE",
@@ -1618,7 +1642,7 @@
           "name": "Gelateria Mina Pieno",
           "drive": null,
           "descriptionHtml": "位于白老站附近的白老市中心，提供北海道牛奶制作的意式冰淇淋、软冰淇淋和芭菲。 <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJLT6xbKVrdV8R5R9t_4227uE\" rel=\"noopener\" target=\"_blank\">地图</a>",
-          "hours": "营业时间: 周一–周二, 周四–周日 10:00–17:00 · 休息 周三",
+          "hours": "10:00–17:00。4月至11月周三休息；12月至3月周二、周三休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJLT6xbKVrdV8R5R9t_4227uE",
@@ -1638,8 +1662,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/gourmet/gelateria-mina-pieno（ジェラテリア-ミナピエノ）/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Supporting source: https://minapieno2023626.jp/"
     },
     {
       "id": "venue-22",
@@ -1741,7 +1767,7 @@
           "name": "Hotel Izumi (day bath)",
           "drive": "3 min",
           "descriptionHtml": "Pure source-fed spring with no heating, water or recirculation added. Outdoor bath over the Pacific, plus a sauna.",
-          "hours": null,
+          "hours": "Day bath: Sunday–Friday 12:00–22:00 (reception until 21:00); Saturday and days before public holidays 12:00–17:00 (reception until 16:00). Holiday periods and private bookings may change availability.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqyEM3npkdV8R7obw-HftYvU",
@@ -1763,7 +1789,7 @@
           "name": "ホテルいずみ（日帰り入浴）",
           "drive": "車で3分",
           "descriptionHtml": "加温・加水・循環なしの源泉かけ流し。太平洋を望む露天風呂とサウナ。",
-          "hours": null,
+          "hours": "日帰り入浴：日〜金曜12:00〜22:00（受付21:00まで）。土曜・祝前日12:00〜17:00（受付16:00まで）。大型連休・貸切時は変更あり。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqyEM3npkdV8R7obw-HftYvU",
@@ -1785,7 +1811,7 @@
           "name": "Izumi酒店（日归温泉）",
           "drive": "车程3分钟",
           "descriptionHtml": "纯源泉放流，不加热、不加水、不循环。露天浴池面向太平洋，另有桑拿。",
-          "hours": null,
+          "hours": "日归温泉：周日至周五12:00–22:00（接待至21:00）；周六及节假日前一天12:00–17:00（接待至16:00）。长假及包场时可能调整。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqyEM3npkdV8R7obw-HftYvU",
@@ -1804,8 +1830,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://hotel-izumi.webnode.jp/源泉掛け流し温泉/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-24",
@@ -1815,7 +1843,7 @@
           "name": "Hana no Yu Onsen",
           "drive": "3 min",
           "descriptionHtml": "Shiraoi's only 24-hour hot spring, source-fed, with private family baths. Good for a late-night or sunrise soak.",
-          "hours": "Hours: Open 24 hours",
+          "hours": "Open 24 hours.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJh22wcFpkdV8RkhbVA9vTRDc",
@@ -1837,7 +1865,7 @@
           "name": "花の湯温泉",
           "drive": "車で3分",
           "descriptionHtml": "白老で唯一の24時間営業。源泉かけ流し、家族風呂あり。深夜や日の出前の一風呂に。",
-          "hours": "営業時間: 24時間営業",
+          "hours": "24時間営業。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJh22wcFpkdV8RkhbVA9vTRDc",
@@ -1859,7 +1887,7 @@
           "name": "花之汤温泉",
           "drive": "车程3分钟",
           "descriptionHtml": "白老唯一24小时营业的温泉。源泉放流，有家庭包间浴池，适合深夜或日出前泡汤。",
-          "hours": "营业时间: 24小时营业",
+          "hours": "24小时营业。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJh22wcFpkdV8RkhbVA9vTRDc",
@@ -1878,8 +1906,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://onsen.shiraoi.net/facility/facility000127/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-25",
@@ -1889,7 +1919,7 @@
           "name": "Hamachidori private baths",
           "drive": "3 min",
           "descriptionHtml": "Five private source-fed baths rented by the room, for couples and families who prefer not to share.",
-          "hours": "Hours: Mon–Wed, Fri–Sun 10:00–21:00 · Closed Thu",
+          "hours": "Reception: Monday–Saturday 10:00–21:00; Sunday/public holidays 10:00–20:30. Closed Thursday and the third Friday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ04rTuopldV8RDjf3gO8Swm4",
@@ -1912,7 +1942,7 @@
           "name": "家族風呂 浜ちどり",
           "drive": "車で3分",
           "descriptionHtml": "貸切の源泉家族風呂が5室。大浴場が苦手なカップルや家族に。",
-          "hours": "営業時間: 月–水, 金–日 10:00–21:00 · 定休 木",
+          "hours": "受付：月〜土曜10:00〜21:00、日曜・祝日10:00〜20:30。木曜・第3金曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ04rTuopldV8RDjf3gO8Swm4",
@@ -1935,7 +1965,7 @@
           "name": "滨千鸟 家庭浴池",
           "drive": "车程3分钟",
           "descriptionHtml": "5间可包场的源泉家庭浴池，适合不想和陌生人共浴的情侣或家庭。",
-          "hours": "营业时间: 周一–周三, 周五–周日 10:00–21:00 · 休息 周四",
+          "hours": "接待：周一至周六10:00–21:00，周日及节假日10:00–20:30。周四及每月第三个周五休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ04rTuopldV8RDjf3gO8Swm4",
@@ -1955,8 +1985,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://onsen.shiraoi.net/facility/facility000129/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-26",
@@ -2043,7 +2075,7 @@
           "name": "Hotel Ocean (day bath)",
           "drive": "5 min",
           "descriptionHtml": "Ten kinds of bath, several outdoors, hot and cold saunas and sea views. Good value.",
-          "hours": null,
+          "hours": "Day-bath reception 10:00–19:00; leave by 20:00. Overnight guests have different bathing hours.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJEwPAkLpldV8R9rFRtwP8toM",
@@ -2066,7 +2098,7 @@
           "name": "ホテルオーシャン（日帰り入浴）",
           "drive": "車で5分",
           "descriptionHtml": "露天を含む10種類の風呂、サウナと水風呂、海の眺め。お得。",
-          "hours": null,
+          "hours": "日帰り入浴受付10:00〜19:00、退館20:00まで。宿泊者の入浴時間は別です。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJEwPAkLpldV8R9rFRtwP8toM",
@@ -2089,7 +2121,7 @@
           "name": "海洋酒店（日归温泉）",
           "drive": "车程5分钟",
           "descriptionHtml": "10种浴池（含多个露天），冷热桑拿，看得到海，性价比高。",
-          "hours": null,
+          "hours": "日归温泉接待10:00–19:00，须于20:00前离馆。住宿客人的泡汤时间另有安排。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJEwPAkLpldV8R9rFRtwP8toM",
@@ -2109,8 +2141,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://onsen.shiraoi.net/facility/facility000106/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-28",
@@ -2120,7 +2154,7 @@
           "name": "Yumoto Hokuyo (day bath)",
           "drive": "5 min",
           "descriptionHtml": "Showa-era onsen inn with a huge outdoor bath, open from 5 a.m. for a dawn soak.",
-          "hours": null,
+          "hours": "05:00–23:00 (last entry 22:00). Women's indoor bath unavailable Monday–Friday 08:00–09:00 for cleaning.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJuy0EA7JldV8RaVtwjsMhMvk",
@@ -2143,7 +2177,7 @@
           "name": "湯元 ほくよう（日帰り入浴）",
           "drive": "車で5分",
           "descriptionHtml": "昭和レトロな温泉宿。大露天風呂。朝5時から入れる。",
-          "hours": null,
+          "hours": "5:00〜23:00（最終入場22:00）。女性内風呂は平日8:00〜9:00清掃のため利用不可。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJuy0EA7JldV8RaVtwjsMhMvk",
@@ -2166,7 +2200,7 @@
           "name": "汤元 北洋（日归温泉）",
           "drive": "车程5分钟",
           "descriptionHtml": "昭和怀旧风温泉旅馆，超大露天浴池，早上5点就开门。",
-          "hours": null,
+          "hours": "5:00–23:00（最后入场22:00）。女性室内浴池周一至周五8:00–9:00清洁期间暂停使用。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJuy0EA7JldV8RaVtwjsMhMvk",
@@ -2186,8 +2220,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.h-hokuyo.com/mb/onsen.html",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-29",
@@ -2197,7 +2233,7 @@
           "name": "Sunrise shrine",
           "drive": "3 min",
           "descriptionHtml": "A small shrine above the shore. New Year's sunrise is famous, and any clear dawn through the torii is worth the early walk.",
-          "hours": null,
+          "hours": "Outdoor shrine visit: follow posted access restrictions and keep noise low.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8eGPz2NkdV8RXdoOUXbNStA",
@@ -2216,7 +2252,7 @@
           "name": "浜の小さな神社",
           "drive": "車で3分",
           "descriptionHtml": "浜の小さな社。元日の日の出が有名。晴れた朝の鳥居越しはいつでも美しい。",
-          "hours": null,
+          "hours": "神社への参拝は現地の立入制限に従い、静かにお過ごしください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8eGPz2NkdV8RXdoOUXbNStA",
@@ -2235,7 +2271,7 @@
           "name": "海边小神社",
           "drive": "车程3分钟",
           "descriptionHtml": "岸上的小神社。元旦日出最有名；任何晴朗早晨从鸟居看日出都值得早起。",
-          "hours": null,
+          "hours": "参拜神社时请遵守现场通行限制，保持安静。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ8eGPz2NkdV8RXdoOUXbNStA",
@@ -2251,8 +2287,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "The generic shrine name needs a local identity check before an official page can be assigned.",
+      "reviewSource": ""
     },
     {
       "id": "venue-30",
@@ -2262,7 +2299,7 @@
           "name": "Ayoro Beach & lighthouse",
           "drive": "5 min",
           "descriptionHtml": "Black sand, tetrapods and an easy hike from the beach to the lighthouse (closed to visitors). Reachable by car, bike or on foot.",
-          "hours": "Hours: Open 24 hours",
+          "hours": "Outdoor coastal viewpoint: visit in daylight and follow posted access restrictions. Do not assume lighthouse interior access.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn35Fx3xkdV8RgNzTe2bwr3Q",
@@ -2281,7 +2318,7 @@
           "name": "アヨロ海岸と灯台",
           "drive": "車で5分",
           "descriptionHtml": "黒い砂、消波ブロック、そして浜辺から歩いて行ける灯台（閉鎖中）。車・自転車・徒歩で行けます。",
-          "hours": "営業時間: 24時間営業",
+          "hours": "海岸の屋外景観スポット。日中に訪れ、現地の立入制限に従ってください。灯台内部への入場は前提にしないでください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn35Fx3xkdV8RgNzTe2bwr3Q",
@@ -2300,7 +2337,7 @@
           "name": "阿ヨロ海滩与灯塔",
           "drive": "车程5分钟",
           "descriptionHtml": "黑沙滩、消波块，以及从海滩轻松徒步可达的灯塔（已关闭）。可驾车、骑行或步行前往。",
-          "hours": "营业时间: 24小时营业",
+          "hours": "户外海岸观景点：建议白天到访并遵守现场通行限制，不应假定可进入灯塔内部。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJn35Fx3xkdV8RgNzTe2bwr3Q",
@@ -2316,8 +2353,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Replaced unsupported 24-hour claim; daylight is visitor advice, not a formal opening schedule.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://shiraoi.net/wp-content/uploads/2025/03/tourist_pamphlet_202503.pdf"
     },
     {
       "id": "venue-31",
@@ -2327,7 +2366,7 @@
           "name": "Toy & Art Museum (Koshu Kitano)",
           "drive": "7 min",
           "descriptionHtml": "A private collection of 10,000+ items: Showa tin toys, Godzilla and Ultraman vinyl, robots and masks, with antiques downstairs.",
-          "hours": "Hours: Mon–Tue, Thu–Sun 10:00–16:00 · Closed Wed",
+          "hours": "A September 2026 local news report lists 10:00–16:00 with irregular closures. Phone the museum before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq7CcwYhjdV8RFIhYcfejbjQ",
@@ -2349,7 +2388,7 @@
           "name": "古趣・北乃博物館",
           "drive": "車で7分",
           "descriptionHtml": "1万点超の個人コレクション。昭和のブリキ、ゴジラやウルトラマンのソフビ、ロボット、お面、1階は骨董。",
-          "hours": "営業時間: 月–火, 木–日 10:00–16:00 · 定休 水",
+          "hours": "2026年9月の地元報道では10:00〜16:00、不定休。訪問前に博物館へ電話でご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq7CcwYhjdV8RFIhYcfejbjQ",
@@ -2371,7 +2410,7 @@
           "name": "玩具与艺术博物馆（古趣·北乃）",
           "drive": "车程7分钟",
           "descriptionHtml": "私人收藏逾万件：昭和铁皮玩具、哥斯拉和奥特曼软胶、机器人、面具，楼下是古董。",
-          "hours": "营业时间: 周一–周二, 周四–周日 10:00–16:00 · 休息 周三",
+          "hours": "2026年9月当地报道列出10:00–16:00、不定期休馆。到访前请电话确认。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq7CcwYhjdV8RFIhYcfejbjQ",
@@ -2390,8 +2429,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Recent on-site reporting, not operator confirmation; old Wednesday closure claim removed.",
+      "reviewSource": "https://www.htb.co.jp/news/archives_39750.html"
     },
     {
       "id": "venue-32",
@@ -2543,7 +2583,7 @@
           "name": "Lake Kuttara",
           "drive": "15 min",
           "descriptionHtml": "A perfectly round caldera lake in the hills above Kojohama, once rated Japan's clearest. Viewing deck and silent forest.",
-          "hours": null,
+          "hours": "Access is seasonal: the road normally closes in winter, November–late April. Check current road restrictions before travelling.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJh8nMLVxmdV8ROvyp4REDtVM",
@@ -2566,7 +2606,7 @@
           "name": "倶多楽湖",
           "drive": "車で15分",
           "descriptionHtml": "虎杖浜の山の上、まん丸いカルデラ湖。かつて透明度日本一。展望台と静かな森。",
-          "hours": null,
+          "hours": "道路は通常11月〜4月下旬に冬季通行止め。出発前に最新の通行規制をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJh8nMLVxmdV8ROvyp4REDtVM",
@@ -2589,7 +2629,7 @@
           "name": "俱多乐湖",
           "drive": "车程15分钟",
           "descriptionHtml": "虎杖滨山上的圆形火山口湖，曾被评为日本透明度第一。有观景台，森林静谧。",
-          "hours": null,
+          "hours": "道路通常11月至4月下旬冬季封闭。出发前请确认最新道路限制。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJh8nMLVxmdV8ROvyp4REDtVM",
@@ -2609,8 +2649,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Typical season from official Hokkaido tourism; not a confirmation of exact 2026 closure dates.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://www.visit-hokkaido.jp/spot/detail_12253.html"
     },
     {
       "id": "venue-35",
@@ -2697,7 +2739,7 @@
           "name": "Noboribetsu Jigokudani (Hell Valley)",
           "drive": "16 min",
           "descriptionHtml": "A steaming volcanic valley with walking trails. Check official notices before visiting: paths and access may close for weather, maintenance or events.",
-          "hours": null,
+          "hours": "Outdoor volcanic viewpoint. Use marked paths and check current weather and access notices before walking.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ___jisJmdV8RzL7_3Cqwtcc",
@@ -2725,7 +2767,7 @@
           "name": "登別地獄谷",
           "drive": "車で16分",
           "descriptionHtml": "散策路から眺める火山の地獄谷。天候・整備・催しによって通行が制限される場合があるため、訪問前に公式のお知らせをご確認ください。",
-          "hours": null,
+          "hours": "屋外の火山景観スポット。指定の遊歩道を利用し、散策前に天候・通行情報をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ___jisJmdV8RzL7_3Cqwtcc",
@@ -2753,7 +2795,7 @@
           "name": "登别地狱谷",
           "drive": "车程16分钟",
           "descriptionHtml": "可沿步道欣赏的火山地狱谷。天气、维护或活动可能导致道路或通行区域关闭，出发前请查看官方通告。",
-          "hours": null,
+          "hours": "户外火山观景点。请沿指定步道行走，出发前确认天气及通行通知。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ___jisJmdV8RzL7_3Cqwtcc",
@@ -2778,8 +2820,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Official destination confirmed; walking guidance is advice, not an opening-hours guarantee.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://noboribetsu-spa.jp/spot/spot0034/"
     },
     {
       "id": "venue-37",
@@ -2866,7 +2910,7 @@
           "name": "Lake Poroto",
           "drive": "20–25 min",
           "descriptionHtml": "Still water beside Upopoy for a short walk or a coffee after the museum. Swans in winter.",
-          "hours": null,
+          "hours": "Lakeside walks: daylight visits recommended; follow posted path restrictions. Boat and winter activities require separate seasonal/operator checks.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJc-GFw49rdV8RyUrFPoNcqdQ",
@@ -2889,7 +2933,7 @@
           "name": "ポロト湖",
           "drive": "車で20–25分",
           "descriptionHtml": "ウポポイの横の静かな湖。博物館のあと、コーヒーを持って。冬は白鳥。",
-          "hours": null,
+          "hours": "湖畔散策は日中がおすすめ。現地の通行制限に従ってください。カヌー・冬季の体験は季節・運営者ごとに別途ご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJc-GFw49rdV8RyUrFPoNcqdQ",
@@ -2912,7 +2956,7 @@
           "name": "波罗托湖",
           "drive": "车程20–25分钟",
           "descriptionHtml": "乌波波伊旁边的静湖。看完博物馆后带杯咖啡坐一会。冬天有天鹅。",
-          "hours": null,
+          "hours": "湖边散步建议安排在白天，并遵守步道限制。划船及冬季活动须另行确认季节和运营方安排。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJc-GFw49rdV8RyUrFPoNcqdQ",
@@ -2932,8 +2976,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "No fixed lake opening hours established; do not copy tourism-office footer hours.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://shiraoi.net/see/porotolake/"
     },
     {
       "id": "venue-39",
@@ -2943,7 +2989,7 @@
           "name": "Sendai-han Shiraoi Jinya",
           "drive": "20 min",
           "descriptionHtml": "An 1856 Sendai-clan garrison site, with a samurai-house-style museum and earthworks. A quieter hour in Shiraoi.",
-          "hours": "Hours: Tue–Sun 09:30–16:30 · Closed Mon",
+          "hours": "Museum 09:30–16:30. Closed Monday (next day if a public holiday) and 29 December–3 January; check temporary closure notices.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ-36GLOtrdV8Rah2vy4pCccc",
@@ -2966,7 +3012,7 @@
           "name": "仙台藩白老元陣屋資料館",
           "drive": "車で20分",
           "descriptionHtml": "安政3年、蝦夷地警備の仙台藩陣屋。武家屋敷風の資料館と史跡。",
-          "hours": "営業時間: 火–日 09:30–16:30 · 定休 月",
+          "hours": "資料館9:30〜16:30。月曜（祝日の場合は翌日）、12月29日〜1月3日休館。臨時休館のお知らせもご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ-36GLOtrdV8Rah2vy4pCccc",
@@ -2989,7 +3035,7 @@
           "name": "仙台藩白老元阵屋",
           "drive": "车程20分钟",
           "descriptionHtml": "1856年仙台藩驻守虾夷的阵屋。武家屋敷风格资料馆和遗迹。",
-          "hours": "营业时间: 周二–周日 09:30–16:30 · 休息 周一",
+          "hours": "资料馆9:30–16:30。周一休馆（遇节假日顺延至次日），12月29日至1月3日休馆。请另查临时休馆通知。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ-36GLOtrdV8Rah2vy4pCccc",
@@ -3009,8 +3055,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.town.shiraoi.hokkaido.jp/docs/page2020062800019.html",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-40",
@@ -3020,7 +3068,7 @@
           "name": "Muroran factory night view & Hakucho Bridge",
           "drive": "28 min",
           "descriptionHtml": "Steel-town lights on the water and a suspension bridge lit gold. A night drive rather than a ticketed sight.",
-          "hours": "Hours: Open 24 hours",
+          "hours": "Hakucho Bridge illumination: sunset–midnight daily. View from designated public viewpoints; factory sites are not visitor facilities.",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E5%A4%A7%E6%A9%8B%20%E5%AE%A4%E8%98%AD",
@@ -3043,7 +3091,7 @@
           "name": "室蘭工場夜景と白鳥大橋",
           "drive": "車で28分",
           "descriptionHtml": "海に映る製鉄の灯と、金色の白鳥大橋。夜のドライブで。",
-          "hours": "営業時間: 24時間営業",
+          "hours": "白鳥大橋のライトアップ：毎日日没〜24:00。指定の公共展望場所からご覧ください。工場敷地は観光施設ではありません。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E5%A4%A7%E6%A9%8B%20%E5%AE%A4%E8%98%AD",
@@ -3066,7 +3114,7 @@
           "name": "室兰工厂夜景与天鹅大桥",
           "drive": "车程28分钟",
           "descriptionHtml": "钢铁厂灯火倒映在海上，金色的天鹅大桥。适合夜间兜风。",
-          "hours": "营业时间: 24小时营业",
+          "hours": "白鸟大桥灯光：每日日落至午夜。请从指定公共观景点欣赏，工厂区域并非游客设施。",
           "links": [
             {
               "href": "https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E9%B3%A5%E5%A4%A7%E6%A9%8B%20%E5%AE%A4%E8%98%AD",
@@ -3086,8 +3134,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://www.city.muroran.lg.jp/faq/detail.html?content=172"
     },
     {
       "id": "venue-41",
@@ -3097,7 +3147,7 @@
           "name": "Lake Utonai",
           "drive": "28 min",
           "descriptionHtml": "Ramsar wetland on the way to the airport, with swans, geese and a free visitor centre.",
-          "hours": null,
+          "hours": "Wildlife Protection Center: 09:00–17:00. Closed Monday (next day if a public holiday) and 29 December–3 January. Lakeside paths have separate access arrangements.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJY07CxasedV8R5yQWDPA1ScI",
@@ -3120,7 +3170,7 @@
           "name": "ウトナイ湖",
           "drive": "車で28分",
           "descriptionHtml": "空港途中のラムサール湿地。白鳥、ガン、無料のセンター。",
-          "hours": null,
+          "hours": "野生鳥獣保護センター9:00〜17:00。月曜（祝日の場合は翌日）、12月29日〜1月3日休館。湖畔の散策路の利用条件は別です。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJY07CxasedV8R5yQWDPA1ScI",
@@ -3143,7 +3193,7 @@
           "name": "ウトナイ湖",
           "drive": "车程28分钟",
           "descriptionHtml": "去机场路上的拉姆萨尔湿地。天鹅、雁、免费游客中心。",
-          "hours": null,
+          "hours": "野生鸟兽保护中心9:00–17:00。周一休馆（遇节假日顺延至次日），12月29日至1月3日休馆。湖边步道的开放安排另行确认。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJY07CxasedV8R5yQWDPA1ScI",
@@ -3163,8 +3213,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.city.tomakomai.hokkaido.jp/shizen/sonotanoshisetsu/utonai/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-42",
@@ -3251,7 +3303,7 @@
           "name": "Cape Chikyu",
           "drive": "32 min",
           "descriptionHtml": "A white lighthouse on a 130 m cliff, with a Pacific horizon that seems to curve. Muroran's southern cape.",
-          "hours": "Hours: Open 24 hours",
+          "hours": "Outdoor viewpoint: daylight visits recommended. Follow posted restrictions. Parking for an ordinary car costs ¥500 (introduced April 2026).",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq8GrwjjQn18RVcPtj0eFJqM",
@@ -3273,7 +3325,7 @@
           "name": "地球岬",
           "drive": "車で32分",
           "descriptionHtml": "130mの断崖の白灯台。水平線が丸く見える。室蘭の南端。",
-          "hours": "営業時間: 24時間営業",
+          "hours": "屋外展望スポット。日中の訪問がおすすめです。現地の制限に従ってください。普通車の駐車料金は500円（2026年4月から）。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq8GrwjjQn18RVcPtj0eFJqM",
@@ -3295,7 +3347,7 @@
           "name": "地球岬",
           "drive": "车程32分钟",
           "descriptionHtml": "130米断崖上的白灯塔。水平线看起来是弧形的。室兰南端。",
-          "hours": "营业时间: 24小时营业",
+          "hours": "户外观景点，建议白天到访并遵守现场限制。普通汽车停车费500日元（2026年4月起）。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq8GrwjjQn18RVcPtj0eFJqM",
@@ -3314,8 +3366,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Municipal parking notice; removed unsupported 24-hour opening claim.",
+      "accessCheckedOn": "2026-10-10",
+      "accessSource": "https://www.city.muroran.lg.jp/administration/?content=1559"
     },
     {
       "id": "venue-44",
@@ -3325,7 +3379,7 @@
           "name": "Usu Zenkoji",
           "drive": "40 min",
           "descriptionHtml": "One of the three official Edo-period temples of Ezo, with cherry blossom, hydrangeas and a quiet hall.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "Treasure museum: 09:00–17:00, advance reservation required. These hours do not describe access to the temple grounds.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJS6mwOI7jn18RH7AVLWSr27k",
@@ -3348,7 +3402,7 @@
           "name": "有珠善光寺",
           "drive": "車で40分",
           "descriptionHtml": "蝦夷三官寺の一つ。桜、あじさい、静かな本堂。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "宝物館9:00〜17:00、事前予約が必要。境内の利用時間とは異なります。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJS6mwOI7jn18RH7AVLWSr27k",
@@ -3371,7 +3425,7 @@
           "name": "有珠善光寺",
           "drive": "车程40分钟",
           "descriptionHtml": "虾夷三官寺之一。樱花、绣球、安静的本堂。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "宝物馆9:00–17:00，须提前预约。此时间不代表寺院境内的开放时间。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJS6mwOI7jn18RH7AVLWSr27k",
@@ -3391,8 +3445,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://www.usu-zenkoji.jp/treasure-museum/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-45",
@@ -3402,7 +3458,7 @@
           "name": "Tarako vending machine",
           "drive": "3 min",
           "descriptionHtml": "One of the few tarako vending machines in Japan. A photo stop as much as a snack.",
-          "hours": null,
+          "hours": "Check the machine’s availability and stock locally.",
           "links": [
             {
               "href": "https://kojohama.com/",
@@ -3421,7 +3477,7 @@
           "name": "たらこ自動販売機",
           "drive": "車で3分",
           "descriptionHtml": "日本でも珍しいたらこ自販機。写真とお土産を兼ねて。",
-          "hours": null,
+          "hours": "自動販売機の稼働状況・在庫は現地でご確認ください。",
           "links": [
             {
               "href": "https://kojohama.com/",
@@ -3440,7 +3496,7 @@
           "name": "明太子自动售货机",
           "drive": "车程3分钟",
           "descriptionHtml": "全日本少见的明太子自动售货机。既是伴手礼也是拍照点。",
-          "hours": null,
+          "hours": "请在现场确认自动售货机是否运行及库存。",
           "links": [
             {
               "href": "https://kojohama.com/",
@@ -3456,8 +3512,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Operator identified, but this machine’s access hours were not published.",
+      "reviewSource": "https://kojohama.com/"
     },
     {
       "id": "venue-46",
@@ -3467,7 +3524,7 @@
           "name": "Tairyobanya Kojohama",
           "drive": "3 min",
           "descriptionHtml": "Fill a jar with Kojohama tarako yourself. The souvenir stop next to Seicomart.",
-          "hours": "Hours: Daily 09:00–17:00",
+          "hours": "09:00–17:00. Closed Wednesday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJWz8NelxkdV8Rw9Lu1IgMviE",
@@ -3490,7 +3547,7 @@
           "name": "大漁番屋 虎杖浜",
           "drive": "車で3分",
           "descriptionHtml": "虎杖浜たらこの詰め放題。セイコーマート隣のお土産。",
-          "hours": "営業時間: 毎日 09:00–17:00",
+          "hours": "9:00〜17:00。水曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJWz8NelxkdV8Rw9Lu1IgMviE",
@@ -3513,7 +3570,7 @@
           "name": "大渔番屋 虎杖滨",
           "drive": "车程3分钟",
           "descriptionHtml": "自己把虎杖滨明太子装进罐子。Seicomart 旁边的伴手礼店。",
-          "hours": "营业时间: 每天 09:00–17:00",
+          "hours": "9:00–17:00。周三休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJWz8NelxkdV8Rw9Lu1IgMviE",
@@ -3533,8 +3590,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/tairyobanya/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-47",
@@ -3544,7 +3603,7 @@
           "name": "Takemaru Shibuya Suisan (tarako)",
           "drive": "3 min",
           "descriptionHtml": "Award-winning tarako and mentaiko maker with a factory shop. Cards accepted; ships home.",
-          "hours": "Hours: Tue–Sat 08:30–16:30 · Closed Mon, Sun",
+          "hours": "09:00–17:00. Closed Sunday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqS1OS2FkdV8RocZrZGnFzJo",
@@ -3567,7 +3626,7 @@
           "name": "竹丸渋谷水産（たらこ）",
           "drive": "車で3分",
           "descriptionHtml": "受賞歴のあるたらこ・明太子の直売所。カード可、発送も。",
-          "hours": "営業時間: 火–土 08:30–16:30 · 定休 月, 日",
+          "hours": "9:00〜17:00。日曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqS1OS2FkdV8RocZrZGnFzJo",
@@ -3590,7 +3649,7 @@
           "name": "竹丸涩谷水产（鳕鱼子）",
           "drive": "车程3分钟",
           "descriptionHtml": "获奖鳕鱼子、明太子厂家直营店。可刷卡，可寄送。",
-          "hours": "营业时间: 周二–周六 08:30–16:30 · 休息 周一, 周日",
+          "hours": "9:00–17:00。周日休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJqS1OS2FkdV8RocZrZGnFzJo",
@@ -3610,8 +3669,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/shibuyasuisan/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-48",
@@ -3621,7 +3682,7 @@
           "name": "Sakanaya Honpo (dried fish)",
           "drive": "3 min",
           "descriptionHtml": "Traditional fish dried in sun and sea breeze, made on site. Perfect on the cabin BBQ grill (available on request).",
-          "hours": "Hours: Daily 08:00–15:00",
+          "hours": "08:00–15:00; may close when dried fish sells out. Irregular closing days.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ_ZCG2WBkdV8RSa5XvEQBNQw",
@@ -3644,7 +3705,7 @@
           "name": "さかな屋本舗（干物）",
           "drive": "車で3分",
           "descriptionHtml": "天日と潮風で干す昔ながらの干物。キャビンのBBQグリル（要予約）で焼いて。",
-          "hours": "営業時間: 毎日 08:00–15:00",
+          "hours": "8:00〜15:00。干物が売り切れ次第終了する場合あり。不定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ_ZCG2WBkdV8RSa5XvEQBNQw",
@@ -3667,7 +3728,7 @@
           "name": "鱼屋本铺（鱼干）",
           "drive": "车程3分钟",
           "descriptionHtml": "用阳光和海风晒干的传统鱼干，最适合在小屋的烧烤炉上烤（需提前预约）。",
-          "hours": "营业时间: 每天 08:00–15:00",
+          "hours": "8:00–15:00，鱼干售完可能提前结束。不定期休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ_ZCG2WBkdV8RSa5XvEQBNQw",
@@ -3687,8 +3748,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/kikyouhara/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-49",
@@ -3698,7 +3761,7 @@
           "name": "Kojohama Kanbara",
           "drive": "4 min",
           "descriptionHtml": "Another village tarako maker, quieter than Tairyobanya.",
-          "hours": "Hours: Mon–Tue, Thu–Sun 09:00–16:30 · Closed Wed",
+          "hours": "09:00–16:30. Closed Wednesday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJSzYv3ltkdV8R7rpHJU6Fekc",
@@ -3720,7 +3783,7 @@
           "name": "虎杖浜 かんばら",
           "drive": "車で4分",
           "descriptionHtml": "もう一軒のたらこ製造。大漁番屋より静か。",
-          "hours": "営業時間: 月–火, 木–日 09:00–16:30 · 定休 水",
+          "hours": "9:00〜16:30。水曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJSzYv3ltkdV8R7rpHJU6Fekc",
@@ -3742,7 +3805,7 @@
           "name": "虎杖滨 神原",
           "drive": "车程4分钟",
           "descriptionHtml": "村里另一家明太子作坊，比大渔番屋安静。",
-          "hours": "营业时间: 周一–周二, 周四–周日 09:00–16:30 · 休息 周三",
+          "hours": "9:00–16:30。周三休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJSzYv3ltkdV8R7rpHJU6Fekc",
@@ -3761,8 +3824,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/虎杖浜たらこのかんばら/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-50",
@@ -3772,7 +3837,7 @@
           "name": "Kikyohara Farm (shiitake)",
           "drive": "5 min",
           "descriptionHtml": "Award-winning log-grown shiitake. Pick your own in season, or buy thick caps picked that morning for the cabin kitchen or BBQ.",
-          "hours": "Hours: Daily 08:00–16:00",
+          "hours": "Seasonal hours vary; confirm directly with the farm before visiting.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJVVV5sxRkdV8R9ecoUYvQ49A",
@@ -3795,7 +3860,7 @@
           "name": "桔梗原農園（しいたけ）",
           "drive": "車で5分",
           "descriptionHtml": "受賞歴のある原木しいたけ農園。季節にはしいたけ狩りも。朝採りの肉厚しいたけをキッチンやBBQで。",
-          "hours": "営業時間: 毎日 08:00–16:00",
+          "hours": "季節により営業時間が異なります。訪問前に農園へ直接ご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJVVV5sxRkdV8R9ecoUYvQ49A",
@@ -3818,7 +3883,7 @@
           "name": "桔梗原农园（香菇）",
           "drive": "车程5分钟",
           "descriptionHtml": "获奖的原木香菇农园。当季可以采香菇，也可买当天早上采的厚香菇，在小屋厨房或烧烤炉上料理。",
-          "hours": "营业时间: 每天 08:00–16:00",
+          "hours": "营业时间随季节变化，到访前请直接向农园确认。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJVVV5sxRkdV8R9ecoUYvQ49A",
@@ -3838,8 +3903,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Tourism sources publish conflicting summer/winter hours.",
+      "reviewSource": "https://shiraoi.net/buy/kikyouhara_nouen/"
     },
     {
       "id": "venue-51",
@@ -3849,7 +3915,7 @@
           "name": "Antique Shop Route 36",
           "drive": "5 min",
           "descriptionHtml": "A roadside barn of Showa-retro goods, old tools, ceramics, kimono and carved wooden bears. Made for browsing.",
-          "hours": "Hours: Thu–Sun 10:00–16:00 · Closed Mon–Wed",
+          "hours": "Confirm that the Shiraoi branch is open before travelling.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE",
@@ -3872,7 +3938,7 @@
           "name": "アンティークショップ36号線 白老店",
           "drive": "車で5分",
           "descriptionHtml": "昭和レトロ雑貨、古道具、器、着物、木彫り熊が並ぶ国道沿いの骨董店。",
-          "hours": "営業時間: 木–日 10:00–16:00 · 定休 月–水",
+          "hours": "出発前に白老店の営業状況をご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE",
@@ -3895,7 +3961,7 @@
           "name": "36号线古董店",
           "drive": "车程5分钟",
           "descriptionHtml": "路边的古董仓库：昭和怀旧杂货、老工具、陶瓷、和服和木雕熊。",
-          "hours": "营业时间: 周四–周日 10:00–16:00 · 休息 周一–周三",
+          "hours": "出发前请确认白老分店目前是否营业。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJcyz0MLBldV8RpcGcqN-A-EE",
@@ -3915,8 +3981,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Current operator site lists Sapporo; Shiraoi branch status/hours require direct confirmation.",
+      "reviewSource": "https://www.antique36gosen.com/"
     },
     {
       "id": "venue-52",
@@ -3926,7 +3993,7 @@
           "name": "Hashimoto Pottery Gallery",
           "drive": "5 min",
           "descriptionHtml": "Handmade pottery by local makers, plus house-roasted coffee beans to take home.",
-          "hours": "Hours: Mon, Fri–Sun 10:00–16:00 · Closed Tue–Thu",
+          "hours": "10:00–16:00 on Friday, Saturday, Sunday and public holidays. May close early depending on weather or circumstances.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ7RgGbrBldV8Rn4YwGXkHOko",
@@ -3949,7 +4016,7 @@
           "name": "はしもと陶芸館",
           "drive": "車で5分",
           "descriptionHtml": "地元作家の手づくりの器と、自家焙煎のコーヒー豆。",
-          "hours": "営業時間: 月, 金–日 10:00–16:00 · 定休 火–木",
+          "hours": "金・土・日曜と祝日10:00〜16:00。天候・事情により早く閉店する場合あり。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ7RgGbrBldV8Rn4YwGXkHOko",
@@ -3972,7 +4039,7 @@
           "name": "桥本陶艺馆",
           "drive": "车程5分钟",
           "descriptionHtml": "当地陶艺家的手作器皿，以及自家烘焙的咖啡豆。",
-          "hours": "营业时间: 周一, 周五–周日 10:00–16:00 · 休息 周二–周四",
+          "hours": "周五、周六、周日及节假日10:00–16:00。可能因天气或其他情况提前结束。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ7RgGbrBldV8Rn4YwGXkHOko",
@@ -3992,8 +4059,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://84mo10.com/access.html",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-53",
@@ -4003,7 +4072,7 @@
           "name": "Marugo weekend seafood stall",
           "drive": "6 min",
           "descriptionHtml": "Weekend-only stall on Route 36 with good-value crab, scallops and clams. Cash only.",
-          "hours": "Hours: Sat–Sun 11:00–16:00 · Closed Mon–Fri",
+          "hours": "Weekend seafood market; confirm current opening times locally.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ3QrpH15vdV8RHbET7gCUh5E",
@@ -4026,7 +4095,7 @@
           "name": "丸吾水産 海産物夕市",
           "drive": "車で6分",
           "descriptionHtml": "週末だけの国道沿いの海産物市。カニ、ホタテ、貝が安い。現金のみ。",
-          "hours": "営業時間: 土–日 11:00–16:00 · 定休 月–金",
+          "hours": "週末の海鮮市場。最新の営業日時は現地へご確認ください。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ3QrpH15vdV8RHbET7gCUh5E",
@@ -4049,7 +4118,7 @@
           "name": "丸吾水产 周末海鲜摊",
           "drive": "车程6分钟",
           "descriptionHtml": "只在周末营业的36号国道旁海鲜摊，螃蟹、扇贝、贝类便宜。仅收现金。",
-          "hours": "营业时间: 周六–周日 11:00–16:00 · 休息 周一–周五",
+          "hours": "周末海鲜市场，请直接确认最新营业日期及时间。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJ3QrpH15vdV8RHbET7gCUh5E",
@@ -4069,8 +4138,9 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Undated promotional hours conflict with review listings; no current operator confirmation.",
+      "reviewSource": "https://seikyo-gourmet-research.info/shop/5/"
     },
     {
       "id": "venue-54",
@@ -4080,7 +4150,7 @@
           "name": "Malcove bakery",
           "drive": "6 min",
           "descriptionHtml": "Hidden hillside bakery with natural-yeast bread from a stone oven. Locals queue, so go early.",
-          "hours": "Hours: Mon, Fri–Sun 11:00–17:00 · Closed Tue–Thu",
+          "hours": "11:00–17:00. Closed Tuesday, Wednesday and Thursday.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJT3znOutldV8RKI28_z-Mv3E",
@@ -4102,7 +4172,7 @@
           "name": "マルコーブ",
           "drive": "車で6分",
           "descriptionHtml": "丘の上の隠れ家パン屋。天然酵母と石窯のパン。早めに。",
-          "hours": "営業時間: 月, 金–日 11:00–17:00 · 定休 火–木",
+          "hours": "11:00〜17:00。火・水・木曜定休。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJT3znOutldV8RKI28_z-Mv3E",
@@ -4124,7 +4194,7 @@
           "name": "Malcove面包店",
           "drive": "车程6分钟",
           "descriptionHtml": "藏在山坡上的面包店，天然酵母加石窑烘烤，早点去。",
-          "hours": "营业时间: 周一, 周五–周日 11:00–17:00 · 休息 周二–周四",
+          "hours": "11:00–17:00。周二、周三、周四休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJT3znOutldV8RKI28_z-Mv3E",
@@ -4143,8 +4213,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://shiraoi.net/buy/malcove/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-55",
@@ -4154,7 +4226,7 @@
           "name": "Nachu no Mori shop",
           "drive": "8 min",
           "descriptionHtml": "Skincare made with Lake Kuttara water, calendula and hydrosols. A gentler souvenir than tarako.",
-          "hours": null,
+          "hours": "10:00–17:00. Closed Wednesday and Thursday except public holidays; year-end/New Year closures.",
           "links": [
             {
               "href": "https://nachunomori.jp/facilities",
@@ -4182,7 +4254,7 @@
           "name": "ナチュの森 ショップ",
           "drive": "車で8分",
           "descriptionHtml": "倶多楽の水のスキンケア。カレンデュラや芳香蒸留水。",
-          "hours": null,
+          "hours": "10:00〜17:00。水・木曜定休（祝日は営業）。年末年始休業あり。",
           "links": [
             {
               "href": "https://nachunomori.jp/facilities",
@@ -4210,7 +4282,7 @@
           "name": "纳丘之森商店",
           "drive": "车程8分钟",
           "descriptionHtml": "倶多乐湖水做的护肤品，金盏花和纯露。",
-          "hours": null,
+          "hours": "10:00–17:00。周三、周四休息（节假日营业），年末年初有休业。",
           "links": [
             {
               "href": "https://nachunomori.jp/facilities",
@@ -4235,8 +4307,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": "https://nachunomori.jp/"
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://nachunomori.jp/shop",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     },
     {
       "id": "venue-56",
@@ -4951,7 +5025,7 @@
           "name": "Co-op Sapporo Noboribetsu East",
           "drive": null,
           "descriptionHtml": "A larger supermarket for a fuller grocery shop, approximately 3.3 km from Kojohama Station. <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJS94p6oljdV8RC0QqzyybapU\" rel=\"noopener\" target=\"_blank\">Map</a>",
-          "hours": "Hours: Daily 09:00–19:00",
+          "hours": "09:00–19:00 daily.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJS94p6oljdV8RC0QqzyybapU",
@@ -4974,7 +5048,7 @@
           "name": "コープさっぽろ のぼりべつ東店",
           "drive": null,
           "descriptionHtml": "食材をまとめて買えるスーパー。虎杖浜駅から約3.3kmです。 <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJS94p6oljdV8RC0QqzyybapU\" rel=\"noopener\" target=\"_blank\">地図</a>",
-          "hours": "営業時間: 毎日 09:00–19:00",
+          "hours": "毎日9:00〜19:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJS94p6oljdV8RC0QqzyybapU",
@@ -4997,7 +5071,7 @@
           "name": "Co-op Sapporo 登别东店",
           "drive": null,
           "descriptionHtml": "适合完整采购的大型超市，距虎杖浜站约3.3公里。 <a href=\"https://www.google.com/maps/place/?q=place_id:ChIJS94p6oljdV8RC0QqzyybapU\" rel=\"noopener\" target=\"_blank\">地图</a>",
-          "hours": "营业时间: 每天 09:00–19:00",
+          "hours": "每日9:00–19:00。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJS94p6oljdV8RC0QqzyybapU",
@@ -5017,8 +5091,10 @@
           }
         }
       },
-      "hoursCheckedOn": null,
-      "hoursSource": null
+      "hoursCheckedOn": "2026-10-10",
+      "hoursSource": "https://map.sapporo.coop/store/detail/0139/",
+      "reviewAttemptedOn": "2026-10-10",
+      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
     }
   ]
 }

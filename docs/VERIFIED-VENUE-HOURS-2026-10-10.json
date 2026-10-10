@@ -106,6 +106,141 @@
       "id": "venue-63",
       "source": "https://shop.tsuruha-g.com/0144",
       "summary": "09:00–22:00 daily."
+    },
+    {
+      "id": "venue-03",
+      "source": "https://shiraoi.net/gourmet/robataikeda/",
+      "summary": "11:30–14:00 and 17:00–20:30. Irregular closing days; confirm before visiting."
+    },
+    {
+      "id": "venue-08",
+      "source": "https://shiraoi.net/play/yamamoto-yosonjo/",
+      "summary": "10:00–15:30. Closed Tuesday and Wednesday."
+    },
+    {
+      "id": "venue-10",
+      "source": "https://shiraoi.net/gourmet/soba-yamada/",
+      "summary": "11:00–14:30. Closed Sunday and Monday; may close when sold out."
+    },
+    {
+      "id": "venue-13",
+      "source": "https://shiraoi.net/gourmet/lamp-tei/",
+      "summary": "11:00–15:30 (last order 15:00). Friday dinner 17:00–21:00; other evenings require a reservation for 10 or more. Closed Sunday."
+    },
+    {
+      "id": "venue-17",
+      "source": "https://shiraoi-cowbell.com/",
+      "summary": "11:00–19:00 (last order 18:30). Closed Wednesday and the first/third Tuesday; public holidays may change closure dates."
+    },
+    {
+      "id": "venue-18",
+      "source": "https://omotenashi-tei.com/",
+      "summary": "11:00–20:00 (last order 19:30), Thursday 11:00–16:00. Closed Wednesday (Thursday instead when Wednesday is a public holiday); check the official calendar."
+    },
+    {
+      "id": "venue-19",
+      "source": "https://www.curryramen.com/about.html",
+      "summary": "11:00–20:00 (last order 19:30); Wednesday 11:00–15:00 (last order 14:30). Closes when soup sells out; year-end/New Year closures."
+    },
+    {
+      "id": "venue-23",
+      "source": "https://hotel-izumi.webnode.jp/源泉掛け流し温泉/",
+      "summary": "Day bath: Sunday–Friday 12:00–22:00 (reception until 21:00); Saturday and days before public holidays 12:00–17:00 (reception until 16:00). Holiday periods and private bookings may change availability."
+    },
+    {
+      "id": "venue-24",
+      "source": "https://onsen.shiraoi.net/facility/facility000127/",
+      "summary": "Open 24 hours."
+    },
+    {
+      "id": "venue-25",
+      "source": "https://onsen.shiraoi.net/facility/facility000129/",
+      "summary": "Reception: Monday–Saturday 10:00–21:00; Sunday/public holidays 10:00–20:30. Closed Thursday and the third Friday."
+    },
+    {
+      "id": "venue-27",
+      "source": "https://onsen.shiraoi.net/facility/facility000106/",
+      "summary": "Day-bath reception 10:00–19:00; leave by 20:00. Overnight guests have different bathing hours."
+    },
+    {
+      "id": "venue-39",
+      "source": "https://www.town.shiraoi.hokkaido.jp/docs/page2020062800019.html",
+      "summary": "Museum 09:30–16:30. Closed Monday (next day if a public holiday) and 29 December–3 January; check temporary closure notices."
+    },
+    {
+      "id": "venue-46",
+      "source": "https://shiraoi.net/buy/tairyobanya/",
+      "summary": "09:00–17:00. Closed Wednesday."
+    },
+    {
+      "id": "venue-48",
+      "source": "https://shiraoi.net/buy/kikyouhara/",
+      "summary": "08:00–15:00; may close when dried fish sells out. Irregular closing days."
+    },
+    {
+      "id": "venue-49",
+      "source": "https://shiraoi.net/buy/虎杖浜たらこのかんばら/",
+      "summary": "09:00–16:30. Closed Wednesday."
+    },
+    {
+      "id": "venue-54",
+      "source": "https://shiraoi.net/buy/malcove/",
+      "summary": "11:00–17:00. Closed Tuesday, Wednesday and Thursday."
+    },
+    {
+      "id": "venue-65",
+      "source": "https://map.sapporo.coop/store/detail/0139/",
+      "summary": "09:00–19:00 daily."
+    },
+    {
+      "id": "venue-06",
+      "source": "https://shiraoi.net/information/火曜日営業しているお店/",
+      "summary": "10:30–19:30; Monday closes at 13:30. Irregular closing days."
+    },
+    {
+      "id": "venue-09",
+      "source": "https://hikaruumi-shiraoi.com/print/",
+      "summary": "11:00–15:00. Closed Tuesday, with additional irregular closing days."
+    },
+    {
+      "id": "venue-14",
+      "source": "https://shiraoi.net/buy/kani-o/",
+      "summary": "09:00–17:00 daily."
+    },
+    {
+      "id": "venue-21",
+      "source": "https://shiraoi.net/gourmet/gelateria-mina-pieno（ジェラテリア-ミナピエノ）/",
+      "summary": "10:00–17:00. Closed Wednesday April–November; Tuesday and Wednesday December–March."
+    },
+    {
+      "id": "venue-28",
+      "source": "https://www.h-hokuyo.com/mb/onsen.html",
+      "summary": "05:00–23:00 (last entry 22:00). Women's indoor bath unavailable Monday–Friday 08:00–09:00 for cleaning."
+    },
+    {
+      "id": "venue-41",
+      "source": "https://www.city.tomakomai.hokkaido.jp/shizen/sonotanoshisetsu/utonai/",
+      "summary": "Wildlife Protection Center: 09:00–17:00. Closed Monday (next day if a public holiday) and 29 December–3 January. Lakeside paths have separate access arrangements."
+    },
+    {
+      "id": "venue-44",
+      "source": "https://www.usu-zenkoji.jp/treasure-museum/",
+      "summary": "Treasure museum: 09:00–17:00, advance reservation required. These hours do not describe access to the temple grounds."
+    },
+    {
+      "id": "venue-47",
+      "source": "https://shiraoi.net/buy/shibuyasuisan/",
+      "summary": "09:00–17:00. Closed Sunday."
+    },
+    {
+      "id": "venue-52",
+      "source": "https://84mo10.com/access.html",
+      "summary": "10:00–16:00 on Friday, Saturday, Sunday and public holidays. May close early depending on weather or circumstances."
+    },
+    {
+      "id": "venue-55",
+      "source": "https://nachunomori.jp/shop",
+      "summary": "10:00–17:00. Closed Wednesday and Thursday except public holidays; year-end/New Year closures."
     }
   ],
   "ayoroUpcomingClosure": {
