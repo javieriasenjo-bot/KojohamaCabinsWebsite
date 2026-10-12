@@ -50,7 +50,9 @@ English equivalent:
 
 Changes are saved in `C:\dev\KojohamaCabinsWebsite` for the user to review, commit and deploy. They are not yet production changes. Existing GTM and GA4 settings were not altered.
 
-## Remaining venue confirmations
+## Remaining venue confirmations — closed / not applicable on 12 October
+
+The owner decided not to call venues. All five call tasks below are closed as not applicable, not verified. Earlier research statements and scripts are historical; qualified public wording remains appropriate.
 
 - Tonton: conflicting/unsupported published schedules; contact the restaurant.
 - Date Okina: official group page does not give current opening hours.

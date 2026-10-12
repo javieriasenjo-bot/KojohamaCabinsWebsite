@@ -138,9 +138,10 @@
     }));
   });
 
-  document.querySelectorAll('a[href*="ctrip.com"], a[href*="trip.com"]').forEach(link => {
+  document.querySelectorAll('a[href*="ctrip.com"], a[href*="trip.com"], a[href*="booking.com"], a[href*="agoda.com"]').forEach(link => {
+    if (link.dataset.intent === 'reviews' || link.dataset.linkLocation === 'reviews') return;
     link.addEventListener('click', () => push('booking_click', {
-      booking_platform: link.href.includes('ctrip.com') ? 'ctrip' : 'trip.com',
+      booking_platform: link.href.includes('ctrip.com') ? 'ctrip' : link.href.includes('booking.com') ? 'booking.com' : link.href.includes('agoda.com') ? 'agoda' : 'trip.com',
       intent: 'booking',
       cabin_name: cabinName(link),
       destination_url: link.href,
@@ -183,11 +184,30 @@
       link.href = destination.href;
     });
     document.querySelectorAll('a[data-link-location]').forEach(link => {
-      if (/airbnb\.|ctrip\.com|trip\.com|line\.me/.test(link.href) || link.href.startsWith('mailto:') || link.hasAttribute('lang')) return;
-      link.addEventListener('click', () => push('bio_link_click', {
-        link_text: (link.querySelector('.t')?.textContent || link.textContent || '').trim().split('\n')[0],
-        destination_url: link.href, link_location: placement(link)
-      }));
+      if (/airbnb\.|ctrip\.com|trip\.com|booking\.com|agoda\.com|line\.me/.test(link.href) || link.href.startsWith('mailto:') || link.hasAttribute('lang')) return;
+      link.addEventListener('click', event => {
+        const details = {
+          link_text: (link.querySelector('.t')?.textContent || link.textContent || '').trim().split('\n')[0],
+          destination_url: link.href, link_location: placement(link)
+        };
+        const destination = new URL(link.href);
+        // Give GTM time to process same-tab clicks before the document is unloaded.
+        // Modified clicks and new tabs retain their normal browser behaviour.
+        if (!event.defaultPrevented && event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey &&
+            (!link.target || link.target === '_self') && !link.hasAttribute('download') && destination.origin === location.origin) {
+          event.preventDefault();
+          let navigated = false;
+          const navigate = () => {
+            if (navigated) return;
+            navigated = true;
+            clearTimeout(fallback);
+            location.assign(destination.href);
+          };
+          // Independent fallback also works when GTM is blocked or has not loaded.
+          const fallback = setTimeout(navigate, 600);
+          push('bio_link_click', { ...details, eventCallback: navigate, eventTimeout: 500 });
+        } else push('bio_link_click', details);
+      });
     });
   }
 

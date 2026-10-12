@@ -5,6 +5,10 @@ const root=path.resolve(__dirname,'..');
 const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.webp':'image/webp','.jpg':'image/jpeg','.ico':'image/x-icon'};
 const server=http.createServer((request,response)=>{
  const pathname=decodeURIComponent(new URL(request.url,'http://localhost').pathname);
+ if(pathname==='/analytics-fixture') {
+  response.writeHead(200,{'content-type':'text/html; charset=utf-8'});
+  response.end('<!doctype html><html lang="en"><body data-page-kind="link-in-bio"><a href="https://www.booking.com/hotel/jp/ocean-stay.html" data-link-location="fixture" data-cabin-name="All cabins">Booking</a><a href="https://www.agoda.com/example" data-link-location="fixture">Agoda</a><a href="https://www.booking.com/reviews/example" data-intent="reviews" data-cabin-name="All cabins">Reviews</a><script src="/analytics.js"></script><script src="/seo-site.js"></script></body></html>');return;
+ }
  let file=path.resolve(root,'.'+pathname);
  if(!file.startsWith(root+path.sep) && file!==root){response.writeHead(403).end();return}
  if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');
@@ -93,6 +97,10 @@ let browser;
  const fallback=await noJS.newPage();await fallback.goto(base+'/things-to-do/',{waitUntil:'networkidle'});await fallback.locator('#directory-1 summary').click();assert(await fallback.locator('#directory-1').evaluate(element=>element.open));
  assert(!noJSRequests.some(url=>url.includes('googletagmanager.com')));await noJS.close();
  // Simulate a production hostname, proxying only local assets and blocking Google.
+ await visit('/analytics-fixture');await stopNavigation();
+ const fixtureBooking=await clickEvent('a[href*="booking.com"]:not([data-intent="reviews"])','booking_click');assert.equal(fixtureBooking.booking_platform,'booking.com');assert.equal(fixtureBooking.cabin_name,'All cabins');
+ const fixtureAgoda=await clickEvent('a[href*="agoda.com"]','booking_click');assert.equal(fixtureAgoda.booking_platform,'agoda');
+ await clickEvent('a[data-intent="reviews"]','review_click');
  const production=await browser.newContext();let gtmRequests=0;
  await production.route('**/*',async route=>{
   const url=new URL(route.request().url());

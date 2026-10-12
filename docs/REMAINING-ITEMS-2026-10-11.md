@@ -14,7 +14,7 @@
 
 ## Still requires owner/operator access or presence
 
-- Telephone/direct operator confirmation: Tonton, Date Okina, Koshu Kitano Museum, Antique Shop 36 and the tarako vending-machine operator. The questions and telephone numbers remain in `FOLLOW-UP-2026-10-11.md`. No calls or messages were sent.
+- Venue calls: **closed / not applicable**, by owner decision on 12 October 2026. Covers Tonton, Date Okina, Koshu Kitano Museum, Antique Shop 36 and the tarako vending-machine operator. No operator verification is claimed; the website retains qualified information.
 - Measure download/upload/latency at each cabin. An off-site test cannot establish cabin Wi-Fi performance. The measurement worksheet remains in the follow-up document.
 - Ctrip host settings and extra-guest pricing remain unverified. A signed-in Ctrip host session is required.
 

@@ -3,7 +3,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const layouts = JSON.parse(fs.readFileSync(path.join(root, 'data/layouts.json'), 'utf8'));
 const prefixes = {en:'', ja:'ja/', 'zh-CN':'zh-cn/'};
-const version = '12.25';
+const version = '12.26';
 const script = `<script defer src="/analytics.js?v=${version}"></script>`;
 const escape = text => text.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 function render(source, file, lang) {
@@ -19,6 +19,7 @@ function render(source, file, lang) {
   }
   const prefix = prefixes[lang];
   const route = file === '404.html' ? '' : file.replace(new RegExp('^'+prefix),'').replace(/index\.html$/,'');
+  if (route === 'cabins/') source = source.replace(/<body\b(?![^>]*data-page-kind)/, '<body data-page-kind="cabin-comparison"');
   const active = '/' + prefix + route;
   const header = layouts[lang].header.replace(/ aria-current="[^"]*"/g,'').replace(/<a\b[^>]*>/g, tag => {
     const targetLang = tag.match(/\blang="([^"]+)"/)?.[1];

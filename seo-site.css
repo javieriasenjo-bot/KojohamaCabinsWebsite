@@ -155,3 +155,9 @@ body:has(.quick-reserve){padding-bottom:76px}
 @media(max-width:600px){.directory-search-row{flex-direction:column}.directory-search button{align-self:flex-start}.cabin-comparison th,.cabin-comparison td{padding:12px 8px;font-size:.85rem}.cabin-comparison th:first-child{min-width:105px}}
 
 .home-editorial{padding:48px 0}.home-editorial h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:400;line-height:1.2}.home-editorial p{max-width:760px}.choice-facts{font-size:.85rem;font-weight:600}.near-reviewed{margin-top:.3rem!important;font-size:.8rem!important;color:#46575a}[data-venue],.directory-category{scroll-margin-top:100px}
+/* Keep the comparison and booking choices close on small screens. */
+.cabin-comparison td a{display:inline-flex;align-items:center;min-height:44px;padding:4px 6px}
+@media(max-width:600px){
+  body[data-page-kind="cabin-comparison"] .page-hero{height:340px;min-height:340px}
+  body[data-page-kind="cabin-comparison"] .intro{padding-top:28px;padding-bottom:20px}
+}

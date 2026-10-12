@@ -6,6 +6,7 @@
     window.dataLayer.push({
       intent: null, booking_platform: null, cabin_name: null, destination_url: null,
       selected_language: null, contact_method: null, link_location: null, link_text: null,
+      eventCallback: null, eventTimeout: null,
       event, page_path: location.pathname, page_language: document.documentElement.lang,
       ...details
     });
