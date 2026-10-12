@@ -6,12 +6,12 @@ Canonical tracker: [OPEN-ITEMS.md](OPEN-ITEMS.md). This document maps the owner'
 
 | Imported item | Current disposition |
 |---|---|
-| A1 RedNote application/ban | O01. Specific application outcome and restriction scope need owner app evidence. Verification/publication records conflict with a blanket ban. |
+| A1 RedNote application/ban | Closed: owner confirmed approval/no current restrictions. |
 | A2 AI training | Closed: owner chose yes; live robots.txt verified. |
-| A3 Anthropic key | O03, optional activation; implementation is complete. |
+| A3 Anthropic key | Closed: owner chose Workers AI for now. |
 | A4 Search Console owner account | Closed as an access blocker. Connected tool works and the 12 October 69-URL inspection record exists. Exact ownership identity is not needed to continue read-only work. No user grants requested. |
 | A5 Wi-Fi roughly 100 Mbps | O04: measure per cabin; do not publish an estimate as measured. |
-| A6 13-item filming handover | O05: later videos/library exist, but exact shot-list delivery unconfirmed. |
+| A6 13-item filming handover | Source handover closed: full library and eight subfolders inspected; this does not certify every requested shot. |
 | B1 Old split-delivery tests/deploy/workers_dev | Closed: 38 tests/type checks/build previously passed; latest 98-file release matches production, migration list empty, live Worker/Preview URLs disabled. |
 | B2 Airbnb BBQ, five-guest capacity and Rustic rules | Closed for Airbnb and capacity decision. Extra-guest pricing and remaining Booking.com/Ctrip/Airhost settings remain O06. Do not re-ask Zen maximum. |
 | B3 Five venue phone confirmations | Closed as not applicable in the 12 October owner project record; no phone confirmation invented. Cautious venue flags remain. |
@@ -25,7 +25,7 @@ Canonical tracker: [OPEN-ITEMS.md](OPEN-ITEMS.md). This document maps the owner'
 | C4 Booking/contact key events / Paid Search | Key-event and source work done. Existing custom dimensions are present. No GTM tag duplication needed. Paid Search diagnosis remains O09; received contact-event traffic is not yet established. |
 | C5 Project record | Done: this mapping, OPEN-ITEMS.md, and the linked 10–12 October evidence. |
 | D Shiraoi Town | O11: automatic acknowledgement found; substantive response still unconfirmed. |
-| D HOKKAIDO LOVE! | O12: form submission reported, response not found in focused search. |
+| D HOKKAIDO LOVE! | O12: 25 September membership reply verified; cost/benefit deck complete, owner decision pending. |
 | D Tourism Association photos | O13: listing live; photos and prepared corrections need status; follow-up on hold per current project record. |
 | E Closed items / completed work | Preserved as closed in OPEN-ITEMS.md. No reopening or repeated owner questions. |
 

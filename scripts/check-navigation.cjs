@@ -15,6 +15,10 @@ function setup(options = {}) {
   const location = { origin: 'https://kojohamacabins.jp', search: '', assign: url => destinations.push(url) };
   vm.runInNewContext(source.slice(start, end), { URL, URLSearchParams, location,
     document: { body: { dataset: { pageKind: 'link-in-bio' } }, querySelectorAll: selector => selector.includes('data-link-location') ? [link] : [] },
+    window: { KojohamaAnalytics: { queueNavigationEvent: details => {
+      if (!options.storage) return false;
+      events.push({ queued: true, ...details }); return true;
+    } } },
     placement: () => 'linkinbio_primary', push: (event, details) => events.push({ event, ...details }),
     setTimeout: (fn, delay) => { timers.set(1, { fn, delay }); return 1; }, clearTimeout: id => timers.delete(id) });
   const click = { button: 0, preventDefault() { this.defaultPrevented = true; }, ...options.click };
@@ -22,6 +26,11 @@ function setup(options = {}) {
   return { events, destinations, timers, click };
 }
 const normal = setup();
+const stored = setup({ storage: true });
+assert.equal(stored.events.length, 1);
+assert(stored.events[0].queued);
+assert.equal(stored.destinations.length, 1);
+assert.equal(stored.timers.size, 0, 'Stored clicks navigate immediately');
 assert(normal.click.defaultPrevented);
 assert.equal(normal.events.length, 1);
 assert.equal(normal.events[0].event, 'bio_link_click');

@@ -11,10 +11,35 @@
       ...details
     });
   };
-  window.KojohamaAnalytics = { push };
+  const navigationKey = 'kojohama-pending-bio-click';
+  const queueNavigationEvent = details => {
+    try {
+      window.sessionStorage.setItem(navigationKey, JSON.stringify({
+        details: { ...details, page_path: location.pathname, page_language: document.documentElement.lang },
+        created: Date.now()
+      }));
+      return true;
+    } catch (_) { return false; }
+  };
+  window.KojohamaAnalytics = { push, queueNavigationEvent };
   if (!['kojohamacabins.jp', 'www.kojohamacabins.jp'].includes(location.hostname)) return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+  // Dispatch after arriving, where page unload cannot interrupt the request.
+  // Remove before dispatch so refreshes cannot send the same click twice.
+  try {
+    const raw = window.sessionStorage.getItem(navigationKey);
+    window.sessionStorage.removeItem(navigationKey);
+    if (raw) {
+      const pending = JSON.parse(raw);
+      const destination = new URL(pending.details.destination_url);
+      const age = Date.now() - pending.created;
+      if (age >= 0 && age < 300000 && destination.origin === location.origin &&
+          destination.pathname === location.pathname && destination.search === location.search) {
+        push('bio_link_click', pending.details);
+      }
+    }
+  } catch (_) { /* Storage restrictions or stale data must not affect browsing. */ }
   const script = document.createElement('script');
   script.async = true;
   script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5W8ZJPTD';

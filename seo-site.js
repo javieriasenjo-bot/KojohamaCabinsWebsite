@@ -196,6 +196,10 @@
         if (!event.defaultPrevented && event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey &&
             (!link.target || link.target === '_self') && !link.hasAttribute('download') && destination.origin === location.origin) {
           event.preventDefault();
+          if (window.KojohamaAnalytics?.queueNavigationEvent(details)) {
+            location.assign(destination.href);
+            return;
+          }
           let navigated = false;
           const navigate = () => {
             if (navigated) return;

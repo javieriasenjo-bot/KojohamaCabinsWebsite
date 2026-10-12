@@ -1,6 +1,6 @@
 # Ocean Stay Kojohama — open items
 
-Last reconciled: 12 October 2026, Japan time. Owner: Javier. Working agent: Codex.
+Last reconciled: 13 October 2026, Japan time. Owner: Javier. Working agent: Codex.
 
 This is the canonical tracker for the main website, guest guide, listings, social channels and tourism follow-ups. Historical reviews remain evidence, not current to-do lists. Closed items stay closed unless new evidence changes their status. Update these rows when the owner answers; do not create another competing tracker.
 
@@ -8,16 +8,21 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 
 | ID | Item | Status / owner | Next action and evidence needed |
 |---|---|---|---|
-| O02 | Two older RedNote posts with prices/Airbnb mentions | Codex audit; restriction dependency cleared | Owner confirms application 34100175 approved with no current restrictions (12 October). Locate the two exact posts and assess the requested cleanup. The old 25 October ban date is superseded; do not retain a blanket posting/link restriction as a current fact. |
+| O02 | Two older RedNote posts with prices/Airbnb mentions | Waiting for owner browser login | Creator page is signed out on 13 October. Login handoff retained; owner asked to sign in. Application approved/no restrictions remains confirmed. No posts or profile edited. |
 | O04 | Per-cabin Wi-Fi measurements | Owner measuring 13 October | Google Calendar reminder saved for 13 October 2026 at 10:00 JST, with a popup at that time (transparent reminder, not a fixed appointment). Owner will provide screenshots from Sol, Zen and Rustic. Record download/upload/latency and location; do not publish the earlier approximately 100 Mbps estimate as measured. Calendar event ID: r651ub0l2i30p0fukfnmfq18fs. |
 | O06 | Remaining OTA setup and extra-guest charge period | Owner update received; Codex follow-up | Owner confirms Airbnb and Booking.com now charge ¥2,500 per extra guest. Do not ask again whether that amount is set. The charge period/final checkout totals have not been independently checked. Trip/Ctrip is not active yet; treat it as setup, not an active-listing audit. Owner approved hiding Trip/Ctrip booking buttons until activation. Source flag bookingChannels.ctrip=false now removes all rendered Ctrip links, including the bio page; committed as 80956bc and verified live on 12 October across all 13 affected pages; retain commercial tax/cleaning verification if needed. |
 | O07 | Fresh inbound LINE end-to-end test | Owner has not performed a fresh test | Owner confirmed no new separate-account test on 12 October. Historical 3 October enquiry was only “Test”; no guest reply pending. A clearly labelled new message from a separate LINE account is still needed to establish current inbound forwarding and host receipt. |
-| O08 | Ikuta Clinic current hours | Codex research; current confirmation incomplete | Correct venue: 生田医院 in Hagino, phone 0144-83-4126, not similarly named clinics elsewhere. A 2025 town guide supports weekday 09:00–17:00/Saturday 09:00–12:00; a 2024 medical table separates 09:00–12:00 and 13:10–17:00. Keep the app's unverified status until current reception/lunch-break guidance is resolved. |
-| O09 | Two Paid Search sessions | Codex analysis | The 12 October social review identifies source/medium google/cpc. Determine landing URL, campaign/click identifiers and any owner tests or redirects. No ads running does not by itself prove misattribution. Preserve historical source data. |
-| O10 | TikTok kotatsu caption typo | Codex audit; not freshly verified | Locate the exact caption containing kojohamcabins.jp. Use kojohamacabins.jp in future copy; inspect editability of the existing post before offering a correction. Do not delete/repost automatically. |
+| O08 | Ikuta Clinic current hours | Dated wording improved; current reception confirmation open | On 13 October, updated all four app languages to label hours as the 2025 town-guide reference and require phone confirmation of reception/lunch break. Primary source linked; hoursUnverified remains true. Source awaits commit/deployment; current clinic timetable not certified. |
+| O09 | Two Paid Search sessions | Investigated; owner test-history answer pending | Both visits occurred 9 October: google/cpc, source platform Google Ads, campaign (not set), homepage `/`, no query detail, no engagement or key events. No hardcoded paid campaign found in source. Asked owner about tests; do not infer spend or delete records. See FOLLOW-UP-2026-10-13.md. |
+| O10 | TikTok kotatsu caption typo | Audit complete; historical post cannot be edited in current Studio | Exact 22 September post 7688282103183592724 found with typo. Studio menu offers Pin, Download, Delete, no caption edit. Corrected future-use copy saved in FOLLOW-UP-2026-10-13.md; no deletion/reposting. Original caption remains unchanged. |
 | O11 | Shiraoi Town enquiry | Awaiting third party | Form submission reported and 25 September automatic acknowledgement verified in Gmail. No substantive reply found in the focused search; do not treat the acknowledgement as an answer. No follow-up sent. |
-| O12 | HOKKAIDO LOVE! enquiry | Awaiting third party; submission details need consolidation | Imported record says form submitted. No substantive reply found in focused mailbox searches; no definitive submission receipt recovered in this pass. Preserve as awaiting response, not confirmed rejection. No follow-up sent. |
+| O12 | HOKKAIDO LOVE! membership decision | Owner decision pending; research and deck complete | The 25 September substantive reply says listings normally require membership. Official recruitment requests six ¥10,000 units (¥60,000 or more); renewal period and listing benefits need confirmation before joining. Four-slide decision deck: C:/dev/kojohama-membership-decision/output/Hokkaido-Love-Membership-Decision-2026-10-12.pptx. No application or payment made. |
 | O13 | Shiraoi Tourism listing photos and corrections | Awaiting reply; contact remains on hold | Owner confirms photos were sent and no reply received as of 12 October. Do not ask for photo handover again. Wait for acknowledgement/public photo update; correction draft covers outdated capacity/pricing/cleaning/access/BBQ. Keep contact/submission on hold per existing instruction; no follow-up sent. |
+
+| O14 | Cookware, dish rack, bedroom and CO alarms | Owner on-site facts pending | Reminder is today 13 October at 10:00 JST, together with Wi-Fi. Purchases establish one 24 cm IH-compatible pot and an IKEA pot-lid organiser, not a dish rack or installation/testing in all cabins. Do not change safety amenities without physical confirmation. |
+| O15 | Removed Wikimedia photos | Exact source pages pending | Owner identified Wikimedia Commons as the source. Keep removed ski/autumn images out until the exact file pages and attribution/licence requirements are established. |
+| O16 | Airbnb gallery and Angie reply | Codex follow-up; factual reply depends on O14 | Zen sea-view lead photo and Zen/Rustic exterior replacement remain to review; retain existing photos. Rustic currently has 38 amenities, superseding the old 27-to-34 target. Draft Angie reply only around confirmed actions. |
+| O17 | Bio-link navigation tracking | Source fix ready; deployment verification pending | Live Ctrl-click retained the source page and produced a bio_link_click response HTTP 204. Normal navigation was not observed delivering the request. New temporary session-storage handoff dispatches once on the destination, preserving source context; storage-blocked browsers retain bounded fallback. Deploy then verify same-tab click; filtered GA4 report receipt remains separate. |
 
 ## Closed or already resolved — do not re-ask
 
@@ -49,7 +54,7 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 - Clinic research: https://www.town.shiraoi.hokkaido.jp/fs/5/9/4/2/2/_/_______2025_.pdf and https://www.town.shiraoi.hokkaido.jp/fs/5/0/4/5/4/_/_____________2024.10.1__.pdf. Both are dated references; neither establishes current emergency availability.
 - Tourism listing: https://shiraoi.net/zh-tw/stay/ocean-stay-kojohama/ ; correction draft SHIRAOI-LISTING-CORRECTIONS-2026-10-11.md.
 - Inbox review was focused, not an exhaustive audit of all mailboxes. No messages, forms, social edits, listing changes or notifications were sent.
-- Owner answers incorporated on 12 October: RedNote approved/no restrictions; retain Workers AI; Wi-Fi testing tomorrow with screenshots; Airbnb/Booking fee amount set; Trip inactive; tourism photos sent/no reply; no fresh LINE test; available media library identified. Ten items remain open after these answers. The Tourism Association contact hold remains unchanged.
+- Owner answers incorporated on 12 October: RedNote approved/no restrictions; retain Workers AI; Wi-Fi testing tomorrow with screenshots; Airbnb/Booking fee amount set; Trip inactive; tourism photos sent/no reply; no fresh LINE test; available media library identified. Open rows above supersede the historical item count. The Tourism Association contact hold remains unchanged.
 
 - 12 October owner follow-up: Trip/Ctrip buttons hidden in website source until listings are active. Restore by setting `bookingChannels.ctrip` to true in `data/site-facts.json` and rebuilding after activation is confirmed. Inactive link markup is preserved in source comments; it is not rendered, including with JavaScript disabled.
 
@@ -60,3 +65,10 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 - Media root: H:/My Drive/98. Projects/0.1 Websites, SEO, App/1. Kojohama Cabins - Web, SEO, App/1. Good Videos, Photos/. Use real recorded cabin media from here; do not assume every library file is a local photo without inspection.
 - New BBQ fee is per stay, superseding earlier per-use instructions. Updated three description sections in all four Airbnb languages plus Japanese additional rules for all three cabins.
 - Review reply corrected, existing property types verified, Villa Cangrejo left unlisted, RedNote queue retained. No Shiraoi Tourism submission or membership application sent.
+
+## 13 October progress
+
+- New seasonal rates are live on /go/. All three Airbnb listings were verified as Cabin / Entire place; Villa Cangrejo remains unlisted. Zen’s existing two-star reply was corrected and saved without unsupported completed-equipment claims.
+- RedNote 6 and 11 October posts were already published and future posts already queued during the 12 October inspection; no duplicate posts created. Fresh publication checks remain distinct from queue evidence.
+
+- 13 October continuation: analytics cohort/campaign/platform investigated; TikTok typo and edit limitation verified; RedNote awaiting login; clinic wording made explicitly dated/unverified. Focused tourism-mail check found no new replies. See FOLLOW-UP-2026-10-13.md.
