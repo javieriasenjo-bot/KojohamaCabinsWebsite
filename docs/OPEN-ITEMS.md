@@ -54,3 +54,9 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 - 12 October owner follow-up: Trip/Ctrip buttons hidden in website source until listings are active. Restore by setting `bookingChannels.ctrip` to true in `data/site-facts.json` and rebuilding after activation is confirmed. Inactive link markup is preserved in source comments; it is not rendered, including with JavaScript disabled.
 
 - Deployment confirmed after owner commit 80956bc: all 13 affected comparison, cabin and bio pages return HTTP 200 with zero active Trip/Ctrip links and Airbnb links still available. Dormant Ctrip markup remains only in non-rendered source comments.
+
+## Owner decisions received on 12 October
+
+- Media root: H:/My Drive/98. Projects/0.1 Websites, SEO, App/1. Kojohama Cabins - Web, SEO, App/1. Good Videos, Photos/. Use real recorded cabin media from here; do not assume every library file is a local photo without inspection.
+- New BBQ fee is per stay, superseding earlier per-use instructions. Updated three description sections in all four Airbnb languages plus Japanese additional rules for all three cabins.
+- Review reply corrected, existing property types verified, Villa Cangrejo left unlisted, RedNote queue retained. No Shiraoi Tourism submission or membership application sent.

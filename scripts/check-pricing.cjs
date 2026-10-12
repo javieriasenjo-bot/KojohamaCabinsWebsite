@@ -19,6 +19,8 @@ for(const prefix of ['', 'ja/', 'zh-cn/']){
   assert(!page.includes('19,800'));
  }
  const bbq=fs.readFileSync(path.join(root,prefix+'bbq/index.html'),'utf8');
- assert(!/per use|1回3,500|每次¥3,500/.test(bbq));
+ assert(!/per use|1回(?:のご利用につき)?3,500|每次(?:使用费用为|使用)?¥3,500/.test(bbq));
+ const home=fs.readFileSync(path.join(root,prefix+'index.html'),'utf8');
+ assert(!/Cleaning included|cleaning included|清掃料金込み|含清洁费|包含清洁费/.test(home));
 }
 console.log('PASS: three-language dated rate tables, per-cabin rates, separate cleaning and BBQ per stay.');
