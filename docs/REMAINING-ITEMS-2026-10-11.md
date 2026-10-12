@@ -1,5 +1,8 @@
 # Remaining-items completion — 11 October 2026
 
+> Current status: [OPEN-ITEMS.md](OPEN-ITEMS.md) is the authoritative tracker as of 12 October 2026. This dated document is historical; closed venue calls, smoking corrections, indexing and deployed releases must not be reopened from its older pending text.
+
+
 ## Completed externally
 
 - Search Console accepted indexing requests for `/cabins/`, `/guides/noboribetsu-from-kojohama/` and `/zh-cn/own-a-cabin/`. Each request showed the priority crawl queue confirmation. Acceptance is not proof of indexing.

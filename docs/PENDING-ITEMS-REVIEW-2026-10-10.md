@@ -1,5 +1,8 @@
 # Pending items reviewed — 10 October 2026
 
+> Current status: [OPEN-ITEMS.md](OPEN-ITEMS.md) is the authoritative tracker as of 12 October 2026. This dated document is historical; closed venue calls, smoking corrections, indexing and deployed releases must not be reopened from its older pending text.
+
+
 > Historical review. Current completion status and actionable worksheets are in [FOLLOW-UP-2026-10-11.md](FOLLOW-UP-2026-10-11.md). The Cafe/Marugo deployment warning and guest-guide deployment concern have been resolved; do not use the release boundary below as today's production status.
 
 ## Source changes ready for deployment

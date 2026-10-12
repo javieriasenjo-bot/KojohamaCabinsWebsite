@@ -9,6 +9,14 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const facts = json('data/site-facts.json');
+// Preserve inactive buttons in source comments so one flag can restore them later.
+const restoreInactiveBookings = html => html.replace(/<!-- inactive-ctrip: ([\s\S]*?) -->/g, '$1');
+const bookingVisibility = html => {
+ html=restoreInactiveBookings(html);
+ if(facts.bookingChannels?.ctrip !== false)return html;
+ html=html.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g,paragraph=>paragraph.includes('data-link-location="linkinbio_ctrip"') ? `<!-- inactive-ctrip: ${paragraph} -->` : paragraph);
+ return html.replace(/<!-- inactive-ctrip: [\s\S]*? -->|(?: · )?<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"[^>]*>[\s\S]*?<\/a>/g,link=>link.startsWith('<!--') ? link : `<!-- inactive-ctrip: ${link} -->`);
+};
 const directory = json('data/venues.json');
 const captions = json('data/gallery-captions.json');
 const galleries = json('data/home-galleries.json');
@@ -17,21 +25,18 @@ const rate = facts.pricing.fromNightlyJPY.toLocaleString('en-US');
 const extra = facts.pricing.extraGuestJPY.toLocaleString('en-US');
 const baseGuests = facts.pricing.baseGuests;
 const policy = {
- en:{title:'Children, infants and BBQ',childQuestion:'Are children and infants welcome?',childAnswer:'Yes. Children and infants are welcome in all three cabins, with a maximum of five guests per cabin. Ask us about any baby equipment you need before booking.',bbqQuestion:'Can we use the BBQ grill?',bbqAnswer:`Yes, by prior arrangement. Use of our ${facts.bbq.grillProvided} costs ¥${facts.bbq.feeJPY.toLocaleString('en-US')} per use. Guests bring two compatible gas cartridges, food, utensils and other BBQ gear.`,details:'BBQ equipment and safety guide'},
- ja:{title:'お子様・乳幼児とBBQ',childQuestion:'子どもや乳幼児も宿泊できますか？',childAnswer:'はい。3棟ともお子様・乳幼児を歓迎しています。各棟の定員は最大5名です。乳幼児用の設備が必要な場合は、ご予約前にお問い合わせください。',bbqQuestion:'BBQグリルを利用できますか？',bbqAnswer:`はい。事前のご相談で、当施設の${facts.bbq.grillProvided}を1回${facts.bbq.feeJPY.toLocaleString('en-US')}円でご利用いただけます。対応するガス缶2本、食材、調理器具、その他必要なBBQ用品はお客様ご自身でご持参ください。`,details:'BBQの持ち物・安全ガイド'},
- 'zh-CN':{title:'儿童、婴幼儿与烧烤',childQuestion:'欢迎儿童和婴幼儿入住吗？',childAnswer:'欢迎。三间小屋均欢迎儿童和婴幼儿，每间最多5位客人。如需婴幼儿设备，请在预订前联系我们确认。',bbqQuestion:'可以使用烧烤炉吗？',bbqAnswer:`可以，请提前联系安排。使用我们的${facts.bbq.grillProvided}每次费用为¥${facts.bbq.feeJPY.toLocaleString('en-US')}。客人需自备两罐兼容燃气罐、食材、餐具和其他烧烤用品。`,details:'烧烤用品与安全指南'}
+ en:{title:'Children, infants and BBQ',childQuestion:'Are children and infants welcome?',childAnswer:'Yes. Children and infants are welcome in all three cabins, with a maximum of five guests per cabin. Ask us about any baby equipment you need before booking.',bbqQuestion:'Can we use the BBQ grill?',bbqAnswer:`Yes, by prior arrangement. Use of our ${facts.bbq.grillProvided} costs ¥${facts.bbq.feeJPY.toLocaleString('en-US')} per stay. Guests bring two compatible gas cartridges, food, utensils and other BBQ gear.`,details:'BBQ equipment and safety guide'},
+ ja:{title:'お子様・乳幼児とBBQ',childQuestion:'子どもや乳幼児も宿泊できますか？',childAnswer:'はい。3棟ともお子様・乳幼児を歓迎しています。各棟の定員は最大5名です。乳幼児用の設備が必要な場合は、ご予約前にお問い合わせください。',bbqQuestion:'BBQグリルを利用できますか？',bbqAnswer:`はい。事前のご相談で、当施設の${facts.bbq.grillProvided}を1滞在${facts.bbq.feeJPY.toLocaleString('en-US')}円でご利用いただけます。対応するガス缶2本、食材、調理器具、その他必要なBBQ用品はお客様ご自身でご持参ください。`,details:'BBQの持ち物・安全ガイド'},
+ 'zh-CN':{title:'儿童、婴幼儿与烧烤',childQuestion:'欢迎儿童和婴幼儿入住吗？',childAnswer:'欢迎。三间小屋均欢迎儿童和婴幼儿，每间最多5位客人。如需婴幼儿设备，请在预订前联系我们确认。',bbqQuestion:'可以使用烧烤炉吗？',bbqAnswer:`可以，请提前联系安排。使用我们的${facts.bbq.grillProvided}每次入住费用为¥${facts.bbq.feeJPY.toLocaleString('en-US')}。客人需自备两罐兼容燃气罐、食材、餐具和其他烧烤用品。`,details:'烧烤用品与安全指南'}
 };
 const travelCopy = {
  en:{airport:`${facts.travel.newChitoseMinutes.join('–')} minutes`,casa:`${facts.travel.casaAntonioMinutes.join('–')} minutes`,airportQuestion:'How far is it from New Chitose Airport?',casaQuestion:'Can I combine this with a stay in Sapporo?',airportAnswer:`About ${facts.travel.newChitoseMinutes.join('–')} minutes by car. Allow extra time for winter weather.`,casaAnswer:`Yes. Casa Antonio, our sister property with two apartments near Asabu Station in Sapporo, is about ${facts.travel.casaAntonioMinutes.join('–')} minutes by car from Kojohama. Allow extra time for winter weather and traffic.`},
  ja:{airport:`${facts.travel.newChitoseMinutes.join('〜')}分`,casa:`${facts.travel.casaAntonioMinutes.join('〜')}分`,airportQuestion:'新千歳空港からどのくらいかかりますか？',casaQuestion:'札幌での滞在と組み合わせられますか？',airportAnswer:`車で約${facts.travel.newChitoseMinutes.join('〜')}分です。冬季はさらに時間に余裕を持ってください。`,casaAnswer:`はい。姉妹物件のCasa Antonioは札幌の麻生駅近くにあるアパートメント2室で、虎杖浜から車で約${facts.travel.casaAntonioMinutes.join('〜')}分です。冬季や混雑時は時間に余裕を持ってください。`},
  'zh-CN':{airport:`${facts.travel.newChitoseMinutes.join('–')}分钟`,casa:`${facts.travel.casaAntonioMinutes.join('–')}分钟`,airportQuestion:'从新千岁机场到小屋需要多久？',casaQuestion:'可以与札幌的住宿组合吗？',airportAnswer:`自驾通常约${facts.travel.newChitoseMinutes.join('–')}分钟。冬季天气可能延长行程，请预留更多时间。`,casaAnswer:`可以。姊妹物业Casa Antonio位于札幌麻生站附近，提供两套公寓。从虎杖浜自驾约${facts.travel.casaAntonioMinutes.join('–')}分钟，冬季或交通繁忙时请预留更多时间。`}
 };
-const pricingCopy = {
- en:`From ¥${rate} per night for up to ${baseGuests} guests, including cleaning and excluding taxes. Each guest beyond the first ${baseGuests} adds ¥${extra} per stay. Rates vary by date; check the final total, fees and cancellation terms on your chosen booking platform before confirming.`,
- ja:`1〜${baseGuests}名で1泊${rate}円から。清掃料金を含み、税金は含みません。${facts.pricing.extraGuestFrom}人目以降は、お一人につき1滞在あたり${extra}円の追加料金がかかります。料金は日程によって変わります。予約を確定する前に、ご利用の予約サイトで最終総額・手数料・キャンセル条件をご確認ください。`,
- 'zh-CN':`1至${baseGuests}位客人每晚¥${rate}起，包含清洁费，不含税费。从第${facts.pricing.extraGuestFrom}位客人起，每位额外客人每次入住加收¥${extra}。价格随日期变化；确认预订前，请在所选平台核对最终总价、费用和取消条款。`
-};
-if (!facts.pricing.cleaningIncluded || facts.pricing.taxesIncluded || facts.pricing.extraGuestBasis !== 'per stay' || facts.pricing.extraGuestFrom !== baseGuests + 1) throw new Error('Pricing policy changed: update and review the localized pricing templates before rebuilding.');
+const pricing = require('./pricing.cjs');
+const pricingCopy = pricing.copy;
+if (facts.pricing.cleaningIncluded || facts.pricing.cleaningJPY !== 7000 || facts.pricing.taxesIncluded || facts.pricing.extraGuestBasis !== 'per stay' || facts.bbq.feeBasis !== 'per stay') throw new Error('Review pricing templates after policy changes.');
 const locales = {
  en: {prefix:'', search:'Search places, food or activities', clear:'Clear search', count:'places', empty:'No matching places. Try another search.', browse:'Browse by category', gallery:'Photo gallery', property:'Property gallery', close:'Close photo gallery', prev:'Previous photo', next:'Next photo', compare:'Compare the essentials', cabin:'Cabin', guests:'Maximum guests', beds:'Beds', view:'View cabin', book:'Check dates', map:'Check current hours and details'},
  ja: {prefix:'ja/', search:'施設名・食べ物・体験で検索', clear:'検索をクリア', count:'件', empty:'該当する施設がありません。別の言葉で検索してください。', browse:'カテゴリーから探す', gallery:'写真ギャラリー', property:'施設の写真', close:'写真ギャラリーを閉じる', prev:'前の写真', next:'次の写真', compare:'基本情報を比較', cabin:'キャビン', guests:'最大宿泊人数', beds:'ベッド数', view:'キャビンの詳細', book:'空室を確認', map:'最新の営業時間・施設情報を確認'},
@@ -91,9 +96,9 @@ for (const [lang, t] of Object.entries(locales)) {
  if (compareSource.includes('<!-- comparison:start -->')) compareSource=marked(compareSource,'comparison',table);
  else compareSource=compareSource.replace('<section class="cards wrap">',`<!-- comparison:start -->${table}<!-- comparison:end --><section class="cards wrap">`);
  const choosing = {
-  en:{heading:'Which cabin should you choose?',sol:'Choose Sol for a bright blue-and-white interior, with one double bed and three single beds.',zen:'Choose Zen for tatami flooring, a kotatsu and an additional futon alongside the bedroom beds. Maximum occupancy is five guests.',rustic:'Choose Rustic for wood textures and a cosy interior. Rustic has no tatami or kotatsu; those features belong to Zen.',questions:'Travelling with children or planning a BBQ?',answer:'Children and infants are welcome. BBQ is available by prior arrangement for ¥3,500 per use, with our grill provided; bring two compatible gas cartridges, food, utensils and other gear.',details:'Read the BBQ guide',access:'Plan airport access'},
-  ja:{heading:'どのキャビンが自分たちに合う？',sol:'Solは青と白の明るいインテリア。ダブルベッド1台とシングルベッド3台をご用意しています。',zen:'Zenは畳とこたつのある和の空間。寝室のベッドに加えて布団があり、定員は最大5名です。',rustic:'Rusticは木の質感を楽しめる落ち着いた空間。畳とこたつはありません。これらの設備はZenにあります。',questions:'お子様連れやBBQを計画中ですか？',answer:'お子様・乳幼児を歓迎しています。BBQは事前のご相談で1回3,500円。グリルは当施設が用意します。対応するガス缶2本、食材、調理器具などはご持参ください。',details:'BBQの持ち物を確認',access:'空港からのアクセスを確認'},
-  'zh-CN':{heading:'哪间小屋更适合您？',sol:'Sol拥有明亮的蓝白色内饰，配备一张双人床和三张单人床。',zen:'Zen拥有榻榻米和暖桌，除卧室床位外另有日式被褥，每间最多入住5人。',rustic:'Rustic适合喜欢木质纹理和温馨氛围的客人。Rustic没有榻榻米或暖桌，这两项设施仅在Zen提供。',questions:'带孩子出行或计划烧烤？',answer:'欢迎儿童和婴幼儿。烧烤请提前安排，每次¥3,500，我们提供烤炉；请自备两罐兼容燃气罐、食材、餐具和其他用品。',details:'查看烧烤指南',access:'查看机场交通'}
+  en:{heading:'Which cabin should you choose?',sol:'Choose Sol for a bright blue-and-white interior, with one double bed and three single beds.',zen:'Choose Zen for tatami flooring, a kotatsu and an additional futon alongside the bedroom beds. Maximum occupancy is five guests.',rustic:'Choose Rustic for wood textures and a cosy interior. Rustic has no tatami or kotatsu; those features belong to Zen.',questions:'Travelling with children or planning a BBQ?',answer:'Children and infants are welcome. BBQ is available by prior arrangement for ¥3,500 per stay, with our grill provided; bring two compatible gas cartridges, food, utensils and other gear.',details:'Read the BBQ guide',access:'Plan airport access'},
+  ja:{heading:'どのキャビンが自分たちに合う？',sol:'Solは青と白の明るいインテリア。ダブルベッド1台とシングルベッド3台をご用意しています。',zen:'Zenは畳とこたつのある和の空間。寝室のベッドに加えて布団があり、定員は最大5名です。',rustic:'Rusticは木の質感を楽しめる落ち着いた空間。畳とこたつはありません。これらの設備はZenにあります。',questions:'お子様連れやBBQを計画中ですか？',answer:'お子様・乳幼児を歓迎しています。BBQは事前のご相談で1滞在3,500円。グリルは当施設が用意します。対応するガス缶2本、食材、調理器具などはご持参ください。',details:'BBQの持ち物を確認',access:'空港からのアクセスを確認'},
+  'zh-CN':{heading:'哪间小屋更适合您？',sol:'Sol拥有明亮的蓝白色内饰，配备一张双人床和三张单人床。',zen:'Zen拥有榻榻米和暖桌，除卧室床位外另有日式被褥，每间最多入住5人。',rustic:'Rustic适合喜欢木质纹理和温馨氛围的客人。Rustic没有榻榻米或暖桌，这两项设施仅在Zen提供。',questions:'带孩子出行或计划烧烤？',answer:'欢迎儿童和婴幼儿。烧烤请提前安排，每次入住¥3,500，我们提供烤炉；请自备两罐兼容燃气罐、食材、餐具和其他用品。',details:'查看烧烤指南',access:'查看机场交通'}
  }[lang];
  const choosingSection=`<section class="section-block wrap"><h2>${choosing.heading}</h2><div class="compact-grid"><article><h3><a href="/${t.prefix}cabins/ocean-stay-sol/">Ocean Stay Sol</a></h3><p>${choosing.sol}</p></article><article><h3><a href="/${t.prefix}cabins/ocean-stay-zen/">Ocean Stay Zen</a></h3><p>${choosing.zen}</p></article><article><h3><a href="/${t.prefix}cabins/ocean-stay-rustic/">Ocean Stay Rustic</a></h3><p>${choosing.rustic}</p></article></div><h3>${choosing.questions}</h3><p>${choosing.answer}</p><p><a href="/${t.prefix}bbq/">${choosing.details}</a> · <a href="/${t.prefix}location/">${choosing.access}</a></p></section>`;
  if(compareSource.includes('<!-- choosing:start -->'))compareSource=marked(compareSource,'choosing',choosingSection);
@@ -173,12 +178,17 @@ for (const absolute of walk(root)) {
   }
   return tag;
  });
- if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<p class="pricing-note wrap">${pricingCopy[lang]}</p>`);
+ if (/^(?:ja\/|zh-cn\/)?cabins\/index\.html$/.test(file)) {
+  const rates = '<!-- seasonal-rates:start -->'+pricing.table(lang)+'<!-- seasonal-rates:end -->';
+  if(source.includes('<!-- seasonal-rates:start -->')) source=marked(source,'seasonal-rates',pricing.table(lang));
+  else source=source.replace('<!-- comparison:start -->',rates+'<!-- comparison:start -->');
+ }
+ if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<p class="pricing-note wrap">${pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1])}</p>`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   const schema=JSON.parse(text);
   const update=node=>{
    if (!node || typeof node !== 'object') return;
-   if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricingCopy[lang];
+   if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]);
    if (node['@type']==='FAQPage' && file.endsWith('faq/index.html') && lang==='zh-CN') {
     for (const kind of ['airport','casa']) if (!node.mainEntity.some(q=>q.name===trip[`${kind}Question`])) node.mainEntity.push({'@type':'Question',name:trip[`${kind}Question`],acceptedAnswer:{'@type':'Answer',text:trip[`${kind}Answer`]}});
    }
@@ -189,7 +199,7 @@ for (const absolute of walk(root)) {
     else node.mainEntity.push({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text:answer}});
    }
    if (node['@type']==='Question') for (const kind of ['airport','casa']) if (node.name===trip[`${kind}Question`]) node.acceptedAnswer.text=trip[`${kind}Answer`];
-   if (node['@type']==='Answer' && typeof node.text==='string' && node.text.includes('19,800')) node.text=pricingCopy[lang];
+   if (node['@type']==='Answer' && typeof node.text==='string' && (/19,800|13,800|13,800円|清掃料金|cleaning/.test(node.text))) node.text=pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]);
    Object.values(node).forEach(update);
   };
   update(schema);
@@ -204,7 +214,7 @@ for (const absolute of walk(root)) {
    return '<link as="image" href="'+attr('src')+'" imagesizes="'+attr('sizes')+'" imagesrcset="'+attr('srcset')+'" fetchpriority="high" rel="preload"/>';
   });
  }
- save(file,layouts.render(source,file,lang));
+ save(file,bookingVisibility(layouts.render(restoreInactiveBookings(source),file,lang)));
 }
 assets.build();
 require('./sitemaps.cjs').sync();

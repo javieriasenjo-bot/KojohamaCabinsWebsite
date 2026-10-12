@@ -1,4 +1,7 @@
 {
+  "bookingChannels": {
+    "ctrip": false
+  },
   "travel": {
     "newChitoseMinutes": [
       60,
@@ -48,14 +51,39 @@
   ],
   "policyConfirmation": "owner confirmed 2026-10-06",
   "pricing": {
-    "fromNightlyJPY": 19800,
+    "fromNightlyJPY": 13800,
     "baseGuests": 2,
-    "cleaningIncluded": true,
+    "cleaningIncluded": false,
     "taxesIncluded": false,
     "extraGuestFrom": 3,
     "extraGuestJPY": 2500,
     "extraGuestBasis": "per stay",
-    "confirmedOn": "2026-10-06"
+    "confirmedOn": "2026-10-12",
+    "cleaningJPY": 7000,
+    "seasonStart": "2026-10-01",
+    "seasonEnd": "2026-12-24",
+    "holidayStart": "2026-12-25",
+    "holidayEnd": "2027-01-03",
+    "weekdayMinimumNights": 1,
+    "weekendMinimumNights": 2,
+    "holidayMinimumNights": 2,
+    "rates": {
+      "sol": {
+        "weekday": 15800,
+        "weekend": 18500,
+        "holiday": 23800
+      },
+      "zen": {
+        "weekday": 13800,
+        "weekend": 16500,
+        "holiday": 21800
+      },
+      "rustic": {
+        "weekday": 14800,
+        "weekend": 18500,
+        "holiday": 22800
+      }
+    }
   },
   "wifi": {
     "downloadMbps": 100,
@@ -67,14 +95,14 @@
   "bbq": {
     "allowed": true,
     "feeJPY": 3500,
-    "feeBasis": "per use",
+    "feeBasis": "per stay",
     "grillProvided": "Coleman RoadTrip Grill LXE-J II",
     "guestSupplies": [
       "two compatible gas cartridges",
       "food",
       "utensils and other BBQ gear"
     ],
-    "confirmedOn": "2026-10-06"
+    "confirmedOn": "2026-10-12"
   },
   "children": {
     "childrenWelcome": true,

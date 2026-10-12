@@ -65,6 +65,10 @@ for(const relative of [
  check(openGraph===description,`${relative}: meta and Open Graph descriptions disagree`);
 }
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
+if(facts.bookingChannels?.ctrip===false)for(const [file,text]of source){
+ const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
+ check(!/<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"/.test(active),`${file}: inactive Ctrip booking link is still active`);
+}
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
 const imageManifest=JSON.parse(fs.readFileSync(path.join(root,'data/asset-manifest.json'),'utf8'));
 for(const image of imageManifest.images){
@@ -106,7 +110,9 @@ for(const locale of ['en','ja','zh-CN']){
  }
  const comparison=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
  for(const c of facts.cabins){
-  check(comparison.includes(c.airbnb)&&comparison.includes(c.ctrip),`${locale}: missing booking channel for ${c.id}`);
+  const activeComparison=comparison.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
+  check(activeComparison.includes(c.airbnb),`${locale}: missing Airbnb channel for ${c.id}`);
+  check(facts.bookingChannels?.ctrip===false ? !activeComparison.includes(c.ctrip) : activeComparison.includes(c.ctrip),`${locale}: wrong Ctrip visibility for ${c.id}`);
   const page=fs.readFileSync(path.join(root,prefix+`cabins/ocean-stay-${c.id}/index.html`),'utf8');
   for(const block of page.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)){
    const visit=node=>{
@@ -119,7 +125,7 @@ for(const locale of ['en','ja','zh-CN']){
  const bbq=fs.readFileSync(path.join(root,prefix+'bbq/index.html'),'utf8');
  check(bbq.includes('2000017066.pdf'),`${locale}: missing manufacturer instructions`);
  check(!/one canister, but|1本でも点火可能|一罐也可以点火/.test(bbq),`${locale}: unsafe one-cartridge instructions`);
- check(!/¥3,500[^<]{0,50}per stay|1滞在3,500|每次入住 ¥3,500/.test(bbq),`${locale}: BBQ fee still incorrectly charged per stay`);
+ check(!/¥3,500[^<]{0,50}per use|1回3,500|每次¥3,500/.test(bbq),`${locale}: old BBQ fee basis remains`);
  const faq=fs.readFileSync(path.join(root,prefix+'faq/index.html'),'utf8');
  check(faq.includes('id="family-policy"'),`${locale}: missing confirmed family/BBQ policy`);
 }

@@ -1,5 +1,8 @@
 # Booking and contact analytics — 12 October 2026
 
+> Current status: [OPEN-ITEMS.md](OPEN-ITEMS.md) is the authoritative tracker as of 12 October 2026. This dated document is historical; closed venue calls, smoking corrections, indexing and deployed releases must not be reopened from its older pending text.
+
+
 ## Saved in GA4
 
 For KojohamaCabins property 553369233, `booking_click` and `contact_click` are now key events. Existing `airbnb_click` remains enabled. Booking and contact custom dimensions already exist (`booking_platform`, `contact_method`), so no duplicate dimensions were added. Contact clicks had no received stream data when configured; this is preparation for future visitor events, not evidence of received enquiries.
@@ -15,3 +18,7 @@ The existing Tag Manager booking/contact tags accept these event names; no new t
 Commit and deploy the source changes to activate the new link handling. The GA4 key-event settings are already saved externally. Key events measure outbound booking intent and contact interest, not confirmed reservations, and changes do not backfill historical key-event counts.
 
 Other edits already present in this working folder were preserved.
+
+## Inactive Trip/Ctrip channel
+
+The owner confirmed Trip/Ctrip is not active and approved hiding its booking buttons. `bookingChannels.ctrip=false` in `data/site-facts.json` suppresses links in all static pages, including comparison tables, cabin pages and `/go/`. URLs/markup are retained for restoration after activation; set the flag true and rebuild. Analytics handling remains available for the future active channel. This source update awaits commit and deployment.
