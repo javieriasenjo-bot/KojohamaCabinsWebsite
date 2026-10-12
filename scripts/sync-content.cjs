@@ -183,7 +183,7 @@ for (const absolute of walk(root)) {
   if(source.includes('<!-- seasonal-rates:start -->')) source=marked(source,'seasonal-rates',pricing.table(lang));
   else source=source.replace('<!-- comparison:start -->',rates+'<!-- comparison:start -->');
  }
- if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<p class="pricing-note wrap">${pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1])}</p>`);
+ if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<p class="pricing-note wrap">${pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1])} <a href="/${locales[lang].prefix}cabins/#seasonal-rates">${lang==='en'?'View dated rates':lang==='ja'?'日付別料金を見る':'查看日期房价'}</a></p>`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   const schema=JSON.parse(text);
   const update=node=>{
