@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "node scripts/sync-content.cjs",
-    "check": "node scripts/check-site.cjs && node scripts/check-navigation.cjs",
+    "check": "node scripts/check-site.cjs && node scripts/check-navigation.cjs && node scripts/check-analytics.cjs",
     "check:browser": "node scripts/check-browser.cjs",
     "review:venues": "node scripts/review-venues.cjs",
     "indexnow:preview": "node scripts/indexnow.cjs",

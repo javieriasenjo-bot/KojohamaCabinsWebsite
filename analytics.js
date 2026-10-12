@@ -1,4 +1,4 @@
-// One analytics entry point; previews and no-JavaScript pages do not load GTM.
+// One analytics entry point; previews do not load GTM or Metricool.
 (() => {
   const push = (event, details = {}) => {
     window.dataLayer = window.dataLayer || [];
@@ -19,4 +19,13 @@
   script.async = true;
   script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5W8ZJPTD';
   document.head.appendChild(script);
+  const metricool = document.createElement('script');
+  metricool.async = true;
+  metricool.src = 'https://tracker.metricool.com/resources/be.js';
+  metricool.onload = () => {
+    if (window.beTracker && typeof window.beTracker.t === 'function') {
+      window.beTracker.t({ hash: 'ffd44c179566f41dd21d51d09878d58d' });
+    }
+  };
+  document.head.appendChild(metricool);
 })();
