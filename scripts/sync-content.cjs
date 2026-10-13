@@ -118,6 +118,12 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
+ const wifiCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
+ if (wifiCabin || /(?:cabins|work-remotely|faq)\/index\.html$/.test(file)) {
+  const wifi = require('./wifi.cjs').render(lang, wifiCabin);
+  if (source.includes('<!-- wifi-measurements:start -->')) source=marked(source,'wifi-measurements',wifi);
+  else source=source.replace('</main>',`<!-- wifi-measurements:start -->${wifi}<!-- wifi-measurements:end --></main>`);
+ }
  // Production analytics stays off local and staging previews.
  source=source.replace(/(<script\b[^>]*>)([\s\S]*?)(<\/script>)/g,(whole,start,code,end)=>{
   if (!code.includes("})(window,document,'script','dataLayer'") || code.includes('location.hostname')) return whole;

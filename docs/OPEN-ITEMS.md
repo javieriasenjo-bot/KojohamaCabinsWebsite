@@ -8,8 +8,7 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 
 | ID | Item | Status / owner | Next action and evidence needed |
 |---|---|---|---|
-| O02 | Two older RedNote posts with prices/Airbnb mentions | Waiting for owner browser login | Creator page is signed out on 13 October. Login handoff retained; owner asked to sign in. Application approved/no restrictions remains confirmed. No posts or profile edited. |
-| O04 | Per-cabin Wi-Fi measurements | Owner measuring 13 October | Google Calendar reminder saved for 13 October 2026 at 10:00 JST, with a popup at that time (transparent reminder, not a fixed appointment). Owner will provide screenshots from Sol, Zen and Rustic. Record download/upload/latency and location; do not publish the earlier approximately 100 Mbps estimate as measured. Calendar event ID: r651ub0l2i30p0fukfnmfq18fs. |
+| O02 | Two older RedNote posts with prices/Airbnb mentions | Login verified; older-post audit remains | On 13 October, freshly verified signed-in Ocean Stay 虎杖浜 creator account. Social Media posts - SEO + Analytics completed the revised 18 October RedNote post scheduling; live queue confirms 17:30 JST. This is separate from the two older price/Airbnb-caption cleanup, which is not established as completed. Do not request login again while the session remains valid or duplicate scheduled posts. |
 | O06 | Remaining OTA setup and extra-guest charge period | Owner update received; Codex follow-up | Owner confirms Airbnb and Booking.com now charge ¥2,500 per extra guest. Do not ask again whether that amount is set. The charge period/final checkout totals have not been independently checked. Trip/Ctrip is not active yet; treat it as setup, not an active-listing audit. Owner approved hiding Trip/Ctrip booking buttons until activation. Source flag bookingChannels.ctrip=false now removes all rendered Ctrip links, including the bio page; committed as 80956bc and verified live on 12 October across all 13 affected pages; retain commercial tax/cleaning verification if needed. |
 | O07 | Fresh inbound LINE end-to-end test | Owner has not performed a fresh test | Owner confirmed no new separate-account test on 12 October. Historical 3 October enquiry was only “Test”; no guest reply pending. A clearly labelled new message from a separate LINE account is still needed to establish current inbound forwarding and host receipt. |
 | O08 | Ikuta Clinic current hours | Dated wording improved; current reception confirmation open | On 13 October, updated all four app languages to label hours as the 2025 town-guide reference and require phone confirmation of reception/lunch break. Primary source linked; hoursUnverified remains true. Source awaits commit/deployment; current clinic timetable not certified. |
@@ -27,6 +26,7 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 ## Closed or already resolved — do not re-ask
 
 | Item | Reconciled status / evidence |
+| Per-cabin Wi-Fi measurements (O04) | Owner supplied six phone screenshots on 13 October 2026, covering both 2.4 and 5 GHz for Sol, Zen and Rustic. Exact download/upload/latency transcribed into website and guest-guide sources; room unspecified, no guaranteed-speed claim. Deployment and Airbnb saved-text evidence are recorded in WIFI-MEASUREMENTS-2026-10-13.md. |
 |---|---|
 | RedNote application 34100175 | Owner confirmed approved with no current restrictions on 12 October. Former ban-until-25-October claim superseded. O02 is a content cleanup task, not a restriction block. |
 | Anthropic activation decision | Owner chose keep Workers AI for now on 12 October. No API key requested or added. Model support remains available if the owner changes this decision later. |
@@ -72,3 +72,5 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 - RedNote 6 and 11 October posts were already published and future posts already queued during the 12 October inspection; no duplicate posts created. Fresh publication checks remain distinct from queue evidence.
 
 - 13 October continuation: analytics cohort/campaign/platform investigated; TikTok typo and edit limitation verified; RedNote awaiting login; clinic wording made explicitly dated/unverified. Focused tourism-mail check found no new replies. See FOLLOW-UP-2026-10-13.md.
+
+- 13 October cross-chat reconciliation: current RedNote login verified. Social Media posts - SEO + Analytics handled the revised Sunday post; the current creator queue shows 13/15 October at 21:30 JST and 18 October at 17:30 JST. Older-caption cleanup remains a separate audit task.

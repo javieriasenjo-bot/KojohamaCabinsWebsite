@@ -86,11 +86,48 @@
     }
   },
   "wifi": {
-    "downloadMbps": 100,
-    "uploadMbps": 100,
-    "measurementYear": 2025,
-    "currentMeasurementPending": true,
-    "guaranteed": false
+    "measuredOn": "2026-10-13",
+    "method": "Google internet speed test on owner-supplied phone screenshots",
+    "room": null,
+    "guaranteed": false,
+    "measurements": {
+      "sol": {
+        "2.4": {
+          "downloadMbps": 134.6,
+          "uploadMbps": 115.1,
+          "latencyMs": 20
+        },
+        "5": {
+          "downloadMbps": 274.4,
+          "uploadMbps": 127.2,
+          "latencyMs": 20
+        }
+      },
+      "zen": {
+        "2.4": {
+          "downloadMbps": 113.0,
+          "uploadMbps": 111.4,
+          "latencyMs": 19
+        },
+        "5": {
+          "downloadMbps": 271.3,
+          "uploadMbps": 244.5,
+          "latencyMs": 20
+        }
+      },
+      "rustic": {
+        "2.4": {
+          "downloadMbps": 83.3,
+          "uploadMbps": 87.6,
+          "latencyMs": 19
+        },
+        "5": {
+          "downloadMbps": 171.9,
+          "uploadMbps": 206.2,
+          "latencyMs": 20
+        }
+      }
+    }
   },
   "bbq": {
     "allowed": true,
