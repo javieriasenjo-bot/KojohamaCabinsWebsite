@@ -222,6 +222,7 @@ for (const absolute of walk(root)) {
  }
  save(file,bookingVisibility(layouts.render(restoreInactiveBookings(source),file,lang)));
 }
+require('./arrival-coast.cjs').sync();
 assets.build();
 require('./sitemaps.cjs').sync();
 console.log('Synchronized localized directory, photo captions and cabin comparison sections.');
