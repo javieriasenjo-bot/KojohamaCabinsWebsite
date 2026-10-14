@@ -118,6 +118,11 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
+ if (/(?:cabins|faq)\/index\.html$/.test(file) || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
+  const charges=require('./guest-charges.cjs').render(lang);
+  if (source.includes('<!-- guest-charges:start -->')) source=marked(source,'guest-charges',charges);
+  else source=source.replace('</main>',`<!-- guest-charges:start -->${charges}<!-- guest-charges:end --></main>`);
+ }
  const wifiCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
  if (wifiCabin || /(?:cabins|work-remotely|faq)\/index\.html$/.test(file)) {
   const wifi = require('./wifi.cjs').render(lang, wifiCabin);

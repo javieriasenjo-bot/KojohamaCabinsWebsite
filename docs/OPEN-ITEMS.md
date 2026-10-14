@@ -22,6 +22,8 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 | O16 | Airbnb gallery and Angie reply | Codex follow-up; factual reply depends on O14 | Zen sea-view lead photo and Zen/Rustic exterior replacement remain to review; retain existing photos. Rustic currently has 38 amenities, superseding the old 27-to-34 target. Draft Angie reply only around confirmed actions. |
 | O17 | Bio-link navigation tracking | Source fix ready; deployment verification pending | Live Ctrl-click retained the source page and produced a bio_link_click response HTTP 204. Normal navigation was not observed delivering the request. New temporary session-storage handoff dispatches once on the destination, preserving source context; storage-blocked browsers retain bounded fallback. Deploy then verify same-tab click; filtered GA4 report receipt remains separate. |
 
+| O18 | Guest-charge rollout | Source and Airbnb complete; platform publication pending | Full eight-clause policy in all website/app languages and Airbnb four-language descriptions; Additional rules updated. Booking.com multilingual request received, awaiting editorial publication. Trip rejected monetary content in descriptions; owner chose to send support request personally, draft at TRIP-POLICY-SUPPORT-REQUEST-2026-10-14.txt. Pet/service-animal settings updated on all three Trip properties. No support outreach sent. Website/app source ready to commit/deploy. See PENALTY-UPDATE-2026-10-14.md. |
+
 ## Closed or already resolved — do not re-ask
 
 | Item | Reconciled status / evidence |
@@ -79,3 +81,5 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 ## Owner follow-up — 14 October 2026
 
 Working CO alarms in all three cabins and fresh separate-account LINE test confirmed. Wi-Fi sources committed and live per owner. Equipment reminder set for 20 October at 10:00 JST and refers to this chat. HOKKAIDO LOVE! decision remains pending; owner will reply soon. No membership application or tourism outreach sent.
+
+- 14 October fee-task observations for O06: Trip Zen structured capacity still six, despite owner-approved maximum five. Trip check-in 16:00 differs from newer Airbnb Sol/Rustic 15:00 and Zen 14:00. Booking.com shows resort fee ¥750/night. Reconcile these separately; do not assume they were corrected by the guest-charge text update.
