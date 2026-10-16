@@ -12,6 +12,12 @@ for(const prefix of ['', 'ja/', 'zh-cn/']){
  const table=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
  for(const amount of ['15,800','18,500','23,800','13,800','16,500','21,800','14,800','22,800']) assert(table.includes('¥'+amount),prefix+amount);
  assert(table.includes('id="seasonal-rates"'));
+ assert(table.includes('id="stay-total-examples"'));
+ // These examples catch accidentally charging cleaning or extra guests per night.
+ const examples=table.split('id="stay-total-examples"')[1].split('</table>')[0];
+ for(const amount of ['22,800','20,800','21,800','44,000','40,000','51,500','47,500']) assert(examples.includes('¥'+amount),prefix+' example '+amount);
+ const comparison=table.split('<!-- comparison:start -->')[1].split('<!-- comparison:end -->')[0];
+ for(const speed of ['274.4 / 127.2','271.3 / 244.5','171.9 / 206.2']) assert(comparison.includes(speed),prefix+' measured Wi-Fi '+speed);
  for(const id of ['sol','zen','rustic']){
   const page=fs.readFileSync(path.join(root,prefix+'cabins/ocean-stay-'+id+'/index.html'),'utf8');
   assert(page.includes(facts.pricing.rates[id].weekday.toLocaleString('en-US')));
@@ -21,6 +27,8 @@ for(const prefix of ['', 'ja/', 'zh-cn/']){
  const bbq=fs.readFileSync(path.join(root,prefix+'bbq/index.html'),'utf8');
  assert(!/per use|1回(?:のご利用につき)?3,500|每次(?:使用费用为|使用)?¥3,500/.test(bbq));
  const home=fs.readFileSync(path.join(root,prefix+'index.html'),'utf8');
- assert(!/Cleaning included|cleaning included|清掃料金込み|含清洁费|包含清洁费/.test(home));
+ const example=home.match(/<span class="home-stay-example">([\s\S]*?)<\/span>/)?.[1];
+ assert(example && example.includes('20,800'),prefix+' homepage total');
+ assert(!/Cleaning included|cleaning included|清掃料金込み|含清洁费|包含清洁费/.test(home.replace(/<span class="home-stay-example">[\s\S]*?<\/span>/g,'')));
 }
 console.log('PASS: three-language dated rate tables, per-cabin rates, separate cleaning and BBQ per stay.');

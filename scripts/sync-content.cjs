@@ -89,10 +89,11 @@ for (const [lang, t] of Object.entries(locales)) {
   'activeGallery = name; activeIndex = 0; showGalleryPhoto(); window.KojohamaUI.openModal(lightbox, lastGalleryTrigger); document.body.classList.add(\'lightbox-open\');');
  source=source.replace(/function setBackgroundInert\(on\) \{[^\n]+\}\s*function closeGallery\(\) \{[^\n]+\}/,
   "function closeGallery() { window.KojohamaUI.closeModal(lightbox); document.body.classList.remove('lightbox-open'); }");
+ source = require('./home-gallery-content.cjs').update(source, lang);
  save(home,source);
  const comparison=t.prefix+'cabins/index.html';
  let compareSource=read(comparison);
- const table=`<section class="wrap cabin-comparison"><h2>${t.compare}</h2><div class="comparison-scroll"><table><caption class="sr-only">${t.compare}</caption><thead><tr><th scope="col">${t.cabin}</th><th scope="col">${t.guests}</th><th scope="col">${t.beds}</th><th scope="col">${t.book}</th></tr></thead><tbody>${facts.cabins.map(c=>`<tr><th scope="row"><a href="/${t.prefix}cabins/ocean-stay-${c.id}/">${c.name}</a></th><td>${c.maxGuests}</td><td>${c.beds}</td><td><a href="${c.airbnb}" target="_blank" rel="noopener" data-cabin-name="${c.name}" data-link-location="comparison">Airbnb</a> · <a href="${c.ctrip}" target="_blank" rel="noopener" data-cabin-name="${c.name}" data-link-location="comparison">${lang==='zh-CN'?'携程':'Ctrip'}</a></td></tr>`).join('')}</tbody></table></div></section>`;
+ const table=pricing.comparison(lang);
  if (compareSource.includes('<!-- comparison:start -->')) compareSource=marked(compareSource,'comparison',table);
  else compareSource=compareSource.replace('<section class="cards wrap">',`<!-- comparison:start -->${table}<!-- comparison:end --><section class="cards wrap">`);
  const choosing = {
