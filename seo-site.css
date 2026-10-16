@@ -162,6 +162,11 @@ body:has(.quick-reserve){padding-bottom:76px}
 .seasonal-rates thead{background:#e8eee9}
 .seasonal-rates tbody td{white-space:nowrap;font-variant-numeric:tabular-nums}
 .stay-total-examples{margin-top:32px}
+.dated-rate-month{margin:16px 0;border:1px solid #c5cfcb;border-radius:6px;overflow:hidden}
+.dated-rate-month summary{padding:16px;font-weight:700;cursor:pointer;background:#e8eee9;min-height:48px}
+.dated-rate-month summary:focus-visible{outline:3px solid #183136;outline-offset:-3px}
+.dated-rate-month table{min-width:700px}
+.dated-rate-month th:first-child{white-space:nowrap}
 .cabin-comparison table{min-width:650px;table-layout:fixed}
 .cabin-comparison-table tbody th{position:sticky;left:0;background:#f8f5ef;z-index:1}
 .comparison-hint{font-size:.9rem}

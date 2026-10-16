@@ -12,7 +12,9 @@ const solCopy = {
 };
 function update(source, lang) {
   const amount=(facts.pricing.rates.zen.weekday+facts.pricing.cleaningJPY).toLocaleString('en-US');
-  const example={en:`Example: Zen, two guests, one Sun–Thu night: ¥${amount} before tax, including cleaning.`,ja:`総額例：Zenに2名で日〜木曜1泊の場合、清掃料金込みで税別¥${amount}。`,'zh-CN':`总价示例：2位客人于周日至周四入住Zen 1晚，含清洁费，税前¥${amount}。`}[lang];
+  const example={en:`Example: Zen, two guests, 8 November 2026 for one night: ¥${amount} before tax, including cleaning. Check your dates in the rate calendar.`,ja:`総額例：2026年11月8日からZenに2名で1泊の場合、清掃料金込みで税別¥${amount}。ご希望の日付は料金カレンダーでご確認ください。`,'zh-CN':`总价示例：2位客人于2026年11月8日起入住Zen 1晚，含清洁费，税前¥${amount}。请在房价日历中核对所选日期。`}[lang];
+  const heading={en:'16 October 2026–1 July 2027: from ¥13,800 per night',ja:'2026年10月16日〜2027年7月1日：1泊¥13,800から','zh-CN':'2026年10月16日至2027年7月1日：每晚¥13,800起'}[lang];
+  source=source.replace(/<h3>[^<]*13,800[^<]*<\/h3>/,`<h3>${heading}</h3>`);
   source=source.replace(/<span class="home-stay-example">[\s\S]*?<\/span>/g,'');
   source=source.replace(/(<h3>[^<]*13,800[^<]*<\/h3><p>)([\s\S]*?)(<\/p>)/,(_,start,text,end)=>`${start}${text.trim()}<span class="home-stay-example"> ${example}</span>${end}`);
   source = source.replace(/(<p\b[^>]*data-i18n="sol_p2"[^>]*>)[\s\S]*?(<\/p>)/, (_, start, end) => start + solCopy[lang] + end);

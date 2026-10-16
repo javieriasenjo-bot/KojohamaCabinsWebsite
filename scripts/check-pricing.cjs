@@ -1,34 +1,55 @@
-// Verify the owner's dated pricing contract in generated pages, not platform quotes.
+// Check published dates and fee rules independently of OTA availability.
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const root=path.join(__dirname,'..');
-const facts=require('../data/site-facts.json');
-assert.equal(facts.pricing.cleaningIncluded,false);
+const root=path.join(__dirname,'..'),facts=require('../data/site-facts.json'),schedule=require('../data/date-rates.json');
+const {stayTotal}=require('./pricing.cjs');
 assert.equal(facts.pricing.cleaningJPY,7000);
 assert.equal(facts.pricing.extraGuestJPY,2500);
 assert.equal(facts.pricing.extraGuestBasis,'per stay');
+assert.equal(facts.pricing.weekendMinimumNights,1);
+assert.equal(facts.bbq.feeJPY,3500);
 assert.equal(facts.bbq.feeBasis,'per stay');
-assert.deepEqual(facts.pricing.rates,{sol:{weekday:15800,weekend:18500,holiday:23800},zen:{weekday:13800,weekend:16500,holiday:21800},rustic:{weekday:14800,weekend:18500,holiday:22800}});
+assert.equal(schedule.days.length,259);
+assert.equal(schedule.days[0].date,'2026-10-16');
+assert.equal(schedule.days.at(-1).date,'2027-07-01');
+for(let i=0;i<schedule.days.length;i++){
+ const d=schedule.days[i];
+ if(i)assert.equal(Date.parse(d.date)-Date.parse(schedule.days[i-1].date),86400000);
+ for(const c of facts.cabins){assert(Number.isInteger(d.rates[c.id])&&d.rates[c.id]>0);assert([1,2].includes(d.minimumNights[c.id]));}
+}
+assert.equal(stayTotal('sol',['2026-11-06'],2),25800);
+assert.equal(stayTotal('zen',['2026-11-06','2026-11-07'],5),48100);
+assert.equal(stayTotal('sol',['2026-12-30','2026-12-31'],2),54600);
+assert.equal(stayTotal('rustic',['2027-05-04','2027-05-05'],2),49600);
+assert.equal(stayTotal('zen',['2027-07-01'],2),24800);
+assert.throws(()=>stayTotal('sol',['2026-11-20'],2),/minimum/);
+assert.doesNotThrow(()=>stayTotal('zen',['2026-11-20'],2));
+assert.throws(()=>stayTotal('zen',['2026-12-31'],2),/minimum/);
+assert.throws(()=>stayTotal('sol',['2027-07-02'],2),/outside/);
+assert.throws(()=>stayTotal('sol',['2026-11-06','2026-11-08'],2),/consecutive/);
+assert.throws(()=>stayTotal('zen',['2026-11-06'],6),/Guests/);
 for(const prefix of ['', 'ja/', 'zh-cn/']){
- const table=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
- for(const amount of ['15,800','18,500','23,800','13,800','16,500','21,800','14,800','22,800']) assert(table.includes('¥'+amount),prefix+amount);
- assert(table.includes('id="seasonal-rates"'));
- assert(table.includes('id="stay-total-examples"'));
- // These examples catch accidentally charging cleaning or extra guests per night.
- const examples=table.split('id="stay-total-examples"')[1].split('</table>')[0];
- for(const amount of ['22,800','20,800','21,800','44,000','40,000','51,500','47,500']) assert(examples.includes('¥'+amount),prefix+' example '+amount);
- const comparison=table.split('<!-- comparison:start -->')[1].split('<!-- comparison:end -->')[0];
- for(const speed of ['274.4 / 127.2','271.3 / 244.5','171.9 / 206.2']) assert(comparison.includes(speed),prefix+' measured Wi-Fi '+speed);
+ const html=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
+ const ranges=[...html.matchAll(/<tr data-rate-start="([\d-]+)" data-rate-end="([\d-]+)">([\s\S]*?)<\/tr>/g)],seen=new Set();
+ for(const [,start,end,row] of ranges){
+  const included=schedule.days.filter(d=>d.date>=start&&d.date<=end);
+  assert(included.length);
+  for(const d of included){
+   assert(!seen.has(d.date));seen.add(d.date);
+   const cells=[...row.matchAll(/<td>([\s\S]*?)<\/td>/g)].map(m=>m[1]);
+   facts.cabins.forEach((c,i)=>assert.equal(cells[i],'¥'+d.rates[c.id].toLocaleString('en-US'),prefix+d.date+c.id));
+   const minimum=new Set(Object.values(d.minimumNights)).size===1?String(d.minimumNights.sol):facts.cabins.map(c=>`${c.name}: ${d.minimumNights[c.id]}`).join(' / ');
+   assert.equal(cells[3],minimum,prefix+d.date+' arrival minimums');
+  }
+ }
+ assert.equal(seen.size,259,prefix+' calendar coverage');
+ assert(html.includes('id="stay-total-examples"'));
  for(const id of ['sol','zen','rustic']){
   const page=fs.readFileSync(path.join(root,prefix+'cabins/ocean-stay-'+id+'/index.html'),'utf8');
   assert(page.includes(facts.pricing.rates[id].weekday.toLocaleString('en-US')));
   assert(page.includes('7,000'));
-  assert(!page.includes('19,800'));
  }
- const bbq=fs.readFileSync(path.join(root,prefix+'bbq/index.html'),'utf8');
- assert(!/per use|1回(?:のご利用につき)?3,500|每次(?:使用费用为|使用)?¥3,500/.test(bbq));
  const home=fs.readFileSync(path.join(root,prefix+'index.html'),'utf8');
- const example=home.match(/<span class="home-stay-example">([\s\S]*?)<\/span>/)?.[1];
- assert(example && example.includes('20,800'),prefix+' homepage total');
- assert(!/Cleaning included|cleaning included|清掃料金込み|含清洁费|包含清洁费/.test(home.replace(/<span class="home-stay-example">[\s\S]*?<\/span>/g,'')));
+ assert(home.includes('home-stay-example')&&home.includes('20,800'));
+ assert(!/Oct–24 Dec|October–24 December|1月4日以降はこの料金表/.test(html+home));
 }
-console.log('PASS: three-language dated rate tables, per-cabin rates, separate cleaning and BBQ per stay.');
+console.log('PASS: 259 dated nights in three languages, special arrival minimums, mixed-rate totals and once-per-stay fees.');

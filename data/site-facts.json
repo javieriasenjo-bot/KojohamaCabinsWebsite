@@ -58,32 +58,27 @@
     "extraGuestFrom": 3,
     "extraGuestJPY": 2500,
     "extraGuestBasis": "per stay",
-    "confirmedOn": "2026-10-12",
+    "confirmedOn": "2026-10-16",
     "cleaningJPY": 7000,
-    "seasonStart": "2026-10-01",
-    "seasonEnd": "2026-12-24",
-    "holidayStart": "2026-12-25",
-    "holidayEnd": "2027-01-03",
+    "seasonStart": "2026-10-16",
+    "seasonEnd": "2027-07-01",
     "weekdayMinimumNights": 1,
-    "weekendMinimumNights": 2,
-    "holidayMinimumNights": 2,
+    "weekendMinimumNights": 1,
     "rates": {
       "sol": {
         "weekday": 15800,
-        "weekend": 18500,
-        "holiday": 23800
+        "weekend": 18800
       },
       "zen": {
         "weekday": 13800,
-        "weekend": 16500,
-        "holiday": 21800
+        "weekend": 16800
       },
       "rustic": {
         "weekday": 14800,
-        "weekend": 18500,
-        "holiday": 22800
+        "weekend": 17800
       }
-    }
+    },
+    "dateRateFile": "data/date-rates.json"
   },
   "wifi": {
     "measuredOn": "2026-10-13",
@@ -139,7 +134,7 @@
       "food",
       "utensils and other BBQ gear"
     ],
-    "confirmedOn": "2026-10-12"
+    "confirmedOn": "2026-10-16"
   },
   "children": {
     "childrenWelcome": true,

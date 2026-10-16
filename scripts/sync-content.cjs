@@ -119,6 +119,10 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
+ // Replace the superseded publication window in hand-authored social/meta copy.
+ source=source.replaceAll('Oct–24 Dec 2026','16 Oct 2026–1 Jul 2027')
+  .replaceAll('nightly, Oct–24 Dec','nightly; dates vary')
+  .replaceAll('October–24 December 2026: from','16 October 2026–1 July 2027: from');
  if (/(?:cabins|faq)\/index\.html$/.test(file) || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
   const charges=require('./guest-charges.cjs').render(lang);
   if (source.includes('<!-- guest-charges:start -->')) source=marked(source,'guest-charges',charges);
