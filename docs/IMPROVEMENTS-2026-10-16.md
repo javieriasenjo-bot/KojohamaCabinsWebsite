@@ -4,15 +4,9 @@
 
 Improve the existing three-language booking journey: show illustrative stay totals, make cabin differences easier to compare, sequence real property photos, remove the invitation to bring sandy shoes indoors, and verify the link-in-bio navigation handoff. Booking-platform prices and availability remain authoritative. No new OTA inventory, prices, outreach or advertising is authorised by this release.
 
-## Pricing after 3 January 2027 — awaiting owner
+## Approved pricing through 1 July 2027
 
-The published rate schedule ends on 3 January 2027. Do not extend the October rates or holiday rates automatically. Before publishing the next period, obtain for each cabin:
-
-- Effective start/end dates and Sunday–Thursday versus Friday–Saturday nightly rates.
-- Any holiday or other date exceptions and minimum stays.
-- Confirmation of the cleaning charge and the charge for booked guests three through five, including whether their per-stay basis changes.
-
-Update `data/site-facts.json` and the localized date labels in `scripts/pricing.cjs` together; update examples and the pricing checks before building. Retain the current explicit message that later dates are outside this published schedule until then.
+The owner subsequently supplied the exact daily calendar through 1 July 2027. It is implemented and verified live; the earlier request for post-3-January rates is superseded. See APPROVED-RATE-SCHEDULE-2026-10-16.md for the approved calendar, minimum stays and per-stay fee overrides. Rates beyond 1 July 2027 remain unpublished. Booking-platform publication requires separate verification.
 
 ## Social-to-booking measurement
 
