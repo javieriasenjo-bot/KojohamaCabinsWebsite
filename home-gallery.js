@@ -14,6 +14,8 @@ function showGalleryPhoto() {
   window.KojohamaUI.setPhoto(lightboxImage, photoUrl, galleryCaptions[photoUrl] || `${gallery.alt} ${activeIndex + 1}`);
   lightboxCaption.textContent = `${activeIndex + 1} / ${gallery.images.length} · ${lightboxImage.alt}`;
   lightboxTitle.textContent = gallery.title;
+  const n = gallery.images.length;
+  window.KojohamaUI.preload([gallery.images[(activeIndex + 1) % n], gallery.images[(activeIndex - 1 + n) % n]]);
 }
 function openGallery(name, trigger) {
   lastGalleryTrigger = trigger || null;

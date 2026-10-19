@@ -56,4 +56,10 @@ function comparison(lang) {
 const copyFor = (lang, cabin) => cabin ? copy[lang].replaceAll('13,800', money(facts.pricing.rates[cabin].weekday)) : copy[lang];
 // The same approved wording, one sentence per bullet for easier reading on phones.
 const listFor = (lang, cabin) => copyFor(lang, cabin).split(lang === 'en' ? /(?<=\.)\s+/ : /(?<=。)/).map(s => s.trim()).filter(Boolean);
-module.exports = { copy, copyFor, listFor, table, comparison, stayExamples, stayTotal };
+// Short schema.org priceRange (Google ignores values of 100+ characters).
+const priceRange = () => {
+  const nightly = schedule.days.flatMap(day => Object.values(day.rates));
+  const yen = n => '¥' + n.toLocaleString('en-US');
+  return `${yen(Math.min(...nightly))}–${yen(Math.max(...nightly))}`;
+};
+module.exports = { copy, copyFor, listFor, table, comparison, stayExamples, stayTotal, priceRange };

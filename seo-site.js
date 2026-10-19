@@ -51,7 +51,19 @@
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last?.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first?.focus(); }
   });
-  window.KojohamaUI = { openModal, closeModal, setPhoto };
+  // Horizontal swipe for photo viewers (mobile-first). Ignores mostly-vertical gestures.
+  const addSwipe = (el, onPrev, onNext) => {
+    let x = 0, y = 0;
+    el.addEventListener('touchstart', e => { if (e.touches.length === 1) { x = e.touches[0].clientX; y = e.touches[0].clientY; } }, { passive: true });
+    el.addEventListener('touchend', e => {
+      if (!x || !e.changedTouches.length) return;
+      const dx = e.changedTouches[0].clientX - x, dy = e.changedTouches[0].clientY - y; x = 0;
+      if (Math.abs(dx) >= 45 && Math.abs(dx) > Math.abs(dy) * 1.2) (dx < 0 ? onNext : onPrev)();
+    }, { passive: true });
+  };
+  // Warm the browser cache so the next swipe shows instantly.
+  const preload = urls => urls.forEach(url => { if (url) new Image().src = url; });
+  window.KojohamaUI = { openModal, closeModal, setPhoto, addSwipe, preload };
   const directoryQuery = document.getElementById('directory-query');
   if (directoryQuery) {
     const directory = document.getElementById('around-the-cabins');
@@ -247,6 +259,47 @@
     });
   });
 
+  // "Check your dates" on cabin pages: estimate from published rates, then hand off to Airbnb with dates filled in.
+  document.querySelectorAll('.date-check').forEach(box => {
+    const data = JSON.parse(box.querySelector('.date-check-data').textContent), m = data.msg;
+    const checkin = box.querySelector('[name=checkin]'), checkout = box.querySelector('[name=checkout]'), guests = box.querySelector('[name=guests]');
+    const result = box.querySelector('.date-check-result'), link = box.querySelector('a.airbnb'), base = link.href;
+    const DAY = 86400000, time = iso => Date.parse(iso + 'T00:00:00Z'), iso = t => new Date(t).toISOString().slice(0, 10);
+    const yen = n => n.toLocaleString('en-US');
+    const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key] ?? '');
+    const lang = document.documentElement.lang;
+    const shortDate = value => new Intl.DateTimeFormat(lang, { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(time(value)));
+    const count = (n, words) => lang.startsWith('en') ? `${n} ${words[n === 1 ? 0 : 1]}` : `${n}${words[0]}`;
+    const now = new Date(), today = iso(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+    if (today > checkin.min) checkin.min = today;
+    const update = event => {
+      if (checkin.value && (!checkout.value || checkout.value <= checkin.value || event?.target === checkin)) {
+        const index = Math.round((time(checkin.value) - time(data.start)) / DAY);
+        const nights = index >= 0 && index < data.min.length ? data.min[index] : 1;
+        if (!checkout.value || checkout.value <= checkin.value) checkout.value = iso(time(checkin.value) + nights * DAY);
+      }
+      if (checkin.value) checkout.min = iso(time(checkin.value) + DAY);
+      const url = new URL(base);
+      if (checkin.value) url.searchParams.set('check_in', checkin.value);
+      if (checkout.value) url.searchParams.set('check_out', checkout.value);
+      url.searchParams.set('adults', guests.value);
+      link.href = url.href;
+      if (!checkin.value || !checkout.value) { result.textContent = m.pick; return; }
+      const nights = Math.round((time(checkout.value) - time(checkin.value)) / DAY);
+      if (nights < 1) { result.textContent = m.order; return; }
+      const first = Math.round((time(checkin.value) - time(data.start)) / DAY);
+      if (first < 0 || first + nights > data.rates.length) { result.textContent = m.outside; return; }
+      if (nights < data.min[first]) { result.textContent = fill(m.min, { date: shortDate(checkin.value), n: data.min[first] }); return; }
+      const nightly = data.rates.slice(first, first + nights).reduce((sum, rate) => sum + rate, 0);
+      const extra = Math.max(0, guests.value - data.baseGuests) * data.extra;
+      result.innerHTML = fill(m.result, { nights: count(nights, m.night), guests: count(+guests.value, m.guest), total: yen(nightly + data.cleaning + extra) })
+        + '<br><small>' + fill(m.breakdown, { nightly: yen(nightly), cleaning: yen(data.cleaning), extra: extra ? fill(m.extra, { extra: yen(extra) }) : '' }) + '</small>';
+    };
+    [checkin, checkout, guests].forEach(input => input.addEventListener('change', update));
+    update();
+    box.hidden = false;
+  });
+
   // Floating reserve menu (all pages that include it)
   const qrOpen = document.getElementById('quick-reserve-open');
   const qrMenu = document.getElementById('quick-reserve-menu');
@@ -274,7 +327,8 @@
     document.body.appendChild(box);
     const big = box.querySelector('img'), cap = box.querySelector('figcaption');
     let idx = 0, trigger = null;
-    const show = i => { idx = (i + gal.length) % gal.length; setPhoto(big, gal[idx].dataset.fullSrc || gal[idx].src, gal[idx].alt); cap.textContent = gal[idx].alt; };
+    const full = i => { const img = gal[(i + gal.length) % gal.length]; return img.dataset.fullSrc || img.src; };
+    const show = i => { idx = (i + gal.length) % gal.length; setPhoto(big, full(idx), gal[idx].alt); cap.textContent = gal[idx].alt; preload([full(idx + 1), full(idx - 1)]); };
     const open = i => { trigger = document.activeElement; show(i); openModal(box, trigger); };
     const close = () => closeModal(box);
     gal.forEach((img, i) => {
@@ -282,6 +336,7 @@
       img.addEventListener('click', () => open(i));
       img.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); } });
     });
+    addSwipe(box, () => show(idx - 1), () => show(idx + 1));
     box.querySelector('.pv-close').addEventListener('click', close);
     box.querySelector('.pv-prev').addEventListener('click', () => show(idx - 1));
     box.querySelector('.pv-next').addEventListener('click', () => show(idx + 1));

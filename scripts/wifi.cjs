@@ -11,6 +11,6 @@ function render(lang, cabin) {
   const v = bands[band];
   return `<tr><th scope="row">${id[0].toUpperCase()+id.slice(1)}</th><td>${band} GHz</td><td>${v.downloadMbps.toFixed(1)}</td><td>${v.uploadMbps.toFixed(1)}</td><td>${v.latencyMs}</td></tr>`;
  })).join('');
- return `<section class="wrap section-block" id="wifi-measurements"><h2>${t[0]}</h2><div style="overflow-x:auto"><table><caption>${t[0]}</caption><thead><tr>${t.slice(1,6).map(x=>`<th scope="col">${x}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div><p class="note">${t[6]}</p></section>`;
+ return `<section class="wrap section-block" id="wifi-measurements"><h2>${t[0]}</h2><div class="comparison-scroll wifi-table" tabindex="0" role="region" aria-label="${t[0]}"><table><caption class="sr-only">${t[0]}</caption><thead><tr>${t.slice(1,6).map(x=>`<th scope="col">${x}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div><p class="note">${t[6]}</p></section>`;
 }
 module.exports = { render };

@@ -24,6 +24,13 @@
   window.KojohamaAnalytics = { push, queueNavigationEvent };
   if (!['kojohamacabins.jp', 'www.kojohamacabins.jp'].includes(location.hostname)) return;
   window.dataLayer = window.dataLayer || [];
+  // Google Consent Mode v2, set before GTM loads. Visitors in the EEA, UK and Switzerland
+  // default to "denied" (no analytics cookies; Google sends cookieless pings only).
+  // Everyone else keeps the current behaviour. Google applies the region list itself.
+  function gtag() { window.dataLayer.push(arguments); }
+  const consent = value => ({ ad_storage: value, analytics_storage: value, ad_user_data: value, ad_personalization: value });
+  gtag('consent', 'default', consent('granted'));
+  gtag('consent', 'default', { ...consent('denied'), region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'] });
   window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
   // Dispatch after arriving, where page unload cannot interrupt the request.
   // Remove before dispatch so refreshes cannot send the same click twice.
@@ -44,6 +51,10 @@
   script.async = true;
   script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5W8ZJPTD';
   document.head.appendChild(script);
+  // Metricool has no consent mode: skip it for visitors whose device clock is set to a European time zone.
+  let timeZone = '';
+  try { timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (_) { /* Older browsers */ }
+  if (/^Europe\/|^Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe)$/.test(timeZone)) return;
   const metricool = document.createElement('script');
   metricool.async = true;
   metricool.src = 'https://tracker.metricool.com/resources/be.js';

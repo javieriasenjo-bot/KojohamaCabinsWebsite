@@ -130,6 +130,12 @@ for (const absolute of walk(root)) {
   if (source.includes('<!-- guest-charges:start -->')) source=marked(source,'guest-charges',charges);
   else source=source.replace('</main>',`<!-- guest-charges:start -->${charges}<!-- guest-charges:end --></main>`);
  }
+ const dateCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
+ if (dateCabin) {
+  const dateCheck = require('./date-check.cjs').render(lang, dateCabin);
+  if (source.includes('<!-- date-check:start -->')) source=marked(source,'date-check',dateCheck);
+  else source=source.replace('<section class="gallery-section wrap">',`<!-- date-check:start -->${dateCheck}<!-- date-check:end --><section class="gallery-section wrap">`);
+ }
  const wifiCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
  if (wifiCabin || /(?:cabins|work-remotely|faq)\/index\.html$/.test(file)) {
   const wifi = require('./wifi.cjs').render(lang, wifiCabin);
@@ -207,7 +213,7 @@ for (const absolute of walk(root)) {
   const schema=JSON.parse(text);
   const update=node=>{
    if (!node || typeof node !== 'object') return;
-   if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]);
+   if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricing.priceRange();
    if (node['@type']==='FAQPage' && file.endsWith('faq/index.html') && lang==='zh-CN') {
     for (const kind of ['airport','casa']) if (!node.mainEntity.some(q=>q.name===trip[`${kind}Question`])) node.mainEntity.push({'@type':'Question',name:trip[`${kind}Question`],acceptedAnswer:{'@type':'Answer',text:trip[`${kind}Answer`]}});
    }

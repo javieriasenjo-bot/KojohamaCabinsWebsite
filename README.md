@@ -33,3 +33,5 @@ Search/indexing follow-up: see docs/SEARCH-AND-MEASUREMENT-2026-10-07.md. npm ru
 - Social-preview tags (`og:site_name`, `og:locale`, image size) are regenerated on every page between `og-extra` markers.
 - Cabin pages: the key-facts strip, opening photo (`leadImage`), check-in/checkout times and section order come from `data/site-facts.json` via `scripts/cabin-page.cjs`.
 - Cloudflare Workers Builds ignores custom builds in `wrangler.jsonc`. To stop a failing release from going live, set **Settings → Build → Build command** to `npm run check` in the Cloudflare dashboard.
+- Shared CSS (header, navigation, buttons, footer) is edited once, in the section at the top of `seo-site.css` above the "end of shared rules" marker. Homepage-only CSS is edited in `styles/home.src.css`. The build (`scripts/styles.cjs`) compiles both into `home.css`, so never edit `home.css` directly.
+- Cabin pages carry a "Check your dates" estimator generated from `data/date-rates.json` by `scripts/date-check.cjs`. `npm run check` verifies that its embedded rates match the schedule. See docs/UPDATE-2026-10-19.md.

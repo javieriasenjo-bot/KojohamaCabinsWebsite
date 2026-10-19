@@ -52,4 +52,18 @@ for(const prefix of ['', 'ja/', 'zh-cn/']){
  assert(home.includes('home-stay-example')&&home.includes('20,800'));
  assert(!/Oct–24 Dec|October–24 December|1月4日以降はこの料金表/.test(html+home));
 }
-console.log('PASS: 259 dated nights in three languages, special arrival minimums, mixed-rate totals and once-per-stay fees.');
+// "Check your dates" blocks carry the same nightly schedule and fees as the rate tables.
+for (const prefix of ['', 'ja/', 'zh-cn/']) for (const cabin of facts.cabins) {
+ const page = fs.readFileSync(path.join(root, prefix, 'cabins', `ocean-stay-${cabin.id}`, 'index.html'), 'utf8');
+ const json = page.match(/<script type="application\/json" class="date-check-data">([\s\S]*?)<\/script>/);
+ assert(json, `${prefix}${cabin.id}: date checker missing`);
+ const data = JSON.parse(json[1]);
+ assert.equal(data.start, schedule.days[0].date);
+ assert.deepEqual(data.rates, schedule.days.map(d => d.rates[cabin.id]), `${prefix}${cabin.id}: stale date-checker rates`);
+ assert.deepEqual(data.min, schedule.days.map(d => d.minimumNights[cabin.id]));
+ assert.equal(data.cleaning, schedule.cleaningJPY); assert.equal(data.extra, schedule.extraGuestJPY);
+ const first = data.rates.slice(0, 2).reduce((a, b) => a + b, 0) + data.cleaning + 3 * data.extra;
+ assert.equal(first, stayTotal(cabin.id, schedule.days.slice(0, 2).map(d => d.date), 5), 'Checker arithmetic matches stayTotal');
+ assert(page.includes(`href="${cabin.airbnb}" rel="noopener" target="_blank">`) && page.includes('data-link-location="date_check"'));
+}
+console.log('PASS: 259 dated nights in three languages, special arrival minimums, mixed-rate totals, once-per-stay fees and date-checker data.');
