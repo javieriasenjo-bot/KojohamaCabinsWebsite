@@ -1,12 +1,6 @@
 {
   "images": [
     {
-      "source": "/images/backgrounds/upopoy-cc0.webp",
-      "url": "/media/upopoy-cc0.88fc870b34c4.webp",
-      "sha256": "88fc870b34c4b33922659a045b1d94c743c91af5239a47accf98b9daf99383a0",
-      "bytes": 249280
-    },
-    {
       "source": "/images/brand/favicon-32.png",
       "url": "/media/favicon-32.c2f2ea8fbabe.png",
       "sha256": "c2f2ea8fbabee336f136209233a72ce8c9caabe7cf5851fe4c5fb57d85cc1ec0",

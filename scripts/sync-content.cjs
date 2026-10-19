@@ -122,9 +122,11 @@ for (const absolute of walk(root)) {
  // Replace the superseded publication window in hand-authored social/meta copy.
  source=source.replaceAll('Oct–24 Dec 2026','16 Oct 2026–1 Jul 2027')
   .replaceAll('nightly, Oct–24 Dec','nightly; dates vary')
-  .replaceAll('October–24 December 2026: from','16 October 2026–1 July 2027: from');
+  .replaceAll('October–24 December 2026: from','16 October 2026–1 July 2027: from')
+  .replaceAll('2026年10月〜12月24日は','2026年10月16日〜2027年7月1日：')
+  .replaceAll('2026年10月至12月24日','2026年10月16日至2027年7月1日：');
  if (/(?:cabins|faq)\/index\.html$/.test(file) || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
-  const charges=require('./guest-charges.cjs').render(lang);
+  const charges=require('./guest-charges.cjs').render(lang,{collapsed:/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)});
   if (source.includes('<!-- guest-charges:start -->')) source=marked(source,'guest-charges',charges);
   else source=source.replace('</main>',`<!-- guest-charges:start -->${charges}<!-- guest-charges:end --></main>`);
  }
@@ -134,6 +136,7 @@ for (const absolute of walk(root)) {
   if (source.includes('<!-- wifi-measurements:start -->')) source=marked(source,'wifi-measurements',wifi);
   else source=source.replace('</main>',`<!-- wifi-measurements:start -->${wifi}<!-- wifi-measurements:end --></main>`);
  }
+ if (wifiCabin) source=require('./cabin-page.cjs').update(source, lang, wifiCabin);
  // Production analytics stays off local and staging previews.
  source=source.replace(/(<script\b[^>]*>)([\s\S]*?)(<\/script>)/g,(whole,start,code,end)=>{
   if (!code.includes("})(window,document,'script','dataLayer'") || code.includes('location.hostname')) return whole;
@@ -199,7 +202,7 @@ for (const absolute of walk(root)) {
   if(source.includes('<!-- seasonal-rates:start -->')) source=marked(source,'seasonal-rates',pricing.table(lang));
   else source=source.replace('<!-- comparison:start -->',rates+'<!-- comparison:start -->');
  }
- if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<p class="pricing-note wrap">${pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1])} <a href="/${locales[lang].prefix}cabins/#seasonal-rates">${lang==='en'?'View dated rates':lang==='ja'?'日付別料金を見る':'查看日期房价'}</a></p>`);
+ if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<div class="pricing-note wrap"><ul>${pricing.listFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]).map(item=>`<li>${item}</li>`).join('')}</ul><a href="/${locales[lang].prefix}cabins/#seasonal-rates">${lang==='en'?'View dated rates':lang==='ja'?'日付別料金を見る':'查看日期房价'}</a></div>`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   const schema=JSON.parse(text);
   const update=node=>{
@@ -234,5 +237,6 @@ for (const absolute of walk(root)) {
 }
 require('./arrival-coast.cjs').sync();
 assets.build();
+layouts.stampAssets();
 require('./sitemaps.cjs').sync();
 console.log('Synchronized localized directory, photo captions and cabin comparison sections.');

@@ -47,6 +47,17 @@ function build() {
   }
   for(const [file,source]of files)fs.writeFileSync(file,source);
   fs.writeFileSync(manifestFile,JSON.stringify({images},null,2)+'\n');
+  writeRedirects(images);
   console.log(`Prepared ${images.length} image URLs with content hashes.`);
+}
+// The /images originals are not published (see .assetsignore). Old links, cached share
+// previews and image search results follow a temporary redirect to the current hashed copy.
+function writeRedirects(images){
+  const file=path.join(root,'_redirects');
+  const text=fs.readFileSync(file,'utf8'),eol=text.includes('\r\n')?'\r\n':'\n';
+  const block=['# Original image paths:start',...images.map(image=>`${image.source} ${image.url} 302`),'# Original image paths:end'].join(eol);
+  const pattern=/# Original image paths:start[\s\S]*?# Original image paths:end/;
+  const next=pattern.test(text)?text.replace(pattern,block):text.replace('# Canonical page redirects:end','# Canonical page redirects:end'+eol+eol+block);
+  if(next!==text)fs.writeFileSync(file,next);
 }
 module.exports={restore,build};

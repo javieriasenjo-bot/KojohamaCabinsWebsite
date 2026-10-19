@@ -16,3 +16,7 @@ scripts
 docs
 package.json
 package-lock.json
+
+# Original photographs: pages use the content-hashed copies in /media, and _redirects
+# forwards old /images links. Also keeps withdrawn photographs off the public site.
+images

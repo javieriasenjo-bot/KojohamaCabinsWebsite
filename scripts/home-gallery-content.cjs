@@ -17,14 +17,14 @@ function update(source, lang) {
   source=source.replace(/<h3>[^<]*13,800[^<]*<\/h3>/,`<h3>${heading}</h3>`);
   source=source.replace(/<span class="home-stay-example">[\s\S]*?<\/span>/g,'');
   source=source.replace(/(<h3>[^<]*13,800[^<]*<\/h3><p>)([\s\S]*?)(<\/p>)/,(_,start,text,end)=>`${start}${text.trim()}<span class="home-stay-example"> ${example}</span>${end}`);
-  source = source.replace(/(<p\b[^>]*data-i18n="sol_p2"[^>]*>)[\s\S]*?(<\/p>)/, (_, start, end) => start + solCopy[lang] + end);
+  source = source.replace(/(<p\b[^>]*data-(?:i18n|copy)="sol_p2"[^>]*>)[\s\S]*?(<\/p>)/, (_, start, end) => start + solCopy[lang] + end);
   for (const cabin of ['sol', 'zen', 'rustic']) {
     const preview = galleries[lang][cabin].images.slice(0,4).map(src => {
       const meta = responsive[src];
       if (!meta || !captions[lang][src]) throw new Error(`Missing gallery image metadata: ${lang} ${src}`);
       return `<div class="g-item"><img src="${src}" alt="${escape(captions[lang][src])}" width="${meta.width}" height="${meta.height}" srcset="${meta.srcset}" sizes="(max-width:700px) calc(100vw - 40px), 480px" data-full-src="${src}" loading="lazy" decoding="async"></div>`;
     }).join('');
-    const pattern = new RegExp(`(<p\\b[^>]*data-i18n="${cabin}_p2"[^>]*>[\\s\\S]*?<\\/p>)<div class="gallery">[\\s\\S]*?<\\/div>(?=<button class="gallery-more" data-gallery-open="${cabin}")`);
+    const pattern = new RegExp(`(<p\\b[^>]*data-(?:i18n|copy)="${cabin}_p2"[^>]*>[\\s\\S]*?<\\/p>)<div class="gallery">[\\s\\S]*?<\\/div>(?=<button class="gallery-more" data-gallery-open="${cabin}")`);
     if (!pattern.test(source)) throw new Error(`Missing homepage gallery: ${lang} ${cabin}`);
     source = source.replace(pattern, (_, paragraph) => `${paragraph}<div class="gallery">${preview}</div>`);
   }

@@ -39,6 +39,19 @@ for(const [file,text]of source){
    if(local){references++;check(fs.existsSync(local.target),`${name}: missing responsive image ${url}`)}
   }
  }
+ // Share previews and structured data point at absolute URLs; those must exist too.
+ for(const tag of text.matchAll(/<meta\b[^>]*property="og:(?:image|url)"[^>]*>/g)){
+  const url=tag[0].match(/content="([^"]+)"/)?.[1],local=url&&localTarget(url,file);
+  if(local){references++;check(fs.existsSync(local.target),`${name}: social preview points to missing ${url}`)}
+ }
+ for(const block of text.matchAll(/<script\b[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)){
+  for(const url of block[1].match(/https:\/\/kojohamacabins\.jp\/[^"#?\s]*/g)||[]){
+   const local=localTarget(url,file);
+   if(local){references++;check(fs.existsSync(local.target),`${name}: structured data points to missing ${url}`)}
+  }
+ }
+ // /images originals are not published (.assetsignore); pages must use the hashed /media copies.
+ check(!/(?:src|href|srcset|content|data-full-src)="[^"]*\/images\//.test(text)&&!text.includes('kojohamacabins.jp/images/'),`${name}: links to unpublished /images/ originals`);
  for(const match of text.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){
   if(match[1].includes('application/ld+json')){
    try{JSON.parse(match[2]);schemas++}catch(e){errors.push(`${name}: invalid structured data: ${e.message}`)}
@@ -77,6 +90,9 @@ for(const image of imageManifest.images){
  if(fs.existsSync(file))check(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')===image.sha256,`Generated image content changed: ${image.url}`);
  check(image.url.includes('.'+image.sha256.slice(0,12)+'.'),`Image filename lacks its content hash: ${image.url}`);
 }
+const redirectRules=fs.readFileSync(path.join(root,'_redirects'),'utf8');
+for(const image of imageManifest.images)check(redirectRules.includes(`${image.source} ${image.url} 302`),`Missing redirect for unpublished original ${image.source}`);
+for(const file of ['home.css','seo-site.css','go.css','guide-site.css','seo-site.js','home-gallery.js','analytics.js'])check(!fs.readFileSync(path.join(root,file),'utf8').includes('/images/'),`${file}: links to unpublished /images/ originals`);
 check(directory.venues.length===65,'Directory must retain all 65 places');
 const photoSources=JSON.parse(fs.readFileSync(path.join(root,'data/venue-photo-sources.json'),'utf8'));
 check(photoSources.venues.length===65,'Photo source register must cover all 65 places');
@@ -136,7 +152,7 @@ for(const sitemap of ['sitemap.xml','sitemap-zh-cn.xml']){
  }
 }
 const ignored=fs.readFileSync(path.join(root,'.assetsignore'),'utf8');
-for(const item of ['wrangler.jsonc','.git','data','scripts','docs','.github','package.json','package-lock.json'])check(ignored.split(/\r?\n/).includes(item),`Private deployment file/folder not excluded: ${item}`);
+for(const item of ['wrangler.jsonc','.git','data','scripts','docs','.github','package.json','package-lock.json','images'])check(ignored.split(/\r?\n/).includes(item),`Private deployment file/folder not excluded: ${item}`);
 for(const [file,text]of source){
  if(path.basename(file)==='googlefa3fab5b6b918158.html')continue;
  check(text.includes('/analytics.js?v='),`${file}: missing shared analytics loader`);

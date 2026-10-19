@@ -70,7 +70,7 @@ let browser;
   await visit('/'+prefix+'cabins/ocean-stay-sol/');
   const views=await page.evaluate(()=>window.dataLayer.filter(item=>item.event==='cabin_view'));
   assert.equal(views.length,1);assert.equal(views[0].cabin_name,'Ocean Stay Sol');assert.equal(views[0].page_language,prefix==='ja/'?'ja':prefix==='zh-cn/'?'zh-CN':'en');
-  const thumb=page.locator('.gallery-section img').first();await thumb.scrollIntoViewIfNeeded();await thumb.evaluate(image=>image.decode());
+  const thumb=page.locator('.gallery-section img').first();await thumb.scrollIntoViewIfNeeded();await thumb.evaluate(image=>new Promise((resolve,reject)=>{image.loading='eager';const ready=()=>image.decode().then(resolve,reject);if(image.complete&&image.naturalWidth)ready();else{image.addEventListener('load',ready,{once:true});image.addEventListener('error',()=>reject(new Error('Gallery thumbnail failed to load')),{once:true})}}));
   const full=await thumb.getAttribute('data-full-src');assert(full);
   const smallWidth=await thumb.evaluate(image=>image.naturalWidth);await thumb.click();
   const viewer=page.locator('.pv img');await viewer.evaluate(image=>image.decode());assert.equal(await viewer.getAttribute('src'),full);

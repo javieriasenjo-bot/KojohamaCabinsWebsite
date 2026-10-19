@@ -54,4 +54,6 @@ function comparison(lang) {
  return `<section class="wrap cabin-comparison"><h2>${l[0]}</h2><p class="comparison-hint">${hint}</p><div class="comparison-scroll" tabindex="0" role="region" aria-label="${l[0]}"><table class="cabin-comparison-table"><caption class="sr-only">${l[0]}</caption><thead><tr><th scope="col">${l[1]}</th>${facts.cabins.map(c=>`<th scope="col"><a href="/${prefix}cabins/ocean-stay-${c.id}/">${c.name}</a></th>`).join('')}</tr></thead><tbody>${rows.map(([label,value])=>`<tr><th scope="row">${label}</th>${facts.cabins.map((c,i)=>`<td>${value(c,i)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="note">${l[14]}</p></section>`;
 }
 const copyFor = (lang, cabin) => cabin ? copy[lang].replaceAll('13,800', money(facts.pricing.rates[cabin].weekday)) : copy[lang];
-module.exports = { copy, copyFor, table, comparison, stayExamples, stayTotal };
+// The same approved wording, one sentence per bullet for easier reading on phones.
+const listFor = (lang, cabin) => copyFor(lang, cabin).split(lang === 'en' ? /(?<=\.)\s+/ : /(?<=。)/).map(s => s.trim()).filter(Boolean);
+module.exports = { copy, copyFor, listFor, table, comparison, stayExamples, stayTotal };

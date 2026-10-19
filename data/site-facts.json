@@ -24,7 +24,10 @@
       "ctrip": "https://hotels.ctrip.com/hotels/136074478.html",
       "tatami": false,
       "kotatsu": false,
-      "capacityConfirmedOn": "2026-10-06"
+      "capacityConfirmedOn": "2026-10-06",
+      "checkIn": "15:00",
+      "leadImage": "/images/sol/sol-9.webp",
+      "checkOut": "10:00"
     },
     {
       "id": "zen",
@@ -35,7 +38,10 @@
       "ctrip": "https://hotels.ctrip.com/hotels/136074484.html",
       "tatami": true,
       "kotatsu": true,
-      "capacityConfirmedOn": "2026-10-06"
+      "capacityConfirmedOn": "2026-10-06",
+      "checkIn": "14:00",
+      "leadImage": "/images/zen/zen-11.webp",
+      "checkOut": "10:00"
     },
     {
       "id": "rustic",
@@ -46,7 +52,10 @@
       "ctrip": "https://hotels.ctrip.com/hotels/136074515.html",
       "tatami": false,
       "kotatsu": false,
-      "capacityConfirmedOn": "2026-10-06"
+      "capacityConfirmedOn": "2026-10-06",
+      "checkIn": "15:00",
+      "leadImage": "/images/rustic/rustic-2.webp",
+      "checkOut": "10:00"
     }
   ],
   "policyConfirmation": "owner confirmed 2026-10-06",
