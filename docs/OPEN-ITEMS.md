@@ -89,3 +89,7 @@ Working CO alarms in all three cabins and fresh separate-account LINE test confi
 ## Production verification — 16 October 2026
 
 Owner reported production deployment. Independent comparison found all 72 website HTML files identical to source commit 5440653 after line-ending normalization; analytics.js and seo-site.js also match. Guest-guide release 13b076552622d83c matches all 98 files with no differences. Guest-guide 38 tests, type checks and 18-venue drift check pass; website site/navigation/analytics/pricing checks pass. These checks do not establish booking-platform rate publication or current clinic reception hours.
+
+## Garbage sorting — 19 October 2026
+
+Owner-supplied garbage information implemented in the guest-guide source at /guide/garbage for all three cabins and all four languages. The embedded chatbot consumes the same guide data. 39 tests, type checks, production build and 12 mobile cabin/language combinations passed. Release 061154a2e24f7a4d awaits owner commit/deployment; no database migration needed. Source ambiguities use conservative separate handling for aluminium foil and host contact for medical sharps. See guest-guide RELEASE_NOTES.md.
