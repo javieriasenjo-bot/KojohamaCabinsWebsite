@@ -71,4 +71,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--sol);outline-offset
 .social .chip{flex:1 1 30%}
 footer{margin-top:34px;text-align:center;color:var(--muted);font-size:.74rem;line-height:1.7}
 footer a{text-decoration:underline}
-
+/* analytics-choice:start */
+.analytics-choice[hidden]{display:none}
+.analytics-choice{position:fixed;z-index:1000;left:16px;right:16px;bottom:80px;margin:auto;max-width:650px;padding:20px;background:#fffdf8;color:#183136;border:1px solid #7b908c;border-radius:10px;box-shadow:0 4px 25px #0003;max-height:70vh;overflow:auto}
+.analytics-choice h2{font-size:1.15rem;margin:0 0 8px}
+.analytics-choice p{font-size:.95rem;line-height:1.5;margin:0 0 12px}
+.analytics-choice>div{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.analytics-choice button,.analytics-choice a,.analytics-settings{font:inherit;min-height:44px;padding:10px 14px;border:1px solid #183136;border-radius:5px;background:#fffdf8;color:#183136;cursor:pointer}
+.analytics-choice a{text-decoration:underline}
+.analytics-settings{margin:8px;background:transparent;color:inherit;border-color:currentColor}
+.analytics-choice button:focus-visible,.analytics-settings:focus-visible{outline:3px solid #39776b;outline-offset:3px}
+/* analytics-choice:end */

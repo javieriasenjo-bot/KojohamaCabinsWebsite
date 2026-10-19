@@ -13,3 +13,10 @@ const out = banner + source.replace('/* @include-shared */\n', seo.slice(0, at))
 const file = path.join(root, 'home.css');
 if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== out) fs.writeFileSync(file, out);
 console.log('Built home.css from styles/home.src.css and the shared section of seo-site.css.');
+// The social landing page has its own stylesheet; share the consent UI there too.
+const consent=seo.match(/\/\* analytics-choice:start \*\/[\s\S]*?\/\* analytics-choice:end \*\//)?.[0];
+if(!consent)throw Error('Missing shared analytics-choice styles');
+const goFile=path.join(root,'go.css'),go=fs.readFileSync(goFile,'utf8');
+const pattern=/\/\* analytics-choice:start \*\/[\s\S]*?\/\* analytics-choice:end \*\//;
+const next=pattern.test(go)?go.replace(pattern,consent):go.trimEnd()+'\n'+consent+'\n';
+if(next!==go)fs.writeFileSync(goFile,next);

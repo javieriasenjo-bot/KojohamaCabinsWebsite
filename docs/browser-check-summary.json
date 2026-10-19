@@ -39,6 +39,6 @@
   ],
   "noJavaScript": true,
   "previewAnalyticsExcluded": true,
-  "productionGtmRequests": 1,
+  "productionGtmRequests": 3,
   "noRealExternalRequestsSent": true
 }

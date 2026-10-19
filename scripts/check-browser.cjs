@@ -109,7 +109,32 @@ let browser;
   }
   if(url.hostname==='www.googletagmanager.com')gtmRequests++;return route.abort();
  });
- const productionPage=await production.newPage();await productionPage.goto('https://kojohamacabins.jp/',{waitUntil:'networkidle'});assert.equal(gtmRequests,1,'Production should request one GTM loader');await production.close();
+ const productionPage=await production.newPage();
+ await productionPage.setViewportSize({width:320,height:844});
+ for(const prefix of ['', 'ja/', 'zh-cn/']){
+  await productionPage.goto('https://kojohamacabins.jp/'+prefix,{waitUntil:'networkidle'});
+  await productionPage.evaluate(()=>localStorage.clear());await productionPage.reload({waitUntil:'networkidle'});
+  const before=gtmRequests;
+  assert(await productionPage.locator('.analytics-choice').isVisible());
+  assert(!await productionPage.evaluate(()=>document.documentElement.scrollWidth>innerWidth),'Consent UI must fit narrow phones');
+  await productionPage.locator('[data-choice="no"]').click();
+  assert.equal(gtmRequests,before,'Declining must not load GTM');
+  await productionPage.reload({waitUntil:'networkidle'});
+  assert(await productionPage.locator('.analytics-choice').isHidden(),'Remember declined preference');
+  await productionPage.locator('.analytics-settings').click();
+  const request=productionPage.waitForRequest(url=>url.url().includes('googletagmanager.com/gtm.js'));
+  await productionPage.locator('[data-choice="yes"]').click();await request;
+  assert.equal(gtmRequests,before+1,'Accept loads one GTM');
+  await productionPage.locator('.analytics-settings').click();
+  await Promise.all([productionPage.waitForNavigation({waitUntil:'networkidle'}),productionPage.locator('[data-choice="no"]').click()]);
+  assert.equal(gtmRequests,before+1,'Withdrawal reload must not request GTM');
+  assert(await productionPage.locator('.analytics-choice').isHidden());
+ }
+ // Consent controls must also have their shared styling on the separate /go/ page.
+ await productionPage.goto('https://kojohamacabins.jp/go/',{waitUntil:'networkidle'});
+ await productionPage.locator('.analytics-settings').click();
+ assert.equal(await productionPage.locator('.analytics-choice').evaluate(el=>getComputedStyle(el).position),'fixed');
+ await production.close();
  assert.deepEqual(errors,[],'Browser errors');
  const report={results,noJavaScript:true,previewAnalyticsExcluded:true,productionGtmRequests:gtmRequests,noRealExternalRequestsSent:true};
  fs.writeFileSync(path.join(root,'docs/browser-check-summary.json'),JSON.stringify(report,null,2)+'\n');

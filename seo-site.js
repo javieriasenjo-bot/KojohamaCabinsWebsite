@@ -270,26 +270,43 @@
     const lang = document.documentElement.lang;
     const shortDate = value => new Intl.DateTimeFormat(lang, { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(time(value)));
     const count = (n, words) => lang.startsWith('en') ? `${n} ${words[n === 1 ? 0 : 1]}` : `${n}${words[0]}`;
-    const now = new Date(), today = iso(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+    // Property arrival dates use Japan time, independent of the guest's time zone.
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
     if (today > checkin.min) checkin.min = today;
-    const update = event => {
-      if (checkin.value && (!checkout.value || checkout.value <= checkin.value || event?.target === checkin)) {
+    const setLink = enabled => {
+      link.setAttribute('aria-disabled', String(!enabled));
+      if (!enabled) { link.removeAttribute('href'); link.setAttribute('tabindex', '-1'); }
+      else link.removeAttribute('tabindex');
+    };
+    // Invalid handoffs must not emit booking clicks either.
+    link.addEventListener('click', event => {
+      if (link.getAttribute('aria-disabled') === 'true') { event.preventDefault(); event.stopImmediatePropagation(); }
+    }, true);
+    const update = () => {
+      setLink(false);
+      if (checkin.value && !checkout.value) {
         const index = Math.round((time(checkin.value) - time(data.start)) / DAY);
         const nights = index >= 0 && index < data.min.length ? data.min[index] : 1;
-        if (!checkout.value || checkout.value <= checkin.value) checkout.value = iso(time(checkin.value) + nights * DAY);
+        checkout.value = iso(time(checkin.value) + nights * DAY);
       }
       if (checkin.value) checkout.min = iso(time(checkin.value) + DAY);
-      const url = new URL(base);
-      if (checkin.value) url.searchParams.set('check_in', checkin.value);
-      if (checkout.value) url.searchParams.set('check_out', checkout.value);
-      url.searchParams.set('adults', guests.value);
-      link.href = url.href;
       if (!checkin.value || !checkout.value) { result.textContent = m.pick; return; }
+      if (checkin.value < today) { result.textContent = m.past; return; }
       const nights = Math.round((time(checkout.value) - time(checkin.value)) / DAY);
-      if (nights < 1) { result.textContent = m.order; return; }
+      if (!Number.isFinite(nights) || nights < 1) { result.textContent = m.order; return; }
+      const guestCount = Number(guests.value);
+      if (!Number.isInteger(guestCount) || guestCount < 1 || guestCount > guests.options.length) { result.textContent = m.pick; return; }
       const first = Math.round((time(checkin.value) - time(data.start)) / DAY);
+      if (first >= 0 && first < data.min.length && nights < data.min[first]) {
+        result.textContent = fill(m.min, { date: shortDate(checkin.value), n: data.min[first] }); return;
+      }
+      const url = new URL(base);
+      url.searchParams.set('check_in', checkin.value);
+      url.searchParams.set('check_out', checkout.value);
+      url.searchParams.set('adults', guestCount);
+      link.href = url.href;
+      setLink(true);
       if (first < 0 || first + nights > data.rates.length) { result.textContent = m.outside; return; }
-      if (nights < data.min[first]) { result.textContent = fill(m.min, { date: shortDate(checkin.value), n: data.min[first] }); return; }
       const nightly = data.rates.slice(first, first + nights).reduce((sum, rate) => sum + rate, 0);
       const extra = Math.max(0, guests.value - data.baseGuests) * data.extra;
       result.innerHTML = fill(m.result, { nights: count(nights, m.night), guests: count(+guests.value, m.guest), total: yen(nightly + data.cleaning + extra) })

@@ -1,6 +1,6 @@
 # Ocean Stay Kojohama — open items
 
-Last reconciled: 16 October 2026, Japan time. Owner: Javier. Working agent: Codex.
+Last reconciled: 20 October 2026, Japan time. Owner: Javier. Working agent: Codex.
 
 This is the canonical tracker for the main website, guest guide, listings, social channels and tourism follow-ups. Historical reviews remain evidence, not current to-do lists. Closed items stay closed unless new evidence changes their status. Update these rows when the owner answers; do not create another competing tracker.
 
@@ -25,6 +25,8 @@ This is the canonical tracker for the main website, guest guide, listings, socia
 | O18 | Guest-charge rollout | Source and Airbnb complete; platform publication pending | Full eight-clause policy in all website/app languages and Airbnb four-language descriptions; Additional rules updated. Booking.com multilingual request received, awaiting editorial publication. Trip rejected monetary content in descriptions; owner chose to send support request personally, draft at TRIP-POLICY-SUPPORT-REQUEST-2026-10-14.txt. Pet/service-animal settings updated on all three Trip properties. No support outreach sent. Website and guest-guide policy deployment verified live on 14 October. See PENALTY-UPDATE-2026-10-14.md. |
 | O19 | Website conversion improvements | Deployment verified; closed | Three-language stay-total examples, improved comparison and real-photo gallery sequencing; sand wording corrected. Build, site and mobile-browser checks pass. All 72 production HTML pages match committed source 5440653 on 16 October. See IMPROVEMENTS-2026-10-16.md. |
 | O20 | Rates through 1 July 2027 | Website/app deployment verified; OTA publication remains separate | Exact 259-night workbook calendar applied to website; ordinary weekends permit one night, special arrival minimums retained. Owner explicitly overrides workbook: extra guests ¥2,500 each per stay and BBQ ¥3,500 per stay. Guest-guide rules aligned. Airbnb/Booking rate publication is not verified by this source release. Production parity verified on 16 October: 72 website HTML pages and all 98 guest-guide release files. See APPROVED-RATE-SCHEDULE-2026-10-16.md. |
+
+| O21 | 20 October review fixes | Source ready; commit/deploy and one dashboard step pending | Date estimator guard and interaction tests; explicit analytics opt-in with settings; cleaning/tax note beside price; unconfirmed cookware upgrade softened; privacy refreshed. In Cloudflare set Build command to npm run release:check (build then checks); this dashboard setting is not changed by committing code. See UPDATE-2026-10-20.md. |
 
 ## Closed or already resolved — do not re-ask
 

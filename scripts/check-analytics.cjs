@@ -1,70 +1,61 @@
-// Test loader isolation without sending requests to Google or Metricool.
-const assert = require('node:assert/strict');
-const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
-const source = fs.readFileSync(path.join(__dirname, '..', 'analytics.js'), 'utf8');
-const tokyo = { DateTimeFormat: () => ({ resolvedOptions: () => ({ timeZone: 'Asia/Tokyo' }) }) };
-for (const hostname of ['localhost', '127.0.0.1', 'preview.example', 'kojohamacabins.jp', 'www.kojohamacabins.jp']) {
-  const scripts = [], visits = [];
-  const window = { beTracker: { t: details => visits.push(details) } };
-  vm.runInNewContext(source, { window, Intl: tokyo, location: { hostname, pathname: '/' }, Date,
-    document: { documentElement: { lang: 'en' }, createElement: () => ({}), head: { appendChild: script => scripts.push(script) } } });
-  const production = ['kojohamacabins.jp', 'www.kojohamacabins.jp'].includes(hostname);
-  assert.equal(scripts.length, production ? 2 : 0, hostname);
-  if (production) {
-    const tracker = scripts.find(script => script.src === 'https://tracker.metricool.com/resources/be.js');
-    assert(tracker && tracker.async);
-    assert.equal(visits.length, 0, 'Do not initialise before script load');
-    tracker.onload();
-    assert.equal(visits.length, 1);
-    assert.equal(visits[0].hash, 'ffd44c179566f41dd21d51d09878d58d');
-    delete window.beTracker;
-    assert.doesNotThrow(() => tracker.onload(), 'Missing tracker must not break the page');
-  }
+// Exercise consent and navigation without any real network requests.
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const source=fs.readFileSync(path.join(__dirname,'..','analytics.js'),'utf8');
+const key='kojohama-analytics-choice-v1';
+function setup({hostname='kojohamacabins.jp',allowed=null,blocked=false,expired=false}={}){
+ const scripts=[],visits=[],values=new Map(),session=new Map(),nodes=new Map();let reloads=0,now=1000;
+ if(allowed!==null)values.set(key,JSON.stringify({version:1,allowed,saved:expired?-200*86400000:now}));
+ const store=map=>({getItem:k=>{if(blocked)throw Error('blocked');return map.get(k)||null;},setItem:(k,v)=>{if(blocked)throw Error('blocked');map.set(k,v);},removeItem:k=>{if(blocked)throw Error('blocked');map.delete(k);}});
+ function element(){return {hidden:false,handlers:{},setAttribute(){},addEventListener(name,fn){this.handlers[name]=fn;},focus(){},appendChild(){},querySelector(selector){if(!nodes.has(selector))nodes.set(selector,element());return nodes.get(selector);}};}
+ const body=element(),footer=element(),window={localStorage:store(values),sessionStorage:store(session),beTracker:{t:x=>visits.push(x)}};
+ const location={hostname,origin:'https://'+hostname,pathname:'/go/',search:'',reload(){reloads++;}};
+ const document={documentElement:{lang:'en'},body,cookie:'',createElement:element,querySelector:()=>footer,head:{appendChild:s=>scripts.push(s)}};
+ const context={window,location,document,Date:{now:()=>now},URL};
+ const run=()=>vm.runInNewContext(source,context);run();
+ return {window,location,scripts,visits,values,session,nodes,run,setNow:n=>{now=n;},reloads:()=>reloads,choose:yes=>nodes.get(yes?'[data-choice="yes"]':'[data-choice="no"]').handlers.click()};
 }
-// Consent Mode defaults precede GTM; European time zones skip Metricool.
+for(const hostname of ['localhost','127.0.0.1','preview.example']){
+ const h=setup({hostname,allowed:true});assert.equal(h.scripts.length,0);h.window.KojohamaAnalytics.push('test');assert.equal(h.window.dataLayer.length,1);
+}
 {
-  const scripts = [], window = {};
-  const europe = { DateTimeFormat: () => ({ resolvedOptions: () => ({ timeZone: 'Europe/Madrid' }) }) };
-  vm.runInNewContext(source, { window, Intl: europe, location: { hostname: 'kojohamacabins.jp', pathname: '/' }, Date,
-    document: { documentElement: { lang: 'en' }, createElement: () => ({}), head: { appendChild: script => scripts.push(script) } } });
-  const commands = window.dataLayer.map(item => item.length !== undefined && !Array.isArray(item) ? [...item] : item);
-  const defaults = commands.filter(item => Array.isArray(item) && item[0] === 'consent' && item[1] === 'default');
-  assert.equal(defaults.length, 2, 'Two consent defaults');
-  assert.equal(defaults[1][2].analytics_storage, 'denied');
-  assert(defaults[1][2].region.includes('ES') && defaults[1][2].region.includes('GB'));
-  const gtmIndex = commands.findIndex(item => item && item.event === 'gtm.js');
-  assert(gtmIndex > commands.indexOf(defaults[1]), 'Consent defaults must precede gtm.js');
-  assert.equal(scripts.length, 1, 'GTM only; Metricool skipped for European time zones');
-  assert(!scripts.some(script => script.src === 'https://tracker.metricool.com/resources/be.js'));
+ const h=setup();assert.equal(h.scripts.length,0,'No trackers before choice');
+ h.window.KojohamaAnalytics.push('cabin_view',{cabin_name:'Ocean Stay Zen'});
+ h.window.KojohamaAnalytics.push('contact_click');
+ h.choose(true);assert.equal(h.scripts.length,2);
+ const commands=h.window.dataLayer.filter(x=>x[0]==='consent');
+ assert.equal(commands[0][2].analytics_storage,'denied');assert.equal(commands[1][2].analytics_storage,'granted');
+ assert.equal(commands[1][2].ad_storage,'denied');assert.equal(commands[1][2].ad_personalization,'denied');
+ assert.equal(h.window.dataLayer.filter(x=>x.event==='cabin_view').length,1,'Late acceptance records the current cabin once');
+ assert.equal(h.window.dataLayer.filter(x=>x.event==='contact_click').length,0,'Do not replay pre-consent clicks');
+ const tracker=h.scripts.find(x=>x.src.includes('metricool'));tracker.onload();assert.equal(h.visits[0].hash,'ffd44c179566f41dd21d51d09878d58d');
+ h.choose(true);assert.equal(h.scripts.length,2,'No duplicate loaders');
+ h.choose(false);assert.equal(h.reloads(),1);assert.equal(h.window['ga-disable-G-30NYR8WMT3'],true);
+ tracker.onload();assert.equal(h.visits.length,1,'Withdrawal blocks late tracker callback');
+ assert.equal(JSON.parse(h.values.get(key)).allowed,false);
 }
-const headers = fs.readFileSync(path.join(__dirname, '..', '_headers'), 'utf8');
-function replay(destination, age = 0, broken = false) {
-  const values = new Map();
-  const window = { sessionStorage: {
-    setItem: (key, value) => { if (broken) throw Error('blocked'); values.set(key, value); },
-    getItem: key => values.get(key), removeItem: key => values.delete(key)
-  } };
-  const location = { hostname: 'kojohamacabins.jp', origin: 'https://kojohamacabins.jp', pathname: '/go/', search: '' };
-  const context = { window, location, Intl: tokyo, Date: { now: () => 1000 }, URL,
-    document: { documentElement: { lang: 'en' }, createElement: () => ({}), head: { appendChild() {} } } };
-  vm.runInNewContext(source, context);
-  assert.equal(window.KojohamaAnalytics.queueNavigationEvent({ destination_url: destination }), !broken);
-  location.pathname = '/cabins/';
-  context.Date.now = () => 1000 + age;
-  vm.runInNewContext(source, context);
-  const clicks = window.dataLayer.filter(item => item.event === 'bio_link_click');
-  vm.runInNewContext(source, context);
-  assert.equal(window.dataLayer.filter(item => item.event === 'bio_link_click').length, clicks.length, 'No replay on refresh');
-  assert.equal(values.size, 0, 'Pending data cleared');
-  return clicks;
+for(const options of [{allowed:false},{allowed:true,expired:true},{blocked:true}]){
+ const h=setup(options);assert.equal(h.scripts.length,0);
+ if(options.blocked){assert.doesNotThrow(()=>h.choose(true));assert.equal(h.scripts.length,2,'Blocked storage still allows this-page consent');}
 }
-const handedOff = replay('https://kojohamacabins.jp/cabins/');
-assert.equal(handedOff.length, 1);
-assert.equal(handedOff[0].page_path, '/go/', 'Preserve original click context');
-assert.equal(replay('https://example.com/cabins/').length, 0);
-assert.equal(replay('https://kojohamacabins.jp/faq/').length, 0);
-assert.equal(replay('https://kojohamacabins.jp/cabins/', 300001).length, 0);
-assert.equal(replay('https://kojohamacabins.jp/cabins/', 0, true).length, 0);
+{
+ const h=setup({allowed:true});assert.equal(h.scripts.length,2,'Saved acceptance restores trackers');
+ delete h.window.beTracker;assert.doesNotThrow(()=>h.scripts.find(x=>x.src.includes('metricool')).onload());
+}
+function replay(destination,age=0,blocked=false){
+ const h=setup({allowed:true,blocked});
+ assert.equal(h.window.KojohamaAnalytics.queueNavigationEvent({destination_url:destination}),!blocked);
+ h.location.pathname='/cabins/';h.setNow(1000+age);h.run();
+ const clicks=h.window.dataLayer.filter(x=>x.event==='bio_link_click');h.run();
+ assert.equal(h.window.dataLayer.filter(x=>x.event==='bio_link_click').length,clicks.length);assert.equal(h.session.size,0);
+ return clicks;
+}
+const handed=replay('https://kojohamacabins.jp/cabins/');assert.equal(handed.length,1);assert.equal(handed[0].page_path,'/go/');
+assert.equal(replay('https://example.com/cabins/').length,0);
+assert.equal(replay('https://kojohamacabins.jp/faq/').length,0);
+assert.equal(replay('https://kojohamacabins.jp/cabins/',300001).length,0);
+assert.equal(replay('https://kojohamacabins.jp/cabins/',0,true).length,0);
+const headers=fs.readFileSync(path.join(__dirname,'..','_headers'),'utf8');
 assert(/script-src[^;]*https:\/\/tracker\.metricool\.com/.test(headers));
-assert(!/script-src[^;]*'unsafe-inline'/.test(headers), 'Inline scripts stay blocked: the site and GTM container use none');
-console.log('PASS: analytics production-only loading, consent defaults, Metricool hash, time-zone gating and load callback, failure isolation and CSP.');
+assert(!/script-src[^;]*'unsafe-inline'/.test(headers));
+assert(!/timeZone|Europe\//.test(source),'Consent must not depend on device time zone');
+console.log('PASS: explicit opt-in, deny/expiry/blocked storage, withdrawal, no advertising consent, tracker isolation and one-time navigation handoff.');
