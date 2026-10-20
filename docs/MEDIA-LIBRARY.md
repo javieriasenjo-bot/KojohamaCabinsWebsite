@@ -18,3 +18,7 @@ Inspected subfolders:
 - `photos event bar hopping shiraoi`
 
 Inspect the full relevant library, especially `2. Great videos, tsumi`, before selecting material. Preserve original assets. Distinguish finished edits from source footage; do not infer that every historical shot-list item exists simply because the folder was handed over.
+
+## 20 October addition
+
+Folder `6. Photos Cutlery, Cookware, Remote Working table and some videos` reviewed; see MEDIA-2026-10-20.md and the shared social NEW-MEDIA-2026-10-20.md. Use for future cooking and workcation posts. Owner confirmed cabin mapping and induction tests.

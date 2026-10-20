@@ -7,6 +7,60 @@
       "bytes": 1350
     },
     {
+      "source": "/images/equipment-2026-10/rustic-1360.webp",
+      "url": "/media/rustic-1360.fd89b56d6352.webp",
+      "sha256": "fd89b56d63521d763e63f782982ce79cf2608f91323da687f5ab59338f6d0780",
+      "bytes": 101836
+    },
+    {
+      "source": "/images/equipment-2026-10/rustic-1364.webp",
+      "url": "/media/rustic-1364.bbca3b6eff88.webp",
+      "sha256": "bbca3b6eff88598689dbf8391f626dc5adf1b0b2d7cd2ee7066a19475a4d0228",
+      "bytes": 65348
+    },
+    {
+      "source": "/images/equipment-2026-10/rustic-1369.webp",
+      "url": "/media/rustic-1369.11ad37beeb0e.webp",
+      "sha256": "11ad37beeb0e1399c8a6df54a04186498570e39df9fa0a49ff5cb961a04b5ad6",
+      "bytes": 96860
+    },
+    {
+      "source": "/images/equipment-2026-10/sol-1384.webp",
+      "url": "/media/sol-1384.dc44e3bdcc0e.webp",
+      "sha256": "dc44e3bdcc0e6c450bab7abcda38bf160d11b31bc07b01c75277a4f29ac3c166",
+      "bytes": 127146
+    },
+    {
+      "source": "/images/equipment-2026-10/sol-1392.webp",
+      "url": "/media/sol-1392.9f4bfc90cd16.webp",
+      "sha256": "9f4bfc90cd1647ed9ed7c95e3b0f8d5b98c6e6db924b50ac28779d29bda43812",
+      "bytes": 26808
+    },
+    {
+      "source": "/images/equipment-2026-10/sol-1393.webp",
+      "url": "/media/sol-1393.42fde8dd3b17.webp",
+      "sha256": "42fde8dd3b1776429f7bfb9afd39b211ac95d3f759e21c37c3de527580c37fe5",
+      "bytes": 55226
+    },
+    {
+      "source": "/images/equipment-2026-10/zen-1397.webp",
+      "url": "/media/zen-1397.df35214f06af.webp",
+      "sha256": "df35214f06af70620a5bc498c4c199ffee400be65605037c726f711b32fd5a7e",
+      "bytes": 169112
+    },
+    {
+      "source": "/images/equipment-2026-10/zen-1404.webp",
+      "url": "/media/zen-1404.80be6e0b7a25.webp",
+      "sha256": "80be6e0b7a25b01cc09011a4325796488ac9ef7feeaaf089dfce2d9385c53975",
+      "bytes": 104982
+    },
+    {
+      "source": "/images/equipment-2026-10/zen-1409.webp",
+      "url": "/media/zen-1409.bbfa4b4edbd5.webp",
+      "sha256": "bbfa4b4edbd5890020023fa1b2c705514d63806b3a510008c803ceaccc888404",
+      "bytes": 49476
+    },
+    {
       "source": "/images/exterior/outside-2-480.webp",
       "url": "/media/outside-2-480.20ca799abafa.webp",
       "sha256": "20ca799abafa56abe6e07d82d303d238a8622ef63d4b7715ab6aaa8080458768",
