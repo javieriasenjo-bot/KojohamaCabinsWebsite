@@ -71,14 +71,14 @@
     'zh-CN': ['可选访问分析', '是否允许Google Analytics和Metricool分析访问及预订链接点击？拒绝后仍可使用预订和联系链接。', '允许分析', '拒绝分析', '分析设置', '隐私政策', '关闭']
   }[language] || ['Optional analytics', 'Allow Google Analytics and Metricool? Booking works if you decline.', 'Accept analytics', 'Decline analytics', 'Analytics settings', 'Privacy policy', 'Close'];
   const panel = document.createElement('section');
-  panel.className = 'analytics-choice'; panel.hidden = choice !== null;
+  panel.className = 'analytics-choice'; panel.hidden = true;
   panel.setAttribute('aria-label', text[0]);
   panel.innerHTML = `<h2>${text[0]}</h2><p>${text[1]}</p><div><button type="button" data-choice="yes">${text[2]}</button><button type="button" data-choice="no">${text[3]}</button><a href="${prefix}/privacy/">${text[5]}</a><button type="button" data-close>${text[6]}</button></div>`;
-  const close = panel.querySelector('[data-close]'); close.hidden = choice === null;
+  const close = panel.querySelector('[data-close]'); close.hidden = false;
   const settings = document.createElement('button');
   settings.type = 'button'; settings.className = 'analytics-settings'; settings.textContent = text[4];
-  settings.addEventListener('click', () => { panel.hidden = false; close.hidden = choice === null; panel.querySelector('[data-choice="yes"]').focus(); });
-  close.addEventListener('click', () => { if (choice !== null) { panel.hidden = true; settings.focus(); } });
+  settings.addEventListener('click', () => { panel.hidden = false; close.hidden = false; panel.querySelector('[data-choice="yes"]').focus(); });
+  close.addEventListener('click', () => { panel.hidden = true; settings.focus(); });
   function decide(allowed) {
     const wasLoaded = loaded;
     choice = allowed;
