@@ -2187,13 +2187,13 @@
       "category": "directory-2",
       "translations": {
         "en": {
-          "name": "Yumoto Hokuyo (day bath)",
-          "drive": "5 min",
-          "descriptionHtml": "Showa-era onsen inn with a huge outdoor bath, open from 5 a.m. for a dawn soak.",
-          "hours": "05:00–23:00 (last entry 22:00). Women's indoor bath unavailable Monday–Friday 08:00–09:00 for cleaning.",
+          "name": "Yumoto Hokuyo",
+          "drive": "4 min",
+          "descriptionHtml": "Hot spring hotel about 4 minutes from Ocean Stay. Breakfast buffet with local Kojohama tarako (salted cod roe): ¥1,250 for breakfast only, or ¥1,700 per adult with hot spring bathing. Information as of 21 October 2026; confirm before visiting.",
+          "hours": "Breakfast 7:00–9:00 (last entry 8:30). Day baths 5:00–23:00 (last entry 22:00). Women's indoor bath closed Monday–Friday 8:00–9:00 for cleaning.",
           "links": [
             {
-              "href": "https://www.google.com/maps/place/?q=place_id:ChIJuy0EA7JldV8RaVtwjsMhMvk",
+              "href": "https://maps.app.goo.gl/zXQCNhBmbLMNaYXg7",
               "label": "Map",
               "kind": "map"
             }
@@ -2210,13 +2210,13 @@
           }
         },
         "ja": {
-          "name": "湯元 ほくよう（日帰り入浴）",
-          "drive": "車で5分",
-          "descriptionHtml": "昭和レトロな温泉宿。大露天風呂。朝5時から入れる。",
-          "hours": "5:00〜23:00（最終入場22:00）。女性内風呂は平日8:00〜9:00清掃のため利用不可。",
+          "name": "湯元ほくよう",
+          "drive": "車で4分",
+          "descriptionHtml": "Ocean Stayから車で約4分の温泉宿。虎杖浜名物のたらこが楽しめる朝食バイキングは、食事のみ1,250円、入浴セットは大人1,700円。2026年10月21日時点の情報です。訪問前にご確認ください。",
+          "hours": "朝食7:00〜9:00（最終入場8:30）。日帰り入浴5:00〜23:00（最終入場22:00）。平日8:00〜9:00は女性内湯の清掃。",
           "links": [
             {
-              "href": "https://www.google.com/maps/place/?q=place_id:ChIJuy0EA7JldV8RaVtwjsMhMvk",
+              "href": "https://maps.app.goo.gl/zXQCNhBmbLMNaYXg7",
               "label": "地図",
               "kind": "map"
             }
@@ -2233,13 +2233,13 @@
           }
         },
         "zh-CN": {
-          "name": "汤元 北洋（日归温泉）",
-          "drive": "车程5分钟",
-          "descriptionHtml": "昭和怀旧风温泉旅馆，超大露天浴池，早上5点就开门。",
-          "hours": "5:00–23:00（最后入场22:00）。女性室内浴池周一至周五8:00–9:00清洁期间暂停使用。",
+          "name": "汤元北洋（湯元ほくよう）",
+          "drive": "车程4分钟",
+          "descriptionHtml": "距离Ocean Stay约4分钟车程的温泉旅馆。早餐自助餐提供虎杖滨特产盐渍鳕鱼子（tarako）。仅早餐1,250日元，早餐加温泉成人1,700日元。信息截至2026年10月21日，出发前请确认。",
+          "hours": "早餐7:00–9:00（最后入场8:30）。日归温泉5:00–23:00（最后入场22:00）。女性室内浴池周一至周五8:00–9:00清洁暂停使用。",
           "links": [
             {
-              "href": "https://www.google.com/maps/place/?q=place_id:ChIJuy0EA7JldV8RaVtwjsMhMvk",
+              "href": "https://maps.app.goo.gl/zXQCNhBmbLMNaYXg7",
               "label": "地图",
               "kind": "map"
             }
@@ -2256,10 +2256,10 @@
           }
         }
       },
-      "hoursCheckedOn": "2026-10-10",
-      "hoursSource": "https://www.h-hokuyo.com/mb/onsen.html",
+      "hoursCheckedOn": "2026-10-22",
+      "hoursSource": "https://www.h-hokuyo.com/onsen.html",
       "reviewAttemptedOn": "2026-10-10",
-      "reviewNote": "Published official hours; reconfirm temporary changes before travel."
+      "reviewNote": "Owner information dated 2026-10-21; breakfast and bathing details cross-checked against official site 2026-10-22. Drive time supplied by owner."
     },
     {
       "id": "venue-29",
