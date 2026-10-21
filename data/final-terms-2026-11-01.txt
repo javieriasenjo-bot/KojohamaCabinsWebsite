@@ -1,0 +1,607 @@
+Ocean Stay Kojohama 宿泊約款
+Oct 20, 2026 · @Kagami
+この約款は日本語を正文とし、英語及び中国語は翻訳です。2026年11月1日から施行します。 / The Japanese text is the original; the English and Chinese texts are translations. / 本条款以日文为正文，英文及中文为译文。
+日本語（正文）
+第1条（適用範囲）
+Kagami Planning合同会社（以下「当社」といいます。）が運営する宿泊施設「Ocean Stay Kojohama」（Sol棟、Zen棟及びRustic棟。所在地：北海道白老郡白老町字虎杖浜595、旅館業許可：Sol棟 胆苫生第39-5号指令、Zen棟 胆苫生第39号指令、Rustic棟 胆苫生第39-6号指令。以下「当施設」といいます。）が宿泊客との間で締結する宿泊契約及びこれに関連する契約は、この約款の定めるところによるものとし、この約款に定めのない事項については、法令等又は一般に確立された慣習によるものとします。
+当施設が、法令等及び慣習に反しない範囲で特約に応じたときは、前項の規定にかかわらず、その特約が優先するものとします。
+宿泊予約サイト（以下「予約サイト」といいます。）を通じて申し込まれた宿泊契約については、予約サイト上で当施設が示した取消料（キャンセルポリシー）、支払方法その他の条件を、前項の特約として優先して適用します。宿泊の時期、予約の時期又は料金プラン等により、キャンセルの取扱いがこの約款と予約サイトの記載とで異なる場合も、予約サイトの記載を優先します。
+第2条（宿泊契約の申込み）
+当施設に宿泊契約の申込みをしようとする者は、次の事項を当施設に申し出ていただきます。
+宿泊者名及び宿泊人数
+宿泊日及び到着予定時刻
+宿泊料金（予約時に予約サイト等で表示する料金によります。）
+その他当施設が必要と認める事項
+宿泊客が、宿泊中に前項第2号の宿泊日を超えて宿泊の継続を申し入れた場合、当施設は、その申し出がなされた時点で新たな宿泊契約の申込みがあったものとして処理します。
+宿泊人数は、各棟とも5名を上限とします。予約された宿泊者以外の者は宿泊できません。また、ペットを同伴しての宿泊はお断りします（身体障害者補助犬を除きます。）。
+未成年者（18歳未満の者をいいます。）のみでの宿泊はお断りします。未成年者が宿泊する場合は、成年の保護者又は引率者が同伴してください。
+第3条（宿泊契約の成立等）
+宿泊契約は、当施設が前条の申込みを承諾したときに成立するものとします。ただし、当施設が承諾しなかったことを証明したときは、この限りではありません。
+前項の規定により宿泊契約が成立したときは、当施設が定める期日までに、宿泊料金の全額を当施設が指定する方法により事前にお支払いいただきます（以下「事前決済」といいます。）。予約サイトを通じた予約では、予約サイトでの決済をもって事前決済とします。
+事前決済された金額は、まず宿泊客が最終的に支払うべき宿泊料金に充当し、第6条及び第18条の規定を適用する事態が生じたときは、違約金、次いで賠償金の順序で充当し、残額があれば返還します。
+第2項の事前決済が当施設の定める期日までに行われない場合は、宿泊契約はその効力を失うものとします。ただし、事前決済の期日を指定するにあたり、当施設がその旨を宿泊客に告知した場合に限ります。
+事前決済は、当施設への直接予約及び予約サイトを通じた予約のいずれにも適用します。
+第4条（事前決済を要しないこととする特約）
+前条第2項の規定にかかわらず、当施設は、個別の事情により、同項の事前決済を要しないこととする特約に応じることがあります。
+宿泊契約の申込みを承諾するに当たり、当施設が前条第2項の事前決済を求めなかった場合及びその期日を指定しなかった場合は、前項の特約に応じたものとして取り扱います。
+第4条の2（感染防止対策への協力の求め）
+当施設は、宿泊しようとする者に対し、旅館業法第4条の2第1項の規定に基づき、感染防止対策への協力を求めることがあります。
+第5条（宿泊契約締結の拒否）
+当施設は、次に掲げる場合において、宿泊契約の締結に応じないことがあります。ただし、旅館業法第5条に規定する場合以外に宿泊契約の締結を拒むことを意味するものではありません。
+宿泊の申込みが、この約款によらないとき。
+満室により客室の余裕がないとき。
+宿泊しようとする者が、宿泊に関し、法令の規定、公の秩序若しくは善良の風俗に反する行為をするおそれがあると認められるとき。
+宿泊しようとする者が、次のいずれかに該当すると認められるとき。
+暴力団員による不当な行為の防止等に関する法律第2条第2号に規定する暴力団、同条第6号に規定する暴力団員、暴力団準構成員又は暴力団関係者その他の反社会的勢力
+暴力団又は暴力団員が事業活動を支配する法人その他の団体であるとき
+法人で、その役員のうちに暴力団員に該当する者があるもの
+宿泊しようとする者が、他の宿泊客に著しい迷惑を及ぼす言動をしたとき。
+宿泊しようとする者が、特定感染症の患者等であるとき。
+宿泊しようとする者から、暴力的要求行為が行われ、又は合理的な範囲を超える負担を求められたとき（旅館業法に定める特定要求行為を繰り返したときを含みます。）。ただし、障害を理由とする差別の解消の推進に関する法律の規定に基づく社会的障壁の除去の求めは、これに該当しません。
+天災、施設の故障その他やむを得ない事由により宿泊させることができないとき。
+北海道旅館業法施行条例の定めるところにより、次のいずれかに該当すると認められるとき。
+宿泊しようとする者が泥酔し、又は言動が著しく異常であり、他の宿泊者に迷惑を及ぼすおそれがあるとき。
+宿泊しようとする者の服装又は携帯品が著しく不潔であり、他の宿泊者の衛生保持に支障があるとき。
+第5条の2（宿泊契約締結の拒否に関する説明）
+宿泊しようとする者は、当施設が前条の規定により宿泊契約の締結に応じない場合は、その理由の説明を求めることができます。
+第6条（宿泊客の契約解除権）
+宿泊客は、当施設に申し出て、宿泊契約を解除することができます。
+当施設は、宿泊客がその責めに帰すべき事由により宿泊契約の全部又は一部を解除した場合（第3条第2項の事前決済の期日より前であって、その支払いが行われる前に宿泊客が宿泊契約を解除したときを除きます。）は、別表1に掲げるところにより、違約金を申し受けます。ただし、予約サイトを通じた宿泊契約については、第1条第3項により、予約時に予約サイト上で示したキャンセルポリシーを、別表1に優先して適用します。
+当施設は、宿泊客が連絡をしないで宿泊日当日の午後12時（翌日午前0時）を過ぎても到着しないときは、その宿泊契約は宿泊客により解除されたものとみなします。この場合、当日の解除として、別表1の当日の違約金を申し受けます。連泊の場合は、翌日以降の宿泊分についても、別表1又は予約サイトのキャンセルポリシーにより取り扱います。
+第7条（当施設の契約解除権）
+当施設は、次に掲げる場合においては、宿泊契約を解除することがあります。ただし、旅館業法第5条に規定する場合以外に宿泊を拒むことを意味するものではありません。
+宿泊客が宿泊に関し、法令の規定、公の秩序若しくは善良の風俗に反する行為をするおそれがあると認められるとき、又は同行為をしたと認められるとき。
+宿泊客が第5条第4号に該当すると認められるとき。
+宿泊客が他の宿泊客に著しい迷惑を及ぼす言動をしたとき。
+宿泊客が特定感染症の患者等であるとき。
+宿泊客から、第5条第7号に掲げる行為があったとき。
+天災等不可抗力に起因する事由により宿泊させることができないとき。
+宿泊客が、第5条第9号に掲げる場合に該当すると認められるとき。
+客室内での喫煙、消防用設備等に対するいたずら、指定場所以外での火気の使用その他の別表2第1項に定める禁止事項（火災予防上必要なもの）に従わないとき。
+当施設が前項の規定により宿泊契約を解除したときは、宿泊客がいまだ提供を受けていない宿泊サービス等の料金はいただきません。
+第7条の2（宿泊契約の解除に関する説明）
+宿泊客は、当施設が前条の規定により宿泊契約を解除した場合は、その理由の説明を求めることができます。
+第8条（宿泊の登録）
+当施設には常駐のフロントがないため、宿泊客は、当施設が予約後に送るオンラインの事前登録フォーム（アンケートフォーム）への回答により、チェックインまでに次の事項を登録していただきます。
+宿泊客全員の氏名、住所及び連絡先
+日本国内に住所を有しない外国人にあっては、国籍及び旅券番号
+その他当施設が必要と認める事項
+日本国内に住所を有しない外国人の宿泊客には、前項の事前登録フォームに旅券の画像を添付して提出していただき、その写しを保存します。
+前二項の登録が完了するまで、当施設は客室の鍵に関する情報をお知らせしないことがあります。
+第9条（客室の使用時間）
+宿泊客が当施設の客室を使用できる時間は、宿泊日の15時から翌朝10時までとします。ただし、連続して宿泊する場合においては、到着日及び出発日を除き、終日使用することができます。
+当施設は、前項の規定にかかわらず、同項に定める時間外の客室の使用に応じることがあります。この場合の料金は、その都度ご案内します。
+事前の連絡なくチェックアウトが午前10時を過ぎた場合は、清掃スタッフの待機料として、30分ごとに5,000円（税込）を申し受けます。また、チェックアウトの遅れにより清掃が間に合わず、次の予約に関して費用が生じた場合は、その費用を別途ご請求することがあります。
+第10条（利用規則の遵守）
+宿泊客は、当施設内及び敷地内では、別表2の「ハウスルール（利用規則）」に従っていただきます。ハウスマニュアル、予約サイト又は客室内の掲示でお知らせする注意事項も同様とします。
+第11条（問い合わせ対応時間及び設備の利用時間）
+当施設への問い合わせ（予約サイトのメッセージ等）には、次のとおり対応します。屋外設備（バーベキュー設備、サウナ等）の利用時間は、別表2に定めます。
+日本時間の午前9時から午後7時まで：自動応答（ボット）及び担当者が対応します。
+日本時間の午後7時から翌朝9時まで：自動応答（ボット）による対応が中心となります。担当者からの返信は、緊急の場合を除き、翌朝9時以降となることがあります。
+鍵が開かない、水漏れ、停電その他の緊急の場合は、時間にかかわらず、ハウスマニュアルに記載の緊急連絡先へお電話ください。
+前項の時間は、必要やむを得ない場合には臨時に変更することがあります。その場合には、適当な方法をもってお知らせします。
+第12条（料金の支払い）
+宿泊客が支払うべき宿泊料金等は、予約時に予約サイト等で表示する宿泊料金、清掃料及び税金とします。宿泊税は、予約サイト上で「リゾートフィー（リゾート料金）」として徴収します。年齢による料金の区分（子供料金）はありません。
+前項の宿泊料金等は、予約時に、各予約サイトの決済方法（当施設への直接予約の場合は、当施設が指定する決済方法）によりお支払いいただきます。現地でのお支払いはお受けしていません。
+当施設が宿泊客に客室を提供し、使用が可能になったのち、宿泊客が任意に宿泊しなかった場合においても、宿泊料金は申し受けます。
+滞在中又は滞在後に発生した追加料金、違約金及び損害賠償金は、予約サイトを通じた予約では当該予約サイトの手続により、直接予約では当施設が指定する方法及び期日までに、お支払いいただきます。
+第13条（当施設の責任）
+当施設は、宿泊契約及びこれに関連する契約の履行に当たり、又はそれらの不履行により宿泊客に損害を与えたときは、その損害を賠償します。ただし、それが当施設の責めに帰すべき事由によるものでないときは、この限りではありません。
+当施設の前面の海岸及び海は当施設の敷地外であり、当施設が管理するものではありません。海岸及び海での事故（入水中の事故、高波による事故、転倒等）について、当施設は、当施設の故意又は過失による場合を除き、責任を負いません。
+天災その他の災害、停電、断水、通信障害（Wi-Fiを含みます。）、設備の故障その他当施設の責めに帰すべき事由によらない事情により、設備の一部が一時的に利用できない場合、当施設はその損害を賠償せず、宿泊料金の返金も行いません。ただし、これらの事情により宿泊を継続できなくなった場合は、第7条及び第14条の定めるところによります。なお、予約サイトを通じた宿泊契約については、本項にかかわらず、当該予約サイトが定めるキャンセル及び返金に関する規定（災害等に関する規定を含みます。）を優先して適用します（第1条第3項）。
+第14条（契約した客室の提供ができないときの取扱い）
+当施設は、宿泊客に契約した客室を提供できないときは、宿泊客の了解を得て、できる限り同一の条件による他の宿泊施設をあっ旋するものとします。
+当施設は、前項の規定にかかわらず他の宿泊施設のあっ旋ができないときは、違約金相当額の補償料を宿泊客に支払い、その補償料は損害賠償額に充当します。ただし、客室が提供できないことについて、当施設の責めに帰すべき事由がないときは、補償料を支払いません。
+第15条（持込品等の取扱い）
+当施設には常駐のフロントがないため、物品、現金及び貴重品のお預かりはいたしません。持込品は、宿泊客ご自身で管理していただきます。
+宿泊客が当施設内に持ち込んだ物品（次項の高価品を除きます。）について、当施設の故意又は過失により滅失、毀損等の損害が生じたときは、当施設はその損害を賠償します。ただし、当施設に故意又は重大な過失がある場合を除き、30,000円を限度として賠償します。
+現金、有価証券、貴金属その他の高価品については、宿泊客があらかじめその種類及び価額を当施設に申告しなかった場合は、商法第597条の定めにより、当施設はその滅失又は損傷によって生じた損害を賠償しません。ただし、当施設の故意又は重大な過失による場合その他同条に定める場合は、この限りではありません。
+第16条（宿泊客の手荷物又は携帯品の保管）
+当施設は、宿泊客の到着前に当施設宛てに送られた手荷物及び宅配便は、お受け取りしません。
+宿泊客がチェックアウトしたのち、宿泊客の手荷物又は携帯品が当施設に置き忘れられていた場合において、その所有者が判明したときは、当施設は当該所有者に連絡をするとともにその指示を求めるものとします。送付を希望される場合は、日本国内の住所に限り着払いで発送し、送料のほか、手数料として1回の発送につき3,000円（税込。梱包資材の費用は別途）を申し受けます。
+所有者の指示がない場合又は所有者が判明しないときは、発見日を含め、7日間保管し、その後最寄りの警察署に届けます。ただし、飲食物その他保管に適さない物品は、当施設の判断で処分することがあります。
+第17条（駐車の責任）
+駐車場は各棟1台とし、それ以上を希望される場合は事前にご相談ください。
+宿泊客が当施設の駐車場をご利用になる場合、車両のキーの寄託の如何にかかわらず、当施設は場所をお貸しするものであって、車両の管理責任まで負うものではありません。ただし、駐車場の管理に当たり、当施設の故意又は過失によって損害を与えたときは、その賠償の責めに任じます。
+第18条（宿泊客の責任）
+宿泊客の故意又は過失により当施設が損害を被ったときは、当該宿泊客は当施設に対し、その損害を賠償していただきます。
+別表2第8項に定める費用は、前項の損害のうち最低限の額として申し受けます。
+第19条（言語、準拠法及び管轄）
+この約款は日本語を正文とし、翻訳文との間に相違がある場合は、日本語の正文を優先します。
+この約款及び宿泊契約は日本法に準拠し、これらに関する紛争は、札幌地方裁判所を第一審の専属的合意管轄裁判所とします。
+附則
+この約款は、2026年11月1日から施行します。この約款は、予約サイトの施設ページ、予約確認メール、ハウスマニュアル及び客室内の掲示により提示します。
+別表1　違約金（第6条関係、直接予約に適用）
+この表は、当施設への直接予約に適用します。予約サイト経由の予約には、宿泊時期、予約時期及び料金プランに応じて予約サイトに記載されたキャンセルポリシーが優先します（第1条第3項）。
+（注）契約日数が短縮した場合は、その短縮日数にかかわりなく、1日分（初日）の違約金を収受します。
+別表2　ハウスルール（利用規則）（第7条、第10条、第11条、第13条及び第18条関係）
+宿泊客は、当施設の建物内及び敷地内において、次のルールを守っていただきます。
+1. 禁止事項（火災予防上必要なもの。第7条第1項第8号関係）
+敷地内（屋内及び屋外）での喫煙。紙巻たばこ、加熱式たばこ、電子たばこその他これらに類するものを含みます。
+屋内でのろうそく、花火その他の火気の使用（調理は備え付けの調理器具に限ります。）
+当施設が指定する場所以外でのバーベキュー、及び午後9時以降のバーベキュー設備の使用
+火災報知器、消火器その他の消防用設備及び安全設備を覆い、移動し、取り外し、又は作動しないようにする行為
+2. 近隣への配慮
+午後10時以降は、屋内外ともお静かにお過ごしください。
+パーティー及びイベントはお断りします。
+3. 客室の使い方
+室内は土足禁止です。玄関で靴を脱いでください。
+砂を室内に持ち込まないでください。海から戻ったときは、玄関に入る前に靴・足・荷物の砂を払ってください。
+スーツケースを室内で引きずらないでください。
+室内の備品を持ち帰らないでください。
+当施設宛てに荷物を送らないでください（第16条第1項）。
+ペットを同伴しての宿泊はできません（身体障害者補助犬を除きます。第2条第3項）。
+4. ゴミ
+ゴミは、燃えるゴミ、缶・ビン、ペットボトルの3種類に分けてください。
+ゴミを屋外に置かないでください（カラスが荒らします。）。
+ゴミが多くたまった場合は、事前にチャットでご連絡ください。
+スーツケース、家具その他の大きな物を置いていかないでください。
+5. 外出時及びチェックアウト時
+照明その他の家電の電源を切り、窓を閉め、玄関の鍵をかけてください。
+冬季（12月から3月まで）は、凍結防止のため、外出時及び退出時もエアコンを切らず、暖房16℃に設定したままにしてください。そのほか、当施設が案内する設備の操作にご協力ください。
+チェックアウトは午前10時までです（第9条）。
+6. 駐車場
+駐車は各棟1台までとし、指定の区画をご利用ください。近隣の敷地や道路への駐車はおやめください（第17条）。
+7. 屋外設備
+バーベキュー設備の利用は午後9時までとします。
+サウナ（設置後）の利用は、午前7時から午後9時までとします。サウナは3棟共用です。利用方法、予約方法及び安全上の注意は、当施設が別に定める「サウナ利用ルール」に従ってください。
+8. 費用の一覧（第18条第2項関係）
+予約サイトを通じた予約では、上記の費用は当該予約サイトの手続により請求します（第12条第4項）。
+9. 海岸のご利用（第13条第2項関係）
+当施設の前の海岸は遊泳禁止です。膝より深いところまで海に入らないでください。
+海岸には監視員がいません。波打ち際に近づくときは、ご自身で安全を確認してください。
+高波・強風・悪天候のとき、夜間、飲酒後は、波打ち際に近づかないでください。
+お子様だけで海岸に行かせないでください。
+地震の揺れを感じたとき、又は津波警報・注意報が出たときは、直ちに海岸から離れ、ハウスマニュアルに記載の避難場所へ避難してください。
+10. 撮影・商用利用
+個人的な記念撮影及びSNSへの投稿は自由です。
+次の利用には、事前に当施設の書面（メール等を含みます。）による承諾が必要です。承諾した場合は、別途料金を申し受けることがあります。
+広告・番組・映画などの商用撮影及び取材
+撮影会、パーティー、イベント、物品販売その他宿泊以外の目的での利用
+ドローンの使用（航空法その他の法令を守っていただきます。）
+長時間のライブ配信など、近隣の方の迷惑になる行為はお控えください。
+English (Translation)
+Ocean Stay Kojohama Terms and Conditions of Accommodation
+This English text is a translation for convenience. If there is any difference between this translation and the Japanese text, the Japanese text prevails.
+Article 1 (Scope of Application)
+Accommodation contracts, and related contracts, concluded between guests and the accommodation facility “Ocean Stay Kojohama” operated by Kagami Planning LLC (the “Company”) (consisting of the Sol, Zen and Rustic houses; address: 595 Aza-Kojohama, Shiraoi-cho, Shiraoi-gun, Hokkaido; inn business licenses: Sol – Tanto-sei No. 39-5, Zen – Tanto-sei No. 39, Rustic – Tanto-sei No. 39-6; hereinafter the “Facility”) are governed by these Terms and Conditions. Matters not provided for in these Terms and Conditions are governed by laws and regulations or by generally established practice.
+If the Facility agrees to a special arrangement that does not conflict with laws, regulations or established practice, that special arrangement takes precedence over the preceding paragraph.
+For accommodation contracts booked through an online booking site (a “Booking Site”), the cancellation policy, payment method and other conditions shown by the Facility on the Booking Site apply with priority as a special arrangement under the preceding paragraph. This also applies where the handling of cancellations differs between these Terms and Conditions and the Booking Site depending on the stay period, the booking date, the rate plan or other factors; in that case the Booking Site’s terms prevail.
+Article 2 (Application for an Accommodation Contract)
+A person applying for an accommodation contract with the Facility is asked to provide the following:
+The names of the guests and the number of guests
+The dates of stay and the expected time of arrival
+The accommodation charges (as displayed on the Booking Site or elsewhere at the time of booking)
+Any other information the Facility considers necessary
+If a guest asks, during the stay, to extend the stay beyond the dates in item 2 of the preceding paragraph, the Facility will treat that request as a new application for an accommodation contract made at the time of the request.
+Each house accommodates a maximum of 5 guests. Persons other than the guests on the booking may not stay. Guests may not stay with pets (except service dogs for persons with disabilities, such as guide dogs, hearing dogs and assistance dogs).
+Stays by minors only (persons under 18 years of age) are not accepted. Minors must be accompanied by an adult parent, guardian or supervising adult.
+Article 3 (Conclusion of the Accommodation Contract)
+An accommodation contract is concluded when the Facility accepts the application under the preceding article, unless it is proven that the Facility did not accept it.
+Once the contract is concluded, the guest must pay the full accommodation charges in advance, by the method and the deadline specified by the Facility (“Advance Payment”). For bookings made through a Booking Site, payment on the Booking Site is the Advance Payment.
+The Advance Payment is applied first to the accommodation charges finally payable by the guest. If Article 6 or Article 18 applies, it is applied next to the cancellation charge and then to compensation for damage, and any balance is refunded.
+If the Advance Payment under paragraph 2 is not made by the deadline set by the Facility, the accommodation contract becomes void, provided that the Facility informed the guest of this when setting the deadline.
+Advance Payment applies both to direct bookings with the Facility and to bookings made through a Booking Site.
+Article 4 (Special Arrangement Waiving Advance Payment)
+Notwithstanding paragraph 2 of the preceding article, the Facility may, in individual cases, agree to a special arrangement under which Advance Payment is not required.
+If, when accepting an application, the Facility did not request Advance Payment or did not set a deadline for it, the Facility is treated as having agreed to the special arrangement in the preceding paragraph.
+Article 4-2 (Request for Cooperation with Infection Prevention Measures)
+The Facility may ask persons intending to stay to cooperate with infection prevention measures, in accordance with Article 4-2, paragraph 1 of the Inns and Hotels Act.
+Article 5 (Refusal to Conclude an Accommodation Contract)
+The Facility may decline to conclude an accommodation contract in the following cases. This does not mean that the Facility will refuse a contract in any case other than those provided for in Article 5 of the Inns and Hotels Act.
+The application is not made in accordance with these Terms and Conditions.
+No room is available because the Facility is fully booked.
+The person intending to stay is considered likely to act, in connection with the stay, in violation of laws or regulations, public order or good morals.
+The person intending to stay is considered to fall under any of the following:
+An organized crime group, a member, quasi-member or associate of such a group as defined in Article 2, items 2 and 6 of the Act on Prevention of Unjust Acts by Organized Crime Group Members, or any other antisocial force
+A corporation or other organization whose business activities are controlled by an organized crime group or its members
+A corporation with an officer who is a member of an organized crime group
+The person intending to stay has behaved in a way that causes serious nuisance to other guests.
+The person intending to stay is a patient with a specified infectious disease or a similar person.
+The person intending to stay engages in violent demands or demands a burden beyond a reasonable extent (including repeated specified demands as defined in the Inns and Hotels Act). Requests for the removal of social barriers under the Act for Eliminating Discrimination against Persons with Disabilities do not fall under this item.
+The Facility cannot provide accommodation because of a natural disaster, a breakdown of facilities or other unavoidable reasons.
+Under the Hokkaido Ordinance for Enforcement of the Inns and Hotels Act, the person intending to stay is considered to fall under either of the following:
+The person is heavily intoxicated or behaves in a markedly abnormal way and is likely to cause nuisance to other guests.
+The person’s clothing or belongings are markedly unclean and would interfere with other guests’ hygiene.
+Article 5-2 (Explanation of a Refusal)
+If the Facility declines to conclude an accommodation contract under the preceding article, the person who intended to stay may ask for an explanation of the reason.
+Article 6 (Guest’s Right to Cancel)
+Guests may cancel an accommodation contract by notifying the Facility.
+If a guest cancels all or part of an accommodation contract for reasons attributable to the guest, the Facility will charge a cancellation fee as set out in Appendix 1 (except where the guest cancels before the Advance Payment deadline under Article 3, paragraph 2, and before payment has been made). However, for contracts booked through a Booking Site, the cancellation policy shown on the Booking Site at the time of booking applies with priority over Appendix 1, under Article 1, paragraph 3.
+If a guest does not arrive by 12:00 midnight (0:00 the following day) on the day of the stay without contacting the Facility, the contract is deemed to have been cancelled by the guest. In this case, it is treated as a same-day cancellation and the same-day cancellation fee in Appendix 1 applies. For consecutive nights, the following nights are handled in accordance with Appendix 1 or the Booking Site’s cancellation policy.
+Article 7 (Facility’s Right to Cancel)
+The Facility may cancel an accommodation contract in the following cases. This does not mean that the Facility will refuse accommodation in any case other than those provided for in Article 5 of the Inns and Hotels Act.
+The guest is considered likely to act, or to have acted, in connection with the stay, in violation of laws or regulations, public order or good morals.
+The guest is considered to fall under Article 5, item 4.
+The guest has behaved in a way that causes serious nuisance to other guests.
+The guest is a patient with a specified infectious disease or a similar person.
+The guest has engaged in an act described in Article 5, item 7.
+The Facility cannot provide accommodation because of a natural disaster or other force majeure.
+The guest is considered to fall under a case described in Article 5, item 9.
+The guest does not comply with the prohibitions in Appendix 2, section 1 (those necessary for fire prevention), such as smoking in the house, tampering with fire-fighting equipment, or using fire outside designated areas.
+If the Facility cancels the contract under the preceding paragraph, it will not charge for accommodation services that the guest has not yet received.
+Article 7-2 (Explanation of a Cancellation)
+If the Facility cancels an accommodation contract under the preceding article, the guest may ask for an explanation of the reason.
+Article 8 (Guest Registration)
+As the Facility has no staffed front desk, guests must register the following by check-in, by answering the online pre-registration form (questionnaire form) that the Facility sends after booking:
+The name, address and contact details of every guest
+For foreign nationals without an address in Japan, their nationality and passport number
+Any other information the Facility considers necessary
+Foreign nationals without an address in Japan must attach an image of their passport to the pre-registration form in the preceding paragraph. The Facility keeps a copy.
+The Facility may withhold the key information for the house until the registration in the preceding two paragraphs is complete.
+Article 9 (Hours of Use)
+Guests may use the house from 15:00 on the day of arrival until 10:00 the next morning. For consecutive nights, guests may use the house all day except on the days of arrival and departure.
+Notwithstanding the preceding paragraph, the Facility may agree to use outside these hours. The charge in that case will be advised each time.
+If a guest checks out after 10:00 without prior notice, a cleaning staff waiting fee of JPY 5,000 (tax included) per 30 minutes will be charged. If the delay prevents cleaning from being finished in time and causes costs relating to the next booking, those costs may also be charged.
+Article 10 (Compliance with the House Rules)
+Within the buildings and grounds of the Facility, guests must follow the “House Rules” in Appendix 2. The same applies to notices given in the House Manual, on the Booking Site or posted in the house.
+Article 11 (Inquiry Hours and Hours of Use of Facilities)
+Inquiries to the Facility (through Booking Site messages or otherwise) are handled as follows. The hours of use of outdoor facilities (barbecue equipment, sauna, etc.) are set out in Appendix 2.
+9:00–19:00 (Japan time): our chatbot and staff respond.
+19:00–9:00 the next morning (Japan time): mainly our chatbot responds. Except in emergencies, staff replies may come after 9:00 the next morning.
+In an emergency, such as a lockout, a water leak or a power outage, please call the emergency number in the House Manual at any time.
+The hours in the preceding paragraph may be changed temporarily when unavoidable. In that case, guests will be notified by appropriate means.
+Article 12 (Payment of Charges)
+The charges payable by the guest are the accommodation charges, cleaning fee and taxes displayed on the Booking Site or elsewhere at the time of booking. Accommodation tax is collected on the Booking Site as a “resort fee”. There are no separate rates by age (no child rates).
+The charges in the preceding paragraph are paid at the time of booking, by the payment method of the Booking Site (or, for direct bookings with the Facility, by the payment method the Facility specifies). Payment at the Facility is not accepted.
+Once the Facility has provided the house and it is available for use, the accommodation charges are payable even if the guest chooses not to stay.
+Additional charges, cancellation fees and compensation for damage arising during or after the stay are payable through the Booking Site’s procedures for bookings made through a Booking Site, and by the method and deadline the Facility specifies for direct bookings.
+Article 13 (Liability of the Facility)
+If the Facility causes damage to a guest in performing, or by failing to perform, the accommodation contract or a related contract, the Facility will compensate for that damage, unless the damage is not attributable to the Facility.
+The beach and sea in front of the Facility are outside its grounds and are not managed by the Facility. The Facility is not liable for accidents on the beach or in the sea (accidents while in the water, accidents caused by high waves, falls, etc.), except where caused by the Facility’s intent or negligence.
+If part of the equipment is temporarily unavailable because of a natural disaster or other disaster, a power outage, water outage, communication failure (including Wi-Fi), equipment breakdown or other circumstances not attributable to the Facility, the Facility will not compensate for the resulting damage and will not refund accommodation charges. If these circumstances make it impossible to continue the stay, Articles 7 and 14 apply. For contracts booked through a Booking Site, notwithstanding this paragraph, the Booking Site’s rules on cancellations and refunds (including rules on disasters) apply with priority (Article 1, paragraph 3).
+Article 14 (When the Contracted House Cannot Be Provided)
+If the Facility cannot provide the contracted house, it will, with the guest’s consent, arrange other accommodation on the same terms as far as possible.
+If, notwithstanding the preceding paragraph, the Facility cannot arrange other accommodation, it will pay the guest compensation equal to the cancellation fee, and this compensation will be applied to any damages. However, no compensation is paid if the Facility is not responsible for being unable to provide the house.
+Article 15 (Handling of Guests’ Belongings)
+As the Facility has no staffed front desk, it does not take custody of belongings, cash or valuables. Guests are responsible for managing their own belongings.
+If belongings brought into the Facility by a guest (excluding the valuables in the next paragraph) are lost or damaged through the Facility’s intent or negligence, the Facility will compensate for the damage, up to a maximum of JPY 30,000, except in cases of intent or gross negligence by the Facility.
+For cash, securities, precious metals and other valuables, if the guest did not declare their type and value to the Facility in advance, the Facility is not liable for their loss or damage, in accordance with Article 597 of the Commercial Code. This does not apply where the loss or damage is caused by the Facility’s intent or gross negligence, or in other cases provided for in that article.
+Article 16 (Luggage and Belongings)
+The Facility does not accept luggage or parcels sent to the Facility before the guest’s arrival.
+If luggage or belongings are left at the Facility after check-out and the owner is identified, the Facility will contact the owner and ask for instructions. If the owner wishes the items to be sent, they will be sent cash on delivery to an address in Japan only, and a handling fee of JPY 3,000 (tax included) per shipment will be charged in addition to the postage (packaging materials are charged separately).
+If there are no instructions from the owner, or the owner cannot be identified, the items will be kept for 7 days including the day they were found, and then handed to the nearest police station. Food, drinks and other items unsuitable for storage may be disposed of at the Facility’s discretion.
+Article 17 (Parking)
+Parking is limited to one car per house. Please contact us in advance if you need more spaces.
+When a guest uses the Facility’s parking, the Facility only provides the space and does not take responsibility for managing the vehicle, whether or not the vehicle key has been deposited. However, the Facility will compensate for damage caused by its intent or negligence in managing the parking area.
+Article 18 (Liability of Guests)
+If the Facility suffers damage through the intent or negligence of a guest, the guest must compensate the Facility for that damage.
+The charges set out in Appendix 2, section 8 are charged as the minimum amount of the damage in the preceding paragraph.
+Article 19 (Language, Governing Law and Jurisdiction)
+The Japanese text of these Terms and Conditions is the original. If there is any difference between the Japanese text and a translation, the Japanese text prevails.
+These Terms and Conditions and the accommodation contract are governed by Japanese law. The Sapporo District Court has exclusive jurisdiction as the court of first instance for any dispute relating to them.
+Supplementary Provision
+These Terms and Conditions take effect on November 1, 2026. They are made available on the Facility’s pages on Booking Sites, in booking confirmation messages, in the House Manual and by notices posted in the houses.
+Appendix 1 – Cancellation Fees (Article 6; applies to direct bookings)
+This table applies to direct bookings with the Facility. For bookings made through a Booking Site, the cancellation policy shown on the Booking Site for the stay period, booking date and rate plan applies with priority (Article 1, paragraph 3).
+(Note) If the number of nights is reduced, a cancellation fee for one night (the first night) is charged regardless of how many nights are reduced.
+Appendix 2 – House Rules (Articles 7, 10, 11, 13 and 18)
+Within the buildings and grounds of the Facility, guests must follow the rules below.
+1. Prohibitions (necessary for fire prevention; Article 7, paragraph 1, item 8)
+Smoking anywhere on the property (indoors and outdoors), including cigarettes, heated tobacco, e-cigarettes and similar products
+Using candles, fireworks or any other open flame indoors (cooking only with the cooking equipment provided)
+Barbecuing outside the designated area, and using the barbecue equipment after 21:00
+Covering, moving, removing or disabling fire alarms, fire extinguishers or any other fire-fighting or safety equipment
+2. Consideration for Neighbors
+Please keep quiet, both indoors and outdoors, after 22:00.
+Parties and events are not permitted.
+3. Inside the House
+Shoes are not allowed inside. Please take them off at the entrance.
+Please do not bring sand inside. When you come back from the beach, brush the sand off your shoes, feet and belongings before entering.
+Please do not drag suitcases inside.
+Please do not take any items from the house.
+Please do not send parcels to the Facility (Article 16, paragraph 1).
+Pets are not permitted (except service dogs for persons with disabilities; Article 2, paragraph 3).
+4. Garbage
+Please sort garbage into 3 types: burnable, cans and glass bottles, and PET bottles.
+Please do not leave garbage outside (crows will tear the bags).
+If a lot of garbage builds up, please contact us via chat in advance.
+Please do not leave suitcases, furniture or other large items behind.
+5. Going Out and Check-out
+Turn off the lights and other appliances, close the windows and lock the front door.
+In winter (December to March), to prevent freezing, do not turn off the air conditioner when going out or leaving; keep it on heating at 16°C. Please also follow any other equipment instructions from the Facility.
+Check-out is by 10:00 (Article 9).
+6. Parking
+Parking is limited to one car per house in the designated space. Please do not park on neighboring land or on the road (Article 17).
+7. Outdoor Facilities
+The barbecue equipment may be used until 21:00.
+The sauna (once installed) may be used from 7:00 to 21:00. The sauna is shared by the three houses. Please follow the separate “Sauna Rules” set by the Facility for how to use and book it and for safety precautions.
+8. Charges (Article 18, paragraph 2)
+For bookings made through a Booking Site, these charges are claimed through that Booking Site’s procedures (Article 12, paragraph 4).
+9. Using the Beach (Article 13, paragraph 2)
+Swimming is prohibited at the beach in front of the Facility. Do not go into the sea deeper than your knees.
+There are no lifeguards. When going near the water’s edge, check for your own safety.
+Do not go near the water’s edge in high waves, strong wind or bad weather, at night, or after drinking alcohol.
+Do not let children go to the beach alone.
+If you feel an earthquake, or if a tsunami warning or advisory is issued, leave the beach immediately and evacuate to the evacuation site shown in the House Manual.
+10. Photography and Commercial Use
+Personal photos and posting on social media are welcome.
+The following require the Facility’s prior written consent (including by email). If consent is given, an additional charge may apply.
+Commercial photography or filming for advertising, TV programs, films, etc., and media coverage
+Photo shoots, parties, events, sales of goods or any other use other than accommodation
+Use of drones (the Civil Aeronautics Act and other laws must be observed)
+Please refrain from long live streams or anything else that may disturb the neighbors.
+中文（译文）
+Ocean Stay Kojohama 住宿条款
+本中文译文仅为方便理解而提供。如译文与日文原文存在差异，以日文原文为准。
+第1条（适用范围）
+由Kagami Planning合同会社（以下简称“本公司”）经营的住宿设施“Ocean Stay Kojohama”（由Sol栋、Zen栋及Rustic栋组成。地址：北海道白老郡白老町字虎杖浜595；旅馆业许可：Sol栋 胆苫生第39-5号指令、Zen栋 胆苫生第39号指令、Rustic栋 胆苫生第39-6号指令。以下简称“本设施”）与住宿客人签订的住宿合同及相关合同，适用本条款。本条款未规定的事项，依据法令或一般公认的惯例处理。
+本设施在不违反法令及惯例的范围内同意特别约定时，该特别约定优先于前款规定。
+通过住宿预订网站（以下简称“预订网站”）申请的住宿合同，本设施在预订网站上标示的取消费（取消政策）、支付方式及其他条件，作为前款的特别约定优先适用。因住宿时期、预订时间或价格方案等不同，导致本条款与预订网站所载的取消处理不一致时，亦以预订网站所载为准。
+第2条（住宿合同的申请）
+申请与本设施签订住宿合同者，须向本设施提供以下信息：
+住宿者姓名及住宿人数
+住宿日期及预计到达时间
+住宿费（以预订时在预订网站等显示的价格为准）
+其他本设施认为必要的事项
+住宿客人在住宿期间申请超出前款第2项所述住宿日期继续入住时，本设施视为在提出该申请时新申请了住宿合同。
+每栋最多入住5人。预订以外的人员不得入住。此外，谢绝携带宠物入住（身体残障者辅助犬除外）。
+谢绝仅由未成年人（未满18周岁者）入住。未成年人入住时，须由成年监护人或带队人陪同。
+第3条（住宿合同的成立等）
+住宿合同自本设施接受前条申请时成立。但本设施证明其未接受申请的，不在此限。
+依前款规定住宿合同成立后，客人须在本设施规定的期限前，以本设施指定的方式预先支付全额住宿费（以下简称“预付”）。通过预订网站预订的，以在预订网站上的支付视为预付。
+预付金额首先抵充客人最终应付的住宿费；发生适用第6条及第18条的情形时，依次抵充违约金、赔偿金，如有余额则予以退还。
+客人未在本设施规定的期限前完成第2款的预付时，住宿合同失效。但仅限于本设施在指定预付期限时已告知客人该事项的情形。
+预付同时适用于向本设施直接预订及通过预订网站预订。
+第4条（免除预付的特别约定）
+尽管有前条第2款的规定，本设施可根据个别情况，同意免除该款预付的特别约定。
+本设施在接受住宿申请时，未要求前条第2款的预付或未指定预付期限的，视为已同意前款的特别约定。
+第4条之2（请求配合感染预防措施）
+本设施可依据《旅馆业法》第4条之2第1款的规定，请求拟入住者配合感染预防措施。
+第5条（拒绝签订住宿合同）
+本设施在下列情形下，可能不同意签订住宿合同。但这并不意味着本设施会在《旅馆业法》第5条规定以外的情形下拒绝签订住宿合同。
+住宿申请未依据本条款时。
+因客满无空房时。
+拟入住者被认为可能在住宿中实施违反法令、公共秩序或善良风俗的行为时。
+拟入住者被认为属于下列任一情形时：
+《关于防止暴力团成员不正当行为等的法律》第2条第2项规定的暴力团、同条第6项规定的暴力团成员、暴力团准成员、暴力团关系人或其他反社会势力
+由暴力团或暴力团成员支配其经营活动的法人或其他团体
+役员中有暴力团成员的法人
+拟入住者有严重影响其他住宿客人的言行时。
+拟入住者为特定感染症患者等时。
+拟入住者提出暴力性要求，或要求超出合理范围的负担时（包括反复实施《旅馆业法》规定的特定要求行为）。但依据《关于推进消除以残障为由的歧视的法律》提出的消除社会性障碍的要求，不属于本项。
+因天灾、设施故障或其他不得已的事由无法提供住宿时。
+根据《北海道旅馆业法施行条例》的规定，拟入住者被认为属于下列任一情形时：
+拟入住者大量饮酒烂醉，或言行明显异常，可能给其他住宿者造成困扰时。
+拟入住者的服装或随身物品明显不洁，妨碍其他住宿者保持卫生时。
+第5条之2（关于拒绝签订住宿合同的说明）
+本设施依前条规定拒绝签订住宿合同时，拟入住者可要求本设施说明理由。
+第6条（住宿客人的合同解除权）
+住宿客人可向本设施提出解除住宿合同。
+住宿客人因可归责于自身的事由解除全部或部分住宿合同时，本设施将按附表1收取违约金（在第3条第2款预付期限前、且尚未支付时解除的除外）。但通过预订网站签订的住宿合同，依据第1条第3款，优先于附表1适用预订时预订网站上标示的取消政策。
+住宿客人未与本设施联系，且超过住宿当日午夜12点（次日凌晨0点）仍未抵达时，视为住宿客人已解除该住宿合同。此时按当日取消处理，收取附表1所定的当日违约金。连住时，次日以后的住宿也按附表1或预订网站的取消政策处理。
+第7条（本设施的合同解除权）
+本设施在下列情形下，可能解除住宿合同。但这并不意味着本设施会在《旅馆业法》第5条规定以外的情形下拒绝住宿。
+住宿客人被认为可能在住宿中实施，或已实施违反法令、公共秩序或善良风俗的行为时。
+住宿客人被认为属于第5条第4项时。
+住宿客人有严重影响其他住宿客人的言行时。
+住宿客人为特定感染症患者等时。
+住宿客人有第5条第7项所列行为时。
+因天灾等不可抗力事由无法提供住宿时。
+住宿客人被认为属于第5条第9项所列情形时。
+住宿客人不遵守附表2第1项所定的禁止事项（防火所必需者），如在室内吸烟、擅动消防设备、在指定场所以外使用火源等。
+本设施依前款规定解除住宿合同时，不收取客人尚未享受的住宿服务等费用。
+第7条之2（关于解除住宿合同的说明）
+本设施依前条规定解除住宿合同时，住宿客人可要求本设施说明理由。
+第8条（住宿登记）
+由于本设施无常驻前台，住宿客人须在办理入住前，通过填写本设施在预订后发送的在线预先登记表（问卷表），登记以下事项：
+全体住宿客人的姓名、住址及联系方式
+在日本境内无住址的外国人，其国籍及护照号码
+其他本设施认为必要的事项
+在日本境内无住址的外国住宿客人，须在前款预先登记表中附上护照图片并提交，本设施将保存其复印件。
+在前两款的登记完成前，本设施可能不告知房屋钥匙的相关信息。
+第9条（客房使用时间）
+住宿客人可使用本设施房屋的时间为住宿当日15:00至次日上午10:00。连住时，除到达日及离开日外，可全天使用。
+尽管有前款规定，本设施仍可同意客人在该款规定时间以外使用房屋。此时的费用将另行告知。
+未事先联系而超过上午10:00退房时，将按每30分钟5,000日元（含税）收取清洁人员等待费。此外，如因延迟退房导致清洁无法按时完成，并因此对下一预订产生费用时，可能另行收取该费用。
+第10条（遵守使用规则）
+住宿客人在本设施建筑内及场地内，须遵守附表2的“住宿规则（使用规则）”。对于在住宿手册、预订网站或房内告示中告知的注意事项，亦同。
+第11条（咨询对应时间及设施使用时间）
+对于向本设施提出的咨询（预订网站的消息等），对应方式如下。屋外设施（烧烤设备、桑拿等）的使用时间，由附表2规定。
+日本时间上午9:00至下午7:00：由自动回复（聊天机器人）及工作人员对应。
+日本时间下午7:00至次日上午9:00：以自动回复（聊天机器人）对应为主。除紧急情况外，工作人员的回复可能在次日上午9:00以后。
+遇到无法开锁、漏水、停电等紧急情况时，无论何时，请拨打住宿手册中记载的紧急联系电话。
+如遇不得已的情况，前款时间可能临时变更。此时将以适当的方式告知。
+第12条（费用的支付）
+住宿客人应付的住宿费用等，为预订时在预订网站等显示的住宿费、清洁费及税费。住宿税在预订网站上以“度假村费（Resort Fee）”的名义收取。不设按年龄区分的价格（无儿童价）。
+前款的住宿费用等，须在预订时通过各预订网站的支付方式（向本设施直接预订时，为本设施指定的支付方式）支付。不接受现场支付。
+本设施已向住宿客人提供房屋且可供使用后，即使住宿客人自愿不入住，仍收取住宿费。
+在住宿期间或住宿后产生的追加费用、违约金及损害赔偿金，通过预订网站预订的，按该预订网站的程序支付；直接预订的，须以本设施指定的方式并在指定期限前支付。
+第13条（本设施的责任）
+本设施在履行住宿合同及相关合同时，或因未履行该等合同而给住宿客人造成损害的，将赔偿该损害。但该损害并非可归责于本设施的事由所致的，不在此限。
+本设施前方的海岸及海域不属于本设施场地，也不由本设施管理。对于在海岸及海中发生的事故（下水时的事故、高浪导致的事故、摔倒等），除因本设施的故意或过失所致外，本设施不承担责任。
+因天灾及其他灾害、停电、停水、通信故障（包括Wi-Fi）、设备故障或其他不可归责于本设施的事由，导致部分设备暂时无法使用时，本设施不赔偿由此产生的损害，也不退还住宿费。但因该等事由导致无法继续住宿时，依第7条及第14条的规定处理。此外，通过预订网站签订的住宿合同，不论本款如何规定，均优先适用该预订网站有关取消及退款的规定（包括有关灾害等的规定）（第1条第3款）。
+第14条（无法提供约定房屋时的处理）
+本设施无法向住宿客人提供合同约定的房屋时，将在取得客人同意后，尽可能介绍条件相同的其他住宿设施。
+尽管有前款规定，如本设施无法介绍其他住宿设施，将向住宿客人支付相当于违约金的补偿金，该补偿金抵充损害赔偿额。但无法提供房屋并非可归责于本设施的事由时，不支付补偿金。
+第15条（携带物品的处理）
+由于本设施无常驻前台，不接受物品、现金及贵重物品的寄存。携带物品请客人自行保管。
+住宿客人带入本设施的物品（下款所述贵重物品除外），因本设施的故意或过失发生灭失、毁损等损害时，本设施将赔偿该损害。但除本设施有故意或重大过失的情形外，赔偿额以30,000日元为限。
+对于现金、有价证券、贵金属及其他贵重物品，如住宿客人未事先向本设施申报其种类及价额，依据《商法》第597条的规定，本设施对其灭失或损伤所致损害不予赔偿。但因本设施的故意或重大过失所致，或属于该条规定的其他情形的，不在此限。
+第16条（住宿客人行李或随身物品的保管）
+对于住宿客人抵达前寄送至本设施的行李及快递，本设施不予签收。
+住宿客人退房后，其行李或随身物品遗留在本设施且物主明确时，本设施将联系该物主并征求其指示。如希望寄送，仅限日本国内地址，以到付方式寄出；除邮费外，每次寄送另收手续费3,000日元（含税。包装材料费另计）。
+物主未做指示或物主不明时，包括发现当日在内保管7天，其后交予最近的警察署。但饮食物及其他不适合保管的物品，本设施可自行判断处理。
+第17条（停车责任）
+每栋限停1辆车，如需更多车位，请事先与我们联系。
+住宿客人使用本设施停车场时，不论是否寄存车辆钥匙，本设施仅提供场地，不承担车辆的管理责任。但在停车场管理上因本设施的故意或过失造成损害时，本设施承担赔偿责任。
+第18条（住宿客人的责任）
+因住宿客人的故意或过失使本设施遭受损害时，该住宿客人须向本设施赔偿该损害。
+附表2第8项所定的费用，作为前款损害的最低金额收取。
+第19条（语言、准据法及管辖）
+本条款以日文为正文，如与译文存在差异，以日文正文为准。
+本条款及住宿合同以日本法律为准据法，与之相关的纠纷，以札幌地方法院为第一审专属协议管辖法院。
+附则
+本条款自2026年11月1日起施行。本条款通过预订网站的设施页面、预订确认邮件、住宿手册及房内告示进行公示。
+附表1　违约金（第6条相关、适用于直接预订）
+本表适用于向本设施直接预订的情形。通过预订网站预订的，优先适用预订网站根据住宿时期、预订时间及价格方案所载的取消政策（第1条第3款）。
+（注）缩短合同住宿天数时，不论缩短天数多少，均收取1晚（首晚）的违约金。
+附表2　住宿规则（使用规则）（第7条、第10条、第11条、第13条及第18条相关）
+住宿客人在本设施建筑内及场地内，须遵守下列规则。
+1. 禁止事项（防火所必需者。第7条第1款第8项相关）
+在场地内（室内及室外）吸烟，包括卷烟、加热烟草、电子烟及其他类似产品
+在室内使用蜡烛、烟花或其他明火（烹饪仅限使用配备的厨具）
+在本设施指定场所以外进行烧烤，以及在晚上9点以后使用烧烤设备
+遮挡、移动、拆除火灾报警器、灭火器及其他消防设备和安全设备，或使其无法运作的行为
+2. 顾及邻居
+晚上10点以后，室内外均请保持安静。
+谢绝举办派对及活动。
+3. 室内使用须知
+室内禁止穿鞋。请在玄关脱鞋。
+请勿将沙子带入室内。从海边回来时，进门前请拍掉鞋子、脚和随身物品上的沙子。
+请勿在室内拖动行李箱。
+请勿带走室内物品。
+请勿将包裹寄送至本设施（第16条第1款）。
+不可携带宠物入住（身体残障者辅助犬除外。第2条第3款）。
+4. 垃圾
+请将垃圾分为3类：可燃垃圾、罐及玻璃瓶、塑料瓶（PET瓶）。
+请勿将垃圾放在室外（乌鸦会啄破垃圾袋）。
+垃圾较多时，请提前通过聊天与我们联系。
+请勿遗留行李箱、家具等大件物品。
+5. 外出及退房时
+请关闭照明及其他电器的电源，关好窗户，锁好玄关门。
+冬季（12月至3月）为防止结冻，外出及离开时请勿关闭空调，保持制暖模式并设定为16℃。此外，请配合本设施告知的设备操作。
+退房时间为上午10:00以前（第9条）。
+6. 停车场
+每栋限停1辆车，请使用指定车位。请勿在邻居场地或道路上停车（第17条）。
+7. 屋外设施
+烧烤设备可使用至晚上9点。
+桑拿（设置后）的使用时间为上午7点至晚上9点。桑拿为3栋共用。使用方法、预约方式及安全注意事项，请遵守本设施另行制定的《桑拿使用规则》。
+8. 费用一览（第18条第2款相关）
+通过预订网站预订的，上述费用将通过该预订网站的程序请求（第12条第4款）。
+9. 海岸使用须知（第13条第2款相关）
+本设施前方的海岸禁止游泳。请勿下水超过膝盖的深度。
+海岸无救生员。靠近水边时，请自行确认安全。
+在高浪、强风、恶劣天气时，夜间或饮酒后，请勿靠近水边。
+请勿让儿童单独前往海岸。
+感到地震摇晃，或发布海啸警报、海啸注意报时，请立即离开海岸，前往住宿手册中记载的避难场所。
+10. 拍摄及商业使用
+个人纪念拍摄及在社交媒体上发布不受限制。
+下列用途须事先取得本设施的书面（包括电子邮件等）同意。如获同意，可能另行收取费用。
+广告、节目、电影等商业拍摄及采访
+摄影会、派对、活动、销售商品及其他非住宿目的的使用
+使用无人机（须遵守《航空法》及其他法令）
+请勿进行长时间直播等可能打扰邻居的行为。
+解除の通知を受けた日
+宿泊料金に対する比率
+不泊（連絡なし。当日と同じ扱い）
+100%
+当日
+100%
+前日
+100%
+2日前〜7日前
+80%
+8日前〜14日前
+50%
+15日前まで
+0%
+事項
+費用
+関係する条項
+喫煙の形跡・臭いが確認された場合
+清掃及び消臭費用 100,000円（税込）
+本表1(1)
+ペットの同伴（身体障害者補助犬を除きます。）
+清掃費用 100,000円（税込。寝具・タオル等の廃棄を含みます。）
+第2条第3項、本表3(6)
+砂の過度な持ち込み
+清掃費用 20,000円（税込）
+本表3(2)
+予約にない者の宿泊（無断の人数超過）
+超過1名につき1泊5,000円（税込）
+第2条第3項
+無断のチェックアウト遅延
+清掃スタッフ待機料 30分ごとに5,000円（税込）＋次の予約に関して生じた費用
+第9条第3項
+大きな物の置き去り
+3,000〜5,000円（税込。大きさによります。）
+本表4(4)
+建物、家具、備品、鍵等の汚損・破損・紛失
+実費
+第18条第1項
+忘れ物の発送（国内のみ・着払い）
+手数料 1回3,000円（税込）＋梱包資材費（送料は着払い）
+第16条第2項
+Date the cancellation notice is received
+Fee as a percentage of the accommodation charges
+No-show (no contact; treated as same day)
+100%
+Same day
+100%
+1 day before
+100%
+2–7 days before
+80%
+8–14 days before
+50%
+15 days or more before
+0%
+Item
+Charge
+Related provision
+Trace or smell of smoking found
+Cleaning and odor-removal fee JPY 100,000 (tax included)
+Section 1(1)
+Bringing a pet (except service dogs)
+Cleaning fee JPY 100,000 (tax included; includes disposal of bedding, towels, etc.)
+Article 2(3), Section 3(6)
+Bringing an excessive amount of sand inside
+Cleaning fee JPY 20,000 (tax included)
+Section 3(2)
+Guests not on the booking (more guests than booked)
+JPY 5,000 (tax included) per extra guest per night
+Article 2(3)
+Late check-out without prior notice
+Cleaning staff waiting fee JPY 5,000 (tax included) per 30 minutes, plus any cost caused to the next booking
+Article 9(3)
+Leaving large items behind
+JPY 3,000–5,000 (tax included; depending on the size)
+Section 4(4)
+Dirtying, damaging or losing the building, furniture, equipment, keys, etc.
+Actual cost
+Article 18(1)
+Sending forgotten items (Japan only, cash on delivery)
+Handling fee JPY 3,000 (tax included) per shipment, plus packaging (postage paid on delivery)
+Article 16(2)
+收到取消通知的日期
+占住宿费的比例
+未入住（未联系。与当日取消相同处理）
+100%
+当日
+100%
+前1日
+100%
+前2日至前7日
+80%
+前8日至前14日
+50%
+前15日及以前
+0%
+事项
+费用
+相关条款
+发现吸烟痕迹或烟味
+清洁及除臭费用 100,000日元（含税）
+本表1(1)
+携带宠物（身体残障者辅助犬除外）
+清洁费用 100,000日元（含税。包括床上用品、毛巾等的废弃处理）
+第2条第3款、本表3(6)
+带入过多沙子
+清洁费用 20,000日元（含税）
+本表3(2)
+预订以外人员入住（擅自超员）
+每超出1人每晚5,000日元（含税）
+第2条第3款
+未事先联系而延迟退房
+清洁人员等待费 每30分钟5,000日元（含税）＋对下一预订产生的费用
+第9条第3款
+遗留大件物品
+3,000～5,000日元（含税。视大小而定）
+本表4(4)
+建筑、家具、设备、钥匙等的污损、破损、遗失
+实际费用
+第18条第1款
+寄送遗失物品（仅限日本国内、到付）
+手续费 每次3,000日元（含税）＋包装材料费（邮费到付）
+第16条第2款

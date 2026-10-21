@@ -1,80 +1,79 @@
 {
-  "confirmedOn": "2026-10-14",
+  "confirmedOn": "2026-10-21",
   "pending": [],
   "copy": {
     "en": {
       "title": "Extra cleaning and service charges",
       "items": [
-        "No smoking anywhere on the property, indoors or outdoors, including e-cigarettes and heated tobacco. Cleaning and smell-removal fee: ¥100,000 excluding tax.",
-        "Pets are not allowed. Bringing a pet incurs a ¥100,000 cleaning fee excluding tax, including disposal of bedding and towels for the next guest. This pet fee does not apply to guide, hearing or assistance dogs. Damage is charged at actual cost.",
-        "Bringing a large amount of beach sand indoors: fixed additional cleaning fee of ¥20,000 excluding tax.",
-        "Unregistered overnight guests: ¥5,000 per unregistered person per night. All guests must be included in the booking; the maximum remains five guests per cabin. This is separate from the normal booked extra-guest fee.",
+        "No smoking anywhere on the property, indoors or outdoors, including e-cigarettes and heated tobacco. Cleaning and smell-removal fee: ¥100,000 including tax.",
+        "Pets are not allowed. Bringing a pet incurs a ¥100,000 cleaning fee including tax, including disposal of bedding and towels for the next guest. This pet fee does not apply to guide, hearing or assistance dogs. Damage is charged at actual cost.",
+        "Bringing a large amount of beach sand indoors: fixed additional cleaning fee of ¥20,000 including tax.",
+        "Unregistered overnight guests: ¥5,000 per unregistered person per night including tax. All guests must be included in the booking; the maximum remains five guests per cabin. This is separate from the normal booked extra-guest fee.",
         "Checkout is by 10:00. Leaving late without notifying us beforehand: ¥5,000 including tax per 30 minutes, plus any cost caused to the next booking.",
-        "Leaving large items such as suitcases or furniture: disposal fee of ¥3,000–¥5,000 depending on size.",
+        "Leaving large items such as suitcases or furniture: disposal fee of ¥3,000–¥5,000 including tax, depending on size.",
         "Soiling, damaging or losing furniture, equipment, keys or other property: actual cost, including damage caused by pets.",
         "Forgotten-item returns within Japan only: ¥3,000 including tax per shipment, plus packaging. The guest pays postage on delivery. This is a service fee."
       ],
-      "note": "For bookings through Airbnb or other booking platforms, claims are submitted through the platform’s own process and payment is subject to its rules and decision."
+      "note": "Effective 1 November 2026. For bookings through Airbnb or other booking platforms, claims are submitted through the platform’s own process and payment is subject to its rules and decision."
     },
     "ja": {
       "title": "追加清掃・サービス料金",
       "items": [
-        "屋内・屋外とも敷地内は全面禁煙です。電子タバコ・加熱式タバコも含みます。清掃・臭い除去費は100,000円（税別）です。",
-        "ペットの同伴は禁止です。違反時の清掃費は100,000円（税別）で、次のお客様のための寝具・タオル等の廃棄費を含みます。盲導犬・聴導犬・介助犬などの補助犬には、このペット料金を適用しません。破損等は実費を別途請求します。",
-        "室内に大量の浜砂を持ち込んだ場合、追加清掃費は定額20,000円（税別）です。",
-        "予約に登録されていない宿泊者は、未登録者1名につき1泊5,000円です。宿泊者全員を予約に含めてください。定員は各棟最大5名のままです。通常の予約済み追加人数料金とは別の料金です。",
+        "屋内・屋外とも敷地内は全面禁煙です。電子タバコ・加熱式タバコも含みます。清掃・臭い除去費は100,000円（税込）です。",
+        "ペットの同伴は禁止です。違反時の清掃費は100,000円（税込）で、次のお客様のための寝具・タオル等の廃棄費を含みます。盲導犬・聴導犬・介助犬などの補助犬には、このペット料金を適用しません。破損等は実費を別途請求します。",
+        "室内に大量の浜砂を持ち込んだ場合、追加清掃費は定額20,000円（税込）です。",
+        "予約に登録されていない宿泊者は、未登録者1名につき1泊5,000円（税込）です。宿泊者全員を予約に含めてください。定員は各棟最大5名のままです。通常の予約済み追加人数料金とは別の料金です。",
         "チェックアウトは午前10時までです。事前のご連絡なく遅れた場合は、30分ごとに5,000円（税込）と、次の予約に影響した場合の費用を請求します。",
-        "スーツケースや家具などの大型物品を残された場合、サイズに応じて処分費3,000〜5,000円を請求します。",
+        "スーツケースや家具などの大型物品を残された場合、サイズに応じて処分費3,000〜5,000円（税込）を請求します。",
         "家具、設備、鍵などの汚損・破損・紛失は実費を請求します。ペットによる破損も含みます。",
         "忘れ物の返送は日本国内のみです。発送1回につき手数料3,000円（税込）と梱包費を頂きます。送料はお客様ご負担の着払いです。これはサービス料金です。"
       ],
-      "note": "Airbnb等の予約サイト経由のご予約では、各サイトの手続きに従って請求し、支払いはその規定・判断に従います。"
+      "note": "2026年11月1日施行。Airbnb等の予約サイト経由のご予約では、各サイトの手続きに従って請求し、支払いはその規定・判断に従います。"
     },
     "zh-CN": {
       "title": "额外清洁与服务费用",
       "items": [
-        "场地内室内及室外全面禁烟，包括电子烟和加热烟草。清洁及除味费为100,000日元（不含税）。",
-        "禁止携带宠物。违规携带宠物的清洁费为100,000日元（不含税），包括为下一位客人丢弃床品、毛巾等的费用。导盲犬、导听犬及辅助犬不适用此宠物费用。损坏按实际费用另计。",
-        "将大量海滩沙子带入室内：固定额外清洁费20,000日元（不含税）。",
-        "未登记的过夜客人，每位未登记客人每晚5,000日元。所有入住者须计入预订，每间小屋仍最多5人。此费用不同于正常预订的额外人数费用。",
+        "场地内室内及室外全面禁烟，包括电子烟和加热烟草。清洁及除味费为100,000日元（含税）。",
+        "禁止携带宠物。违规携带宠物的清洁费为100,000日元（含税），包括为下一位客人丢弃床品、毛巾等的费用。导盲犬、导听犬及辅助犬不适用此宠物费用。损坏按实际费用另计。",
+        "将大量海滩沙子带入室内：固定额外清洁费20,000日元（含税）。",
+        "未登记的过夜客人，每位未登记客人每晚5,000日元（含税）。所有入住者须计入预订，每间小屋仍最多5人。此费用不同于正常预订的额外人数费用。",
         "退房时间为上午10点。未提前告知而延迟退房，每30分钟收取5,000日元（含税），另计对下一笔预订造成的费用。",
-        "遗留行李箱、家具等大型物品：根据大小收取3,000–5,000日元处理费。",
+        "遗留行李箱、家具等大型物品：根据大小收取3,000–5,000日元（含税）处理费。",
         "弄脏、损坏或遗失家具、设备、钥匙等，按实际费用收取，包括宠物造成的损坏。",
         "遗失物品仅寄送至日本国内：每次寄送手续费3,000日元（含税），包装费另计。邮费由客人到付。这是服务费用。"
       ],
-      "note": "通过Airbnb等预订平台订房时，费用申请按平台流程处理，是否支付及金额依平台规则与决定。"
+      "note": "2026年11月1日起施行。通过Airbnb等预订平台订房时，费用申请按平台流程处理，是否支付及金额依平台规则与决定。"
     },
     "zh-TW": {
       "title": "額外清潔與服務費用",
       "items": [
-        "場地內室內及室外全面禁菸，包括電子菸和加熱菸草。清潔及除味費為100,000日圓（未稅）。",
-        "禁止攜帶寵物。違規攜帶寵物的清潔費為100,000日圓（未稅），包括為下一位旅客丟棄床品、毛巾等的費用。導盲犬、導聽犬及輔助犬不適用此寵物費用。損壞按實際費用另計。",
-        "將大量海灘沙子帶入室內：固定額外清潔費20,000日圓（未稅）。",
-        "未登記的過夜旅客，每位未登記旅客每晚5,000日圓。所有入住者須計入預訂，每間小屋仍最多5人。此費用不同於正常預訂的額外人數費用。",
+        "場地內室內及室外全面禁菸，包括電子菸和加熱菸草。清潔及除味費為100,000日圓（含稅）。",
+        "禁止攜帶寵物。違規攜帶寵物的清潔費為100,000日圓（含稅），包括為下一位旅客丟棄床品、毛巾等的費用。導盲犬、導聽犬及輔助犬不適用此寵物費用。損壞按實際費用另計。",
+        "將大量海灘沙子帶入室內：固定額外清潔費20,000日圓（含稅）。",
+        "未登記的過夜旅客，每位未登記旅客每晚5,000日圓（含稅）。所有入住者須計入預訂，每間小屋仍最多5人。此費用不同於正常預訂的額外人數費用。",
         "退房時間為上午10點。未提前告知而延遲退房，每30分鐘收取5,000日圓（含稅），另計對下一筆預訂造成的費用。",
-        "遺留行李箱、家具等大型物品：依大小收取3,000–5,000日圓處理費。",
+        "遺留行李箱、家具等大型物品：依大小收取3,000–5,000日圓（含稅）處理費。",
         "弄髒、損壞或遺失家具、設備、鑰匙等，按實際費用收取，包括寵物造成的損壞。",
         "遺失物品僅寄送至日本國內：每次寄送手續費3,000日圓（含稅），包裝費另計。郵費由旅客到付。這是服務費用。"
       ],
-      "note": "透過Airbnb等預訂平台訂房時，費用申請按平台流程處理，是否支付及金額依平台規則與決定。"
+      "note": "2026年11月1日起施行。透過Airbnb等預訂平台訂房時，費用申請按平台流程處理，是否支付及金額依平台規則與決定。"
     },
     "ko": {
       "title": "추가 청소 및 서비스 요금",
       "items": [
-        "실내와 실외를 포함한 부지 전체는 금연이며 전자담배와 가열식 담배도 포함됩니다. 청소 및 냄새 제거 비용은 100,000엔(세금 별도)입니다.",
-        "반려동물 동반은 금지됩니다. 위반 시 다음 게스트를 위한 침구와 수건 등의 폐기를 포함한 청소비 100,000엔(세금 별도)이 적용됩니다. 안내견, 청각도우미견 및 보조견에는 이 반려동물 요금을 적용하지 않습니다. 파손은 실제 비용으로 별도 청구합니다.",
-        "실내에 많은 양의 해변 모래를 반입한 경우 추가 청소비는 정액 20,000엔(세금 별도)입니다.",
-        "예약에 등록되지 않은 숙박자는 미등록자 1인당 1박 5,000엔입니다. 모든 숙박자를 예약에 포함해야 하며 객실당 최대 인원은 여전히 5명입니다. 정상적으로 예약된 추가 인원 요금과는 별개입니다.",
+        "실내와 실외를 포함한 부지 전체는 금연이며 전자담배와 가열식 담배도 포함됩니다. 청소 및 냄새 제거 비용은 100,000엔(세금 포함)입니다.",
+        "반려동물 동반은 금지됩니다. 위반 시 다음 게스트를 위한 침구와 수건 등의 폐기를 포함한 청소비 100,000엔(세금 포함)이 적용됩니다. 안내견, 청각도우미견 및 보조견에는 이 반려동물 요금을 적용하지 않습니다. 파손은 실제 비용으로 별도 청구합니다.",
+        "실내에 많은 양의 해변 모래를 반입한 경우 추가 청소비는 정액 20,000엔(세금 포함)입니다.",
+        "예약에 등록되지 않은 숙박자는 미등록자 1인당 1박 5,000엔(세금 포함)입니다. 모든 숙박자를 예약에 포함해야 하며 객실당 최대 인원은 여전히 5명입니다. 정상적으로 예약된 추가 인원 요금과는 별개입니다.",
         "체크아웃은 오전 10시까지입니다. 사전 연락 없이 늦게 퇴실하면 30분당 5,000엔(세금 포함)에 다음 예약에 영향을 준 비용이 추가됩니다.",
-        "여행 가방이나 가구 등 큰 물품을 남긴 경우 크기에 따라 3,000–5,000엔의 폐기 비용이 적용됩니다.",
+        "여행 가방이나 가구 등 큰 물품을 남긴 경우 크기에 따라 3,000–5,000엔(세금 포함)의 폐기 비용이 적용됩니다.",
         "가구, 설비, 열쇠 등의 오염, 파손 또는 분실은 실제 비용으로 청구합니다. 반려동물로 인한 파손도 포함됩니다.",
         "분실물 반송은 일본 국내만 가능합니다. 배송 1회당 수수료 3,000엔(세금 포함)에 포장비가 추가되며, 배송비는 게스트가 착불로 부담합니다. 이는 서비스 요금입니다."
       ],
-      "note": "Airbnb 등 예약 플랫폼을 통한 예약은 해당 플랫폼의 절차에 따라 비용을 요청하며, 지급 여부와 금액은 플랫폼의 규정 및 결정에 따릅니다."
+      "note": "2026년 11월 1일부터 적용됩니다. Airbnb 등 예약 플랫폼을 통한 예약은 해당 플랫폼의 절차에 따라 비용을 요청하며, 지급 여부와 금액은 플랫폼의 규정 및 결정에 따릅니다."
     }
   },
-  "taxUnspecified": [
-    "unregisteredGuest",
-    "largeItemDisposal"
-  ]
+  "taxUnspecified": [],
+  "effectiveFrom": "2026-11-01",
+  "sourceUrl": "https://docs.google.com/document/d/1qwA727D--mHlmTGMXojN7foF3o2zXGar/edit"
 }
