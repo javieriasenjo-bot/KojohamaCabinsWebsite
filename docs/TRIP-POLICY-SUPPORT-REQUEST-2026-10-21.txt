@@ -1,3 +1,5 @@
+SUPERSEDED: Do not send this earlier tax-exclusive draft. Use TRIP-FINAL-TERMS-SUPPORT-REQUEST-2026-10-21.txt and the final owner-supplied terms instead.
+
 Updated 21 October 2026: the unregistered-guest charge applies to EVERY unregistered overnight guest. No third-guest threshold. Prepared for owner to send; no support message sent by this task.
 
 Please add the following owner-confirmed conditional guest-charge policy to an approved policy / important-notice field for all three properties: Ocean Stay A Sol, Ocean Stay B Zen and Ocean Stay C Rustic. The property-introduction editor rejected the text because monetary amounts are prohibited there. Please tell us which approved field to use, and ensure the same policy is available in all guest languages. These are conditional charges, not compulsory fees on every reservation; please do not add them as mandatory booking charges. Maximum occupancy remains five per cabin. Please also correct Zen's structured occupancy: its current dashboard still shows six, but the approved maximum is five.
