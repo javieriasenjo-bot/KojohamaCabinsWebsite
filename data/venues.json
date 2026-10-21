@@ -3831,7 +3831,7 @@
         "en": {
           "name": "Kojohama Kanbara",
           "drive": "4 min",
-          "descriptionHtml": "Another village tarako maker, quieter than Tairyobanya.",
+          "descriptionHtml": "Enjoy a more relaxed shopping experience away from the bustling tourist crowds. Their signature <em>tarako</em> pasta sauce is especially popular for both souvenirs and home cooking—simply toss it with freshly boiled pasta for an authentic, restaurant-quality dish. Don't miss the chance to savor these delicious and easy-to-enjoy treasures of the sea!",
           "hours": "09:00–16:30. Closed Wednesday.",
           "links": [
             {
@@ -3841,19 +3841,19 @@
             }
           ],
           "photo": {
-            "src": "/images/places/venue-49.webp",
+            "src": "/images/places/kanbara-storefront.webp",
             "alt": "Kojohama Kanbara",
-            "width": 506,
-            "height": 900,
+            "width": 722,
+            "height": 410,
             "fit": "contain",
-            "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E8%99%8E%E6%9D%96%E6%B5%9C%20%E3%81%8B%E3%82%93%E3%81%B0%E3%82%89%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">Photo source: Google Maps</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "creditHtml": "Photo supplied by owner · <a href=\"https://www.google.com/maps/search/?api=1&amp;query=虎杖浜かんばら\" target=\"_blank\" rel=\"noopener noreferrer\">Shop map</a>",
+            "rightsStatus": "Photo supplied and selected by owner 2026-10-21"
           }
         },
         "ja": {
           "name": "虎杖浜 かんばら",
           "drive": "車で4分",
-          "descriptionHtml": "もう一軒のたらこ製造。大漁番屋より静か。",
+          "descriptionHtml": "観光地のにぎわいから少し離れて、ゆったりとお買い物を楽しめるお店です。看板商品のたらこパスタソースは、お土産にもご家庭用にも人気。茹でたてのパスタに和えるだけで、お店のような本格的な味わいが楽しめます。手軽に味わえる、おいしい海の恵みをぜひお試しください。",
           "hours": "9:00〜16:30。水曜定休。",
           "links": [
             {
@@ -3863,19 +3863,19 @@
             }
           ],
           "photo": {
-            "src": "/images/places/venue-49.webp",
+            "src": "/images/places/kanbara-storefront.webp",
             "alt": "虎杖浜 かんばら",
-            "width": 506,
-            "height": 900,
+            "width": 722,
+            "height": 410,
             "fit": "contain",
-            "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E8%99%8E%E6%9D%96%E6%B5%9C%20%E3%81%8B%E3%82%93%E3%81%B0%E3%82%89%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">写真の出典：Google マップ</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "creditHtml": "写真提供：オーナー · <a href=\"https://www.google.com/maps/search/?api=1&amp;query=虎杖浜かんばら\" target=\"_blank\" rel=\"noopener noreferrer\">店舗の地図</a>",
+            "rightsStatus": "Photo supplied and selected by owner 2026-10-21"
           }
         },
         "zh-CN": {
           "name": "虎杖滨 神原",
           "drive": "车程4分钟",
-          "descriptionHtml": "村里另一家明太子作坊，比大渔番屋安静。",
+          "descriptionHtml": "远离热闹的游客人潮，在这里悠闲地选购海味。招牌鳕鱼籽意面酱尤其受欢迎，无论作为伴手礼还是在家享用都很合适。只需拌入刚煮好的意面，就能轻松品尝餐厅般的地道美味。别错过这些美味又方便享用的海洋珍味！",
           "hours": "9:00–16:30。周三休息。",
           "links": [
             {
@@ -3885,13 +3885,13 @@
             }
           ],
           "photo": {
-            "src": "/images/places/venue-49.webp",
+            "src": "/images/places/kanbara-storefront.webp",
             "alt": "虎杖滨 神原",
-            "width": 506,
-            "height": 900,
+            "width": 722,
+            "height": 410,
             "fit": "contain",
-            "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E8%99%8E%E6%9D%96%E6%B5%9C%20%E3%81%8B%E3%82%93%E3%81%B0%E3%82%89%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">照片来源：Google 地图</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "creditHtml": "照片由业主提供 · <a href=\"https://www.google.com/maps/search/?api=1&amp;query=虎杖浜かんばら\" target=\"_blank\" rel=\"noopener noreferrer\">店铺地图</a>",
+            "rightsStatus": "Photo supplied and selected by owner 2026-10-21"
           }
         }
       },

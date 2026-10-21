@@ -199,6 +199,12 @@
       "bytes": 23674
     },
     {
+      "source": "/images/places/kanbara-storefront.webp",
+      "url": "/media/kanbara-storefront.be1d9c194b41.webp",
+      "sha256": "be1d9c194b41133ecf4f343312ba264477038e192f5857801608aa8c6944f7a1",
+      "bytes": 70680
+    },
+    {
       "source": "/images/places/venue-02-640.webp",
       "url": "/media/venue-02-640.4a66b6fa8f2b.webp",
       "sha256": "4a66b6fa8f2b095333abad6a1532524ef3cd5b35a36c3c4a2f25c0fe11c9c12f",
@@ -659,12 +665,6 @@
       "url": "/media/venue-48.056e45faea22.webp",
       "sha256": "056e45faea22a02a8e7531617b3d4ae635ad3421979266ffbfb15099c714da34",
       "bytes": 186540
-    },
-    {
-      "source": "/images/places/venue-49.webp",
-      "url": "/media/venue-49.b08d938631a5.webp",
-      "sha256": "b08d938631a542400fc4cc74aa94875a18ed2efeeeb14cfc9ff1728fa293e1e8",
-      "bytes": 50890
     },
     {
       "source": "/images/places/venue-50-640.webp",
