@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Build the same pages that Cloudflare publishes
+        run: npm run build
       - name: Submit changed pages after deployment; manual runs submit all sitemap pages
         env:
           PREVIOUS_COMMIT: ${{ github.event.before }}
