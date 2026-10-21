@@ -119,6 +119,11 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
+ if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || /(?:cabins|faq)\/index\.html$/.test(file) || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
+  const documents=require('./guest-documents.cjs').render(lang);
+  if(source.includes('<!-- guest-documents:start -->')) source=marked(source,'guest-documents',documents);
+  else source=source.replace('</main>',`<!-- guest-documents:start -->${documents}<!-- guest-documents:end --></main>`);
+ }
  // Replace the superseded publication window in hand-authored social/meta copy.
  source=source.replaceAll('Oct–24 Dec 2026','16 Oct 2026–1 Jul 2027')
   .replaceAll('nightly, Oct–24 Dec','nightly; dates vary')
