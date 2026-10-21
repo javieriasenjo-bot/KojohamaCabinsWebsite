@@ -1327,6 +1327,60 @@
       "bytes": 232428
     },
     {
+      "source": "/images/workspaces/rustic-workspace-480.webp",
+      "url": "/media/rustic-workspace-480.7b576c42d060.webp",
+      "sha256": "7b576c42d0605f0a52283c774578fa3b3a4ca81bb2d46ff69ca226884bd699c1",
+      "bytes": 11338
+    },
+    {
+      "source": "/images/workspaces/rustic-workspace-960.webp",
+      "url": "/media/rustic-workspace-960.ab33e42caf59.webp",
+      "sha256": "ab33e42caf59179d4c6878a65263bc9b4329830bb94e20cad49495e3396f4e3a",
+      "bytes": 35906
+    },
+    {
+      "source": "/images/workspaces/rustic-workspace.webp",
+      "url": "/media/rustic-workspace.98acfce88164.webp",
+      "sha256": "98acfce881648c032934417ba243029d8d21c4cea1a127b7209537331071bcb1",
+      "bytes": 61278
+    },
+    {
+      "source": "/images/workspaces/sol-workspace-480.webp",
+      "url": "/media/sol-workspace-480.6232f3320b64.webp",
+      "sha256": "6232f3320b64e000ba45f6cd4f986ed8ae4990c463be902b8892ac6f217547b6",
+      "bytes": 12704
+    },
+    {
+      "source": "/images/workspaces/sol-workspace-960.webp",
+      "url": "/media/sol-workspace-960.20844a48f4a9.webp",
+      "sha256": "20844a48f4a9ce757b274bb8d4d1c1f364d047271326efa710e31727ed6a268f",
+      "bytes": 40672
+    },
+    {
+      "source": "/images/workspaces/sol-workspace.webp",
+      "url": "/media/sol-workspace.c717c8db1b95.webp",
+      "sha256": "c717c8db1b95ed3e617fdcdbf8654b372286a7668635ef87be01445fb9356741",
+      "bytes": 120962
+    },
+    {
+      "source": "/images/workspaces/zen-workspace-480.webp",
+      "url": "/media/zen-workspace-480.29c6ac77e9b9.webp",
+      "sha256": "29c6ac77e9b9c64a635770203aad5bdc3908682054ac56c051668c4eee85f527",
+      "bytes": 57594
+    },
+    {
+      "source": "/images/workspaces/zen-workspace-960.webp",
+      "url": "/media/zen-workspace-960.717eb9a84c91.webp",
+      "sha256": "717eb9a84c91f37cecf3b7e6e0342a5b4b77ee1f1438fc13351921889433bdd1",
+      "bytes": 185332
+    },
+    {
+      "source": "/images/workspaces/zen-workspace.webp",
+      "url": "/media/zen-workspace.b7e3f50aeca0.webp",
+      "sha256": "b7e3f50aeca04d11eb07dc4983e35edf18d56953f7a9f7ff5ca2ea1d088c3794",
+      "bytes": 279660
+    },
+    {
       "source": "/images/zen/zen-10-480.webp",
       "url": "/media/zen-10-480.839f3b999bac.webp",
       "sha256": "839f3b999bac2097ed7ae821b7c86025819dddb44af44a310d14983ec6800dd1",

@@ -198,5 +198,20 @@
     "width": 1600,
     "height": 1067,
     "srcset": "/images/zen/zen-sleeping-layout-480.webp 480w, /images/zen/zen-sleeping-layout-960.webp 960w, /images/zen/zen-sleeping-layout.webp 1600w"
+  },
+  "/images/workspaces/sol-workspace.webp": {
+    "width": 1600,
+    "height": 900,
+    "srcset": "/images/workspaces/sol-workspace-480.webp 480w, /images/workspaces/sol-workspace-960.webp 960w, /images/workspaces/sol-workspace.webp 1600w"
+  },
+  "/images/workspaces/zen-workspace.webp": {
+    "width": 1125,
+    "height": 2000,
+    "srcset": "/images/workspaces/zen-workspace-480.webp 480w, /images/workspaces/zen-workspace-960.webp 960w, /images/workspaces/zen-workspace.webp 1125w"
+  },
+  "/images/workspaces/rustic-workspace.webp": {
+    "width": 1125,
+    "height": 2000,
+    "srcset": "/images/workspaces/rustic-workspace-480.webp 480w, /images/workspaces/rustic-workspace-960.webp 960w, /images/workspaces/rustic-workspace.webp 1125w"
   }
 }
