@@ -104,6 +104,8 @@
   panel.querySelector('[data-choice="no"]').addEventListener('click', () => decide(false));
   document.body.appendChild(panel);
   (document.querySelector('footer .legal-links') || document.querySelector('footer') || document.body).appendChild(settings);
+  // First visit has no stored choice: show the banner. Do not focus it (that would steal the page) and do not load trackers until Accept.
+  if (choice === null) panel.hidden = false;
   if (choice === true) load();
   else try { window.sessionStorage.removeItem(navigationKey); } catch (_) {}
 })();

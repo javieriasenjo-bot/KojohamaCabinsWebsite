@@ -56,6 +56,7 @@ assert.equal(replay('https://kojohamacabins.jp/cabins/',300001).length,0);
 assert.equal(replay('https://kojohamacabins.jp/cabins/',0,true).length,0);
 const headers=fs.readFileSync(path.join(__dirname,'..','_headers'),'utf8');
 assert(/script-src[^;]*https:\/\/tracker\.metricool\.com/.test(headers));
+assert(/connect-src[^;]*https:\/\/tracker\.metricool\.com/.test(headers));
 assert(!/script-src[^;]*'unsafe-inline'/.test(headers));
 assert(!/timeZone|Europe\//.test(source),'Consent must not depend on device time zone');
 console.log('PASS: explicit opt-in, deny/expiry/blocked storage, withdrawal, no advertising consent, tracker isolation and one-time navigation handoff.');

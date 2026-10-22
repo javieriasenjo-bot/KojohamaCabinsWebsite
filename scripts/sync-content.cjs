@@ -35,6 +35,54 @@ const travelCopy = {
  'zh-CN':{airport:`${facts.travel.newChitoseMinutes.join('–')}分钟`,casa:`${facts.travel.casaAntonioMinutes.join('–')}分钟`,airportQuestion:'从新千岁机场到小屋需要多久？',casaQuestion:'可以与札幌的住宿组合吗？',airportAnswer:`自驾通常约${facts.travel.newChitoseMinutes.join('–')}分钟。冬季天气可能延长行程，请预留更多时间。`,casaAnswer:`可以。姊妹物业Casa Antonio位于札幌麻生站附近，提供两套公寓。从虎杖浜自驾约${facts.travel.casaAntonioMinutes.join('–')}分钟，冬季或交通繁忙时请预留更多时间。`}
 };
 const pricing = require('./pricing.cjs');
+const dateRates = require('../data/date-rates.json');
+const decode = value => String(value).replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&#x27;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
+const offerCopy = {
+ en: 'Nightly rate for up to two guests. Cleaning is ¥7,000 per stay and tax is extra. Guests 3–5 add ¥2,500 each per stay. Limited availability; confirm the total on Airbnb.',
+ ja: '2名までの1泊料金です。清掃料金は1滞在7,000円、税金は別途です。3〜5人目はお一人につき1滞在2,500円追加。空室は限られます。合計はAirbnbでご確認ください。',
+ 'zh-CN': '最多两位客人的每晚房价。清洁费每次入住¥7,000，税费另计。第3至第5位客人每人每次入住加收¥2,500。房量有限，请在Airbnb确认总价。'
+};
+const crumbNames = {
+ en: {home:'Home', cabins:'Cabins', guide:'Area guide'},
+ ja: {home:'ホーム', cabins:'キャビン', guide:'周辺ガイド'},
+ 'zh-CN': {home:'首页', cabins:'小屋', guide:'周边指南'}
+};
+function airbnbLocalized(url, lang) {
+ if (lang === 'en') return url;
+ try {
+  const parsed = new URL(String(url).replace(/&amp;/g, '&'));
+  if (!/(^|\.)airbnb\.com$/i.test(parsed.hostname)) return url;
+  parsed.searchParams.set('locale', lang === 'ja' ? 'ja' : 'zh');
+  const next = parsed.toString();
+  return url.includes('&amp;') ? next.replace(/&/g, '&amp;') : next;
+ } catch { return url; }
+}
+function cabinBand(id) {
+ let low = Infinity, high = -Infinity;
+ for (const day of dateRates.days) {
+  const rate = day.rates[id];
+  if (rate < low) low = rate;
+  if (rate > high) high = rate;
+ }
+ return {low, high};
+}
+function breadcrumbFor(file, lang, heading) {
+ const names = crumbNames[lang];
+ const prefix = locales[lang].prefix;
+ const origin = 'https://kojohamacabins.jp/' + prefix;
+ const route = file.replace(new RegExp('^' + prefix), '');
+ const here = origin + route.replace(/index\.html$/, '');
+ const items = [{name: names.home, item: origin}];
+ if (/^cabins\//.test(route)) {
+  items.push({name: names.cabins, item: origin + 'cabins/'});
+  const cabin = facts.cabins.find(item => route.includes('ocean-stay-' + item.id));
+  if (cabin) items.push({name: cabin.name, item: here});
+ } else if (/^(?:guides|culture|things-to-do)\//.test(route)) {
+  items.push({name: names.guide, item: origin + 'things-to-do/'});
+  if (route !== 'things-to-do/index.html' && heading) items.push({name: heading, item: here});
+ } else return null;
+ return {'@type':'BreadcrumbList', itemListElement: items.map((item, index) => ({'@type':'ListItem', position: index + 1, name: item.name, item: item.item}))};
+}
 const pricingCopy = pricing.copy;
 if (facts.pricing.cleaningIncluded || facts.pricing.cleaningJPY !== 7000 || facts.pricing.taxesIncluded || facts.pricing.extraGuestBasis !== 'per stay' || facts.bbq.feeBasis !== 'per stay') throw new Error('Review pricing templates after policy changes.');
 const locales = {
@@ -43,7 +91,7 @@ const locales = {
  'zh-CN': {prefix:'zh-cn/', search:'搜索地点、美食或活动', clear:'清除搜索', count:'个地点', empty:'没有匹配的地点，请尝试其他关键词。', browse:'按类别浏览', gallery:'照片集', property:'小屋外观照片', close:'关闭照片集', prev:'上一张照片', next:'下一张照片', compare:'比较基本信息', cabin:'小屋', guests:'最多入住人数', beds:'床位数', view:'查看小屋', book:'查看日期', map:'确认最新营业时间和信息'}
 };
 function addBreadcrumbs(schema, file, lang, html) {
- if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || file === '404.html' || file === 'go/index.html' || file === 'googlefa3fab5b6b918158.html') return schema;
+ if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || file === '404.html' || /go\/index\.html$/.test(file) || file === 'googlefa3fab5b6b918158.html') return schema;
  const names = {
   en:{cabins:'Cabins',faq:'FAQ',location:'Location and access','things-to-do':'Area guide',guides:'Area guide',culture:'Area guide',bbq:'BBQ','october-to-march':'October to March','own-a-cabin':'Own a cabin','work-remotely':'Work remotely',privacy:'Privacy'},
   ja:{cabins:'キャビン',faq:'よくある質問',location:'所在地・アクセス','things-to-do':'周辺ガイド',guides:'周辺ガイド',culture:'周辺ガイド',bbq:'BBQ','october-to-march':'10月〜3月','own-a-cabin':'キャビンを所有','work-remotely':'リモートワーク',privacy:'プライバシー'},
@@ -60,7 +108,7 @@ function addBreadcrumbs(schema, file, lang, html) {
   const section = parts[0] === 'guides' || parts[0] === 'culture' ? 'things-to-do' : parts[0];
   items.push({'@type':'ListItem', position:2, name:names[section] || names[parts[0]] || section, item:origin + '/' + prefix + section + '/'});
  }
- const pageName = (html.match(/<title>([^<|]+)/)?.[1] || names[parts[0]] || 'Ocean Stay Kojohama').replace(/&/g,'&').replace(/&#39;|&#x27;/g,"'").trim();
+ const pageName = (html.match(/<title>([^<|]+)/)?.[1] || names[parts[0]] || 'Ocean Stay Kojohama').replace(/&amp;/g,'&').replace(/&#39;|&#x27;/g,"'").trim();
  items.push({'@type':'ListItem', position:items.length + 1, name:pageName});
  const crumb = {'@type':'BreadcrumbList', '@id':origin + '/' + rel + '#breadcrumb', itemListElement:items};
  const strip = node => { const copy = {...node}; delete copy['@context']; return copy; };
@@ -230,9 +278,18 @@ for (const absolute of walk(root)) {
  }
  source=source.replace(/(<span data-travel="airport">)[\s\S]*?(<\/span>)/g,`$1${trip.airport}$2`).replace(/(<span data-travel="casa-antonio">)[\s\S]*?(<\/span>)/g,`$1${trip.casa}$2`);
  if (lang !== 'en') source=source.replace(/aria-label="Close reservation menu"/g,`aria-label="${lang==='ja'?'予約メニューを閉じる':'关闭预订菜单'}"`).replace(/aria-label="Primary"/g,`aria-label="${lang==='ja'?'メインナビゲーション':'主导航'}"`).replace(/aria-label="Language"/g,`aria-label="${lang==='ja'?'言語':'语言'}"`);
+ const equipmentCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
+ if (equipmentCabin && source.includes('<!-- equipment-2026-10:start -->')) source = marked(source, 'equipment-2026-10', require('./equipment.cjs').render(lang, equipmentCabin));
  source=source.replace(/<img\b[^>]*>/g,tag=>{
   const src=tag.match(/\bsrc="([^"]+)"/)?.[1];
   if(captions[lang][src])tag=tag.replace(/\balt="[^"]*"/,`alt="${escape(captions[lang][src])}"`);
+  if (src && src.startsWith('/') && !src.startsWith('//')) {
+   const size = layouts.imageSize(path.join(root, decodeURIComponent(src.split('?')[0].slice(1))));
+   if (size) {
+    tag = /\bwidth="/.test(tag) ? tag.replace(/\bwidth="[^"]*"/, `width="${size.width}"`) : tag.replace(/<img\b/, `<img width="${size.width}"`);
+    tag = /\bheight="/.test(tag) ? tag.replace(/\bheight="[^"]*"/, `height="${size.height}"`) : tag.replace(/<img\b/, `<img height="${size.height}"`);
+   }
+  }
   const variants=responsive[src];
   if(variants){
    tag=tag.replace(/\s(?:srcset|data-full-src)="[^"]*"/g,'');
@@ -249,7 +306,8 @@ for (const absolute of walk(root)) {
  if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<div class="pricing-note wrap"><ul>${pricing.listFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]).map(item=>`<li>${item}</li>`).join('')}</ul><a href="/${locales[lang].prefix}cabins/#seasonal-rates">${lang==='en'?'View dated rates':lang==='ja'?'日付別料金を見る':'查看日期房价'}</a></div>`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   let schema=JSON.parse(text);
-  const inactiveBooking = url => facts.bookingChannels?.ctrip === false && /(?:ctrip\.com|trip\.com)/.test(String(url));
+  const metaDescription = decode(source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0]?.match(/\bcontent="([^"]*)"/)?.[1] || '');
+  const inactiveBooking = url => facts.bookingChannels?.ctrip === false && /(?:ctrip\.com|trip\.com)/i.test(String(url));
   const update=node=>{
    if (!node || typeof node !== 'object') return;
    if (Array.isArray(node.sameAs)) node.sameAs = node.sameAs.filter(url => !inactiveBooking(url));
@@ -264,6 +322,11 @@ for (const absolute of walk(root)) {
     node.checkoutTime = facts.cabins[0].checkOut;
    }
    if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricing.priceRange();
+   if (node['@type']==='Accommodation' && cabin) {
+    const band = cabinBand(cabin.id);
+    node.offers = {'@type':'AggregateOffer', priceCurrency:'JPY', lowPrice:band.low, highPrice:band.high, availability:'https://schema.org/LimitedAvailability', url:airbnbLocalized(cabin.airbnb, lang), description:offerCopy[lang]};
+   }
+   if (node['@type']==='WebPage' && metaDescription) node.description = metaDescription;
    if (node['@type']==='FAQPage' && file.endsWith('faq/index.html') && lang==='zh-CN') {
     for (const kind of ['airport','casa']) if (!node.mainEntity.some(q=>q.name===trip[`${kind}Question`])) node.mainEntity.push({'@type':'Question',name:trip[`${kind}Question`],acceptedAnswer:{'@type':'Answer',text:trip[`${kind}Answer`]}});
    }
@@ -281,6 +344,7 @@ for (const absolute of walk(root)) {
   schema = addBreadcrumbs(schema, file, lang, source);
   return start+JSON.stringify(schema)+end;
  });
+ if (lang !== 'en') source = source.replace(/https:\/\/(?:www\.)?airbnb\.com\/[^"'\\\s<]+/g, url => airbnbLocalized(url, lang));
  // The preload and visible hero must select the same responsive resource.
  const hero=source.match(/<img\b[^>]*class="hero-img"[^>]*>/)?.[0];
  if(hero){

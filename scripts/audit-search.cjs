@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 (async()=>{
- const urls=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+ const urls=require('./sitemaps.cjs').listedUrls();
  const rows=[];let cursor=0;
  await Promise.all(Array.from({length:5},async()=>{while(cursor<urls.length){const url=urls[cursor++];try{
   const response=await fetch(url,{redirect:'manual',signal:AbortSignal.timeout(20000)}),html=await response.text();

@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
 const root=path.resolve(__dirname,'..');
 const settings=JSON.parse(fs.readFileSync(path.join(root,'data/indexnow.json'),'utf8'));
-const canonical=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+const canonical=require('./sitemaps.cjs').listedUrls();
 const args=process.argv.slice(2),ref=args.find(a=>a.startsWith('--changed-ref='))?.slice(14);
 let urls=canonical;
 if(ref){

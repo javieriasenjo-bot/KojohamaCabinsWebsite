@@ -44,6 +44,12 @@ function openGraphExtras(source, lang) {
   if (size) tags.push(`<meta property="og:image:width" content="${size.width}">`, `<meta property="og:image:height" content="${size.height}">`);
   return source.replace(/\s*<\/head>/, `\n<!-- og-extra:start -->${[...new Set(tags)].join('')}<!-- og-extra:end -->\n</head>`);
 }
+// Social descriptions must match the description guests and search engines read.
+function syncOpenGraphDescription(source) {
+  const description = source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0]?.match(/\bcontent="([^"]*)"/)?.[1];
+  if (description == null) return source;
+  return source.replace(/<meta\b[^>]*property="og:description"[^>]*>/g, tag => tag.includes('content="') ? tag.replace(/\bcontent="[^"]*"/, `content="${description}"`) : tag.replace('<meta ', `<meta content="${description}" `));
+}
 function render(source, file, lang) {
   if (file === 'googlefa3fab5b6b918158.html') return source;
   // The former share image path never existed; use the real exterior photograph.
@@ -54,7 +60,7 @@ function render(source, file, lang) {
   source = source.replace(/\sdata-i18n="((?:sol|zen|rustic)_p2)"/g,' data-copy="$1"').replace(/\sdata-i18n="[^"]*"/g,'');
   // Only the first, above-the-fold hero gets high network priority.
   source=source.replace(/(<section\b[^>]*class="page-hero"[^>]*>\s*)(<img\b[^>]*>)/,(_,start,img)=>start+img.replace(/\s(?:fetchpriority|loading)="[^"]*"/g,'').replace(/>$/,' fetchpriority="high" decoding="async">').replace(/decoding="async"([^>]*?) decoding="async"/,'decoding="async"$1'));
-  if(file==='go/index.html'||/privacy\/index\.html$/.test(file)){
+  if(/go\/index\.html$/.test(file)||/privacy\/index\.html$/.test(file)){
     const title=source.match(/<title>([^<]+)<\/title>/)?.[1]||'Ocean Stay Kojohama';
     const descriptionTag=source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0];
     const description=descriptionTag?.match(/content="([^"]*)"/)?.[1]||title;
@@ -69,22 +75,24 @@ function render(source, file, lang) {
     const targetLang = tag.match(/\blang="([^"]+)"/)?.[1];
     if (targetLang) {
       tag = tag.replace(/\bhref="[^"]+"/,`href="/${prefixes[targetLang]}${route}"`);
-      if (targetLang === lang) tag = tag.replace('<a ', '<a aria-current="page" ');
+      if (targetLang === lang && file !== '404.html') tag = tag.replace('<a ', '<a aria-current="page" ');
     } else {
       const href = tag.match(/\bhref="([^"]+)"/)?.[1];
       if (href === active && route) tag = tag.replace('<a ','<a aria-current="page" ');
       else if (/^(?:guides|culture)\//.test(route) && href === '/'+prefix+'things-to-do/') tag = tag.replace('<a ','<a aria-current="true" ');
+      else if (/^cabins\/.+/.test(route) && href === '/'+prefix+'cabins/') tag = tag.replace('<a ','<a aria-current="true" ');
     }
     return tag;
   });
   source = source.replace(/<header\b[^>]*>[\s\S]*?<\/header>/,header);
   if(layouts[lang].sister) source=source.replace(/<(section|aside)\b[^>]*class="sister wrap"[^>]*>[\s\S]*?<\/\1>/,layouts[lang].sister);
-  if (file !== 'go/index.html') source = source.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/,route ? layouts[lang].footer : layouts[lang].homeFooter);
+  if (!/go\/index\.html$/.test(file)) source = source.replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/,route ? layouts[lang].footer : layouts[lang].homeFooter);
   // Old inline and noscript loaders are deliberately removed; no local fallback.
   source = source.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, whole => whole.includes("})(window,document,'script','dataLayer'") ? '' : whole);
   source = source.replace(/<noscript>\s*<iframe\b[^>]*googletagmanager\.com[\s\S]*?<\/iframe>\s*<\/noscript>/g,'');
   source = source.replace(/<script\b[^>]*src="\/analytics\.js[^>]*><\/script>/g,'');
   source = openGraphExtras(source, lang);
+  source = syncOpenGraphDescription(source);
   source = source.replace(/\s*<\/head>/, '\n'+script+'\n</head>');
   // Defer order matters: analytics first, shared UI second, home viewer last.
   source = source.replace(/<script\b[^>]*src="\/home-gallery\.js[^>]*><\/script>/g,'');

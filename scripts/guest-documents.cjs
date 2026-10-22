@@ -1,4 +1,4 @@
-const terms="https://docs.google.com/document/d/1qwA727D--mHlmTGMXojN7foF3o2zXGar/edit";
+const terms="https://docs.google.com/document/d/1qwA727D--mHlmTGMXojN7foF3o2zXGar/preview";
 const finalPolicy=require("../data/terms-policy.json");
 const manuals=[['Sol','1ZMMTkKGAzmrbG3VMQKLcXbZFLGIDsZJV'],['Zen','15L3R_M30Fixeoo5rLZObskAtng43VL31'],['Rustic','1GwUMJ-CsqbMLFMojTg4MV-M2SpTgWgP5']];
 const copy={

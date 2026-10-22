@@ -64,6 +64,9 @@ for (const prefix of ['', 'ja/', 'zh-cn/']) for (const cabin of facts.cabins) {
  assert.equal(data.cleaning, schedule.cleaningJPY); assert.equal(data.extra, schedule.extraGuestJPY);
  const first = data.rates.slice(0, 2).reduce((a, b) => a + b, 0) + data.cleaning + 3 * data.extra;
  assert.equal(first, stayTotal(cabin.id, schedule.days.slice(0, 2).map(d => d.date), 5), 'Checker arithmetic matches stayTotal');
- assert(page.includes(`href="${cabin.airbnb}" rel="noopener" target="_blank">`) && page.includes('data-link-location="date_check"'));
+ const locale = prefix === 'ja/' ? 'ja' : prefix === 'zh-cn/' ? 'zh' : '';
+ const airbnb = new URL(cabin.airbnb);
+ if (locale) airbnb.searchParams.set('locale', locale);
+ assert(page.includes(`href="${airbnb}" rel="noopener" target="_blank">`) && page.includes('data-link-location="date_check"'));
 }
 console.log('PASS: 259 dated nights in three languages, special arrival minimums, mixed-rate totals, once-per-stay fees and date-checker data.');

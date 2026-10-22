@@ -170,7 +170,7 @@ for(const file of ['seo-site.js','analytics.js','home-gallery.js','scripts/sync-
  try{new vm.Script(fs.readFileSync(path.join(root,file),'utf8'),{filename:file})}catch(e){errors.push(e.message)}
 }
 // SEO release invariants.
-const sitemapUrls=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+const sitemapUrls=require('./sitemaps.cjs').listedUrls();
 const redirects=fs.readFileSync(path.join(root,'_redirects'),'utf8').split(/\r?\n/).filter(line=>line&&!line.startsWith('#')).map(line=>line.split(/\s+/));
 for(const url of sitemapUrls){
  const route=new URL(url).pathname;
@@ -188,6 +188,34 @@ for(const [file,html]of source){
   check(attr(hero,'srcset')===attr(preload,'imagesrcset'),file+': hero preload selects different image sizes');
   check(attr(hero,'sizes')===attr(preload,'imagesizes'),file+': hero preload has different layout sizes');
  }
+}
+const {imageSize}=require('./layouts.cjs');
+for(const [file,html] of source){
+ const name=path.relative(root,file).split(path.sep).join('/');
+ for(const tag of html.matchAll(/<img\b[^>]*>/g)){
+  const src=tag[0].match(/\bsrc="([^"]+)"/)?.[1];
+  const width=Number(tag[0].match(/\bwidth="(\d+)"/)?.[1]);
+  const height=Number(tag[0].match(/\bheight="(\d+)"/)?.[1]);
+  if(!src||!src.startsWith('/')||!width||!height)continue;
+  const size=imageSize(path.join(root,decodeURIComponent(src.split('?')[0].slice(1))));
+  if(!size)continue;
+  check(Math.abs(width/height/(size.width/size.height)-1)<0.02,`${name}: ${src} is ${size.width}×${size.height} but marked ${width}×${height}`);
+ }
+}
+const reviewMonths={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
+const reviewToday=new Date(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())+'T00:00:00Z');
+const reviewAge=(year,month,day)=>(reviewToday-Date.UTC(year,month-1,day))/86400000;
+for(const [file,html] of source){
+ const name=path.relative(root,file).split(path.sep).join('/');
+ const ages=[];
+ for(const match of html.matchAll(/as shown (?:by|on) each platform on (\d{1,2}) ([A-Za-z]+) (\d{4})/g)){
+  const month=reviewMonths[match[2].toLowerCase()];
+  check(Boolean(month),`${name}: unreadable English review date`);
+  if(month)ages.push(reviewAge(Number(match[3]),month,Number(match[1])));
+ }
+ for(const match of html.matchAll(/(\d{4})年(\d{1,2})月(\d{1,2})日時点の各サイト表示/g))ages.push(reviewAge(Number(match[1]),Number(match[2]),Number(match[3])));
+ for(const match of html.matchAll(/(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日各平台显示/g))ages.push(reviewAge(Number(match[1]),Number(match[2]),Number(match[3])));
+ for(const age of ages)check(age<=30,`${name}: review snapshot is ${Math.floor(age)} days old`);
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
 else console.log(`PASS: ${pages.length} HTML files, ${references} local references, ${schemas} structured-data blocks, ${inlineScripts} inline scripts, 65 venues in three languages, booking channels and source deployment exclusions.`);
