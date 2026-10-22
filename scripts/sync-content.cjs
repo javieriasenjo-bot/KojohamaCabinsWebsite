@@ -42,6 +42,36 @@ const locales = {
  ja: {prefix:'ja/', search:'施設名・食べ物・体験で検索', clear:'検索をクリア', count:'件', empty:'該当する施設がありません。別の言葉で検索してください。', browse:'カテゴリーから探す', gallery:'写真ギャラリー', property:'施設の写真', close:'写真ギャラリーを閉じる', prev:'前の写真', next:'次の写真', compare:'基本情報を比較', cabin:'キャビン', guests:'最大宿泊人数', beds:'ベッド数', view:'キャビンの詳細', book:'空室を確認', map:'最新の営業時間・施設情報を確認'},
  'zh-CN': {prefix:'zh-cn/', search:'搜索地点、美食或活动', clear:'清除搜索', count:'个地点', empty:'没有匹配的地点，请尝试其他关键词。', browse:'按类别浏览', gallery:'照片集', property:'小屋外观照片', close:'关闭照片集', prev:'上一张照片', next:'下一张照片', compare:'比较基本信息', cabin:'小屋', guests:'最多入住人数', beds:'床位数', view:'查看小屋', book:'查看日期', map:'确认最新营业时间和信息'}
 };
+function addBreadcrumbs(schema, file, lang, html) {
+ if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || file === '404.html' || file === 'go/index.html' || file === 'googlefa3fab5b6b918158.html') return schema;
+ const names = {
+  en:{cabins:'Cabins',faq:'FAQ',location:'Location and access','things-to-do':'Area guide',guides:'Area guide',culture:'Area guide',bbq:'BBQ','october-to-march':'October to March','own-a-cabin':'Own a cabin','work-remotely':'Work remotely',privacy:'Privacy'},
+  ja:{cabins:'キャビン',faq:'よくある質問',location:'所在地・アクセス','things-to-do':'周辺ガイド',guides:'周辺ガイド',culture:'周辺ガイド',bbq:'BBQ','october-to-march':'10月〜3月','own-a-cabin':'キャビンを所有','work-remotely':'リモートワーク',privacy:'プライバシー'},
+  'zh-CN':{cabins:'小屋',faq:'常见问题',location:'位置与交通','things-to-do':'周边指南',guides:'周边指南',culture:'周边指南',bbq:'烧烤','october-to-march':'10月至3月','own-a-cabin':'拥有小屋','work-remotely':'远程办公',privacy:'隐私政策'}
+ }[lang];
+ if (!names) return schema;
+ const origin = 'https://kojohamacabins.jp';
+ const prefix = locales[lang].prefix;
+ const rel = file.replace(/index\.html$/, '');
+ const parts = rel.replace(/^(?:ja|zh-cn)\//, '').split('/').filter(Boolean);
+ const homeName = lang === 'ja' ? 'ホーム' : lang === 'zh-CN' ? '首页' : 'Home';
+ const items = [{'@type':'ListItem', position:1, name:homeName, item:origin + '/' + prefix}];
+ if (parts.length > 1) {
+  const section = parts[0] === 'guides' || parts[0] === 'culture' ? 'things-to-do' : parts[0];
+  items.push({'@type':'ListItem', position:2, name:names[section] || names[parts[0]] || section, item:origin + '/' + prefix + section + '/'});
+ }
+ const pageName = (html.match(/<title>([^<|]+)/)?.[1] || names[parts[0]] || 'Ocean Stay Kojohama').replace(/&/g,'&').replace(/&#39;|&#x27;/g,"'").trim();
+ items.push({'@type':'ListItem', position:items.length + 1, name:pageName});
+ const crumb = {'@type':'BreadcrumbList', '@id':origin + '/' + rel + '#breadcrumb', itemListElement:items};
+ const strip = node => { const copy = {...node}; delete copy['@context']; return copy; };
+ if (schema['@graph']) {
+  schema['@graph'] = schema['@graph'].filter(node => node && node['@type'] !== 'BreadcrumbList');
+  schema['@graph'].push(crumb);
+  return schema;
+ }
+ if (!schema['@type'] || schema['@type'] === 'BreadcrumbList') return schema;
+ return {'@context':'https://schema.org', '@graph':[strip(schema), crumb]};
+}
 function marked(source, name, content) {
  const pattern = new RegExp(`<!-- ${name}:start -->[\\s\\S]*?<!-- ${name}:end -->`);
  if (!pattern.test(source)) throw new Error(`Missing ${name} markers`);
@@ -218,9 +248,21 @@ for (const absolute of walk(root)) {
  }
  if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<div class="pricing-note wrap"><ul>${pricing.listFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]).map(item=>`<li>${item}</li>`).join('')}</ul><a href="/${locales[lang].prefix}cabins/#seasonal-rates">${lang==='en'?'View dated rates':lang==='ja'?'日付別料金を見る':'查看日期房价'}</a></div>`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
-  const schema=JSON.parse(text);
+  let schema=JSON.parse(text);
+  const inactiveBooking = url => facts.bookingChannels?.ctrip === false && /(?:ctrip\.com|trip\.com)/.test(String(url));
   const update=node=>{
    if (!node || typeof node !== 'object') return;
+   if (Array.isArray(node.sameAs)) node.sameAs = node.sameAs.filter(url => !inactiveBooking(url));
+   const cabinId = String(node.url || node['@id'] || '').match(/ocean-stay-(sol|zen|rustic)/)?.[1];
+   const cabin = cabinId && facts.cabins.find(item => item.id === cabinId);
+   if (cabin && (node['@type'] === 'Accommodation' || node['@type'] === 'LodgingBusiness')) {
+    node.checkinTime = cabin.checkIn;
+    node.checkoutTime = cabin.checkOut;
+   }
+   if (node['@type'] === 'LodgingBusiness' && !cabin) {
+    delete node.checkinTime;
+    node.checkoutTime = facts.cabins[0].checkOut;
+   }
    if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricing.priceRange();
    if (node['@type']==='FAQPage' && file.endsWith('faq/index.html') && lang==='zh-CN') {
     for (const kind of ['airport','casa']) if (!node.mainEntity.some(q=>q.name===trip[`${kind}Question`])) node.mainEntity.push({'@type':'Question',name:trip[`${kind}Question`],acceptedAnswer:{'@type':'Answer',text:trip[`${kind}Answer`]}});
@@ -236,6 +278,7 @@ for (const absolute of walk(root)) {
    Object.values(node).forEach(update);
   };
   update(schema);
+  schema = addBreadcrumbs(schema, file, lang, source);
   return start+JSON.stringify(schema)+end;
  });
  // The preload and visible hero must select the same responsive resource.
@@ -253,4 +296,5 @@ require('./arrival-coast.cjs').sync();
 assets.build();
 layouts.stampAssets();
 require('./sitemaps.cjs').sync();
+require('./llms.cjs').write();
 console.log('Synchronized localized directory, photo captions and cabin comparison sections.');

@@ -9,11 +9,11 @@ const money = n => n.toLocaleString('en-US');
 const prefixes = { en: '', ja: 'ja/', 'zh-CN': 'zh-cn/' };
 const labels = {
   en: { aria: 'Key facts', price: p => `from ¥${p}`, priceSub: n => `per night, up to ${n} guests · plus ¥${money(facts.pricing.cleaningJPY)} cleaning/stay and taxes`, guests: n => `Up to ${n}`, guestsSub: 'guests · entire cabin',
-    wifiSub: 'measured Wi-Fi download, 5 GHz', checkIn: t => t, checkInSub: t => `check-in · out by ${t}`, rates: 'Dated rates and minimum stays →' },
+    wifiSub: 'measured Wi-Fi download, 5 GHz', checkIn: t => t, checkInSub: t => `check-in · out by ${t}`, rates: 'Dated rates and minimum stays →', dates: 'Check your dates →' },
   ja: { aria: '基本情報', price: p => `¥${p}〜`, priceSub: n => `1泊・${n}名まで・清掃料1滞在¥${money(facts.pricing.cleaningJPY)}と税金は別途`, guests: n => `最大${n}名`, guestsSub: '1棟貸切',
-    wifiSub: 'Wi-Fi実測値（5 GHz・下り）', checkIn: t => `${t}〜`, checkInSub: t => `チェックイン・アウトは${t}まで`, rates: '日付別料金・最低宿泊数 →' },
+    wifiSub: 'Wi-Fi実測値（5 GHz・下り）', checkIn: t => `${t}〜`, checkInSub: t => `チェックイン・アウトは${t}まで`, rates: '日付別料金・最低宿泊数 →', dates: '日程を確認 →' },
   'zh-CN': { aria: '基本信息', price: p => `¥${p}起`, priceSub: n => `每晚·最多${n}位客人·另加每次入住¥${money(facts.pricing.cleaningJPY)}清洁费及税费`, guests: n => `最多${n}人`, guestsSub: '整栋独享',
-    wifiSub: 'Wi-Fi实测（5 GHz下载）', checkIn: t => `${t}起`, checkInSub: t => `入住·${t}前退房`, rates: '按日期查看房价及最少入住晚数 →' }
+    wifiSub: 'Wi-Fi实测（5 GHz下载）', checkIn: t => `${t}起`, checkInSub: t => `入住·${t}前退房`, rates: '按日期查看房价及最少入住晚数 →', dates: '查看日期 →' }
 };
 function marked(source, name, content, insertAfter) {
   const pattern = new RegExp(`<!-- ${name}:start -->[\\s\\S]*?<!-- ${name}:end -->`);
@@ -31,7 +31,7 @@ function update(source, lang, id) {
     [`${wifi} Mbps`, t.wifiSub],
     [t.checkIn(cabin.checkIn), t.checkInSub(cabin.checkOut)]
   ];
-  const strip = `<section class="cabin-facts" aria-label="${t.aria}"><div class="wrap"><ul>${items.map(([value, label]) => `<li><strong>${value}</strong><span>${label}</span></li>`).join('')}</ul><a class="cabin-facts-link" href="/${prefixes[lang]}cabins/#seasonal-rates">${t.rates}</a></div></section>`;
+  const strip = `<section class="cabin-facts" aria-label="${t.aria}"><div class="wrap"><ul>${items.map(([value, label]) => `<li><strong>${value}</strong><span>${label}</span></li>`).join('')}</ul><p class="cabin-facts-links"><a class="cabin-facts-link" href="#check-dates">${t.dates}</a><a class="cabin-facts-link" href="/${prefixes[lang]}cabins/#seasonal-rates">${t.rates}</a></p></div></section>`;
   source = marked(source, 'cabin-facts', strip, /<section\b[^>]*class="page-hero"[^>]*>[\s\S]*?<\/section>/);
 
   // The hero, lead image and first gallery tile used to be the same photograph.

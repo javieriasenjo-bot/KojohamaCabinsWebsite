@@ -81,7 +81,14 @@ const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'u
 if(facts.bookingChannels?.ctrip===false)for(const [file,text]of source){
  const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
  check(!/<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"/.test(active),`${file}: inactive Ctrip booking link is still active`);
+ for(const block of active.matchAll(/<script\b[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)){
+  check(!/(?:ctrip\.com|trip\.com)/.test(block[1]),`${path.relative(root,file)}: inactive Ctrip URL remains in structured data`);
+ }
 }
+const llms=fs.readFileSync(path.join(root,'llms.txt'),'utf8');
+check(llms.includes('https://guide.kojohamacabins.jp/'),'llms.txt: missing guest guide');
+check(llms.includes('Check-in from 14:00')&&llms.includes('Check-in from 15:00'),'llms.txt: cabin check-in times missing');
+check(!/ctrip\.com|trip\.com\/hotels/.test(llms),'llms.txt: inactive booking URL');
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
 const imageManifest=JSON.parse(fs.readFileSync(path.join(root,'data/asset-manifest.json'),'utf8'));
 for(const image of imageManifest.images){

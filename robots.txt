@@ -7,3 +7,6 @@ Allow: /
 
 Sitemap: https://kojohamacabins.jp/sitemap.xml
 Sitemap: https://kojohamacabins.jp/sitemap-zh-cn.xml
+
+# Answer-engine summary (English facts; Japanese and Chinese pages are linked inside):
+# https://kojohamacabins.jp/llms.txt
