@@ -130,6 +130,12 @@ function save(file, source) {
 }
 for (const [lang, t] of Object.entries(locales)) {
  const file = t.prefix + 'things-to-do/index.html';
+ let areaSource = read(file);
+ const eventSection = require('./local-events.cjs')(lang);
+ if (!areaSource.includes('<!-- local-events:start -->')) {
+  areaSource = areaSource.replace('<!-- directory:start -->', '<!-- local-events:start --><!-- local-events:end --><!-- directory:start -->');
+ }
+ save(file, marked(areaSource, 'local-events', eventSection));
  const nav = `<nav class="directory-nav" aria-label="${t.browse}">${directory.categories.map(g => `<a href="#${g.id}">${escape(g.title[lang])}</a>`).join('')}</nav>`;
  const search = `<div class="directory-search" hidden><label for="directory-query">${t.search}</label><div class="directory-search-row"><input id="directory-query" type="search" autocomplete="off" aria-describedby="directory-count"><button type="button" id="directory-clear">${t.clear}</button></div><p id="directory-count" role="status" data-count-label="${t.count}">${directory.venues.length} ${t.count}</p><p id="directory-empty" hidden>${t.empty}</p></div>`;
  const groups = directory.categories.map((group, i) => {
