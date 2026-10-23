@@ -202,6 +202,15 @@ for (const absolute of walk(root)) {
   if(source.includes('<!-- guest-documents:start -->')) source=marked(source,'guest-documents',documents);
   else source=source.replace('</main>',`<!-- guest-documents:start -->${documents}<!-- guest-documents:end --></main>`);
  }
+ const mapCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
+ if (mapCabin) {
+  const pins = {sol:['A Sol','https://share.google/LPPzqmK9n5XJ69V9a'],zen:['B Zen','https://share.google/BKXIcqqmzHAZovuXe'],rustic:['C Rustic','https://share.google/VaT7WVmg7icRaJhGo']};
+  const labels = {en:['Find your cabin','View on Google Maps'],ja:['ご宿泊の棟の場所','Google マップで見る'],'zh-CN':['查找您入住的木屋','在 Google 地图中查看']}[lang];
+  const [name,url] = pins[mapCabin];
+  const maps = `<section class="wrap section-block" data-cabin-maps><h2>${labels[0]}</h2><p>Ocean Stay ${name}</p><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${labels[1]} →</a></section>`;
+  if (source.includes('<!-- cabin-maps:start -->')) source=marked(source,'cabin-maps',maps);
+  else source=source.replace('<!-- guest-documents:start -->',`<!-- cabin-maps:start -->${maps}<!-- cabin-maps:end --><!-- guest-documents:start -->`);
+ }
  // Replace the superseded publication window in hand-authored social/meta copy.
  source=source.replaceAll('Oct–24 Dec 2026','16 Oct 2026–1 Jul 2027')
   .replaceAll('nightly, Oct–24 Dec','nightly; dates vary')
