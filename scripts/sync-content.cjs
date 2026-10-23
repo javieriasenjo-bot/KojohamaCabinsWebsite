@@ -209,7 +209,7 @@ for (const absolute of walk(root)) {
   const [name,url] = pins[mapCabin];
   const maps = `<section class="wrap section-block" data-cabin-maps><h2>${labels[0]}</h2><p>Ocean Stay ${name}</p><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${labels[1]} →</a></section>`;
   if (source.includes('<!-- cabin-maps:start -->')) source=marked(source,'cabin-maps',maps);
-  else source=source.replace('<!-- guest-documents:start -->',`<!-- cabin-maps:start -->${maps}<!-- cabin-maps:end --><!-- guest-documents:start -->`);
+ else source=source.replace('<!-- guest-documents:start -->',`<!-- cabin-maps:start -->\n${maps}\n<!-- cabin-maps:end --><!-- guest-documents:start -->`);
  }
  // Replace the superseded publication window in hand-authored social/meta copy.
  source=source.replaceAll('Oct–24 Dec 2026','16 Oct 2026–1 Jul 2027')

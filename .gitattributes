@@ -1,0 +1,6 @@
+# Keep text consistent between Windows laptops and Linux builds.
+* text=auto eol=lf
+
+# Windows command scripts require native line endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf
