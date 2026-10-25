@@ -6,8 +6,8 @@ const crypto = require('node:crypto');
 const prefixes = {en:'', ja:'ja/', 'zh-CN':'zh-cn/'};
 // Shared CSS/JavaScript URLs carry a content hash (see stampAssets), so browsers
 // never combine new pages with yesterday's cached styles or scripts.
-const assetFiles = ['analytics.js','seo-site.js','home-gallery.js','seo-site.css','guide-site.css','home.css','go.css'];
-const assetPattern = /\/(analytics\.js|seo-site\.js|home-gallery\.js|seo-site\.css|guide-site\.css|home\.css|go\.css)\?v=[\w.-]+/g;
+const assetFiles = ['analytics.js','seo-site.js','home-gallery.js','community-events.js','seo-site.css','guide-site.css','home.css','go.css'];
+const assetPattern = /\/(analytics\.js|seo-site\.js|home-gallery\.js|community-events\.js|seo-site\.css|guide-site\.css|home\.css|go\.css)\?v=[\w.-]+/g;
 const script = `<script defer src="/analytics.js?v=0"></script>`;
 const escape = text => text.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 const siteName = 'Ocean Stay Kojohama';
