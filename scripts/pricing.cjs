@@ -49,7 +49,7 @@ function comparison(lang) {
   [l[4], (c,i)=>l[11+i]],
   [l[5], c=>{const w=facts.wifi.measurements[c.id]['5'];return `${w.downloadMbps} / ${w.uploadMbps} Mbps`;}],
   [l[6], c=>`¥${money(facts.pricing.rates[c.id].weekday+facts.pricing.cleaningJPY)}`],
-  [l[7], c=>`<a href="${c.airbnb}" target="_blank" rel="noopener" data-cabin-name="${c.name}" data-link-location="comparison">Airbnb</a>${facts.bookingChannels.ctrip?` · <a href="${c.ctrip}" target="_blank" rel="noopener" data-cabin-name="${c.name}" data-link-location="comparison">${lang==='zh-CN'?'携程':'Ctrip'}</a>`:''}`]
+  [l[7], c=>`<a href="${c.airbnb}" target="_blank" rel="noopener" data-cabin-name="${c.name}" data-link-location="comparison">Airbnb</a>${facts.bookingChannels.ctrip && lang==='zh-CN'?` · <a href="${c.ctrip}" target="_blank" rel="noopener" data-cabin-name="${c.name}" data-link-location="comparison">${lang==='zh-CN'?'携程':'Ctrip'}</a>`:''}`]
  ];
  return `<section class="wrap cabin-comparison"><h2>${l[0]}</h2><p class="comparison-hint">${hint}</p><div class="comparison-scroll" tabindex="0" role="region" aria-label="${l[0]}"><table class="cabin-comparison-table"><caption class="sr-only">${l[0]}</caption><thead><tr><th scope="col">${l[1]}</th>${facts.cabins.map(c=>`<th scope="col"><a href="/${prefix}cabins/ocean-stay-${c.id}/">${c.name}</a></th>`).join('')}</tr></thead><tbody>${rows.map(([label,value])=>`<tr><th scope="row">${label}</th>${facts.cabins.map((c,i)=>`<td>${value(c,i)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="note">${l[14]}</p></section>`;
 }

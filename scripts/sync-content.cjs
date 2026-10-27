@@ -11,9 +11,9 @@ const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp
 const facts = json('data/site-facts.json');
 // Preserve inactive buttons in source comments so one flag can restore them later.
 const restoreInactiveBookings = html => html.replace(/<!-- inactive-ctrip: ([\s\S]*?) -->/g, '$1');
-const bookingVisibility = html => {
+const bookingVisibility = (html, lang) => {
  html=restoreInactiveBookings(html);
- if(facts.bookingChannels?.ctrip !== false)return html;
+ if(facts.bookingChannels?.ctrip !== false && lang === 'zh-CN')return html;
  html=html.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g,paragraph=>paragraph.includes('data-link-location="linkinbio_ctrip"') ? `<!-- inactive-ctrip: ${paragraph} -->` : paragraph);
  return html.replace(/<!-- inactive-ctrip: [\s\S]*? -->|(?: · )?<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"[^>]*>[\s\S]*?<\/a>/g,link=>link.startsWith('<!--') ? link : `<!-- inactive-ctrip: ${link} -->`);
 };
@@ -369,7 +369,7 @@ for (const absolute of walk(root)) {
    return '<link as="image" href="'+attr('src')+'" imagesizes="'+attr('sizes')+'" imagesrcset="'+attr('srcset')+'" fetchpriority="high" rel="preload"/>';
   });
  }
- save(file,bookingVisibility(layouts.render(restoreInactiveBookings(source),file,lang)));
+ save(file,bookingVisibility(layouts.render(restoreInactiveBookings(source),file,lang),lang));
 }
 require('./arrival-coast.cjs').sync();
 assets.build();

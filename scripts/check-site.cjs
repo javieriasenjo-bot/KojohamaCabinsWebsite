@@ -78,7 +78,8 @@ for(const relative of [
  check(openGraph===description,`${relative}: meta and Open Graph descriptions disagree`);
 }
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
-if(facts.bookingChannels?.ctrip===false)for(const [file,text]of source){
+for(const [file,text]of source){
+ if(facts.bookingChannels?.ctrip && path.relative(root,file).replace(/\\/g,'/').startsWith('zh-cn/')) continue;
  const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
  check(!/<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"/.test(active),`${file}: inactive Ctrip booking link is still active`);
  for(const block of active.matchAll(/<script\b[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)){
@@ -135,7 +136,7 @@ for(const locale of ['en','ja','zh-CN']){
  for(const c of facts.cabins){
   const activeComparison=comparison.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
   check(activeComparison.includes(c.airbnb),`${locale}: missing Airbnb channel for ${c.id}`);
-  check(facts.bookingChannels?.ctrip===false ? !activeComparison.includes(c.ctrip) : activeComparison.includes(c.ctrip),`${locale}: wrong Ctrip visibility for ${c.id}`);
+  check(facts.bookingChannels?.ctrip && locale==='zh-CN' ? activeComparison.includes(c.ctrip) : !activeComparison.includes(c.ctrip),`${locale}: wrong Ctrip visibility for ${c.id}`);
   const page=fs.readFileSync(path.join(root,prefix+`cabins/ocean-stay-${c.id}/index.html`),'utf8');
   for(const block of page.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)){
    const visit=node=>{

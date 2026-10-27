@@ -1,6 +1,6 @@
 {
   "bookingChannels": {
-    "ctrip": false
+    "ctrip": true
   },
   "travel": {
     "newChitoseMinutes": [
