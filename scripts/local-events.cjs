@@ -14,7 +14,9 @@ module.exports = function localEvents(lang) {
  const nice = new Intl.DateTimeFormat(locale, {timeZone:'Asia/Tokyo', year:'numeric', month:'short', day:'numeric'});
  const shown = value => nice.format(Date.parse(value + 'T00:00:00+09:00'));
  const stamp = value => `<time datetime="${esc(value)}">${esc(shown(value))}</time>`;
- const today = new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+ // Use the source's review date so identical input always produces identical HTML.
+ // The live feed and fallback filter update the display against the visitor's current date.
+ const today = checkedOn;
  const card = (e, finished) => `<article id="${esc(e.id)}" data-event-end="${esc(e.end)}"><h3>${esc(e.title[key])}</h3>${finished ? `<p class="event-finished">${copy[4]}</p>` : ''}<p>${stamp(e.start)}${e.end !== e.start ? ` – ${stamp(e.end)}` : ''}</p><p>${esc(e.summary[key])}</p><p>${esc(e.venue[key])}</p><a class="text-link" href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">${copy[2]} →</a></article>`;
  const group = (label, list, finished) => list.length ? `<p class="eyebrow">${label}</p><div class="compact-grid">${list.map(e=>card(e,finished)).join('\n')}</div>` : '';
  const listed = events.filter(e=>e.end>=today).sort((a,b)=>a.start.localeCompare(b.start));
