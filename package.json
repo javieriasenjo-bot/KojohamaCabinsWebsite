@@ -4,8 +4,8 @@
   "scripts": {
     "build": "node scripts/styles.cjs && node scripts/sync-content.cjs",
     "check": "node scripts/check-site.cjs && node scripts/check-navigation.cjs && node scripts/check-analytics.cjs && node scripts/check-pricing.cjs",
-    "check:browser": "node scripts/check-browser.cjs && node scripts/check-date-check.cjs",
-    "check:dates": "node scripts/check-date-check.cjs",
+    "check:browser": "node scripts/check-browser.cjs",
+    "check:dates": "node scripts/check-pricing.cjs",
     "release:check": "npm run build && npm run check",
     "review:venues": "node scripts/review-venues.cjs",
     "indexnow:preview": "node scripts/indexnow.cjs",

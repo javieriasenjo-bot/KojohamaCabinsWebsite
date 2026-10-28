@@ -1,9 +1,8 @@
 {
-  "sourceFile": "Ocean_Stay_Exact_Rates_2026-10-16_to_2027-07-01.xlsx",
-  "sourceSha256": "32547d8d4d9183f66ee2a878e7ba230c0dc16ae6c7f051c414ee25f11e5950cc",
-  "approvedOn": "2026-10-16",
-  "start": "2026-10-16",
-  "end": "2027-07-01",
+  "sourceFile": "new one good one Ocean-Stay-Updated-Prices-through-Dec-2027.xlsx",
+  "sourceSha256": "2ee7bb2f659a4a30400489ff378726eac26b53f5e5848f21c826898174099c59",
+  "start": "2026-10-27",
+  "end": "2027-12-31",
   "cleaningJPY": 7000,
   "extraGuestJPY": 2500,
   "extraGuestBasis": "per stay",
@@ -14,160 +13,6 @@
     "BBQ is 3500 per stay, superseding workbook recommendation"
   ],
   "days": [
-    {
-      "date": "2026-10-16",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 20800,
-        "rustic": 19800,
-        "zen": 18800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-17",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 20800,
-        "rustic": 19800,
-        "zen": 18800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-18",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-19",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-20",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-21",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-22",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-23",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 20800,
-        "rustic": 19800,
-        "zen": 18800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-24",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 20800,
-        "rustic": 19800,
-        "zen": 18800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-25",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
-      "date": "2026-10-26",
-      "rule": "Autumn",
-      "rates": {
-        "sol": 17800,
-        "rustic": 16800,
-        "zen": 15800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
     {
       "date": "2026-10-27",
       "rule": "Autumn",
@@ -254,7 +99,7 @@
     },
     {
       "date": "2026-11-02",
-      "rule": "Low / shoulder",
+      "rule": "Culture Day",
       "rates": {
         "sol": 18800,
         "rustic": 17800,
@@ -506,7 +351,7 @@
     },
     {
       "date": "2026-11-20",
-      "rule": "Long weekend",
+      "rule": "Labor Thanksgiving",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -520,7 +365,7 @@
     },
     {
       "date": "2026-11-21",
-      "rule": "Long weekend",
+      "rule": "Labor Thanksgiving",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -534,7 +379,7 @@
     },
     {
       "date": "2026-11-22",
-      "rule": "Long weekend",
+      "rule": "Labor Thanksgiving",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -982,11 +827,11 @@
     },
     {
       "date": "2026-12-24",
-      "rule": "Low / shoulder",
+      "rule": "Christmas weekend",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -996,11 +841,11 @@
     },
     {
       "date": "2026-12-25",
-      "rule": "Low / shoulder",
+      "rule": "Christmas weekend",
       "rates": {
-        "sol": 18800,
-        "rustic": 17800,
-        "zen": 16800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1010,7 +855,21 @@
     },
     {
       "date": "2026-12-26",
-      "rule": "Low / shoulder",
+      "rule": "Christmas weekend",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2026-12-27",
+      "rule": "New Year early lead",
       "rates": {
         "sol": 18800,
         "rustic": 17800,
@@ -1023,26 +882,12 @@
       }
     },
     {
-      "date": "2026-12-27",
-      "rule": "Low / shoulder",
-      "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
-      },
-      "minimumNights": {
-        "sol": 1,
-        "rustic": 1,
-        "zen": 1
-      }
-    },
-    {
       "date": "2026-12-28",
-      "rule": "Low / shoulder",
+      "rule": "New Year early lead",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
       },
       "minimumNights": {
         "sol": 1,
@@ -1082,9 +927,9 @@
       "date": "2026-12-31",
       "rule": "New Year core",
       "rates": {
-        "sol": 25800,
-        "rustic": 24800,
-        "zen": 23800
+        "sol": 27800,
+        "rustic": 26800,
+        "zen": 25800
       },
       "minimumNights": {
         "sol": 2,
@@ -1096,9 +941,9 @@
       "date": "2027-01-01",
       "rule": "New Year core",
       "rates": {
-        "sol": 25800,
-        "rustic": 24800,
-        "zen": 23800
+        "sol": 27800,
+        "rustic": 26800,
+        "zen": 25800
       },
       "minimumNights": {
         "sol": 2,
@@ -1110,9 +955,9 @@
       "date": "2027-01-02",
       "rule": "New Year core",
       "rates": {
-        "sol": 25800,
-        "rustic": 24800,
-        "zen": 23800
+        "sol": 27800,
+        "rustic": 26800,
+        "zen": 25800
       },
       "minimumNights": {
         "sol": 1,
@@ -1192,7 +1037,7 @@
     },
     {
       "date": "2027-01-08",
-      "rule": "Long weekend",
+      "rule": "Coming of Age",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -1206,7 +1051,7 @@
     },
     {
       "date": "2027-01-09",
-      "rule": "Long weekend",
+      "rule": "Coming of Age",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -1220,7 +1065,7 @@
     },
     {
       "date": "2027-01-10",
-      "rule": "Long weekend",
+      "rule": "Coming of Age",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -1570,11 +1415,11 @@
     },
     {
       "date": "2027-02-04",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1584,11 +1429,11 @@
     },
     {
       "date": "2027-02-05",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 18800,
-        "rustic": 17800,
-        "zen": 16800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1598,11 +1443,11 @@
     },
     {
       "date": "2027-02-06",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 18800,
-        "rustic": 17800,
-        "zen": 16800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1612,11 +1457,11 @@
     },
     {
       "date": "2027-02-07",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1626,11 +1471,11 @@
     },
     {
       "date": "2027-02-08",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1640,11 +1485,11 @@
     },
     {
       "date": "2027-02-09",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1654,11 +1499,11 @@
     },
     {
       "date": "2027-02-10",
-      "rule": "Low / shoulder",
+      "rule": "Lunar New Year test",
       "rates": {
-        "sol": 18800,
-        "rustic": 17800,
-        "zen": 16800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -1822,7 +1667,7 @@
     },
     {
       "date": "2027-02-22",
-      "rule": "Low / shoulder",
+      "rule": "Emperor Birthday",
       "rates": {
         "sol": 18800,
         "rustic": 17800,
@@ -2172,7 +2017,7 @@
     },
     {
       "date": "2027-03-19",
-      "rule": "Long weekend",
+      "rule": "Equinox weekend",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -2186,7 +2031,7 @@
     },
     {
       "date": "2027-03-20",
-      "rule": "Long weekend",
+      "rule": "Equinox weekend",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -2200,7 +2045,7 @@
     },
     {
       "date": "2027-03-21",
-      "rule": "Long weekend",
+      "rule": "Equinox weekend",
       "rates": {
         "sol": 20800,
         "rustic": 19800,
@@ -2270,11 +2115,11 @@
     },
     {
       "date": "2027-03-26",
-      "rule": "Low / shoulder",
+      "rule": "Easter test",
       "rates": {
-        "sol": 18800,
-        "rustic": 17800,
-        "zen": 16800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -2284,11 +2129,11 @@
     },
     {
       "date": "2027-03-27",
-      "rule": "Low / shoulder",
+      "rule": "Easter test",
       "rates": {
-        "sol": 18800,
-        "rustic": 17800,
-        "zen": 16800
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
       },
       "minimumNights": {
         "sol": 1,
@@ -2298,11 +2143,11 @@
     },
     {
       "date": "2027-03-28",
-      "rule": "Low / shoulder",
+      "rule": "Easter test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
       },
       "minimumNights": {
         "sol": 1,
@@ -2508,11 +2353,11 @@
     },
     {
       "date": "2027-04-12",
-      "rule": "Low / shoulder",
+      "rule": "Songkran test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
       },
       "minimumNights": {
         "sol": 1,
@@ -2522,11 +2367,11 @@
     },
     {
       "date": "2027-04-13",
-      "rule": "Low / shoulder",
+      "rule": "Songkran test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
       },
       "minimumNights": {
         "sol": 1,
@@ -2536,11 +2381,11 @@
     },
     {
       "date": "2027-04-14",
-      "rule": "Low / shoulder",
+      "rule": "Songkran test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
       },
       "minimumNights": {
         "sol": 1,
@@ -2550,11 +2395,11 @@
     },
     {
       "date": "2027-04-15",
-      "rule": "Low / shoulder",
+      "rule": "Songkran test",
       "rates": {
-        "sol": 15800,
-        "rustic": 14800,
-        "zen": 13800
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
       },
       "minimumNights": {
         "sol": 1,
@@ -3628,7 +3473,7 @@
     },
     {
       "date": "2027-07-01",
-      "rule": "Summer start",
+      "rule": "Summer",
       "rates": {
         "sol": 19800,
         "rustic": 18800,
@@ -3638,6 +3483,2568 @@
         "sol": 1,
         "rustic": 1,
         "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-02",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-03",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-04",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-05",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-06",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-07",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-08",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-09",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-10",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-11",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-12",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-13",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-14",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-15",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-16",
+      "rule": "Marine Day",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-17",
+      "rule": "Marine Day",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-18",
+      "rule": "Marine Day",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-19",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-20",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-21",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-22",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-23",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-24",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-25",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-26",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-27",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-28",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-29",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-30",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-07-31",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-01",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-02",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-03",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-04",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-05",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-06",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-07",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-08",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-09",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-10",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-11",
+      "rule": "Mountain Day lead",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-12",
+      "rule": "Mountain Day lead",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-13",
+      "rule": "Obon core",
+      "rates": {
+        "sol": 24800,
+        "rustic": 23800,
+        "zen": 22800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-14",
+      "rule": "Obon core",
+      "rates": {
+        "sol": 24800,
+        "rustic": 23800,
+        "zen": 22800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-15",
+      "rule": "Obon core",
+      "rates": {
+        "sol": 24800,
+        "rustic": 23800,
+        "zen": 22800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-16",
+      "rule": "Obon departure",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-17",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-18",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-19",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-20",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-21",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-22",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-23",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-24",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-25",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-26",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-27",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-28",
+      "rule": "Summer",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-29",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-30",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-08-31",
+      "rule": "Summer",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-01",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-02",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-03",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-04",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-05",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-06",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-07",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-08",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-09",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-10",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-11",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-12",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-13",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-14",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-15",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-16",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-17",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-18",
+      "rule": "Silver Week",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-19",
+      "rule": "Silver Week",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-20",
+      "rule": "Silver Week departure",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-21",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-22",
+      "rule": "Equinox eve",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-23",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-24",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-25",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-26",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-27",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-28",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-29",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-09-30",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-01",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-02",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 22800,
+        "rustic": 21800,
+        "zen": 20800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-03",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-04",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-05",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-06",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-07",
+      "rule": "China National Day test",
+      "rates": {
+        "sol": 19800,
+        "rustic": 18800,
+        "zen": 17800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-08",
+      "rule": "Sports Day",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-09",
+      "rule": "Sports Day",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-10",
+      "rule": "Sports Day",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-11",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-12",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-13",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-14",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-15",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-16",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-17",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-18",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-19",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-20",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-21",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-22",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-23",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-24",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-25",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-26",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-27",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-28",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-29",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-30",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-10-31",
+      "rule": "Autumn 2027",
+      "rates": {
+        "sol": 17800,
+        "rustic": 16800,
+        "zen": 15800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-01",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-02",
+      "rule": "Culture Day 2027",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-03",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-04",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-05",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-06",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-07",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-08",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-09",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-10",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-11",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-12",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-13",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-14",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-15",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-16",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-17",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-18",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-19",
+      "rule": "Labor Thanksgiving 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-20",
+      "rule": "Labor Thanksgiving 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-21",
+      "rule": "Labor Thanksgiving 2027",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-22",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-23",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-24",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-25",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-26",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-27",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-28",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-29",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-11-30",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-01",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-02",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-03",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-04",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-05",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-06",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-07",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-08",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-09",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-10",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-11",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-12",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-13",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-14",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-15",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-16",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-17",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-18",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 18800,
+        "rustic": 17800,
+        "zen": 16800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-19",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-20",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-21",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-22",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-23",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-24",
+      "rule": "Christmas weekend",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-25",
+      "rule": "Christmas weekend",
+      "rates": {
+        "sol": 20800,
+        "rustic": 19800,
+        "zen": 18800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-26",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-27",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-28",
+      "rule": "Low / shoulder",
+      "rates": {
+        "sol": 15800,
+        "rustic": 14800,
+        "zen": 13800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-29",
+      "rule": "New Year 27/28 lead",
+      "rates": {
+        "sol": 21800,
+        "rustic": 20800,
+        "zen": 19800
+      },
+      "minimumNights": {
+        "sol": 1,
+        "rustic": 1,
+        "zen": 1
+      }
+    },
+    {
+      "date": "2027-12-30",
+      "rule": "New Year 27/28 lead",
+      "rates": {
+        "sol": 21800,
+        "rustic": 20800,
+        "zen": 19800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 2,
+        "zen": 2
+      }
+    },
+    {
+      "date": "2027-12-31",
+      "rule": "New Year 27/28 core",
+      "rates": {
+        "sol": 27800,
+        "rustic": 26800,
+        "zen": 25800
+      },
+      "minimumNights": {
+        "sol": 2,
+        "rustic": 2,
+        "zen": 2
       }
     }
   ]

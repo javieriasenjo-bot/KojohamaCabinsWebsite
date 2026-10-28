@@ -69,8 +69,8 @@
     "extraGuestBasis": "per stay",
     "confirmedOn": "2026-10-16",
     "cleaningJPY": 7000,
-    "seasonStart": "2026-10-16",
-    "seasonEnd": "2027-07-01",
+    "seasonStart": "2026-10-27",
+    "seasonEnd": "2027-12-31",
     "weekdayMinimumNights": 1,
     "weekendMinimumNights": 1,
     "rates": {

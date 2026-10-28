@@ -126,6 +126,7 @@ function marked(source, name, content) {
  return source.replace(pattern, `<!-- ${name}:start -->\n${content}\n<!-- ${name}:end -->`);
 }
 function save(file, source) {
+ source = require('./booking-prices.cjs').clean(source, file);
  if (source !== read(file)) fs.writeFileSync(path.join(root, file), source);
 }
 for (const [lang, t] of Object.entries(locales)) {
@@ -218,11 +219,12 @@ for (const absolute of walk(root)) {
  else source=source.replace('<!-- guest-documents:start -->',`<!-- cabin-maps:start -->\n${maps}\n<!-- cabin-maps:end --><!-- guest-documents:start -->`);
  }
  // Replace the superseded publication window in hand-authored social/meta copy.
- source=source.replaceAll('Oct–24 Dec 2026','16 Oct 2026–1 Jul 2027')
+ source=source.replaceAll('16 October 2026–1 July 2027','27 October 2026–31 December 2027').replaceAll('16 Oct 2026–1 Jul 2027','27 Oct 2026–31 Dec 2027').replaceAll('2026年10月16日〜2027年7月1日','2026年10月27日〜2027年12月31日').replaceAll('2026年10月16日至2027年7月1日','2026年10月27日至2027年12月31日');
+ source=source.replaceAll('Oct–24 Dec 2026','27 Oct 2026–31 Dec 2027')
   .replaceAll('nightly, Oct–24 Dec','nightly; dates vary')
-  .replaceAll('October–24 December 2026: from','16 October 2026–1 July 2027: from')
-  .replaceAll('2026年10月〜12月24日は','2026年10月16日〜2027年7月1日：')
-  .replaceAll('2026年10月至12月24日','2026年10月16日至2027年7月1日：');
+  .replaceAll('October–24 December 2026: from','27 October 2026–31 December 2027: from')
+  .replaceAll('2026年10月〜12月24日は','2026年10月27日〜2027年12月31日：')
+  .replaceAll('2026年10月至12月24日','2026年10月27日至2027年12月31日：');
  if (/(?:cabins|faq)\/index\.html$/.test(file) || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
   const charges=require('./guest-charges.cjs').render(lang,{collapsed:/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)});
   if (source.includes('<!-- guest-charges:start -->')) source=marked(source,'guest-charges',charges);

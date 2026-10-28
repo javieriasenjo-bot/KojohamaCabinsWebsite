@@ -19,8 +19,8 @@ let browser;
   await context.addInitScript(() => {
     const OriginalDate = Date;
     window.Date = class extends OriginalDate {
-      constructor(...args) { super(...(args.length ? args : ['2026-10-19T16:00:00Z'])); }
-      static now() { return new OriginalDate('2026-10-19T16:00:00Z').getTime(); }
+      constructor(...args) { super(...(args.length ? args : ['2026-10-27T16:00:00Z'])); }
+      static now() { return new OriginalDate('2026-10-27T16:00:00Z').getTime(); }
     };
   });
   await context.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
@@ -37,8 +37,8 @@ let browser;
     };
     const disabled = async () => { assert.equal(await link.getAttribute('href'), null); assert.equal(await link.getAttribute('aria-disabled'), 'true'); };
     await disabled();
-    assert.equal(await checkin.getAttribute('min'), '2026-10-20', 'Minimum arrival must use Japan date, not browser date');
-    await set('2026-10-19', '2026-10-21'); await disabled();
+    assert.equal(await checkin.getAttribute('min'), '2026-10-28', 'Minimum arrival must use Japan date, not browser date');
+    await set('2026-10-27', '2026-10-29'); await disabled();
     await set('2026-12-30', '2026-12-31');
     const first = schedule.days.find(day => day.date === '2026-12-30');
     assert(first.minimumNights[cabin] > 1, 'Regression fixture needs special minimum');
@@ -54,14 +54,14 @@ let browser;
     assert((await result.innerText()).includes(expected.toLocaleString('en-US')));
     await set('2026-12-31', '2026-12-30'); await disabled();
     if (cabin === 'sol') { await set('2026-11-20', '2026-11-21'); await disabled(); }
-    await set('2026-10-23', '2026-10-24');
-    assert.equal(new URL(await link.getAttribute('href')).searchParams.get('check_out'), '2026-10-24', 'Ordinary weekend permits one night');
+    await set('2026-11-06', '2026-11-07');
+    assert.equal(new URL(await link.getAttribute('href')).searchParams.get('check_out'), '2026-11-07', 'Ordinary weekend permits one night');
     await set('2026-12-24', '2026-12-27', '5');
     const mixed = schedule.days.filter(day => day.date >= '2026-12-24' && day.date < '2026-12-27').reduce((n, day) => n + day.rates[cabin], schedule.cleaningJPY + 3 * schedule.extraGuestJPY);
     assert((await result.innerText()).includes(mixed.toLocaleString('en-US')), 'Mixed rates must be summed night by night; guest supplement is once per stay');
-    await set('2027-07-02', '2027-07-03');
+    await set('2028-01-01', '2028-01-02');
     assert.equal(await result.locator('strong').count(), 0, 'Unpublished dates must not invent an estimate');
-    assert.equal(new URL(await link.getAttribute('href')).searchParams.get('check_in'), '2027-07-02');
+    assert.equal(new URL(await link.getAttribute('href')).searchParams.get('check_in'), '2028-01-01');
     assert.deepEqual(errors, []); await page.close(); cases++;
   }
   console.log(`PASS: ${cases} cabin/language calculator interactions: Japan date, invalid order, minimum stays, changed dates, five guests, mixed rates and unpublished dates; no external requests.`);

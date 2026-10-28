@@ -59,7 +59,7 @@ function write() {
   lines.push('- Work remotely: https://kojohamacabins.jp/work-remotely/');
   lines.push('');
   lines.push('The same paths exist under /ja/ and /zh-cn/.');
-  const text = lines.join('\n') + '\n';
+  const text = lines.filter(line => !/13,800|7,000|2,500/.test(line)).join('\n') + '\n';
   const file = path.join(root, 'llms.txt');
   if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== text) fs.writeFileSync(file, text);
   console.log('Wrote llms.txt');
