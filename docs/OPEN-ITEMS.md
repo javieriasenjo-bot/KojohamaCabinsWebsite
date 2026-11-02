@@ -1,6 +1,6 @@
 # Ocean Stay Kojohama — open items
 
-Last reconciled: 20 October 2026, Japan time. Owner: Javier. Working agent: Codex.
+Last reconciled: 2 November 2026, Japan time (website Trip/Ctrip status only; other rows last reconciled 20 October). Owner: Javier. Working agent: Claude (handover from Codex, 2 November 2026).
 
 This is the canonical tracker for the main website, guest guide, listings, social channels and tourism follow-ups. Historical reviews remain evidence, not current to-do lists. Closed items stay closed unless new evidence changes their status. Update these rows when the owner answers; do not create another competing tracker.
 
@@ -103,3 +103,13 @@ Cookware/induction/no-dish-rack facts, qualified workspaces and Zen extra gear s
 ## OTA and release review — 20 October 2026
 
 Airbnb pricing/extra-guest discrepancy and partial rate comparison recorded; English public charge policies verified for all three cabins; gallery recommendations ready with no edits. Trip still needs Zen capacity, check-in, quiet-hour, monetary-policy and address reconciliation before activation; no connections changed. Booking.com skipped on owner instruction. RedNote untouched. Main website release/build setting closed. See OTA-AND-RELEASE-REVIEW-2026-10-20.md.
+
+## Website Trip.com / Ctrip status — 2 November 2026
+
+Supersedes the 12 October notes above that Trip/Ctrip buttons are hidden and that Trip is inactive on the website. Owner commits "trip.com" and "trip" (27 October 2026) set `bookingChannels.ctrip` to true in `data/site-facts.json`. The committed pages now link the three existing Ctrip properties — Sol 136074478, Zen 136074484, Rustic 136074515 — on 14 pages: the three cabin pages in English, Japanese and Chinese, the Chinese homepage and cabin comparison page, and `/go/` in all three languages. `llms.txt` lists Airbnb only and contains no Ctrip URL (enforced by `scripts/check-site.cjs`).
+
+This records website link status only. Trip.com listing work remains open under O06/O18: Zen structured capacity, check-in time, monetary-policy support request, and the planned Sol/Zen/Rustic consolidation, which the 2 November handover says is not confirmed complete. Do not close the existing Zen or Rustic Ctrip properties before the combined setup is verified and closure separately approved; if they are closed, set `bookingChannels.ctrip` to false and rebuild first.
+
+## llms.txt prices removed — 2 November 2026
+
+Following the 28 October "prices off" decision, `scripts/llms.cjs` no longer writes nightly rates, cleaning/extra-guest fees or the `#seasonal-rates` link; the Prices section now directs readers to the booking platform. `scripts/check-pricing.cjs` now also fails if `llms.txt` contains accommodation prices. The optional BBQ fee (per stay) is still published, matching the BBQ page.

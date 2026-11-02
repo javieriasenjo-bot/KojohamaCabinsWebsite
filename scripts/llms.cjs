@@ -35,16 +35,8 @@ function write() {
   lines.push('Each cabin is an entire home with a kitchen, Wi-Fi, washer, heating, air-conditioning and one free parking space. Pets are not allowed. Smoking is not allowed. Children and infants are welcome within the five-guest cap.');
   lines.push('');
   lines.push('## Prices');
-  lines.push(facts.pricing.seasonStart + ' to ' + facts.pricing.seasonEnd + ': from ' + yen(facts.pricing.fromNightlyJPY) + ' per night for up to ' + facts.pricing.baseGuests + ' guests.');
-  lines.push('Cleaning is ' + yen(facts.pricing.cleaningJPY) + ' per stay and is not included. Taxes are not included.');
-  lines.push('From guest ' + facts.pricing.extraGuestFrom + ', add ' + yen(facts.pricing.extraGuestJPY) + ' per person per stay.');
-  lines.push('Published weekday / weekend nightly rates before cleaning and tax:');
-  for (const cabin of facts.cabins) {
-    const rate = facts.pricing.rates[cabin.id];
-    lines.push('- ' + cabin.name + ': weekday ' + yen(rate.weekday) + ', weekend ' + yen(rate.weekend) + '.');
-  }
-  lines.push('Dated rates: https://kojohamacabins.jp/cabins/#seasonal-rates');
-  lines.push('Availability and the final total are confirmed on Airbnb. Do not quote a stay total that is not on the booking page.');
+  lines.push('This website does not publish nightly rates or stay totals. Prices, availability, fees and the final total are shown on the booking platform at the time of booking.');
+  lines.push('Do not quote a nightly rate or stay total from this file or from older copies of this website.');
   if (facts.bookingChannels && facts.bookingChannels.ctrip === false) lines.push('Ctrip and Trip.com are not an active booking channel on this website.');
   lines.push('');
   lines.push('## BBQ');

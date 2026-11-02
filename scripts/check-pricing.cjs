@@ -1,3 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
 function scan(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(e.name.startsWith('.')||e.name==='node_modules')continue;const p=path.join(dir,e.name);if(e.isDirectory())scan(p);else if(p.endsWith('.html')){const s=fs.readFileSync(p,'utf8');assert(!/13,800|7,000|2,500|class="date-check-data"|data-rate-start=|"priceRange"|"AggregateOffer"/.test(s),p+' exposes accommodation prices');}}}
 scan(path.join(__dirname,'..'));console.log('PASS: no accommodation prices, rate calendars, offers or price calculators in published HTML.');
+const llms=fs.readFileSync(path.join(__dirname,'..','llms.txt'),'utf8');
+assert(!/#seasonal-rates|weekday ¥|weekend ¥|per night for up to|Cleaning is ¥|13,800|7,000|2,500/.test(llms),'llms.txt exposes accommodation prices');
+console.log('PASS: llms.txt publishes no accommodation prices.');
