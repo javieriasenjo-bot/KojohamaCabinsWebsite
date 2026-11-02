@@ -27,7 +27,7 @@ for(const hostname of ['localhost','127.0.0.1','preview.example']){
  assert.equal(commands[1][2].ad_storage,'denied');assert.equal(commands[1][2].ad_personalization,'denied');
  assert.equal(h.window.dataLayer.filter(x=>x.event==='cabin_view').length,1,'Late acceptance records the current cabin once');
  assert.equal(h.window.dataLayer.filter(x=>x.event==='contact_click').length,0,'Do not replay pre-consent clicks');
- const tracker=h.scripts.find(x=>x.src.includes('metricool'));tracker.onload();assert.equal(h.visits[0].hash,'ffd44c179566f41dd21d51d09878d58d');
+ const tracker=h.scripts.find(x=>x.src.includes('metricool'));tracker.onload();assert.equal(h.visits[0].hash,'1f12ad07e125ef58f7265e4b7371949b');
  h.choose(true);assert.equal(h.scripts.length,2,'No duplicate loaders');
  h.choose(false);assert.equal(h.reloads(),1);assert.equal(h.window['ga-disable-G-30NYR8WMT3'],true);
  tracker.onload();assert.equal(h.visits.length,1,'Withdrawal blocks late tracker callback');

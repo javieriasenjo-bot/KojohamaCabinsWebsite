@@ -57,7 +57,7 @@
     const metricool = document.createElement('script');
     metricool.async = true; metricool.src = 'https://tracker.metricool.com/resources/be.js';
     metricool.onload = () => {
-      if (choice === true && window.beTracker && typeof window.beTracker.t === 'function') window.beTracker.t({ hash: 'ffd44c179566f41dd21d51d09878d58d' });
+      if (choice === true && window.beTracker && typeof window.beTracker.t === 'function') window.beTracker.t({ hash: '1f12ad07e125ef58f7265e4b7371949b' });
     };
     document.head.appendChild(metricool);
     // The initial deferred cabin_view was intentionally discarded before consent.
