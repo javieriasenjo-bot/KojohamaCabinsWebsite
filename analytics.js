@@ -1,16 +1,23 @@
-// Optional analytics: no third-party tracker loads before an explicit choice.
+// Analytics on by default (opt-out): Google Analytics loads unless this browser declined.
+// Metricool's web tracker stays opt-in (loads only after Accept).
+// Advertising consent is always denied. In the EEA, UK and Switzerland Google's
+// consent-mode region default keeps analytics storage denied until the visitor accepts.
 (() => {
   const production = ['kojohamacabins.jp', 'www.kojohamacabins.jp'].includes(location.hostname);
   const key = 'kojohama-analytics-choice-v1', navigationKey = 'kojohama-pending-bio-click';
   const lifetime = 180 * 86400000;
-  let choice = null, loaded = false, pendingView = null;
+  // Region codes where analytics storage starts denied (EEA + UK + CH), resolved by Google from the request.
+  const consentRegions = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'CH'];
+  let choice = null, loaded = false, metricoolLoaded = false, pendingView = null;
   if (production) try {
     const stored = JSON.parse(window.localStorage.getItem(key));
     const age = Date.now() - stored?.saved;
     if (stored?.version === 1 && typeof stored.allowed === 'boolean' && age >= 0 && age < lifetime) choice = stored.allowed;
-  } catch (_) { /* An unavailable preference store leaves tracking off. */ }
+  } catch (_) { /* An unavailable preference store keeps the default (analytics on, Metricool off). */ }
+  const active = () => choice !== false;
   const push = (event, details = {}) => {
-    if (production && choice !== true) {
+    if (production && !active()) return;
+    if (production && !loaded) {
       if (event === 'cabin_view') pendingView = details;
       return;
     }
@@ -23,7 +30,7 @@
     });
   };
   const queueNavigationEvent = details => {
-    if (production && choice !== true) return false;
+    if (production && !active()) return false;
     try {
       window.sessionStorage.setItem(navigationKey, JSON.stringify({
         details: { ...details, page_path: location.pathname, page_language: document.documentElement.lang }, created: Date.now()
@@ -35,41 +42,50 @@
   if (!production) return;
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
-  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-  function load() {
-    if (loaded || choice !== true) return;
-    loaded = true;
-    window['ga-disable-G-30NYR8WMT3'] = false;
-    // Analytics permission does not grant advertising or personalization permission.
-    gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-    try {
-      const raw = window.sessionStorage.getItem(navigationKey);
-      window.sessionStorage.removeItem(navigationKey);
-      if (raw) {
-        const pending = JSON.parse(raw), destination = new URL(pending.details.destination_url), age = Date.now() - pending.created;
-        if (age >= 0 && age < 300000 && destination.origin === location.origin && destination.pathname === location.pathname && destination.search === location.search) push('bio_link_click', pending.details);
-      }
-    } catch (_) { /* Stale or blocked storage must not affect navigation. */ }
-    const script = document.createElement('script');
-    script.async = true; script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5W8ZJPTD';
-    document.head.appendChild(script);
+  const ads = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' };
+  // Region-specific default first, then the general default (Google applies the most specific match).
+  gtag('consent', 'default', { analytics_storage: 'denied', ...ads, region: consentRegions });
+  gtag('consent', 'default', { analytics_storage: 'granted', ...ads });
+  function loadMetricool() {
+    if (metricoolLoaded || choice !== true) return;
+    metricoolLoaded = true;
     const metricool = document.createElement('script');
     metricool.async = true; metricool.src = 'https://tracker.metricool.com/resources/be.js';
     metricool.onload = () => {
       if (choice === true && window.beTracker && typeof window.beTracker.t === 'function') window.beTracker.t({ hash: '1f12ad07e125ef58f7265e4b7371949b' });
     };
     document.head.appendChild(metricool);
-    // The initial deferred cabin_view was intentionally discarded before consent.
-    if (pendingView) { const view = pendingView; pendingView = null; push('cabin_view', view); }
+  }
+  function load() {
+    if (!active()) return;
+    // An explicit Accept also grants analytics storage in consent regions.
+    if (choice === true) gtag('consent', 'update', { analytics_storage: 'granted', ...ads });
+    if (!loaded) {
+      loaded = true;
+      window['ga-disable-G-30NYR8WMT3'] = false;
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      try {
+        const raw = window.sessionStorage.getItem(navigationKey);
+        window.sessionStorage.removeItem(navigationKey);
+        if (raw) {
+          const pending = JSON.parse(raw), destination = new URL(pending.details.destination_url), age = Date.now() - pending.created;
+          if (age >= 0 && age < 300000 && destination.origin === location.origin && destination.pathname === location.pathname && destination.search === location.search) push('bio_link_click', pending.details);
+        }
+      } catch (_) { /* Stale or blocked storage must not affect navigation. */ }
+      const script = document.createElement('script');
+      script.async = true; script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5W8ZJPTD';
+      document.head.appendChild(script);
+      if (pendingView) { const view = pendingView; pendingView = null; push('cabin_view', view); }
+    }
+    loadMetricool();
   }
   const language = document.documentElement.lang;
   const prefix = language === 'ja' ? '/ja' : language === 'zh-CN' ? '/zh-cn' : '';
   const text = {
-    en: ['Optional analytics', 'May we use Google Analytics and Metricool to understand visits and booking-link clicks? Booking and contact links work if you decline.', 'Accept analytics', 'Decline analytics', 'Analytics settings', 'Privacy policy', 'Close'],
-    ja: ['任意のアクセス解析', 'Google AnalyticsとMetricoolを使い、閲覧や予約リンクの利用状況を調べてもよろしいですか？拒否しても予約・お問い合わせは利用できます。', '解析を許可', '解析を拒否', '解析の設定', 'プライバシーポリシー', '閉じる'],
-    'zh-CN': ['可选访问分析', '是否允许Google Analytics和Metricool分析访问及预订链接点击？拒绝后仍可使用预订和联系链接。', '允许分析', '拒绝分析', '分析设置', '隐私政策', '关闭']
-  }[language] || ['Optional analytics', 'Allow Google Analytics and Metricool? Booking works if you decline.', 'Accept analytics', 'Decline analytics', 'Analytics settings', 'Privacy policy', 'Close'];
+    en: ['Analytics settings', 'We use Google Analytics to understand visits and booking-link clicks. Advertising and personalisation are never enabled. You can turn analytics off at any time; booking and contact links work either way. Accepting also enables the cookie-free Metricool tracker.', 'Accept analytics', 'Turn off analytics', 'Analytics settings', 'Privacy policy', 'Close'],
+    ja: ['アクセス解析の設定', '閲覧や予約リンクの利用状況を把握するためGoogle Analyticsを使用しています。広告やパーソナライズには使用しません。解析はいつでもオフにでき、予約・お問い合わせはどちらでも利用できます。許可するとCookieを使わないMetricoolの計測も有効になります。', '解析を許可', '解析をオフにする', '解析の設定', 'プライバシーポリシー', '閉じる'],
+    'zh-CN': ['统计设置', '我们使用Google Analytics了解访问情况及预订链接点击，从不用于广告或个性化。您可随时关闭统计，预订和联系链接均不受影响。允许后还会启用不使用Cookie的Metricool统计。', '允许统计', '关闭统计', '统计设置', '隐私政策', '关闭']
+  }[language] || ['Analytics settings', 'We use Google Analytics to understand visits. You can turn it off at any time.', 'Accept analytics', 'Turn off analytics', 'Analytics settings', 'Privacy policy', 'Close'];
   const panel = document.createElement('section');
   panel.className = 'analytics-choice'; panel.hidden = true;
   panel.setAttribute('aria-label', text[0]);
@@ -80,7 +96,7 @@
   settings.addEventListener('click', () => { panel.hidden = false; close.hidden = false; panel.querySelector('[data-choice="yes"]').focus(); });
   close.addEventListener('click', () => { panel.hidden = true; settings.focus(); });
   function decide(allowed) {
-    const wasLoaded = loaded;
+    const wasLoaded = loaded || metricoolLoaded;
     choice = allowed;
     try { window.localStorage.setItem(key, JSON.stringify({ version: 1, allowed, saved: Date.now() })); } catch (_) { /* Choice remains valid for this page only. */ }
     panel.hidden = true;
@@ -89,7 +105,7 @@
       window['ga-disable-G-30NYR8WMT3'] = true;
       try { window.sessionStorage.removeItem(navigationKey); } catch (_) {}
       if (wasLoaded) {
-        gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+        gtag('consent', 'update', { analytics_storage: 'denied', ...ads });
         for (const cookie of document.cookie.split(';')) {
           const name = cookie.split('=')[0].trim();
           if (/^_ga(?:_|$)/.test(name)) for (const domain of ['', '; domain=' + location.hostname, '; domain=.kojohamacabins.jp']) document.cookie = `${name}=; Max-Age=0; path=/${domain}; SameSite=Lax`;
@@ -104,7 +120,7 @@
   panel.querySelector('[data-choice="no"]').addEventListener('click', () => decide(false));
   document.body.appendChild(panel);
   (document.querySelector('footer .legal-links') || document.querySelector('footer') || document.body).appendChild(settings);
-  // Stay hidden on arrival. Visitors open it from Analytics settings; trackers load only after Accept.
-  if (choice === true) load();
+  // No prompt on arrival. Analytics loads unless this browser turned it off.
+  if (active()) load();
   else try { window.sessionStorage.removeItem(navigationKey); } catch (_) {}
 })();
