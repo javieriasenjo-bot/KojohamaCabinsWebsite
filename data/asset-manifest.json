@@ -230,15 +230,15 @@
     },
     {
       "source": "/images/places/venue-05-640.webp",
-      "url": "/media/venue-05-640.90b6fb7476ba.webp",
-      "sha256": "90b6fb7476ba1e95cb83d5fee67a817e0f0c7e5d735273622e7a5a59753f055c",
-      "bytes": 41136
+      "url": "/media/venue-05-640.595852498a86.webp",
+      "sha256": "595852498a86e64a03c42e980125fd625d5d196f9c9c30b22b1b44dd39ffffb7",
+      "bytes": 56348
     },
     {
       "source": "/images/places/venue-05.webp",
-      "url": "/media/venue-05.8fdc8ceab56a.webp",
-      "sha256": "8fdc8ceab56ad70c7d59bcb747b79755e0eebcbbdddd065403fc84da6e7a3e60",
-      "bytes": 134580
+      "url": "/media/venue-05.90e5c9fc9259.webp",
+      "sha256": "90e5c9fc9259c6ea895f398232026366d42cc1f796cea468c3256a0efc8668d8",
+      "bytes": 159504
     },
     {
       "source": "/images/places/venue-06-640.webp",

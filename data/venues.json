@@ -363,75 +363,90 @@
       "translations": {
         "en": {
           "name": "Tacchan Shokudo",
-          "drive": "4 min",
-          "descriptionHtml": "A seafood company's cafeteria: donburi, salt ramen and the day's fish. The village lunch locals actually use.",
+          "drive": "About 5 min on foot",
+          "descriptionHtml": "Seafood rice bowls and seafood salt ramen from Marukan Honma Suisan. Find the lunch counter at 69-3 Kojohama, Shiraoi.",
           "hours": "10:00–14:00. Closed Tuesday/Wednesday; open on public holidays, with a substitute closure the following day.",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6o6P4hjdV8RprVFrDboAt4",
               "label": "Map",
               "kind": "map"
+            },
+            {
+              "href": "https://tacchan-shokudo.com/menu/",
+              "label": "Official menu",
+              "kind": "menu"
             }
           ],
           "photo": {
             "src": "/images/places/venue-05.webp",
-            "alt": "Tacchan Shokudo",
+            "alt": "Seafood ramen lunch at Tacchan Shokudo",
             "width": 1200,
             "height": 900,
             "fit": "cover",
-            "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E3%81%9F%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93%E9%A3%9F%E5%A0%82%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">Photo source: Google Maps</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "creditHtml": "Photo: Ocean Stay Kojohama",
+            "rightsStatus": "Ocean Stay Kojohama campaign photo supplied for publication",
             "srcset": "/images/places/venue-05-640.webp 640w, /images/places/venue-05.webp 1200w"
           }
         },
         "ja": {
           "name": "たっちゃん食堂",
-          "drive": "車で4分",
-          "descriptionHtml": "マルカン本間水産の食堂。海鮮丼、塩ラーメン、その日の魚。地元の昼ごはん。",
+          "drive": "徒歩約5分",
+          "descriptionHtml": "マルカン本間水産の食堂。海鮮丼や海鮮塩ラーメンが楽しめます。白老町虎杖浜69-3。",
           "hours": "10:00〜14:00。火・水曜定休（祝日は営業、翌日休み）。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6o6P4hjdV8RprVFrDboAt4",
               "label": "地図",
               "kind": "map"
+            },
+            {
+              "href": "https://tacchan-shokudo.com/menu/",
+              "label": "公式メニュー",
+              "kind": "menu"
             }
           ],
           "photo": {
             "src": "/images/places/venue-05.webp",
-            "alt": "たっちゃん食堂",
+            "alt": "たっちゃん食堂の海鮮ラーメン",
             "width": 1200,
             "height": 900,
             "fit": "cover",
-            "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E3%81%9F%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93%E9%A3%9F%E5%A0%82%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">写真の出典：Google マップ</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "creditHtml": "撮影：Ocean Stay Kojohama",
+            "rightsStatus": "Ocean Stay Kojohama campaign photo supplied for publication",
             "srcset": "/images/places/venue-05-640.webp 640w, /images/places/venue-05.webp 1200w"
           }
         },
         "zh-CN": {
           "name": "小辰食堂",
-          "drive": "车程4分钟",
-          "descriptionHtml": "水产公司直营食堂。海鲜盖饭、盐味拉面、当天的鱼。村里人的午饭。",
+          "drive": "步行约5分钟",
+          "descriptionHtml": "水产公司直营的午餐食堂，供应海鲜盖饭和海鲜盐味拉面。地址：白老町虎杖浜69-3。",
           "hours": "10:00–14:00。周二、周三休息；遇节假日营业，次日休息。",
           "links": [
             {
               "href": "https://www.google.com/maps/place/?q=place_id:ChIJq6o6P4hjdV8RprVFrDboAt4",
               "label": "地图",
               "kind": "map"
+            },
+            {
+              "href": "https://tacchan-shokudo.com/menu/",
+              "label": "官方菜单",
+              "kind": "menu"
             }
           ],
           "photo": {
             "src": "/images/places/venue-05.webp",
-            "alt": "小辰食堂",
+            "alt": "TACCHAN食堂的海鲜拉面",
             "width": 1200,
             "height": 900,
             "fit": "cover",
-            "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E3%81%9F%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93%E9%A3%9F%E5%A0%82%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">照片来源：Google 地图</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "creditHtml": "照片：Ocean Stay Kojohama",
+            "rightsStatus": "Ocean Stay Kojohama campaign photo supplied for publication",
             "srcset": "/images/places/venue-05-640.webp 640w, /images/places/venue-05.webp 1200w"
           }
         }
       },
-      "hoursCheckedOn": "2026-10-10",
+      "hoursCheckedOn": "2026-11-04",
       "hoursSource": "https://tacchan-shokudo.com/print/"
     },
     {

@@ -101,29 +101,25 @@
     {
       "id": "venue-05",
       "name": "Tacchan Shokudo",
-      "reviewedOn": "2026-10-06",
-      "identityReview": "Reviewed profile name/address and photograph; unrelated search-result photos rejected.",
-      "status": "new optimized photo from verified venue Google Maps profile",
+      "reviewedOn": "2026-11-04",
+      "identityReview": "Photo supplied by Ocean Stay Kojohama from its Tacchan Shokudo visit.",
+      "status": "Ocean Stay Kojohama campaign photo",
       "profileName": "白老たっちゃん食堂",
       "profileAddress": "〒059-0464 北海道白老郡白老町虎杖浜６９",
       "profileUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%9F%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93%E9%A3%9F%E5%A0%82%20%E5%8C%97%E6%B5%B7%E9%81%93",
-      "sourceImageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlBqXPkOuc6LLwpyOjf0iQMv0RZIH1xAHP9XqPnRELRMUSn5puQEKCRU156KQi7rAFICvxEroAaU_lcLGtbOtrIcarsn37A3QYRPY4P34zAjp_Lbr8onjwznv2cNWMvLqXd11zlXWktF6H3=w1280-h960-k-no",
-      "sourceSHA256": "052cb70785aee8ac1c9bdf1a86f7bc51015347e0c462baa8858acb3331e445da",
       "asset": "/images/places/venue-05.webp",
-      "assetSHA256": "8fdc8ceab56ad70c7d59bcb747b79755e0eebcbbdddd065403fc84da6e7a3e60",
       "width": 1200,
       "height": 900,
-      "bytes": 134580,
-      "permission": "Owner confirmed on 2026-10-06: all listed venues permit use of their Google Maps profile photos.",
-      "permissionEvidence": "User reply in this task: all of them are ok that i use their google maps profile photos. proceed",
-      "photographer": "Not separately identified; venue profile source linked. No Creative Commons license asserted.",
+      "bytes": 159504,
+      "permission": "Supplied by the user for publication on both sites.",
+      "photographer": "Ocean Stay Kojohama",
       "changes": "Resized and converted to WebP; no enlargement; no AI edits; metadata stripped.",
       "responsiveAsset": {
         "asset": "/images/places/venue-05-640.webp",
         "width": 640,
         "height": 480,
-        "bytes": 41136,
-        "sha256": "90b6fb7476ba1e95cb83d5fee67a817e0f0c7e5d735273622e7a5a59753f055c"
+        "bytes": 56348,
+        "sha256": "595852498a86e64a03c42e980125fd625d5d196f9c9c30b22b1b44dd39ffffb7"
       }
     },
     {
