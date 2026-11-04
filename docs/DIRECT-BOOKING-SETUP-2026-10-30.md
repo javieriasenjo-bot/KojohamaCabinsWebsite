@@ -11,6 +11,7 @@ User deferred connecting the existing Stripe account until later. Current AirHos
 - Source repository (updated 2 November 2026): I:\My Drive\0. SourceCode Webs\KojohamaCabinsWebsite. C:\dev\KojohamaCabinsWebsite is no longer used.
 - Always enter AirHost via https://pms.airhost.co. Its Booking Engine menu opens the legacy cloud.airhost.co editor internally.
 - Use the CURRENT AirHost base rates and fees, with NO direct-booking discount. Live rates and fee calculations must still be inspected before creating the plans; do not copy older website pricing records as current truth.
+- **4 November 2026 — OTA discounts.** Keep AirHost company-wide automatic discounts off for now. Manage discounts per OTA channel in AirHost where supported. When AirHost cannot manage the offer, configure it directly in that OTA.
 - Match the Airbnb cancellation policy.
 - Existing Stripe account will be connected by the owner later.
 - After successful direct-booking verification, integrate with kojohamacabins.jp and replace all outgoing Airbnb / Booking.com / Trip.com / Ctrip booking links throughout English, Japanese, Chinese and social landing pages.
