@@ -101,9 +101,9 @@ for(const image of imageManifest.images){
 const redirectRules=fs.readFileSync(path.join(root,'_redirects'),'utf8');
 for(const image of imageManifest.images)check(redirectRules.includes(`${image.source} ${image.url} 302`),`Missing redirect for unpublished original ${image.source}`);
 for(const file of ['home.css','seo-site.css','go.css','guide-site.css','seo-site.js','home-gallery.js','analytics.js'])check(!fs.readFileSync(path.join(root,file),'utf8').includes('/images/'),`${file}: links to unpublished /images/ originals`);
-check(directory.venues.length===65,'Directory must retain all 65 places');
+check(directory.venues.length===66,'Directory must retain all 66 places');
 const photoSources=JSON.parse(fs.readFileSync(path.join(root,'data/venue-photo-sources.json'),'utf8'));
-check(photoSources.venues.length===65,'Photo source register must cover all 65 places');
+check(photoSources.venues.length===66,'Photo source register must cover all 66 places');
 for(const record of photoSources.venues){
  const venue=directory.venues.find(v=>v.id===record.id);
  check(Boolean(venue),`${record.id}: photo source has no matching venue`);
@@ -115,12 +115,12 @@ for(const record of photoSources.venues){
   if(fs.existsSync(file))check(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')===(asset.assetSHA256||asset.sha256),`${record.id}: photo differs from reviewed asset ${asset.asset}`);
  }
  check(Boolean(record.permission)&&Boolean(record.profileUrl),`${record.id}: missing photo permission/source record`);
- for(const locale of ['en','ja','zh-CN'])check(venue?.translations[locale].photo.creditHtml?.includes('https://www.google.com/maps/'),`${record.id}: missing visible ${locale} photo-source credit`);
+ for(const locale of ['en','ja','zh-CN'])check(record.stock ? Boolean(venue?.translations[locale].photo.creditHtml) : venue?.translations[locale].photo.creditHtml?.includes('https://www.google.com/maps/'),`${record.id}: missing visible ${locale} photo-source credit`);
 }
 for(const locale of ['en','ja','zh-CN']){
  const prefix=locale==='en'?'':locale==='ja'?'ja/':'zh-cn/';
  const text=fs.readFileSync(path.join(root,prefix+'things-to-do/index.html'),'utf8');
- check((text.match(/data-venue=/g)||[]).length===65,`${locale}: missing directory records`);
+ check((text.match(/data-venue=/g)||[]).length===66,`${locale}: missing directory records`);
  check(!text.includes('class="near-rep"'),`${locale}: unrelated representative photos remain`);
  for(const v of directory.venues){
   check(v.translations[locale].links.length>0,`${locale}: ${v.id} needs a useful destination`);
@@ -219,4 +219,4 @@ for(const [file,html] of source){
  for(const age of ages)check(age<=30,`${name}: review snapshot is ${Math.floor(age)} days old`);
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
-else console.log(`PASS: ${pages.length} HTML files, ${references} local references, ${schemas} structured-data blocks, ${inlineScripts} inline scripts, 65 venues in three languages, booking channels and source deployment exclusions.`);
+else console.log(`PASS: ${pages.length} HTML files, ${references} local references, ${schemas} structured-data blocks, ${inlineScripts} inline scripts, 66 venues in three languages, booking channels and source deployment exclusions.`);

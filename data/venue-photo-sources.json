@@ -1641,6 +1641,32 @@
         "bytes": 46866,
         "sha256": "bbf9bbc0cc423f1a87b43842b12476aabc917d27555073f663bdd6a166758e64"
       }
+    },
+    {
+      "id": "venue-66",
+      "name": "Traveling Therapist Eriko",
+      "reviewedOn": "2026-11-05",
+      "identityReview": "Illustrative stock photograph (therapist's hands on a towel-covered back); does not depict Eriko or her studio. Captioned as illustrative in all three languages.",
+      "status": "owner-supplied stock photograph, cropped to the hands",
+      "stock": true,
+      "profileName": "Owner-supplied stock photo",
+      "profileUrl": "owner-supplied (attached in chat 2026-11-05); original stock-library URL to be recorded",
+      "asset": "/images/places/venue-66.webp",
+      "assetSHA256": "3d4ea83f8235c2e587dc1ce3b4673c92bf88d3bc13b57164f29af7c6e8e39fd8",
+      "width": 1200,
+      "height": 900,
+      "bytes": 39712,
+      "permission": "Owner selected this photograph on 2026-11-05 as a licence-free stock image for the massage listing.",
+      "permissionEvidence": "User reply in this task: ok, use this photo finally",
+      "photographer": "To be recorded with the stock-library source.",
+      "changes": "Cropped to 4:3 around the hands (face excluded), resized and converted to WebP; no AI edits; metadata stripped.",
+      "responsiveAsset": {
+        "asset": "/images/places/venue-66-640.webp",
+        "width": 640,
+        "height": 480,
+        "bytes": 14152,
+        "sha256": "ad471615bd411fdf490a1ea09dadd36357cf3ad7ab31f78cfeb3fa0bb7b26099"
+      }
     }
   ],
   "responsiveBytes": 2190448,

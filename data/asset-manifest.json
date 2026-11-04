@@ -835,6 +835,18 @@
       "bytes": 132790
     },
     {
+      "source": "/images/places/venue-66-640.webp",
+      "url": "/media/venue-66-640.9298ab800f14.webp",
+      "sha256": "9298ab800f14335ac89bac2eb260ffc42ebcf438e96a28a310cbf56c7281c0cb",
+      "bytes": 19920
+    },
+    {
+      "source": "/images/places/venue-66.webp",
+      "url": "/media/venue-66.522b6951f1b7.webp",
+      "sha256": "522b6951f1b72cf3821829c15fbfeddb87334c08044eeedd40248e72d75e317c",
+      "bytes": 45480
+    },
+    {
       "source": "/images/rustic/rustic-1-480.webp",
       "url": "/media/rustic-1-480.23a731319044.webp",
       "sha256": "23a73131904409a094553f5becc54bc24d05298a81d49da4111c5149e88a5af3",
