@@ -1652,10 +1652,10 @@
       "profileName": "Owner-supplied stock photo",
       "profileUrl": "owner-supplied (attached in chat 2026-11-05); original stock-library URL to be recorded",
       "asset": "/images/places/venue-66.webp",
-      "assetSHA256": "3d4ea83f8235c2e587dc1ce3b4673c92bf88d3bc13b57164f29af7c6e8e39fd8",
+      "assetSHA256": "522b6951f1b72cf3821829c15fbfeddb87334c08044eeedd40248e72d75e317c",
       "width": 1200,
       "height": 900,
-      "bytes": 39712,
+      "bytes": 45480,
       "permission": "Owner selected this photograph on 2026-11-05 as a licence-free stock image for the massage listing.",
       "permissionEvidence": "User reply in this task: ok, use this photo finally",
       "photographer": "To be recorded with the stock-library source.",
@@ -1664,8 +1664,8 @@
         "asset": "/images/places/venue-66-640.webp",
         "width": 640,
         "height": 480,
-        "bytes": 14152,
-        "sha256": "ad471615bd411fdf490a1ea09dadd36357cf3ad7ab31f78cfeb3fa0bb7b26099"
+        "bytes": 19920,
+        "sha256": "9298ab800f14335ac89bac2eb260ffc42ebcf438e96a28a310cbf56c7281c0cb"
       }
     }
   ],
