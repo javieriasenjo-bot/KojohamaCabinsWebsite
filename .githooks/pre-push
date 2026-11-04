@@ -1,0 +1,21 @@
+#!/bin/sh
+# Runs before every `git push`. Rebuilds the pages and runs the site checks,
+# then stops the push if the build changed anything that is not committed yet.
+# (Same idea as the "Generated pages must match the committed source" step on GitHub.)
+
+echo "pre-push: running npm run release:check ..."
+npm run release:check || {
+  echo "pre-push: checks failed. Fix the errors above, then push again."
+  exit 1
+}
+
+if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+  echo ""
+  echo "pre-push: the build changed or added files that are not committed:"
+  git status --short
+  echo ""
+  echo "Commit them (git add -A && git commit -m \"Rebuild pages\") and push again."
+  exit 1
+fi
+
+echo "pre-push: all good."
