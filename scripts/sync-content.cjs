@@ -74,11 +74,11 @@ function bookingLinks(file, lang) {
  return '<p class="booking-links"><span>' + c.lead + '</span> ' + [...airbnb, booking, ...trip].join(' ') + '</p>';
 }
 
-// FAQ "How do I see prices…" answer: one button per platform and cabin (3 x 3).
+// FAQ "How do I see prices…" answer: Airbnb and Trip.com have one button per cabin; Booking.com is a single property page that lists all three cabins as rooms.
 const faqPlatforms = {
- en: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com'},
- ja: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com（携程）'},
- 'zh-CN': {airbnb: 'Airbnb', booking: 'Booking.com', trip: '携程 Trip.com'}
+ en: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com', all: 'All three cabins'},
+ ja: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com（携程）', all: '全棟'},
+ 'zh-CN': {airbnb: 'Airbnb', booking: 'Booking.com', trip: '携程 Trip.com', all: '全部小屋'}
 };
 function faqBookingButtons(lang) {
  const p = faqPlatforms[lang];
@@ -86,7 +86,7 @@ function faqBookingButtons(lang) {
   '<a class="button ' + cls + '" ' + extra + 'data-cabin-name="' + cabin.name + '" data-link-location="faq_booking" rel="noopener" target="_blank" href="' + href(cabin) + '">' + cabin.name.replace(/^Ocean Stay /, '') + '</a>').join(' ') + '</p>';
  return '<!-- faq-booking:start --><div class="booking-rows">'
   + row(p.airbnb, 'airbnb', '', cabin => airbnbLocalized(cabin.airbnb, lang))
-  + row(p.booking, 'secondary', '', cabin => cabin.booking)
+  + '<p class="booking-links"><span>' + p.booking + '</span> <a class="button secondary" data-cabin-name="All cabins" data-link-location="faq_booking" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + p.all + '</a></p>'
   + row(p.trip, 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip)
   + '</div><!-- faq-booking:end -->';
 }
