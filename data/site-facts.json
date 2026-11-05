@@ -27,7 +27,8 @@
       "capacityConfirmedOn": "2026-10-06",
       "checkIn": "15:00",
       "leadImage": "/images/sol/sol-9.webp",
-      "checkOut": "10:00"
+      "checkOut": "10:00",
+      "booking": "https://www.booking.com/hotel/jp/ocean-stay.html"
     },
     {
       "id": "zen",
@@ -41,7 +42,8 @@
       "capacityConfirmedOn": "2026-10-06",
       "checkIn": "15:00",
       "leadImage": "/images/zen/zen-11.webp",
-      "checkOut": "10:00"
+      "checkOut": "10:00",
+      "booking": "https://www.booking.com/hotel/jp/ocean-stay.html"
     },
     {
       "id": "rustic",
@@ -55,7 +57,8 @@
       "capacityConfirmedOn": "2026-10-06",
       "checkIn": "15:00",
       "leadImage": "/images/rustic/rustic-2.webp",
-      "checkOut": "10:00"
+      "checkOut": "10:00",
+      "booking": "https://www.booking.com/hotel/jp/ocean-stay.html"
     }
   ],
   "policyConfirmation": "owner confirmed 2026-10-06",

@@ -201,4 +201,6 @@ body:lang(zh){font-family:"Noto Sans",Arial,"PingFang SC","Hiragino Sans GB","Mi
  .upopoy-feature-grid figure:nth-child(n+2){grid-column:auto;grid-row:auto;height:150px}
  .upopoy-feature-grid figure:nth-child(4){grid-column:1/-1}
 }
-.pricing-note>p{margin:0}.pricing-note .booking-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 0}.pricing-note .booking-links>span{font-weight:700;margin-right:4px}.pricing-note .booking-links .button{padding:10px 16px;font-size:.9rem;min-height:44px}
+.pricing-note>p{margin:0}.booking-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 0}.booking-links>span{font-weight:700;margin-right:4px}.booking-links .button{padding:10px 16px;font-size:.9rem;min-height:44px}
+.booking-rows{display:grid;gap:10px;margin-top:14px}.booking-rows .booking-links{margin:0}.booking-rows .booking-links>span{min-width:96px}
+@media(max-width:520px){.booking-rows .booking-links>span{flex-basis:100%;min-width:0}.booking-rows .booking-links .button{padding:10px 14px}}

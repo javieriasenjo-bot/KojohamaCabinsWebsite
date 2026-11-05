@@ -15,7 +15,8 @@ const bookingVisibility = (html, lang) => {
  html=restoreInactiveBookings(html);
  if(facts.bookingChannels?.ctrip !== false && lang === 'zh-CN')return html;
  html=html.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g,paragraph=>paragraph.includes('data-link-location="linkinbio_ctrip"') ? `<!-- inactive-ctrip: ${paragraph} -->` : paragraph);
- return html.replace(/<!-- inactive-ctrip: [\s\S]*? -->|(?: · )?<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"[^>]*>[\s\S]*?<\/a>/g,link=>link.startsWith('<!--') ? link : `<!-- inactive-ctrip: ${link} -->`);
+ const keepAll = facts.bookingChannels?.ctrip !== false;
+ return html.replace(new RegExp('<!-- inactive-ctrip: [\\s\\S]*? -->|(?: · )?<a\\b' + (keepAll ? '(?![^>]*data-all-languages)' : '') + '[^>]*href="https?:\\/\\/[^" ]*(?:ctrip\\.com|trip\\.com)[^" ]*"[^>]*>[\\s\\S]*?<\\/a>', 'g'),link=>link.startsWith('<!--') ? link : `<!-- inactive-ctrip: ${link} -->`);
 };
 const directory = json('data/venues.json');
 const captions = json('data/gallery-captions.json');
@@ -69,8 +70,25 @@ function bookingLinks(file, lang) {
  const airbnb = cabins.map(cabin => '<a class="button airbnb" ' + attrs(cabin) + ' href="' + airbnbLocalized(cabin.airbnb, lang) + '">' + label(cabin, 'Airbnb') + '</a>');
  const booking = '<a class="button secondary" data-cabin-name="All cabins" data-link-location="pricing_note" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + c.booking + (cabinId ? '' : ' (' + c.onAll + ')') + '</a>';
  // Trip.com/Ctrip anchors are hidden outside the Chinese pages (and when the channel is switched off) by bookingVisibility().
- const trip = cabins.map(cabin => '<a class="button secondary" ' + attrs(cabin) + ' href="' + cabin.ctrip + '">' + label(cabin, c.trip) + '</a>');
+ const trip = cabins.map(cabin => '<a class="button secondary" data-all-languages="true" ' + attrs(cabin) + ' href="' + cabin.ctrip + '">' + label(cabin, c.trip) + '</a>');
  return '<p class="booking-links"><span>' + c.lead + '</span> ' + [...airbnb, booking, ...trip].join(' ') + '</p>';
+}
+
+// FAQ "How do I see prices…" answer: one button per platform and cabin (3 x 3).
+const faqPlatforms = {
+ en: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com'},
+ ja: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com（携程）'},
+ 'zh-CN': {airbnb: 'Airbnb', booking: 'Booking.com', trip: '携程 Trip.com'}
+};
+function faqBookingButtons(lang) {
+ const p = faqPlatforms[lang];
+ const row = (name, cls, extra, href) => '<p class="booking-links"><span>' + name + '</span> ' + facts.cabins.map(cabin =>
+  '<a class="button ' + cls + '" ' + extra + 'data-cabin-name="' + cabin.name + '" data-link-location="faq_booking" rel="noopener" target="_blank" href="' + href(cabin) + '">' + cabin.name.replace(/^Ocean Stay /, '') + '</a>').join(' ') + '</p>';
+ return '<!-- faq-booking:start --><div class="booking-rows">'
+  + row(p.airbnb, 'airbnb', '', cabin => airbnbLocalized(cabin.airbnb, lang))
+  + row(p.booking, 'secondary', '', cabin => cabin.booking)
+  + row(p.trip, 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip)
+  + '</div><!-- faq-booking:end -->';
 }
 
 function breadcrumbFor(file, lang, heading) {
@@ -209,11 +227,7 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
- if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || /(?:cabins|faq|bbq)\/index\.html$/.test(file)) {
-  const documents=require('./guest-documents.cjs').render(lang);
-  if(source.includes('<!-- guest-documents:start -->')) source=marked(source,'guest-documents',documents);
-  else source=source.replace('</main>',`<!-- guest-documents:start -->${documents}<!-- guest-documents:end --></main>`);
- }
+ // The guest documents (house manuals, guide) are private: they are sent to guests after booking, never published.
  const mapCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
  if (mapCabin) {
   const pins = {sol:['A Sol','https://share.google/LPPzqmK9n5XJ69V9a'],zen:['B Zen','https://share.google/BKXIcqqmzHAZovuXe'],rustic:['C Rustic','https://share.google/VaT7WVmg7icRaJhGo']};
@@ -315,6 +329,11 @@ for (const absolute of walk(root)) {
   return tag;
  });
  source=source.replace(/<!-- pricing:start -->[\s\S]*?<!-- pricing:end -->/g,`<!-- pricing:start --><div class="wrap pricing-note"><p>${bookingNote(file)}</p>${bookingLinks(file, lang)}</div><!-- pricing:end -->`);
+ if (file.endsWith('faq/index.html')) {
+  // Buttons under the FAQ answer that points guests to the booking platforms (3 platforms x 3 cabins).
+  const note = bookingNote(file).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  source = source.replace(new RegExp('(<h3>[^<]*</h3><p>' + note + '</p>)(?:<!-- faq-booking:start -->[\\s\\S]*?<!-- faq-booking:end -->)?'), (m, answer) => answer + faqBookingButtons(lang));
+ }
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   let schema=JSON.parse(text);
   const metaDescription = decode(source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0]?.match(/\bcontent="([^"]*)"/)?.[1] || '');

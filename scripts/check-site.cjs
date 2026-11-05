@@ -64,6 +64,7 @@ for(const [file,text]of source){
   check(/<link\b[^>]*rel="canonical"/.test(text),`${name}: missing canonical`);
  }
  check(!text.includes('6 名 · 5 台のベッド'),`${name}: stale six-guest cabin capacity`);
+ check(!/id="guest-documents"|drive\.google\.com\/file|docs\.google\.com\/document/.test(text),`${name}: publishes guest-only documents (house manuals, terms document)`);
  // The in-stay guest guide is private: it is sent to guests after they book, never linked publicly.
  check(!/guide\.kojohamacabins\.jp/.test(text.replace(/fetch\('https:\/\/guide\.kojohamacabins\.jp\/api\/community-events'/g, '')),`${name}: links to the private guest guide`);
 }
@@ -82,7 +83,7 @@ for(const relative of [
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
 for(const [file,text]of source){
  if(facts.bookingChannels?.ctrip && path.relative(root,file).replace(/\\/g,'/').startsWith('zh-cn/')) continue;
- const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
+ const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'').replace(facts.bookingChannels?.ctrip?/<a\b[^>]*data-all-languages[^>]*>[\s\S]*?<\/a>/g:/$^/g,'');
  check(!/<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"/.test(active),`${file}: inactive Ctrip booking link is still active`);
  for(const block of active.matchAll(/<script\b[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)){
   check(!/(?:ctrip\.com|trip\.com)/.test(block[1]),`${path.relative(root,file)}: inactive Ctrip URL remains in structured data`);
@@ -136,7 +137,7 @@ for(const locale of ['en','ja','zh-CN']){
  }
  const comparison=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
  for(const c of facts.cabins){
-  const activeComparison=comparison.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
+  const activeComparison=comparison.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'').replace(/<a\b[^>]*data-all-languages[^>]*>[\s\S]*?<\/a>/g,'');
   check(activeComparison.includes(c.airbnb),`${locale}: missing Airbnb channel for ${c.id}`);
   check(facts.bookingChannels?.ctrip && locale==='zh-CN' ? activeComparison.includes(c.ctrip) : !activeComparison.includes(c.ctrip),`${locale}: wrong Ctrip visibility for ${c.id}`);
   const page=fs.readFileSync(path.join(root,prefix+`cabins/ocean-stay-${c.id}/index.html`),'utf8');
