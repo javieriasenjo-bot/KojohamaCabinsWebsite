@@ -3,7 +3,6 @@
 const captions = require('../data/gallery-captions.json');
 const galleries = require('../data/home-galleries.json');
 const responsive = require('../data/responsive-images.json');
-const facts = require('../data/site-facts.json');
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const solCopy = {
   en: 'Make coffee while the light changes over the water. After a beach walk, leave sandy shoes at the entrance and settle in for a quiet evening.',
@@ -11,12 +10,6 @@ const solCopy = {
   'zh-CN': '看着水面光线变化，煮一杯咖啡。海边散步回来后，请在玄关脱下沾沙的鞋子，安心享受宁静的夜晚。'
 };
 function update(source, lang) {
-  const amount=(facts.pricing.rates.zen.weekday+facts.pricing.cleaningJPY).toLocaleString('en-US');
-  const example={en:`Example: Zen, two guests, 8 November 2026 for one night: ¥${amount} before tax, including cleaning. Check your dates in the rate calendar.`,ja:`総額例：2026年11月8日からZenに2名で1泊の場合、清掃料金込みで税別¥${amount}。ご希望の日付は料金カレンダーでご確認ください。`,'zh-CN':`总价示例：2位客人于2026年11月8日起入住Zen 1晚，含清洁费，税前¥${amount}。请在房价日历中核对所选日期。`}[lang];
-  const heading={en:'27 October 2026–31 December 2027: from ¥13,800 per night',ja:'2026年10月27日〜2027年12月31日：1泊¥13,800から','zh-CN':'2026年10月27日至2027年12月31日：每晚¥13,800起'}[lang];
-  source=source.replace(/<h3>[^<]*13,800[^<]*<\/h3>/,`<h3>${heading}</h3>`);
-  source=source.replace(/<span class="home-stay-example">[\s\S]*?<\/span>/g,'');
-  source=source.replace(/(<h3>[^<]*13,800[^<]*<\/h3><p>)([\s\S]*?)(<\/p>)/,(_,start,text,end)=>`${start}${text.trim()}<span class="home-stay-example"> ${example}</span>${end}`);
   source = source.replace(/(<p\b[^>]*data-(?:i18n|copy)="sol_p2"[^>]*>)[\s\S]*?(<\/p>)/, (_, start, end) => start + solCopy[lang] + end);
   for (const cabin of ['sol', 'zen', 'rustic']) {
     const preview = galleries[lang][cabin].images.slice(0,4).map(src => {

@@ -3,7 +3,6 @@
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const facts = require('../data/site-facts.json');
-const schedule = require('../data/date-rates.json');
 const { imageSize } = require('./layouts.cjs');
 const money = n => n.toLocaleString('en-US');
 const prefixes = { en: '', ja: 'ja/', 'zh-CN': 'zh-cn/' };
@@ -23,15 +22,13 @@ function marked(source, name, content, insertAfter) {
 function update(source, lang, id) {
   const cabin = facts.cabins.find(c => c.id === id);
   const t = labels[lang];
-  const from = Math.min(...schedule.days.map(d => d.rates[id]));
   const wifi = Math.round(facts.wifi.measurements[id]['5'].downloadMbps);
   const items = [
-    [t.price(money(from)), t.priceSub(facts.pricing.baseGuests)],
     [t.guests(cabin.maxGuests), t.guestsSub],
     [`${wifi} Mbps`, t.wifiSub],
     [t.checkIn(cabin.checkIn), t.checkInSub(cabin.checkOut)]
   ];
-  const strip = `<section class="cabin-facts" aria-label="${t.aria}"><div class="wrap"><ul>${items.map(([value, label]) => `<li><strong>${value}</strong><span>${label}</span></li>`).join('')}</ul><p class="cabin-facts-links"><a class="cabin-facts-link" href="#check-dates">${t.dates}</a><a class="cabin-facts-link" href="/${prefixes[lang]}cabins/#seasonal-rates">${t.rates}</a></p></div></section>`;
+  const strip = `<section class="cabin-facts" aria-label="${t.aria}"><div class="wrap"><ul>${items.map(([value, label]) => `<li><strong>${value}</strong><span>${label}</span></li>`).join('')}</ul></div></section>`;
   source = marked(source, 'cabin-facts', strip, /<section\b[^>]*class="page-hero"[^>]*>[\s\S]*?<\/section>/);
 
   // The hero, lead image and first gallery tile used to be the same photograph.
@@ -52,6 +49,8 @@ function update(source, lang, id) {
   // Booking facts first; the other cabins and Sapporo sister property close the page.
   let tail = '';
   source = source.replace(/<section\b[^>]*class="other-cabins[^"]*"[^>]*>[\s\S]*?<\/section>(?:\s*<p class="sister-line[^"]*"[^>]*>[\s\S]*?<\/p>)?\s*/, match => { tail = match.trim(); return ''; });
+  // These photos sit at the bottom of the page, so they should not compete with the hero for bandwidth.
+  tail = tail.replace(/<img\b[^>]*>/g, tag => tag.replace(/\sloading="[^"]*"/g, '').replace(/\sdecoding="[^"]*"/g, '').replace(/<img\b/, '<img loading="lazy" decoding="async"'));
   if (tail) source = source.replace('</main>', tail + '</main>');
   return source;
 }

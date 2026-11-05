@@ -34,14 +34,9 @@ const travelCopy = {
  ja:{airport:`${facts.travel.newChitoseMinutes.join('〜')}分`,casa:`${facts.travel.casaAntonioMinutes.join('〜')}分`,airportQuestion:'新千歳空港からどのくらいかかりますか？',casaQuestion:'札幌での滞在と組み合わせられますか？',airportAnswer:`車で約${facts.travel.newChitoseMinutes.join('〜')}分です。冬季はさらに時間に余裕を持ってください。`,casaAnswer:`はい。姉妹物件のCasa Antonioは札幌の麻生駅近くにあるアパートメント2室で、虎杖浜から車で約${facts.travel.casaAntonioMinutes.join('〜')}分です。冬季や混雑時は時間に余裕を持ってください。`},
  'zh-CN':{airport:`${facts.travel.newChitoseMinutes.join('–')}分钟`,casa:`${facts.travel.casaAntonioMinutes.join('–')}分钟`,airportQuestion:'从新千岁机场到小屋需要多久？',casaQuestion:'可以与札幌的住宿组合吗？',airportAnswer:`自驾通常约${facts.travel.newChitoseMinutes.join('–')}分钟。冬季天气可能延长行程，请预留更多时间。`,casaAnswer:`可以。姊妹物业Casa Antonio位于札幌麻生站附近，提供两套公寓。从虎杖浜自驾约${facts.travel.casaAntonioMinutes.join('–')}分钟，冬季或交通繁忙时请预留更多时间。`}
 };
-const pricing = require('./pricing.cjs');
-const dateRates = require('../data/date-rates.json');
+const comparisonTable = require('./comparison.cjs');
+const { note: bookingNote } = require('./booking-note.cjs');
 const decode = value => String(value).replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&#x27;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
-const offerCopy = {
- en: 'Nightly rate for up to two guests. Cleaning is ¥7,000 per stay and tax is extra. Guests 3–5 add ¥2,500 each per stay. Limited availability; confirm the total on Airbnb.',
- ja: '2名までの1泊料金です。清掃料金は1滞在7,000円、税金は別途です。3〜5人目はお一人につき1滞在2,500円追加。空室は限られます。合計はAirbnbでご確認ください。',
- 'zh-CN': '最多两位客人的每晚房价。清洁费每次入住¥7,000，税费另计。第3至第5位客人每人每次入住加收¥2,500。房量有限，请在Airbnb确认总价。'
-};
 const crumbNames = {
  en: {home:'Home', cabins:'Cabins', guide:'Area guide'},
  ja: {home:'ホーム', cabins:'キャビン', guide:'周辺ガイド'},
@@ -56,15 +51,6 @@ function airbnbLocalized(url, lang) {
   const next = parsed.toString();
   return url.includes('&amp;') ? next.replace(/&/g, '&amp;') : next;
  } catch { return url; }
-}
-function cabinBand(id) {
- let low = Infinity, high = -Infinity;
- for (const day of dateRates.days) {
-  const rate = day.rates[id];
-  if (rate < low) low = rate;
-  if (rate > high) high = rate;
- }
- return {low, high};
 }
 function breadcrumbFor(file, lang, heading) {
  const names = crumbNames[lang];
@@ -83,7 +69,6 @@ function breadcrumbFor(file, lang, heading) {
  } else return null;
  return {'@type':'BreadcrumbList', itemListElement: items.map((item, index) => ({'@type':'ListItem', position: index + 1, name: item.name, item: item.item}))};
 }
-const pricingCopy = pricing.copy;
 if (facts.pricing.cleaningIncluded || facts.pricing.cleaningJPY !== 7000 || facts.pricing.taxesIncluded || facts.pricing.extraGuestBasis !== 'per stay' || facts.bbq.feeBasis !== 'per stay') throw new Error('Review pricing templates after policy changes.');
 const locales = {
  en: {prefix:'', search:'Search places, food or activities', clear:'Clear search', count:'places', empty:'No matching places. Try another search.', browse:'Browse by category', gallery:'Photo gallery', property:'Property gallery', close:'Close photo gallery', prev:'Previous photo', next:'Next photo', compare:'Compare the essentials', cabin:'Cabin', guests:'Maximum guests', beds:'Beds', view:'View cabin', book:'Check dates', map:'Check current hours and details'},
@@ -126,8 +111,7 @@ function marked(source, name, content) {
  return source.replace(pattern, `<!-- ${name}:start -->\n${content}\n<!-- ${name}:end -->`);
 }
 function save(file, source) {
- source = require('./booking-prices.cjs').clean(source, file);
- if (source !== read(file)) fs.writeFileSync(path.join(root, file), source);
+  if (source !== read(file)) fs.writeFileSync(path.join(root, file), source);
 }
 for (const [lang, t] of Object.entries(locales)) {
  const file = t.prefix + 'things-to-do/index.html';
@@ -178,7 +162,7 @@ for (const [lang, t] of Object.entries(locales)) {
  save(home,source);
  const comparison=t.prefix+'cabins/index.html';
  let compareSource=read(comparison);
- const table=pricing.comparison(lang);
+ const table=comparisonTable.comparison(lang);
  if (compareSource.includes('<!-- comparison:start -->')) compareSource=marked(compareSource,'comparison',table);
  else compareSource=compareSource.replace('<section class="cards wrap">',`<!-- comparison:start -->${table}<!-- comparison:end --><section class="cards wrap">`);
  const choosing = {
@@ -229,12 +213,6 @@ for (const absolute of walk(root)) {
   const charges=require('./guest-charges.cjs').render(lang,{collapsed:/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)});
   if (source.includes('<!-- guest-charges:start -->')) source=marked(source,'guest-charges',charges);
   else source=source.replace('</main>',`<!-- guest-charges:start -->${charges}<!-- guest-charges:end --></main>`);
- }
- const dateCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
- if (dateCabin) {
-  const dateCheck = require('./date-check.cjs').render(lang, dateCabin);
-  if (source.includes('<!-- date-check:start -->')) source=marked(source,'date-check',dateCheck);
-  else source=source.replace('<section class="gallery-section wrap">',`<!-- date-check:start -->${dateCheck}<!-- date-check:end --><section class="gallery-section wrap">`);
  }
  const wifiCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
  if (wifiCabin || /(?:cabins|work-remotely|faq)\/index\.html$/.test(file)) {
@@ -315,12 +293,7 @@ for (const absolute of walk(root)) {
   }
   return tag;
  });
- if (/^(?:ja\/|zh-cn\/)?cabins\/index\.html$/.test(file)) {
-  const rates = '<!-- seasonal-rates:start -->'+pricing.table(lang)+'<!-- seasonal-rates:end -->';
-  if(source.includes('<!-- seasonal-rates:start -->')) source=marked(source,'seasonal-rates',pricing.table(lang));
-  else source=source.replace('<!-- comparison:start -->',rates+'<!-- comparison:start -->');
- }
- if (source.includes('<!-- pricing:start -->')) source=marked(source,'pricing',`<div class="pricing-note wrap"><ul>${pricing.listFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]).map(item=>`<li>${item}</li>`).join('')}</ul><a href="/${locales[lang].prefix}cabins/#seasonal-rates">${lang==='en'?'View dated rates':lang==='ja'?'日付別料金を見る':'查看日期房价'}</a></div>`);
+ source=source.replace(/<!-- pricing:start -->[\s\S]*?<!-- pricing:end -->/g,`<!-- pricing:start --><p class="wrap pricing-note">${bookingNote(file)}</p><!-- pricing:end -->`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   let schema=JSON.parse(text);
   const metaDescription = decode(source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0]?.match(/\bcontent="([^"]*)"/)?.[1] || '');
@@ -338,11 +311,6 @@ for (const absolute of walk(root)) {
     delete node.checkinTime;
     node.checkoutTime = facts.cabins[0].checkOut;
    }
-   if (node['@type']==='LodgingBusiness' && node.priceRange) node.priceRange=pricing.priceRange();
-   if (node['@type']==='Accommodation' && cabin) {
-    const band = cabinBand(cabin.id);
-    node.offers = {'@type':'AggregateOffer', priceCurrency:'JPY', lowPrice:band.low, highPrice:band.high, availability:'https://schema.org/LimitedAvailability', url:airbnbLocalized(cabin.airbnb, lang), description:offerCopy[lang]};
-   }
    if (node['@type']==='WebPage' && metaDescription) node.description = metaDescription;
    if (node['@type']==='FAQPage' && file.endsWith('faq/index.html') && lang==='zh-CN') {
     for (const kind of ['airport','casa']) if (!node.mainEntity.some(q=>q.name===trip[`${kind}Question`])) node.mainEntity.push({'@type':'Question',name:trip[`${kind}Question`],acceptedAnswer:{'@type':'Answer',text:trip[`${kind}Answer`]}});
@@ -354,7 +322,7 @@ for (const absolute of walk(root)) {
     else node.mainEntity.push({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text:answer}});
    }
    if (node['@type']==='Question') for (const kind of ['airport','casa']) if (node.name===trip[`${kind}Question`]) node.acceptedAnswer.text=trip[`${kind}Answer`];
-   if (node['@type']==='Answer' && typeof node.text==='string' && (/19,800|13,800|13,800円|清掃料金|cleaning/.test(node.text))) node.text=pricing.copyFor(lang, file.match(/ocean-stay-(sol|zen|rustic)/)?.[1]);
+   if (node['@type']==='Answer' && typeof node.text==='string' && /¥|円/.test(node.text) && /night|泊|每晚/.test(node.text)) node.text=bookingNote(file);
    Object.values(node).forEach(update);
   };
   update(schema);

@@ -187,6 +187,12 @@
       "bytes": 23674
     },
     {
+      "source": "/images/places/kanbara-storefront-640.webp",
+      "url": "/media/kanbara-storefront-640.42fdb0b78e18.webp",
+      "sha256": "42fdb0b78e18713159f1020cab1bfb0d621a99ad6b09c17b213d399b2f8f6cf1",
+      "bytes": 36198
+    },
+    {
       "source": "/images/places/kanbara-storefront.webp",
       "url": "/media/kanbara-storefront.be1d9c194b41.webp",
       "sha256": "be1d9c194b41133ecf4f343312ba264477038e192f5857801608aa8c6944f7a1",
@@ -277,6 +283,12 @@
       "bytes": 147120
     },
     {
+      "source": "/images/places/venue-09-640.webp",
+      "url": "/media/venue-09-640.b8fa1233b010.webp",
+      "sha256": "b8fa1233b010874e88e577f1348e7e1d1c53db93a17adf6d68ea300b66c02789",
+      "bytes": 72820
+    },
+    {
       "source": "/images/places/venue-09.webp",
       "url": "/media/venue-09.dfa4b1c3d72d.webp",
       "sha256": "dfa4b1c3d72d148510c4960971c391cea1dc956e5620a5417ae4d4f4256a8bbc",
@@ -331,6 +343,12 @@
       "bytes": 116694
     },
     {
+      "source": "/images/places/venue-14-640.webp",
+      "url": "/media/venue-14-640.515b0be3677b.webp",
+      "sha256": "515b0be3677b607a62eef9c30c9a95e764cbb53a6270dff075a43e7274f74943",
+      "bytes": 102540
+    },
+    {
       "source": "/images/places/venue-14.webp",
       "url": "/media/venue-14.412fb14d2b4c.webp",
       "sha256": "412fb14d2b4cbb5a09caf6394ca6e83d1f5b4cf213caa579f0ed7a76789c829f",
@@ -347,6 +365,12 @@
       "url": "/media/venue-16.e0fc3a2c3af2.webp",
       "sha256": "e0fc3a2c3af236fc1a391137983d1c1ec03826ef73a783dd799748404f030173",
       "bytes": 59760
+    },
+    {
+      "source": "/images/places/venue-17-640.webp",
+      "url": "/media/venue-17-640.13e9b44dcde9.webp",
+      "sha256": "13e9b44dcde9bacc07a14ff434469253b1ba4a79aeb7500959dee2c265d7338e",
+      "bytes": 99874
     },
     {
       "source": "/images/places/venue-17.webp",
@@ -415,6 +439,12 @@
       "bytes": 91204
     },
     {
+      "source": "/images/places/venue-23-640.webp",
+      "url": "/media/venue-23-640.8e0cdfe4db70.webp",
+      "sha256": "8e0cdfe4db70b3c7da532584eaa66fdbf54a26ba30cddfe6d710c70156de29fc",
+      "bytes": 41914
+    },
+    {
       "source": "/images/places/venue-23.webp",
       "url": "/media/venue-23.c08f618672ba.webp",
       "sha256": "c08f618672bab711670f1f332046d52b20f898cafebec5b7fee287470af0ae5d",
@@ -473,6 +503,12 @@
       "url": "/media/venue-28.c67be54598c0.webp",
       "sha256": "c67be54598c01b1eaa0ec71f2a8885e335fefe7fbf486e6ccfecd83f0e01c708",
       "bytes": 149980
+    },
+    {
+      "source": "/images/places/venue-31-640.webp",
+      "url": "/media/venue-31-640.3bb386333b36.webp",
+      "sha256": "3bb386333b36a9d7b8a214da1243d05b13c564c721ad0db83686a2a98e079146",
+      "bytes": 143660
     },
     {
       "source": "/images/places/venue-31.webp",
@@ -601,6 +637,12 @@
       "bytes": 160268
     },
     {
+      "source": "/images/places/venue-43-640.webp",
+      "url": "/media/venue-43-640.3bcb3a5cb0b7.webp",
+      "sha256": "3bcb3a5cb0b7fc17cedc718a18b7cff96e1f5253b07aaafeb63a7e726d368b36",
+      "bytes": 60330
+    },
+    {
       "source": "/images/places/venue-43.webp",
       "url": "/media/venue-43.0881d9989bcd.webp",
       "sha256": "0881d9989bcd9f6979304e928cae66131d9b3b14c40706730cabb47dae009408",
@@ -701,6 +743,12 @@
       "url": "/media/venue-53.0dbaac3f394c.webp",
       "sha256": "0dbaac3f394c08119e5d50a80dc56099ff189bfcc3bed7400832ef931f865039",
       "bytes": 89226
+    },
+    {
+      "source": "/images/places/venue-54-640.webp",
+      "url": "/media/venue-54-640.1d854252c697.webp",
+      "sha256": "1d854252c6978117977e24c7bba69d8e9a99e95118b22c8e17a4c1c2a1fd49de",
+      "bytes": 56156
     },
     {
       "source": "/images/places/venue-54.webp",
@@ -1309,6 +1357,12 @@
       "bytes": 118554
     },
     {
+      "source": "/images/village/kojohama-shrine-torii-640.webp",
+      "url": "/media/kojohama-shrine-torii-640.9e0eb43e642d.webp",
+      "sha256": "9e0eb43e642d364579c920b3a18ba1cbb3a23d2f48592118ca5c40d1a7302db6",
+      "bytes": 64262
+    },
+    {
       "source": "/images/village/kojohama-shrine-torii.webp",
       "url": "/media/kojohama-shrine-torii.33f19800a9aa.webp",
       "sha256": "33f19800a9aaa90d48584f46303ad1dd3fc73870611832eaae6fe9c246ac9a77",
@@ -1319,6 +1373,12 @@
       "url": "/media/shiraoi-pub-bar-hopping-guide.ad9f90fdd499.webp",
       "sha256": "ad9f90fdd4993acdf4bc77293a511b06f41b251af12d4f164538e45587b9fc8b",
       "bytes": 43916
+    },
+    {
+      "source": "/images/village/tarako-vending-machine-640.webp",
+      "url": "/media/tarako-vending-machine-640.784aff793c39.webp",
+      "sha256": "784aff793c39e9336bebc584d69d5e566fa69325ca488af54f2cbbd3b8f274a6",
+      "bytes": 157860
     },
     {
       "source": "/images/village/tarako-vending-machine.webp",

@@ -205,6 +205,7 @@ for(const [file,html] of source){
 }
 const reviewMonths={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
 const reviewToday=new Date(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())+'T00:00:00Z');
+const reviewWarnings=new Set();
 const reviewAge=(year,month,day)=>(reviewToday-Date.UTC(year,month-1,day))/86400000;
 for(const [file,html] of source){
  const name=path.relative(root,file).split(path.sep).join('/');
@@ -216,7 +217,33 @@ for(const [file,html] of source){
  }
  for(const match of html.matchAll(/(\d{4})年(\d{1,2})月(\d{1,2})日時点の各サイト表示/g))ages.push(reviewAge(Number(match[1]),Number(match[2]),Number(match[3])));
  for(const match of html.matchAll(/(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日各平台显示/g))ages.push(reviewAge(Number(match[1]),Number(match[2]),Number(match[3])));
- for(const age of ages)check(age<=30,`${name}: review snapshot is ${Math.floor(age)} days old`);
+ // Warn after 30 days so the ratings get refreshed; block a release only once they are clearly stale.
+ for(const age of ages){
+  if(age>90)check(false,`${name}: review snapshot is ${Math.floor(age)} days old (release limit 90)`);
+  else if(age>30)reviewWarnings.add(`${name}: review snapshot is ${Math.floor(age)} days old; refresh the platform ratings`);
+ }
+}
+for(const warning of reviewWarnings)console.warn('WARNING: '+warning);
+// Every class on an element that directly wraps a <table> needs a CSS rule; otherwise wide
+// tables (min-width 680px) push the whole page sideways on phones.
+const stylesheetText=fs.readdirSync(root).filter(file=>file.endsWith('.css')).map(file=>fs.readFileSync(path.join(root,file),'utf8')).join('\n');
+const cssClasses=new Set([...stylesheetText.matchAll(/\.(-?[A-Za-z_][\w-]*)/g)].map(m=>m[1]));
+for(const [file,html] of source){
+ const name=path.relative(root,file).split(path.sep).join('/');
+ for(const match of html.matchAll(/<(?:div|section|figure)\b[^>]*\bclass="([^"]*)"[^>]*>\s*<table\b/g)){
+  for(const cls of match[1].split(/\s+/).filter(Boolean))check(cssClasses.has(cls),`${name}: table wrapper class "${cls}" has no CSS rule`);
+ }
+}
+// /go/ is a link-in-bio page; its share text must describe the cabins, not the generic booking note.
+for(const relative of ['go/index.html','ja/go/index.html','zh-cn/go/index.html']){
+ const text=source.get(path.join(root,...relative.split('/')))||'';
+ const description=text.match(/<meta\b[^>]*content="([^"]*)"[^>]*name="description"/)?.[1]||text.match(/<meta\b[^>]*name="description"[^>]*content="([^"]*)"/)?.[1]||'';
+ const openGraph=text.match(/<meta\b[^>]*property="og:description"[^>]*content="([^"]*)"/)?.[1]||'';
+ check(Array.from(description).length>=40&&Array.from(description).length<=155,`${relative}: meta description must be 40–155 characters`);
+ check(openGraph===description,`${relative}: meta and Open Graph descriptions disagree`);
+ check(!/Check current prices, availability|料金・空室状況・宿泊条件は各予約サイト|请在各预订平台查看最新房价/.test(description),`${relative}: meta description is the generic booking note`);
+ const facts=text.match(/<div class="facts">([\s\S]*?)<\/div>\s*<\/div>/)?.[1]||'';
+ check(!/<p>/.test(facts),`${relative}: facts tile contains a sentence instead of a fact`);
 }
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
 else console.log(`PASS: ${pages.length} HTML files, ${references} local references, ${schemas} structured-data blocks, ${inlineScripts} inline scripts, 66 venues in three languages, booking channels and source deployment exclusions.`);

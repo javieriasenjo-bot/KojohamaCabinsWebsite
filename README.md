@@ -34,3 +34,7 @@ Search/indexing follow-up: see docs/SEARCH-AND-MEASUREMENT-2026-10-07.md. npm ru
 - Cloudflare Workers Builds ignores custom builds in `wrangler.jsonc`. To stop a failing release from going live, set **Settings → Build → Build command** to `npm run release:check` in the Cloudflare dashboard.
 - Shared CSS (header, navigation, buttons, footer) is edited once, in the section at the top of `seo-site.css` above the "end of shared rules" marker. Homepage-only CSS is edited in `styles/home.src.css`. The build (`scripts/styles.cjs`) compiles both into `home.css`, so never edit `home.css` directly.
 - Cabin pages carry a "Check your dates" estimator generated from `data/date-rates.json` by `scripts/date-check.cjs`. `npm run check` verifies that its embedded rates match the schedule. See docs/UPDATE-2026-10-19.md.
+
+## Source location
+
+The working copy of this site lives at `C:\dev\KojohamaCabinsWebsite`.

@@ -86,8 +86,7 @@
         "weekday": 14800,
         "weekend": 17800
       }
-    },
-    "dateRateFile": "data/date-rates.json"
+    }
   },
   "wifi": {
     "measuredOn": "2026-10-13",

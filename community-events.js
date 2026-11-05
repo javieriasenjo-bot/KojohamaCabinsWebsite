@@ -37,13 +37,25 @@
     }
     return line;
   }
+  const isDay = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value + 'T00:00:00+09:00'));
+  const hasText = value => typeof value === 'string' && value.trim() !== '';
+  // Every language falls back to English, so English text is the minimum a card needs.
+  const hasCopy = field => field && typeof field === 'object' && (hasText(field[lang]) || hasText(field.en));
+  const pick = field => (hasText(field[lang]) ? field[lang] : field.en);
+  /** One malformed record must never break the section: skip it instead. */
+  function valid(event) {
+    return Boolean(event) && typeof event === 'object'
+      && typeof event.id === 'string' && /^[\w-]+$/.test(event.id)
+      && isDay(event.start) && isDay(event.end) && event.end >= event.start
+      && hasCopy(event.title) && hasCopy(event.summary) && hasCopy(event.venue);
+  }
   function card(event, finished) {
     const article = element('article');
     article.id = event.id;
     article.dataset.eventEnd = event.end;
-    article.append(element('h3', event.title[lang] || event.title.en));
+    article.append(element('h3', pick(event.title)));
     if (finished) article.append(element('p', words[4], 'event-finished'));
-    article.append(dateLine(event), element('p', event.summary[lang] || event.summary.en), element('p', event.venue[lang] || event.venue.en));
+    article.append(dateLine(event), element('p', pick(event.summary)), element('p', pick(event.venue)));
     if (event.url && /^https:\/\//.test(event.url)) {
       const link = element('a', words[2] + ' →', 'text-link');
       link.href = event.url;
@@ -63,6 +75,7 @@
     const today = ymd(new Date());
     const cutoff = ymd(new Date(Date.parse(today + 'T00:00:00+09:00') - 14 * 86400000));
     const events = feed.events
+      .filter(valid)
       .filter(e => e.end >= cutoff && e.status !== 'cancelled')
       .sort((a, b) => a.start.localeCompare(b.start));
     // Visitors want what is on now, then what is next. Finished listings stay for two
@@ -73,7 +86,7 @@
     section.replaceChildren(
       element('h2', words[0]),
       element('p', words[1]),
-      element('p', words[3] + feed.checkedOn),
+      element('p', words[3] + (hasText(feed.checkedOn) ? feed.checkedOn : '')),
       ...group(words[5], now, false),
       ...group(words[6], next, false),
       ...group(words[7], over, true)
@@ -93,10 +106,11 @@
       if (!response.ok) throw Error('feed unavailable');
       const feed = await response.json();
       if (!Array.isArray(feed.events)) throw Error('invalid feed');
-      saved = feed;
       render(feed);
+      saved = feed;
     } catch {
-      if (saved) render(saved); else fallback();
+      // A bad feed must leave the page usable: keep the last good render, else the built-in cards.
+      try { if (saved) render(saved); else fallback(); } catch { try { fallback(); } catch { /* leave the section as built */ } }
     }
   }
   function schedule() {

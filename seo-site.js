@@ -259,64 +259,6 @@
     });
   });
 
-  // "Check your dates" on cabin pages: estimate from published rates, then hand off to Airbnb with dates filled in.
-  document.querySelectorAll('.date-check').forEach(box => {
-    const data = JSON.parse(box.querySelector('.date-check-data').textContent), m = data.msg;
-    const checkin = box.querySelector('[name=checkin]'), checkout = box.querySelector('[name=checkout]'), guests = box.querySelector('[name=guests]');
-    const result = box.querySelector('.date-check-result'), link = box.querySelector('a.airbnb'), base = link.href;
-    const DAY = 86400000, time = iso => Date.parse(iso + 'T00:00:00Z'), iso = t => new Date(t).toISOString().slice(0, 10);
-    const yen = n => n.toLocaleString('en-US');
-    const fill = (text, values) => text.replace(/\{(\w+)\}/g, (_, key) => values[key] ?? '');
-    const lang = document.documentElement.lang;
-    const shortDate = value => new Intl.DateTimeFormat(lang, { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(time(value)));
-    const count = (n, words) => lang.startsWith('en') ? `${n} ${words[n === 1 ? 0 : 1]}` : `${n}${words[0]}`;
-    // Property arrival dates use Japan time, independent of the guest's time zone.
-    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
-    if (today > checkin.min) checkin.min = today;
-    const setLink = enabled => {
-      link.setAttribute('aria-disabled', String(!enabled));
-      if (!enabled) { link.removeAttribute('href'); link.setAttribute('tabindex', '-1'); }
-      else link.removeAttribute('tabindex');
-    };
-    // Invalid handoffs must not emit booking clicks either.
-    link.addEventListener('click', event => {
-      if (link.getAttribute('aria-disabled') === 'true') { event.preventDefault(); event.stopImmediatePropagation(); }
-    }, true);
-    const update = () => {
-      setLink(false);
-      if (checkin.value && !checkout.value) {
-        const index = Math.round((time(checkin.value) - time(data.start)) / DAY);
-        const nights = index >= 0 && index < data.min.length ? data.min[index] : 1;
-        checkout.value = iso(time(checkin.value) + nights * DAY);
-      }
-      if (checkin.value) checkout.min = iso(time(checkin.value) + DAY);
-      if (!checkin.value || !checkout.value) { result.textContent = m.pick; return; }
-      if (checkin.value < today) { result.textContent = m.past; return; }
-      const nights = Math.round((time(checkout.value) - time(checkin.value)) / DAY);
-      if (!Number.isFinite(nights) || nights < 1) { result.textContent = m.order; return; }
-      const guestCount = Number(guests.value);
-      if (!Number.isInteger(guestCount) || guestCount < 1 || guestCount > guests.options.length) { result.textContent = m.pick; return; }
-      const first = Math.round((time(checkin.value) - time(data.start)) / DAY);
-      if (first >= 0 && first < data.min.length && nights < data.min[first]) {
-        result.textContent = fill(m.min, { date: shortDate(checkin.value), n: data.min[first] }); return;
-      }
-      const url = new URL(base);
-      url.searchParams.set('check_in', checkin.value);
-      url.searchParams.set('check_out', checkout.value);
-      url.searchParams.set('adults', guestCount);
-      link.href = url.href;
-      setLink(true);
-      if (first < 0 || first + nights > data.rates.length) { result.textContent = m.outside; return; }
-      const nightly = data.rates.slice(first, first + nights).reduce((sum, rate) => sum + rate, 0);
-      const extra = Math.max(0, guests.value - data.baseGuests) * data.extra;
-      result.innerHTML = fill(m.result, { nights: count(nights, m.night), guests: count(+guests.value, m.guest), total: yen(nightly + data.cleaning + extra) })
-        + '<br><small>' + fill(m.breakdown, { nightly: yen(nightly), cleaning: yen(data.cleaning), extra: extra ? fill(m.extra, { extra: yen(extra) }) : '' }) + '</small>';
-    };
-    [checkin, checkout, guests].forEach(input => input.addEventListener('change', update));
-    update();
-    box.hidden = false;
-  });
-
   // Floating reserve menu (all pages that include it)
   const qrOpen = document.getElementById('quick-reserve-open');
   const qrMenu = document.getElementById('quick-reserve-menu');
