@@ -213,3 +213,4 @@ body:has(.quick-reserve){padding-bottom:76px}
 .season-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .season-grid-3 figure,.season-grid-3 figure:nth-child(-n+2){grid-column:auto}
 @media(max-width:700px){.season-grid-3{grid-template-columns:1fr 1fr}.season-grid-3 figure:first-child{grid-column:1/-1}}
+.pricing-note>p{margin:0}.pricing-note .booking-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 0}.pricing-note .booking-links>span{font-weight:700;margin-right:4px}.pricing-note .booking-links .button{padding:10px 16px;font-size:.9rem;min-height:44px}

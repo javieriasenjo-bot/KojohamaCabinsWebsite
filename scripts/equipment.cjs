@@ -3,14 +3,13 @@
 // only Zen has tatami, so rustic-1397 must not be captioned as a Rustic room.
 const photos = {
   sol: ['sol-1364', 'sol-1369'],
-  zen: ['zen-1392', 'zen-1393', 'zen-1384'],
+  zen: ['zen-1393', 'zen-1384'],
   rustic: ['rustic-1409', 'rustic-1404']
 };
 const alts = {
   en: {
     'sol-1364': 'Saucepan with a glass lid, black stockpot with a stainless lid, black frying pan and a mesh strainer on a cabinet shelf, beside a bin labeled Extra Dishes.',
     'sol-1369': 'Drawer of forks, spoons, knives and chopsticks, with a whisk, kitchen scissors and a wooden spatula.',
-    'zen-1392': 'Large black stockpot with a stainless-steel lid.',
     'zen-1393': 'Black frying pan in front, with a colander and saucepans stacked behind.',
     'zen-1384': 'Drawer of chopsticks, forks, a whisk, peeler, tongs, rice paddle and scissors.',
     'rustic-1409': 'Small frying pan, a saucepan with a glass lid, and a larger pot with a stainless lid.',
@@ -19,7 +18,6 @@ const alts = {
   ja: {
     'sol-1364': 'ガラス蓋の片手鍋、ステンレス蓋の黒い寸胴鍋、黒いフライパンとざる。棚の上にあり、Extra Dishesと書かれた収納のそばです。',
     'sol-1369': 'フォーク、スプーン、ナイフ、箸の引き出し。泡立て器、キッチンバサミ、木べらも入っています。',
-    'zen-1392': 'ステンレスの蓋が付いた大きな黒い寸胴鍋。',
     'zen-1393': '手前に黒いフライパン、奥にざると重ねた片手鍋。',
     'zen-1384': '箸、フォーク、泡立て器、ピーラー、トング、しゃもじ、はさみの引き出し。',
     'rustic-1409': '小さめのフライパン、ガラス蓋の片手鍋、ステンレス蓋の大きめの鍋。',
@@ -28,7 +26,6 @@ const alts = {
   'zh-CN': {
     'sol-1364': '带玻璃盖的单柄锅、带不锈钢盖的黑色高汤锅、黑色煎锅和滤网，放在柜架上，旁边是标有 Extra Dishes 的收纳箱。',
     'sol-1369': '抽屉里有叉子、勺子、刀和筷子，另有打蛋器、厨房剪刀和木铲。',
-    'zen-1392': '带不锈钢盖的大号黑色高汤锅。',
     'zen-1393': '前方是黑色煎锅，后方叠放着滤锅和单柄锅。',
     'zen-1384': '抽屉里有筷子、叉子、打蛋器、削皮器、夹子、饭勺和剪刀。',
     'rustic-1409': '小号煎锅、带玻璃盖的单柄锅，以及带不锈钢盖的较大锅。',

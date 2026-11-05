@@ -64,6 +64,8 @@ for(const [file,text]of source){
   check(/<link\b[^>]*rel="canonical"/.test(text),`${name}: missing canonical`);
  }
  check(!text.includes('6 名 · 5 台のベッド'),`${name}: stale six-guest cabin capacity`);
+ // The in-stay guest guide is private: it is sent to guests after they book, never linked publicly.
+ check(!/guide\.kojohamacabins\.jp/.test(text.replace(/fetch\('https:\/\/guide\.kojohamacabins\.jp\/api\/community-events'/g, '')),`${name}: links to the private guest guide`);
 }
 for(const relative of [
  'ja/guides/hokkaido-winter-driving-kojohama/index.html',
@@ -87,7 +89,7 @@ for(const [file,text]of source){
  }
 }
 const llms=fs.readFileSync(path.join(root,'llms.txt'),'utf8');
-check(llms.includes('https://guide.kojohamacabins.jp/'),'llms.txt: missing guest guide');
+check(!llms.includes('guide.kojohamacabins.jp'),'llms.txt: publishes the private guest guide URL');
 check(facts.cabins.every(cabin=>llms.includes('Check-in from '+cabin.checkIn)),'llms.txt: cabin check-in times missing or different from shared facts');
 check(!/ctrip\.com|trip\.com\/hotels/.test(llms),'llms.txt: inactive booking URL');
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));

@@ -35,7 +35,8 @@ function update(source, lang, id) {
   source = source.replace(/<img\b[^>]*class="lead-image"[^>]*>/, tag => {
     const size = imageSize(path.join(root, cabin.leadImage.slice(1)));
     if (!size) throw new Error(`Missing lead image ${cabin.leadImage}`);
-    const sizes = tag.match(/\bsizes="([^"]*)"/)?.[1];
+    // The lead photo is shown about 560px wide on desktop and is cropped to fill its frame, so ask for a larger file than 480px.
+    const sizes = '(max-width:700px) calc(100vw - 40px), 600px';
     return `<img alt="" class="lead-image" decoding="async" height="${size.height}" src="${cabin.leadImage}" width="${size.width}"${sizes ? ` sizes="${sizes}"` : ''}>`;
   });
   const hero = source.match(/<section\b[^>]*class="page-hero"[^>]*>\s*<img\b[^>]*?\bsrc="([^"]+)"/)?.[1];

@@ -14,7 +14,6 @@ function write() {
   lines.push('日本語: https://kojohamacabins.jp/ja/');
   lines.push('简体中文: https://kojohamacabins.jp/zh-cn/');
   lines.push('Korean and Traditional Chinese marketing pages are not published yet.');
-  lines.push('In-stay guest guide (English, 日本語, 简体中文, 繁體中文; not a search landing page): https://guide.kojohamacabins.jp/');
   lines.push('');
   lines.push('## Place');
   lines.push('Published address: 595-2 Kojohama, Shiraoi, Shiraoi District, Hokkaido 059-0641, Japan.');

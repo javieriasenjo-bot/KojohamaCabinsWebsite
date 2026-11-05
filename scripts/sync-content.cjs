@@ -52,6 +52,27 @@ function airbnbLocalized(url, lang) {
   return url.includes('&amp;') ? next.replace(/&/g, '&amp;') : next;
  } catch { return url; }
 }
+// Booking buttons for the neutral price note: prices are not published, so the note must lead to the platforms.
+const BOOKING_COM = 'https://www.booking.com/hotel/jp/ocean-stay.html';
+const channelCopy = {
+ en: {lead: 'Check dates and book on:', booking: 'Booking.com', trip: 'Trip.com', onAll: 'all cabins'},
+ ja: {lead: '空室・料金の確認と予約：', booking: 'Booking.com', trip: 'Trip.com（携程）', onAll: '全棟'},
+ 'zh-CN': {lead: '查看日期、价格并预订：', booking: 'Booking.com', trip: '携程 Trip.com', onAll: '全部小屋'}
+};
+function bookingLinks(file, lang) {
+ const c = channelCopy[lang];
+ const cabinId = file.match(/ocean-stay-(sol|zen|rustic)/)?.[1];
+ const cabins = cabinId ? facts.cabins.filter(item => item.id === cabinId) : facts.cabins;
+ const short = cabin => cabin.name.replace(/^Ocean Stay /, '');
+ const label = (cabin, platform) => cabinId ? platform : short(cabin) + ' · ' + platform;
+ const attrs = cabin => 'data-cabin-name="' + cabin.name + '" data-link-location="pricing_note" rel="noopener" target="_blank"';
+ const airbnb = cabins.map(cabin => '<a class="button airbnb" ' + attrs(cabin) + ' href="' + airbnbLocalized(cabin.airbnb, lang) + '">' + label(cabin, 'Airbnb') + '</a>');
+ const booking = '<a class="button secondary" data-cabin-name="All cabins" data-link-location="pricing_note" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + c.booking + (cabinId ? '' : ' (' + c.onAll + ')') + '</a>';
+ // Trip.com/Ctrip anchors are hidden outside the Chinese pages (and when the channel is switched off) by bookingVisibility().
+ const trip = cabins.map(cabin => '<a class="button secondary" ' + attrs(cabin) + ' href="' + cabin.ctrip + '">' + label(cabin, c.trip) + '</a>');
+ return '<p class="booking-links"><span>' + c.lead + '</span> ' + [...airbnb, booking, ...trip].join(' ') + '</p>';
+}
+
 function breadcrumbFor(file, lang, heading) {
  const names = crumbNames[lang];
  const prefix = locales[lang].prefix;
@@ -188,7 +209,7 @@ for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
  let source=read(file);
- if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || /(?:cabins|faq|bbq)\/index\.html$/.test(file) || /cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/.test(file)) {
+ if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || /(?:cabins|faq|bbq)\/index\.html$/.test(file)) {
   const documents=require('./guest-documents.cjs').render(lang);
   if(source.includes('<!-- guest-documents:start -->')) source=marked(source,'guest-documents',documents);
   else source=source.replace('</main>',`<!-- guest-documents:start -->${documents}<!-- guest-documents:end --></main>`);
@@ -200,7 +221,7 @@ for (const absolute of walk(root)) {
   const [name,url] = pins[mapCabin];
   const maps = `<section class="wrap section-block" data-cabin-maps><h2>${labels[0]}</h2><p>Ocean Stay ${name}</p><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">${labels[1]} →</a></section>`;
   if (source.includes('<!-- cabin-maps:start -->')) source=marked(source,'cabin-maps',maps);
- else source=source.replace('<!-- guest-documents:start -->',`<!-- cabin-maps:start -->\n${maps}\n<!-- cabin-maps:end --><!-- guest-documents:start -->`);
+ else source=source.replace('</main>',`<!-- cabin-maps:start -->\n${maps}\n<!-- cabin-maps:end --></main>`);
  }
  // Replace the superseded publication window in hand-authored social/meta copy.
  source=source.replaceAll('16 October 2026–1 July 2027','27 October 2026–31 December 2027').replaceAll('16 Oct 2026–1 Jul 2027','27 Oct 2026–31 Dec 2027').replaceAll('2026年10月16日〜2027年7月1日','2026年10月27日〜2027年12月31日').replaceAll('2026年10月16日至2027年7月1日','2026年10月27日至2027年12月31日');
@@ -293,7 +314,7 @@ for (const absolute of walk(root)) {
   }
   return tag;
  });
- source=source.replace(/<!-- pricing:start -->[\s\S]*?<!-- pricing:end -->/g,`<!-- pricing:start --><p class="wrap pricing-note">${bookingNote(file)}</p><!-- pricing:end -->`);
+ source=source.replace(/<!-- pricing:start -->[\s\S]*?<!-- pricing:end -->/g,`<!-- pricing:start --><div class="wrap pricing-note"><p>${bookingNote(file)}</p>${bookingLinks(file, lang)}</div><!-- pricing:end -->`);
  source=source.replace(/(<script\b[^>]*type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g,(_,start,text,end)=>{
   let schema=JSON.parse(text);
   const metaDescription = decode(source.match(/<meta\b[^>]*name="description"[^>]*>/)?.[0]?.match(/\bcontent="([^"]*)"/)?.[1] || '');
