@@ -1117,6 +1117,30 @@
       "bytes": 60452
     },
     {
+      "source": "/images/ski/autumn-maples-480.webp",
+      "url": "/media/autumn-maples-480.ff8ac3dd477b.webp",
+      "sha256": "ff8ac3dd477b620f7a29b022bd12ca7b0f0d034d9a1ba7a59d646e6ae4c53204",
+      "bytes": 43204
+    },
+    {
+      "source": "/images/ski/autumn-maples.webp",
+      "url": "/media/autumn-maples.c4daa7aff049.webp",
+      "sha256": "c4daa7aff049efb6ea46ef73695284e3314fcb931de78c4475f92445cc6c6d4a",
+      "bytes": 108158
+    },
+    {
+      "source": "/images/ski/chairlift-snow-480.webp",
+      "url": "/media/chairlift-snow-480.96032ae5100e.webp",
+      "sha256": "96032ae5100e0d6c30baf0deba6251451a9a7aa9a304b677a0218ef7cbfc52b5",
+      "bytes": 15234
+    },
+    {
+      "source": "/images/ski/chairlift-snow.webp",
+      "url": "/media/chairlift-snow.4cf67aeadfeb.webp",
+      "sha256": "4cf67aeadfeb9ba2d17e9865d312b5613d9f2efa68f90fc169970edfa45d1b12",
+      "bytes": 53172
+    },
+    {
       "source": "/images/sol/sol-10-480.webp",
       "url": "/media/sol-10-480.58db4caef7e2.webp",
       "sha256": "58db4caef7e2ceb6f0cb00121993901e62f0046b075d139ee4fe89a6dec3ac45",

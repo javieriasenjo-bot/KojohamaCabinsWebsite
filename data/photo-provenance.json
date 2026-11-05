@@ -119,5 +119,39 @@
     "bytes": 191868,
     "permission": "supplied by owner for website use on 2026-10-06",
     "credit": "photographer attribution not supplied"
+  },
+  {
+    "asset": "/images/ski/autumn-maples.webp",
+    "sourceFolder": "owner download via browser, 5 November 2026",
+    "sourceSHA256": "9ce6c7c29d10cb8d8a06d1ba1a3205d8a164ba972f9a41bd45bbeef95981bfd2",
+    "width": 960,
+    "height": 720,
+    "bytes": 108158,
+    "retrievedOn": "2026-11-05",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/photos/close-up-of-vibrant-red-and-orange-autumn-maple-leaves-5_5WxyGIPxM",
+    "licence": "Unsplash License (free commercial use, attribution not required)",
+    "licenceUrl": "https://unsplash.com/license",
+    "location": "Asahikawa, Hokkaido, Japan (as stated on the Unsplash page)",
+    "credit": "Unsplash; photographer name not recorded",
+    "permission": "free-licence stock photo chosen by owner request on 5 November 2026; licence page to be re-read before any new use",
+    "replaces": "/images/ski/autumn-leaves.webp (unverified Wikimedia Commons source, removed)"
+  },
+  {
+    "asset": "/images/ski/chairlift-snow.webp",
+    "sourceFolder": "owner download via browser, 5 November 2026",
+    "sourceSHA256": "3d6508a47f2d6653f5b5650fcb45f8bf18e28fbf00c58a3c00600ac89c4de571",
+    "width": 960,
+    "height": 640,
+    "bytes": 53172,
+    "retrievedOn": "2026-11-05",
+    "source": "Pakutaso",
+    "sourceUrl": "https://www.pakutaso.com/en/20141204351post-4954.html",
+    "licence": "Pakutaso terms of use (free commercial use incl. processing; not CC0; no resale as-is; credit not mandatory)",
+    "licenceUrl": "https://www.pakutaso.com/en/userpolicy.html",
+    "location": "not stated (Japanese ski resort); must not be captioned as Hokkaido",
+    "credit": "Pakutaso (creator listed on the page: susi-paku)",
+    "permission": "free-licence stock photo chosen by owner request on 5 November 2026; no people, no model release needed",
+    "replaces": "/images/ski/ski-mountain-winter.webp (unverified Wikimedia Commons source, removed)"
   }
 ]
