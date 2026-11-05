@@ -1,5 +1,7 @@
 # Approved rate schedule — 16 October 2026
 
+> **Superseded 5 November 2026:** the date checker, dated rate calendar and price estimator described below were removed from the website. See "Price pipeline removed and release gate changes" in OPEN-ITEMS.md. This document is kept as a historical record.
+
 Source: owner-supplied `Ocean_Stay_Exact_Rates_2026-10-16_to_2027-07-01.xlsx`, Daily Calendar, rows 5–263. Public rate data is recorded in `data/date-rates.json`, including the original file checksum. The calendar has 259 consecutive stay nights, 16 October 2026 through 1 July 2027 inclusive, with three prices and three arrival minimum stays for each night.
 
 ## Owner corrections override the workbook

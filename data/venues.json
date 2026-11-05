@@ -67,7 +67,8 @@
             "src": "/images/guide/kojohama-cafe.webp",
             "alt": "Kojohama Cafe",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/kojohama-cafe-400.webp 400w, /images/guide/kojohama-cafe.webp 520w"
           }
         },
         "ja": {
@@ -91,7 +92,8 @@
             "src": "/images/guide/kojohama-cafe.webp",
             "alt": "虎杖浜カフェ",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/kojohama-cafe-400.webp 400w, /images/guide/kojohama-cafe.webp 520w"
           }
         },
         "zh-CN": {
@@ -115,7 +117,8 @@
             "src": "/images/guide/kojohama-cafe.webp",
             "alt": "虎杖滨咖啡",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/kojohama-cafe-400.webp 400w, /images/guide/kojohama-cafe.webp 520w"
           }
         }
       },
@@ -1194,7 +1197,8 @@
             "src": "/images/guide/nachu-no-mori.webp",
             "alt": "Nachu no Mori Smile cafeteria",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/nachu-no-mori-400.webp 400w, /images/guide/nachu-no-mori.webp 520w"
           }
         },
         "ja": {
@@ -1213,7 +1217,8 @@
             "src": "/images/guide/nachu-no-mori.webp",
             "alt": "ナチュの森 スマイル食堂",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/nachu-no-mori-400.webp 400w, /images/guide/nachu-no-mori.webp 520w"
           }
         },
         "zh-CN": {
@@ -1232,7 +1237,8 @@
             "src": "/images/guide/nachu-no-mori.webp",
             "alt": "纳丘之森 Smile 食堂",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/nachu-no-mori-400.webp 400w, /images/guide/nachu-no-mori.webp 520w"
           }
         }
       },
@@ -1921,7 +1927,8 @@
             "height": 900,
             "fit": "contain",
             "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E8%8A%B1%E3%81%AE%E6%B9%AF%E6%B8%A9%E6%B3%89%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">Photo source: Google Maps</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "srcset": "/images/places/venue-24-400.webp 400w, /images/places/venue-24.webp 601w"
           }
         },
         "ja": {
@@ -1943,7 +1950,8 @@
             "height": 900,
             "fit": "contain",
             "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E8%8A%B1%E3%81%AE%E6%B9%AF%E6%B8%A9%E6%B3%89%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">写真の出典：Google マップ</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "srcset": "/images/places/venue-24-400.webp 400w, /images/places/venue-24.webp 601w"
           }
         },
         "zh-CN": {
@@ -1965,7 +1973,8 @@
             "height": 900,
             "fit": "contain",
             "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E8%8A%B1%E3%81%AE%E6%B9%AF%E6%B8%A9%E6%B3%89%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">照片来源：Google 地图</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "srcset": "/images/places/venue-24-400.webp 400w, /images/places/venue-24.webp 601w"
           }
         }
       },
@@ -2378,7 +2387,8 @@
             "src": "/images/village/ayoro-lighthouse.webp",
             "alt": "Ayoro Beach & lighthouse",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/village/ayoro-lighthouse-400.webp 400w, /images/village/ayoro-lighthouse.webp 506w"
           }
         },
         "ja": {
@@ -2397,7 +2407,8 @@
             "src": "/images/village/ayoro-lighthouse.webp",
             "alt": "アヨロ海岸と灯台",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/village/ayoro-lighthouse-400.webp 400w, /images/village/ayoro-lighthouse.webp 506w"
           }
         },
         "zh-CN": {
@@ -2416,7 +2427,8 @@
             "src": "/images/village/ayoro-lighthouse.webp",
             "alt": "阿ヨロ海滩与灯塔",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/village/ayoro-lighthouse-400.webp 400w, /images/village/ayoro-lighthouse.webp 506w"
           }
         }
       },
@@ -2540,7 +2552,8 @@
             "src": "/images/guide/nachu-no-mori.webp",
             "alt": "Cafeteria interior within the Nachu no Mori complex",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/nachu-no-mori-400.webp 400w, /images/guide/nachu-no-mori.webp 520w"
           }
         },
         "ja": {
@@ -2559,7 +2572,8 @@
             "src": "/images/guide/nachu-no-mori.webp",
             "alt": "ナチュの森内の食堂の店内",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/nachu-no-mori-400.webp 400w, /images/guide/nachu-no-mori.webp 520w"
           }
         },
         "zh-CN": {
@@ -2578,7 +2592,8 @@
             "src": "/images/guide/nachu-no-mori.webp",
             "alt": "Nachu no Mori园区内的食堂内部",
             "creditHtml": null,
-            "rightsStatus": "owner-supplied; ownership to be confirmed"
+            "rightsStatus": "owner-supplied; ownership to be confirmed",
+            "srcset": "/images/guide/nachu-no-mori-400.webp 400w, /images/guide/nachu-no-mori.webp 520w"
           }
         }
       },
@@ -4964,7 +4979,8 @@
             "height": 594,
             "fit": "cover",
             "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%83%9E%E3%83%BC%E3%83%88%20%E7%99%BD%E8%80%81%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">Photo source: Google Maps</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "srcset": "/images/places/venue-62-400.webp 400w, /images/places/venue-62.webp 595w"
           }
         },
         "ja": {
@@ -4986,7 +5002,8 @@
             "height": 594,
             "fit": "cover",
             "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%83%9E%E3%83%BC%E3%83%88%20%E7%99%BD%E8%80%81%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">写真の出典：Google マップ</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "srcset": "/images/places/venue-62-400.webp 400w, /images/places/venue-62.webp 595w"
           }
         },
         "zh-CN": {
@@ -5008,7 +5025,8 @@
             "height": 594,
             "fit": "cover",
             "creditHtml": "<a href=\"https://www.google.com/maps/search/?api=1&amp;query=%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC%E3%83%9E%E3%83%BC%E3%83%88%20%E7%99%BD%E8%80%81%20%E5%8C%97%E6%B5%B7%E9%81%93\" target=\"_blank\" rel=\"noopener noreferrer\">照片来源：Google 地图</a>",
-            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked"
+            "rightsStatus": "venue permission confirmed by owner 2026-10-06; source profile linked",
+            "srcset": "/images/places/venue-62-400.webp 400w, /images/places/venue-62.webp 595w"
           }
         }
       },

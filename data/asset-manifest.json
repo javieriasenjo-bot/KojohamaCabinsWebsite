@@ -157,6 +157,12 @@
       "bytes": 11180
     },
     {
+      "source": "/images/guide/kojohama-cafe-400.webp",
+      "url": "/media/kojohama-cafe-400.d821f3dc9f7c.webp",
+      "sha256": "d821f3dc9f7c8614328c0a0d5b4a53be9f87788d3d20e9e28e80dba6fd8ff71a",
+      "bytes": 15928
+    },
+    {
       "source": "/images/guide/kojohama-cafe.webp",
       "url": "/media/kojohama-cafe.ab21e243eee1.webp",
       "sha256": "ab21e243eee16f6e8748f6bd69a5dc59302d1244abba3c57703afec6a31c9170",
@@ -167,6 +173,12 @@
       "url": "/media/kojohama-onsen-hotel.fb26baa9317b.webp",
       "sha256": "fb26baa9317b10e715ea69f595be69916fe02ab02d44cb63bc8b86681bb59733",
       "bytes": 6484
+    },
+    {
+      "source": "/images/guide/nachu-no-mori-400.webp",
+      "url": "/media/nachu-no-mori-400.08ab73888cf9.webp",
+      "sha256": "08ab73888cf9d51e57298fcc5e9858e9f03050fc19252f525bd280c4b3766640",
+      "bytes": 18892
     },
     {
       "source": "/images/guide/nachu-no-mori.webp",
@@ -449,6 +461,12 @@
       "url": "/media/venue-23.c08f618672ba.webp",
       "sha256": "c08f618672bab711670f1f332046d52b20f898cafebec5b7fee287470af0ae5d",
       "bytes": 57150
+    },
+    {
+      "source": "/images/places/venue-24-400.webp",
+      "url": "/media/venue-24-400.b2d83d7074d1.webp",
+      "sha256": "b2d83d7074d1390b82ef815acf8e4a5c7c091915b05c4ca9ac07a732f0b215be",
+      "bytes": 42646
     },
     {
       "source": "/images/places/venue-24.webp",
@@ -839,6 +857,12 @@
       "url": "/media/venue-61.49f5846e2d95.webp",
       "sha256": "49f5846e2d9566522e4aa58ae30ec1d9a98207cdb36b1b212ca1adb18cadc930",
       "bytes": 105198
+    },
+    {
+      "source": "/images/places/venue-62-400.webp",
+      "url": "/media/venue-62-400.33f0515c7bd7.webp",
+      "sha256": "33f0515c7bd730dea8f0ca4591ace92bf7735bbbe325ad7aacf511f6fba3c56d",
+      "bytes": 24922
     },
     {
       "source": "/images/places/venue-62.webp",
@@ -1343,6 +1367,12 @@
       "url": "/media/ayoro-coastal-view.7bef459cb195.webp",
       "sha256": "7bef459cb19565b29e70faa38a3b84a41e3ae4f23a49637d5993814eb4f7658d",
       "bytes": 66994
+    },
+    {
+      "source": "/images/village/ayoro-lighthouse-400.webp",
+      "url": "/media/ayoro-lighthouse-400.176a451ef40a.webp",
+      "sha256": "176a451ef40a710a0547a628422bead0beb9dfa26c773a0339ee49e87b04f382",
+      "bytes": 43086
     },
     {
       "source": "/images/village/ayoro-lighthouse.webp",

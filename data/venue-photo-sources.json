@@ -627,7 +627,14 @@
       "permission": "Owner confirmed on 2026-10-06: all listed venues permit use of their Google Maps profile photos.",
       "permissionEvidence": "User reply in this task: all of them are ok that i use their google maps profile photos. proceed",
       "photographer": "Not separately identified; venue profile source linked. No Creative Commons license asserted.",
-      "changes": "Resized and converted to WebP; no enlargement; no AI edits; metadata stripped."
+      "changes": "Resized and converted to WebP; no enlargement; no AI edits; metadata stripped.",
+      "responsiveAsset": {
+        "asset": "/images/places/venue-24-400.webp",
+        "width": 400,
+        "height": 599,
+        "bytes": 42646,
+        "sha256": "b2d83d7074d1390b82ef815acf8e4a5c7c091915b05c4ca9ac07a732f0b215be"
+      }
     },
     {
       "id": "venue-25",
@@ -1612,7 +1619,14 @@
       "permission": "Owner confirmed on 2026-10-06: all listed venues permit use of their Google Maps profile photos.",
       "permissionEvidence": "User reply in this task: all of them are ok that i use their google maps profile photos. proceed",
       "photographer": "Not separately identified; venue profile source linked. No Creative Commons license asserted.",
-      "changes": "Resized and converted to WebP; no enlargement; no AI edits; metadata stripped."
+      "changes": "Resized and converted to WebP; no enlargement; no AI edits; metadata stripped.",
+      "responsiveAsset": {
+        "asset": "/images/places/venue-62-400.webp",
+        "width": 400,
+        "height": 399,
+        "bytes": 24922,
+        "sha256": "33f0515c7bd730dea8f0ca4591ace92bf7735bbbe325ad7aacf511f6fba3c56d"
+      }
     },
     {
       "id": "venue-63",
