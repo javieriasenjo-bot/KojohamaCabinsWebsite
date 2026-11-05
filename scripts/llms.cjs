@@ -48,6 +48,7 @@ function write() {
   lines.push('- Area guide: https://kojohamacabins.jp/things-to-do/');
   lines.push('- FAQ: https://kojohamacabins.jp/faq/');
   lines.push('- October to March: https://kojohamacabins.jp/october-to-march/');
+  lines.push('- April to September: https://kojohamacabins.jp/april-to-september/');
   lines.push('- Work remotely: https://kojohamacabins.jp/work-remotely/');
   lines.push('');
   lines.push('The same paths exist under /ja/ and /zh-cn/.');

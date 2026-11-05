@@ -1117,6 +1117,18 @@
       "bytes": 60452
     },
     {
+      "source": "/images/seasons/autumn-garden-480.webp",
+      "url": "/media/autumn-garden-480.a50a6b784abb.webp",
+      "sha256": "a50a6b784abb6b64487addbb76db24d2b0b503a90442527bbaa4e9986d289f8b",
+      "bytes": 51744
+    },
+    {
+      "source": "/images/seasons/autumn-garden.webp",
+      "url": "/media/autumn-garden.9fc8c0b28145.webp",
+      "sha256": "9fc8c0b28145ee43015ea7182024711e5f4843e115ea35795bf30155c60c46fc",
+      "bytes": 205794
+    },
+    {
       "source": "/images/seasons/autumn-hillside-480.webp",
       "url": "/media/autumn-hillside-480.97b7e0b6f1b8.webp",
       "sha256": "97b7e0b6f1b865ba55c40acaed2c7d9d15ca84ef1223b3b75cb60721af92670d",
@@ -1139,6 +1151,78 @@
       "url": "/media/autumn-maples-hut.f31d8cae4602.webp",
       "sha256": "f31d8cae4602f5f65d57122364b81a6643b73c928ec3b644c1cdacb4864235ac",
       "bytes": 196550
+    },
+    {
+      "source": "/images/seasons/autumn-pavilion-480.webp",
+      "url": "/media/autumn-pavilion-480.86db18302acd.webp",
+      "sha256": "86db18302acd40ba5096ae4da0d0f99e8ff315be626591918f9d8b8be836f4b2",
+      "bytes": 49488
+    },
+    {
+      "source": "/images/seasons/autumn-pavilion.webp",
+      "url": "/media/autumn-pavilion.78caf74d4ec4.webp",
+      "sha256": "78caf74d4ec4f3a74e7e89d349bf1fd153353b9c1111b214bf0fc9091fbae929",
+      "bytes": 177824
+    },
+    {
+      "source": "/images/seasons/autumn-railway-tunnel-480.webp",
+      "url": "/media/autumn-railway-tunnel-480.f1047c8fc400.webp",
+      "sha256": "f1047c8fc4003b5d9613238458f60c5fab448832cf6628ed4ec0f30fac77ab0b",
+      "bytes": 53894
+    },
+    {
+      "source": "/images/seasons/autumn-railway-tunnel.webp",
+      "url": "/media/autumn-railway-tunnel.0f75929ddaf9.webp",
+      "sha256": "0f75929ddaf9f7ccfe5157ab6895e7e4ff277322ba70119fa4409a85ad7e3715",
+      "bytes": 133788
+    },
+    {
+      "source": "/images/seasons/spring-cherry-blossoms-480.webp",
+      "url": "/media/spring-cherry-blossoms-480.acd669012e3b.webp",
+      "sha256": "acd669012e3b89b8530c9a15323a8cf91582879c6fc683c224b9a64c28fe8db2",
+      "bytes": 48922
+    },
+    {
+      "source": "/images/seasons/spring-cherry-blossoms.webp",
+      "url": "/media/spring-cherry-blossoms.a7c783189d39.webp",
+      "sha256": "a7c783189d393c628cd0e87e187c5434459eec81c5ddaeca5c733b49d9092e5b",
+      "bytes": 152266
+    },
+    {
+      "source": "/images/seasons/summer-pink-flowers-480.webp",
+      "url": "/media/summer-pink-flowers-480.0d214b011f34.webp",
+      "sha256": "0d214b011f341de4cb761a322806ab11551dd663ba5c7d1143a8d33b688b8f98",
+      "bytes": 25392
+    },
+    {
+      "source": "/images/seasons/summer-pink-flowers.webp",
+      "url": "/media/summer-pink-flowers.36117897c822.webp",
+      "sha256": "36117897c822be84544017ba9ec956edf9636a356632ae8aaa5d3e33114cccdd",
+      "bytes": 60342
+    },
+    {
+      "source": "/images/seasons/summer-sunflowers-480.webp",
+      "url": "/media/summer-sunflowers-480.7fab68b531d6.webp",
+      "sha256": "7fab68b531d6e9991fdf3cc2e54ce4a3ee6a2a97b782fc090790f1e72145d58f",
+      "bytes": 21974
+    },
+    {
+      "source": "/images/seasons/summer-sunflowers-sunset-480.webp",
+      "url": "/media/summer-sunflowers-sunset-480.f7f4313f56b2.webp",
+      "sha256": "f7f4313f56b21e91e79137afd02b55ffcea0731e0209225cacd898fe86fd3708",
+      "bytes": 12472
+    },
+    {
+      "source": "/images/seasons/summer-sunflowers-sunset.webp",
+      "url": "/media/summer-sunflowers-sunset.68b83c11076e.webp",
+      "sha256": "68b83c11076e4a2a6669ce31b70773822dcaa0107f7f1e86450d3c07c72183a6",
+      "bytes": 32052
+    },
+    {
+      "source": "/images/seasons/summer-sunflowers.webp",
+      "url": "/media/summer-sunflowers.0e9fa8ca20e4.webp",
+      "sha256": "0e9fa8ca20e4651061996f1856ec426f55f318f8ea1019d9274ee669eaaae605",
+      "bytes": 61736
     },
     {
       "source": "/images/seasons/winter-frosted-forest-480.webp",

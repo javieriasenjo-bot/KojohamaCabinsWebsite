@@ -210,3 +210,6 @@ body:has(.quick-reserve){padding-bottom:76px}
 .season-grid img{width:100%;height:220px;object-fit:cover;display:block;border-radius:10px;background:#e4e9e6}
 .season-shot .credit{margin-top:14px}
 @media(max-width:700px){.season-grid{grid-template-columns:1fr 1fr}.season-grid figure,.season-grid figure:nth-child(-n+2){grid-column:auto}.season-grid figure:first-child{grid-column:1/-1}.season-grid img{height:170px}}
+.season-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.season-grid-3 figure,.season-grid-3 figure:nth-child(-n+2){grid-column:auto}
+@media(max-width:700px){.season-grid-3{grid-template-columns:1fr 1fr}.season-grid-3 figure:first-child{grid-column:1/-1}}

@@ -78,9 +78,9 @@ const locales = {
 function addBreadcrumbs(schema, file, lang, html) {
  if (file === 'index.html' || /^(?:ja|zh-cn)\/index\.html$/.test(file) || file === '404.html' || /go\/index\.html$/.test(file) || file === 'googlefa3fab5b6b918158.html') return schema;
  const names = {
-  en:{cabins:'Cabins',faq:'FAQ',location:'Location and access','things-to-do':'Area guide',guides:'Area guide',culture:'Area guide',bbq:'BBQ','october-to-march':'October to March','own-a-cabin':'Own a cabin','work-remotely':'Work remotely',privacy:'Privacy'},
-  ja:{cabins:'キャビン',faq:'よくある質問',location:'所在地・アクセス','things-to-do':'周辺ガイド',guides:'周辺ガイド',culture:'周辺ガイド',bbq:'BBQ','october-to-march':'10月〜3月','own-a-cabin':'キャビンを所有','work-remotely':'リモートワーク',privacy:'プライバシー'},
-  'zh-CN':{cabins:'小屋',faq:'常见问题',location:'位置与交通','things-to-do':'周边指南',guides:'周边指南',culture:'周边指南',bbq:'烧烤','october-to-march':'10月至3月','own-a-cabin':'拥有小屋','work-remotely':'远程办公',privacy:'隐私政策'}
+  en:{cabins:'Cabins',faq:'FAQ',location:'Location and access','things-to-do':'Area guide',guides:'Area guide',culture:'Area guide',bbq:'BBQ','october-to-march':'October to March','april-to-september':'April to September','own-a-cabin':'Own a cabin','work-remotely':'Work remotely',privacy:'Privacy'},
+  ja:{cabins:'キャビン',faq:'よくある質問',location:'所在地・アクセス','things-to-do':'周辺ガイド',guides:'周辺ガイド',culture:'周辺ガイド',bbq:'BBQ','october-to-march':'10月〜3月','april-to-september':'4月〜9月','own-a-cabin':'キャビンを所有','work-remotely':'リモートワーク',privacy:'プライバシー'},
+  'zh-CN':{cabins:'小屋',faq:'常见问题',location:'位置与交通','things-to-do':'周边指南',guides:'周边指南',culture:'周边指南',bbq:'烧烤','october-to-march':'10月至3月','april-to-september':'4月至9月','own-a-cabin':'拥有小屋','work-remotely':'远程办公',privacy:'隐私政策'}
  }[lang];
  if (!names) return schema;
  const origin = 'https://kojohamacabins.jp';

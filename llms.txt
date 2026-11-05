@@ -42,6 +42,7 @@ A Coleman RoadTrip Grill LXE-J II is available by prior arrangement for ¥3,500 
 - Area guide: https://kojohamacabins.jp/things-to-do/
 - FAQ: https://kojohamacabins.jp/faq/
 - October to March: https://kojohamacabins.jp/october-to-march/
+- April to September: https://kojohamacabins.jp/april-to-september/
 - Work remotely: https://kojohamacabins.jp/work-remotely/
 
 The same paths exist under /ja/ and /zh-cn/.

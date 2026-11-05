@@ -3,6 +3,10 @@
     "hash": "d322a9aefd16fce79e5c97bd4eabc681fe118ce2e29d972253faefaab99fa24d",
     "lastmod": "2026-11-05"
   },
+  "https://kojohamacabins.jp/april-to-september/": {
+    "hash": "faefa41dee0415b32df96d986ca529a73a20b639389f0f65e52ccc526a73693a",
+    "lastmod": "2026-11-05"
+  },
   "https://kojohamacabins.jp/bbq/": {
     "hash": "b86dbdc16f5c5bd46a8c50cb4553e23798ca796d44bd251c1b65e0888bce72b4",
     "lastmod": "2026-10-22"
@@ -69,6 +73,10 @@
   },
   "https://kojohamacabins.jp/ja/": {
     "hash": "2f72bed299e593053ac95b1e92f4317d12701d54c2a288e2e1276b9d3866c160",
+    "lastmod": "2026-11-05"
+  },
+  "https://kojohamacabins.jp/ja/april-to-september/": {
+    "hash": "2855db1941b4e3ea0d429f05b56d3f88a05054886ade7988874873d5dfd8102d",
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/ja/bbq/": {
@@ -140,7 +148,7 @@
     "lastmod": "2026-10-23"
   },
   "https://kojohamacabins.jp/ja/october-to-march/": {
-    "hash": "02188ecb050227fa9365fa1caffa776d3f34211ac0f5b014d8d0bc63fd492c9a",
+    "hash": "16ef80bb2e0f0ef14e2ae2bb679c03b2cd9ad94446d43e69d53889dc1e56d60c",
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/ja/own-a-cabin/": {
@@ -168,7 +176,7 @@
     "lastmod": "2026-10-23"
   },
   "https://kojohamacabins.jp/october-to-march/": {
-    "hash": "25766168a6dac8b2d89277764b9f01c67d186d042b8e38a6248188bd6948aee1",
+    "hash": "00a62ad92c5c102663dd23834177ff69ce2c173765f5a6404d37e59278f7b837",
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/own-a-cabin/": {
@@ -193,6 +201,10 @@
   },
   "https://kojohamacabins.jp/zh-cn/": {
     "hash": "c08ebb387dbfbeae468144011d7265e8d1875f299df37d37f3f1751e0b60836c",
+    "lastmod": "2026-11-05"
+  },
+  "https://kojohamacabins.jp/zh-cn/april-to-september/": {
+    "hash": "e0f5fe61b459935576170bf8f169ce6dfb0d1450eabda4ec9cac1272b1185d0a",
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/zh-cn/bbq/": {
@@ -264,7 +276,7 @@
     "lastmod": "2026-10-23"
   },
   "https://kojohamacabins.jp/zh-cn/october-to-march/": {
-    "hash": "4afaf0c84b7c6408f65e78bfd5cefb985f99df879148259af83b2efacd7c4174",
+    "hash": "5525f9abf151a5f9a4f60d4bcc11940b0ee68fdc48182c171afbd7d9da8c153f",
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/zh-cn/own-a-cabin/": {
