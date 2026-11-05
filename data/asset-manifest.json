@@ -1117,6 +1117,66 @@
       "bytes": 60452
     },
     {
+      "source": "/images/seasons/autumn-hillside-480.webp",
+      "url": "/media/autumn-hillside-480.97b7e0b6f1b8.webp",
+      "sha256": "97b7e0b6f1b865ba55c40acaed2c7d9d15ca84ef1223b3b75cb60721af92670d",
+      "bytes": 37056
+    },
+    {
+      "source": "/images/seasons/autumn-hillside.webp",
+      "url": "/media/autumn-hillside.83995c0c813c.webp",
+      "sha256": "83995c0c813c73c1f30a7df3f0eccf2965d2a3060c4cd072c1618db0c5f29f5c",
+      "bytes": 128372
+    },
+    {
+      "source": "/images/seasons/autumn-maples-hut-480.webp",
+      "url": "/media/autumn-maples-hut-480.6828abc74ab0.webp",
+      "sha256": "6828abc74ab077c7e33e286d772dfcb4dd63c96fcb7f4013918379c01836ba6f",
+      "bytes": 49444
+    },
+    {
+      "source": "/images/seasons/autumn-maples-hut.webp",
+      "url": "/media/autumn-maples-hut.f31d8cae4602.webp",
+      "sha256": "f31d8cae4602f5f65d57122364b81a6643b73c928ec3b644c1cdacb4864235ac",
+      "bytes": 196550
+    },
+    {
+      "source": "/images/seasons/winter-frosted-forest-480.webp",
+      "url": "/media/winter-frosted-forest-480.1a466c7a8e16.webp",
+      "sha256": "1a466c7a8e1657147bddc3caf5ee6629ac9680d914606e5a009ee238bf54b503",
+      "bytes": 56126
+    },
+    {
+      "source": "/images/seasons/winter-frosted-forest.webp",
+      "url": "/media/winter-frosted-forest.b40a35624b8c.webp",
+      "sha256": "b40a35624b8ce945c115e8d291821ef1622dd89ff55cd67e67295fceeed82888",
+      "bytes": 238952
+    },
+    {
+      "source": "/images/seasons/winter-frosted-slope-480.webp",
+      "url": "/media/winter-frosted-slope-480.c2257f42a480.webp",
+      "sha256": "c2257f42a480b77a35bef4922fc294f9b6d40568391be36d56ac9c892b80fa81",
+      "bytes": 18066
+    },
+    {
+      "source": "/images/seasons/winter-frosted-slope.webp",
+      "url": "/media/winter-frosted-slope.6f0b2d713509.webp",
+      "sha256": "6f0b2d71350940f1bf38a77f90c1d0de8d95c8ad9eafb817b9b2176b701eaba4",
+      "bytes": 65058
+    },
+    {
+      "source": "/images/seasons/winter-icicles-stream-480.webp",
+      "url": "/media/winter-icicles-stream-480.a3be10a7d6c1.webp",
+      "sha256": "a3be10a7d6c1fc650a213e18d82d71117cc0b4896a39823877be7cc16d5ba1cf",
+      "bytes": 25038
+    },
+    {
+      "source": "/images/seasons/winter-icicles-stream.webp",
+      "url": "/media/winter-icicles-stream.535509113d49.webp",
+      "sha256": "535509113d49381b952ca757d5ba1a59a7e30977f30add18cfb91008fd9bcfe9",
+      "bytes": 87378
+    },
+    {
       "source": "/images/ski/autumn-maples-480.webp",
       "url": "/media/autumn-maples-480.ff8ac3dd477b.webp",
       "sha256": "ff8ac3dd477b620f7a29b022bd12ca7b0f0d034d9a1ba7a59d646e6ae4c53204",
