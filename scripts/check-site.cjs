@@ -88,7 +88,7 @@ for(const [file,text]of source){
 }
 const llms=fs.readFileSync(path.join(root,'llms.txt'),'utf8');
 check(llms.includes('https://guide.kojohamacabins.jp/'),'llms.txt: missing guest guide');
-check(llms.includes('Check-in from 14:00')&&llms.includes('Check-in from 15:00'),'llms.txt: cabin check-in times missing');
+check(facts.cabins.every(cabin=>llms.includes('Check-in from '+cabin.checkIn)),'llms.txt: cabin check-in times missing or different from shared facts');
 check(!/ctrip\.com|trip\.com\/hotels/.test(llms),'llms.txt: inactive booking URL');
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
 const imageManifest=JSON.parse(fs.readFileSync(path.join(root,'data/asset-manifest.json'),'utf8'));

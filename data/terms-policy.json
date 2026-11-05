@@ -2,10 +2,10 @@
   "sourceUrl": "https://docs.google.com/document/d/1qwA727D--mHlmTGMXojN7foF3o2zXGar/edit",
   "effectiveFrom": "2026-11-01",
   "reviewedOn": "2026-10-21",
-  "ownerException": "Owner confirmed on 21 October: Zen check-in 14:00; Sol and Rustic 15:00, checkout 10:00. This overrides Article 9's general 15:00 clause.",
+  "ownerException": "Owner confirmed on 5 November 2026: check-in 15:00 for all cabins, checkout 10:00. This overrides Article 9's general 15:00 clause.",
   "copy": {
     "en": {
-      "note": "Final terms apply from 1 November 2026; Japanese is the original. Owner-confirmed check-in: Zen 14:00; Sol and Rustic 15:00. Checkout by 10:00. Your booking platform’s cancellation, payment and refund conditions take priority.",
+      "note": "Final terms apply from 1 November 2026; Japanese is the original. Owner-confirmed check-in: 15:00 for all cabins. Checkout by 10:00. Your booking platform’s cancellation, payment and refund conditions take priority.",
       "items": [
         "Maximum five guests per cabin; register everyone staying. Guests under 18 must be accompanied by an adult parent, guardian or supervising adult. No pets except assistance dogs.",
         "Complete the online pre-registration form before check-in: each guest’s name, address and contact details. Only foreign nationals without an address in Japan must provide nationality, passport number and a passport image. Key information may be withheld until registration is complete.",
@@ -19,7 +19,7 @@
       ]
     },
     "ja": {
-      "note": "最終約款は2026年11月1日施行、日本語が正文です。オーナー確認済みのチェックインはZen 14時、Sol・Rustic 15時から、チェックアウトは10時までです。キャンセル・支払・返金条件は予約サイトの規定が優先します。",
+      "note": "最終約款は2026年11月1日施行、日本語が正文です。オーナー確認済みのチェックインは全棟15時から、チェックアウトは10時までです。キャンセル・支払・返金条件は予約サイトの規定が優先します。",
       "items": [
         "各棟定員5名。宿泊者全員を予約に登録してください。18歳未満のみの宿泊は不可で、成年の保護者・引率者の同伴が必要です。ペット不可（身体障害者補助犬を除く）。",
         "到着前にオンライン事前登録フォームで全員の氏名・住所・連絡先をご登録ください。国籍・旅券番号・旅券画像は、日本国内に住所を有しない外国人のみ必要です。登録完了まで鍵情報をお知らせしない場合があります。",
@@ -33,7 +33,7 @@
       ]
     },
     "zh": {
-      "note": "最终条款自2026年11月1日起施行，以日文为正文。业主确认入住时间：Zen 14:00，Sol和Rustic 15:00；10:00前退房。取消、付款及退款以预订平台的规则为准。",
+      "note": "最终条款自2026年11月1日起施行，以日文为正文。业主确认入住时间：所有小屋15:00；10:00前退房。取消、付款及退款以预订平台的规则为准。",
       "items": [
         "每栋最多5人，所有入住者须登记在预订中。未满18岁须由成年监护人或带队人陪同。禁止宠物，辅助犬除外。",
         "入住前填写在线登记表，提供所有客人的姓名、住址及联系方式。仅在日本无住址的外国客人须提供国籍、护照号码及护照图片。登记完成前可能暂不提供钥匙信息。",
@@ -47,7 +47,7 @@
       ]
     },
     "zh-TW": {
-      "note": "最終條款自2026年11月1日起施行，以日文為正文。業主確認入住時間：Zen 14:00，Sol和Rustic 15:00；10:00前退房。取消、付款及退款以訂房平台的規則為準。",
+      "note": "最終條款自2026年11月1日起施行，以日文為正文。業主確認入住時間：所有小屋15:00；10:00前退房。取消、付款及退款以訂房平台的規則為準。",
       "items": [
         "每棟最多5人，所有入住者須登記於預訂中。未滿18歲須由成年監護人或帶隊人陪同。禁止寵物，輔助犬除外。",
         "入住前填寫線上登記表，提供所有旅客姓名、住址及聯絡方式。僅在日本無住址的外國旅客須提供國籍、護照號碼及護照圖片。登記完成前可能暫不提供鑰匙資訊。",

@@ -126,3 +126,4 @@ Supersedes every earlier note that the website carries a "Check your dates" esti
 
 
 - 5 November 2026: new April–September page (EN/JA/ZH) at /april-to-september/ with spring/summer scenes and links to existing guides; the October–March page now carries a seasonal photo gallery. Both use free-licence photos from the owner's shared folder, captioned as illustrative scenes from Japan.
+- 5 November 2026: check-in is now 15:00 for all three cabins on the website (Zen was 14:00), per the owner decision recorded in the merged terms data (`data/terms-policy.json`, `ownerException`); this supersedes the 21 October Zen 14:00 exception in O18 and the older rows above. Trip.com (Ctrip) links now use `https://hotels.ctrip.com/hotels/detail/?hotelId=<id>` on all 14 pages that show them. Still to align outside this repository: the guest-guide app (Zen check-in), and the Airbnb, Booking.com and Trip.com listings, which may still show Zen 14:00.
