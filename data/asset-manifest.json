@@ -914,21 +914,21 @@
     },
     {
       "source": "/images/rustic/rustic-1-480.webp",
-      "url": "/media/rustic-1-480.23a731319044.webp",
-      "sha256": "23a73131904409a094553f5becc54bc24d05298a81d49da4111c5149e88a5af3",
-      "bytes": 16482
+      "url": "/media/rustic-1-480.8016e854beae.webp",
+      "sha256": "8016e854beae83c99bfa3edf9ecc3ac5c20ec97c613c7dc9991cc515292f98db",
+      "bytes": 20114
     },
     {
       "source": "/images/rustic/rustic-1-960.webp",
-      "url": "/media/rustic-1-960.59709f5b936f.webp",
-      "sha256": "59709f5b936fee86647af5b29045bfe61714fdf166b646970f3b57b6640c06e3",
-      "bytes": 44270
+      "url": "/media/rustic-1-960.3c13f5f1d43a.webp",
+      "sha256": "3c13f5f1d43a68eab9afa608c6a949564b82e22cb9a927079b6d580d09f8bd12",
+      "bytes": 58334
     },
     {
       "source": "/images/rustic/rustic-1.webp",
-      "url": "/media/rustic-1.5943c53c1ca1.webp",
-      "sha256": "5943c53c1ca1b2ffa97d8baba177e120b57691b54834665bed0c21de6b34ab18",
-      "bytes": 95650
+      "url": "/media/rustic-1.d652a6f0bf2e.webp",
+      "sha256": "d652a6f0bf2ea70b3bf938691bf77c301f5dd96db293d095dab4bba6b72fe73a",
+      "bytes": 100662
     },
     {
       "source": "/images/rustic/rustic-2-480.webp",
@@ -1370,21 +1370,21 @@
     },
     {
       "source": "/images/sol/sol-7-480.webp",
-      "url": "/media/sol-7-480.6bb8d89a1bd0.webp",
-      "sha256": "6bb8d89a1bd0530b541319c273487ddac0a50d001ffd78dad341d60714cf72b4",
-      "bytes": 14998
+      "url": "/media/sol-7-480.e68192939ef1.webp",
+      "sha256": "e68192939ef14bafb7a22e161e56ad4dcda64f1c4763fc507883b510242cbe4b",
+      "bytes": 17464
     },
     {
       "source": "/images/sol/sol-7-960.webp",
-      "url": "/media/sol-7-960.3baeedf4e3c8.webp",
-      "sha256": "3baeedf4e3c8ded9de0b358f60742ffe19c3246a45f2feb75d690c5d6c039e9d",
-      "bytes": 36992
+      "url": "/media/sol-7-960.1d115f3fa9db.webp",
+      "sha256": "1d115f3fa9dbc0bbb502d9fedca4ab24f6487fffd50f9f9b21b76a35ecb78201",
+      "bytes": 57076
     },
     {
       "source": "/images/sol/sol-7.webp",
-      "url": "/media/sol-7.3b50c4dc041e.webp",
-      "sha256": "3b50c4dc041e3f271fcbd1a304edabc595027247b3703593c09d95441deadd3d",
-      "bytes": 75574
+      "url": "/media/sol-7.3c3a4fc9c4cd.webp",
+      "sha256": "3c3a4fc9c4cdda68ba805c5125d8410f178211b60354dd9876e61010d1285dc6",
+      "bytes": 97430
     },
     {
       "source": "/images/sol/sol-8-480.webp",
@@ -1760,21 +1760,21 @@
     },
     {
       "source": "/images/zen/zen-9-480.webp",
-      "url": "/media/zen-9-480.241601453af8.webp",
-      "sha256": "241601453af8a810de6eba5e21cf116d3d5c0f251e93d574e32514ad62dc582b",
-      "bytes": 17254
+      "url": "/media/zen-9-480.b226a6294ecb.webp",
+      "sha256": "b226a6294ecb8585128f287b7ac5c370789fb9f5387794133e41c3e4fb01e2b1",
+      "bytes": 19044
     },
     {
       "source": "/images/zen/zen-9-960.webp",
-      "url": "/media/zen-9-960.6bd51c69e7e5.webp",
-      "sha256": "6bd51c69e7e5e4e87590c25ee1e5fe55391a8d3173a63658d0b52afc1d5835f7",
-      "bytes": 51892
+      "url": "/media/zen-9-960.495b134a1bad.webp",
+      "sha256": "495b134a1bad1611170016111effd65f120aab1f15c78dbfb1e47a2cbbb23450",
+      "bytes": 57330
     },
     {
       "source": "/images/zen/zen-9.webp",
-      "url": "/media/zen-9.fe638762b573.webp",
-      "sha256": "fe638762b57396267fd3d001cc13e275e53d65093215d6ca5bdbae8a0e0476ff",
-      "bytes": 105920
+      "url": "/media/zen-9.09b165425ac7.webp",
+      "sha256": "09b165425ac7f909cdc939213860e94390da3ec730cf551b713e14256f98a03f",
+      "bytes": 98158
     },
     {
       "source": "/images/zen/zen-bathroom-480.webp",

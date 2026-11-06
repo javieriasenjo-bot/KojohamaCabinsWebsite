@@ -30,9 +30,9 @@
     "srcset": "/images/exterior/outside-hero-sunset-480.webp 480w, /images/exterior/outside-hero-sunset-960.webp 960w, /images/exterior/outside-hero-sunset.webp 1600w"
   },
   "/images/rustic/rustic-1.webp": {
-    "width": 1559,
-    "height": 1039,
-    "srcset": "/images/rustic/rustic-1-480.webp 480w, /images/rustic/rustic-1-960.webp 960w, /images/rustic/rustic-1.webp 1559w"
+    "width": 1268,
+    "height": 845,
+    "srcset": "/images/rustic/rustic-1-480.webp 480w, /images/rustic/rustic-1-960.webp 960w, /images/rustic/rustic-1.webp 1268w"
   },
   "/images/rustic/rustic-2.webp": {
     "width": 1522,
@@ -110,9 +110,9 @@
     "srcset": "/images/sol/sol-6-480.webp 480w, /images/sol/sol-6-960.webp 960w, /images/sol/sol-6.webp 1586w"
   },
   "/images/sol/sol-7.webp": {
-    "width": 1600,
-    "height": 1067,
-    "srcset": "/images/sol/sol-7-480.webp 480w, /images/sol/sol-7-960.webp 960w, /images/sol/sol-7.webp 1600w"
+    "width": 1253,
+    "height": 835,
+    "srcset": "/images/sol/sol-7-480.webp 480w, /images/sol/sol-7-960.webp 960w, /images/sol/sol-7.webp 1253w"
   },
   "/images/sol/sol-8.webp": {
     "width": 1513,
@@ -180,9 +180,9 @@
     "srcset": "/images/zen/zen-8-480.webp 480w, /images/zen/zen-8-960.webp 960w, /images/zen/zen-8.webp 1600w"
   },
   "/images/zen/zen-9.webp": {
-    "width": 1550,
-    "height": 1034,
-    "srcset": "/images/zen/zen-9-480.webp 480w, /images/zen/zen-9-960.webp 960w, /images/zen/zen-9.webp 1550w"
+    "width": 1317,
+    "height": 878,
+    "srcset": "/images/zen/zen-9-480.webp 480w, /images/zen/zen-9-960.webp 960w, /images/zen/zen-9.webp 1317w"
   },
   "/images/zen/zen-bathroom.webp": {
     "width": 1067,

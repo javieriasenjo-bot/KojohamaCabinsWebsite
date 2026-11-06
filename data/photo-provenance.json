@@ -367,5 +367,44 @@
     "location": "not stated; captioned as scenes from Japan, never as Kojohama or Hokkaido",
     "credit": "Pakutaso",
     "permission": "free-licence stock photo supplied by owner on 5 November 2026; no identifiable people"
+  },
+  {
+    "asset": "/images/zen/zen-9.webp",
+    "subject": "Ocean Stay Zen living room (main landing photo)",
+    "sourceFolder": "owner-supplied photograph, 6 November 2026 (chat attachment)",
+    "sourceSHA256": "77610abdd0e7024202320613bd4f586bfdd9a240d139c5a2447d058ecc77c36a",
+    "width": 1317,
+    "height": 878,
+    "bytes": 98158,
+    "retrievedOn": "2026-11-06",
+    "permission": "supplied by owner on 6 November 2026 to be the main landing photo of the cabin on the website and the guest guide",
+    "credit": "photographer attribution not supplied",
+    "replaces": "previous zen-9 photograph with the same file name"
+  },
+  {
+    "asset": "/images/sol/sol-7.webp",
+    "subject": "Ocean Stay Sol living room (main landing photo)",
+    "sourceFolder": "owner-supplied photograph, 6 November 2026 (chat attachment)",
+    "sourceSHA256": "e78ddec9ffe1de0307ae0d91a6220a9f4d7aca215ab4f97dc025f933b0c085ea",
+    "width": 1253,
+    "height": 835,
+    "bytes": 97430,
+    "retrievedOn": "2026-11-06",
+    "permission": "supplied by owner on 6 November 2026 to be the main landing photo of the cabin on the website and the guest guide",
+    "credit": "photographer attribution not supplied",
+    "replaces": "previous sol-7 photograph with the same file name"
+  },
+  {
+    "asset": "/images/rustic/rustic-1.webp",
+    "subject": "Ocean Stay Rustic living room (main landing photo)",
+    "sourceFolder": "owner-supplied photograph, 6 November 2026 (chat attachment)",
+    "sourceSHA256": "91442d5f7b8e433c5738c72c9d7c6de069b325d647172a60c6654027e51eb93e",
+    "width": 1268,
+    "height": 845,
+    "bytes": 100662,
+    "retrievedOn": "2026-11-06",
+    "permission": "supplied by owner on 6 November 2026 to be the main landing photo of the cabin on the website and the guest guide",
+    "credit": "photographer attribution not supplied",
+    "replaces": "previous rustic-1 photograph with the same file name"
   }
 ]
