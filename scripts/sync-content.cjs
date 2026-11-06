@@ -14,7 +14,7 @@ const restoreInactiveBookings = html => html.replace(/<!-- inactive-ctrip: ([\s\
 const bookingVisibility = (html, lang) => {
  html=restoreInactiveBookings(html);
  if(facts.bookingChannels?.ctrip !== false && lang === 'zh-CN')return html;
- html=html.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g,paragraph=>paragraph.includes('data-link-location="linkinbio_ctrip"') ? `<!-- inactive-ctrip: ${paragraph} -->` : paragraph);
+ html=html.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g,paragraph=>/data-link-location="linkinbio_(?:ctrip|tripcom)"/.test(paragraph) ? `<!-- inactive-ctrip: ${paragraph} -->` : paragraph);
  const keepAll = facts.bookingChannels?.ctrip !== false;
  return html.replace(new RegExp('<!-- inactive-ctrip: [\\s\\S]*? -->|(?: · )?<a\\b' + (keepAll ? '(?![^>]*data-all-languages)' : '') + '[^>]*href="https?:\\/\\/[^" ]*(?:ctrip\\.com|trip\\.com)[^" ]*"[^>]*>[\\s\\S]*?<\\/a>', 'g'),link=>link.startsWith('<!--') ? link : `<!-- inactive-ctrip: ${link} -->`);
 };
