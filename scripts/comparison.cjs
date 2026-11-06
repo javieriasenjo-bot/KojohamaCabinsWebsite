@@ -3,9 +3,9 @@ const facts = require('../data/site-facts.json');
 const { note } = require('./booking-note.cjs');
 const money = n => n.toLocaleString('en-US');
 const comparisonLabels = {
- en: ['Compare the cabins', 'Cabin', 'Maximum guests', 'Sleeping arrangements', 'Interior', '5 GHz Wi-Fi · download / upload', '5 Nov 2026 · 1 night + cleaning · 2 guests, before tax', 'Check dates', 'One double bed + three single beds', 'Bedroom beds + one futon (5 sleeping places)', 'Four beds', 'Bright blue-and-white interior', 'Tatami flooring and kotatsu', 'Wood textures; no tatami or kotatsu'],
- ja: ['キャビンを比較', 'キャビン', '最大宿泊人数', '寝具', '室内の特徴', '5 GHz Wi-Fi・下り／上り', '2026年11月5日・1泊＋清掃・2名・税別', '空室を確認', 'ダブルベッド1台＋シングルベッド3台', '寝室のベッド＋布団1組（計5名分）', 'ベッド4台', '明るい青と白のインテリア', '畳とこたつ', '木の風合い。畳・こたつなし'],
- 'zh-CN': ['比较三间小屋', '小屋', '最多入住人数', '床铺安排', '室内特色', '5 GHz Wi-Fi·下载／上传', '2026年11月5日·1晚＋清洁·2人·税前', '查看日期', '1张双人床＋3张单人床', '卧室床铺＋1套日式床垫（共5个床位）', '4张床', '明亮的蓝白色内饰', '榻榻米与日式暖桌', '木质内饰，无榻榻米或暖桌'],
+ en: ['Compare the cabins', 'Cabin', 'Maximum guests', 'Sleeping arrangements', 'Interior', '5 GHz Wi-Fi · download / upload', '5 Nov 2026 · 1 night + cleaning · 2 guests, before tax', 'Check dates', 'One double bed + three single beds', 'One double bed + three single beds', 'One double bed + three single beds', 'Bright blue-and-white interior', 'Tatami flooring and kotatsu', 'Wood textures; no tatami or kotatsu'],
+ ja: ['キャビンを比較', 'キャビン', '最大宿泊人数', '寝具', '室内の特徴', '5 GHz Wi-Fi・下り／上り', '2026年11月5日・1泊＋清掃・2名・税別', '空室を確認', 'ダブルベッド1台＋シングルベッド3台', 'ダブルベッド1台＋シングルベッド3台', 'ダブルベッド1台＋シングルベッド3台', '明るい青と白のインテリア', '畳とこたつ', '木の風合い。畳・こたつなし'],
+ 'zh-CN': ['比较三间小屋', '小屋', '最多入住人数', '床铺安排', '室内特色', '5 GHz Wi-Fi·下载／上传', '2026年11月5日·1晚＋清洁·2人·税前', '查看日期', '1张双人床＋3张单人床', '1张双人床＋3张单人床', '1张双人床＋3张单人床', '明亮的蓝白色内饰', '榻榻米与日式暖桌', '木质内饰，无榻榻米或暖桌'],
 };
 function comparison(lang) {
  const l=comparisonLabels[lang], prefix=lang==='en'?'':lang==='ja'?'ja/':'zh-cn/';

@@ -70,7 +70,13 @@ function bookingLinks(file, lang) {
  const airbnb = cabins.map(cabin => '<a class="button airbnb" ' + attrs(cabin) + ' href="' + airbnbLocalized(cabin.airbnb, lang) + '">' + label(cabin, 'Airbnb') + '</a>');
  const booking = '<a class="button secondary" data-cabin-name="All cabins" data-link-location="pricing_note" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + c.booking + (cabinId ? '' : ' (' + c.onAll + ')') + '</a>';
  // Trip.com/Ctrip anchors are hidden outside the Chinese pages (and when the channel is switched off) by bookingVisibility().
- const trip = cabins.map(cabin => '<a class="button secondary" data-all-languages="true" ' + attrs(cabin) + ' href="' + cabin.ctrip + '">' + label(cabin, c.trip) + '</a>');
+ // zh-CN: separate Ctrip (携程) and international Trip.com buttons; other languages keep one Trip.com/Ctrip button.
+ const trip = cabins.flatMap(cabin => {
+  const zh = lang === 'zh-CN';
+  const links = ['<a class="button secondary" data-all-languages="true" ' + attrs(cabin) + ' href="' + cabin.ctrip + '">' + label(cabin, zh ? '携程' : c.trip) + '</a>'];
+  if (zh && cabin.tripcom) links.push('<a class="button secondary" data-all-languages="true" ' + attrs(cabin) + ' href="' + cabin.tripcom + '">' + label(cabin, 'Trip.com') + '</a>');
+  return links;
+ });
  return '<p class="booking-links"><span>' + c.lead + '</span> ' + [...airbnb, booking, ...trip].join(' ') + '</p>';
 }
 
@@ -87,7 +93,9 @@ function faqBookingButtons(lang) {
  return '<!-- faq-booking:start --><div class="booking-rows">'
   + row(p.airbnb, 'airbnb', '', cabin => airbnbLocalized(cabin.airbnb, lang))
   + '<p class="booking-links"><span>' + p.booking + '</span> <a class="button secondary" data-cabin-name="All cabins" data-link-location="faq_booking" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + p.all + '</a></p>'
-  + row(p.trip, 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip)
+  + (lang === 'zh-CN'
+   ? row('携程', 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip) + row('Trip.com', 'secondary', 'data-all-languages="true" ', cabin => cabin.tripcom || cabin.ctrip)
+   : row(p.trip, 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip))
   + '</div><!-- faq-booking:end -->';
 }
 
@@ -205,9 +213,9 @@ for (const [lang, t] of Object.entries(locales)) {
  if (compareSource.includes('<!-- comparison:start -->')) compareSource=marked(compareSource,'comparison',table);
  else compareSource=compareSource.replace('<section class="cards wrap">',`<!-- comparison:start -->${table}<!-- comparison:end --><section class="cards wrap">`);
  const choosing = {
-  en:{heading:'Which cabin should you choose?',sol:'Choose Sol for a bright blue-and-white interior, with one double bed and three single beds.',zen:'Choose Zen for tatami flooring, a kotatsu and an additional futon alongside the bedroom beds. Maximum occupancy is five guests.',rustic:'Choose Rustic for wood textures and a cosy interior. Rustic has no tatami or kotatsu; those features belong to Zen.',questions:'Travelling with children or planning a BBQ?',answer:'Children and infants are welcome. BBQ is available by prior arrangement for ¥3,500 per stay, with our grill provided; bring two compatible gas cartridges, food, utensils and other gear.',details:'Read the BBQ guide',access:'Plan airport access'},
-  ja:{heading:'どのキャビンが自分たちに合う？',sol:'Solは青と白の明るいインテリア。ダブルベッド1台とシングルベッド3台をご用意しています。',zen:'Zenは畳とこたつのある和の空間。寝室のベッドに加えて布団があり、定員は最大5名です。',rustic:'Rusticは木の質感を楽しめる落ち着いた空間。畳とこたつはありません。これらの設備はZenにあります。',questions:'お子様連れやBBQを計画中ですか？',answer:'お子様・乳幼児を歓迎しています。BBQは事前のご相談で1滞在3,500円。グリルは当施設が用意します。対応するガス缶2本、食材、調理器具などはご持参ください。',details:'BBQの持ち物を確認',access:'空港からのアクセスを確認'},
-  'zh-CN':{heading:'哪间小屋更适合您？',sol:'Sol拥有明亮的蓝白色内饰，配备一张双人床和三张单人床。',zen:'Zen拥有榻榻米和暖桌，除卧室床位外另有日式被褥，每间最多入住5人。',rustic:'Rustic适合喜欢木质纹理和温馨氛围的客人。Rustic没有榻榻米或暖桌，这两项设施仅在Zen提供。',questions:'带孩子出行或计划烧烤？',answer:'欢迎儿童和婴幼儿。烧烤请提前安排，每次入住¥3,500，我们提供烤炉；请自备两罐兼容燃气罐、食材、餐具和其他用品。',details:'查看烧烤指南',access:'查看机场交通'}
+  en:{heading:'Which cabin should you choose?',sol:'Choose Sol for a bright blue-and-white interior, with one double bed and three single beds.',zen:'Choose Zen for tatami flooring and a kotatsu, with the same beds as the other cabins: one double bed and three single beds. Maximum occupancy is five guests.',rustic:'Choose Rustic for wood textures and a cosy interior. Rustic has no tatami or kotatsu; those features belong to Zen.',questions:'Travelling with children or planning a BBQ?',answer:'Children and infants are welcome. BBQ is available by prior arrangement for ¥3,500 per stay, with our grill provided; bring two compatible gas cartridges, food, utensils and other gear.',details:'Read the BBQ guide',access:'Plan airport access'},
+  ja:{heading:'どのキャビンが自分たちに合う？',sol:'Solは青と白の明るいインテリア。ダブルベッド1台とシングルベッド3台をご用意しています。',zen:'Zenは畳とこたつのある和の空間。寝具は他の2棟と同じくダブルベッド1台とシングルベッド3台で、定員は最大5名です。',rustic:'Rusticは木の質感を楽しめる落ち着いた空間。畳とこたつはありません。これらの設備はZenにあります。',questions:'お子様連れやBBQを計画中ですか？',answer:'お子様・乳幼児を歓迎しています。BBQは事前のご相談で1滞在3,500円。グリルは当施設が用意します。対応するガス缶2本、食材、調理器具などはご持参ください。',details:'BBQの持ち物を確認',access:'空港からのアクセスを確認'},
+  'zh-CN':{heading:'哪间小屋更适合您？',sol:'Sol拥有明亮的蓝白色内饰，配备一张双人床和三张单人床。',zen:'Zen拥有榻榻米和暖桌，床位与另外两栋相同（1张双人床＋3张单人床），最多入住5人。',rustic:'Rustic适合喜欢木质纹理和温馨氛围的客人。Rustic没有榻榻米或暖桌，这两项设施仅在Zen提供。',questions:'带孩子出行或计划烧烤？',answer:'欢迎儿童和婴幼儿。烧烤请提前安排，每次入住¥3,500，我们提供烤炉；请自备两罐兼容燃气罐、食材、餐具和其他用品。',details:'查看烧烤指南',access:'查看机场交通'}
  }[lang];
  const choosingSection=`<section class="section-block wrap"><h2>${choosing.heading}</h2><div class="compact-grid"><article><h3><a href="/${t.prefix}cabins/ocean-stay-sol/">Ocean Stay Sol</a></h3><p>${choosing.sol}</p></article><article><h3><a href="/${t.prefix}cabins/ocean-stay-zen/">Ocean Stay Zen</a></h3><p>${choosing.zen}</p></article><article><h3><a href="/${t.prefix}cabins/ocean-stay-rustic/">Ocean Stay Rustic</a></h3><p>${choosing.rustic}</p></article></div><h3>${choosing.questions}</h3><p>${choosing.answer}</p><p><a href="/${t.prefix}bbq/">${choosing.details}</a> · <a href="/${t.prefix}location/">${choosing.access}</a></p></section>`;
  if(compareSource.includes('<!-- choosing:start -->'))compareSource=marked(compareSource,'choosing',choosingSection);
@@ -275,9 +283,9 @@ for (const absolute of walk(root)) {
  }
  if (file.endsWith('work-remotely/index.html')) {
   const workspaceText={
-   en:['A place to open your laptop','See the laptop spaces in all three cabins: Sol’s sea-facing counter, Zen’s low table over the futon by the sea-view window, and Rustic’s table with sofa seating. These are everyday living spaces. If a dedicated desk, a particular chair or other work equipment matters to you, ask us before booking.'],
-   ja:['パソコンを広げる場所','Solの海を望むカウンター、Zenの海が見える窓辺の布団に掛けた座卓、Rusticのテーブルとソファをご紹介します。日常の生活スペースとしてご利用いただけます。専用デスク、特定の椅子、その他のお仕事用の設備が必要な場合は、ご予約前にお問い合わせください。'],
-   'zh-CN':['打开电脑的空间','下方照片展示三间小屋的电脑工作空间：Sol的面海台面、Zen海景窗边铺在日式床垫上的矮桌，以及Rustic的桌子与沙发座位。这些属于日常生活空间。如果您需要专用书桌、特定座椅或其他办公设备，请在预订前联系我们。']
+   en:['A place to open your laptop','See the laptop spaces in all three cabins: Sol’s sea-facing counter, Zen’s low kotatsu table by the sea-view window, and Rustic’s table with sofa seating. These are everyday living spaces. If a dedicated desk, a particular chair or other work equipment matters to you, ask us before booking.'],
+   ja:['パソコンを広げる場所','Solの海を望むカウンター、Zenの海が見える窓辺のこたつ、Rusticのテーブルとソファをご紹介します。日常の生活スペースとしてご利用いただけます。専用デスク、特定の椅子、その他のお仕事用の設備が必要な場合は、ご予約前にお問い合わせください。'],
+   'zh-CN':['打开电脑的空间','下方照片展示三间小屋的电脑工作空间：Sol的面海台面、Zen海景窗边的暖桌，以及Rustic的桌子与沙发座位。这些属于日常生活空间。如果您需要专用书桌、特定座椅或其他办公设备，请在预订前联系我们。']
   }[lang];
   const workspacePhotos=json('data/workspace-photos.json');
   const workspaceImage=(photo,hero=false)=>`<img src="${photo.src}" alt="${escape(photo.caption[lang])}" width="${photo.width}" height="${photo.height}" ${hero?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;

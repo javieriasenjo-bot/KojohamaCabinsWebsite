@@ -1,10 +1,10 @@
 {
   "https://kojohamacabins.jp/": {
-    "hash": "a8b1ba6c1360a6f2ef941cfd593a3e14b45b52ca6d4230b68cd3c82bacb75b0e",
+    "hash": "7d5c5b42149f26fa4d24499065a6fec4f52e2ac2439c1888011d84975fee5448",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/april-to-september/": {
-    "hash": "0e2770cac8d62c622812e7980f2b2614ebb7f8f80f88deb3dcc71a0c3f342a8d",
+    "hash": "570be476845f8e2aec15e6b66eafc513123071931deecc052aec7712f2ddd5cc",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/bbq/": {
@@ -12,19 +12,19 @@
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/cabins/": {
-    "hash": "344f6db920f139895951f3199210a1916fd661b6050e643947e0e6a2c457960a",
+    "hash": "27eea93135da4706f615109a43a2bf128e938ee7e4a397dc47e0435e8ee0a18a",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/cabins/ocean-stay-rustic/": {
-    "hash": "a760207f5d1159263e0aa8eff11f8d4b7284597f70d23a0a2f87f11a6a15e0bb",
+    "hash": "22aa815d799d3590a1323d22e4d14311c455ce304d4e3a60bff1a2404587ea9e",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/cabins/ocean-stay-sol/": {
-    "hash": "246e31a941fd8b9c2e76a9b4fabad9ffaabe377211ad5323836c2ac6da3519ed",
+    "hash": "4918ce0de8edc65b71484bf6f1044e6186508d5dce601db6aa1cc26e3a949ac3",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/cabins/ocean-stay-zen/": {
-    "hash": "7ca05fe9341e0520a0599395204e9b1c38b7c78ad0ced0b27e14d836f7791406",
+    "hash": "1d3b2901e55efb680b10bbbd607be3164ee7e3dc0610325103c9eeeff1cef680",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/culture/shiraoi-ainu-culture/": {
@@ -32,7 +32,7 @@
     "lastmod": "2026-10-07"
   },
   "https://kojohamacabins.jp/faq/": {
-    "hash": "5919423eead089d9b481f581ff2a0735b09ad70481aca745ba1de74ee398a07c",
+    "hash": "b72ef2fb702029c589ed7487ca27822949b24ce4990d593873ad7337c0ffad2a",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/guides/hokkaido-winter-driving-kojohama/": {
@@ -72,7 +72,7 @@
     "lastmod": "2026-10-07"
   },
   "https://kojohamacabins.jp/ja/": {
-    "hash": "a8899d15b67717998b521595c392924d8722b6a5f0b545674c68e69e2d7b4abb",
+    "hash": "0e398dfa9e339112c0b0a5c3bd002cce2de0f55517deac0e10f303ebd49c9ea6",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/april-to-september/": {
@@ -84,19 +84,19 @@
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/cabins/": {
-    "hash": "b445cf1cb92e07ecabdb6df8a219bf40281b9ef6a70bbade4eab2fb9821a18ab",
+    "hash": "5673f62a9318fc4817bc319fb71ad6d15b6917d670cd1676e9f61e590eb1b34a",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/cabins/ocean-stay-rustic/": {
-    "hash": "9c2164bfd1bf2282572a36c859b0dd7c69aacbfcbecad9b2438af0c891976491",
+    "hash": "3d3c551e8665237b838cd90d8720d192851769533724c715a2171179854fbbd7",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/cabins/ocean-stay-sol/": {
-    "hash": "08eae95c58241825cd8b47ec6711a8084337c83925e0482ef15ac1b7df92fd61",
+    "hash": "ce95dae8b364f52fd2a93ba83a2e75efd3615d0b9509a97e6045ea45a9f0026d",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/cabins/ocean-stay-zen/": {
-    "hash": "75847ea4253fbb079a29c5a353fe4f5f29abb293a9fa85d4f20dbb494fbbbbe2",
+    "hash": "8104e3bd8aadd09d65d70211481e9900089583d5923fcf181d65d017fa996583",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/culture/shiraoi-ainu-culture/": {
@@ -104,7 +104,7 @@
     "lastmod": "2026-10-07"
   },
   "https://kojohamacabins.jp/ja/faq/": {
-    "hash": "64103cd98ab23aa13bbb7f1095b400baa67183244fdd13654c92bf152603dab3",
+    "hash": "dca2138f76cf20822e288aad3be743a15efd7cf669a800c1d8a726a5196f6efc",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/guides/hokkaido-winter-driving-kojohama/": {
@@ -144,8 +144,8 @@
     "lastmod": "2026-10-07"
   },
   "https://kojohamacabins.jp/ja/location/": {
-    "hash": "f0b3ac8ccb88bc6c967c41ca9b3888c539bbaf655d33a1f1687636b0ee9260b9",
-    "lastmod": "2026-11-05"
+    "hash": "0ae74d30dd929495806769485011fd308875c36274a8fb5b767f2cb745bd99f6",
+    "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/ja/october-to-march/": {
     "hash": "a54000b86f284af4e80ccbdd3c1ff6e099978e3d3cc5d072410eae64210d63d0",
@@ -168,15 +168,15 @@
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/ja/work-remotely/": {
-    "hash": "bc139441640813dea5309fe38d73b6a5f962d4c46b9b660ef1ec3db7ed1776d5",
-    "lastmod": "2026-10-21"
+    "hash": "0df7b77d6697382622063b27bd07ac7f466db527dcb39892f0f01e7f5a007ba2",
+    "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/location/": {
-    "hash": "8e316d620eb33871a6bc3b8abd9db60c884741e83a38065b4431b0513725f42a",
-    "lastmod": "2026-11-05"
+    "hash": "95648e74e8034200dee4c80844cdc7c06a65c877d8ab381d49c6f10ce877a94c",
+    "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/october-to-march/": {
-    "hash": "b0f7e3310fd5be875f802680d578c15007879090265451f983b04f44db1ce620",
+    "hash": "2e8703bfe1f2ddf2e7e52aba7ca0523e0a19f1bf82063b10ba987a664eae8618",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/own-a-cabin/": {
@@ -196,15 +196,15 @@
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/work-remotely/": {
-    "hash": "915cf2b9d031d2d11b8505d3f884abf0f4c807c4ab15e786a8c2b136f224b897",
-    "lastmod": "2026-10-21"
+    "hash": "03f0f18ae6860cf913005a622a3d2601281e4821bb265fa44912ebd4e823856e",
+    "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/": {
-    "hash": "e1bc05e5b510cbec221aa8536fb5b587a32363a5612d612e9f7c0cf9a6cdcf72",
+    "hash": "0a22daab2cd24f81dfc06a3a5e37f72433ebf2f1ff513976def0dfd50eda186e",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/april-to-september/": {
-    "hash": "2f2d86b69633e9687bbe9eeac017728533acc0bae0d224aaa63c2c084599e2c6",
+    "hash": "28558c90c10cf4cd422835c1fc07d6af76fd9a82985422bb2ad3dae9461b0e8d",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/bbq/": {
@@ -212,19 +212,19 @@
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/cabins/": {
-    "hash": "9e4ead97b56fce5dee30f61763295281034965d79f2fed7456cc1d38530a6857",
+    "hash": "b783d1acb8a2f921974e938977bc424c490f2d30745ca59f629269f4692a20d3",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-rustic/": {
-    "hash": "c80772bccb8c74f5f90df0f6e5d824159056af5b56e469a7af23c54f2219a270",
+    "hash": "56c6e1a449f0d8ef9a12fa5b663b839d69b9e8d9c75145ae3173c2f2e3954182",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-sol/": {
-    "hash": "c3a85df9234861f7c8716e3d891a02da626899a3cb8f4ea09960148a18299c28",
+    "hash": "37294b56b8f832230edc233a312da1ce7f10db68ca70ce95a0fee7739f9e97a9",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/cabins/ocean-stay-zen/": {
-    "hash": "c8ddfdce1480815407e242085ecf23c855d3df2c0737a08c2023c89e008ee731",
+    "hash": "f295212c8a62e3109d1052815e99c650f5802701cfe5031a4b77db5a917521ea",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/culture/shiraoi-ainu-culture/": {
@@ -232,7 +232,7 @@
     "lastmod": "2026-10-07"
   },
   "https://kojohamacabins.jp/zh-cn/faq/": {
-    "hash": "93065344b3466da6c5747b83caec49332a6141254c1dfbbaac5437248b1d7045",
+    "hash": "d9444463e2dd009038863b3259076c626f9fd588d855d278bb2c48e480052ef0",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/guides/hokkaido-winter-driving-kojohama/": {
@@ -272,11 +272,11 @@
     "lastmod": "2026-10-07"
   },
   "https://kojohamacabins.jp/zh-cn/location/": {
-    "hash": "8d51b7336d1478f0a4e05a52435b9d6ce7edeb8ef9276ce9c9e704aa18ffb75d",
-    "lastmod": "2026-11-05"
+    "hash": "dc442c728599aa7afde8b9594a1f568d673fac2f205d6d8a590008ab34a5718b",
+    "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/october-to-march/": {
-    "hash": "1275085ae07ad34118c72039295e03ee0b39698310e5ecb27aaf41c9cf88327f",
+    "hash": "a7ec62d0cb5457585d6d4e49093b5d1fbc8db4849febeb23f62cc32ca4a462a6",
     "lastmod": "2026-11-06"
   },
   "https://kojohamacabins.jp/zh-cn/own-a-cabin/": {
@@ -296,7 +296,7 @@
     "lastmod": "2026-11-05"
   },
   "https://kojohamacabins.jp/zh-cn/work-remotely/": {
-    "hash": "b8f2db37a95f302f2e4372d08576520007ebf4cd3338d1c1d046e05b24842af3",
-    "lastmod": "2026-10-21"
+    "hash": "0e8be4a4caff25ae39a4689fbd5c835873aaa0240b3e674c2bdedaa3cabaf566",
+    "lastmod": "2026-11-06"
   }
 }

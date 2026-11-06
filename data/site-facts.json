@@ -34,7 +34,7 @@
       "id": "zen",
       "name": "Ocean Stay Zen",
       "maxGuests": 5,
-      "beds": 5,
+      "beds": 4,
       "airbnb": "https://www.airbnb.com/rooms/1452755870408569390",
       "ctrip": "https://hotels.ctrip.com/hotels/detail/?hotelId=136074484",
       "tripcom": "https://www.trip.com/hotels/detail/?hotelId=136074484",
