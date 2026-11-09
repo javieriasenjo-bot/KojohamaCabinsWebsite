@@ -39,7 +39,9 @@
     "/images/rustic/rustic-bathroom.webp": "Rustic bathroom with bathtub and handheld shower",
     "/images/rustic/rustic-laundry.webp": "Rustic washing machine in its recessed laundry space",
     "/images/rustic/rustic-sleeping-layout.webp": "Rustic sleeping area with lower beds, raised bunks and a ladder",
-    "/images/exterior/outside-arrival.webp": "Street-facing entrances and gravel forecourt of the three cabins"
+    "/images/exterior/outside-arrival.webp": "Street-facing entrances and gravel forecourt of the three cabins",
+    "/images/zen/zen-cookware.webp": "Zen cookware: IH cooktop, rice pot, electric grill, pots, frying pans, knives and utensils",
+    "/images/zen/zen-games.webp": "Board games, toy bowling set and onsen baskets for guests to borrow in Zen"
   },
   "ja": {
     "/images/sol/sol-7.webp": "黄色いソファ、壁掛けテレビ、ブルーのアクセントウォールのあるリビング",
@@ -81,7 +83,9 @@
     "/images/rustic/rustic-bathroom.webp": "Rusticの浴槽とハンドシャワーがある浴室",
     "/images/rustic/rustic-laundry.webp": "Rusticのくぼんだ洗濯スペースに置かれた洗濯機",
     "/images/rustic/rustic-sleeping-layout.webp": "Rusticの下段ベッド、上段ベッドとはしごがある寝室",
-    "/images/exterior/outside-arrival.webp": "3棟の道路側の玄関と砂利敷きの前庭"
+    "/images/exterior/outside-arrival.webp": "3棟の道路側の玄関と砂利敷きの前庭",
+    "/images/zen/zen-cookware.webp": "Zenの調理器具：IHコンロ、炊飯用土鍋、電気グリル、鍋、フライパン、包丁、調理道具",
+    "/images/zen/zen-games.webp": "Zenで使えるボードゲーム、おもちゃのボウリングセット、温泉用かご"
   },
   "zh-CN": {
     "/images/sol/sol-7.webp": "带黄色沙发、壁挂电视和蓝色背景墙的客厅",
@@ -123,6 +127,8 @@
     "/images/rustic/rustic-bathroom.webp": "Rustic 的浴缸及手持花洒",
     "/images/rustic/rustic-laundry.webp": "Rustic 壁龛洗衣区内的洗衣机",
     "/images/rustic/rustic-sleeping-layout.webp": "Rustic 卧室的下层床、上层床和梯子",
-    "/images/exterior/outside-arrival.webp": "三间小屋面向道路的入口及碎石前院"
+    "/images/exterior/outside-arrival.webp": "三间小屋面向道路的入口及碎石前院",
+    "/images/zen/zen-cookware.webp": "Zen 的厨具：电磁炉、煮饭砂锅、电烤盘、汤锅、平底锅、刀具和厨房用具",
+    "/images/zen/zen-games.webp": "Zen 提供的桌游、玩具保龄球套装和温泉用篮子"
   }
 }

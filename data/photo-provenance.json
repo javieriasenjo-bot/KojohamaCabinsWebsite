@@ -406,5 +406,27 @@
     "permission": "supplied by owner on 6 November 2026 to be the main landing photo of the cabin on the website and the guest guide",
     "credit": "photographer attribution not supplied",
     "replaces": "previous rustic-1 photograph with the same file name"
+  },
+  {
+    "asset": "/images/zen/zen-cookware.webp",
+    "sourceFolder": "owner chat upload 2026-11-09",
+    "sourceFile": "cookware.jpg",
+    "sourceSHA256": "fa108fb27b7064c0874bf210f842cc28c4f9e790646671e10c83cf50c7ad5d06",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 165064,
+    "permission": "supplied by owner for website and listing use on 2026-11-09",
+    "credit": "owner photograph"
+  },
+  {
+    "asset": "/images/zen/zen-games.webp",
+    "sourceFolder": "owner chat upload 2026-11-09",
+    "sourceFile": "games.jpg",
+    "sourceSHA256": "2db6c3eb9f05ef4a0ad0d816c163714f2f89174dee2fc087d3649c07b49a7f32",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 251958,
+    "permission": "supplied by owner for website and listing use on 2026-11-09",
+    "credit": "owner photograph"
   }
 ]

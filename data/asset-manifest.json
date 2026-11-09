@@ -1795,6 +1795,42 @@
       "bytes": 42736
     },
     {
+      "source": "/images/zen/zen-cookware-480.webp",
+      "url": "/media/zen-cookware-480.792b681d7558.webp",
+      "sha256": "792b681d7558e0ba7d7d4a0171d9f1b8852313200f016c327dadf23ad4941448",
+      "bytes": 25776
+    },
+    {
+      "source": "/images/zen/zen-cookware-960.webp",
+      "url": "/media/zen-cookware-960.6a84ad042c79.webp",
+      "sha256": "6a84ad042c79c076d41106868bddd03a1640dbb3112de3f39bf6ccf4906f6ffc",
+      "bytes": 71550
+    },
+    {
+      "source": "/images/zen/zen-cookware.webp",
+      "url": "/media/zen-cookware.368b7d4b1d95.webp",
+      "sha256": "368b7d4b1d95a973c9b80fc4aaaf5bcd7356ded6f1c15749ce4b7e8a307789ff",
+      "bytes": 165064
+    },
+    {
+      "source": "/images/zen/zen-games-480.webp",
+      "url": "/media/zen-games-480.0c6d6e81979c.webp",
+      "sha256": "0c6d6e81979c8962619727a06b9f46feb4ca8b696e9ecbe155c2e993bf10174d",
+      "bytes": 39682
+    },
+    {
+      "source": "/images/zen/zen-games-960.webp",
+      "url": "/media/zen-games-960.35b39434c53d.webp",
+      "sha256": "35b39434c53d01f67c7575bfcd46c290ad0035b5d0a2af8876cc0521e97221ca",
+      "bytes": 117140
+    },
+    {
+      "source": "/images/zen/zen-games.webp",
+      "url": "/media/zen-games.0f3d66016a0a.webp",
+      "sha256": "0f3d66016a0a172afb1452a0f24c8f3522effb3719dd60663c613791f3788f93",
+      "bytes": 251958
+    },
+    {
       "source": "/images/zen/zen-laundry-480.webp",
       "url": "/media/zen-laundry-480.04c7d74e7b72.webp",
       "sha256": "04c7d74e7b72eb2c3ba47d7104c0ac502e5ab19f6c7746a4ffd366f300ec80b4",

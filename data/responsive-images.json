@@ -213,5 +213,15 @@
     "width": 1125,
     "height": 2000,
     "srcset": "/images/workspaces/rustic-workspace-480.webp 480w, /images/workspaces/rustic-workspace-960.webp 960w, /images/workspaces/rustic-workspace.webp 1125w"
+  },
+  "/images/zen/zen-cookware.webp": {
+    "width": 1600,
+    "height": 1200,
+    "srcset": "/images/zen/zen-cookware-480.webp 480w, /images/zen/zen-cookware-960.webp 960w, /images/zen/zen-cookware.webp 1600w"
+  },
+  "/images/zen/zen-games.webp": {
+    "width": 1600,
+    "height": 1200,
+    "srcset": "/images/zen/zen-games-480.webp 480w, /images/zen/zen-games-960.webp 960w, /images/zen/zen-games.webp 1600w"
   }
 }
