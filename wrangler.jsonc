@@ -11,5 +11,8 @@
   "observability": {
     "enabled": true,
     "logs": { "enabled": true, "invocation_logs": true }
-  }
+  },
+  // Workers Builds runs `npx wrangler preview` on branches other than main.
+  // The block may be empty. Assets and compatibility settings stay above.
+  "previews": {}
 }
