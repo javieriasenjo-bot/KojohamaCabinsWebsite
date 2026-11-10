@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-10",
+  "timeZone": "Asia/Tokyo",
+  "expiry": {
+    "daysAfterEnd": 14,
+    "calendar": "Asia/Tokyo",
+    "lastVisibleDayIsEndPlus14": true,
+    "ongoingDoesNotExpire": true
+  },
+  "recurrence": "none",
+  "dedupe": {
+    "identityKey": "id",
+    "sameSourceUrlDoesNotMergeDistinctPrograms": [
+      "muroran-emiran-robot-soccer-2026-11-21",
+      "muroran-emiran-christmas-wreath-2026-11-23",
+      "muroran-emiran-fiber-optic-tree-2026-11-29"
+    ]
+  },
+  "supersededForTheseIdentities": "A previous 20 km email-only exclusion does not apply to the identities in this manifest.",
+  "publicCopyMustNotInclude": [
+    "EMAIL-ONLY labels",
+    "Do not cite or do not use editorial notes",
+    "site publish or access-status notes",
+    "unconfirmed spectator access"
+  ],
+  "preservedEventIds": [
+    "toratake-kanbara-2026-10-24",
+    "toratake-marukan-2026-10-24",
+    "toratake-photo-contest-2026"
+  ],
+  "events": [
+    {
+      "id": "kojohama-takeura-stamp-rally-2026",
+      "titleJa": "虎杖浜竹浦スタンプラリー2026",
+      "start": "2026-11-01",
+      "end": "2026-12-27",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Kojohama/Takeura",
+      "times": "not a single sitting; the rally runs across the published period",
+      "sources": [
+        "https://shiraoi.net/information/%e3%80%90%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88%e3%80%91%e6%8a%bd%e9%81%b8%e3%81%a7%e7%89%b9%e7%94%a3%e5%93%81%e3%81%8c%e5%bd%93%e3%81%9f%e3%82%8b%ef%bc%81%e3%80%8c%e8%99%8e%e6%9d%96%e6%b5%9c%e7%ab%b9/"
+      ]
+    },
+    {
+      "id": "shiraoi-gaering-2026-11-15",
+      "titleJa": "第４回ゲーリング世界大会兼第29回白老町ゲーリング大会",
+      "start": "2026-11-15",
+      "end": "2026-11-15",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": "09:00-14:00",
+      "sources": [
+        "https://www.town.shiraoi.hokkaido.jp/docs/8362.html"
+      ],
+      "signupDeadline": "2026-11-08",
+      "paymentDeadline": "2026-11-13",
+      "feesJPY": {
+        "adult": 1000,
+        "elementaryAndJuniorHigh": 500,
+        "optionalSobaLunch": 300
+      },
+      "spectatorAccess": "unconfirmed on the official page; public copy must not offer spectator access"
+    },
+    {
+      "id": "upopoy-tempa-tempa-2026-11-21",
+      "titleJa": "ホリデーイベント 展示体験「テンパテンパしてみよう！」",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": null,
+      "sources": [
+        "https://ainu-upopoy.go.jp/calendar/"
+      ],
+      "doNotCite": [
+        "https://ainu-upopoy.go.jp/event/upopoy-univ-r8-2/"
+      ]
+    },
+    {
+      "id": "upopoy-hozonkai-dance-2026-11",
+      "titleJa": "各地域の保存会によるアイヌ古式舞踊披露",
+      "start": "2026-11-21",
+      "end": "2026-11-29",
+      "sessions": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-28",
+        "2026-11-29"
+      ],
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": null,
+      "sources": [
+        "https://ainu-upopoy.go.jp/event/hozonkai_2026/",
+        "https://ainu-upopoy.go.jp/calendar/"
+      ],
+      "sessionsAreNotADailyRange": true,
+      "laterPublishedDatesAreNotThisIdentity": "The same event page lists further performances through February 2027. They are not sessions of this record. A later check may add explicit dates; do not generate them by recurrence."
+    },
+    {
+      "id": "upopoy-asiknep-2026-12-05",
+      "titleJa": "ホリデーイベント「だれでもアイヌ語教室～アシㇰネㇷ゚～」",
+      "start": "2026-12-05",
+      "end": "2026-12-05",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": "11:30 and 14:00; reception 11:00 and 13:30",
+      "sources": [
+        "https://ainu-upopoy.go.jp/event/holiday261205/",
+        "https://ainu-upopoy.go.jp/calendar/"
+      ],
+      "officialSpelling": "アシㇰネㇷ゚"
+    },
+    {
+      "id": "noboribetsu-onibi-no-michi",
+      "titleJa": "鬼火の路",
+      "start": null,
+      "end": null,
+      "sessions": null,
+      "ongoing": true,
+      "recurrence": null,
+      "area": "Noboribetsu",
+      "times": "sunset-21:30",
+      "sources": [
+        "https://noboribetsu-spa.jp/spot/spot1001/",
+        "https://www.visit-hokkaido.jp/event/detail_11429.html"
+      ],
+      "parkingCitation": "https://www.visit-hokkaido.jp/event/detail_11429.html",
+      "factualDates": null,
+      "legacyIds": [
+        "onibi-no-michi"
+      ],
+      "display": "year-round words only; no occurrence date"
+    },
+    {
+      "id": "muroran-kiran-matsuri-2026",
+      "titleJa": "きらん祭り＆市民活動ミュージアム2026",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Muroran",
+      "times": "10:00-16:00",
+      "sources": [
+        "https://www.city.muroran.lg.jp/bbs/detail.html?content=3621"
+      ]
+    },
+    {
+      "id": "muroran-emiran-robot-soccer-2026-11-21",
+      "titleJa": "ロボットサッカー操縦体験",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Muroran",
+      "times": "13:00-15:30",
+      "sources": [
+        "https://www.kujiran.net/emiran/post-k/k_month/month11/"
+      ]
+    },
+    {
+      "id": "muroran-emiran-christmas-wreath-2026-11-23",
+      "titleJa": "クリスマスリースづくり",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Muroran",
+      "times": "11:35 and 14:10",
+      "sources": [
+        "https://www.kujiran.net/emiran/post-k/k_month/month11/"
+      ]
+    },
+    {
+      "id": "muroran-emiran-fiber-optic-tree-2026-11-29",
+      "titleJa": "光ファイバーツリー作り",
+      "start": "2026-11-29",
+      "end": "2026-11-29",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Muroran",
+      "times": "14:10",
+      "sources": [
+        "https://www.kujiran.net/emiran/post-k/k_month/month11/"
+      ]
+    },
+    {
+      "id": "muroran-small-party-vol-2-2026-12-06",
+      "titleJa": "The Small Party 2026 Vol.2",
+      "start": "2026-12-06",
+      "end": "2026-12-06",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Muroran",
+      "times": null,
+      "sources": [
+        "https://senshubanzeido.com/information/387/"
+      ]
+    },
+    {
+      "id": "toyako-onsen-illumination-2026",
+      "titleJa": "洞爺湖温泉イルミネーショントンネル 2026-27",
+      "start": "2026-11-01",
+      "end": "2027-04-27",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Toyako",
+      "times": "17:00-22:00 through 2027-02-28; 18:00-22:00 from 2027-03-01 through 2027-04-27",
+      "sources": [
+        "https://www.laketoya.com/event/illumination/"
+      ]
+    }
+  ],
+  "legacyIdAliases": {
+    "onibi-no-michi": "noboribetsu-onibi-no-michi",
+    "toratake-stamp-rally-2026": "kojohama-takeura-stamp-rally-2026",
+    "gering-world-championship-2026": "shiraoi-gaering-2026-11-15",
+    "upopoy-hozonkai-2026-11": "upopoy-hozonkai-dance-2026-11",
+    "upopoy:https://ainu-upopoy.go.jp/event/holiday261121/:2026-11-21": "upopoy-tempa-tempa-2026-11-21",
+    "upopoy:https://ainu-upopoy.go.jp/event/holiday261205/:2026-12-05": "upopoy-asiknep-2026-12-05",
+    "upopoy-tenpa-tenpa-2026-11-21": "upopoy-tempa-tempa-2026-11-21",
+    "upopoy-ainu-language-asiknep-2026-12-05": "upopoy-asiknep-2026-12-05",
+    "muroran-kiran-matsuri-2026-11-14": "muroran-kiran-matsuri-2026",
+    "muroran-denzai-robot-soccer-2026-11-21": "muroran-emiran-robot-soccer-2026-11-21",
+    "muroran-denzai-christmas-wreath-2026-11-23": "muroran-emiran-christmas-wreath-2026-11-23",
+    "muroran-denzai-fiber-optic-tree-2026-11-29": "muroran-emiran-fiber-optic-tree-2026-11-29",
+    "muroran-small-party-2026-12-06": "muroran-small-party-vol-2-2026-12-06",
+    "toyako-illumination-tunnel-2026": "toyako-onsen-illumination-2026"
+  }
+}
