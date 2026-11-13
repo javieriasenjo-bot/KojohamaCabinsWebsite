@@ -29,12 +29,16 @@ function write() {
     const extras = [cabin.tatami ? 'tatami' : null, cabin.kotatsu ? 'kotatsu' : null].filter(Boolean).join(', ');
     lines.push('- ' + cabin.name + ': up to ' + cabin.maxGuests + ' guests, ' + cabin.beds + ' beds' + (extras ? ', ' + extras : '') + '. Check-in from ' + cabin.checkIn + '. Checkout by ' + cabin.checkOut + '.');
     lines.push('  Page: https://kojohamacabins.jp/cabins/ocean-stay-' + cabin.id + '/');
-    lines.push('  Book on Airbnb: ' + cabin.airbnb);
   }
   lines.push('Each cabin is an entire home with a kitchen, Wi-Fi, washer, heating, air-conditioning and one free parking space. Pets are not allowed. Smoking is not allowed. Children and infants are welcome within the five-guest cap.');
   lines.push('');
+  lines.push('## Booking');
+  lines.push('Check availability and book (all cabins): ' + facts.bookingUrl.en);
+  lines.push('日本語: ' + facts.bookingUrl.ja);
+  lines.push('简体中文: ' + facts.bookingUrl['zh-CN']);
+  lines.push('');
   lines.push('## Prices');
-  lines.push('This website does not publish nightly rates or stay totals. Prices, availability, fees and the final total are shown on the booking platform at the time of booking.');
+  lines.push('This website does not publish nightly rates or stay totals. Prices, availability, fees and the final total are shown on the booking page at the time of booking.');
   lines.push('Do not quote a nightly rate or stay total from this file or from older copies of this website.');
   if (facts.bookingChannels && facts.bookingChannels.ctrip === false) lines.push('Ctrip and Trip.com are not an active booking channel on this website.');
   lines.push('');

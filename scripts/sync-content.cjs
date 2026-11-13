@@ -36,7 +36,7 @@ const travelCopy = {
  'zh-CN':{airport:`${facts.travel.newChitoseMinutes.join('–')}分钟`,casa:`${facts.travel.casaAntonioMinutes.join('–')}分钟`,airportQuestion:'从新千岁机场到小屋需要多久？',casaQuestion:'可以与札幌的住宿组合吗？',airportAnswer:`自驾通常约${facts.travel.newChitoseMinutes.join('–')}分钟。冬季天气可能延长行程，请预留更多时间。`,casaAnswer:`可以。姊妹物业Casa Antonio位于札幌麻生站附近，提供两套公寓。从虎杖浜自驾约${facts.travel.casaAntonioMinutes.join('–')}分钟，冬季或交通繁忙时请预留更多时间。`}
 };
 const comparisonTable = require('./comparison.cjs');
-const { note: bookingNote } = require('./booking-note.cjs');
+const { note: bookingNote, bookingUrl, cta: bookingCta } = require('./booking-note.cjs');
 const decode = value => String(value).replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&#x27;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
 const crumbNames = {
  en: {home:'Home', cabins:'Cabins', guide:'Area guide'},
@@ -53,50 +53,15 @@ function airbnbLocalized(url, lang) {
   return url.includes('&amp;') ? next.replace(/&/g, '&amp;') : next;
  } catch { return url; }
 }
-// Booking buttons for the neutral price note: prices are not published, so the note must lead to the platforms.
-const BOOKING_COM = 'https://www.booking.com/hotel/jp/ocean-stay.html';
-const channelCopy = {
- en: {lead: 'Check dates and book on:', booking: 'Booking.com', trip: 'Trip.com', onAll: 'all cabins'},
- ja: {lead: '空室・料金の確認と予約：', booking: 'Booking.com', trip: 'Trip.com（携程）', onAll: '全棟'},
- 'zh-CN': {lead: '查看日期、价格并预订：', booking: 'Booking.com', trip: '携程 Trip.com', onAll: '全部小屋'}
-};
+// One booking button (AirHost, language-specific) for the neutral price note and the FAQ answer.
+const bookingButton = (lang, cabinName, location) => '<a class="button airbnb" data-cabin-name="' + cabinName + '" data-link-location="' + location + '" rel="noopener" target="_blank" href="' + bookingUrl(lang) + '">' + bookingCta[lang] + '</a>';
 function bookingLinks(file, lang) {
- const c = channelCopy[lang];
  const cabinId = file.match(/ocean-stay-(sol|zen|rustic)/)?.[1];
- const cabins = cabinId ? facts.cabins.filter(item => item.id === cabinId) : facts.cabins;
- const short = cabin => cabin.name.replace(/^Ocean Stay /, '');
- const label = (cabin, platform) => cabinId ? platform : short(cabin) + ' · ' + platform;
- const attrs = cabin => 'data-cabin-name="' + cabin.name + '" data-link-location="pricing_note" rel="noopener" target="_blank"';
- const airbnb = cabins.map(cabin => '<a class="button airbnb" ' + attrs(cabin) + ' href="' + airbnbLocalized(cabin.airbnb, lang) + '">' + label(cabin, 'Airbnb') + '</a>');
- const booking = '<a class="button secondary" data-cabin-name="All cabins" data-link-location="pricing_note" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + c.booking + (cabinId ? '' : ' (' + c.onAll + ')') + '</a>';
- // Trip.com/Ctrip anchors are hidden outside the Chinese pages (and when the channel is switched off) by bookingVisibility().
- // zh-CN: separate Ctrip (携程) and international Trip.com buttons; other languages keep one Trip.com/Ctrip button.
- const trip = cabins.flatMap(cabin => {
-  const zh = lang === 'zh-CN';
-  const links = ['<a class="button secondary" data-all-languages="true" ' + attrs(cabin) + ' href="' + cabin.ctrip + '">' + label(cabin, zh ? '携程' : c.trip) + '</a>'];
-  if (zh && cabin.tripcom) links.push('<a class="button secondary" data-all-languages="true" ' + attrs(cabin) + ' href="' + cabin.tripcom + '">' + label(cabin, 'Trip.com') + '</a>');
-  return links;
- });
- return '<p class="booking-links"><span>' + c.lead + '</span> ' + [...airbnb, booking, ...trip].join(' ') + '</p>';
+ const cabinName = cabinId ? facts.cabins.find(item => item.id === cabinId).name : 'All cabins';
+ return '<p class="booking-links">' + bookingButton(lang, cabinName, 'pricing_note') + '</p>';
 }
-
-// FAQ "How do I see prices…" answer: Airbnb and Trip.com have one button per cabin; Booking.com is a single property page that lists all three cabins as rooms.
-const faqPlatforms = {
- en: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com', all: 'All three cabins'},
- ja: {airbnb: 'Airbnb', booking: 'Booking.com', trip: 'Trip.com（携程）', all: '全棟'},
- 'zh-CN': {airbnb: 'Airbnb', booking: 'Booking.com', trip: '携程 Trip.com', all: '全部小屋'}
-};
 function faqBookingButtons(lang) {
- const p = faqPlatforms[lang];
- const row = (name, cls, extra, href) => '<p class="booking-links"><span>' + name + '</span> ' + facts.cabins.map(cabin =>
-  '<a class="button ' + cls + '" ' + extra + 'data-cabin-name="' + cabin.name + '" data-link-location="faq_booking" rel="noopener" target="_blank" href="' + href(cabin) + '">' + cabin.name.replace(/^Ocean Stay /, '') + '</a>').join(' ') + '</p>';
- return '<!-- faq-booking:start --><div class="booking-rows">'
-  + row(p.airbnb, 'airbnb', '', cabin => airbnbLocalized(cabin.airbnb, lang))
-  + '<p class="booking-links"><span>' + p.booking + '</span> <a class="button secondary" data-cabin-name="All cabins" data-link-location="faq_booking" rel="noopener" target="_blank" href="' + BOOKING_COM + '">' + p.all + '</a></p>'
-  + (lang === 'zh-CN'
-   ? row('携程', 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip) + row('Trip.com', 'secondary', 'data-all-languages="true" ', cabin => cabin.tripcom || cabin.ctrip)
-   : row(p.trip, 'secondary', 'data-all-languages="true" ', cabin => cabin.ctrip))
-  + '</div><!-- faq-booking:end -->';
+ return '<!-- faq-booking:start --><div class="booking-rows"><p class="booking-links">' + bookingButton(lang, 'All cabins', 'faq_booking') + '</p></div><!-- faq-booking:end -->';
 }
 
 function breadcrumbFor(file, lang, heading) {

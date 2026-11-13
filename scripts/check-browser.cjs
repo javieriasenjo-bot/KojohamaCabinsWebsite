@@ -37,6 +37,7 @@ let browser;
  };
  const results=[];
  for(const prefix of ['','ja/','zh-cn/']){
+  const bookingUrl='https://kagamiplanning.airhost.co/'+(prefix==='ja/'?'ja':prefix==='zh-cn/'?'zh':'en');
   for(const width of [320,390]){
    await page.setViewportSize({width,height:844});
    for(const route of ['', 'cabins/', 'things-to-do/']){
@@ -50,7 +51,7 @@ let browser;
   await menu.click();assert.equal(await menu.getAttribute('aria-expanded'),'true');
   const closeLabel=await menu.getAttribute('aria-label');await page.keyboard.press('Escape');
   assert.equal(await menu.getAttribute('aria-expanded'),'false');assert.notEqual(await menu.getAttribute('aria-label'),closeLabel);
-  await menu.click();await page.locator('#quick-reserve-open').click();assert.equal(await menu.getAttribute('aria-expanded'),'false');await page.locator('#quick-reserve-close').click();
+  const reserve=page.locator('a.quick-reserve-trigger');assert.equal(await reserve.count(),1);assert.equal(await reserve.getAttribute('href'),bookingUrl);assert.equal(await reserve.getAttribute('target'),'_blank');
   const trigger=page.locator('[data-gallery-open="zen"]').first();await trigger.click();
   const homeDialog=page.locator('#photo-lightbox');assert(await homeDialog.isVisible());
   await homeDialog.locator('img').evaluate(image=>image.decode());
@@ -77,13 +78,11 @@ let browser;
   assert((await viewer.evaluate(image=>image.naturalWidth))>smallWidth,'Viewer should fetch the full photo, not its thumbnail');
   await page.keyboard.press('Escape');assert(await thumb.evaluate(element=>element===document.activeElement));
   await stopNavigation();
-  const airbnb=await clickEvent('a[href*="airbnb."]:not([data-link-location="reviews"]):not([data-intent="reviews"])','airbnb_click');
-  assert.equal(airbnb.intent,'booking');assert.equal(airbnb.booking_platform,'airbnb');assert.equal(airbnb.cabin_name,'Ocean Stay Sol');
+  const booking=await clickEvent('a[href*="airhost.co"]','booking_click');
+  assert.equal(booking.intent,'booking');assert.equal(booking.booking_platform,'airhost');assert.equal(booking.cabin_name,'Ocean Stay Sol');assert.equal(booking.destination_url,bookingUrl);
+  assert.equal(await page.locator('a[href*="airbnb."]:not([data-link-location="reviews"]),a[href*="ctrip.com"],a[href*="trip.com"],a[href^="https://www.booking.com"]:not([data-intent="reviews"])').count(),0,'Only the AirHost link may be a booking link');
   const review=await clickEvent('a[href*="airbnb."][data-link-location="reviews"]','review_click');assert.equal(review.intent,'reviews');
   const bookingReview=await clickEvent('a[data-intent="reviews"][href*="booking.com"]','review_click');assert.equal(bookingReview.booking_platform,'booking.com');assert.equal(bookingReview.cabin_name,'All cabins');
-  // Trip.com (Ctrip) buttons are shown in every language (data-all-languages), and their clicks are tracked as bookings.
-  const ctrip = await clickEvent('a[href*="ctrip.com"]', 'booking_click');
-  assert.equal(ctrip.booking_platform, 'ctrip'); assert.equal(ctrip.cabin_name, 'Ocean Stay Sol');
   const email=await clickEvent('a[href^="mailto:"]','contact_click');assert.equal(email.contact_method,'email');assert.equal(email.intent,null);
   const language=await clickEvent('.languages a:not([aria-current])','language_change');assert.equal(language.cabin_name,null);assert.equal(language.intent,null);assert.equal(language.page_language,prefix==='ja/'?'ja':prefix==='zh-cn/'?'zh-CN':'en');
   results.push({language:prefix||'en',mobileWidths:[320,390],directoryPhotos:66,deepLinks:true,search:true,galleries:true,events:true});
@@ -92,7 +91,7 @@ let browser;
  assert(await page.locator('a[href*="/privacy/"]').count());
  const internal=await page.locator('a[href*="/location/"]').getAttribute('href');assert(internal.includes('utm_source=browser-check'));assert(!internal.includes('email='));
  await stopNavigation();await clickEvent('a[href*="line.me"]','contact_click');await clickEvent('.row.lang a[lang="ja"]','language_change');
- assert.equal(await page.locator('a[href*="ctrip.com"],a[href*="trip.com"]').count(),0);await clickEvent('a[href*="instagram.com"]','bio_link_click');
+ assert.equal(await page.locator('a[href*="ctrip.com"],a[href*="trip.com"],a[href*="airbnb."]').count(),0);const goBooking=await clickEvent('a[href*="airhost.co"]','booking_click');assert.equal(goBooking.destination_url,'https://kagamiplanning.airhost.co/en');await clickEvent('a[href*="instagram.com"]','bio_link_click');
  assert.equal(blocked.filter(url=>url.includes('googletagmanager.com')).length,0,'Local previews must not load GTM');
  const noJS=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const noJSRequests=[];
  await noJS.route('**/*',route=>{noJSRequests.push(route.request().url());return new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort()});

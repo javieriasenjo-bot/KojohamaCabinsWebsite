@@ -1,4 +1,9 @@
 {
+  "bookingUrl": {
+    "en": "https://kagamiplanning.airhost.co/en",
+    "ja": "https://kagamiplanning.airhost.co/ja",
+    "zh-CN": "https://kagamiplanning.airhost.co/zh"
+  },
   "bookingChannels": {
     "ctrip": true
   },

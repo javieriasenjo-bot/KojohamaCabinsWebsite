@@ -82,17 +82,28 @@ for(const relative of [
 }
 const facts=JSON.parse(fs.readFileSync(path.join(root,'data/site-facts.json'),'utf8'));
 for(const [file,text]of source){
- if(facts.bookingChannels?.ctrip && path.relative(root,file).replace(/\\/g,'/').startsWith('zh-cn/')) continue;
- const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'').replace(facts.bookingChannels?.ctrip?/<a\b[^>]*data-all-languages[^>]*>[\s\S]*?<\/a>/g:/$^/g,'');
- check(!/<a\b[^>]*href="https?:\/\/[^" ]*(?:ctrip\.com|trip\.com)[^" ]*"/.test(active),`${file}: inactive Ctrip booking link is still active`);
+ const rel=path.relative(root,file).replace(/\\/g,'/');
+ const lang=rel.startsWith('ja/')?'ja':rel.startsWith('zh-cn/')?'zh-CN':'en';
+ const active=text.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'');
+ // The only booking link on the site is the AirHost page for the visitor's language. Review links to the platforms are allowed.
+ for(const link of active.matchAll(/<a\b[^>]*href="(https?:\/\/[^" ]*(?:ctrip\.com|trip\.com|airbnb\.|booking\.com|agoda\.com)[^" ]*)"[^>]*>/g)){
+  check(/data-(?:link-location|intent)="reviews"/.test(link[0]),`${rel}: booking link ${link[1]} must be replaced by the AirHost link`);
+ }
+ for(const link of active.matchAll(/<a\b[^>]*href="(https?:\/\/kagamiplanning\.airhost\.co[^" ]*)"/g)){
+  check(link[1]===facts.bookingUrl[lang],`${rel}: AirHost link ${link[1]} is not the ${lang} booking URL`);
+ }
+ if(/^(?:(?:ja|zh-cn)\/)?(?:index|faq\/index|go\/index|cabins\/index|cabins\/ocean-stay-(?:sol|zen|rustic)\/index)\.html$/.test(rel)){
+  check(active.includes(`href="${facts.bookingUrl[lang]}"`),`${rel}: missing the AirHost booking link`);
+ }
  for(const block of active.matchAll(/<script\b[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)){
-  check(!/(?:ctrip\.com|trip\.com)/.test(block[1]),`${path.relative(root,file)}: inactive Ctrip URL remains in structured data`);
+  check(!/(?:ctrip\.com|trip\.com)/.test(block[1]),`${rel}: inactive Ctrip URL remains in structured data`);
  }
 }
 const llms=fs.readFileSync(path.join(root,'llms.txt'),'utf8');
 check(!llms.includes('guide.kojohamacabins.jp'),'llms.txt: publishes the private guest guide URL');
 check(facts.cabins.every(cabin=>llms.includes('Check-in from '+cabin.checkIn)),'llms.txt: cabin check-in times missing or different from shared facts');
-check(!/ctrip\.com|trip\.com\/hotels/.test(llms),'llms.txt: inactive booking URL');
+check(!/ctrip\.com|trip\.com\/hotels|airbnb\./.test(llms),'llms.txt: inactive booking URL');
+check(llms.includes(facts.bookingUrl.en),'llms.txt: missing the AirHost booking URL');
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
 const imageManifest=JSON.parse(fs.readFileSync(path.join(root,'data/asset-manifest.json'),'utf8'));
 for(const image of imageManifest.images){
@@ -138,8 +149,8 @@ for(const locale of ['en','ja','zh-CN']){
  const comparison=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
  for(const c of facts.cabins){
   const activeComparison=comparison.replace(/<!-- inactive-ctrip: [\s\S]*? -->/g,'').replace(/<a\b[^>]*data-all-languages[^>]*>[\s\S]*?<\/a>/g,'');
-  check(activeComparison.includes(c.airbnb),`${locale}: missing Airbnb channel for ${c.id}`);
-  check(facts.bookingChannels?.ctrip && locale==='zh-CN' ? activeComparison.includes(c.ctrip) : !activeComparison.includes(c.ctrip),`${locale}: wrong Ctrip visibility for ${c.id}`);
+  check(activeComparison.includes(facts.bookingUrl[locale]),`${locale}: comparison table is missing the AirHost link`);
+  check(!activeComparison.includes(c.airbnb)&&!activeComparison.includes(c.ctrip),`${locale}: comparison table still links ${c.id} to a booking platform`);
   const page=fs.readFileSync(path.join(root,prefix+`cabins/ocean-stay-${c.id}/index.html`),'utf8');
   for(const block of page.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)){
    const visit=node=>{

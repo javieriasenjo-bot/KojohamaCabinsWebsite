@@ -150,10 +150,10 @@
     }));
   });
 
-  document.querySelectorAll('a[href*="ctrip.com"], a[href*="trip.com"], a[href*="booking.com"], a[href*="agoda.com"]').forEach(link => {
+  document.querySelectorAll('a[href*="airhost.co"], a[href*="ctrip.com"], a[href*="trip.com"], a[href*="booking.com"], a[href*="agoda.com"]').forEach(link => {
     if (link.dataset.intent === 'reviews' || link.dataset.linkLocation === 'reviews') return;
     link.addEventListener('click', () => push('booking_click', {
-      booking_platform: link.href.includes('ctrip.com') ? 'ctrip' : link.href.includes('booking.com') ? 'booking.com' : link.href.includes('agoda.com') ? 'agoda' : 'trip.com',
+      booking_platform: link.href.includes('airhost.co') ? 'airhost' : link.href.includes('ctrip.com') ? 'ctrip' : link.href.includes('booking.com') ? 'booking.com' : link.href.includes('agoda.com') ? 'agoda' : 'trip.com',
       intent: 'booking',
       cabin_name: cabinName(link),
       destination_url: link.href,
@@ -196,7 +196,7 @@
       link.href = destination.href;
     });
     document.querySelectorAll('a[data-link-location]').forEach(link => {
-      if (/airbnb\.|ctrip\.com|trip\.com|booking\.com|agoda\.com|line\.me/.test(link.href) || link.href.startsWith('mailto:') || link.hasAttribute('lang')) return;
+      if (/airbnb\.|airhost\.co|ctrip\.com|trip\.com|booking\.com|agoda\.com|line\.me/.test(link.href) || link.href.startsWith('mailto:') || link.hasAttribute('lang')) return;
       link.addEventListener('click', event => {
         const details = {
           link_text: (link.querySelector('.t')?.textContent || link.textContent || '').trim().split('\n')[0],
@@ -258,22 +258,6 @@
       if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
     });
   });
-
-  // Floating reserve menu (all pages that include it)
-  const qrOpen = document.getElementById('quick-reserve-open');
-  const qrMenu = document.getElementById('quick-reserve-menu');
-  const qrClose = document.getElementById('quick-reserve-close');
-  if (qrOpen && qrMenu && qrClose) {
-    const setQr = open => {
-      qrMenu.hidden = !open;
-      qrOpen.setAttribute('aria-expanded', String(open));
-      if (open) qrClose.focus(); else if (qrMenu.contains(document.activeElement) || document.activeElement === document.body) qrOpen.focus();
-    };
-    qrOpen.addEventListener('click', () => setQr(qrMenu.hidden));
-    qrClose.addEventListener('click', () => setQr(false));
-    qrMenu.addEventListener('click', e => { if (e.target.closest('a')) setQr(false); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !qrMenu.hidden) setQr(false); });
-  }
 
   // Photo enlargement for cabin-page galleries
   const gal = [...document.querySelectorAll('.gallery-section img')];
