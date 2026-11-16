@@ -1,8 +1,8 @@
 {
   "bookingUrl": {
-    "en": "https://kagamiplanning.airhost.co/en",
-    "ja": "https://kagamiplanning.airhost.co/ja",
-    "zh-CN": "https://kagamiplanning.airhost.co/zh"
+    "en": "https://kagamiplanning.airhost.co/en/houses/999556",
+    "ja": "https://kagamiplanning.airhost.co/ja/houses/999556",
+    "zh-CN": "https://kagamiplanning.airhost.co/zh/houses/999556"
   },
   "bookingChannels": {
     "ctrip": true

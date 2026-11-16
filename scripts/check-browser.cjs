@@ -2,6 +2,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 const {chromium}=require(process.env.KOJOHAMA_PLAYWRIGHT_MODULE || 'playwright');
 const root=path.resolve(__dirname,'..');
+const facts=require('../data/site-facts.json');
 const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.webp':'image/webp','.jpg':'image/jpeg','.ico':'image/x-icon'};
 const server=http.createServer((request,response)=>{
  const pathname=decodeURIComponent(new URL(request.url,'http://localhost').pathname);
@@ -37,16 +38,40 @@ let browser;
  };
  const results=[];
  for(const prefix of ['','ja/','zh-cn/']){
-  const bookingUrl='https://kagamiplanning.airhost.co/'+(prefix==='ja/'?'ja':prefix==='zh-cn/'?'zh':'en');
+  const bookingUrl=facts.bookingUrl[prefix==='ja/'?'ja':prefix==='zh-cn/'?'zh-CN':'en'];
   for(const width of [320,390]){
    await page.setViewportSize({width,height:844});
-   for(const route of ['', 'cabins/', 'things-to-do/']){
+   for(const route of ['', 'cabins/', 'things-to-do/', 'cabins/ocean-stay-sol/', 'cabins/ocean-stay-zen/', 'cabins/ocean-stay-rustic/', 'guides/kojohama-onsen/']){
     await visit('/'+prefix+route);
     assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),prefix+route+' overflows at '+width);
+    if(route==='') {
+     const actions=page.locator('.hero-actions a');assert.equal(await actions.count(),2);
+     for(const action of await actions.all()){
+      assert(await action.isVisible(),'Hero action must be visible at '+width);
+      const box=await action.boundingBox(),heroBox=await page.locator('.hero').boundingBox();
+      assert(box.height>=44 && box.x>=0 && box.x+box.width<=width+1,'Hero action must fit and be touch-friendly');
+      assert(box.y>=heroBox.y && box.y+box.height<=heroBox.y+heroBox.height+1,'Hero action must not be clipped');
+     }
+     assert.equal(await actions.first().getAttribute('href'),bookingUrl);
+    }
+    if(process.env.KOJOHAMA_SCREENSHOTS && (route==='' || route==='cabins/')) {
+     const dir=process.env.KOJOHAMA_SCREENSHOTS;fs.mkdirSync(dir,{recursive:true});
+     const name=(prefix||'en').replaceAll('/','');
+     await page.screenshot({path:path.join(dir,name+'-'+(route?'comparison':'home')+'-'+width+'.png'),fullPage:false});
+    }
+    if(route==='cabins/') {
+     const region=page.locator('.cabin-comparison .comparison-scroll');await region.focus();await page.keyboard.press('ArrowRight');await page.waitForFunction(()=>document.querySelector('.cabin-comparison .comparison-scroll').scrollLeft>0,null,{timeout:3000});
+     assert(await region.evaluate(el=>el.scrollLeft>0),'Comparison must scroll independently on phones');
+     assert.equal(await page.locator('.comparison-photo-grid img').count(),3);
+     for(const image of await page.locator('.comparison-photo-grid img').all())await image.evaluate(img=>{img.loading='eager';return img.decode()});
+    }
    }
   }
   await page.setViewportSize({width:390,height:844});
   await visit('/'+prefix);
+  await stopNavigation();
+  const heroBooking=await clickEvent('.hero-actions a[data-link-location="homepage_hero"]','booking_click');
+  assert.equal(heroBooking.destination_url,bookingUrl);assert.equal(heroBooking.link_location,'homepage_hero');assert.equal(heroBooking.cabin_name,'All cabins');
   const menu=page.locator('.menu-toggle');
   await menu.click();assert.equal(await menu.getAttribute('aria-expanded'),'true');
   const closeLabel=await menu.getAttribute('aria-label');await page.keyboard.press('Escape');
@@ -78,7 +103,7 @@ let browser;
   assert((await viewer.evaluate(image=>image.naturalWidth))>smallWidth,'Viewer should fetch the full photo, not its thumbnail');
   await page.keyboard.press('Escape');assert(await thumb.evaluate(element=>element===document.activeElement));
   await stopNavigation();
-  const booking=await clickEvent('a[href*="airhost.co"]','booking_click');
+  const booking=await clickEvent('a[data-cabin-name="Ocean Stay Sol"][href*="airhost.co"]','booking_click');
   assert.equal(booking.intent,'booking');assert.equal(booking.booking_platform,'airhost');assert.equal(booking.cabin_name,'Ocean Stay Sol');assert.equal(booking.destination_url,bookingUrl);
   assert.equal(await page.locator('a[href*="airbnb."]:not([data-link-location="reviews"]),a[href*="ctrip.com"],a[href*="trip.com"],a[href^="https://www.booking.com"]:not([data-intent="reviews"])').count(),0,'Only the AirHost link may be a booking link');
   const review=await clickEvent('a[href*="airbnb."][data-link-location="reviews"]','review_click');assert.equal(review.intent,'reviews');
@@ -91,7 +116,7 @@ let browser;
  assert(await page.locator('a[href*="/privacy/"]').count());
  const internal=await page.locator('a[href*="/location/"]').getAttribute('href');assert(internal.includes('utm_source=browser-check'));assert(!internal.includes('email='));
  await stopNavigation();await clickEvent('a[href*="line.me"]','contact_click');await clickEvent('.row.lang a[lang="ja"]','language_change');
- assert.equal(await page.locator('a[href*="ctrip.com"],a[href*="trip.com"],a[href*="airbnb."]').count(),0);const goBooking=await clickEvent('a[href*="airhost.co"]','booking_click');assert.equal(goBooking.destination_url,'https://kagamiplanning.airhost.co/en');await clickEvent('a[href*="instagram.com"]','bio_link_click');
+ assert.equal(await page.locator('a[href*="ctrip.com"],a[href*="trip.com"],a[href*="airbnb."]').count(),0);const goBooking=await clickEvent('a[href*="airhost.co"]','booking_click');assert.equal(goBooking.destination_url,facts.bookingUrl.en);await clickEvent('a[href*="instagram.com"]','bio_link_click');
  assert.equal(blocked.filter(url=>url.includes('googletagmanager.com')).length,0,'Local previews must not load GTM');
  const noJS=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});const noJSRequests=[];
  await noJS.route('**/*',route=>{noJSRequests.push(route.request().url());return new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort()});

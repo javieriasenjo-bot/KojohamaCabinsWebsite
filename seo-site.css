@@ -54,6 +54,12 @@ body:lang(zh){font-family:"Noto Sans",Arial,"PingFang SC","Hiragino Sans GB","Mi
 .analytics-settings{margin:8px;background:transparent;color:inherit;border-color:currentColor}
 .analytics-choice button:focus-visible,.analytics-settings:focus-visible{outline:3px solid #39776b;outline-offset:3px}
 /* analytics-choice:end */
+
+/* Guest navigation keeps booking prominent and secondary pages easy to reach. */
+.topbar .nav-booking{font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.footer-navigation{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 20px;margin:24px auto 0;max-width:1000px}
+.footer-navigation a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}
+
 /* ==== end of shared rules: everything above this line is also compiled into home.css (scripts/styles.cjs) ==== */
 
 /* v12.6 around-the-cabins directory + BBQ */.near-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem}.near-list li{background:#f4f0e8;border-radius:14px}.near-list strong{display:block;color:#16324b}.near-min{display:inline-block;font-size:.8rem;font-weight:700;color:#5c6869;margin:.2rem 0 .35rem}.near-list p{margin:0;font-size:.95rem;line-height:1.5}.bbq-callout{border-left:4px solid #b8791f;background:#fbf5ea;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0}.bbq-callout h3{margin:0 0 .4rem}.bbq-callout p{margin:0}
@@ -217,3 +223,11 @@ body:has(.quick-reserve){padding-bottom:76px}
 .pricing-note>p{margin:0}.booking-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 0}.booking-links>span{font-weight:700;margin-right:4px}.booking-links .button{padding:10px 16px;font-size:.9rem;min-height:44px}
 .booking-rows{display:grid;gap:10px;margin-top:14px}.booking-rows .booking-links{margin:0}.booking-rows .booking-links>span{min-width:96px}
 @media(max-width:520px){.booking-rows .booking-links>span{flex-basis:100%;min-width:0}.booking-rows .booking-links .button{padding:10px 14px}}
+
+/* Existing, verified bedroom photographs make the comparison tangible. */
+.comparison-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.comparison-photo-grid article{min-width:0;background:#fff;padding:18px;border-radius:12px}
+.comparison-photo-grid h3{margin:0 0 12px}.comparison-photo-grid img{width:100%;height:auto;border-radius:6px}
+.comparison-photo-grid a{display:inline-block;min-height:44px;text-underline-offset:4px}
+.guide-stay-links{border-top:1px solid rgba(24,49,54,.16);padding-top:36px;padding-bottom:48px}
+@media(max-width:700px){.comparison-photo-grid{grid-template-columns:1fr}.comparison-photo-grid article{padding:16px}.guide-stay-links .button{min-height:48px}}

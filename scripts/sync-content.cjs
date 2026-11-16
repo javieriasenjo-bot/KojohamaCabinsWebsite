@@ -199,7 +199,7 @@ function walk(dir) {
 for (const absolute of walk(root)) {
  const file=path.relative(root,absolute).split(path.sep).join('/');
  const lang=file.startsWith('ja/')?'ja':file.startsWith('zh-cn/')?'zh-CN':'en';
- let source=read(file);
+ let source=require('./accommodation-content.cjs').update(read(file),file,lang);
  // The guest documents (house manuals, guide) are private: they are sent to guests after booking, never published.
  const mapCabin = file.match(/cabins\/ocean-stay-(sol|zen|rustic)\/index\.html$/)?.[1];
  if (mapCabin) {

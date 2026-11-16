@@ -1,0 +1,62 @@
+{
+  "en": {
+    "title": "Kojohama Cabins in Shiraoi, Hokkaido | Ocean Stay",
+    "description": "Stay in a private oceanfront cabin in Kojohama, Shiraoi. Compare Sol, Zen and Rustic: each sleeps up to five, with a kitchen and free parking. Check availability.",
+    "place": "Kojohama, Shiraoi · Hokkaido",
+    "heading": "Private oceanfront cabins in Kojohama, Shiraoi",
+    "intro": "Choose Sol, Zen or Rustic—three entire-home stays for up to five guests each, with a kitchen and free parking, near Noboribetsu and Upopoy.",
+    "brandLine": "Stay close to the Pacific.",
+    "availability": "Check availability",
+    "compare": "Compare the cabins",
+    "readGuide": "Read our local guide",
+    "coastPhoto": "Three Ocean Stay Kojohama cabins beside the Pacific at sunset",
+    "planStay": "Stay in Kojohama, explore Shiraoi",
+    "guideStay": "Make a private oceanfront cabin your base for the coast. Compare Sol, Zen and Rustic, then check available dates on our booking page.",
+    "guides": {
+      "onsen": {"path":"kojohama-onsen","type":"Nearby hot springs","title":"Plan an onsen visit","description":"Explore local day-use hot springs during your cabin stay. Our guide explains access and what to check before visiting; admission is separate."},
+      "itinerary": {"path":"two-day-shiraoi-itinerary","type":"Plan your stay","title":"Two days in Shiraoi","description":"Combine time by the sea with Upopoy, local food and nearby hot springs. Use our itinerary to plan outings from your cabin."},
+      "upopoy": {"path":"upopoy-from-kojohama","type":"Ainu culture","title":"Visit Upopoy from Kojohama","description":"Plan a visit to the National Ainu Museum and Park, with access information and links to the official visitor details."},
+      "noboribetsu": {"path":"noboribetsu-from-kojohama","type":"Day trip","title":"Explore Noboribetsu","description":"Use Kojohama as your coastal base for a day in Noboribetsu. Plan the journey, volcanic scenery and onsen-town walks."}
+    }
+  },
+  "ja": {
+    "title": "白老・虎杖浜の海辺の一棟貸し｜Ocean Stay",
+    "description": "北海道白老町・虎杖浜の海辺で一棟貸しに宿泊。Sol・Zen・Rusticは各棟最大5名、キッチン・無料駐車場付き。登別やウポポイ観光の拠点に、3棟の設備と空室をご確認ください。",
+    "place": "北海道・白老・虎杖浜",
+    "heading": "白老・虎杖浜で、海を眺める一棟貸しの宿",
+    "intro": "Sol・Zen・Rusticの3棟から、旅に合う一棟を。各棟最大5名、キッチンと無料駐車場付き。登別やウポポイへのお出かけにも便利です。",
+    "brandLine": "太平洋のそばで過ごす。",
+    "availability": "空室・料金を確認",
+    "compare": "3棟を比較",
+    "readGuide": "周辺ガイドを読む",
+    "coastPhoto": "夕暮れの太平洋に面したOcean Stay虎杖浜の3棟",
+    "planStay": "虎杖浜に泊まって、白老を楽しむ",
+    "guideStay": "海辺の一棟貸しを旅の拠点に。Sol・Zen・Rusticの違いを比較し、予約ページでご希望の日程の空室をご確認ください。",
+    "guides": {
+      "onsen": {"path":"kojohama-onsen","type":"近くの温泉","title":"虎杖浜で日帰り温泉を楽しむ","description":"キャビン滞在中に立ち寄れる周辺の温泉をご紹介。アクセスや訪問前の確認事項をまとめています。入浴料は別途必要です。"},
+      "itinerary": {"path":"two-day-shiraoi-itinerary","type":"旅の計画","title":"白老で過ごす2日間","description":"海辺の時間に、ウポポイや地元の食、近くの温泉を組み合わせて。キャビンを拠点にした旅の計画にお役立てください。"},
+      "upopoy": {"path":"upopoy-from-kojohama","type":"アイヌ文化","title":"虎杖浜からウポポイへ","description":"国立アイヌ民族博物館と公園を訪れる日の計画に。アクセス情報と、最新の開園情報を確認できる公式サイトをご案内します。"},
+      "noboribetsu": {"path":"noboribetsu-from-kojohama","type":"日帰りのお出かけ","title":"登別の景色と温泉街を歩く","description":"虎杖浜の海辺を拠点に登別へ。移動や火山の景観、温泉街の散策を計画するためのガイドです。"}
+    }
+  },
+  "zh-CN": {
+    "title": "北海道白老·虎杖浜海景独栋住宿｜Ocean Stay",
+    "description": "入住北海道白老町虎杖浜的独栋海景小屋。比较Sol、Zen与Rustic：每栋最多5人，配备厨房及免费停车位，方便游览登别与Upopoy。查看空房并规划海边假期。",
+    "place": "北海道·白老·虎杖浜",
+    "heading": "白老·虎杖浜的独栋海景小屋",
+    "intro": "从Sol、Zen和Rustic中选择适合您的小屋。每栋最多入住5人，配备厨房和免费停车位，也是游览登别与Upopoy的海边住宿据点。",
+    "brandLine": "住在太平洋身边。",
+    "availability": "查看空房与房价",
+    "compare": "比较三间小屋",
+    "readGuide": "阅读周边指南",
+    "coastPhoto": "夕阳下太平洋岸边的三栋Ocean Stay虎杖浜小屋",
+    "planStay": "住在虎杖浜，探索白老",
+    "guideStay": "以独栋海景小屋为旅行据点。比较Sol、Zen和Rustic的特色，再到预订页面查看所需日期的空房。",
+    "guides": {
+      "onsen": {"path":"kojohama-onsen","type":"附近温泉","title":"安排虎杖浜日归温泉之旅","description":"入住小屋期间，探索附近的日归温泉。指南介绍交通及出发前需确认的事项；温泉入场费另付。"},
+      "itinerary": {"path":"two-day-shiraoi-itinerary","type":"行程规划","title":"在白老度过两天","description":"把海边时光与Upopoy、当地美食及附近温泉相结合。参考行程，从小屋出发探索白老。"},
+      "upopoy": {"path":"upopoy-from-kojohama","type":"阿伊努文化","title":"从虎杖浜前往Upopoy","description":"规划国立阿伊努民族博物馆与公园之旅，查看交通信息，并通过官方链接确认最新参观安排。"},
+      "noboribetsu": {"path":"noboribetsu-from-kojohama","type":"一日游","title":"探索登别与温泉街","description":"以虎杖浜海岸为据点前往登别。提前规划交通、火山景观和温泉街散步路线。"}
+    }
+  }
+}

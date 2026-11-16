@@ -259,5 +259,19 @@ for(const relative of ['go/index.html','ja/go/index.html','zh-cn/go/index.html']
  const facts=text.match(/<div class="facts">([\s\S]*?)<\/div>\s*<\/div>/)?.[1]||'';
  check(!/<p>/.test(facts),`${relative}: facts tile contains a sentence instead of a fact`);
 }
+for(const [lang,prefix] of [['en',''],['ja','ja/'],['zh-CN','zh-cn/']]){
+ const home=fs.readFileSync(path.join(root,prefix+'index.html'),'utf8');
+ check(home.includes('data-link-location="homepage_hero"'),lang+': missing homepage availability action');
+ check(facts.bookingUrl[lang].endsWith('/houses/999556'),lang+': booking link must target Kojohama');
+ const cards=fs.readFileSync(path.join(root,prefix+'cabins/index.html'),'utf8');
+ for(const c of facts.cabins){
+  const label=lang==='en'?c.maxGuests+' guests · '+c.beds+' beds':lang==='ja'?c.maxGuests+' 名 · '+c.beds+' 台のベッド':c.maxGuests+'人 · '+c.beds+'张床';
+  check(cards.includes('data-cabin-facts="'+c.id+'">'+label+'</p>'),lang+': '+c.id+' card facts do not match approved data');
+ }
+ const nav=home.match(/<nav[^>]*id="site-navigation"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
+ check((nav.match(/<a\b/g)||[]).length===5,lang+': primary navigation must contain four guest links and booking');
+ check(/class="footer-navigation"/.test(home),lang+': missing secondary navigation');
+ for(const slug of ['kojohama-onsen','upopoy-from-kojohama','noboribetsu-from-kojohama'])check(home.includes('href="/'+prefix+'guides/'+slug+'/"'),lang+': missing internal guide link '+slug);
+}
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1}
 else console.log(`PASS: ${pages.length} HTML files, ${references} local references, ${schemas} structured-data blocks, ${inlineScripts} inline scripts, 66 venues in three languages, booking channels and source deployment exclusions.`);
