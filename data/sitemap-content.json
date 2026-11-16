@@ -52,11 +52,15 @@
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/guides/one-day-kojohama-coast/": {
-    "hash": "92d7267b4629932adda9c4551f7d7881a2e9eaeff9b3192c1cdc5ea7b97b8d87",
+    "hash": "f70c7894ca41215b369ba6eace5bbc27491a879b76d4053c22dcf29f103a3ac4",
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/guides/outdoors-family-fishing/": {
     "hash": "d84de26a6f0be43bf53b1680f0391c3179783afd353c6c02216c9b660c29ec83",
+    "lastmod": "2026-11-16"
+  },
+  "https://kojohamacabins.jp/guides/shiraoi-kojohama-coast/": {
+    "hash": "3cf61ba4e19055a266617c11f862a50e5f55ecdc10cf7f810842987f4d742a21",
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/guides/stay-between-upopoy-noboribetsu/": {
@@ -124,11 +128,15 @@
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/ja/guides/one-day-kojohama-coast/": {
-    "hash": "1e21faae850a6072b31d1a0492e88ccce0a6efa8d62b721f55b5d4fb9d34f64a",
+    "hash": "722c26515cfc0ea1282705b6e67226b9b450312537a94ed2a3f493b1f60347b9",
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/ja/guides/outdoors-family-fishing/": {
     "hash": "b4222744bec40700e6aee174edbc05025fd99cf8fbef888aa124728edcdb0be7",
+    "lastmod": "2026-11-16"
+  },
+  "https://kojohamacabins.jp/ja/guides/shiraoi-kojohama-coast/": {
+    "hash": "ea5af807bc2a0dcbada8082cf960ae19391f3bd9d8c79299b22562e7ce0eec34",
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/ja/guides/stay-between-upopoy-noboribetsu/": {
@@ -164,8 +172,8 @@
     "lastmod": "2026-11-13"
   },
   "https://kojohamacabins.jp/ja/things-to-do/": {
-    "hash": "2eb075e4713124bf130aa3e57fd6581359aae709960235fcba0e23940215e561",
-    "lastmod": "2026-11-10"
+    "hash": "e08e8e725ab7ab1dcc3b29fbf14c14539aba0ac505582c418da199b57d1690ba",
+    "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/ja/work-remotely/": {
     "hash": "92ce32879a1e27e2cfe8f49ddff26ddaa2d70a9d6050a6710b9db520f43c8594",
@@ -192,8 +200,8 @@
     "lastmod": "2026-11-13"
   },
   "https://kojohamacabins.jp/things-to-do/": {
-    "hash": "67f912d1236a96f467ed0572128d799588824a5fd4a7c3a60d13affa8c377778",
-    "lastmod": "2026-11-10"
+    "hash": "fc2cfb4cbf7491c8cc36a36d34c28fc632b0cca1a9ce41f4fb19100b23106770",
+    "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/work-remotely/": {
     "hash": "b84d281bf7e1643cb69a4838c862dc41602b91b1f16c53e890f4af811aa9d554",
@@ -252,11 +260,15 @@
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/zh-cn/guides/one-day-kojohama-coast/": {
-    "hash": "e3a742fd0dc52a0a6d52ce7f9400d8ee2766327350595c808c11625331d25f1d",
+    "hash": "ac8ddb782728b9538e21606aa16f61dda85c23ba12971490d6a1cad5bb74fccd",
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/zh-cn/guides/outdoors-family-fishing/": {
     "hash": "15c605448a471d471e1ebb7dbb3553ce3e9ad8fba901e6dac782201e1bac0cc1",
+    "lastmod": "2026-11-16"
+  },
+  "https://kojohamacabins.jp/zh-cn/guides/shiraoi-kojohama-coast/": {
+    "hash": "e750ac61ff4a0f0c909632e7abc89de7d99ea9daaf9df1835be4ce0f1c9b1f4d",
     "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/zh-cn/guides/stay-between-upopoy-noboribetsu/": {
@@ -292,8 +304,8 @@
     "lastmod": "2026-11-13"
   },
   "https://kojohamacabins.jp/zh-cn/things-to-do/": {
-    "hash": "5f807c3f23c04b4fbf2d1aa946105e72a1e6a72080d18f41a59a14ae577cfdfa",
-    "lastmod": "2026-11-10"
+    "hash": "21574cf8640dc42c83430538a53acced9dd24457001f477455f2aa9c3e0f7338",
+    "lastmod": "2026-11-16"
   },
   "https://kojohamacabins.jp/zh-cn/work-remotely/": {
     "hash": "779bc39b1f0fe165a0ee8b1f49877e4552e895a910628a30605d49504c696417",
