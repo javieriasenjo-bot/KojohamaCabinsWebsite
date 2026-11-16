@@ -11,7 +11,8 @@
     "review:venues": "node scripts/review-venues.cjs",
     "indexnow:preview": "node scripts/indexnow.cjs",
     "indexnow:submit": "node scripts/indexnow.cjs --submit",
-    "audit:search": "node scripts/audit-search.cjs"
+    "audit:search": "node scripts/audit-search.cjs",
+    "check:responsive": "node scripts/check-responsive.cjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

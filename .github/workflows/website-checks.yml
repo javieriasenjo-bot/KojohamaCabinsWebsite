@@ -24,8 +24,9 @@ jobs:
           git diff --exit-code
           test -z "$(git ls-files --others --exclude-standard)"
       - run: npm run check
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - run: npm run check:browser
+      - run: npm run check:responsive
   venue-review:
     runs-on: ubuntu-latest
     steps:

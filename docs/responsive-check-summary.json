@@ -1,0 +1,650 @@
+{
+  "checks": 90,
+  "engines": [
+    "chromium",
+    "webkit"
+  ],
+  "mobileWidths": [
+    320,
+    390,
+    430
+  ],
+  "tabletDesktopWidths": [
+    768,
+    1440
+  ],
+  "noRealExternalRequestsSent": true,
+  "physicalDeviceTest": false,
+  "results": [
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "home",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "cabins/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "home",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "home",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "cabins/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "home",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "home",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "cabins/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "home",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "home",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "cabins/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "home",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "home",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "cabins/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "home",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "chromium",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "home",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "cabins/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "home",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 320,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "home",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "cabins/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "home",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 390,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "home",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "cabins/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "home",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 430,
+      "touch": true
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "home",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "cabins/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "home",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 768,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "home",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "cabins/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "en",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "home",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "cabins/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "ja",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "home",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "cabins/",
+      "width": 1440,
+      "touch": false
+    },
+    {
+      "engine": "webkit",
+      "language": "zh-CN",
+      "route": "guides/shiraoi-kojohama-coast/",
+      "width": 1440,
+      "touch": false
+    }
+  ]
+}
