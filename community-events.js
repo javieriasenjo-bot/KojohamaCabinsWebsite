@@ -220,13 +220,14 @@
   /** One malformed record must never break the section: skip it instead. */
   function valid(event) {
     return Boolean(event) && typeof event === 'object'
-      && typeof event.id === 'string' && /^[\w-]+$/.test(event.id)
+      && typeof event.id === 'string' && /^\S+$/.test(event.id)
       && scheduleOk(event)
       && hasCopy(event.title) && hasCopy(event.summary) && hasCopy(event.venue);
   }
   function card(event, finished) {
     const article = element('article');
-    article.id = event.id;
+    // Auto-ingested ids look like "upopoy:https://…:2026-11-21"; keep the DOM id a safe slug.
+    article.id = event.id.replace(/[^\w-]+/g, '-').replace(/^-+|-+$/g, '');
     if (event.ongoing === true) article.dataset.eventOngoing = 'true';
     else article.dataset.eventEnd = event.end;
     article.append(element('h3', pick(event.title)));
