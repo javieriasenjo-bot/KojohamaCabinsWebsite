@@ -27,6 +27,7 @@ const addedIds = [
 ];
 const asiknep = 'アシ\u31f0ネ\u31f7\u309a';
 const parkingUrl = 'https://www.visit-hokkaido.jp/event/detail_11429.html';
+const newIds2026Nov17 = ['shiraoi-tsugaru-fair-2026-11-28', 'upopoy-animal-fur-2026-12-12', 'upopoy-ainu-nature-2026-12-13'];
 const preservedHash = 'fd62ff3404149bcd625dda5a232259172bd734d4745161e9e0eab90866410482';
 
 function dedent(text) {
@@ -124,13 +125,13 @@ async function boot(embed, fetchImpl, cards) {
   return section;
 }
 
-assert.equal(data.checkedOn, '2026-11-10');
-assert.equal(data.events.length, 15);
-assert.deepEqual(data.events.map(event => event.id), preservedIds.concat(addedIds));
+assert.equal(data.checkedOn, '2026-11-17');
+assert.equal(data.events.length, 18);
+assert.deepEqual(data.events.map(event => event.id), preservedIds.concat(addedIds, newIds2026Nov17));
 assert.equal(crypto.createHash('sha256').update(JSON.stringify(preservedIds.map(id => data.events.find(event => event.id === id)))).digest('hex'), preservedHash);
 assert.equal(new Set(data.events.map(event => event.id)).size, data.events.length);
-assert.deepEqual(monitor.events.map(event => event.id), addedIds);
-assert.equal(monitor.checkedOn, '2026-11-10');
+assert.deepEqual(monitor.events.map(event => event.id), addedIds.concat(newIds2026Nov17));
+assert.equal(monitor.checkedOn, '2026-11-17');
 assert.equal(monitor.timeZone, 'Asia/Tokyo');
 assert.equal(monitor.expiry.daysAfterEnd, 14);
 assert.equal(monitor.recurrence, 'none');
@@ -145,7 +146,7 @@ const byId = Object.fromEntries(data.events.map(event => [event.id, event]));
 const monitored = Object.fromEntries(monitor.events.map(event => [event.id, event]));
 const langs = ['en', 'ja', 'zh', 'zh-TW'];
 const banned = [/EMAIL-ONLY/, /Do not cite/i, /Do not use/i, /20\s?km/i, /spectator/i, /観戦/, /観覧/, /Facebook/, /Instagram/, /not published/i, /offline/i, /upopoy-univ-r8-2/];
-for (const id of addedIds) {
+for (const id of addedIds.concat(newIds2026Nov17)) {
   const event = byId[id];
   const spec = monitored[id];
   assert.equal(spec.recurrence, null, id);
@@ -215,11 +216,15 @@ assert.match(language.summary.en, /11:30/);
 assert.match(language.summary.en, /14:00/);
 assert.match(language.summary.en, /15 places/);
 
+// 17 Nov 2026: official pages now publish the times for these three; the summaries carry them.
 for (const id of ['upopoy-tempa-tempa-2026-11-21', 'upopoy-hozonkai-dance-2026-11', 'muroran-small-party-vol-2-2026-12-06']) {
-  assert.equal(monitored[id].times, null, id);
-  assert.equal(/\d{1,2}:\d{2}/.test(byId[id].summary.en), false, id);
+  assert.equal(typeof monitored[id].times, 'string', id);
+  assert.equal(/\d{1,2}:\d{2}/.test(byId[id].summary.en), true, id);
 }
-assert.equal(byId['upopoy-tempa-tempa-2026-11-21'].url, 'https://ainu-upopoy.go.jp/calendar/');
+assert.equal(byId['upopoy-tempa-tempa-2026-11-21'].url, 'https://ainu-upopoy.go.jp/event/holiday261121/');
+assert.match(byId['upopoy-tempa-tempa-2026-11-21'].summary.en, /10:00–12:00 and 13:30–15:30/);
+assert.match(byId['upopoy-hozonkai-dance-2026-11'].summary.en, /12:00–12:30/);
+assert.match(byId['muroran-small-party-vol-2-2026-12-06'].summary.en, /10:00–21:00/);
 assert.equal(JSON.stringify(data).includes('upopoy-univ-r8-2'), false);
 
 const denzai = addedIds.filter(id => id.startsWith('muroran-emiran-'));
@@ -276,7 +281,7 @@ for (const lang of ['en', 'ja', 'zh-CN']) {
   const onibiHtml = article(html, onibi.id);
   assert.equal(onibiHtml.includes('data-event-ongoing="true"'), true);
   assert.equal(onibiHtml.includes('<time'), false, lang);
-  assert.equal(html.includes('2026-11-10'), true);
+  assert.equal(html.includes('2026-11-17'), true);
   assert.equal(html.includes('toratake-kanbara-2026-10-24'), true);
   assert.equal(html.includes('id="toratake-kanbara-2026-10-24"'), false);
   assert.equal(html.includes('upopoy-univ-r8-2'), false);
@@ -284,7 +289,7 @@ for (const lang of ['en', 'ja', 'zh-CN']) {
 }
 const english = localEvents('en');
 assert.equal(article(english, onibi.id).includes('Year-round'), true);
-assert.equal(article(english, 'muroran-kiran-matsuri-2026').includes(' – '), true);
+assert.equal(article(english, 'upopoy-animal-fur-2026-12-12').includes(' – '), true);
 
 async function main() {
 const sourceFeed = {
@@ -370,7 +375,7 @@ const inventory = addedIds.map(id => {
     url: event.url
   };
 });
-const artifactDir = '/opt/cursor/artifacts';
+const artifactDir = process.env.EVENT_ARTIFACT_DIR || '/opt/cursor/artifacts';
 fs.mkdirSync(artifactDir, {recursive: true});
 fs.writeFileSync(path.join(artifactDir, 'event-inventory-2026-11-10.json'), JSON.stringify({
   baseline: '2fcc3cc883deb5aaec4e8b2b60df9eb5650d3983',
@@ -383,7 +388,7 @@ fs.writeFileSync(path.join(artifactDir, 'event-inventory-2026-11-10.json'), JSON
   events: inventory
 }, null, 2) + '\n');
 require('./event-contract.cjs');
-console.log('PASS: 12 added identities, 3 preserved events, session dates, 14-day Japan expiry, stale-feed merge.');
+console.log('PASS: 12 added identities (10 Nov), 3 added identities (17 Nov), 3 preserved events, session dates, 14-day Japan expiry, stale-feed merge.');
 console.log(inventory.map(item => [item.id, item.area, item.sessions || (item.ongoing ? 'ongoing' : item.start + '..' + item.end), item.phaseOn2026Nov10].join(' | ')).join('\n'));
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });
