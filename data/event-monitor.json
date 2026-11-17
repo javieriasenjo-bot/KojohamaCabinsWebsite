@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedOn": "2026-11-10",
+  "checkedOn": "2026-11-17",
   "timeZone": "Asia/Tokyo",
   "expiry": {
     "daysAfterEnd": 14,
@@ -75,8 +75,9 @@
       "ongoing": false,
       "recurrence": null,
       "area": "Shiraoi",
-      "times": null,
+      "times": "10:00-12:00, 13:30-15:30",
       "sources": [
+        "https://ainu-upopoy.go.jp/event/holiday261121/",
         "https://ainu-upopoy.go.jp/calendar/"
       ],
       "doNotCite": [
@@ -97,8 +98,9 @@
       "ongoing": false,
       "recurrence": null,
       "area": "Shiraoi",
-      "times": null,
+      "times": "each session day 12:00-12:30 and 14:00-14:30",
       "sources": [
+        "https://ainu-upopoy.go.jp/event/hozonkai2026-11/",
         "https://ainu-upopoy.go.jp/event/hozonkai_2026/",
         "https://ainu-upopoy.go.jp/calendar/"
       ],
@@ -207,7 +209,7 @@
       "ongoing": false,
       "recurrence": null,
       "area": "Muroran",
-      "times": null,
+      "times": "10:00-21:00 (event flyer on the source page)",
       "sources": [
         "https://senshubanzeido.com/information/387/"
       ]
@@ -225,6 +227,53 @@
       "sources": [
         "https://www.laketoya.com/event/illumination/"
       ]
+    },
+    {
+      "id": "shiraoi-tsugaru-fair-2026-11-28",
+      "titleJa": "白老町・つがる市姉妹都市交流企画「つがる市特産品即売フェア」",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": "09:00-11:00",
+      "sources": [
+        "https://www.town.shiraoi.hokkaido.jp/docs/page2022103100010.html"
+      ],
+      "addedOn": "2026-11-17"
+    },
+    {
+      "id": "upopoy-animal-fur-2026-12-12",
+      "titleJa": "動物の毛皮に触ってみよう",
+      "start": "2026-12-12",
+      "end": "2026-12-13",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": "09:00-17:00 both days",
+      "sources": [
+        "https://ainu-upopoy.go.jp/event/animal_fur2026-12/",
+        "https://ainu-upopoy.go.jp/lp/animal_fur/"
+      ],
+      "addedOn": "2026-11-17"
+    },
+    {
+      "id": "upopoy-ainu-nature-2026-12-13",
+      "titleJa": "【事前申込制】ホリデーイベント「アイヌと自然～アイヌの歌と物語に出てくる動植物の紹介～」",
+      "start": "2026-12-13",
+      "end": "2026-12-13",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Shiraoi",
+      "times": "10:30-11:30",
+      "sources": [
+        "https://ainu-upopoy.go.jp/event/holiday261213/",
+        "https://ainu-upopoy.go.jp/calendar/"
+      ],
+      "addedOn": "2026-11-17"
     }
   ],
   "legacyIdAliases": {

@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-11-10",
+  "checkedOn": "2026-11-17",
   "events": [
     {
       "id": "toratake-kanbara-2026-10-24",
@@ -137,7 +137,7 @@
       "end": "2026-11-21",
       "category": "seasonal",
       "source": "curated",
-      "url": "https://ainu-upopoy.go.jp/calendar/",
+      "url": "https://ainu-upopoy.go.jp/event/holiday261121/",
       "title": {
         "en": "Holiday exhibition experience “テンパテンパしてみよう！”",
         "ja": "ホリデーイベント 展示体験「テンパテンパしてみよう！」",
@@ -145,16 +145,16 @@
         "zh-TW": "假日展覽體驗「テンパテンパしてみよう！」"
       },
       "summary": {
-        "en": "21 November 2026. The Upopoy calendar lists this holiday exhibition experience on that Saturday. It does not give a start or finish time.",
-        "ja": "2026年11月21日（土）。ウポポイのイベントカレンダーに、この日のホリデーイベントとして展示体験「テンパテンパしてみよう！」が載っています。開始・終了時刻は書かれていません。",
-        "zh": "2026年11月21日（星期六）。乌波波伊活动日历将假日展览体验「テンパテンパしてみよう！」列在这一天。日历没有写出开始或结束时间。",
-        "zh-TW": "2026年11月21日（星期六）。烏波波伊活動日曆將假日展覽體驗「テンパテンパしてみよう！」列在這一天。日曆沒有寫出開始或結束時間。"
+        "en": "Saturday 21 November 2026, 10:00–12:00 and 13:30–15:30, in the Tenpa Tenpa hands-on corner (t.1–t.3) of the National Ainu Museum's 2nd-floor basic exhibition room at Upopoy, Shiraoi. Museum staff are at the 18 hands-on units during these hours. Free, same-day first come; go straight to the venue. Children of elementary-school age and younger need a guardian. Photos are allowed; video and audio recording are not. Upopoy and museum entry: see the official ticket information.",
+        "ja": "2026年11月21日（土）10:00～12:00、13:30～15:30。ウポポイ（白老）国立アイヌ民族博物館2階 基本展示室 探究展示「テンパテンパ」（t.1、t.2、t.3）。この時間帯は18の体験ユニットに学芸スタッフがつきます。参加費無料、当日受付・先着順、直接会場へ。小学生以下は保護者同伴。写真撮影可、録画・録音不可。ウポポイと博物館の入場はチケット案内をご覧ください。",
+        "zh": "2026年11月21日（星期六）10:00–12:00、13:30–15:30，白老乌波波伊国立阿伊努民族博物馆2层基本展厅探究展示「Tenpa Tenpa」（t.1–t.3）。此时段有学艺员在18个体验单元陪同。免费，当天先到先得，直接前往会场。小学生及以下需监护人陪同。可拍照，不可录像或录音。乌波波伊与博物馆入场请看官方门票说明。",
+        "zh-TW": "2026年11月21日（星期六）10:00–12:00、13:30–15:30，白老烏波波伊國立阿伊努民族博物館2樓基本展示室探究展示「Tenpa Tenpa」（t.1–t.3）。此時段有學藝員在18個體驗單元陪同。免費，當天先到先得，直接前往會場。國小學生及以下需監護人陪同。可拍照，不可錄影或錄音。烏波波伊與博物館入場請看官方門票說明。"
       },
       "venue": {
-        "en": "Upopoy, National Ainu Museum and Park, Shiraoi",
-        "ja": "ウポポイ（民族共生象徴空間）、白老町",
-        "zh": "乌波波伊（民族共生象征空间），白老町",
-        "zh-TW": "烏波波伊（民族共生象徵空間），白老町"
+        "en": "National Ainu Museum 2F basic exhibition room, Upopoy, Shiraoi",
+        "ja": "国立アイヌ民族博物館 2階 基本展示室（ウポポイ・白老）",
+        "zh": "国立阿伊努民族博物馆2层基本展厅（白老乌波波伊）",
+        "zh-TW": "國立阿伊努民族博物館2樓基本展示室（白老烏波波伊）"
       }
     },
     {
@@ -169,7 +169,7 @@
       ],
       "category": "seasonal",
       "source": "curated",
-      "url": "https://ainu-upopoy.go.jp/event/hozonkai_2026/",
+      "url": "https://ainu-upopoy.go.jp/event/hozonkai2026-11/",
       "title": {
         "en": "Ainu traditional dance by regional preservation groups",
         "ja": "各地域の保存会によるアイヌ古式舞踊披露",
@@ -177,16 +177,16 @@
         "zh-TW": "各地區保存會的阿伊努傳統舞蹈表演"
       },
       "summary": {
-        "en": "Traditional Ainu dance by regional preservation groups at Upopoy. The remaining November 2026 dates are 21, 22, 28 and 29 November only, not the days in between. 21 November: 札幌ウポポ保存会. 22 November: 千歳アイヌ文化伝承保存会. 28 and 29 November: 帯広カムイトウウポポ保存会. Start times are not stated. The 3 November performance has already taken place.",
-        "ja": "ウポポイで各地域の保存会が披露するアイヌ古式舞踊です。2026年11月の残りの日程は11月21日、22日、28日、29日だけで、その間の日は含まれません。21日は札幌ウポポ保存会、22日は千歳アイヌ文化伝承保存会、28日と29日は帯広カムイトウウポポ保存会です。開始時刻は書かれていません。11月3日の公演は終了しています。",
-        "zh": "乌波波伊由各地区保存会表演的阿伊努传统舞蹈。2026年11月尚未举行的日期只有11月21日、22日、28日和29日，不包括这几天之间的日期。21日是札幌ウポポ保存会，22日是千歳アイヌ文化伝承保存会，28日和29日是帯広カムイトウウポポ保存会。页面没有写出开始时间。11月3日的演出已经结束。",
-        "zh-TW": "烏波波伊由各地區保存會表演的阿伊努傳統舞蹈。2026年11月尚未舉行的日期只有11月21日、22日、28日和29日，不包括這幾天之間的日期。21日是札幌ウポポ保存会，22日是千歳アイヌ文化伝承保存会，28日和29日是帯広カムイトウウポポ保存会。頁面沒有寫出開始時間。11月3日的演出已經結束。"
+        "en": "Uekari Cise (experience exchange hall), Upopoy, Shiraoi. Remaining November 2026 performances: 21 November, Sapporo Upopo Preservation Society; 22 November, Chitose Ainu Culture Transmission Society; 28 and 29 November, Obihiro Kamuy Tou Upopo Preservation Society. Each of these days: 12:00–12:30 dance with an Ainu culture experience, and 14:00–14:30 dance. Get a numbered ticket on the day in front of Uekari Cise. The 3 November performance by the Akan and Shiranuka societies has already been held. These are single dates, not a daily run.",
+        "ja": "ウポポイ（白老）ウエカリチセ（体験交流ホール）。2026年11月の残りの公演：21日（土）札幌ウポポ保存会、22日（日）千歳アイヌ文化伝承保存会、28日（土）・29日（日）帯広カムイトウウポポ保存会。各日12:00～12:30（舞踊披露／アイヌ文化体験）、14:00～14:30（舞踊披露）。当日、ウエカリチセ前で整理券をお求めください。11月3日（火・祝）の阿寒アイヌ民族文化保存会・白糠アイヌ文化保存会の公演は開催済みです。毎日上演されるものではありません。",
+        "zh": "白老乌波波伊 Uekari Cise（体验交流厅）。2026年11月尚未举行的演出：11月21日札幌乌波波保存会；11月22日千岁阿伊努文化传承保存会；11月28日、29日带广卡姆依托乌波波保存会。以上每天12:00–12:30（舞蹈与阿伊努文化体验）、14:00–14:30（舞蹈）。当天在Uekari Cise前领取整理券。11月3日阿寒与白糠保存会的演出已经举行。并非每天都有演出。",
+        "zh-TW": "白老烏波波伊 Uekari Cise（體驗交流廳）。2026年11月尚未舉行的演出：11月21日札幌烏波波保存會；11月22日千歲阿伊努文化傳承保存會；11月28日、29日帶廣卡姆依托烏波波保存會。以上每天12:00–12:30（舞蹈與阿伊努文化體驗）、14:00–14:30（舞蹈）。當天在Uekari Cise前領取整理券。11月3日阿寒與白糠保存會的演出已經舉行。並非每天都有演出。"
       },
       "venue": {
-        "en": "Upopoy, National Ainu Museum and Park, Shiraoi",
-        "ja": "ウポポイ（民族共生象徴空間）、白老町",
-        "zh": "乌波波伊（民族共生象征空间），白老町",
-        "zh-TW": "烏波波伊（民族共生象徵空間），白老町"
+        "en": "Uekari Cise (experience exchange hall), Upopoy, Shiraoi",
+        "ja": "ウエカリチセ（体験交流ホール）（ウポポイ・白老）",
+        "zh": "Uekari Cise体验交流厅（白老乌波波伊）",
+        "zh-TW": "Uekari Cise體驗交流廳（白老烏波波伊）"
       }
     },
     {
@@ -358,10 +358,10 @@
         "zh-TW": "The Small Party 2026 Vol.2"
       },
       "summary": {
-        "en": "6 December 2026 at Senshubanzeido in Kaigan-chō, Muroran. The notice gives the date and the Muroran address. It does not state a start or finish time, a price, or the programme.",
-        "ja": "2026年12月6日、室蘭市海岸町の千穐萬歳堂で「The Small Party 2026 Vol.2」があります。告知にあるのは日付と室蘭の所在地です。開始・終了時刻、料金、内容は書かれていません。",
-        "zh": "2026年12月6日，在室兰市海岸町的千穐萬歳堂举行 The Small Party 2026 Vol.2。公告只写了日期和室兰的地址。没有写出开始或结束时间、费用和活动内容。",
-        "zh-TW": "2026年12月6日，在室蘭市海岸町的千穐萬歳堂舉行 The Small Party 2026 Vol.2。公告只寫了日期和室蘭的地址。沒有寫出開始或結束時間、費用和活動內容。"
+        "en": "Sunday 6 December 2026, 10:00–21:00, at Senshubanzeido (千穐萬歳堂), Kaigan-cho 3-2-10, Muroran. The event flyer on the announcement lists a makers market, food and drink, live music, DJs, dance, fashion and vintage stalls. Free entry.",
+        "ja": "2026年12月6日（日）10:00～21:00、室蘭市海岸町3-2-10の千穐萬歳堂。告知のチラシによると、マーケット、フード＆ドリンク、ライブ、DJ、ダンス、ファッション・古着などの出店があります。入場料無料。",
+        "zh": "2026年12月6日（星期日）10:00–21:00，室兰市海岸町3-2-10千穐萬歳堂。公告传单列出手作市集、餐饮、现场音乐、DJ、舞蹈、时装与古着摊位。免费入场。",
+        "zh-TW": "2026年12月6日（星期日）10:00–21:00，室蘭市海岸町3-2-10千穐萬歳堂。公告傳單列出手作市集、餐飲、現場音樂、DJ、舞蹈、時裝與古著攤位。免費入場。"
       },
       "venue": {
         "en": "Senshubanzeido (千穐萬歳堂), Kaigan-chō, Muroran",
@@ -394,6 +394,84 @@
         "ja": "にぎわい広場（洞爺湖温泉、洞爺湖町）",
         "zh": "热闹广场（洞爷湖温泉，洞爷湖町）",
         "zh-TW": "熱鬧廣場（洞爺湖溫泉，洞爺湖町）"
+      }
+    },
+    {
+      "id": "shiraoi-tsugaru-fair-2026-11-28",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "category": "seasonal",
+      "source": "curated",
+      "url": "https://www.town.shiraoi.hokkaido.jp/docs/page2022103100010.html",
+      "title": {
+        "en": "Tsugaru City produce fair (Shiraoi sister-city exchange)",
+        "ja": "白老町・つがる市姉妹都市交流企画「つがる市特産品即売フェア」",
+        "zh": "津轻市特产品直销会（白老姊妹城市交流）",
+        "zh-TW": "津輕市特產品直銷會（白老姊妹城市交流）"
+      },
+      "summary": {
+        "en": "Saturday 28 November 2026, 9:00–11:00, at the Shiraoi Community Centre hall. Fresh produce from sister city Tsugaru, Aomori, such as apples, burdock and garlic. No booking; come directly. Parking is expected to be busy. Apples are limited to 3 boxes of each kind per person.",
+        "ja": "2026年11月28日（土）9:00～11:00、白老町コミュニティセンター（講堂）。姉妹都市・青森県つがる市のりんご、ごぼう、にんにくなど新鮮な農産物を販売。事前予約なし、直接会場へ。駐車場の混雑が予想されます。りんごはお一人様各3箱まで。",
+        "zh": "2026年11月28日（星期六）9:00–11:00，白老町社区中心讲堂。销售姊妹城市青森县津轻市的苹果、牛蒡、大蒜等新鲜农产品。无需预约，直接前往。预计停车场拥挤。苹果每人每种限3箱。",
+        "zh-TW": "2026年11月28日（星期六）9:00–11:00，白老町社區中心講堂。銷售姊妹城市青森縣津輕市的蘋果、牛蒡、大蒜等新鮮農產品。無需預約，直接前往。預計停車場擁擠。蘋果每人每種限3箱。"
+      },
+      "venue": {
+        "en": "Shiraoi Community Centre hall, Honcho 1-1-1, Shiraoi",
+        "ja": "白老町コミュニティセンター（講堂）（白老町本町1丁目1番1号）",
+        "zh": "白老町社区中心讲堂（白老町本町1-1-1）",
+        "zh-TW": "白老町社區中心講堂（白老町本町1-1-1）"
+      }
+    },
+    {
+      "id": "upopoy-animal-fur-2026-12-12",
+      "start": "2026-12-12",
+      "end": "2026-12-13",
+      "category": "seasonal",
+      "source": "curated",
+      "url": "https://ainu-upopoy.go.jp/event/animal_fur2026-12/",
+      "title": {
+        "en": "Touch animal furs: Ainu and northern Indigenous fur use",
+        "ja": "動物の毛皮に触ってみよう",
+        "zh": "触摸动物毛皮：阿伊努与北方原住民的毛皮文化",
+        "zh-TW": "觸摸動物毛皮：阿伊努與北方原住民的毛皮文化"
+      },
+      "summary": {
+        "en": "Saturday 12 and Sunday 13 December 2026, 9:00–17:00, at Upopoy in Shiraoi. Touch more than 40 kinds of animal fur used by the Ainu and other northern Indigenous peoples, with a quiz rally, documentary screenings, a talk by explorer and author Yusuke Kakuhata (advance booking, 80 places per session: 12 Dec 13:00–14:30, 13 Dec 10:30–12:00) and brown-bear safety talks by Wildlife Pro. Furs are displayed and handled; take care if you have allergies. Session details are on the official special page.",
+        "ja": "2026年12月12日（土）・13日（日）9:00～17:00、ウポポイ（白老）。アイヌ民族・北方先住民族が利用した毛皮40種類以上に触れる特別イベント。クイズラリー、記録映像上映、探検家・作家 角幡唯介さんの講演会（事前予約制・各回80名：12日13:00～14:30、13日10:30～12:00）、合同会社ワイルドライフプロによるヒグマ対策の特別講座など。毛皮を展示・使用するため、アレルギーのある方はご注意ください。各回の詳細は公式特設ページをご覧ください。",
+        "zh": "2026年12月12日（星期六）、13日（星期日）9:00–17:00，白老乌波波伊。可触摸阿伊努与北方原住民使用过的40多种动物毛皮，另有问答集章、纪录片放映、探险家兼作家角幡唯介的讲座（需预约，每场80人：12日13:00–14:30，13日10:30–12:00）以及Wildlife Pro的棕熊应对讲座。现场展示并使用毛皮，过敏者请注意。各场详情见官方专题页。",
+        "zh-TW": "2026年12月12日（星期六）、13日（星期日）9:00–17:00，白老烏波波伊。可觸摸阿伊努與北方原住民使用過的40多種動物毛皮，另有問答集章、紀錄片放映、探險家兼作家角幡唯介的講座（需預約，每場80人：12日13:00–14:30，13日10:30–12:00）以及Wildlife Pro的棕熊應對講座。現場展示並使用毛皮，過敏者請注意。各場詳情見官方專題頁。"
+      },
+      "venue": {
+        "en": "Upopoy (Experience Learning Hall and Multipurpose Hall), Shiraoi",
+        "ja": "ウポポイ（体験学習館・多目的ホール）（白老）",
+        "zh": "白老乌波波伊（体验学习馆、多功能厅）",
+        "zh-TW": "白老烏波波伊（體驗學習館、多功能廳）"
+      }
+    },
+    {
+      "id": "upopoy-ainu-nature-2026-12-13",
+      "start": "2026-12-13",
+      "end": "2026-12-13",
+      "category": "seasonal",
+      "source": "curated",
+      "url": "https://ainu-upopoy.go.jp/event/holiday261213/",
+      "title": {
+        "en": "Holiday event: Ainu and nature — plants and animals in Ainu songs and stories",
+        "ja": "【事前申込制】ホリデーイベント「アイヌと自然～アイヌの歌と物語に出てくる動植物の紹介～」",
+        "zh": "假日活动「阿伊努与自然——阿伊努歌谣与故事中的动植物」",
+        "zh-TW": "假日活動「阿伊努與自然——阿伊努歌謠與故事中的動植物」"
+      },
+      "summary": {
+        "en": "Sunday 13 December 2026, 10:30–11:30, a guided walk in the Upopoy grounds, Shiraoi, introducing how the Ainu saw plants and animals through songs and stories. Goes ahead in light rain; in bad weather it becomes an indoor plant introduction in the museum exchange room. Free, advance email booking required by 6 December 13:00, 15 places, first come. Elementary-school age and up; younger children need a guardian. Wear warm clothes that cover the whole body, a hat and shoes that can get dirty. No photos or recording. Upopoy and museum entry: see the official ticket information.",
+        "ja": "2026年12月13日（日）10:30～11:30（60分）。ウポポイ（白老）園内を散策しながら、アイヌが動植物をどのようにとらえていたかを歌・物語を中心に紹介します。小雨決行、荒天時は交流室での植物紹介。参加費無料、要事前申込（メール、12月6日（日）13:00まで）、定員15名・先着順。対象は小学生以上（小学生以下は保護者同伴）。全身を覆う温かい服装・帽子・汚れてもよい靴など。写真撮影・録画・録音不可。ウポポイと博物館の入場はチケット案内をご覧ください。",
+        "zh": "2026年12月13日（星期日）10:30–11:30，在白老乌波波伊园区散步，以歌谣和故事介绍阿伊努人如何看待动植物。小雨照常，恶劣天气改为在交流室介绍植物。免费，须在12月6日13:00前以电子邮件报名，定员15人，先到先得。对象为小学生以上，小学生及以下需监护人陪同。请穿覆盖全身的保暖衣物、帽子和不怕脏的鞋。不可拍照或录音录像。乌波波伊与博物馆入场请看官方门票说明。",
+        "zh-TW": "2026年12月13日（星期日）10:30–11:30，在白老烏波波伊園區散步，以歌謠和故事介紹阿伊努人如何看待動植物。小雨照常，惡劣天氣改為在交流室介紹植物。免費，須在12月6日13:00前以電子郵件報名，定員15人，先到先得。對象為國小學生以上，國小學生及以下需監護人陪同。請穿覆蓋全身的保暖衣物、帽子和不怕髒的鞋。不可拍照或錄音錄影。烏波波伊與博物館入場請看官方門票說明。"
+      },
+      "venue": {
+        "en": "National Ainu Museum and Upopoy grounds, Shiraoi",
+        "ja": "国立アイヌ民族博物館・ウポポイ園内（白老）",
+        "zh": "国立阿伊努民族博物馆及乌波波伊园区（白老）",
+        "zh-TW": "國立阿伊努民族博物館及烏波波伊園區（白老）"
       }
     }
   ]
