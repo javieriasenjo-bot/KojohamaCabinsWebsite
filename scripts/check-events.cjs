@@ -31,7 +31,7 @@ const newIds2026Nov17 = ['shiraoi-tsugaru-fair-2026-11-28', 'upopoy-animal-fur-2
 // 18 Nov 2026: owner-approved Muroran addition (beyond 20 km, area labelled Muroran).
 const newIds2026Nov18 = ['muroran-cohaku-event-2026-11-22'];
 // Temporary pipeline-test entries (empty except during an owner-requested publish test).
-const testIds = [];
+const testIds = ['grok-bot-pipeline-test-2026-12-20'];
 const preservedHash = 'fd62ff3404149bcd625dda5a232259172bd734d4745161e9e0eab90866410482';
 
 function dedent(text) {
