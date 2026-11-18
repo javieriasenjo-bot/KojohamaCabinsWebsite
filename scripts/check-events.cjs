@@ -28,6 +28,10 @@ const addedIds = [
 const asiknep = 'アシ\u31f0ネ\u31f7\u309a';
 const parkingUrl = 'https://www.visit-hokkaido.jp/event/detail_11429.html';
 const newIds2026Nov17 = ['shiraoi-tsugaru-fair-2026-11-28', 'upopoy-animal-fur-2026-12-12', 'upopoy-ainu-nature-2026-12-13'];
+// 18 Nov 2026: owner-approved Muroran addition (beyond 20 km, area labelled Muroran).
+const newIds2026Nov18 = ['muroran-cohaku-event-2026-11-22'];
+// Temporary pipeline-test entries (empty except during an owner-requested publish test).
+const testIds = [];
 const preservedHash = 'fd62ff3404149bcd625dda5a232259172bd734d4745161e9e0eab90866410482';
 
 function dedent(text) {
@@ -125,13 +129,13 @@ async function boot(embed, fetchImpl, cards) {
   return section;
 }
 
-assert.equal(data.checkedOn, '2026-11-17');
-assert.equal(data.events.length, 18);
-assert.deepEqual(data.events.map(event => event.id), preservedIds.concat(addedIds, newIds2026Nov17));
+assert.equal(data.checkedOn, '2026-11-18');
+assert.equal(data.events.length, 19 + testIds.length);
+assert.deepEqual(data.events.map(event => event.id), preservedIds.concat(addedIds, newIds2026Nov17, newIds2026Nov18, testIds));
 assert.equal(crypto.createHash('sha256').update(JSON.stringify(preservedIds.map(id => data.events.find(event => event.id === id)))).digest('hex'), preservedHash);
 assert.equal(new Set(data.events.map(event => event.id)).size, data.events.length);
-assert.deepEqual(monitor.events.map(event => event.id), addedIds.concat(newIds2026Nov17));
-assert.equal(monitor.checkedOn, '2026-11-17');
+assert.deepEqual(monitor.events.map(event => event.id), addedIds.concat(newIds2026Nov17, newIds2026Nov18, testIds));
+assert.equal(monitor.checkedOn, '2026-11-18');
 assert.equal(monitor.timeZone, 'Asia/Tokyo');
 assert.equal(monitor.expiry.daysAfterEnd, 14);
 assert.equal(monitor.recurrence, 'none');
@@ -146,7 +150,7 @@ const byId = Object.fromEntries(data.events.map(event => [event.id, event]));
 const monitored = Object.fromEntries(monitor.events.map(event => [event.id, event]));
 const langs = ['en', 'ja', 'zh', 'zh-TW'];
 const banned = [/EMAIL-ONLY/, /Do not cite/i, /Do not use/i, /20\s?km/i, /spectator/i, /観戦/, /観覧/, /Facebook/, /Instagram/, /not published/i, /offline/i, /upopoy-univ-r8-2/];
-for (const id of addedIds.concat(newIds2026Nov17)) {
+for (const id of addedIds.concat(newIds2026Nov17, newIds2026Nov18, testIds)) {
   const event = byId[id];
   const spec = monitored[id];
   assert.equal(spec.recurrence, null, id);
@@ -232,7 +236,7 @@ assert.equal(denzai.length, 3);
 assert.equal(new Set(denzai.map(id => byId[id].url)).size, 1);
 assert.deepEqual(monitor.dedupe.sameSourceUrlDoesNotMergeDistinctPrograms, denzai);
 
-const muroran = ['muroran-kiran-matsuri-2026', ...denzai, 'muroran-small-party-vol-2-2026-12-06'];
+const muroran = ['muroran-kiran-matsuri-2026', ...denzai, 'muroran-small-party-vol-2-2026-12-06', ...newIds2026Nov18];
 for (const id of muroran) {
   assert.equal(monitored[id].area, 'Muroran');
   assert.equal(byId[id].venue.ja.includes('室蘭'), true, id);
@@ -281,7 +285,7 @@ for (const lang of ['en', 'ja', 'zh-CN']) {
   const onibiHtml = article(html, onibi.id);
   assert.equal(onibiHtml.includes('data-event-ongoing="true"'), true);
   assert.equal(onibiHtml.includes('<time'), false, lang);
-  assert.equal(html.includes('2026-11-17'), true);
+  assert.equal(html.includes('2026-11-18'), true);
   assert.equal(html.includes('toratake-kanbara-2026-10-24'), true);
   assert.equal(html.includes('id="toratake-kanbara-2026-10-24"'), false);
   assert.equal(html.includes('upopoy-univ-r8-2'), false);
@@ -388,7 +392,7 @@ fs.writeFileSync(path.join(artifactDir, 'event-inventory-2026-11-10.json'), JSON
   events: inventory
 }, null, 2) + '\n');
 require('./event-contract.cjs');
-console.log('PASS: 12 added identities (10 Nov), 3 added identities (17 Nov), 3 preserved events, session dates, 14-day Japan expiry, stale-feed merge.');
+console.log('PASS: 12 added identities (10 Nov), 3 added identities (17 Nov), 1 added identity (18 Nov), ' + testIds.length + ' test entries, 3 preserved events, session dates, 14-day Japan expiry, stale-feed merge.');
 console.log(inventory.map(item => [item.id, item.area, item.sessions || (item.ongoing ? 'ongoing' : item.start + '..' + item.end), item.phaseOn2026Nov10].join(' | ')).join('\n'));
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });
