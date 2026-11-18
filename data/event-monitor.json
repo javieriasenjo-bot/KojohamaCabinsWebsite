@@ -289,21 +289,6 @@
         "https://www.city.muroran.lg.jp/bbs/detail.html?content=3622"
       ],
       "addedOn": "2026-11-18"
-    },
-    {
-      "id": "grok-bot-pipeline-test-2026-12-20",
-      "titleJa": "【テスト】Grok Bot 公開テスト（無視してください）",
-      "start": "2026-12-20",
-      "end": "2026-12-20",
-      "sessions": null,
-      "ongoing": false,
-      "recurrence": null,
-      "area": "Test entry (not a real event)",
-      "times": null,
-      "sources": [
-        "https://kojohamacabins.jp/things-to-do/"
-      ],
-      "addedOn": "2026-11-18"
     }
   ],
   "legacyIdAliases": {
