@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedOn": "2026-11-17",
+  "checkedOn": "2026-11-18",
   "timeZone": "Asia/Tokyo",
   "expiry": {
     "daysAfterEnd": 14,
@@ -274,6 +274,21 @@
         "https://ainu-upopoy.go.jp/calendar/"
       ],
       "addedOn": "2026-11-17"
+    },
+    {
+      "id": "muroran-cohaku-event-2026-11-22",
+      "titleJa": "瑚珀のイベント2026",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "sessions": null,
+      "ongoing": false,
+      "recurrence": null,
+      "area": "Muroran",
+      "times": "10:00-16:00",
+      "sources": [
+        "https://www.city.muroran.lg.jp/bbs/detail.html?content=3622"
+      ],
+      "addedOn": "2026-11-18"
     }
   ],
   "legacyIdAliases": {
