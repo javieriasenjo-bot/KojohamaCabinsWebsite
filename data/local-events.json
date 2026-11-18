@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-11-17",
+  "checkedOn": "2026-11-18",
   "events": [
     {
       "id": "toratake-kanbara-2026-10-24",
@@ -472,6 +472,32 @@
         "ja": "国立アイヌ民族博物館・ウポポイ園内（白老）",
         "zh": "国立阿伊努民族博物馆及乌波波伊园区（白老）",
         "zh-TW": "國立阿伊努民族博物館及烏波波伊園區（白老）"
+      }
+    },
+    {
+      "id": "muroran-cohaku-event-2026-11-22",
+      "start": "2026-11-22",
+      "end": "2026-11-22",
+      "category": "seasonal",
+      "source": "curated",
+      "url": "https://www.city.muroran.lg.jp/bbs/detail.html?content=3622",
+      "title": {
+        "en": "Kohaku event 2026: market with 30+ stalls",
+        "ja": "瑚珀のイベント2026",
+        "zh": "瑚珀活动2026（30多个摊位的市集）",
+        "zh-TW": "瑚珀活動2026（30多個攤位的市集）"
+      },
+      "summary": {
+        "en": "Sunday 22 November 2026, 10:00–16:00, at Muroran Civic Hall (室蘭市市民会館), Wanishi-chō, Muroran. The city event calendar lists more than 30 stalls: craft workshops, massage, homeware and gifts, board games, fortune-telling, pets, food and hot drinks. Free entry; no booking needed.",
+        "ja": "2026年11月22日（日）10:00〜16:00、室蘭市輪西町の室蘭市市民会館。市のイベントカレンダーによると、もの作り体験、もみほぐし、雑貨販売、ボードゲーム、占い、ペット、グルメ、ホットドリンクなど30店舗以上が集まります。入場無料、予約不要。",
+        "zh": "2026年11月22日（星期日）10:00–16:00，室兰市轮西町室兰市民会馆。市政府活动日历列出30多个摊位：手作体验、按摩放松、杂货、桌游、占卜、宠物、美食和热饮。免费入场，无需预约。",
+        "zh-TW": "2026年11月22日（星期日）10:00–16:00，室蘭市輪西町室蘭市民會館。市政府活動日曆列出30多個攤位：手作體驗、按摩放鬆、雜貨、桌遊、占卜、寵物、美食和熱飲。免費入場，無需預約。"
+      },
+      "venue": {
+        "en": "Muroran Civic Hall (室蘭市市民会館), Wanishi-chō, Muroran",
+        "ja": "室蘭市市民会館（室蘭市輪西町）",
+        "zh": "室兰市民会馆（室兰市轮西町）",
+        "zh-TW": "室蘭市民會館（室蘭市輪西町）"
       }
     }
   ]
