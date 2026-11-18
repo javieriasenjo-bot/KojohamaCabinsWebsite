@@ -499,32 +499,6 @@
         "zh": "室兰市民会馆（室兰市轮西町）",
         "zh-TW": "室蘭市民會館（室蘭市輪西町）"
       }
-    },
-    {
-      "id": "grok-bot-pipeline-test-2026-12-20",
-      "start": "2026-12-20",
-      "end": "2026-12-20",
-      "category": "seasonal",
-      "source": "curated",
-      "url": "https://kojohamacabins.jp/things-to-do/",
-      "title": {
-        "en": "[TEST] Grok Bot pipeline test — please ignore",
-        "ja": "【テスト】Grok Bot 公開テスト（無視してください）",
-        "zh": "【测试】Grok Bot 发布测试（请忽略）",
-        "zh-TW": "【測試】Grok Bot 發布測試（請忽略）"
-      },
-      "summary": {
-        "en": "[TEST] Temporary entry used to check the publishing pipeline. It is not a real event and will be removed shortly.",
-        "ja": "【テスト】公開手順の確認用の一時的な項目です。実際のイベントではなく、まもなく削除されます。",
-        "zh": "【测试】用于检查发布流程的临时条目，并非真实活动，很快会被删除。",
-        "zh-TW": "【測試】用於檢查發布流程的臨時條目，並非真實活動，很快會被刪除。"
-      },
-      "venue": {
-        "en": "[TEST] No venue",
-        "ja": "【テスト】会場なし",
-        "zh": "【测试】无场地",
-        "zh-TW": "【測試】無場地"
-      }
     }
   ]
 }
